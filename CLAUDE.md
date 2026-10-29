@@ -154,15 +154,19 @@ split is now **national 41, education 26, regional 21, medical 22, economic
 17, local 10**. Both of the spec's figures are stale; the six layers are
 unchanged.
 
-`context_eras.csv` likewise has **26** rows, not the spec's 23. Three were
+`context_eras.csv` likewise has **28** rows, not the spec's 23. Five were
 added at the owner's request on 29 Oct 2026: the Great Depression
 (`econ-great-depression`, 29 Oct 1929 to 1939, the end given to the year
-only), the Cold War (`nat-cold-war`, 12 Mar 1947 to 26 Dec 1991) and the Space
-Race (`nat-space-race`, 4 Oct 1957 to 17 Jul 1975, nested inside the Cold
-War). The last two open a sixth layer, `national`. The split is now
-**documentation 9, social 7, education 3, medical 3, economic 2, national 2**.
-All three are national context: the project holds no local source on any of
-them, and the app attributes nothing in the burial record to them.
+only), World War II (`nat-world-war-ii`, 1 Sep 1939 to 2 Sep 1945), the Cold
+War (`nat-cold-war`, 12 Mar 1947 to 26 Dec 1991), the Korean War
+(`nat-korean-war`, 25 Jun 1950 to the armistice, 27 Jul 1953) and the Space
+Race (`nat-space-race`, 4 Oct 1957 to 17 Jul 1975). The Korean War and the
+Space Race nest inside the Cold War. The last four open a sixth layer,
+`national`. The split is now **documentation 9, social 7, education 3,
+medical 3, economic 2, national 4**. All five are national context: the
+project holds no local source on any of them, and the app attributes nothing
+in the burial record to them. Where a note cites the `military` field, it
+names the service the record holds, not a count of who served.
 
 **3. The years-lived layer (§11).** Added to the spec on 29 Oct 2026, after
 the rest of it was written. It compares the median age at death of adults on
@@ -188,7 +192,7 @@ disagreeing with any of these has a join or filter bug.
 | ≥1 census occupation | 212 |
 | `context_events.csv` rows | 137 |
 | `context_events.csv` layers | national 41 · education 26 · regional 21 · medical 22 · economic 17 · local 10 |
-| `context_eras.csv` rows | 26 (documentation 9 · social 7 · education 3 · medical 3 · economic 2 · national 2) |
+| `context_eras.csv` rows | 28 (documentation 9 · social 7 · education 3 · medical 3 · economic 2 · national 4) |
 | years lived, 1920–1949 gap | 13.0 (Lakeview n=461, Pleasant Valley n=39) |
 | years lived, 1950–1999 gap | 8.0 (n=746, n=188) |
 | years lived, 2000–2026 | not established, p = 0.081 |
