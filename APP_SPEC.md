@@ -751,3 +751,38 @@ These are honesty rules, not style:
 - Share of each ground's people with a usable age at death: Lakeview 95.3%,
   Harmony 92.4%, Pleasant Valley 88.9%.
 - Before 1920: Lakeview 252 adults, Pleasant Valley 3, earliest 1911.
+
+---
+
+## 12. How the stones name people, and the one who lived on
+
+Added 29 Oct 2026 at the owner's request. Both are measured aggregates that
+list the people they count.
+
+**The 1948 survey's limits.** `stone_1948` exists for 744 people, all at
+Lakeview; Harmony and Pleasant Valley have no 1948 readings in this record.
+The survey typed names, dates, ages and relationships: none of the 744 carries
+a verse, a religious phrase or a word like "Mother". Every place the app shows
+a stone reading says so. It must never be presented as the full inscription.
+
+**Naming.** Among stones of deaths up to 1948 with an age at death:
+
+| deaths | adults "wife of" | adults "husband of" | children under 20 "son / daughter of" |
+|---|---|---|---|
+| before 1900 | 14 of 42 | 0 | 25 of 33 |
+| 1900–1924 | 51 of 219 | 0 | 27 of 54 |
+| 1925–1948 | 38 of 310 | 1 | 6 of 22 |
+
+Shares are of all adult (or child) stones. The record has no sex field and
+the app must not infer sex from names, so it never states a share of women's
+stones.
+
+**Open death dates.** 26 stones show one ("1874 –", "19--"). The survey ran
+1948–50, so only a death after 1950 proves the name was cut first: 16. No
+death recorded anywhere: 4. Death recorded by 1950, date not yet cut: 5.
+
+**The one who lived on.** 128 resolved marriages; 113 have both death years
+(10 lack one, 3 rest on a disputed date, 2 are the same marriage recorded
+twice through duplicate records and are counted once). Median 14 years
+between the deaths; 36 at twenty years or more, 16 at thirty or more. Whole
+years between death years only. No claim about wives against husbands.

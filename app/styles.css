@@ -415,3 +415,11 @@ details.more summary { font-size: 13px; color: var(--ink-3); cursor: pointer; }
 @media print {
   .top, .tl-bar, .drawer-close { display: none; }
 }
+
+/* How the stones name people; the one who lived on */
+.stone-list { list-style: none; padding: 0; margin: 10px 0 0; }
+.stone-list li { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: 15px; color: var(--ink-2); min-width: 0; }
+.stone-list .plink { background: none; border: 0; padding: 0; font: inherit; color: var(--ink); cursor: pointer; text-decoration: underline; text-decoration-color: var(--ink-3); text-underline-offset: 2px; text-align: left; }
+.stone-list .plink:hover, .stone-list .plink:focus-visible { text-decoration-color: var(--ink); }
+.stone-line { display: block; margin-top: 3px; font-family: var(--serif); font-variant: small-caps; letter-spacing: 0.03em; color: var(--ink-2); overflow-wrap: anywhere; }
+.stone-note.cut-before { color: var(--narr-2); }

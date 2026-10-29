@@ -83,6 +83,8 @@ export function renderFamilies(el, D, ctx) {
     </div>
     <p class="prose">Every link was resolved by name and surname inside the same cemetery, preferring the same plot, and then tested against both people's dates. Links that failed the date check are kept out of the family views. Each link's basis is shown on the person's record.</p>
 
+    ${widowhoodSection(D.stones.widowhood, spouse)}
+
     <h2 data-k="${genuine.length} plot clusters · ${register.length} register families">More than one death in one family, inside one window</h2>
     <p class="prose">These are properties of a family in a window of days, not flags on individuals. The first set comes from the stones: people in one plot who died within ninety days of each other. The second comes from the county death register's own parents field, and those families are county-wide: they are not placed on a grave here unless a person was matched.</p>
     <h3>From the stones: ${genuine.length} plot clusters</h3>
@@ -126,7 +128,7 @@ function marriagesFigure(ms) {
 // The record
 // ---------------------------------------------------------------------------
 const RECORD_TABS = [
-  ['burials', 'Burials by decade'], ['causes', 'Causes of death'], ['work', 'Work'], ['absent', 'Who is not here'], ['longevity', 'Years lived'],
+  ['burials', 'Burials by decade'], ['causes', 'Causes of death'], ['work', 'Work'], ['absent', 'Who is not here'], ['longevity', 'Years lived'], ['naming', 'How the stones name people'],
   ['papers', 'Newspapers'], ['leads', 'Leads'], ['check', 'Self-check'],
 ];
 export function renderRecord(el, D, ctx, params = {}) {
@@ -138,7 +140,7 @@ export function renderRecord(el, D, ctx, params = {}) {
     <div class="stat-row">
       <div class="stat"><div class="v">${n(S.people)}</div><div class="k">people, each a row traced to a source</div></div>
       <div class="stat"><div class="v">${n(S.usable.yes)}</div><div class="k">placeable from birth to death</div></div>
-      <div class="stat"><div class="v">${n(S.stone)}</div><div class="k">stones read verbatim in 1948</div></div>
+      <div class="stat"><div class="v">${n(S.stone)}</div><div class="k">Lakeview stones read in 1948; none recorded for Harmony or Pleasant Valley</div></div>
       <div class="stat"><div class="v">${n(S.censusMatched)}</div><div class="k">matched to at least one census</div></div>
       <div class="stat"><div class="v">${n(S.cod)}</div><div class="k">with a cause of death</div></div>
       <div class="stat"><div class="v">${n(S.disputed)}</div><div class="k">with a disputed date, both readings kept</div></div>
@@ -188,6 +190,9 @@ export function renderRecord(el, D, ctx, params = {}) {
     <section class="tab-panel" id="rt-longevity" role="tabpanel" aria-labelledby="rtab-longevity" hidden>
     ${longevitySection(D.longevity)}
     </section>
+    <section class="tab-panel" id="rt-naming" role="tabpanel" aria-labelledby="rtab-naming" hidden>
+    ${namingSection(D.stones.naming)}
+    </section>
     <section class="tab-panel" id="rt-papers" role="tabpanel" aria-labelledby="rtab-papers" hidden>
     <h2 data-k="1815 – 1960 · Virginia Chronicle">Newspapers: the Hamilton paper is two per cent of what survives</h2>
     ${papersFigure(C.papers)}
@@ -230,9 +235,82 @@ export function renderRecord(el, D, ctx, params = {}) {
     const j = e.key === 'ArrowRight' ? (i + 1) % tabs.length : e.key === 'ArrowLeft' ? (i - 1 + tabs.length) % tabs.length : e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : -1;
     if (j >= 0) { e.preventDefault(); showTab(tabs[j].dataset.tab); tabs[j].focus(); }
   });
+  el.addEventListener('click', e => { const b = e.target.closest('[data-person]'); if (b) { e.preventDefault(); ctx.openPerson(b.dataset.person); } });
   el._onParams = (p) => showTab(p.tab || 'burials', false);
   showTab(params.tab || 'burials', false);
 }
+// ---------------------------------------------------------------------------
+// How the stones name people: the 1948 survey's relationship phrases, by
+// period of death. Shares are of all adult (or child) stones: the record has
+// no field for sex and the app does not guess it from names. Every count
+// comes with the stones themselves, so the numbers lead back to people.
+// ---------------------------------------------------------------------------
+const pct = (k, total) => (total ? Math.round(100 * k / total) : 0);
+const stoneList = (list) => `<ul class="stone-list">${list.map(s => `<li><button class="plink" data-person="${s.id}">${esc(s.name)}</button> <span class="muted">${s.dy !== null && s.dy !== undefined ? `d. ${s.dy}` : 'no death recorded'}${s.age !== null && s.age !== undefined ? `, aged ${s.age}` : ''}</span><span class="stone-line">${esc(s.text)}</span></li>`).join('')}</ul>`;
+export function namingSection(N) {
+  const P = N.periods, O = N.openDate, wife = N.wifeOf.length, husband = N.husbandOf.length, kids = N.childOf.length;
+  const W = 900, x0 = 250, x1 = 700, dy = 34, T = 34, rows = [];
+  P.forEach(p => rows.push({ lab: p.label, k: p.wifeOf, of: p.adults, col: 'var(--s2)' }));
+  P.forEach(p => rows.push({ lab: p.label, k: p.childOf, of: p.kids, col: 'var(--s1)' }));
+  const gap = 18, H = T + rows.length * dy + gap + 40, X = v => x0 + (x1 - x0) * v / 100;
+  const groups = [['Adults', "named as someone's wife"], ['Children under 20', 'named as a son or daughter']];
+  const fig = `<div class="figure"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Share of stones naming a person as a wife, or as a son or daughter, by period of death">
+    ${[0, 25, 50, 75, 100].map(v => `<line x1="${X(v)}" x2="${X(v)}" y1="${T - 8}" y2="${T + rows.length * dy + gap}" stroke="var(--rule)"/><text x="${X(v)}" y="${H - 12}" font-size="12" text-anchor="middle" fill="var(--ink-3)">${v}%</text>`).join('')}
+    ${rows.map((r, i) => {
+      const y = T + i * dy + dy / 2 + (i >= P.length ? gap : 0), v = pct(r.k, r.of), g = groups[i < P.length ? 0 : 1];
+      return `${i % P.length === 0 ? `<text x="12" y="${y + 4}" font-size="13.5" font-weight="700" fill="var(--ink)">${g[0]}</text><text x="12" y="${y + 21}" font-size="12" fill="var(--ink-3)">${g[1]}</text>` : ''}
+        <text x="${x0 - 16}" y="${y + 4}" font-size="13" text-anchor="end" fill="var(--ink-2)">${r.lab}</text>
+        <line x1="${X(0)}" x2="${X(v)}" y1="${y}" y2="${y}" stroke="${r.col}" stroke-width="2.5"/><circle cx="${X(v)}" cy="${y}" r="6" fill="${r.col}" stroke="var(--stone)" stroke-width="2"/>
+        <text x="${X(v) + 14}" y="${y + 5}" font-size="14" font-weight="700" fill="${r.col}">${v}%</text><text x="${X(v) + 56}" y="${y + 5}" font-size="13" fill="var(--ink-3)">${r.k} of ${n(r.of)} stones</text>`; }).join('')}
+  </svg></div>`;
+  const first = P[0], last = P[P.length - 1];
+  return `
+    <h2 data-k="The 1948 survey · Lakeview · ${n(N.read)} stones">How the stones name people</h2>
+    <p class="prose">In 1948 the DAR surveyors read Lakeview's standing stones and typed what identified each person: name, dates, age, and sometimes a relationship. The project has the survey for Lakeview only; Harmony and Pleasant Valley have no 1948 readings in this record. None of the ${n(N.read)} transcriptions carries a verse, a religious phrase or a word like "Mother", so whatever else the stones say is not in this record.</p>
+    <div class="callout"><p>On <b>${n(wife)} adult stones</b> a woman is named as someone's wife. On <b>${husband === 1 ? 'one' : n(husband)}</b> a man is named as someone's husband.</p><p class="narr-2">Children were named through their parents on ${pct(first.childOf, first.kids)}% of children's stones before 1900 and on ${pct(last.childOf, last.kids)}% by ${last.label}. Both habits faded over the period.</p></div>
+    ${fig}
+    <p class="prose small-prose">Each share is of all adult stones, or all children's stones, from deaths in that period. The record has no field for sex and the app does not guess it from names, so it cannot say what share of women's stones name a husband. Adults are people who reached 20. ${n(N.read - N.dated)} stones are left out of the shares: their age at death is not recorded, or the death came after the survey.</p>
+    <details class="more"><summary>The ${n(wife)} stones that name a wife</summary>${stoneList(N.wifeOf)}</details>
+    <details class="more"><summary>The ${husband === 1 ? 'one stone that names' : n(husband) + ' stones that name'} a husband</summary>${stoneList(N.husbandOf)}</details>
+    <details class="more"><summary>The ${n(kids)} children named as a son or daughter</summary>${stoneList(N.childOf)}</details>
+    <h3>Death dates left open</h3>
+    <p class="prose">${n(O.after.length + O.noDeath.length + O.neverCut.length)} stones had a name cut and the death date left open when the survey read them, as in "1874 –" or "1883 – 19--". For <b>${n(O.after.length)}</b> the death came after 1950, when the survey was finished: the name was on the stone while the person was alive, usually beside someone already buried. For <b>${n(O.noDeath.length)}</b> no source in this record gives a death at all. For <b>${n(O.neverCut.length)}</b> the death is recorded by 1950 but the date was not yet on the stone.</p>
+    <details class="more"><summary>The ${n(O.after.length)} names cut before the death</summary>${stoneList(O.after)}</details>
+    <details class="more"><summary>The ${n(O.noDeath.length)} with no death in this record</summary>${stoneList(O.noDeath)}</details>
+    <details class="more"><summary>The ${n(O.neverCut.length)} whose date was not yet cut</summary>${stoneList(O.neverCut)}</details>
+    <div class="source"><span>SOURCE</span>timeline_people.csv: stone_1948, death_year, age_at_death · the DAR Genealogical Records Committee survey, 1948, as transcribed for Lakeview</div>`;
+}
+
+// ---------------------------------------------------------------------------
+// The one who lived on: years between the two deaths of a resolved couple.
+// Whole years between death years, since many dates are known only to the
+// year. No sex in the record, so no claim about wives against husbands.
+// ---------------------------------------------------------------------------
+function widowhoodSection(Wd, spouseNamed) {
+  const mx = Math.max(...Wd.buckets.map(b => b.n)), W = 900, x0 = 170, x1 = 640, dy = 34, T = 16;
+  const H = T + Wd.buckets.length * dy + 10, X = v => x0 + (x1 - x0) * v / mx;
+  const fig = `<div class="figure"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Couples by years between the two deaths">
+    ${Wd.buckets.map((b, i) => { const y = T + i * dy + dy / 2, long = b.lo >= 20, col = long ? 'var(--s2)' : 'var(--s1)';
+      return `<text x="${x0 - 16}" y="${y + 4}" font-size="13.5" text-anchor="end" fill="${long ? 'var(--ink)' : 'var(--ink-2)'}">${b.label}</text>
+        <line x1="${X(0)}" x2="${X(b.n)}" y1="${y}" y2="${y}" stroke="${col}" stroke-width="2.5"/><circle cx="${X(b.n)}" cy="${y}" r="6" fill="${col}" stroke="var(--stone)" stroke-width="2"/>
+        <text x="${X(b.n) + 14}" y="${y + 5}" font-size="14" font-weight="700" fill="${col}">${b.n}</text><text x="${X(b.n) + 42}" y="${y + 5}" font-size="13" fill="var(--ink-3)">couples</text>`; }).join('')}
+  </svg></div>`;
+  return `
+    <h2 data-k="${n(Wd.couples)} couples with both deaths dated">The one who lived on</h2>
+    <p class="prose">For ${n(Wd.couples)} of the ${n(Wd.linked)} resolved marriages, both deaths have a year. Between the first death and the second lay a median of <b>${f1(Wd.median)} years</b>. In ${n(Wd.atLeast20)} marriages one partner lived on twenty years or more, and in ${n(Wd.atLeast30)}, thirty or more.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="v">${n(Wd.couples)}</div><div class="k">couples with both deaths dated</div></div>
+      <div class="stat"><div class="v">${f1(Wd.median)}</div><div class="k">median years between the two deaths</div></div>
+      <div class="stat"><div class="v">${n(Wd.atLeast20)}</div><div class="k">one lived on twenty years or more</div></div>
+      <div class="stat"><div class="v">${n(Wd.atLeast30)}</div><div class="k">thirty years or more</div></div>
+    </div>
+    ${fig}
+    <h3>Thirty years or more</h3>
+    <ul class="stone-list">${Wd.long.map(c => `<li><button class="plink" data-person="${c.last.id}">${esc(c.last.name)}</button> lived on <b>${c.years} years</b> after <button class="plink" data-person="${c.first.id}">${esc(c.first.name)}</button> <span class="muted">(${c.first.dy} to ${c.last.dy})</span></li>`).join('')}</ul>
+    <p class="prose small-prose">Counted in whole years between the two death years, since many dates are known only to the year. ${n(Wd.missingYear)} marriages lack a death year on one side and ${n(Wd.disputedOut)} rest on a disputed date; they are left out.${Wd.sameCouple ? ` ${Wd.sameCouple === 1 ? 'One marriage appears' : n(Wd.sameCouple) + ' marriages appear'} twice, because both partners were entered once from each source with identical dates; ${Wd.sameCouple === 1 ? 'it is' : 'each is'} counted once.` : ''} Only ${n(spouseNamed)} people here have a spouse named at all, so these are the record's marriages, not the town's. "Lived on" says nothing about remarriage, which the record seldom shows. The record has no field for sex, so it cannot say whether wives or husbands more often outlived the other.</p>
+    <div class="source"><span>SOURCE</span>timeline_people.csv: spouse_ids, death_year, date_disputed · links as resolved for the family views</div>`;
+}
+
 // ---------------------------------------------------------------------------
 // Years lived: median age at death of adults, Lakeview and Pleasant Valley.
 // Rules (owner's brief for this section): never "life expectancy"; n beside

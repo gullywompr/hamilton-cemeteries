@@ -2,7 +2,7 @@
 // builds the indexes the views need. Nothing here writes anywhere.
 import { bounds, interval, dayOf } from './derive.js';
 
-const FILES = ['people', 'population', 'events', 'eras', 'layers', 'family', 'disputed', 'findings', 'leads', 'context', 'register', 'summary', 'longevity'];
+const FILES = ['people', 'population', 'events', 'eras', 'layers', 'family', 'disputed', 'findings', 'leads', 'context', 'register', 'summary', 'longevity', 'stones'];
 
 export async function loadAll() {
   const loaded = await Promise.all(FILES.map(f => fetch(`./data/${f}.json`).then(r => {

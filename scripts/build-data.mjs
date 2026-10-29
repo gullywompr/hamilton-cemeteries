@@ -72,6 +72,15 @@ function altYears(pid) {
   return { by: [...by].sort(), dy: [...dy].sort() };
 }
 
+// A death date left open on the stone, as the 1948-50 survey typed it:
+// "1874 -", "1856 - 19", "19--", "d. May __, 193--", or a closing "d." with
+// only one year on the stone (a full date followed by "d." is not open).
+const stoneOpen = (s) => {
+  const t = (s || '').trim();
+  if (!t) return false;
+  if (/(?:-|–)\s*(?:19[-_]*)?\s*$/.test(t) || /19--|__/.test(t)) return true;
+  return /\bd\.\s*$/.test(t) && (t.match(/\b1[789]\d\d\b/g) || []).length < 2;
+};
 const people = peopleRows.map(r => {
   const census = CENSUS_YEARS
     .filter(y => r[`census_${y}_match`] || r[`census_${y}_occupation`])
@@ -87,7 +96,7 @@ const people = peopleRows.map(r => {
     by: int(r.birth_year), dy: int(r.death_year), age: int(r.age_at_death),
     use: r.timeline_usable, note: r.timeline_note, disp: r.date_disputed === 'yes',
     fam, cod: r.cause_of_death, occ: r.occupation, regParents: r.parents_named_in_register,
-    birthplace: r.birthplace, regVerbatim: r.register_verbatim, stone: r.stone_1948,
+    birthplace: r.birthplace, regVerbatim: r.register_verbatim, stone: r.stone_1948, stoneOpen: stoneOpen(r.stone_1948),
     mil: r.military, vet: r.veteran === '1', src: r.sources, census,
   };
   if (p.disp) p.alt = altYears(p.id);
@@ -366,6 +375,80 @@ write('summary.json', {
     eras, decades, dayPrecision, bothDay, pvHeaping, coverage, before,
     reference: { script: 'scripts/longevity_gap.py', output: 'data/longevity_gap.json', agrees: true, ci: 'bootstrap, 4000 resamples, from the reference output' },
   });
+}
+
+// ---------------------------------------------------------------------------
+// 9. Stones and spouses: how the 1948 survey names people, how long the one
+//    who lived on outlived a spouse, and stones cut before the death.
+//
+//    All from people.json, so the numbers match the person cards. The survey
+//    is Lakeview only and records names, dates, ages and relationships, never
+//    verse or other wording; the page says both.
+// ---------------------------------------------------------------------------
+{
+  const RX = { wifeOf: /\b(wife|consort|relict) of\b/i, husbandOf: /\bhusband of\b/i, childOf: /\b(son|dau\.?|daughter) of\b/i };
+  const PERIODS = [{ label: 'before 1900', lo: 0, hi: 1899 }, { label: '1900 – 1924', lo: 1900, hi: 1924 }, { label: '1925 – 1948', lo: 1925, hi: 1948 }];
+  const item = (p) => ({ id: p.id, name: p.name, dy: p.dy, age: p.age, text: p.stone });
+  const read = people.filter(p => p.stone);
+  const dated = read.filter(p => p.dy !== null && p.dy <= 1948 && p.age !== null);
+  const periods = PERIODS.map(({ label, lo, hi }) => {
+    const inP = dated.filter(p => p.dy >= lo && p.dy <= hi), adults = inP.filter(p => p.age >= 20), kids = inP.filter(p => p.age < 20);
+    return { label, lo, hi, adults: adults.length, kids: kids.length,
+      wifeOf: adults.filter(p => RX.wifeOf.test(p.stone)).length, husbandOf: adults.filter(p => RX.husbandOf.test(p.stone)).length,
+      childOf: kids.filter(p => RX.childOf.test(p.stone)).length };
+  });
+  const byDy = (a, b) => a.dy - b.dy || a.name.localeCompare(b.name);
+  const naming = {
+    read: read.length, dated: dated.length,
+    byCemetery: { L: count(read, p => p.cem === 'L'), H: count(read, p => p.cem === 'H'), P: count(read, p => p.cem === 'P') },
+    periods,
+    wifeOf: dated.filter(p => p.age >= 20 && RX.wifeOf.test(p.stone)).sort(byDy).map(item),
+    husbandOf: dated.filter(p => p.age >= 20 && RX.husbandOf.test(p.stone)).sort(byDy).map(item),
+    childOf: dated.filter(p => p.age < 20 && RX.childOf.test(p.stone)).sort(byDy).map(item),
+    // Open death dates, by what the rest of the record says. The survey ran
+    // 1948-50, so only a death after 1950 proves the name was cut first.
+    openDate: {
+      after: read.filter(p => p.stoneOpen && p.dy !== null && p.dy > 1950).sort(byDy).map(item),
+      noDeath: read.filter(p => p.stoneOpen && p.dy === null).sort((a, b) => a.name.localeCompare(b.name)).map(item),
+      neverCut: read.filter(p => p.stoneOpen && p.dy !== null && p.dy <= 1950).sort(byDy).map(item),
+    },
+  };
+  // Widowhood: every resolved spouse link where both deaths have a year.
+  // Years between the death years, so a date known only to the year is never
+  // treated as known to the day. A disputed date makes the gap uncertain, so
+  // those couples are counted and left out.
+  const byId = new Map(people.map(p => [p.id, p]));
+  // The same marriage can appear twice when both partners exist as two
+  // records (one from each source) and the links cross between the copies.
+  // The data is not merged here (that is the owner's call); a couple whose
+  // two partners carry exactly the same birth and death dates, as written, as a
+  // couple already counted is counted once, and the page says how many.
+  const seen = new Set(), couples = [], sigs = new Set();
+  let disputedOut = 0, missingYear = 0, sameCouple = 0;
+  for (const p of people) for (const f of p.fam) {
+    if (f.rel !== 'spouse') continue;
+    const key = [p.id, f.id].sort().join('|');
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const q = byId.get(f.id);
+    if (p.dy === null || q.dy === null) { missingYear++; continue; }
+    if (p.disp || q.disp) { disputedOut++; continue; }
+    const [first, last] = p.dy <= q.dy ? [p, q] : [q, p];
+    const sig = [first, last].map(x => `${x.bd}/${x.dd}`).sort().join('|');
+    if (first.bd && first.dd && last.bd && last.dd) { if (sigs.has(sig)) { sameCouple++; continue; } sigs.add(sig); }
+    couples.push({ first: { id: first.id, name: first.name, dy: first.dy }, last: { id: last.id, name: last.name, dy: last.dy }, years: last.dy - first.dy });
+  }
+  couples.sort((a, b) => b.years - a.years || a.first.dy - b.first.dy);
+  const yrs = couples.map(c => c.years).sort((a, b) => a - b), m = yrs.length >> 1;
+  const BUCKETS = [[0, 0, 'same year'], [1, 4, '1 – 4 years'], [5, 9, '5 – 9'], [10, 19, '10 – 19'], [20, 29, '20 – 29'], [30, 99, '30 or more']];
+  const widowhood = {
+    linked: seen.size, couples: couples.length, missingYear, disputedOut, sameCouple,
+    median: yrs.length % 2 ? yrs[m] : (yrs[m - 1] + yrs[m]) / 2,
+    atLeast20: count(couples, c => c.years >= 20), atLeast30: count(couples, c => c.years >= 30),
+    buckets: BUCKETS.map(([lo, hi, label]) => ({ label, lo, hi, n: count(couples, c => c.years >= lo && c.years <= hi) })),
+    long: couples.filter(c => c.years >= 30),
+  };
+  write('stones.json', { naming, widowhood });
 }
 
 console.log('done.');

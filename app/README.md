@@ -107,6 +107,15 @@ npm run data && npm test
 It is the only script allowed to write into `data/` (see `CLAUDE.md`). The
 acceptance values in `APP_SPEC.md` §11 will need updating to match.
 
+**how the stones name people; the one who lived on.** A Record tab reads the
+1948 survey for relationship phrases ("wife of", "son of") by period, and
+lists the stones behind every count; the Families page gives the years
+between the two deaths of each resolved marriage. Both are computed in
+`scripts/build-data.mjs` into `app/data/stones.json`. The person card says the
+survey recorded names, dates, ages and relationships, not the full
+inscription, and explains an open death date. Rules and values:
+`APP_SPEC.md` §12.
+
 **county context.** The demography charts are context and are captioned as
 not a denominator. The county grave counts are shown beside the project's and
 captioned as lower, not a total.

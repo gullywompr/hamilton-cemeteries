@@ -220,3 +220,32 @@ test('longevity: the 1920-1949 gap is shown to depend on year-only dates', async
   // only the first era is flagged: 2000-2026 was never established, 1950-1999 holds
   assert.equal((text.match(/depends on dates known only to the year/g) || []).length, 1);
 });
+
+test('stones: how the 1948 survey names people, and the stones cut before the death', async () => {
+  const { naming: N } = load('stones.json');
+  assert.equal(N.read, 744);
+  assert.deepEqual(N.byCemetery, { L: 744, H: 0, P: 0 });
+  assert.deepEqual(N.periods.map(p => [p.adults, p.wifeOf, p.husbandOf, p.kids, p.childOf]), [[42, 14, 0, 33, 25], [219, 51, 0, 54, 27], [310, 38, 1, 22, 6]]);
+  assert.deepEqual([N.wifeOf.length, N.husbandOf.length, N.childOf.length], [103, 1, 58]);
+  const O = N.openDate;
+  assert.deepEqual([O.after.length, O.noDeath.length, O.neverCut.length], [16, 4, 5]);
+  assert.ok(O.after.every(s => s.dy > 1950) && O.noDeath.every(s => s.dy === null));
+  // a full date followed by "d." is not an open date
+  assert.ok(![...O.after, ...O.noDeath, ...O.neverCut].some(s => /Saunders/.test(s.text)));
+  const { namingSection } = await import('../app/src/views.js');
+  const text = namingSection(N).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+  assert.match(text, /On 103 adult stones a woman is named as someone's wife\. On one a man is named as someone's husband\./);
+  assert.match(text, /has no field for sex and the app does not guess it from names/);
+  assert.match(text, /Harmony and Pleasant Valley have no 1948 readings in this record/);
+});
+
+test('stones: the one who lived on', () => {
+  const { widowhood: W } = load('stones.json');
+  assert.deepEqual([W.linked, W.couples, W.missingYear, W.disputedOut, W.sameCouple], [128, 113, 10, 3, 2]);
+  assert.equal(W.median, 14);
+  assert.deepEqual([W.atLeast20, W.atLeast30, W.long.length], [36, 16, 16]);
+  // the Trammell / Thompson marriage exists as two crossed pairs of records; it is counted once
+  assert.equal(W.long.filter(c => /Trammel|Thompson/.test(c.first.name + c.last.name)).length, 1);
+  assert.equal(W.buckets.reduce((s, b) => s + b.n, 0), W.couples);
+  assert.ok(W.long.every(c => c.last.dy - c.first.dy === c.years && c.years >= 30));
+});
