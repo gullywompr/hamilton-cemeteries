@@ -254,7 +254,7 @@ export function longevitySection(L) {
         : `<div class="era-big not">Not established</div><div class="era-k">The interval for the difference runs from ${fmtCI(e.ci95)} and includes zero, ${fmtP(e.p)}. The gap has narrowed to where this record can no longer detect it.</div>`}
     </div>`;
   return `
-    <h2 data-k="1920 – 2026 · Lakeview and Pleasant Valley · adults who reached 20">Years lived, on two grounds</h2>
+    <h2 data-k="${first.lo} – ${last.hi} · Lakeview and Pleasant Valley · adults who reached 20">Years lived, on two grounds</h2>
     <p class="prose">The median age at death of people who reached twenty, on the town's white ground and on Pleasant Valley, which opened in 1922 and is one of Loudoun's largest African American cemeteries. Adults only, so that different child-burial practice on the two grounds cannot drive the result. ${POP}</p>
     <div class="era-row">${L.eras.map(eraBlock).join('')}</div>
     <div class="callout narr-block"><p class="narr">Between ${first.lo} and ${first.hi} the median adult buried at Pleasant Valley died <b>${f1(first.gap)} years younger</b> than the median adult at Lakeview.</p><p class="narr-2">By ${last.lo} the difference had narrowed to where <b>this record can no longer detect it.</b></p></div>
