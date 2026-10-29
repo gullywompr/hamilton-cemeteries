@@ -4025,10 +4025,11 @@ some were brought home to be buried. That changes who lies at Pleasant Valley
 in ways no test here can measure; the Years lived page calls the two grounds
 two burial populations, not two samples of the town, for this reason.
 
-### Open
+### Notes for later work
 
-- The 7 "not sure" duplicate pairs stay two people, each card naming the
-  other. A later decision goes in `curation/duplicates.csv`.
+- The 7 pairs the owner marked "not sure" are a decision, not a gap: they
+  stay two people, each card naming the other. Only new evidence (a death
+  certificate, an obituary) would change one, in `curation/duplicates.csv`.
 - The kept record for each merged person was chosen by completeness (stone
   reading, exact dates, family links, sources), which sometimes keeps the
   shorter name; the `keep` column can be changed.
