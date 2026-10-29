@@ -114,11 +114,13 @@ must not be used to compute or imply a count of missing individuals.
 394 of the 2,681 people (399 of the 2,732 records) — a family view must degrade gracefully to "nothing recorded" for
 about 85% of people and must never imply that silence means no family.
 
-**Possibly living people (29 Oct 2026, owner's decision).** 15 people have no
+**Possibly living people (29 Oct 2026, owner's decision).** 13 people have no
 death date and a birth within the last 110 years: most likely names cut in
 advance on a shared stone. They stay findable by name, but the build
 withholds their birth date (`withheld: true`) and the card says why. Never
-publish a birth date for someone with no death date born inside that span.
+publish a birth date for someone with no death date born inside that span,
+unless their stone records a death (`curation/unresolved.csv`: Lovett and
+Weaning, by the owner's decision).
 
 **Plot clusters (29 Oct 2026, supersedes `APP_SPEC.md` §7.5 for display).**
 A Lakeview plot label is shared by several surnames, so dying close together
@@ -233,13 +235,15 @@ Ten further pairs carry the verdict `unresolved` (29 Oct 2026, owner's
 decision): a birth-only record whose birth date is, to the day, the death date
 of a record with a closely matching name, possibly a death entered as a birth.
 They stay two people, each card links to the other and says why; nothing is
-folded and no date is moved. Five of the fifteen possibly-living people are on
+folded and no date is moved. Five of the thirteen possibly-living people are on
 the birth-only side of one of these pairs.
 
 Four single records are likewise left `unresolved`, in
 `curation/unresolved.csv`: birth-only records (Beales, Lovett, Saunders,
 Weaning) whose 1948 stone reading gives the same date as a death, with an age
 at death, and no second record exists. The card says so; no date is moved.
+Lovett (1934) and Weaning (1938) fall inside the 110-year span but are not
+withheld: the stone records their deaths.
 
 ---
 

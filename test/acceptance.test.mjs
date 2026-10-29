@@ -112,10 +112,10 @@ test('event overlay', () => {
 test('possibly living: no birth date published without a death date inside 110 years', () => {
   const people = load('people.json'), now = new Date().getFullYear();
   const held = people.filter(p => p.withheld);
-  assert.equal(held.length, 15);
+  assert.equal(held.length, 13);
   for (const p of held) assert.ok(!p.bd && p.by === null && !p.dd && p.age === null, p.id);
   for (const p of held) assert.ok(!p.stone, `${p.id}: the stone reading carries the withheld date`);
-  assert.equal(held.filter(p => p.stoneHeld).length, 4);
+  assert.equal(held.filter(p => p.stoneHeld).length, 2);
   // no published entry that refers to a withheld person repeats the birth date
   const raw = new Map(readCsv(fileURLToPath(new URL('../data/timeline_people.csv', import.meta.url))).map(r => [r.person_id, r]));
   const about = (o, id, hits = []) => {
@@ -128,7 +128,8 @@ test('possibly living: no birth date published without a death date inside 110 y
     const d = raw.get(p.id).birth_date;
     for (const s of about(out, p.id)) assert.ok(!s.includes(d), `${p.id}: ${d} is published in ${s.slice(0, 80)}`);
   }
-  for (const p of people) if (!p.dd && p.by !== null) assert.ok(p.by <= now - 110, `${p.id} born ${p.by} with no death date`);
+  // a stone that records a death (curation/unresolved.csv) is not a living person
+  for (const p of people) if (!p.dd && !p.unresolved && p.by !== null) assert.ok(p.by <= now - 110, `${p.id} born ${p.by} with no death date`);
   for (const p of people) for (const a of p.aka) if (!a.dd && a.bd) assert.ok(+a.bd.slice(0, 4) <= now - 110, a.id);
 });
 

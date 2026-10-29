@@ -187,9 +187,10 @@ for (const u of unresolvedRows) {
 // does not publish their birth date, or the stone reading that carries it.
 // Every count below is still taken on the full record (743 stones were read);
 // only what is written out is withheld, and `withheld` marks it, so the card
-// can say so. Withheld is not unknown.
+// can say so. Withheld is not unknown. A record whose stone records a death
+// (curation/unresolved.csv) is not withheld: the owner's decision of 29 Oct.
 const LIVING_SPAN = 110, NOW_YEAR = new Date().getFullYear();
-for (const p of people) if (!p.dd && p.by !== null && p.by > NOW_YEAR - LIVING_SPAN) p.withheld = true;
+for (const p of people) if (!p.dd && !p.unresolved && p.by !== null && p.by > NOW_YEAR - LIVING_SPAN) p.withheld = true;
 const published = (p) => !p.withheld ? p : {
   ...p, bd: '', bp: 'none', by: null, age: null, stoneHeld: !!p.stone, stone: '', stoneOpen: false,
   aka: p.aka.map(a => ({ ...a, bd: '', stone: '' })),
