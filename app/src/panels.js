@@ -218,7 +218,7 @@ export class Drawer {
       const st = aliveOn(p, day);
       const when = fmtDay(day);
       if (p.withheld) return `<div class="at-cursor">No death date is recorded. Anyone born within the last 110 years with no death date may still be living, so this record's birth date is not shown${p.stoneHeld ? ', nor the 1948 reading of the stone, which carries it' : ''}, and the person is not placed on the timeline.</div>`;
-      if (st === 'unplaceable') return `<div class="at-cursor">Not placeable on the timeline: ${esc(NOTE_WORDS[p.note] || p.note || 'no usable dates')}.${p.use === 'birth-only' ? ' No death year is recorded, so the record does not say whether this person was alive on any later date.' : ''}</div>`;
+      if (st === 'unplaceable') return `<div class="at-cursor">Not placeable on the timeline: ${esc(noteWords(p) || 'no usable dates')}.${p.use === 'birth-only' && !p.unresolved ? ' No death year is recorded, so the record does not say whether this person was alive on any later date.' : ''}</div>`;
       const a = ageAt(p, day);
       if (st === 'no' && day < b.lo) return `<div class="at-cursor">On ${when}: <b>not yet born</b>, ${fullYears(day, b.lo)} years before this birth.<button class="btn" data-goto="${b.lo}">Go to birth</button></div>`;
       if (st === 'no') return `<div class="at-cursor">On ${when}: <b>had died</b> ${fmtOffset(day, d.hi).replace('earlier', 'before')}.<button class="btn" data-goto="${d.lo}">Go to death</button></div>`;
@@ -265,7 +265,7 @@ export class Drawer {
       ${p.aka.length ? `<div class="sec"><h3>Also recorded as</h3>${p.aka.map(a => `<p class="small"><b>${esc(a.name)}</b> <span class="muted">${a.id} · ${esc(sourcesWords(a.src))}${a.plot ? ` · plot ${esc(a.plot)}` : ''} · ${esc(a.bd || '?')} to ${esc(a.dd || '?')}</span>${a.stone && a.stone !== p.stone ? `<br><span class="stone-line">${esc(a.stone)}</span>` : ''}</p>`).join('')}<p class="stone-note">The same person entered twice in the sources, confirmed by the project's owner on 29 October 2026 (curation/duplicates.csv). Counted once everywhere in this app; both records are kept in the data.</p></div>` : ''}
       ${p.maybe.length ? `<div class="sec"><h3>Possibly the same person as</h3>${p.maybe.map(m => `<p class="small"><a href="#/person/${m.id}" data-person="${m.id}">${esc(m.name)}</a> <span class="muted">${m.id}</span></p>`).join('')}${[...new Set(p.maybe.map(m => m.why))].map(w => `<p class="stone-note">${MAYBE_WORDS[w]}</p>`).join('')}</div>` : ''}
       ${p.unresolved === 'stone-gives-death' ? `<div class="sec"><h3>Unresolved</h3><p class="stone-note">The 1948 reading of this stone records a death, with an age at death, on the date this record gives as a birth. Which is right is unresolved; the record is kept as written.</p></div>` : ''}
-      <div class="source"><span>SOURCE</span>${esc(sourcesWords(p.src))}${p.use !== 'yes' ? `<br>Timeline status: ${esc(p.use)}${p.note ? ` (${esc(p.note)})` : ''}.` : ''}</div>
+      <div class="source"><span>SOURCE</span>${esc(sourcesWords(p.src))}${p.use !== 'yes' ? `<br>Timeline status: ${esc(p.use)}${noteWords(p) ? ` (${esc(noteWords(p))})` : ''}.` : ''}</div>
     `;
   }
 }
@@ -274,6 +274,9 @@ const MAYBE_WORDS = {
   'dates-agree': 'The dates agree and part of the name is shared, but the owner could not confirm it. Both are counted as separate people.',
   'birth-is-death': 'One of these records gives as a birth date the very day the other records as a death. It may be one person whose death date was entered as a birth; that is unresolved, and both are counted as separate people.',
 };
+// A record whose stone records a death (curation/unresolved.csv) is not
+// described as possibly living.
+const noteWords = (p) => p.unresolved === 'stone-gives-death' ? 'no death year on this record, though its 1948 stone reading records a death' : NOTE_WORDS[p.note] || p.note;
 const NOTE_WORDS = { 'death precedes birth': 'the recorded dates conflict, with the death date before the birth date, and neither is treated as correct' };
 function shortSpan(p) {
   const b = p.by ?? '', d = p.dy ?? '';
