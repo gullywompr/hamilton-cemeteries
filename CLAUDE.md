@@ -40,6 +40,12 @@ They are ground truth where `STYLE.md` is ambiguous.
 
 `data/` is **read-only input**. Nothing in the app may write to it.
 
+One exception, by the owner's decision: `data/longevity_gap.json` is written
+by `scripts/longevity_gap.py`, the reference analysis behind the longevity
+layer. It stays in `data/` and is committed; `scripts/build-data.mjs` reads it
+and fails if its own numbers disagree. Only that script may write that file.
+No other file in `data/` may be written by anything.
+
 ---
 
 ## What this file deliberately does not specify
