@@ -16,15 +16,27 @@ import numpy as np
 from scipy import stats
 
 SRC = 'data/timeline_people.csv'
+DUPS = 'curation/duplicates.csv'
+
+def folded():
+    # Records the owner confirmed as the same person as another record; only
+    # the record named in `keep` counts (same rule as scripts/build-data.mjs).
+    out = set()
+    for d in csv.DictReader(open(DUPS, encoding='utf-8')):
+        if d['verdict'] == 'same person':
+            out |= {d['a_id'], d['b_id']} - {d['keep']}
+    return out
 
 def I(x):
     try: return int(float(x))
     except: return None
 
 def load():
-    P = list(csv.DictReader(open(SRC)))
+    F = folded()
+    P = list(csv.DictReader(open(SRC, encoding='utf-8')))
     return [r for r in P
-            if r['timeline_usable'] == 'yes'
+            if r['person_id'] not in F
+            and r['timeline_usable'] == 'yes'
             and I(r['death_year']) is not None
             and I(r['age_at_death']) is not None]
 
@@ -101,7 +113,8 @@ def main():
         'p_above_chance': float(stats.binomtest(k, len(yo), 0.2, alternative='greater').pvalue)}
 
     # robustness: usable-age coverage per ground (selection check)
-    P = list(csv.DictReader(open(SRC)))
+    F = folded()
+    P = [r for r in csv.DictReader(open(SRC, encoding='utf-8')) if r['person_id'] not in F]
     cov = {}
     for cem in ('Lakeview','Harmony','Pleasant Valley'):
         sub = [r for r in P if r['cemetery'] == cem]

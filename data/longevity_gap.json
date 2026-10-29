@@ -4,30 +4,30 @@
  "eras": [
   {
    "era": "1920-1949",
-   "lakeview_n": 480,
+   "lakeview_n": 461,
    "lakeview_median": 69.0,
    "pv_n": 39,
    "pv_median": 56.0,
    "gap": 13.0,
    "ci95": [
     3.0,
-    22.5
+    22.0
    ],
-   "p": 0.000671100423970657,
+   "p": 0.0006974309071107346,
    "significant_at_05": true
   },
   {
    "era": "1950-1999",
-   "lakeview_n": 753,
+   "lakeview_n": 746,
    "lakeview_median": 76.0,
-   "pv_n": 193,
+   "pv_n": 188,
    "pv_median": 68.0,
    "gap": 8.0,
    "ci95": [
     2.0,
-    10.0
+    9.5
    ],
-   "p": 0.00014237231890654178,
+   "p": 0.00018271741069373257,
    "significant_at_05": true
   },
   {
@@ -38,7 +38,7 @@
    "pv_median": 75.0,
    "gap": 4.0,
    "ci95": [
-    -2.5,
+    -2.0,
     8.0
    ],
    "p": 0.08108261616139267,
@@ -48,7 +48,7 @@
  "decades": [
   {
    "decade": "1920s",
-   "lakeview_n": 133,
+   "lakeview_n": 126,
    "lakeview_median": 65.0,
    "pv_n": 11,
    "pv_median": 55.0,
@@ -56,7 +56,7 @@
   },
   {
    "decade": "1930s",
-   "lakeview_n": 172,
+   "lakeview_n": 168,
    "lakeview_median": 68.0,
    "pv_n": 15,
    "pv_median": 56.0,
@@ -64,7 +64,7 @@
   },
   {
    "decade": "1940s",
-   "lakeview_n": 175,
+   "lakeview_n": 167,
    "lakeview_median": 72.0,
    "pv_n": 13,
    "pv_median": 56.0,
@@ -72,31 +72,31 @@
   },
   {
    "decade": "1950s",
-   "lakeview_n": 164,
+   "lakeview_n": 163,
    "lakeview_median": 74.0,
-   "pv_n": 26,
-   "pv_median": 62.5,
-   "gap": 11.5
-  },
-  {
-   "decade": "1960s",
-   "lakeview_n": 166,
-   "lakeview_median": 78.0,
-   "pv_n": 34,
-   "pv_median": 70.0,
-   "gap": 8.0
-  },
-  {
-   "decade": "1970s",
-   "lakeview_n": 164,
-   "lakeview_median": 75.0,
-   "pv_n": 38,
-   "pv_median": 64.0,
+   "pv_n": 25,
+   "pv_median": 63.0,
    "gap": 11.0
   },
   {
+   "decade": "1960s",
+   "lakeview_n": 163,
+   "lakeview_median": 78.0,
+   "pv_n": 32,
+   "pv_median": 69.0,
+   "gap": 9.0
+  },
+  {
+   "decade": "1970s",
+   "lakeview_n": 163,
+   "lakeview_median": 75.0,
+   "pv_n": 37,
+   "pv_median": 65.0,
+   "gap": 10.0
+  },
+  {
    "decade": "1980s",
-   "lakeview_n": 140,
+   "lakeview_n": 138,
    "lakeview_median": 75.5,
    "pv_n": 42,
    "pv_median": 70.5,
@@ -106,7 +106,7 @@
    "decade": "1990s",
    "lakeview_n": 119,
    "lakeview_median": 79.0,
-   "pv_n": 53,
+   "pv_n": 52,
    "pv_median": 75.0,
    "gap": 4.0
   },
@@ -130,14 +130,14 @@
  "robustness_day_precision_only": [
   {
    "era": "1920-1949",
-   "lakeview_n": 343,
+   "lakeview_n": 328,
    "pv_n": 18,
    "gap": 12.5
   },
   {
    "era": "1950-1999",
-   "lakeview_n": 568,
-   "pv_n": 89,
+   "lakeview_n": 563,
+   "pv_n": 86,
    "gap": 8.0
   },
   {
@@ -150,25 +150,25 @@
  "robustness_both_dates_day": [
   {
    "era": "1920-1949",
-   "lakeview_n": 294,
+   "lakeview_n": 282,
    "lakeview_median": 69.0,
    "pv_n": 15,
    "pv_median": 57.0,
    "gap": 12.0,
    "ci95": [
-    -4.0,
+    -3.0,
     25.0
    ]
   },
   {
    "era": "1950-1999",
-   "lakeview_n": 555,
+   "lakeview_n": 550,
    "lakeview_median": 76.0,
-   "pv_n": 89,
+   "pv_n": 86,
    "pv_median": 68.0,
    "gap": 8.0,
    "ci95": [
-    1.0,
+    0.5,
     11.0
    ]
   },
@@ -186,25 +186,25 @@
   }
  ],
  "robustness_pv_birth_year_heaping": {
-  "n": 153,
+  "n": 151,
   "ending_0_or_5": 23,
-  "p_above_chance": 0.9532527059058246
+  "p_above_chance": 0.9453564817468226
  },
  "robustness_coverage": {
   "Lakeview": {
-   "n": 2101,
-   "usable": 2002,
-   "pct": 95.3
+   "n": 2065,
+   "usable": 1966,
+   "pct": 95.2
   },
   "Harmony": {
-   "n": 263,
-   "usable": 243,
-   "pct": 92.4
+   "n": 254,
+   "usable": 234,
+   "pct": 92.1
   },
   "Pleasant Valley": {
-   "n": 368,
-   "usable": 327,
-   "pct": 88.9
+   "n": 362,
+   "usable": 321,
+   "pct": 88.7
   }
  }
 }

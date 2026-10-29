@@ -697,21 +697,21 @@ child-burial practice on the two grounds cannot drive the result.
 
 | era | Lakeview | Pleasant Valley | gap | 95% interval | p |
 |---|---|---|---|---|---|
-| 1920–1949 | 69.0, n=480 | 56.0, n=39 | **13.0** | 3.0 to 22.5 | < 0.001 |
-| 1950–1999 | 76.0, n=753 | 68.0, n=193 | **8.0** | 2.0 to 10.0 | < 0.001 |
-| 2000–2026 | 79.0, n=334 | 75.0, n=74 | not established | −2.5 to 8.0 | 0.081 |
+| 1920–1949 | 69.0, n=461 | 56.0, n=39 | **13.0** | 3.0 to 22.0 | < 0.001 |
+| 1950–1999 | 76.0, n=746 | 68.0, n=188 | **8.0** | 2.0 to 9.5 | < 0.001 |
+| 2000–2026 | 79.0, n=334 | 75.0, n=74 | not established | −2.0 to 8.0 | 0.081 |
 
 **The comparison starts in 1920, not 1900.** Pleasant Valley opened in
-1922. Before 1920 the record holds 252 dated adult deaths at Lakeview and 3
-at Pleasant Valley, the earliest in 1911. Three cannot carry a median, so both
+1922. Before 1920 the record holds 246 dated adult deaths at Lakeview and 2
+at Pleasant Valley, the earliest in 1911. Two cannot carry a median, so both
 grounds are compared from 1920 and earlier deaths are left out on both sides.
 The page must say this, with the counts.
 
 **The 1920–1949 gap depends on year-only dates.** 24 of Pleasant Valley's 39
 adults in that era have no birth or death date to the day, most of them a
 birth year alone. With birth and death both dated to the day the gap is 12.0,
-but Pleasant Valley is left with 15 people and the interval runs from −4.0
-to 25.0. Those year-only birth years are not heaped: 23 of 153 end in 0 or 5,
+but Pleasant Valley is left with 15 people and the interval runs from −3.0
+to 25.0. Those year-only birth years are not heaped: 23 of 151 end in 0 or 5,
 against one in five by chance. The page must state the dependency beside the
 eras, with these numbers, and must drop the "stands on them" reassurance if
 the heaping check ever fails.
@@ -740,16 +740,16 @@ These are honesty rules, not style:
 - Era rows as in §11.2: medians, `n`, gaps, intervals, and `p` for 2000–2026
   within 0.0005 of 0.081.
 - By decade of death, 1920s to 2010s, the gap is
-  10.0, 12.0, 16.0, 11.5, 8.0, 11.0, 5.0, 4.0, 3.0, 6.0, on Pleasant Valley
-  `n` of 11, 15, 13, 26, 34, 38, 42, 53, 37, 31.
+  10.0, 12.0, 16.0, 11.0, 9.0, 10.0, 5.0, 4.0, 3.0, 6.0, on Pleasant Valley
+  `n` of 11, 15, 13, 25, 32, 37, 42, 52, 37, 31.
 - Restricted to deaths dated to the day, the era gaps are 12.5, 8.0, 3.5.
 - With birth and death both dated to the day: 1920–1949 gap 12.0 on
-  Pleasant Valley n=15, interval −4.0 to 25.0, not established; 1950–1999
-  8.0 on n=89, 1.0 to 11.0, established; 2000–2026 2.5 on n=48, −3.5 to 9.0.
-- Pleasant Valley's year-only birth years from 1920 on: 23 of 153 end in 0
+  Pleasant Valley n=15, interval −3.0 to 25.0, not established; 1950–1999
+  8.0 on n=86, 0.5 to 11.0, established; 2000–2026 2.5 on n=48, −3.5 to 9.0.
+- Pleasant Valley's year-only birth years from 1920 on: 23 of 151 end in 0
   or 5.
-- Share of each ground's people with a usable age at death: Lakeview 95.3%,
-  Harmony 92.4%, Pleasant Valley 88.9%.
+- Share of each ground's people with a usable age at death: Lakeview 95.2%,
+  Harmony 92.1%, Pleasant Valley 88.7%.
 - Before 1920: Lakeview 252 adults, Pleasant Valley 3, earliest 1911.
 
 ---
@@ -759,7 +759,7 @@ These are honesty rules, not style:
 Added 29 Oct 2026 at the owner's request. Both are measured aggregates that
 list the people they count.
 
-**The 1948 survey's limits.** `stone_1948` exists for 744 people, all at
+**The 1948 survey's limits.** `stone_1948` exists on 744 records (743 people), all at
 Lakeview; Harmony and Pleasant Valley have no 1948 readings in this record.
 The survey typed names, dates, ages and relationships: none of the 744 carries
 a verse, a religious phrase or a word like "Mother". Every place the app shows
@@ -771,7 +771,7 @@ a stone reading says so. It must never be presented as the full inscription.
 |---|---|---|---|
 | before 1900 | 14 of 42 | 0 | 25 of 33 |
 | 1900–1924 | 51 of 219 | 0 | 27 of 54 |
-| 1925–1948 | 38 of 310 | 1 | 6 of 22 |
+| 1925–1948 | 38 of 309 | 1 | 6 of 22 |
 
 Shares are of all adult (or child) stones. The record has no sex field and
 the app must not infer sex from names, so it never states a share of women's
@@ -781,8 +781,41 @@ stones.
 1948–50, so only a death after 1950 proves the name was cut first: 16. No
 death recorded anywhere: 4. Death recorded by 1950, date not yet cut: 5.
 
-**The one who lived on.** 128 resolved marriages; 113 have both death years
-(10 lack one, 3 rest on a disputed date, 2 are the same marriage recorded
-twice through duplicate records and are counted once). Median 14 years
+**The one who lived on.** 126 resolved marriages; 113 have both death years
+(10 lack one, 3 rest on a disputed date). Median 14 years
 between the deaths; 36 at twenty years or more, 16 at thirty or more. Whole
 years between death years only. No claim about wives against husbands.
+
+---
+
+## 13. Duplicate records
+
+Added 29 Oct 2026. `timeline_people.csv` holds some people twice, usually once
+from the Balch Library database and once from Find a Grave, under a spelling
+variant or a maiden and a married name. The owner reviewed 62 candidate pairs
+and recorded the decisions in `curation/duplicates.csv`: 51 same person, 4
+different people, 7 not sure. `data/` is not edited.
+
+**The build counts people, not records.** Each confirmed group becomes one
+person: the record named in `keep` stands for them; the others are listed on
+it as "also recorded as" and are still found by search and by id. A blank
+field on the kept record is filled from a folded copy; a field both carry is
+never changed. Family links follow a folded record to its person. "Not sure"
+pairs stay two people, each card naming the other. `scripts/longevity_gap.py`
+reads the same file and folds the same records.
+
+The record-level values of §9 and `CLAUDE.md` still hold for the CSV and are
+still tested. The values that describe people are now:
+
+| check | records | people |
+|---|---|---|
+| rows / people | 2,732 | 2,681 (51 folded into 50 people) |
+| `timeline_usable = yes` | 2,572 | 2,521 |
+| Lakeview · Harmony · Pleasant Valley | 2,101 · 263 · 368 | 2,065 · 254 · 362 |
+| with a 1948 stone reading | 744 | 743 |
+| with at least one family link | 399 | 394 |
+
+Living population (people): 1800 **11** · 1850 **327** · 1866 **597** · 1900
+**1,231** · 1927 **1,429** (still the peak) · 1950 **1,256** · 2000 **413**.
+On the records the build still reproduces `timeline_population.csv` exactly,
+and stops if it does not.

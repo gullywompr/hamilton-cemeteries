@@ -182,7 +182,7 @@ export class Drawer {
   close() { this.el.hidden = true; this.scrim.hidden = true; this.current = null; this.onClose && this.onClose(); }
   open(id, day = this.tl.day) {
     const p = this.D.byId.get(id); if (!p) return;
-    this.current = id;
+    this.current = p.id;
     this.body.innerHTML = this.render(p, day);
     this.el.hidden = false; this.scrim.hidden = false; this.el.scrollTop = 0;
     this.el.querySelector('.drawer-close').focus({ preventScroll: true });
@@ -253,6 +253,8 @@ export class Drawer {
       ${censusRows ? `<div class="sec"><h3>In the census</h3>${censusRows}</div>` : ''}
       ${news.length ? `<div class="sec"><h3>In the newspapers</h3>${news.map(f => `<div class="finding">${esc(f.quoted_snippet)}<div class="ft">${esc(f.source)}; ${esc(f.verdict)}. ${esc(f.new_fact)}</div></div>`).join('')}</div>` : ''}
       ${findings.length ? `<div class="sec"><h3>Corrections and verified findings</h3>${findings.map(f => `<div class="finding">${esc(f.finding_type.replace(/_/g, ' '))}: ${f.was ? `<span class="muted">was</span> ${esc(f.was)} <span class="muted">now</span> ` : ''}${esc(f.now)}<div class="ft">${esc(f.note)}${f.source_ark ? ` (ARK ${esc(f.source_ark)})` : ''}</div></div>`).join('')}</div>` : ''}
+      ${p.aka.length ? `<div class="sec"><h3>Also recorded as</h3>${p.aka.map(a => `<p class="small"><b>${esc(a.name)}</b> <span class="muted">${a.id} · ${esc(sourcesWords(a.src))}${a.plot ? ` · plot ${esc(a.plot)}` : ''} · ${esc(a.bd || '?')} to ${esc(a.dd || '?')}</span>${a.stone && a.stone !== p.stone ? `<br><span class="stone-line">${esc(a.stone)}</span>` : ''}</p>`).join('')}<p class="stone-note">The same person entered twice in the sources, confirmed by the project's owner on 29 October 2026 (curation/duplicates.csv). Counted once everywhere in this app; both records are kept in the data.</p></div>` : ''}
+      ${p.maybe.length ? `<div class="sec"><h3>Possibly the same person as</h3>${p.maybe.map(m => `<p class="small"><a href="#/person/${m.id}" data-person="${m.id}">${esc(m.name)}</a> <span class="muted">${m.id}</span></p>`).join('')}<p class="stone-note">The dates agree and part of the name is shared, but the owner could not confirm it. Both are counted as separate people.</p></div>` : ''}
       <div class="source"><span>SOURCE</span>${esc(sourcesWords(p.src))}${p.use !== 'yes' ? `<br>Timeline status: ${esc(p.use)}${p.note ? ` (${esc(p.note)})` : ''}.` : ''}</div>
     `;
   }

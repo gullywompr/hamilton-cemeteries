@@ -138,7 +138,7 @@ export function renderRecord(el, D, ctx, params = {}) {
     <h1 data-k="What the sources contain, and where they stop">The record</h1>
     <p class="lede">What the sources contain, where they fall silent, and what the app is therefore allowed to say. Three kinds of thing appear in this app and they rest on different evidence: a documented person, a measured count, and an absence of record.</p>
     <div class="stat-row">
-      <div class="stat"><div class="v">${n(S.people)}</div><div class="k">people, each a row traced to a source</div></div>
+      <div class="stat"><div class="v">${n(S.people)}</div><div class="k">people, in ${n(S.records.rows)} records each traced to a source</div></div>
       <div class="stat"><div class="v">${n(S.usable.yes)}</div><div class="k">placeable from birth to death</div></div>
       <div class="stat"><div class="v">${n(S.stone)}</div><div class="k">Lakeview stones read in 1948; none recorded for Harmony or Pleasant Valley</div></div>
       <div class="stat"><div class="v">${n(S.censusMatched)}</div><div class="k">matched to at least one census</div></div>
@@ -146,6 +146,7 @@ export function renderRecord(el, D, ctx, params = {}) {
       <div class="stat"><div class="v">${n(S.disputed)}</div><div class="k">with a disputed date, both readings kept</div></div>
     </div>
 
+    <p class="prose small-prose">${n(S.folded)} records are the same person entered twice, once from each source, under a spelling variant or a maiden and a married name. The project's owner confirmed each pair on 29 October 2026; the app counts ${n(S.mergedPeople)} people once each and keeps every record in the data. ${n(S.maybePairs)} further pairs could not be confirmed and are counted separately, each naming the other. The decisions are in <code>curation/duplicates.csv</code>.</p>
     <div class="tabs" role="tablist" aria-label="Sections of the record">${RECORD_TABS.map(([k, label]) => `<button class="tab" role="tab" id="rtab-${k}" data-tab="${k}" aria-selected="false" aria-controls="rt-${k}" tabindex="-1">${label}</button>`).join('')}</div>
 
     <section class="tab-panel" id="rt-burials" role="tabpanel" aria-labelledby="rtab-burials" hidden>
@@ -499,14 +500,18 @@ function occupationsTable(D) {
   <p class="prose small" style="margin-top:8px">"At school" is left out of the commonest list. A match marked name-only is weaker than one on name and birth year; each person's record says which.</p>`;
 }
 function selfCheck(D) {
-  const S = D.summary;
+  const S = D.summary, R = S.records;
   const checks = [
-    ['timeline_people.csv rows', S.people, 2732], ['timeline_usable = yes', S.usable.yes, 2572], ['timeline_usable = no', S.usable.no, 63], ['death-only', S.usable.deathOnly, 50], ['birth-only', S.usable.birthOnly, 47],
-    ['Lakeview', S.cemeteries.L, 2101], ['Harmony', S.cemeteries.H, 263], ['Pleasant Valley', S.cemeteries.P, 368], ['cause_of_death populated', S.cod, 17], ['stone_1948 populated', S.stone, 744], ['date_disputed = yes', S.disputed, 22],
-    ['matched to a census', S.censusMatched, 374], ['with a census occupation', S.censusOccupation, 212], ['context_events.csv rows', S.events, 137], ['context_eras.csv rows', S.eras, 23],
-    ['alive in 1800', D.popByYear.get(1800), 11], ['alive in 1850', D.popByYear.get(1850), 334], ['alive in 1900', D.popByYear.get(1900), 1267], ['alive in 1927 (peak)', D.popByYear.get(1927), 1455], ['alive in 1950', D.popByYear.get(1950), 1268], ['alive in 2000', D.popByYear.get(2000), 413],
+    ['Records, as data/timeline_people.csv holds them', null],
+    ['timeline_people.csv rows', R.rows, 2732], ['timeline_usable = yes', R.usable.yes, 2572], ['timeline_usable = no', R.usable.no, 63], ['death-only', R.usable.deathOnly, 50], ['birth-only', R.usable.birthOnly, 47],
+    ['Lakeview', R.cemeteries.L, 2101], ['Harmony', R.cemeteries.H, 263], ['Pleasant Valley', R.cemeteries.P, 368], ['cause_of_death populated', R.cod, 17], ['stone_1948 populated', R.stone, 744], ['date_disputed = yes', R.disputed, 22],
+    ['matched to a census', R.censusMatched, 374], ['with a census occupation', R.censusOccupation, 212], ['context_events.csv rows', S.events, 137], ['context_eras.csv rows', S.eras, 23],
+    ['People, after the owner-confirmed duplicates are counted once', null],
+    ['people', S.people, 2681], ['records folded into another', S.folded, 51], ['timeline_usable = yes', S.usable.yes, 2521],
+    ['Lakeview', S.cemeteries.L, 2065], ['Harmony', S.cemeteries.H, 254], ['Pleasant Valley', S.cemeteries.P, 362], ['with a 1948 stone reading', S.stone, 743],
+    ['alive in 1800', D.popByYear.get(1800), 11], ['alive in 1850', D.popByYear.get(1850), 327], ['alive in 1900', D.popByYear.get(1900), 1231], ['alive in 1927 (peak)', D.popByYear.get(1927), 1429], ['alive in 1950', D.popByYear.get(1950), 1256], ['alive in 2000', D.popByYear.get(2000), 413],
   ];
-  return `<table class="tbl"><thead><tr><th>check</th><th class="n">computed</th><th class="n">expected</th><th></th></tr></thead><tbody>${checks.map(([k, v, e]) => `<tr><td>${k}</td><td class="n">${n(v)}</td><td class="n">${n(e)}</td><td>${v === e ? 'agrees' : 'DISAGREES'}</td></tr>`).join('')}</tbody></table>`;
+  return `<table class="tbl"><thead><tr><th>check</th><th class="n">computed</th><th class="n">expected</th><th></th></tr></thead><tbody>${checks.map(([k, v, e]) => v === null ? `<tr><td colspan="4" class="serif" style="padding-top:14px">${k}</td></tr>` : `<tr><td>${k}</td><td class="n">${n(v)}</td><td class="n">${n(e)}</td><td>${v === e ? 'agrees' : 'DISAGREES'}</td></tr>`).join('')}</tbody></table>`;
 }
 
 // ---------------------------------------------------------------------------

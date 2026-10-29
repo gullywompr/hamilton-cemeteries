@@ -5,7 +5,7 @@
 A dataset and a build specification. There is no application code yet — that
 is what you are here to write.
 
-The data documents **2,732 people buried in the three cemeteries of Hamilton,
+The data documents **2,732 records of 2,681 people buried in the three cemeteries of Hamilton,
 Virginia** — Lakeview, Harmony United Methodist, and Pleasant Valley — spanning
 **1754 to 2026**. It was assembled over several weeks from cemetery records,
 a 1948 DAR stone survey, the Loudoun County death register, seven US censuses
@@ -175,17 +175,26 @@ disagreeing with any of these has a join or filter bug.
 | ≥1 census occupation | 212 |
 | `context_events.csv` rows | 137 |
 | `context_events.csv` layers | national 41 · education 26 · regional 21 · medical 22 · economic 17 · local 10 |
-| years lived, 1920–1949 gap | 13.0 (Lakeview n=480, Pleasant Valley n=39) |
-| years lived, 1950–1999 gap | 8.0 (n=753, n=193) |
+| years lived, 1920–1949 gap | 13.0 (Lakeview n=461, Pleasant Valley n=39) |
+| years lived, 1950–1999 gap | 8.0 (n=746, n=188) |
 | years lived, 2000–2026 | not established, p = 0.081 |
 
-**Living population** (`timeline_usable = yes`, `birth_year ≤ Y ≤ death_year`):
+**Living population** (`timeline_usable = yes`, `birth_year ≤ Y ≤ death_year`), counted on the records, as in `timeline_population.csv`:
 
 | 1800 | 1850 | 1900 | **1927** | 1950 | 2000 |
 |---|---|---|---|---|---|
 | 11 | 334 | 1,267 | **1,455** | 1,268 | 413 |
 
 1927 is the peak. Both the rise and the fall are real.
+
+**Duplicate records (29 Oct 2026).** 51 records are the same person entered
+twice; the owner confirmed each pair in `curation/duplicates.csv`. The app
+counts people, so it shows **2,681 people**, and on people the curve reads
+1800 **11** · 1850 **327** · 1900 **1,231** · 1927 **1,429** (still the peak) ·
+1950 **1,256** · 2000 **413**. The record values above still hold for the CSV
+and are still tested. The rules and the full people-level values are
+`APP_SPEC.md` §13. Do not merge or delete rows in `data/` to fix a duplicate:
+record the decision in `curation/duplicates.csv`.
 
 ---
 

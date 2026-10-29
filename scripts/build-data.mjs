@@ -1,8 +1,9 @@
 // Builds app/data/*.json from data/*.csv.
 //
 // data/ is read-only input. This script only reads it. Every output file is
-// a straight reshaping of one or more CSVs; nothing is invented, estimated
-// or filled in. Where a rule from APP_SPEC.md applies (timeline_usable,
+// a straight reshaping of one or more CSVs; nothing is invented or
+// estimated. The one merge is the owner's: records confirmed as the same
+// person in curation/duplicates.csv become one person (section 1). Where a rule from APP_SPEC.md applies (timeline_usable,
 // precision, disputed dates, the relationship filter) it is applied here
 // and noted inline.
 
@@ -81,7 +82,7 @@ const stoneOpen = (s) => {
   if (/(?:-|–)\s*(?:19[-_]*)?\s*$/.test(t) || /19--|__/.test(t)) return true;
   return /\bd\.\s*$/.test(t) && (t.match(/\b1[789]\d\d\b/g) || []).length < 2;
 };
-const people = peopleRows.map(r => {
+const records = peopleRows.map(r => {
   const census = CENSUS_YEARS
     .filter(y => r[`census_${y}_match`] || r[`census_${y}_occupation`])
     .map(y => ({ y, occ: r[`census_${y}_occupation`] || '', ind: r[`census_${y}_industry`] || '', cls: r[`census_${y}_class`] || '', match: r[`census_${y}_match`] || '', zone: r[`census_${y}_zone`] || '' }));
@@ -102,14 +103,78 @@ const people = peopleRows.map(r => {
   if (p.disp) p.alt = altYears(p.id);
   return p;
 });
-const ids = new Set(people.map(p => p.id));
-for (const p of people) for (const f of p.fam) if (!ids.has(f.id)) throw new Error(`dangling id ${f.id} on ${p.id}`);
+{
+  const ids = new Set(records.map(p => p.id));
+  for (const p of records) for (const f of p.fam) if (!ids.has(f.id)) throw new Error(`dangling id ${f.id} on ${p.id}`);
+}
+
+// Duplicate records (curation/duplicates.csv, the owner's decisions of 29 Oct
+// 2026). data/ keeps every record; here each confirmed group becomes one
+// person: the record named in `keep` stands for them, the others are listed
+// on it as `aka` and still found by search and by id. A blank field on the
+// kept record takes the value from a folded copy of the same person; no field
+// that both carry is changed. Pairs marked "not sure" stay two people, each
+// naming the other as `maybe`. Every count from here on is of people.
+const dupRows = readCsv(join(ROOT, 'curation', 'duplicates.csv'));
+const recById = new Map(records.map(p => [p.id, p]));
+const KEEP = new Map();           // folded record id -> kept record id
+for (const d of dupRows) {
+  if (d.verdict !== 'same person') continue;
+  if (!recById.has(d.a_id) || !recById.has(d.b_id) || !recById.has(d.keep)) throw new Error(`duplicates.csv: unknown id in ${d.a_id}-${d.b_id}`);
+  if (d.keep !== d.a_id && d.keep !== d.b_id && !KEEP.has(d.a_id) && !KEEP.has(d.b_id)) throw new Error(`duplicates.csv: keep ${d.keep} is in neither ${d.a_id} nor ${d.b_id}`);
+  for (const x of [d.a_id, d.b_id]) if (x !== d.keep) {
+    if (KEEP.has(x) && KEEP.get(x) !== d.keep) throw new Error(`duplicates.csv: ${x} kept as two different people`);
+    KEEP.set(x, d.keep);
+  }
+}
+for (const k of new Set(KEEP.values())) if (KEEP.has(k)) throw new Error(`duplicates.csv: kept record ${k} is itself folded`);
+const canon = (id) => KEEP.get(id) || id;
+const FOLDED = new Set(KEEP.keys());
+const FILL = ['plot', 'cod', 'occ', 'regParents', 'birthplace', 'regVerbatim', 'stone', 'mil'];
+const people = records.filter(p => !FOLDED.has(p.id)).map(p => ({ ...p, fam: p.fam.slice(), census: p.census.slice(), aka: [], maybe: [] }));
+const personById = new Map(people.map(p => [p.id, p]));
+for (const r of records) {
+  if (!FOLDED.has(r.id)) continue;
+  const p = personById.get(canon(r.id));
+  p.aka.push({ id: r.id, name: r.name, src: r.src, bd: r.bd, dd: r.dd, plot: r.plot, stone: r.stone });
+  for (const k of FILL) if (!p[k] && r[k]) p[k] = r[k];
+  if (!p.stone && r.stone) p.stoneOpen = r.stoneOpen;
+  if (!p.vet && r.vet) p.vet = true;
+  for (const c of r.census) if (!p.census.some(x => x.y === c.y)) p.census.push(c);
+  p.census.sort((a, b) => a.y - b.y);
+  p.fam.push(...r.fam);
+}
+// Family links follow a folded record to its person; a link a person now has
+// twice (once through each copy) is kept once, and a link to oneself is dropped.
+for (const p of people) {
+  const seen = new Set();
+  p.fam = p.fam.map(f => ({ ...f, id: canon(f.id) })).filter(f => {
+    const k = `${f.rel}|${f.id}`;
+    if (f.id === p.id || seen.has(k)) return false;
+    seen.add(k); return true;
+  });
+  for (const f of p.fam) { const q = personById.get(f.id); if (q) f.name = q.name; }
+}
+for (const d of dupRows) {
+  if (d.verdict !== 'not sure') continue;
+  const a = personById.get(canon(d.a_id)), b = personById.get(canon(d.b_id));
+  if (!a || !b || a === b) continue;
+  if (!a.maybe.some(m => m.id === b.id)) a.maybe.push({ id: b.id, name: b.name });
+  if (!b.maybe.some(m => m.id === a.id)) b.maybe.push({ id: a.id, name: a.name });
+}
+for (const p of people) for (const f of p.fam) if (!personById.has(f.id)) throw new Error(`dangling id ${f.id} on ${p.id}`);
 write('people.json', people);
 
 // ---------------------------------------------------------------------------
 // 2. Population, events, eras, layers
 // ---------------------------------------------------------------------------
-write('population.json', csv('timeline_population.csv').map(r => [int(r.year), int(r.people_alive_in_dataset)]));
+// Alive in each year: timeline_usable = yes and birth_year <= Y <= death_year
+// (§4). Computed here so it counts people, not records. On the records it
+// must reproduce data/timeline_population.csv exactly, or the rule has drifted.
+const aliveIn = (list, y) => list.reduce((n, p) => n + (p.use === 'yes' && p.by <= y && y <= p.dy ? 1 : 0), 0);
+const popFile = csv('timeline_population.csv').map(r => [int(r.year), int(r.people_alive_in_dataset)]);
+for (const [y, n] of popFile) if (aliveIn(records, y) !== n) throw new Error(`population: ${y} is ${aliveIn(records, y)} on the records but ${n} in timeline_population.csv`);
+write('population.json', popFile.map(([y]) => [y, aliveIn(people, y)]));
 
 const events = csv('context_events.csv').map((r, i) => ({
   i, date: r.date, precision: r.precision, layer: r.layer, title: r.title, note: r.note,
@@ -248,8 +313,16 @@ write('register.json', {
 // 7. Summary used for the acceptance self-check in the app's "record" view
 // ---------------------------------------------------------------------------
 const count = (arr, f) => arr.filter(f).length;
+const recSummary = (list) => ({
+  rows: list.length,
+  usable: { yes: count(list, p => p.use === 'yes'), no: count(list, p => p.use === 'no'), deathOnly: count(list, p => p.use === 'death-only'), birthOnly: count(list, p => p.use === 'birth-only') },
+  cemeteries: { L: count(list, p => p.cem === 'L'), H: count(list, p => p.cem === 'H'), P: count(list, p => p.cem === 'P') },
+  cod: count(list, p => p.cod), stone: count(list, p => p.stone), disputed: count(list, p => p.disp),
+  censusMatched: count(list, p => p.census.length), censusOccupation: count(list, p => p.census.some(c => c.occ)),
+});
 write('summary.json', {
   built: new Date().toISOString(),
+  records: recSummary(records), folded: FOLDED.size, mergedPeople: count(people, p => p.aka.length), maybePairs: count(dupRows, d => d.verdict === 'not sure'),
   people: people.length,
   usable: { yes: count(people, p => p.use === 'yes'), no: count(people, p => p.use === 'no'), deathOnly: count(people, p => p.use === 'death-only'), birthOnly: count(people, p => p.use === 'birth-only') },
   cemeteries: { L: count(people, p => p.cem === 'L'), H: count(people, p => p.cem === 'H'), P: count(people, p => p.cem === 'P') },
@@ -276,7 +349,7 @@ write('summary.json', {
 {
   const I = (x) => { const v = Number.parseFloat(x); return Number.isFinite(v) ? Math.trunc(v) : null; };
   const median = (a) => { const b = a.slice().sort((x, y) => x - y), m = b.length >> 1; return b.length % 2 ? b[m] : (b[m - 1] + b[m]) / 2; };
-  const U = peopleRows.filter(r => r.timeline_usable === 'yes' && I(r.death_year) !== null && I(r.age_at_death) !== null);
+  const U = peopleRows.filter(r => !FOLDED.has(r.person_id) && r.timeline_usable === 'yes' && I(r.death_year) !== null && I(r.age_at_death) !== null);
   const adults = (cem, lo, hi, dayOnly = false, bothDay = false) => U.filter(r => r.cemetery === cem && I(r.death_year) >= lo && I(r.death_year) <= hi
     && I(r.age_at_death) >= 20 && (!dayOnly || r.death_precision === 'day')
     && (!bothDay || (r.death_precision === 'day' && r.birth_precision === 'day'))).map(r => I(r.age_at_death));
@@ -359,7 +432,7 @@ write('summary.json', {
   pvHeaping.p = ref.robustness_pv_birth_year_heaping.p_above_chance;
   const coverage = {};
   for (const cem of ['Lakeview', 'Harmony', 'Pleasant Valley']) {
-    const sub = peopleRows.filter(r => r.cemetery === cem);
+    const sub = peopleRows.filter(r => !FOLDED.has(r.person_id) && r.cemetery === cem);
     const ok = sub.filter(r => r.timeline_usable === 'yes' && I(r.age_at_death) !== null);
     coverage[cem] = { n: sub.length, usable: ok.length, pct: Math.round(1000 * ok.length / sub.length) / 10 };
     for (const k of ['n', 'usable', 'pct']) same(`coverage ${cem} ${k}`, coverage[cem][k], ref.robustness_coverage[cem][k]);

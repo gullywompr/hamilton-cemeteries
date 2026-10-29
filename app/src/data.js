@@ -12,6 +12,16 @@ export async function loadAll() {
   const D = Object.fromEntries(FILES.map((f, i) => [f, loaded[i]]));
 
   D.byId = new Map(D.people.map(p => [p.id, p]));
+  // A record folded into a person (curation/duplicates.csv) still resolves:
+  // its id opens the person, and anything keyed by it joins the person's.
+  for (const p of D.people) for (const a of p.aka) D.byId.set(a.id, p);
+  const canon = (id) => D.byId.get(id)?.id ?? id;
+  D.canon = canon;
+  for (const k of ['verified', 'newspaper']) {
+    const m = {};
+    for (const [id, rows] of Object.entries(D.findings[k])) (m[canon(id)] ||= []).push(...rows);
+    D.findings[k] = m;
+  }
   D.popByYear = new Map(D.population);
   D.popMax = Math.max(...D.population.map(x => x[1]));
 
@@ -58,15 +68,16 @@ export async function loadAll() {
   }];
 
   // Family events indexed by person; disputed readings by person.
-  D.famEventsByPerson = groupBy(D.family.events, e => e.person_id);
-  D.disputedByPerson = groupBy(D.disputed, d => d.person_id);
-  D.marriageByPerson = groupBy(D.family.marriages, m => m.person_id);
+  D.famEventsByPerson = groupBy(D.family.events, e => canon(e.person_id));
+  D.disputedByPerson = groupBy(D.disputed, d => canon(d.person_id));
+  D.marriageByPerson = groupBy(D.family.marriages, m => canon(m.person_id));
   D.lossClustersByPerson = new Map();
   for (const c of D.family.lossesCemetery) for (const x of c.people) if (x.id) {
-    if (!D.lossClustersByPerson.has(x.id)) D.lossClustersByPerson.set(x.id, []);
-    D.lossClustersByPerson.get(x.id).push(c);
+    const id = canon(x.id);
+    if (!D.lossClustersByPerson.has(id)) D.lossClustersByPerson.set(id, []);
+    if (!D.lossClustersByPerson.get(id).includes(c)) D.lossClustersByPerson.get(id).push(c);
   }
-  D.registerByPerson = groupBy(D.register.matchedRows, r => r.pid);
+  D.registerByPerson = groupBy(D.register.matchedRows, r => canon(r.pid));
 
   // Deaths ordered by earliest possible death day, for "deaths around this date".
   D.deaths = D.people.filter(p => p.dd && p.dp !== 'none').map(p => ({ p, iv: interval(p.dd, p.dp) })).filter(x => x.iv).sort((a, b) => a.iv.lo - b.iv.lo);

@@ -116,6 +116,13 @@ survey recorded names, dates, ages and relationships, not the full
 inscription, and explains an open death date. Rules and values:
 `APP_SPEC.md` §12.
 
+**duplicate records.** `curation/duplicates.csv` holds the owner's decisions
+on 62 candidate pairs. The build folds each confirmed record into the person
+named in `keep` (people.json carries it as `aka`), counts people rather than
+records everywhere, and computes the living-population curve itself after
+checking that the records still reproduce `timeline_population.csv`. Folded
+ids still open their person. Rules: `APP_SPEC.md` §13.
+
 **county context.** The demography charts are context and are captioned as
 not a denominator. The county grave counts are shown beside the project's and
 captioned as lower, not a total.

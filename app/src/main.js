@@ -108,7 +108,7 @@ async function main() {
   // ---- search ----
   const q = $('#q'), qr = $('#q-results');
   const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-  const index = D.people.map(p => ({ p, t: norm(`${p.name} ${p.surname || ''} ${p.plot || ''} ${p.id}`) }));
+  const index = D.people.map(p => ({ p, t: norm(`${p.name} ${p.surname || ''} ${p.plot || ''} ${p.id} ${p.aka.map(a => `${a.name} ${a.id} ${a.plot || ''}`).join(' ')}`) }));
   let sel = -1, results = [];
   const showResults = () => {
     const v = norm(q.value.trim());

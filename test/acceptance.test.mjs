@@ -10,31 +10,58 @@ const people = load('people.json');
 const byId = new Map(people.map(p => [p.id, p]));
 const count = (f) => people.filter(f).length;
 
-test('counts', () => {
-  assert.equal(people.length, 2732);
-  assert.equal(count(p => p.use === 'yes'), 2572);
+test('records: data/timeline_people.csv as it stands (CLAUDE.md acceptance values)', () => {
+  const R = load('summary.json').records;
+  assert.equal(R.rows, 2732);
+  assert.deepEqual(R.usable, { yes: 2572, no: 63, deathOnly: 50, birthOnly: 47 });
+  assert.deepEqual(R.cemeteries, { L: 2101, H: 263, P: 368 });
+  assert.deepEqual([R.cod, R.stone, R.disputed, R.censusMatched, R.censusOccupation], [17, 744, 22, 374, 212]);
+});
+
+test('people: owner-confirmed duplicates counted once (curation/duplicates.csv)', () => {
+  assert.equal(people.length, 2681);
+  const S = load('summary.json');
+  assert.deepEqual([S.folded, S.mergedPeople, S.maybePairs], [51, 50, 7]);
+  assert.equal(people.length + S.folded, S.records.rows);
+  assert.equal(people.reduce((n, p) => n + p.aka.length, 0), 51);
+  assert.equal(count(p => p.use === 'yes'), 2521);
   assert.equal(count(p => p.use === 'no'), 63);
   assert.equal(count(p => p.use === 'death-only'), 50);
   assert.equal(count(p => p.use === 'birth-only'), 47);
-  assert.equal(count(p => p.cem === 'L'), 2101);
-  assert.equal(count(p => p.cem === 'H'), 263);
-  assert.equal(count(p => p.cem === 'P'), 368);
+  assert.equal(count(p => p.cem === 'L'), 2065);
+  assert.equal(count(p => p.cem === 'H'), 254);
+  assert.equal(count(p => p.cem === 'P'), 362);
   assert.equal(count(p => p.cod), 17);
-  assert.equal(count(p => p.stone), 744);
+  assert.equal(count(p => p.stone), 743);
   assert.equal(count(p => p.disp), 22);
   assert.equal(count(p => p.census.length), 374);
   assert.equal(count(p => p.census.some(c => c.occ)), 212);
-  assert.equal(count(p => p.fam.length), 399);
+  assert.equal(count(p => p.fam.length), 394);
+  // no folded record survives as a person, and no link points at one
+  const folded = new Set(people.flatMap(p => p.aka.map(a => a.id)));
+  assert.ok(people.every(p => !folded.has(p.id) && p.fam.every(f => !folded.has(f.id) && f.id !== p.id)));
+  // the Trammell / Thompson couple: two pairs of records, one marriage
+  const eliz = people.find(p => p.aka.some(a => a.id === 'PV0356') || p.id === 'PV0356');
+  assert.equal(eliz.fam.filter(f => f.rel === 'spouse').length, 1);
+  // "not sure" pairs stay two people and name each other
+  const a = byId.get('LV0363'), b = byId.get('LV1150');
+  assert.ok(a && b && a.maybe.some(m => m.id === 'LV1150') && b.maybe.some(m => m.id === 'LV0363'));
+});
+
+test('the site header states the people count', () => {
+  const html = readFileSync(new URL('../app/index.html', import.meta.url), 'utf8');
+  assert.match(html, new RegExp(`Three cemeteries, ${people.length.toLocaleString('en-US')} people`));
 });
 
 test('living population by year matches the spec and reproduces timeline_population.csv exactly', () => {
-  const expect = { 1800: 11, 1850: 334, 1866: 617, 1900: 1267, 1927: 1455, 1950: 1268, 2000: 413 };
+  // people, not records: the build checks the records against timeline_population.csv
+  const expect = { 1800: 11, 1850: 327, 1866: 597, 1900: 1231, 1927: 1429, 1950: 1256, 2000: 413 };
   for (const [y, n] of Object.entries(expect)) assert.equal(aliveCount(people, +y), n, `year ${y}`);
   const pop = load('population.json');
   assert.equal(pop.length, 273);
   for (const [y, n] of pop) assert.equal(aliveCount(people, y), n, `population file year ${y}`);
   const peak = pop.reduce((a, b) => (b[1] > a[1] ? b : a));
-  assert.deepEqual(peak, [1927, 1455]);
+  assert.deepEqual(peak, [1927, 1429]);
 });
 
 test('family integrity: the C-52 Taylor plot', () => {
@@ -145,8 +172,8 @@ test('longevity: era medians, n and gaps', () => {
   const L = load('longevity.json');
   const got = L.eras.map(e => [e.era, e.lakeview_median, e.lakeview_n, e.pv_median, e.pv_n, e.gap]);
   assert.deepEqual(got, [
-    ['1920-1949', 69.0, 480, 56.0, 39, 13.0],
-    ['1950-1999', 76.0, 753, 68.0, 193, 8.0],
+    ['1920-1949', 69.0, 461, 56.0, 39, 13.0],
+    ['1950-1999', 76.0, 746, 68.0, 188, 8.0],
     ['2000-2026', 79.0, 334, 75.0, 74, 4.0],
   ]);
   assert.equal(L.measure, 'median age at death, adults who reached 20');
@@ -156,8 +183,8 @@ test('longevity: era medians, n and gaps', () => {
 test('longevity: gap by decade, 1920s to 2010s, with Pleasant Valley n', () => {
   const L = load('longevity.json');
   assert.deepEqual(L.decades.map(d => d.decade), [1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010]);
-  assert.deepEqual(L.decades.map(d => d.gap), [10.0, 12.0, 16.0, 11.5, 8.0, 11.0, 5.0, 4.0, 3.0, 6.0]);
-  assert.deepEqual(L.decades.map(d => d.pv_n), [11, 15, 13, 26, 34, 38, 42, 53, 37, 31]);
+  assert.deepEqual(L.decades.map(d => d.gap), [10.0, 12.0, 16.0, 11.0, 9.0, 10.0, 5.0, 4.0, 3.0, 6.0]);
+  assert.deepEqual(L.decades.map(d => d.pv_n), [11, 15, 13, 25, 32, 37, 42, 52, 37, 31]);
 });
 
 test('longevity: 2000-2026 is not established, the earlier eras are', () => {
@@ -166,14 +193,14 @@ test('longevity: 2000-2026 is not established, the earlier eras are', () => {
   assert.ok(a.significant && b.significant);
   assert.equal(c.significant, false);
   assert.ok(Math.abs(c.p - 0.081) < 0.0005, `p ${c.p}`);
-  assert.deepEqual(c.ci95, [-2.5, 8.0]);
+  assert.deepEqual(c.ci95, [-2.0, 8.0]);
   assert.ok(c.ci95[0] < 0 && c.ci95[1] > 0, 'interval crosses zero');
 });
 
 test('longevity: robustness matches the reference output', () => {
   const L = load('longevity.json');
   assert.deepEqual(L.dayPrecision.map(r => r.gap), [12.5, 8.0, 3.5]);
-  assert.deepEqual(Object.values(L.coverage).map(c => c.pct), [95.3, 92.4, 88.9]);
+  assert.deepEqual(Object.values(L.coverage).map(c => c.pct), [95.2, 92.1, 88.7]);
   assert.equal(L.reference.agrees, true);
 });
 
@@ -195,37 +222,37 @@ test('longevity: the rendered section keeps the rules', async () => {
 
 test('longevity: the page says why the comparison starts where it does', async () => {
   const L = load('longevity.json');
-  assert.deepEqual(L.before, { start: 1920, lakeview_n: 252, pv_n: 3, pv_earliest_death: 1911 });
+  assert.deepEqual(L.before, { start: 1920, lakeview_n: 246, pv_n: 2, pv_earliest_death: 1911 });
   const { longevitySection } = await import('../app/src/views.js');
   const text = longevitySection(L).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
   assert.match(text, /Why the comparison starts in 1920/);
-  assert.match(text, /252 dated adult deaths at Lakeview and 3 at Pleasant Valley, the earliest in 1911, before the ground's 1922 opening/);
+  assert.match(text, /246 dated adult deaths at Lakeview and 2 at Pleasant Valley, the earliest in 1911, before the ground's 1922 opening/);
 });
 
 test('longevity: the 1920-1949 gap is shown to depend on year-only dates', async () => {
   const L = load('longevity.json');
   assert.deepEqual(L.bothDay.map(r => [r.era, r.lakeview_n, r.pv_n, r.gap, r.ci95, r.established]), [
-    ['1920-1949', 294, 15, 12.0, [-4.0, 25.0], false],
-    ['1950-1999', 555, 89, 8.0, [1.0, 11.0], true],
+    ['1920-1949', 282, 15, 12.0, [-3.0, 25.0], false],
+    ['1950-1999', 550, 86, 8.0, [0.5, 11.0], true],
     ['2000-2026', 311, 48, 2.5, [-3.5, 9.0], false],
   ]);
-  assert.deepEqual([L.pvHeaping.n, L.pvHeaping.ending_0_or_5], [153, 23]);
+  assert.deepEqual([L.pvHeaping.n, L.pvHeaping.ending_0_or_5], [151, 23]);
   assert.ok(L.pvHeaping.p > 0.05);
   const { longevitySection } = await import('../app/src/views.js');
   const text = longevitySection(L).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
   assert.match(text, /The 1920 – 1949 gap depends on dates known only to the year\./);
   assert.match(text, /24 of Pleasant Valley's 39 adults in that era have no birth or death date to the day/);
-  assert.match(text, /with 15 people left its interval runs from −4\.0 to 25\.0 and includes zero/);
-  assert.match(text, /23 of 153 end in 0 or 5, fewer than the one in five/);
+  assert.match(text, /with 15 people left its interval runs from −3\.0 to 25\.0 and includes zero/);
+  assert.match(text, /23 of 151 end in 0 or 5, fewer than the one in five/);
   // only the first era is flagged: 2000-2026 was never established, 1950-1999 holds
   assert.equal((text.match(/depends on dates known only to the year/g) || []).length, 1);
 });
 
 test('stones: how the 1948 survey names people, and the stones cut before the death', async () => {
   const { naming: N } = load('stones.json');
-  assert.equal(N.read, 744);
-  assert.deepEqual(N.byCemetery, { L: 744, H: 0, P: 0 });
-  assert.deepEqual(N.periods.map(p => [p.adults, p.wifeOf, p.husbandOf, p.kids, p.childOf]), [[42, 14, 0, 33, 25], [219, 51, 0, 54, 27], [310, 38, 1, 22, 6]]);
+  assert.equal(N.read, 743);
+  assert.deepEqual(N.byCemetery, { L: 743, H: 0, P: 0 });
+  assert.deepEqual(N.periods.map(p => [p.adults, p.wifeOf, p.husbandOf, p.kids, p.childOf]), [[42, 14, 0, 33, 25], [219, 51, 0, 54, 27], [309, 38, 1, 22, 6]]);
   assert.deepEqual([N.wifeOf.length, N.husbandOf.length, N.childOf.length], [103, 1, 58]);
   const O = N.openDate;
   assert.deepEqual([O.after.length, O.noDeath.length, O.neverCut.length], [16, 4, 5]);
@@ -241,10 +268,10 @@ test('stones: how the 1948 survey names people, and the stones cut before the de
 
 test('stones: the one who lived on', () => {
   const { widowhood: W } = load('stones.json');
-  assert.deepEqual([W.linked, W.couples, W.missingYear, W.disputedOut, W.sameCouple], [128, 113, 10, 3, 2]);
+  assert.deepEqual([W.linked, W.couples, W.missingYear, W.disputedOut, W.sameCouple], [126, 113, 10, 3, 0]);
   assert.equal(W.median, 14);
   assert.deepEqual([W.atLeast20, W.atLeast30, W.long.length], [36, 16, 16]);
-  // the Trammell / Thompson marriage exists as two crossed pairs of records; it is counted once
+  // the Trammell / Thompson marriage was two crossed pairs of records; merged, it appears once
   assert.equal(W.long.filter(c => /Trammel|Thompson/.test(c.first.name + c.last.name)).length, 1);
   assert.equal(W.buckets.reduce((s, b) => s + b.n, 0), W.couples);
   assert.ok(W.long.every(c => c.last.dy - c.first.dy === c.years && c.years >= 30));
