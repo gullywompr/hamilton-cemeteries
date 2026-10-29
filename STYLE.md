@@ -190,6 +190,33 @@ lets the data carry it.
 
 Match that. Where a fact is sad, state it plainly and let it be sad.
 
+### The closing line
+
+The project's own, written by the owner. Use it verbatim where a closing
+statement is wanted; do not paraphrase it and do not write a variant.
+
+> The town had arranged its residents categorically, in life and in the
+> ground, but eternity places us equal.
+
+"Categorically" carries both senses on purpose — the town sorted people into
+categories, and it did so absolutely. The chill in the word is intended: the
+sorting really was clerical, done in separate enumeration districts and
+separate grounds.
+
+"Eternity places us equal" is set wording. "Places us equal" is a deliberate
+non-standard construction — do not regularise it to "as equals". The verb
+echoes "had arranged": the town arranged its residents and eternity places
+them, two acts of positioning, and eternity's is the true one. Do not change
+it to "now". The claim is
+not that death corrected the arrangement; it is that the arrangement was never
+the real one, viewed from outside time. The present tense follows from that and
+is also not optional.
+
+The first person is deliberate and must not be changed to "they". The sentence
+includes the speaker and the reader rather than passing a verdict on the dead,
+which is the whole reason it can follow a film that spent its length sorting
+people into categories.
+
 ---
 
 ## Reference implementations

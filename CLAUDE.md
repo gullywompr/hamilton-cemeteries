@@ -136,8 +136,10 @@ over all 2,732, and the original reason for the rule stands: a filter over a
 7.8% field silently misrepresents the other 92%.
 
 **2. Acceptance test, event count (supersedes §9).** The spec expects 125 rows
-in `context_events.csv`. The file now has **133**. The spec's number is stale;
-133 is correct.
+in `context_events.csv`. The file now has **137**: 133, plus four founding-era events added at the
+owner's request on 29 Oct 2026 (the Revolutionary War's start and the Treaty
+of Paris, the signing of the Declaration of Independence, and the
+ratification of the Constitution). The spec's number is stale.
 
 ## Acceptance tests — re-verified against the current data
 
@@ -154,7 +156,7 @@ disagreeing with any of these has a join or filter bug.
 | `date_disputed = yes` | 22 |
 | matched to ≥1 census | 374 |
 | ≥1 census occupation | 212 |
-| `context_events.csv` rows | 133 |
+| `context_events.csv` rows | 137 |
 
 **Living population** (`timeline_usable = yes`, `birth_year ≤ Y ≤ death_year`):
 

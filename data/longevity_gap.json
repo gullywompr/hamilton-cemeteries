@@ -1,0 +1,167 @@
+{
+ "measure": "median age at death, adults who reached 20",
+ "not": "life expectancy at birth",
+ "eras": [
+  {
+   "era": "1900-1949",
+   "lakeview_n": 682,
+   "lakeview_median": 67.0,
+   "pv_n": 42,
+   "pv_median": 55.5,
+   "gap": 11.5,
+   "ci95": [
+    5.0,
+    21.0
+   ],
+   "p": 0.0011183333119493411,
+   "significant_at_05": true
+  },
+  {
+   "era": "1950-1999",
+   "lakeview_n": 753,
+   "lakeview_median": 76.0,
+   "pv_n": 193,
+   "pv_median": 68.0,
+   "gap": 8.0,
+   "ci95": [
+    2.0,
+    10.0
+   ],
+   "p": 0.00014237231890654178,
+   "significant_at_05": true
+  },
+  {
+   "era": "2000-2026",
+   "lakeview_n": 334,
+   "lakeview_median": 79.0,
+   "pv_n": 74,
+   "pv_median": 75.0,
+   "gap": 4.0,
+   "ci95": [
+    -2.0,
+    8.0
+   ],
+   "p": 0.08108261616139267,
+   "significant_at_05": false
+  }
+ ],
+ "decades": [
+  {
+   "decade": "1920s",
+   "lakeview_n": 133,
+   "lakeview_median": 65.0,
+   "pv_n": 11,
+   "pv_median": 55.0,
+   "gap": 10.0
+  },
+  {
+   "decade": "1930s",
+   "lakeview_n": 172,
+   "lakeview_median": 68.0,
+   "pv_n": 15,
+   "pv_median": 56.0,
+   "gap": 12.0
+  },
+  {
+   "decade": "1940s",
+   "lakeview_n": 175,
+   "lakeview_median": 72.0,
+   "pv_n": 13,
+   "pv_median": 56.0,
+   "gap": 16.0
+  },
+  {
+   "decade": "1950s",
+   "lakeview_n": 164,
+   "lakeview_median": 74.0,
+   "pv_n": 26,
+   "pv_median": 62.5,
+   "gap": 11.5
+  },
+  {
+   "decade": "1960s",
+   "lakeview_n": 166,
+   "lakeview_median": 78.0,
+   "pv_n": 34,
+   "pv_median": 70.0,
+   "gap": 8.0
+  },
+  {
+   "decade": "1970s",
+   "lakeview_n": 164,
+   "lakeview_median": 75.0,
+   "pv_n": 38,
+   "pv_median": 64.0,
+   "gap": 11.0
+  },
+  {
+   "decade": "1980s",
+   "lakeview_n": 140,
+   "lakeview_median": 75.5,
+   "pv_n": 42,
+   "pv_median": 70.5,
+   "gap": 5.0
+  },
+  {
+   "decade": "1990s",
+   "lakeview_n": 119,
+   "lakeview_median": 79.0,
+   "pv_n": 53,
+   "pv_median": 75.0,
+   "gap": 4.0
+  },
+  {
+   "decade": "2000s",
+   "lakeview_n": 138,
+   "lakeview_median": 77.0,
+   "pv_n": 37,
+   "pv_median": 74.0,
+   "gap": 3.0
+  },
+  {
+   "decade": "2010s",
+   "lakeview_n": 126,
+   "lakeview_median": 81.0,
+   "pv_n": 31,
+   "pv_median": 75.0,
+   "gap": 6.0
+  }
+ ],
+ "robustness_day_precision_only": [
+  {
+   "era": "1900-1949",
+   "lakeview_n": 510,
+   "pv_n": 18,
+   "gap": 10.5
+  },
+  {
+   "era": "1950-1999",
+   "lakeview_n": 568,
+   "pv_n": 89,
+   "gap": 8.0
+  },
+  {
+   "era": "2000-2026",
+   "lakeview_n": 316,
+   "pv_n": 48,
+   "gap": 3.5
+  }
+ ],
+ "robustness_coverage": {
+  "Lakeview": {
+   "n": 2101,
+   "usable": 2002,
+   "pct": 95.3
+  },
+  "Harmony": {
+   "n": 263,
+   "usable": 243,
+   "pct": 92.4
+  },
+  "Pleasant Valley": {
+   "n": 368,
+   "usable": 327,
+   "pct": 88.9
+  }
+ }
+}

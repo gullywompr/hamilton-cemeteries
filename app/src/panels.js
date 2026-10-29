@@ -157,7 +157,7 @@ export class LivingList {
     for (const { p, age, possible } of rows) {
       const group = this.sort === 'cem' ? CEMETERY_NAME[p.cem] : this.sort === 'name' ? (p.surname || '—')[0] : null;
       if (group !== null && group !== lastGroup) { out.push(`<div class="group-h">${esc(group)}</div>`); lastGroup = group; }
-      const flags = [p.plot ? `<span class="plot">${esc(p.plot)}</span>` : '', p.stone ? '<span class="has">stone</span>' : '', p.fam.length ? '<span class="has">family</span>' : '', p.cod || p.regVerbatim ? '<span class="has">register</span>' : '', p.census.length ? '<span class="has">census</span>' : '', p.disp ? '<span class="has tag-disputed tag">date disputed</span>' : ''].join('');
+      const flags = [p.plot ? `<span class="plot">${esc(p.plot)}</span>` : '', p.stone ? '<span class="has">stone</span>' : '', p.fam.length ? '<span class="has">family</span>' : '', p.cod || p.regVerbatim ? '<span class="has">register</span>' : '', p.census.length ? '<span class="has">census</span>' : '', p.vet || p.mil ? '<span class="has">military</span>' : '', p.disp ? '<span class="has tag-disputed tag">date disputed</span>' : ''].join('');
       out.push(`<a class="row ${possible ? 'possible' : ''}" href="#/person/${p.id}" data-person="${p.id}">
         <span class="age ${age && !age.exact ? 'range' : ''}" title="${age ? (age.exact ? 'age to the day' : 'birth known only to the year: a range') : ''}">${age ? esc(age.text) : '—'}</span>
         <span class="name"><span class="dot ${p.cem}"></span>${esc(p.name)}${possible ? '<span class="pos">possibly</span>' : ''}</span>
@@ -240,11 +240,12 @@ export class Drawer {
     const clustersSec = clusters.length ? `<div class="sec"><h3>A family's loss, in one window</h3>${clusters.map(c => `<p class="small">Plot ${esc(c.plot)}, ${esc(c.cemetery)}: ${c.n_lost} people in this plot died within ${c.span_days === 0 ? 'a single day' : c.span_days + ' days'} (${fmtDate(c.first_death, 'day')} to ${fmtDate(c.last_death, 'day')}). ${c.people.map(x => x.id && x.id !== p.id ? `<a href="#/person/${x.id}" data-person="${x.id}">${esc(x.text)}</a>` : esc(x.text)).join('; ')}. <span class="muted">${esc(c.assessment)}; from the stones, not the register.</span></p>`).join('')}</div>` : '';
 
     return `
-      <h2 data-k="${esc([CEMETERY_NAME[p.cem], p.plot ? `plot ${p.plot}` : 'no plot recorded', p.id, p.vet ? 'veteran' : '', p.mil || ''].filter(Boolean).join(' · '))}">${esc(p.name)}</h2>
+      <h2 data-k="${esc([CEMETERY_NAME[p.cem], p.plot ? `plot ${p.plot}` : 'no plot recorded', p.id].filter(Boolean).join(' · '))}">${esc(p.name)}</h2>
       <div class="dates">${datesLine}</div>
       ${disputedBox}
       ${atCursor}
       ${p.stone ? `<div class="sec"><h3>The stone, as read in 1948</h3><div class="stone">${esc(p.stone)}</div><div class="stone-note">Verbatim from the DAR Genealogical Records Committee survey of standing stones, 1948. ${findings.some(f => f.finding_type === 'lost_stone') ? '' : ''}</div></div>` : ''}
+      ${p.vet || p.mil ? `<div class="sec"><h3>Military service, as the sources record it</h3><dl class="kv">${p.mil ? `<dt>On the stone</dt><dd>${esc(p.mil)} <span class="muted small">as inscribed, from the Balch cemetery transcription</span></dd>` : ''}${p.vet ? `<dt>Veteran flag</dt><dd>Marked as a veteran on Find a Grave's memorial listing. <span class="muted small">The listing does not say which war or branch.</span></dd>` : ''}</dl></div>` : ''}
       ${registerSec}
       <div class="sec"><h3>Family, as the sources state it</h3>${famSection}</div>
       ${lifeEvents || marriageText ? `<div class="sec"><h3>Life events the links make datable</h3><ul class="life-events">${lifeEvents}${marriageText}</ul></div>` : ''}

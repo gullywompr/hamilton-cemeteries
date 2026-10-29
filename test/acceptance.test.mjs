@@ -61,10 +61,10 @@ test('every id in every *_ids field resolves', () => {
 
 test('event overlay', () => {
   const ev = load('events.json');
-  assert.equal(ev.length, 133, 'CLAUDE.md supersedes the spec: 133');
+  assert.equal(ev.length, 137, 'CLAUDE.md supersedes the spec: 133, plus four founding-era events added 29 Oct 2026');
   const layers = {};
   for (const e of ev) layers[e.layer] = (layers[e.layer] || 0) + 1;
-  assert.deepEqual(layers, { national: 37, education: 26, regional: 21, medical: 22, economic: 17, local: 10 });
+  assert.deepEqual(layers, { national: 41, education: 26, regional: 21, medical: 22, economic: 17, local: 10 });
   assert.equal(ev.filter(e => e.confidence === 'disputed').length, 1);
   assert.ok(ev.filter(e => e.confidence === 'unverified').length >= 5);
   assert.ok(ev.filter(e => !e.dated).every(e => e.date === ''));
@@ -135,4 +135,60 @@ test('quality flags', () => {
   const sag = byId.get('LV0812');
   assert.equal(aliveOn(sag, dayOf(1886, 1, 1)), 'possible');
   assert.equal(bounds(sag).b.p, 'disputed');
+});
+
+// ---------------------------------------------------------------------------
+// Years lived (owner's brief, "APP_SPEC §11"): median age at death of adults
+// who reached 20, Lakeview against Pleasant Valley.
+// ---------------------------------------------------------------------------
+test('longevity: era medians, n and gaps', () => {
+  const L = load('longevity.json');
+  const got = L.eras.map(e => [e.era, e.lakeview_median, e.lakeview_n, e.pv_median, e.pv_n, e.gap]);
+  assert.deepEqual(got, [
+    ['1900-1949', 67.0, 682, 55.5, 42, 11.5],
+    ['1950-1999', 76.0, 753, 68.0, 193, 8.0],
+    ['2000-2026', 79.0, 334, 75.0, 74, 4.0],
+  ]);
+  assert.equal(L.measure, 'median age at death, adults who reached 20');
+  assert.equal(L.not, 'life expectancy at birth');
+});
+
+test('longevity: gap by decade, 1920s to 2010s, with Pleasant Valley n', () => {
+  const L = load('longevity.json');
+  assert.deepEqual(L.decades.map(d => d.decade), [1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010]);
+  assert.deepEqual(L.decades.map(d => d.gap), [10.0, 12.0, 16.0, 11.5, 8.0, 11.0, 5.0, 4.0, 3.0, 6.0]);
+  assert.deepEqual(L.decades.map(d => d.pv_n), [11, 15, 13, 26, 34, 38, 42, 53, 37, 31]);
+});
+
+test('longevity: 2000-2026 is not established, the earlier eras are', () => {
+  const L = load('longevity.json');
+  const [a, b, c] = L.eras;
+  assert.ok(a.significant && b.significant);
+  assert.equal(c.significant, false);
+  assert.ok(Math.abs(c.p - 0.081) < 0.0005, `p ${c.p}`);
+  assert.deepEqual(c.ci95, [-2.0, 8.0]);
+  assert.ok(c.ci95[0] < 0 && c.ci95[1] > 0, 'interval crosses zero');
+});
+
+test('longevity: robustness matches the reference output', () => {
+  const L = load('longevity.json');
+  assert.deepEqual(L.dayPrecision.map(r => r.gap), [10.5, 8.0, 3.5]);
+  assert.deepEqual(Object.values(L.coverage).map(c => c.pct), [95.3, 92.4, 88.9]);
+  assert.equal(L.reference.agrees, true);
+});
+
+test('longevity: the rendered section keeps the rules', async () => {
+  const { longevitySection } = await import('../app/src/views.js');
+  const D = { longevity: load('longevity.json') };
+  const sec = longevitySection(D.longevity);
+  const text = sec.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+  assert.ok(!/life expectancy/i.test(text.replace(/This is not life expectancy|Life expectancy at birth is a different measure/g, '')), 'never called life expectancy');
+  assert.match(text, /This is not life expectancy/);
+  assert.match(text, /two burial populations, not two samples of Hamilton/);
+  assert.match(text, /Not established/);
+  assert.doesNotMatch(text, /\b4(\.0)? years\b/, 'the 2000-2026 gap is not printed as a finding');
+  for (const e of D.longevity.eras) for (const k of [e.lakeview_n, e.pv_n]) assert.match(text, new RegExp(`n=${k.toLocaleString('en-US')}(?!\\d)`), `n=${k} printed`);
+  for (const d of D.longevity.decades) assert.match(sec, new RegExp(`n=${d.pv_n}(?!\\d)`), `${d.decade}s Pleasant Valley n printed`);
+  assert.doesNotMatch(text, /\b(because|caused by|due to|rank|ranking of the (two )?grounds is)\b/i, 'no cause, no ranking');
+  assert.match(sec, /class="source"/);
 });

@@ -74,6 +74,18 @@ in a list. A measured count is a ruled numeral or an area with its footing
 stated (which people, which file). An absence is hatching with words. The
 legend under the timeline says so.
 
+**years lived.** The record page's *Years lived* tab compares the median age
+at death of adults (reached 20) on Lakeview and Pleasant Valley, by era and
+by decade of death. `scripts/build-data.mjs` computes it from
+`timeline_people.csv` into `app/data/longevity.json`, including the
+one-sided Mann-Whitney p. The bootstrap interval is the one number taken from
+`data/longevity_gap.json`, the output of the reference script
+`scripts/longevity_gap.py`; every other field is checked against that file
+and the build stops if they disagree. The page never says "life expectancy",
+prints n beside every median, shows 2000–2026 as *not established* rather
+than as a number, says the two grounds are two burial populations and not two
+samples of the town, and attributes no cause.
+
 **county context.** The demography charts are context and are captioned as
 not a denominator. The county grave counts are shown beside the project's and
 captioned as lower, not a total.

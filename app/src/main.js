@@ -139,9 +139,10 @@ async function main() {
     currentView = view;
     for (const [k, el] of Object.entries(views)) el.hidden = k !== view;
     document.querySelectorAll('.nav a').forEach(a => a.toggleAttribute('aria-current', a.dataset.view === view) || (a.dataset.view === view ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')));
-    if (view !== 'timeline' && !rendered.has(view)) {
+    const render = { people: renderPeople, families: renderFamilies, record: renderRecord, map: renderMap }[view];
+    if (render && !rendered.has(view)) {
       rendered.add(view);
-      ({ people: renderPeople, families: renderFamilies, record: renderRecord, map: renderMap })[view](views[view], D, ctx, params);
+      render(views[view], D, ctx, params);
     } else if (views[view]._onParams) views[view]._onParams(params);
     if (view === 'timeline') { tl.resize(); $('#tl-canvas').focus({ preventScroll: true }); }
     window.scrollTo({ top: 0 });

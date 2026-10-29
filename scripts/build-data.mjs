@@ -7,7 +7,7 @@
 // and noted inline.
 
 import { readCsv } from './csv.mjs';
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -250,4 +250,96 @@ write('summary.json', {
   burialsPerDecade: people.reduce((m, p) => { if (p.dy) { const d = Math.floor(p.dy / 10) * 10; m[d] = (m[d] || 0) + 1; } return m; }, {}),
   pvFirstDeathYears: people.filter(p => p.cem === 'P' && p.dy).map(p => p.dy).sort((a, b) => a - b).slice(0, 6),
 });
+// ---------------------------------------------------------------------------
+// 8. Longevity: median age at death of adults (reached 20), Lakeview against
+//    Pleasant Valley, by era and decade of death.
+//
+//    A port of scripts/longevity_gap.py, which stays as the independent
+//    reference. Medians, n, gaps, the day-precision subset, coverage and the
+//    one-sided Mann-Whitney p are computed here from timeline_people.csv. The
+//    only number taken from the Python output is the bootstrap 95% interval
+//    (its resampling RNG cannot be reproduced in JS); every other field is
+//    checked against data/longevity_gap.json and the build fails if they
+//    disagree, which means one implementation or the JSON is stale.
+//
+//    NOT life expectancy. Two burial populations, not two samples of the town.
+// ---------------------------------------------------------------------------
+{
+  const I = (x) => { const v = Number.parseFloat(x); return Number.isFinite(v) ? Math.trunc(v) : null; };
+  const median = (a) => { const b = a.slice().sort((x, y) => x - y), m = b.length >> 1; return b.length % 2 ? b[m] : (b[m - 1] + b[m]) / 2; };
+  const U = peopleRows.filter(r => r.timeline_usable === 'yes' && I(r.death_year) !== null && I(r.age_at_death) !== null);
+  const adults = (cem, lo, hi, dayOnly = false) => U.filter(r => r.cemetery === cem && I(r.death_year) >= lo && I(r.death_year) <= hi
+    && I(r.age_at_death) >= 20 && (!dayOnly || r.death_precision === 'day')).map(r => I(r.age_at_death));
+
+  // One-sided Mann-Whitney U (Lakeview greater), normal approximation with tie
+  // and continuity correction: what scipy.stats.mannwhitneyu does with ties.
+  const erfc = (x) => { // Numerical Recipes erfcc, fractional error below 1.2e-7
+    const z = Math.abs(x), t = 1 / (1 + 0.5 * z);
+    const r = t * Math.exp(-z * z - 1.26551223 + t * (1.00002368 + t * (0.37409196 + t * (0.09678418 + t * (-0.18628806 + t * (0.27886807 + t * (-1.13520398 + t * (1.48851587 + t * (-0.82215223 + t * 0.17087277)))))))));
+    return x >= 0 ? r : 2 - r;
+  };
+  const mannWhitneyGreater = (a, b) => {
+    const all = a.map(v => [v, 0]).concat(b.map(v => [v, 1])).sort((x, y) => x[0] - y[0]);
+    const n1 = a.length, n2 = b.length, N = n1 + n2;
+    let r1 = 0, tie = 0;
+    for (let i = 0; i < N;) {
+      let j = i; while (j < N && all[j][0] === all[i][0]) j++;
+      const rank = (i + 1 + j) / 2, t = j - i; tie += t * t * t - t;
+      for (let k = i; k < j; k++) if (all[k][1] === 0) r1 += rank;
+      i = j;
+    }
+    const u = r1 - n1 * (n1 + 1) / 2, mu = n1 * n2 / 2;
+    const sd = Math.sqrt(n1 * n2 / 12 * ((N + 1) - tie / (N * (N - 1))));
+    return 0.5 * erfc(((u - mu - 0.5) / sd) / Math.SQRT2);
+  };
+
+  const ref = JSON.parse(readFileSync(join(DATA, 'longevity_gap.json'), 'utf8'));
+  const disagree = (what, a, b) => { throw new Error(`longevity: ${what} is ${a} here but ${b} in data/longevity_gap.json; rerun scripts/longevity_gap.py or fix the port`); };
+  const same = (what, a, b) => { if (a !== b) disagree(what, a, b); };
+
+  const eras = [];
+  for (const [lo, hi] of [[1900, 1949], [1950, 1999], [2000, 2026]]) {
+    const a = adults('Lakeview', lo, hi), b = adults('Pleasant Valley', lo, hi);
+    if (b.length < 15) continue;
+    const era = `${lo}-${hi}`, r = ref.eras.find(e => e.era === era) || disagree(`era ${era}`, 'present', 'absent');
+    const p = mannWhitneyGreater(a, b);
+    const row = { era, lo, hi, lakeview_n: a.length, lakeview_median: median(a), pv_n: b.length, pv_median: median(b), gap: median(a) - median(b), p, ci95: r.ci95, significant: p < 0.05 };
+    for (const k of ['lakeview_n', 'lakeview_median', 'pv_n', 'pv_median', 'gap']) same(`${era} ${k}`, row[k], r[k]);
+    if (Math.abs(p - r.p) > 1e-5 * r.p) disagree(`${era} p`, p, r.p);
+    same(`${era} significance`, row.significant, r.significant_at_05);
+    eras.push(row);
+  }
+  const decades = [];
+  for (let d = 1920; d < 2030; d += 10) {
+    const a = adults('Lakeview', d, d + 9), b = adults('Pleasant Valley', d, d + 9);
+    if (b.length < 8) continue;
+    const row = { decade: d, lakeview_n: a.length, lakeview_median: median(a), pv_n: b.length, pv_median: median(b), gap: median(a) - median(b) };
+    const r = ref.decades.find(x => x.decade === `${d}s`) || disagree(`decade ${d}s`, 'present', 'absent');
+    for (const k of ['lakeview_n', 'lakeview_median', 'pv_n', 'pv_median', 'gap']) same(`${d}s ${k}`, row[k], r[k]);
+    decades.push(row);
+  }
+  same('decade count', decades.length, ref.decades.length);
+  const dayPrecision = [];
+  for (const [lo, hi] of [[1900, 1949], [1950, 1999], [2000, 2026]]) {
+    const a = adults('Lakeview', lo, hi, true), b = adults('Pleasant Valley', lo, hi, true);
+    if (b.length < 12) continue;
+    const row = { era: `${lo}-${hi}`, lakeview_n: a.length, pv_n: b.length, gap: median(a) - median(b) };
+    const r = ref.robustness_day_precision_only.find(x => x.era === row.era);
+    for (const k of ['lakeview_n', 'pv_n', 'gap']) same(`day-precision ${row.era} ${k}`, row[k], r && r[k]);
+    dayPrecision.push(row);
+  }
+  const coverage = {};
+  for (const cem of ['Lakeview', 'Harmony', 'Pleasant Valley']) {
+    const sub = peopleRows.filter(r => r.cemetery === cem);
+    const ok = sub.filter(r => r.timeline_usable === 'yes' && I(r.age_at_death) !== null);
+    coverage[cem] = { n: sub.length, usable: ok.length, pct: Math.round(1000 * ok.length / sub.length) / 10 };
+    for (const k of ['n', 'usable', 'pct']) same(`coverage ${cem} ${k}`, coverage[cem][k], ref.robustness_coverage[cem][k]);
+  }
+  write('longevity.json', {
+    measure: 'median age at death, adults who reached 20', not: 'life expectancy at birth',
+    eras, decades, dayPrecision, coverage,
+    reference: { script: 'scripts/longevity_gap.py', output: 'data/longevity_gap.json', agrees: true, ci: 'bootstrap, 4000 resamples, from the reference output' },
+  });
+}
+
 console.log('done.');
