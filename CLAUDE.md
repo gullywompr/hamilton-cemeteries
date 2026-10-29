@@ -80,9 +80,11 @@ this is the short form so they are not missed.
 known only to the year must never be rendered or computed as though it were
 known to the day.
 
-**Honour `timeline_usable`.** `yes` 2,572 · `no` 63 · `death-only` 50 ·
-`birth-only` 47. Only the 2,572 can enter a living-population computation.
-The other 160 are still people and must remain findable.
+**Honour `timeline_usable`.** On the 2,732 records: `yes` 2,572 · `no` 63 ·
+`death-only` 50 · `birth-only` 47. Counted as people (owner-confirmed
+duplicates once each, `APP_SPEC.md` §13): `yes` **2,521** of 2,681. Only those
+can enter a living-population computation. The other 160 are still people and
+must remain findable.
 
 **Disputed dates.** 22 people carry `date_disputed = yes`. The standing policy
 is in `README.md`; follow it rather than silently picking one date.
@@ -103,13 +105,13 @@ at:** a documented individual, a measured aggregate, or an absence of record.
 These rest on different evidence and must not blur together.
 
 **County context is context.** `context_demography.csv` and the death register
-describe Loudoun County, not these 2,732 people. It is never a denominator and
+describe Loudoun County, not these 2,681 people. It is never a denominator and
 must not be used to compute or imply a count of missing individuals.
 
 **`confidence` is load-bearing** on the event overlay. See `APP_SPEC.md` §6.2.
 
 **Do not build features the data cannot feed** (§3.5). Family links reach only
-399 of 2,732 — a family view must degrade gracefully to "nothing recorded" for
+394 of the 2,681 people (399 of the 2,732 records) — a family view must degrade gracefully to "nothing recorded" for
 about 85% of people and must never imply that silence means no family.
 
 **Non-goals:** no editing data through the app; no burial location more precise
@@ -120,8 +122,8 @@ or any genealogy service — all data ships here.
 
 ## Corrections to APP_SPEC.md
 
-The spec was written before the census work finished. Two things in it are now
-out of date. **Prefer this file where they conflict.**
+The spec was written before the census work finished. Three things in it are
+now out of date or have been added since. **Prefer this file where they conflict.**
 
 **1. Occupation (supersedes §3.5, first bullet).** The spec says occupation
 exists for one person. That is true of the `occupation` column, which still has
@@ -130,15 +132,16 @@ were transcribed afterwards (4,925 person-rows), and `timeline_people.csv` now
 carries `census_<year>_occupation` / `_industry` / `_class` / `_match` for
 1880, 1900, 1910, 1920, 1930, 1940, 1950.
 
-- **374** of the 2,732 match at least one census.
+- **374** of the 2,681 people match at least one census (374 of the 2,732
+  records: no match was lost when duplicates were folded).
 - **212** have at least one recorded occupation.
 - 8 people appear in four or more censuses, which gives a real working life
   across decades.
 
-So occupation is now a genuine per-person field — but it reaches 7.8% of
-people. It can support a detail on a person, and it can support aggregate
+So occupation is now a genuine per-person field — but it reaches 7.9% of
+people (7.8% of records). It can support a detail on a person, and it can support aggregate
 views of the town's work. It still cannot support a primary filter or facet
-over all 2,732, and the original reason for the rule stands: a filter over a
+over all 2,681 people, and the original reason for the rule stands: a filter over a
 7.8% field silently misrepresents the other 92%.
 
 **2. Acceptance test, event count (supersedes §9).** The spec expects 127 rows

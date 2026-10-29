@@ -3930,3 +3930,105 @@ Two data facts noticed while building, not changed: `context_events.csv`
 now has **one** row with an empty date, not two (§6.2 says two); and the
 `precision` column disagrees with the date string on a few rows
 (`1870-01-01,year`), where the app follows `precision`, as the spec says to.
+
+---
+
+## THE APP, 29 Oct 2026: what the data science found, and what changed
+
+A day of analysis on the finished dataset. Each finding below was tested
+before it went on the site; several did not go on the site, and are recorded
+here so they are not re-run as if new.
+
+### Published
+
+**Four founding-era events** were added to `context_events.csv` at the
+owner's request (the Revolutionary War's start and the Treaty of Paris, the
+Declaration, the Constitution): 137 rows.
+
+**Years lived** (`APP_SPEC.md` §11). Median age at death of adults who
+reached 20, Lakeview against Pleasant Valley. The first era was moved from
+1900–1949 to **1920–1949**: Pleasant Valley opened in 1922, and before 1920 it
+holds 2 dated adult deaths against Lakeview's 246, so the earlier era compared
+twenty years of one ground with almost nothing. The gap is **13.0 years**
+(1920–1949), **8.0** (1950–1999), and **not established** for 2000–2026
+(p = 0.081). The page says the 1920–1949 result depends on Pleasant Valley
+adults whose birth is known only to the year: with both dates to the day,
+the interval for that era crosses zero. Those year-only birth years are not
+rounded guesses (23 of 151 end in 0 or 5, under the one in five that chance
+gives), so the finding stands, on them. `scripts/longevity_gap.py` is the
+independent reference; the build stops if the two disagree. numpy and scipy
+are pinned in `scripts/requirements.txt`.
+
+**The 1948 survey's limits.** None of the 744 transcriptions carries a verse,
+a religious phrase or a word like "Mother": the DAR typists recorded names,
+dates, ages and relationships. All 744 are Lakeview. Every stone reading in
+the app now says so; it is never presented as the full inscription.
+
+**How the stones name people** (§12). "Wife of" on 103 adult stones; "husband
+of" on one. Children named through their parents on 76% of children's stones
+before 1900, 27% by 1925–1948 (compared child with child, so falling child
+mortality does not explain it). No sex is inferred from names. 26 stones show
+an open death date: 16 names cut before a death after 1950, 4 with no death
+anywhere in the record, 5 whose date was not yet cut.
+
+**The one who lived on.** 113 couples with both deaths dated; a median of
+14 years between the two deaths; 36 at twenty years or more, 16 at thirty or
+more.
+
+**Duplicate records** (§13). The longevity work surfaced the Trammell /
+Thompson couple at Pleasant Valley, entered twice with the spouse links
+crossing between the copies. A scan for same cemetery, agreeing dates and a
+shared name word found **62 candidate pairs**, 11 of them already named in
+the existing duplicate files. The owner reviewed every pair: **51 same person, 4
+different, 7 not sure**, recorded in `curation/duplicates.csv` with the
+record kept for each. `data/` is unchanged; the build folds the confirmed
+records, so the app counts **2,681 people in 2,732 records**. The curve's
+peak stays 1927, now 1,429 people (1,455 records); the Years lived medians
+did not move. Record-level values in `CLAUDE.md` are still tested.
+
+**Deaths together** (§14). A blind scan of every one-to-three-month window,
+1870–2020, finds no cluster across households that beats chance. One window
+was tested because the overlay names it in advance: October–December 1918,
+**8 deaths against 3.25 usual** (p = 0.037 allowing for two tests), 5 of them
+aged 17 to 30 against 8 of 45 aged 15–44 in the other autumns (p = 0.016) —
+the 1918 influenza's known shape. The date panel marks it, names the eight,
+and names no cause. In a month that usually sees one death, about eight are
+needed to stand out, so a quiet month is never evidence of no outbreak.
+
+### Tested, not published
+
+**Age heaping.** No heaping at Lakeview or Pleasant Valley. Harmony's
+year-only births where the death is exact end in 0 or 5 a third of the time
+(p = 0.004), most likely worked back from an age on the stone; Harmony is not
+in the longevity comparison.
+
+**Seasonality.** From 1900 on, deaths show the ordinary temperate winter peak,
+driven by people over 65. This checks the dates more than it discovers
+anything.
+
+**Summer complaint.** The epidemics film's claim stands, and strongly: in the
+county register, 153 of 187 dysentery and bowel deaths fell June–September
+(p ≈ 10⁻⁵⁸), and 211 of 437 children under five (p ≈ 10⁻¹³). Children with
+stones in these three grounds, 69 of 83 of them from 1870–1919, show a weaker
+summer lean (33 of 83 against about 28). A sample of 83 would show the
+register's pattern 85 times in 100, so the difference is probably real; the
+record cannot say whether the season eased after the 1860s or whether
+families who could buy a stone lost fewer children to it. It does not
+contradict the film. The film's "it was in the water" is the historical
+explanation; the register records the season and the cause, not the water.
+
+**Autumn 1890.** The *Weekly Enterprise*'s "mild cases of scarlet fever" in
+Hamilton leave no excess in these grounds (2 deaths against 1.5).
+
+**Not tested: migration.** In 1900–1950 young Black adults left Loudoun, and
+some were brought home to be buried. That changes who lies at Pleasant Valley
+in ways no test here can measure; the Years lived page calls the two grounds
+two burial populations, not two samples of the town, for this reason.
+
+### Open
+
+- The 7 "not sure" duplicate pairs stay two people, each card naming the
+  other. A later decision goes in `curation/duplicates.csv`.
+- The kept record for each merged person was chosen by completeness (stone
+  reading, exact dates, family links, sources), which sometimes keeps the
+  shorter name; the `keep` column can be changed.
