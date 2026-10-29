@@ -401,7 +401,12 @@ details.more summary { font-size: 13px; color: var(--ink-3); cursor: pointer; }
 }
 @media (max-width: 760px) {
   .top { grid-template-columns: 1fr auto; grid-template-rows: auto auto; height: auto; padding: 8px var(--gutter); gap: 6px 12px; }
-  .nav { grid-column: 1 / -1; overflow-x: auto; }
+  .nav { grid-column: 1 / -1; flex-wrap: wrap; justify-content: space-between; }
+  .nav a { padding: 8px 4px; }
+  .tbl { font-size: 12.5px; }
+  .tbl th, .tbl td { padding-right: 6px; overflow-wrap: break-word; }
+  .tbl th { overflow-wrap: anywhere; }
+  .tbl td.n { white-space: nowrap; overflow-wrap: normal; }
   .search input { width: 160px; }
   .q-results { width: calc(100vw - 32px); right: -16px; }
   .brand-sub { display: none; }
@@ -411,6 +416,10 @@ details.more summary { font-size: 13px; color: var(--ink-3); cursor: pointer; }
   .page h1 { font-size: 32px; }
   .page h2 { font-size: 24px; }
   .cursor-panel { max-height: none; }
+  /* People: name and flags on one line, the dates beneath, so nothing is wider than the phone */
+  .people-rows .row { grid-template-columns: minmax(0, 1fr) auto; }
+  .people-rows .row .dates { grid-column: 1 / -1; grid-row: 2; }
+  .gantt-row, .gantt-axis { grid-template-columns: 112px minmax(0, 1fr) 40px; gap: 8px; }
 }
 @media print {
   .top, .tl-bar, .drawer-close { display: none; }

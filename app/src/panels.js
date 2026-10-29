@@ -208,7 +208,7 @@ export class Drawer {
     const reg = D.registerByPerson.get(p.id) || [];
 
     const datesLine = (() => {
-      const bt = p.bd ? `${fmtDate(p.bd, p.bp)}<span class="prec">${p.bp !== 'day' ? precisionWord(p.bp) : ''}</span>` : '<span class="muted">birth not recorded</span>';
+      const bt = p.bd ? `${fmtDate(p.bd, p.bp)}<span class="prec">${p.bp !== 'day' ? precisionWord(p.bp) : ''}</span>` : `<span class="muted">${p.withheld ? 'birth date not shown' : 'birth not recorded'}</span>`;
       const dt = p.dd ? `${fmtDate(p.dd, p.dp)}<span class="prec">${p.dp !== 'day' ? precisionWord(p.dp) : ''}</span>` : '<span class="muted">death not recorded</span>';
       const age = p.age !== null ? ` <span class="muted">aged ${p.age}</span>` : '';
       return `${bt} – ${dt}${age}`;
@@ -217,7 +217,8 @@ export class Drawer {
     const atCursor = (() => {
       const st = aliveOn(p, day);
       const when = fmtDay(day);
-      if (st === 'unplaceable') return `<div class="at-cursor">Not placeable on the timeline: ${esc(p.note || 'no usable dates')}.${p.use === 'birth-only' ? ' No death year is recorded, so the record does not say whether this person was alive on any later date.' : ''}</div>`;
+      if (p.withheld) return `<div class="at-cursor">No death date is recorded. Anyone born within the last 110 years with no death date may still be living, so this record's birth date is not shown${p.stoneHeld ? ', nor the 1948 reading of the stone, which carries it' : ''}, and the person is not placed on the timeline.</div>`;
+      if (st === 'unplaceable') return `<div class="at-cursor">Not placeable on the timeline: ${esc(NOTE_WORDS[p.note] || p.note || 'no usable dates')}.${p.use === 'birth-only' ? ' No death year is recorded, so the record does not say whether this person was alive on any later date.' : ''}</div>`;
       const a = ageAt(p, day);
       if (st === 'no' && day < b.lo) return `<div class="at-cursor">On ${when}: <b>not yet born</b>, ${fullYears(day, b.lo)} years before this birth.<button class="btn" data-goto="${b.lo}">Go to birth</button></div>`;
       if (st === 'no') return `<div class="at-cursor">On ${when}: <b>had died</b> ${fmtOffset(day, d.hi).replace('earlier', 'before')}.<button class="btn" data-goto="${d.lo}">Go to death</button></div>`;
@@ -267,6 +268,8 @@ export class Drawer {
     `;
   }
 }
+// Source notes reworded where the bare note would read as the app's own mistake.
+const NOTE_WORDS = { 'death precedes birth': 'the recorded dates conflict, with the death date before the birth date, and neither is treated as correct' };
 function shortSpan(p) {
   const b = p.by ?? '', d = p.dy ?? '';
   return b || d ? `${b}–${d}` : '';

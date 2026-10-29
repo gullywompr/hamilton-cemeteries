@@ -163,7 +163,21 @@ for (const d of dupRows) {
   if (!b.maybe.some(m => m.id === a.id)) b.maybe.push({ id: a.id, name: a.name });
 }
 for (const p of people) for (const f of p.fam) if (!personById.has(f.id)) throw new Error(`dangling id ${f.id} on ${p.id}`);
-write('people.json', people);
+
+// Possibly living (owner's decision, 29 Oct 2026). A person with no death
+// date who was born within the last LIVING_SPAN years may still be alive, and
+// a stone cut in advance names them. The app keeps them findable by name but
+// does not publish their birth date, or the stone reading that carries it.
+// Every count below is still taken on the full record (743 stones were read);
+// only what is written out is withheld, and `withheld` marks it, so the card
+// can say so. Withheld is not unknown.
+const LIVING_SPAN = 110, NOW_YEAR = new Date().getFullYear();
+for (const p of people) if (!p.dd && p.by !== null && p.by > NOW_YEAR - LIVING_SPAN) p.withheld = true;
+const published = (p) => !p.withheld ? p : {
+  ...p, bd: '', bp: 'none', by: null, age: null, stoneHeld: !!p.stone, stone: '', stoneOpen: false,
+  aka: p.aka.map(a => ({ ...a, bd: '', stone: '' })),
+};
+write('people.json', people.map(published));
 
 // ---------------------------------------------------------------------------
 // 2. Population, events, eras, layers
@@ -211,11 +225,33 @@ function resolveClusterPerson(cem, text) {
   }
   return null;
 }
-const famEvents = csv('family_events.csv');
-const lossesCem = csv('family_losses_cemetery.csv').map(r => ({
-  ...r, n_lost: int(r.n_lost), span_days: int(r.span_days),
-  people: r.people.split('|').map(s => s.trim()).map(t => ({ text: t, id: resolveClusterPerson(r.cemetery, t) })),
-}));
+// A life event dated by a withheld birth would publish that date: dropped.
+const famEvents = csv('family_events.csv').filter(e => !(e.event === 'child_born' && personById.get(canon(e.about_person_id))?.withheld));
+// A plot label at Lakeview is shared by several surnames, so dying close
+// together in one plot does not make people one family. A cluster the stones
+// call a loss is shown only for members tied to another member by a surname
+// or a resolved family link, and only while those members died within the
+// ninety days the page states; a cluster left with fewer than two is dropped.
+const LOSS_WINDOW = 90;
+const toDay = (iso) => Date.UTC(+iso.slice(0, 4), +iso.slice(5, 7) - 1, +iso.slice(8, 10)) / 86400000;
+const sameSurname = (a, b) => !!a.surname && a.surname.toLowerCase() === (b.surname || '').toLowerCase();
+const linked = (a, b) => a.fam.some(f => f.id === b.id) || b.fam.some(f => f.id === a.id);
+const lossesCem = csv('family_losses_cemetery.csv').map(r => {
+  const c = {
+    ...r, n_lost: int(r.n_lost), span_days: int(r.span_days),
+    people: r.people.split('|').map(s => s.trim()).map(t => ({ text: t, id: resolveClusterPerson(r.cemetery, t) })),
+  };
+  if (c.assessment !== 'apparent genuine loss cluster') return c;
+  const who = c.people.map(x => x.id && personById.get(canon(x.id))).filter(Boolean);
+  if (who.length !== c.people.length) throw new Error(`family_losses_cemetery: unresolved member in plot ${c.plot}`);
+  const tied = who.filter(a => who.some(b => b !== a && (sameSurname(a, b) || linked(a, b))));
+  const days = tied.map(p => toDay(p.dd)).sort((a, b) => a - b);
+  if (tied.length < 2 || tied.some(p => p.dp !== 'day') || days[days.length - 1] - days[0] > LOSS_WINDOW) return null;
+  const keep = new Set(tied.map(p => p.id));
+  const people = c.people.filter(x => keep.has(canon(x.id)));
+  const dd = tied.map(p => p.dd).sort();
+  return { ...c, people, n_lost: people.length, span_days: days[days.length - 1] - days[0], first_death: dd[0], last_death: dd[dd.length - 1] };
+}).filter(Boolean);
 write('family.json', {
   events: famEvents,
   losses: csv('family_losses.csv').map(r => ({ ...r, n_lost: int(r.n_lost), span_days: int(r.span_days), people: r.people.split('|').map(s => s.trim()) })),
@@ -461,7 +497,7 @@ write('summary.json', {
 {
   const RX = { wifeOf: /\b(wife|consort|relict) of\b/i, husbandOf: /\bhusband of\b/i, childOf: /\b(son|dau\.?|daughter) of\b/i };
   const PERIODS = [{ label: 'before 1900', lo: 0, hi: 1899 }, { label: '1900 – 1924', lo: 1900, hi: 1924 }, { label: '1925 – 1948', lo: 1925, hi: 1948 }];
-  const item = (p) => ({ id: p.id, name: p.name, dy: p.dy, age: p.age, text: p.stone });
+  const item = (p) => p.withheld ? { id: p.id, name: p.name, dy: null, age: null, text: '', withheld: true } : { id: p.id, name: p.name, dy: p.dy, age: p.age, text: p.stone };
   const read = people.filter(p => p.stone);
   const dated = read.filter(p => p.dy !== null && p.dy <= 1948 && p.age !== null);
   const periods = PERIODS.map(({ label, lo, hi }) => {

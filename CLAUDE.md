@@ -114,6 +114,19 @@ must not be used to compute or imply a count of missing individuals.
 394 of the 2,681 people (399 of the 2,732 records) — a family view must degrade gracefully to "nothing recorded" for
 about 85% of people and must never imply that silence means no family.
 
+**Possibly living people (29 Oct 2026, owner's decision).** 15 people have no
+death date and a birth within the last 110 years: most likely names cut in
+advance on a shared stone. They stay findable by name, but the build
+withholds their birth date (`withheld: true`) and the card says why. Never
+publish a birth date for someone with no death date born inside that span.
+
+**Plot clusters (29 Oct 2026, supersedes `APP_SPEC.md` §7.5 for display).**
+A Lakeview plot label is shared by several surnames, so dying close together
+in one plot does not make people one family. Of the CSV's 36 "genuine" plot
+clusters the app shows **14**: only members tied to another by a surname or a
+resolved family link, all within the 90 days the page states. The file still
+has 42 rows; nothing in `data/` changed.
+
 **Non-goals:** no editing data through the app; no burial location more precise
 than the `plot` string; no scraping or live calls to Find a Grave, FamilySearch
 or any genealogy service — all data ships here.

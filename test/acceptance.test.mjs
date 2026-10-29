@@ -3,6 +3,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { readCsv } from '../scripts/csv.mjs';
 import { aliveCount, familyOf, aliveOn, dayOf, bounds } from '../app/src/derive.js';
 
 const load = (f) => JSON.parse(readFileSync(new URL(`../app/data/${f}`, import.meta.url), 'utf8'));
@@ -32,7 +34,7 @@ test('people: owner-confirmed duplicates counted once (curation/duplicates.csv)'
   assert.equal(count(p => p.cem === 'H'), 254);
   assert.equal(count(p => p.cem === 'P'), 362);
   assert.equal(count(p => p.cod), 17);
-  assert.equal(count(p => p.stone), 743);
+  assert.equal(count(p => p.stone || p.stoneHeld), 743);
   assert.equal(count(p => p.disp), 22);
   assert.equal(count(p => p.census.length), 374);
   assert.equal(count(p => p.census.some(c => c.occ)), 212);
@@ -104,6 +106,29 @@ test('event overlay', () => {
   for (const c of off) assert.ok(c.county_grave_count < c.project_record_count, c.name);
 });
 
+test('possibly living: no birth date published without a death date inside 110 years', () => {
+  const people = load('people.json'), now = new Date().getFullYear();
+  const held = people.filter(p => p.withheld);
+  assert.equal(held.length, 15);
+  for (const p of held) assert.ok(!p.bd && p.by === null && !p.dd && p.age === null, p.id);
+  for (const p of held) assert.ok(!p.stone, `${p.id}: the stone reading carries the withheld date`);
+  assert.equal(held.filter(p => p.stoneHeld).length, 4);
+  // no published entry that refers to a withheld person repeats the birth date
+  const raw = new Map(readCsv(fileURLToPath(new URL('../data/timeline_people.csv', import.meta.url))).map(r => [r.person_id, r]));
+  const about = (o, id, hits = []) => {
+    if (Array.isArray(o)) o.forEach(x => about(x, id, hits));
+    else if (o && typeof o === 'object') { if (Object.values(o).includes(id)) hits.push(JSON.stringify(o)); Object.values(o).forEach(x => about(x, id, hits)); }
+    return hits;
+  };
+  const out = ['people.json', 'family.json', 'stones.json'].map(load);
+  for (const p of held) {
+    const d = raw.get(p.id).birth_date;
+    for (const s of about(out, p.id)) assert.ok(!s.includes(d), `${p.id}: ${d} is published in ${s.slice(0, 80)}`);
+  }
+  for (const p of people) if (!p.dd && p.by !== null) assert.ok(p.by <= now - 110, `${p.id} born ${p.by} with no death date`);
+  for (const p of people) for (const a of p.aka) if (!a.dd && a.bd) assert.ok(+a.bd.slice(0, 4) <= now - 110, a.id);
+});
+
 test('era bands', () => {
   const eras = load('eras.json');
   assert.equal(eras.length, 30);
@@ -136,18 +161,28 @@ test('era bands', () => {
 
 test('family layer', () => {
   const fam = load('family.json');
-  assert.equal(fam.events.length, 336);
-  assert.equal(new Set(fam.events.map(e => e.person_id)).size, 190);
+  assert.equal(fam.events.length, 335); // 336 in the CSV; one child_born is dated by a withheld birth
+  assert.equal(new Set(fam.events.map(e => e.person_id)).size, 189); // 190 in the CSV; LV1021's one event is dated by a withheld birth
   const kinds = {};
   for (const e of fam.events) kinds[e.event] = (kinds[e.event] || 0) + 1;
-  assert.deepEqual(kinds, { widowed: 116, child_died: 112, child_born: 107, died_in_childbirth: 1 });
+  assert.deepEqual(kinds, { widowed: 116, child_died: 112, child_born: 106, died_in_childbirth: 1 });
   assert.equal(fam.losses.length, 44);
   assert.equal(fam.losses.filter(l => l.n_lost >= 3).length, 4);
   assert.equal(fam.losses.filter(l => l.span_days !== null && l.span_days <= 30).length, 26);
   assert.equal(fam.births.length, 58);
   assert.equal(fam.births.filter(b => b.source.startsWith('register')).length, 48);
-  assert.equal(fam.lossesCemetery.length, 42);
-  assert.equal(fam.lossesCemetery.filter(c => c.assessment === 'apparent genuine loss cluster').length, 36);
+  // The CSV's 42 rows: 36 called genuine, 6 duplicates. The app shows a genuine
+  // cluster only for members tied by surname or family link, dying within 90 days.
+  const shown = fam.lossesCemetery.filter(c => c.assessment === 'apparent genuine loss cluster');
+  assert.equal(fam.lossesCemetery.length, 20);
+  assert.equal(shown.length, 14);
+  const P = new Map(load('people.json').map(p => [p.id, p]));
+  for (const c of shown) {
+    assert.ok(c.span_days <= 90 && c.n_lost === c.people.length && c.n_lost >= 2, c.plot);
+    const who = c.people.map(x => P.get(x.id));
+    for (const a of who) assert.ok(who.some(b => b !== a && (a.surname.toLowerCase() === b.surname.toLowerCase() || a.fam.some(f => f.id === b.id) || b.fam.some(f => f.id === a.id))), `${c.plot}: ${a.name} is tied to no other member`);
+  }
+  assert.ok(!shown.some(c => c.plot === 'N-52'), 'N-52 (2025) spans 171 days across three surnames');
   assert.equal(fam.lossesCemetery.filter(c => c.assessment.startsWith('likely DUPLICATE')).length, 6);
   assert.equal(fam.marriages.length, 8);
   assert.equal(fam.marriages.filter(m => m.not_after === null).length, 7);

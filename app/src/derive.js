@@ -181,7 +181,7 @@ export function lifeSpan(p) {
   if (b && d) return `${b} – ${d}`;
   if (b) return `born ${b}`;
   if (d) return `died ${d}`;
-  return 'no dates recorded';
+  return p.withheld ? 'no death date recorded; birth date not shown' : 'no dates recorded';
 }
 /** A plain-English distance between two days: "3 days earlier", "the same day", "2 years later". */
 export function fmtOffset(fromDay, toDay) {
