@@ -524,4 +524,50 @@ write('summary.json', {
   write('stones.json', { naming, widowhood });
 }
 
+// ---------------------------------------------------------------------------
+// 10. Deaths together: the one cross-household cluster the app marks.
+//
+//    A blind scan of every 1-3 month window, 1870-2020, finds nothing that
+//    beats chance (private report, 29 Oct 2026). One window was tested
+//    because a source names it in advance: the overlay dates the influenza
+//    pandemic's peak in Virginia to October 1918. Deaths in October-December
+//    1918 against the same months in the surrounding years (seven either
+//    side, skipping 1917-1919), on people, with a known month, disputed dates
+//    left out. The page names no cause: the record gives none.
+// ---------------------------------------------------------------------------
+{
+  const ev = events.find(e => /Influenza pandemic peaks in Virginia/.test(e.title));
+  if (!ev) throw new Error('clusters: the influenza event is missing from context_events.csv');
+  const Y = Number(ev.date.slice(0, 4)), M0 = Number(ev.date.slice(5, 7)), MONTHS = [M0, M0 + 1, M0 + 2];
+  const dated = people.filter(p => p.dd && (p.dp === 'day' || p.dp === 'month') && !p.disp && p.dd.length >= 7);
+  const ym = (p) => [Number(p.dd.slice(0, 4)), Number(p.dd.slice(5, 7))];
+  const inWin = (p, y) => { const [py, pm] = ym(p); return py === y && MONTHS.includes(pm); };
+  const who = dated.filter(p => inWin(p, Y)).sort((a, b) => a.dd.localeCompare(b.dd));
+  const others = [];
+  for (let y = Y - 7; y <= Y + 7; y++) if (Math.abs(y - Y) > 1) others.push(dated.filter(p => inWin(p, y)).length);
+  const expected = others.reduce((a, b) => a + b, 0) / others.length;
+  // one-sided Poisson tail P(X >= observed)
+  const poissonSf = (k, mu) => { let term = Math.exp(-mu), cdf = 0; for (let i = 0; i < k; i++) { cdf += term; term *= mu / (i + 1); } return 1 - cdf; };
+  const young = (p) => p.age !== null && p.age >= 15 && p.age < 45;
+  const autumns = dated.filter(p => { const [py, pm] = ym(p); return py >= Y - 7 && py <= Y + 7 && py !== Y && MONTHS.includes(pm) && p.age !== null; });
+  // one-sided Fisher exact on [[a,b],[c,d]]: more young in the window than elsewhere
+  const lf = (n) => { let s = 0; for (let i = 2; i <= n; i++) s += Math.log(i); return s; };
+  const fisherGreater = (a, b, c, d) => {
+    const r1 = a + b, r2 = c + d, c1 = a + c, N = r1 + r2;
+    const pr = (x) => Math.exp(lf(r1) + lf(r2) + lf(c1) + lf(N - c1) - lf(N) - lf(x) - lf(r1 - x) - lf(c1 - x) - lf(r2 - c1 + x));
+    let s = 0; for (let x = a; x <= Math.min(r1, c1); x++) s += pr(x); return s;
+  };
+  const wy = who.filter(p => p.age !== null), ya = count(wy, young), yb = count(autumns, young);
+  const p = poissonSf(who.length, expected);
+  write('clusters.json', [{
+    id: 'influenza-1918', from: `${Y}-${String(M0).padStart(2, '0')}-01`, to: `${Y}-${String(M0 + 2).padStart(2, '0')}-31`,
+    reason: ev.title, reasonDate: ev.date,
+    observed: who.length, expected: Math.round(expected * 100) / 100, households: new Set(who.map(p => (p.surname || p.name.split(' ').pop()).toLowerCase())).size,
+    p: Math.round(p * 1000) / 1000, pTested: Math.round(Math.min(1, 2 * p) * 1000) / 1000, tested: 2,
+    young: ya, youngOf: wy.length, youngOther: yb, otherOf: autumns.length,
+    pAge: Math.round(fisherGreater(ya, wy.length - ya, yb, autumns.length - yb) * 1000) / 1000,
+    people: who.map(p => ({ id: p.id, name: p.name, dd: p.dd, age: p.age, cem: p.cem, plot: p.plot })),
+  }]);
+}
+
 console.log('done.');

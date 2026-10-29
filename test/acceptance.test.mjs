@@ -276,3 +276,14 @@ test('stones: the one who lived on', () => {
   assert.equal(W.buckets.reduce((s, b) => s + b.n, 0), W.couples);
   assert.ok(W.long.every(c => c.last.dy - c.first.dy === c.years && c.years >= 30));
 });
+
+test('deaths together: the 1918 influenza window, the one cluster the app marks', () => {
+  const C = load('clusters.json');
+  assert.equal(C.length, 1);
+  const c = C[0];
+  assert.deepEqual([c.from, c.to, c.reason], ['1918-10-01', '1918-12-31', 'Influenza pandemic peaks in Virginia']);
+  assert.deepEqual([c.observed, c.expected, c.households, c.p, c.pTested], [8, 3.25, 7, 0.018, 0.037]);
+  assert.deepEqual([c.young, c.youngOf, c.youngOther, c.otherOf, c.pAge], [5, 8, 8, 45, 0.016]);
+  assert.deepEqual(c.people.map(p => p.age), [30, 66, 27, 9, 24, 17, 28, 67]);
+  assert.ok(c.people.every(p => byId.has(p.id)));
+});

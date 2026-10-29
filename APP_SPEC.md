@@ -819,3 +819,24 @@ Living population (people): 1800 **11** · 1850 **327** · 1866 **597** · 1900
 **1,231** · 1927 **1,429** (still the peak) · 1950 **1,256** · 2000 **413**.
 On the records the build still reproduces `timeline_population.csv` exactly,
 and stops if it does not.
+
+---
+
+## 14. Deaths together
+
+Added 29 Oct 2026. A blind scan of every one-to-three-month window from 1870
+to 2020 (people, deaths with a known month) finds no window that beats chance.
+One window was tested because a source names it in advance: the overlay dates
+"Influenza pandemic peaks in Virginia" to October 1918.
+
+October–December 1918: **8 deaths** against **3.25** usual (the same months in
+the surrounding years, seven either side, skipping 1917–1919); p = 0.018 for
+the window, 0.037 allowing for the two outbreaks tested (the other, autumn
+1890, shows no excess). Ages 15–44: 5 of 8, against 8 of 45 in the other
+autumns 1911–1925 (Fisher p = 0.016).
+
+The date panel shows this as a measured count, with the eight people, from
+October to December 1918. It names no cause, since the record gives none. It
+is the only cluster the app marks, and the app must not present a quiet month
+as evidence of no outbreak: in a month that usually sees one death, about
+eight are needed to stand out.

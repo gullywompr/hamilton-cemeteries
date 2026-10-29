@@ -2,7 +2,7 @@
 // builds the indexes the views need. Nothing here writes anywhere.
 import { bounds, interval, dayOf } from './derive.js';
 
-const FILES = ['people', 'population', 'events', 'eras', 'layers', 'family', 'disputed', 'findings', 'leads', 'context', 'register', 'summary', 'longevity', 'stones'];
+const FILES = ['people', 'population', 'events', 'eras', 'layers', 'family', 'disputed', 'findings', 'leads', 'context', 'register', 'summary', 'longevity', 'stones', 'clusters'];
 
 export async function loadAll() {
   const loaded = await Promise.all(FILES.map(f => fetch(`./data/${f}.json`).then(r => {
@@ -81,6 +81,9 @@ export async function loadAll() {
 
   // Deaths ordered by earliest possible death day, for "deaths around this date".
   D.deaths = D.people.filter(p => p.dd && p.dp !== 'none').map(p => ({ p, iv: interval(p.dd, p.dp) })).filter(x => x.iv).sort((a, b) => a.iv.lo - b.iv.lo);
+
+  // Measured clusters across households; each covers a span of days.
+  for (const c of D.clusters) { const [a, b] = [c.from, c.to].map(s => s.split('-').map(Number)); c.lo = dayOf(a[0], a[1], 1); c.hi = dayOf(b[0], b[1], Math.min(b[2], 31)); }
 
   D.minDay = dayOf(1754, 1, 1);
   D.maxDay = dayOf(2026, 12, 31);

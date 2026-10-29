@@ -423,3 +423,9 @@ details.more summary { font-size: 13px; color: var(--ink-3); cursor: pointer; }
 .stone-list .plink:hover, .stone-list .plink:focus-visible { text-decoration-color: var(--ink); }
 .stone-line { display: block; margin-top: 3px; font-family: var(--serif); font-variant: small-caps; letter-spacing: 0.03em; color: var(--ink-2); overflow-wrap: anywhere; }
 .stone-note.cut-before { color: var(--narr-2); }
+
+/* Deaths together: a measured cluster across households, in the date panel */
+.cluster-note { margin: 18px 0 6px; padding: 2px 0 4px 16px; border-left: 3px solid var(--s2); }
+.cluster-note p { margin: 4px 0 8px; color: var(--narr); font-size: 15.5px; line-height: 1.45; }
+.cluster-note p b { color: var(--narr); }
+.cluster-note .near-list { margin-bottom: 8px; }

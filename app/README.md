@@ -123,6 +123,11 @@ records everywhere, and computes the living-population curve itself after
 checking that the records still reproduce `timeline_population.csv`. Folded
 ids still open their person. Rules: `APP_SPEC.md` §13.
 
+**deaths together.** `app/data/clusters.json` holds the one cluster across
+households the app marks: October–December 1918, computed in the build from
+people and the overlay's influenza date. The date panel shows it when the
+chosen date falls inside it. Rules: `APP_SPEC.md` §14.
+
 **county context.** The demography charts are context and are captioned as
 not a denominator. The county grave counts are shown beside the project's and
 captioned as lower, not a total.

@@ -41,6 +41,7 @@ export class CursorPanel {
     const docEras = D.eras.filter(e => e.layer === 'documentation' && e.s.lo <= day && (e.open || (e.e && day <= e.e.hi)));
     const otherEras = D.eras.filter(e => e.layer !== 'documentation' && e.s.lo <= day && (e.open || (e.e && day <= e.e.hi)));
     const absence = D.absenceBands.filter(b => day >= b.lo && day <= b.hi);
+    const clusters = D.clusters.filter(c => day >= c.lo && day <= c.hi);
     const firstBurial = { H: 1836, P: 1922 };
 
     const cemBar = (k) => {
@@ -58,6 +59,13 @@ export class CursorPanel {
       <div class="split" role="img" aria-label="${living.certain.length} certainly alive, ${living.possible.length} possibly"><i class="certain" style="width:${pct(living.certain.length)}%"></i><i class="possible" style="width:${pct(living.possible.length)}%"></i></div>
       <div class="split-key"><span>${n(living.certain.length)} certainly</span><span>${n(living.possible.length)} possibly, a date known only to the year</span></div>
       <div class="footing">Measured from the ${n(D.spans.length)} people with both dates recorded. The curve counts <b>${n(yearCount)}</b> for the whole of ${year}. Who the record leaves out is on <a href="#/record?tab=absent">the record</a> page.</div>
+
+      ${clusters.map(c => `<div class="cluster-note">
+        <div class="panel-h">Deaths together · a measured count</div>
+        <p><b>${n(c.observed)} deaths</b> in these grounds, ${c.from.slice(0, 4) === c.to.slice(0, 4) ? fmtDate(c.from, 'month').replace(/ \d{4}$/, '') : fmtDate(c.from, 'month')} to ${fmtDate(c.to, 'month')}, against about ${Math.round(c.expected)} in an ordinary autumn. <b>${n(c.young)} of them aged ${Math.min(...c.people.filter(x => x.age >= 15 && x.age < 45).map(x => x.age))} to ${Math.max(...c.people.filter(x => x.age >= 15 && x.age < 45).map(x => x.age))}.</b></p>
+        <ul class="near-list">${c.people.map(x => `<li><span class="when">${fmtDate(x.dd, 'day', { short: true })}</span><span><span class="ttl" data-person="${x.id}" role="button" tabindex="0">${esc(x.name)}</span><div class="meta">aged ${x.age ?? 'not recorded'}, ${CEMETERY_NAME[x.cem]}${x.plot ? ' ' + esc(x.plot) : ''}</div></span></li>`).join('')}</ul>
+        <div class="footing">Tested because the event overlay dates "${esc(c.reason)}" to ${fmtDate(c.reasonDate, 'month')}. Usual: the same months of the surrounding years, ${c.expected} deaths on average; p = ${c.p.toFixed(3)} for this window, ${c.pTested.toFixed(3)} allowing for the ${c.tested} outbreaks tested. Ages 15 to 44: ${c.young} of ${c.youngOf} here, ${c.youngOther} of ${c.otherOf} in the other autumns (p = ${c.pAge.toFixed(3)}), the pandemic's known pattern. The record gives no cause for any of them. A scan of every month from 1870 to 2020 finds no other window that beats chance; a quiet month is not evidence of no outbreak.</div>
+      </div>`).join('')}
 
       <div class="panel-h">By cemetery</div>
       <div class="bars">${cemBar('L')}${cemBar('H')}${cemBar('P')}</div>
