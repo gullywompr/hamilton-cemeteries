@@ -1,5 +1,7 @@
-# Builds app/data/*.json from data/*.csv, runs the acceptance tests, and
-# publishes app/ to GitHub Pages on every push to main.
+# Builds app/data/*.json from data/*.csv, runs the acceptance tests, stamps
+# the commit onto every URL the page loads (scripts/stamp.mjs, so one deploy's
+# files never mix with another's in a browser cache), and publishes the
+# stamped copy to GitHub Pages on every push to main.
 name: Deploy to GitHub Pages
 
 on:
@@ -26,9 +28,10 @@ jobs:
           node-version: 22
       - run: npm run data
       - run: npm test
+      - run: node scripts/stamp.mjs ${GITHUB_SHA::12}
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: app
+          path: _site
   deploy:
     needs: build
     runs-on: ubuntu-latest
