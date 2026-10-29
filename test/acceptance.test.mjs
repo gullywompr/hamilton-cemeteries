@@ -145,7 +145,7 @@ test('longevity: era medians, n and gaps', () => {
   const L = load('longevity.json');
   const got = L.eras.map(e => [e.era, e.lakeview_median, e.lakeview_n, e.pv_median, e.pv_n, e.gap]);
   assert.deepEqual(got, [
-    ['1900-1949', 67.0, 682, 55.5, 42, 11.5],
+    ['1920-1949', 69.0, 480, 56.0, 39, 13.0],
     ['1950-1999', 76.0, 753, 68.0, 193, 8.0],
     ['2000-2026', 79.0, 334, 75.0, 74, 4.0],
   ]);
@@ -166,13 +166,13 @@ test('longevity: 2000-2026 is not established, the earlier eras are', () => {
   assert.ok(a.significant && b.significant);
   assert.equal(c.significant, false);
   assert.ok(Math.abs(c.p - 0.081) < 0.0005, `p ${c.p}`);
-  assert.deepEqual(c.ci95, [-2.0, 8.0]);
+  assert.deepEqual(c.ci95, [-2.5, 8.0]);
   assert.ok(c.ci95[0] < 0 && c.ci95[1] > 0, 'interval crosses zero');
 });
 
 test('longevity: robustness matches the reference output', () => {
   const L = load('longevity.json');
-  assert.deepEqual(L.dayPrecision.map(r => r.gap), [10.5, 8.0, 3.5]);
+  assert.deepEqual(L.dayPrecision.map(r => r.gap), [12.5, 8.0, 3.5]);
   assert.deepEqual(Object.values(L.coverage).map(c => c.pct), [95.3, 92.4, 88.9]);
   assert.equal(L.reference.agrees, true);
 });

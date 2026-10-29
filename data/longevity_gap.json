@@ -3,17 +3,17 @@
  "not": "life expectancy at birth",
  "eras": [
   {
-   "era": "1900-1949",
-   "lakeview_n": 682,
-   "lakeview_median": 67.0,
-   "pv_n": 42,
-   "pv_median": 55.5,
-   "gap": 11.5,
+   "era": "1920-1949",
+   "lakeview_n": 480,
+   "lakeview_median": 69.0,
+   "pv_n": 39,
+   "pv_median": 56.0,
+   "gap": 13.0,
    "ci95": [
-    5.0,
-    21.0
+    3.0,
+    22.5
    ],
-   "p": 0.0011183333119493411,
+   "p": 0.000671100423970657,
    "significant_at_05": true
   },
   {
@@ -38,7 +38,7 @@
    "pv_median": 75.0,
    "gap": 4.0,
    "ci95": [
-    -2.0,
+    -2.5,
     8.0
    ],
    "p": 0.08108261616139267,
@@ -129,10 +129,10 @@
  ],
  "robustness_day_precision_only": [
   {
-   "era": "1900-1949",
-   "lakeview_n": 510,
+   "era": "1920-1949",
+   "lakeview_n": 343,
    "pv_n": 18,
-   "gap": 10.5
+   "gap": 12.5
   },
   {
    "era": "1950-1999",

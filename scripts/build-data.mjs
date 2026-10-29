@@ -298,7 +298,7 @@ write('summary.json', {
   const same = (what, a, b) => { if (a !== b) disagree(what, a, b); };
 
   const eras = [];
-  for (const [lo, hi] of [[1900, 1949], [1950, 1999], [2000, 2026]]) {
+  for (const [lo, hi] of [[1920, 1949], [1950, 1999], [2000, 2026]]) {
     const a = adults('Lakeview', lo, hi), b = adults('Pleasant Valley', lo, hi);
     if (b.length < 15) continue;
     const era = `${lo}-${hi}`, r = ref.eras.find(e => e.era === era) || disagree(`era ${era}`, 'present', 'absent');
@@ -320,7 +320,7 @@ write('summary.json', {
   }
   same('decade count', decades.length, ref.decades.length);
   const dayPrecision = [];
-  for (const [lo, hi] of [[1900, 1949], [1950, 1999], [2000, 2026]]) {
+  for (const [lo, hi] of [[1920, 1949], [1950, 1999], [2000, 2026]]) {
     const a = adults('Lakeview', lo, hi, true), b = adults('Pleasant Valley', lo, hi, true);
     if (b.length < 12) continue;
     const row = { era: `${lo}-${hi}`, lakeview_n: a.length, pv_n: b.length, gap: median(a) - median(b) };

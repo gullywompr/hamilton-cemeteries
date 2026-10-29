@@ -41,7 +41,7 @@ def main():
     out = {'measure': 'median age at death, adults who reached 20',
            'not': 'life expectancy at birth', 'eras': [], 'decades': []}
 
-    for lo, hi in [(1900,1949),(1950,1999),(2000,2026)]:
+    for lo, hi in [(1920,1949),(1950,1999),(2000,2026)]:
         a, b = adults(U,'Lakeview',lo,hi), adults(U,'Pleasant Valley',lo,hi)
         if len(b) < 15: continue
         u = stats.mannwhitneyu(a, b, alternative='greater')
@@ -66,7 +66,7 @@ def main():
 
     # robustness: same comparison on day-precision records only
     out['robustness_day_precision_only'] = []
-    for lo, hi in [(1900,1949),(1950,1999),(2000,2026)]:
+    for lo, hi in [(1920,1949),(1950,1999),(2000,2026)]:
         a, b = adults(U,'Lakeview',lo,hi,True), adults(U,'Pleasant Valley',lo,hi,True)
         if len(b) < 12: continue
         out['robustness_day_precision_only'].append(
