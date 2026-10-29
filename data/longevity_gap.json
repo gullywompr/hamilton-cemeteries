@@ -147,6 +147,49 @@
    "gap": 3.5
   }
  ],
+ "robustness_both_dates_day": [
+  {
+   "era": "1920-1949",
+   "lakeview_n": 294,
+   "lakeview_median": 69.0,
+   "pv_n": 15,
+   "pv_median": 57.0,
+   "gap": 12.0,
+   "ci95": [
+    -4.0,
+    25.0
+   ]
+  },
+  {
+   "era": "1950-1999",
+   "lakeview_n": 555,
+   "lakeview_median": 76.0,
+   "pv_n": 89,
+   "pv_median": 68.0,
+   "gap": 8.0,
+   "ci95": [
+    1.0,
+    11.0
+   ]
+  },
+  {
+   "era": "2000-2026",
+   "lakeview_n": 311,
+   "lakeview_median": 78.0,
+   "pv_n": 48,
+   "pv_median": 75.5,
+   "gap": 2.5,
+   "ci95": [
+    -3.5,
+    9.0
+   ]
+  }
+ ],
+ "robustness_pv_birth_year_heaping": {
+  "n": 153,
+  "ending_0_or_5": 23,
+  "p_above_chance": 0.9532527059058246
+ },
  "robustness_coverage": {
   "Lakeview": {
    "n": 2101,

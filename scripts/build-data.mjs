@@ -268,8 +268,9 @@ write('summary.json', {
   const I = (x) => { const v = Number.parseFloat(x); return Number.isFinite(v) ? Math.trunc(v) : null; };
   const median = (a) => { const b = a.slice().sort((x, y) => x - y), m = b.length >> 1; return b.length % 2 ? b[m] : (b[m - 1] + b[m]) / 2; };
   const U = peopleRows.filter(r => r.timeline_usable === 'yes' && I(r.death_year) !== null && I(r.age_at_death) !== null);
-  const adults = (cem, lo, hi, dayOnly = false) => U.filter(r => r.cemetery === cem && I(r.death_year) >= lo && I(r.death_year) <= hi
-    && I(r.age_at_death) >= 20 && (!dayOnly || r.death_precision === 'day')).map(r => I(r.age_at_death));
+  const adults = (cem, lo, hi, dayOnly = false, bothDay = false) => U.filter(r => r.cemetery === cem && I(r.death_year) >= lo && I(r.death_year) <= hi
+    && I(r.age_at_death) >= 20 && (!dayOnly || r.death_precision === 'day')
+    && (!bothDay || (r.death_precision === 'day' && r.birth_precision === 'day'))).map(r => I(r.age_at_death));
 
   // One-sided Mann-Whitney U (Lakeview greater), normal approximation with tie
   // and continuity correction: what scipy.stats.mannwhitneyu does with ties.
@@ -328,6 +329,25 @@ write('summary.json', {
     for (const k of ['lakeview_n', 'pv_n', 'gap']) same(`day-precision ${row.era} ${k}`, row[k], r && r[k]);
     dayPrecision.push(row);
   }
+  // Birth and death both dated to the day: what each gap is without the
+  // Pleasant Valley adults who have a birth year only. The interval comes from
+  // the reference output; an era is established when it excludes zero.
+  const bothDay = [];
+  for (const [lo, hi] of [[1920, 1949], [1950, 1999], [2000, 2026]]) {
+    const a = adults('Lakeview', lo, hi, false, true), b = adults('Pleasant Valley', lo, hi, false, true);
+    if (b.length < 8) continue;
+    const era = `${lo}-${hi}`, r = ref.robustness_both_dates_day.find(x => x.era === era) || disagree(`both-dates ${era}`, 'present', 'absent');
+    const row = { era, lo, hi, lakeview_n: a.length, lakeview_median: median(a), pv_n: b.length, pv_median: median(b), gap: median(a) - median(b), ci95: r.ci95 };
+    for (const k of ['lakeview_n', 'lakeview_median', 'pv_n', 'pv_median', 'gap']) same(`both-dates ${era} ${k}`, row[k], r[k]);
+    row.established = r.ci95[0] > 0 || r.ci95[1] < 0;
+    bothDay.push(row);
+  }
+  same('both-dates era count', bothDay.length, ref.robustness_both_dates_day.length);
+  const yo = U.filter(r => r.cemetery === 'Pleasant Valley' && I(r.death_year) >= 1920 && I(r.age_at_death) >= 20
+    && r.birth_precision !== 'day' && I(r.birth_year) !== null).map(r => I(r.birth_year));
+  const pvHeaping = { n: yo.length, ending_0_or_5: yo.filter(y => y % 5 === 0).length };
+  for (const k of ['n', 'ending_0_or_5']) same(`pv heaping ${k}`, pvHeaping[k], ref.robustness_pv_birth_year_heaping[k]);
+  pvHeaping.p = ref.robustness_pv_birth_year_heaping.p_above_chance;
   const coverage = {};
   for (const cem of ['Lakeview', 'Harmony', 'Pleasant Valley']) {
     const sub = peopleRows.filter(r => r.cemetery === cem);
@@ -343,7 +363,7 @@ write('summary.json', {
     pv_earliest_death: Math.min(...pvAll.map(r => I(r.death_year))) };
   write('longevity.json', {
     measure: 'median age at death, adults who reached 20', not: 'life expectancy at birth',
-    eras, decades, dayPrecision, coverage, before,
+    eras, decades, dayPrecision, bothDay, pvHeaping, coverage, before,
     reference: { script: 'scripts/longevity_gap.py', output: 'data/longevity_gap.json', agrees: true, ci: 'bootstrap, 4000 resamples, from the reference output' },
   });
 }

@@ -201,3 +201,22 @@ test('longevity: the page says why the comparison starts where it does', async (
   assert.match(text, /Why the comparison starts in 1920/);
   assert.match(text, /252 dated adult deaths at Lakeview and 3 at Pleasant Valley, the earliest in 1911, before the ground's 1922 opening/);
 });
+
+test('longevity: the 1920-1949 gap is shown to depend on year-only dates', async () => {
+  const L = load('longevity.json');
+  assert.deepEqual(L.bothDay.map(r => [r.era, r.lakeview_n, r.pv_n, r.gap, r.ci95, r.established]), [
+    ['1920-1949', 294, 15, 12.0, [-4.0, 25.0], false],
+    ['1950-1999', 555, 89, 8.0, [1.0, 11.0], true],
+    ['2000-2026', 311, 48, 2.5, [-3.5, 9.0], false],
+  ]);
+  assert.deepEqual([L.pvHeaping.n, L.pvHeaping.ending_0_or_5], [153, 23]);
+  assert.ok(L.pvHeaping.p > 0.05);
+  const { longevitySection } = await import('../app/src/views.js');
+  const text = longevitySection(L).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+  assert.match(text, /The 1920 – 1949 gap depends on dates known only to the year\./);
+  assert.match(text, /24 of Pleasant Valley's 39 adults in that era have no birth or death date to the day/);
+  assert.match(text, /with 15 people left its interval runs from −4\.0 to 25\.0 and includes zero/);
+  assert.match(text, /23 of 153 end in 0 or 5, fewer than the one in five/);
+  // only the first era is flagged: 2000-2026 was never established, 1950-1999 holds
+  assert.equal((text.match(/depends on dates known only to the year/g) || []).length, 1);
+});

@@ -258,6 +258,7 @@ export function longevitySection(L) {
     <p class="prose">The median age at death of people who reached twenty, on the town's white ground and on Pleasant Valley, which opened in 1922 and is one of Loudoun's largest African American cemeteries. Adults only, so that different child-burial practice on the two grounds cannot drive the result. ${POP}</p>
     <p class="prose small-prose"><b>Why the comparison starts in ${L.before.start}.</b> Before ${L.before.start} the record holds ${n(L.before.lakeview_n)} dated adult deaths at Lakeview and ${n(L.before.pv_n)} at Pleasant Valley, the earliest in ${L.before.pv_earliest_death}, before the ground's 1922 opening. That is too few to carry a median, so both grounds are compared from ${L.before.start} onward and the earlier deaths are left out on both sides.</p>
     <div class="era-row">${L.eras.map(eraBlock).join('')}</div>
+    ${yearOnlyNote(L)}
     <div class="callout narr-block"><p class="narr">Between ${first.lo} and ${first.hi} the median adult buried at Pleasant Valley died <b>${f1(first.gap)} years younger</b> than the median adult at Lakeview.</p><p class="narr-2">By ${last.lo} the difference had narrowed to where <b>this record can no longer detect it.</b></p></div>
     <h3>By decade of death</h3>
     ${longevityFigure(L)}
@@ -274,9 +275,23 @@ export function longevitySection(L) {
       <table class="tbl" style="max-width:640px;margin-top:10px"><thead><tr><th>era, death dated to the day only</th><th class="n">Lakeview n</th><th class="n">Pleasant Valley n</th><th class="n">difference between medians</th></tr></thead><tbody>
         ${L.dayPrecision.map(r => `<tr><td>${r.era.replace('-', ' – ')}</td><td class="n">${n(r.lakeview_n)}</td><td class="n">${n(r.pv_n)}</td><td class="n">${r.era === last.era && !last.significant ? '<span class="muted">not established</span>' : f1(r.gap)}</td></tr>`).join('')}
       </tbody></table>
-      <p class="prose small-prose">Restricting both grounds to deaths dated to the day leaves the first two differences nearly unchanged. The intervals are a bootstrap of 4,000 resamples. Every median, n and p on this page is computed by the app's build and reproduced independently by the reference script; the build stops if they ever disagree.</p>
+      <table class="tbl" style="max-width:640px;margin-top:10px"><thead><tr><th>era, birth and death both dated to the day</th><th class="n">Lakeview n</th><th class="n">Pleasant Valley n</th><th class="n">difference between medians</th><th class="n">95% interval</th></tr></thead><tbody>
+        ${L.bothDay.map(r => `<tr><td>${r.lo} – ${r.hi}</td><td class="n">${n(r.lakeview_n)}</td><td class="n">${n(r.pv_n)}</td><td class="n">${r.established ? f1(r.gap) : `<span class="muted">${f1(r.gap)}, not established</span>`}</td><td class="n">${fmtCI(r.ci95)}</td></tr>`).join('')}
+      </tbody></table>
+      <p class="prose small-prose">Restricting both grounds to deaths dated to the day leaves the first two differences nearly unchanged. Requiring the birth to be dated to the day as well keeps the size of every gap, but leaves too few people at Pleasant Valley in ${L.eras[0].lo} – ${L.eras[0].hi} to establish it. The intervals are a bootstrap of 4,000 resamples. Every median, n and p on this page is computed by the app's build and reproduced independently by the reference script; the build stops if they ever disagree.</p>
     </details>
     <div class="source"><span>SOURCE</span>timeline_people.csv: cemetery, death_year, age_at_death, timeline_usable = yes · computed in scripts/build-data.mjs, checked against scripts/longevity_gap.py and data/longevity_gap.json, which supplies the interval</div>`;
+}
+// Where an established era stops being established once every date known only
+// to the year is left out, say so beside the eras, with the heaping check that
+// says whether those year-only birth years can be trusted.
+function yearOnlyNote(L) {
+  const lost = L.eras.filter(e => e.significant).map(e => [e, L.bothDay.find(r => r.era === e.era)]).filter(([, r]) => r && !r.established);
+  if (!lost.length) return '';
+  const h = L.pvHeaping, share = h.ending_0_or_5 / h.n;
+  return lost.map(([e, r]) => `<p class="prose small-prose"><b>The ${e.lo} – ${e.hi} gap depends on dates known only to the year.</b> ${n(e.pv_n - r.pv_n)} of Pleasant Valley's ${n(e.pv_n)} adults in that era have no birth or death date to the day, most of them a birth year alone. Leave them out and the gap is ${f1(r.gap)} years, close to the same, but with ${n(r.pv_n)} people left its interval runs from ${fmtCI(r.ci95)} and includes zero. ${h.p < 0.05
+    ? `Those birth years may hold rounded guesses: ${n(h.ending_0_or_5)} of ${n(h.n)} end in 0 or 5, more than the one in five that chance gives.`
+    : `Those birth years do not look like rounded guesses: ${n(h.ending_0_or_5)} of ${n(h.n)} end in 0 or 5, ${share < 0.2 ? 'fewer than' : 'about'} the one in five that chance gives. The finding stands, and it stands on them.`}</p>`).join('');
 }
 function longevityFigure(L) {
   const rows = L.decades, notEst = L.eras.find(e => !e.significant);

@@ -707,6 +707,15 @@ at Pleasant Valley, the earliest in 1911. Three cannot carry a median, so both
 grounds are compared from 1920 and earlier deaths are left out on both sides.
 The page must say this, with the counts.
 
+**The 1920–1949 gap depends on year-only dates.** 24 of Pleasant Valley's 39
+adults in that era have no birth or death date to the day, most of them a
+birth year alone. With birth and death both dated to the day the gap is 12.0,
+but Pleasant Valley is left with 15 people and the interval runs from −4.0
+to 25.0. Those year-only birth years are not heaped: 23 of 153 end in 0 or 5,
+against one in five by chance. The page must state the dependency beside the
+eras, with these numbers, and must drop the "stands on them" reassurance if
+the heaping check ever fails.
+
 ### 11.3 Rules
 
 These are honesty rules, not style:
@@ -734,6 +743,11 @@ These are honesty rules, not style:
   10.0, 12.0, 16.0, 11.5, 8.0, 11.0, 5.0, 4.0, 3.0, 6.0, on Pleasant Valley
   `n` of 11, 15, 13, 26, 34, 38, 42, 53, 37, 31.
 - Restricted to deaths dated to the day, the era gaps are 12.5, 8.0, 3.5.
+- With birth and death both dated to the day: 1920–1949 gap 12.0 on
+  Pleasant Valley n=15, interval −4.0 to 25.0, not established; 1950–1999
+  8.0 on n=89, 1.0 to 11.0, established; 2000–2026 2.5 on n=48, −3.5 to 9.0.
+- Pleasant Valley's year-only birth years from 1920 on: 23 of 153 end in 0
+  or 5.
 - Share of each ground's people with a usable age at death: Lakeview 95.3%,
   Harmony 92.4%, Pleasant Valley 88.9%.
 - Before 1920: Lakeview 252 adults, Pleasant Valley 3, earliest 1911.

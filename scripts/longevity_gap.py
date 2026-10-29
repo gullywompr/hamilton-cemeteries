@@ -28,12 +28,13 @@ def load():
             and I(r['death_year']) is not None
             and I(r['age_at_death']) is not None]
 
-def adults(U, cem, lo, hi, day_only=False):
+def adults(U, cem, lo, hi, day_only=False, both_day=False):
     return np.array([I(r['age_at_death']) for r in U
                      if r['cemetery'] == cem
                      and lo <= I(r['death_year']) <= hi
                      and I(r['age_at_death']) >= 20
-                     and (not day_only or r['death_precision'] == 'day')])
+                     and (not day_only or r['death_precision'] == 'day')
+                     and (not both_day or (r['death_precision'] == 'day' and r['birth_precision'] == 'day'))])
 
 def main():
     U = load()
@@ -72,6 +73,32 @@ def main():
         out['robustness_day_precision_only'].append(
             {'era': f'{lo}-{hi}', 'lakeview_n': int(len(a)), 'pv_n': int(len(b)),
              'gap': float(np.median(a)-np.median(b))})
+
+    # robustness: birth AND death dated to the day. More than half of Pleasant
+    # Valley's adults have a birth year only; this shows what the gap is
+    # without them. Fresh generator per era so each interval is reproducible.
+    out['robustness_both_dates_day'] = []
+    for lo, hi in [(1920,1949),(1950,1999),(2000,2026)]:
+        a = adults(U,'Lakeview',lo,hi,both_day=True)
+        b = adults(U,'Pleasant Valley',lo,hi,both_day=True)
+        if len(b) < 8: continue
+        g = np.random.default_rng(7)
+        boot = [np.median(g.choice(a,len(a))) - np.median(g.choice(b,len(b))) for _ in range(4000)]
+        ci = np.percentile(boot, [2.5, 97.5])
+        out['robustness_both_dates_day'].append({'era': f'{lo}-{hi}',
+            'lakeview_n': int(len(a)), 'lakeview_median': float(np.median(a)),
+            'pv_n': int(len(b)), 'pv_median': float(np.median(b)),
+            'gap': float(np.median(a)-np.median(b)),
+            'ci95': [round(float(ci[0]),1), round(float(ci[1]),1)]})
+
+    # robustness: are Pleasant Valley's year-only birth years rounded? Share
+    # ending in 0 or 5 (chance: 20%), adults in the comparison from 1920 on.
+    yo = [I(r['birth_year']) for r in U if r['cemetery'] == 'Pleasant Valley'
+          and I(r['death_year']) >= 1920 and I(r['age_at_death']) >= 20
+          and r['birth_precision'] != 'day' and I(r['birth_year']) is not None]
+    k = sum(1 for y in yo if y % 5 == 0)
+    out['robustness_pv_birth_year_heaping'] = {'n': len(yo), 'ending_0_or_5': k,
+        'p_above_chance': float(stats.binomtest(k, len(yo), 0.2, alternative='greater').pvalue)}
 
     # robustness: usable-age coverage per ground (selection check)
     P = list(csv.DictReader(open(SRC)))
