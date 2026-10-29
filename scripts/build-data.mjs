@@ -114,7 +114,10 @@ const records = peopleRows.map(r => {
 // on it as `aka` and still found by search and by id. A blank field on the
 // kept record takes the value from a folded copy of the same person; no field
 // that both carry is changed. Pairs marked "not sure" stay two people, each
-// naming the other as `maybe`. Every count from here on is of people.
+// naming the other as `maybe`. So do pairs marked "unresolved": a birth-only
+// record whose birth date is, to the day, the death date of a same-named
+// record, possibly a death entered as a birth; the owner left them open.
+// Every count from here on is of people.
 const dupRows = readCsv(join(ROOT, 'curation', 'duplicates.csv'));
 const recById = new Map(records.map(p => [p.id, p]));
 const KEEP = new Map();           // folded record id -> kept record id
@@ -156,11 +159,13 @@ for (const p of people) {
   for (const f of p.fam) { const q = personById.get(f.id); if (q) f.name = q.name; }
 }
 for (const d of dupRows) {
-  if (d.verdict !== 'not sure') continue;
+  if (d.verdict !== 'not sure' && d.verdict !== 'unresolved') continue;
   const a = personById.get(canon(d.a_id)), b = personById.get(canon(d.b_id));
-  if (!a || !b || a === b) continue;
-  if (!a.maybe.some(m => m.id === b.id)) a.maybe.push({ id: b.id, name: b.name });
-  if (!b.maybe.some(m => m.id === a.id)) b.maybe.push({ id: a.id, name: a.name });
+  if (!a || !b) throw new Error(`duplicates.csv: unknown id in ${d.a_id}-${d.b_id}`);
+  if (a === b) continue;
+  const why = d.verdict === 'unresolved' ? 'birth-is-death' : 'dates-agree';
+  if (!a.maybe.some(m => m.id === b.id)) a.maybe.push({ id: b.id, name: b.name, why });
+  if (!b.maybe.some(m => m.id === a.id)) b.maybe.push({ id: a.id, name: a.name, why });
 }
 for (const p of people) for (const f of p.fam) if (!personById.has(f.id)) throw new Error(`dangling id ${f.id} on ${p.id}`);
 
@@ -358,7 +363,7 @@ const recSummary = (list) => ({
 });
 write('summary.json', {
   built: new Date().toISOString(),
-  records: recSummary(records), folded: FOLDED.size, mergedPeople: count(people, p => p.aka.length), maybePairs: count(dupRows, d => d.verdict === 'not sure'),
+  records: recSummary(records), folded: FOLDED.size, mergedPeople: count(people, p => p.aka.length), maybePairs: count(dupRows, d => d.verdict === 'not sure'), unresolvedPairs: count(dupRows, d => d.verdict === 'unresolved'),
   people: people.length,
   usable: { yes: count(people, p => p.use === 'yes'), no: count(people, p => p.use === 'no'), deathOnly: count(people, p => p.use === 'death-only'), birthOnly: count(people, p => p.use === 'birth-only') },
   cemeteries: { L: count(people, p => p.cem === 'L'), H: count(people, p => p.cem === 'H'), P: count(people, p => p.cem === 'P') },

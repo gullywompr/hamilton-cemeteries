@@ -23,7 +23,9 @@ test('records: data/timeline_people.csv as it stands (CLAUDE.md acceptance value
 test('people: owner-confirmed duplicates counted once (curation/duplicates.csv)', () => {
   assert.equal(people.length, 2681);
   const S = load('summary.json');
-  assert.deepEqual([S.folded, S.mergedPeople, S.maybePairs], [51, 50, 7]);
+  assert.deepEqual([S.folded, S.mergedPeople, S.maybePairs, S.unresolvedPairs], [51, 50, 7, 10]);
+  { const p = people.find(x => x.id === 'LV0012'), q = people.find(x => x.id === 'LV1021');
+    assert.ok(p.maybe.some(m => m.id === q.id && m.why === 'birth-is-death') && q.maybe.some(m => m.id === p.id && m.why === 'birth-is-death')); }
   assert.equal(people.length + S.folded, S.records.rows);
   assert.equal(people.reduce((n, p) => n + p.aka.length, 0), 51);
   assert.equal(count(p => p.use === 'yes'), 2521);

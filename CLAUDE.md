@@ -229,6 +229,13 @@ and are still tested. The rules and the full people-level values are
 `APP_SPEC.md` §13. Do not merge or delete rows in `data/` to fix a duplicate:
 record the decision in `curation/duplicates.csv`.
 
+Ten further pairs carry the verdict `unresolved` (29 Oct 2026, owner's
+decision): a birth-only record whose birth date is, to the day, the death date
+of a record with a closely matching name, possibly a death entered as a birth.
+They stay two people, each card links to the other and says why; nothing is
+folded and no date is moved. Five of the fifteen possibly-living people are on
+the birth-only side of one of these pairs.
+
 ---
 
 ## A note on tone
