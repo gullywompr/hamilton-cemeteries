@@ -335,9 +335,15 @@ write('summary.json', {
     coverage[cem] = { n: sub.length, usable: ok.length, pct: Math.round(1000 * ok.length / sub.length) / 10 };
     for (const k of ['n', 'usable', 'pct']) same(`coverage ${cem} ${k}`, coverage[cem][k], ref.robustness_coverage[cem][k]);
   }
+  // Adults dated before the first era, left out of the comparison. Pleasant
+  // Valley opened in 1922 but holds a few earlier dated deaths; the page says
+  // so rather than letting the 1920 start look arbitrary.
+  const start = eras[0].lo, pvAll = U.filter(r => r.cemetery === 'Pleasant Valley');
+  const before = { start, lakeview_n: adults('Lakeview', 0, start - 1).length, pv_n: adults('Pleasant Valley', 0, start - 1).length,
+    pv_earliest_death: Math.min(...pvAll.map(r => I(r.death_year))) };
   write('longevity.json', {
     measure: 'median age at death, adults who reached 20', not: 'life expectancy at birth',
-    eras, decades, dayPrecision, coverage,
+    eras, decades, dayPrecision, coverage, before,
     reference: { script: 'scripts/longevity_gap.py', output: 'data/longevity_gap.json', agrees: true, ci: 'bootstrap, 4000 resamples, from the reference output' },
   });
 }

@@ -192,3 +192,12 @@ test('longevity: the rendered section keeps the rules', async () => {
   assert.doesNotMatch(text, /\b(because|caused by|due to|rank|ranking of the (two )?grounds is)\b/i, 'no cause, no ranking');
   assert.match(sec, /class="source"/);
 });
+
+test('longevity: the page says why the comparison starts where it does', async () => {
+  const L = load('longevity.json');
+  assert.deepEqual(L.before, { start: 1920, lakeview_n: 252, pv_n: 3, pv_earliest_death: 1911 });
+  const { longevitySection } = await import('../app/src/views.js');
+  const text = longevitySection(L).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+  assert.match(text, /Why the comparison starts in 1920/);
+  assert.match(text, /252 dated adult deaths at Lakeview and 3 at Pleasant Valley, the earliest in 1911, before the ground's 1922 opening/);
+});

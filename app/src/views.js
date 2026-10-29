@@ -256,6 +256,7 @@ export function longevitySection(L) {
   return `
     <h2 data-k="${first.lo} – ${last.hi} · Lakeview and Pleasant Valley · adults who reached 20">Years lived, on two grounds</h2>
     <p class="prose">The median age at death of people who reached twenty, on the town's white ground and on Pleasant Valley, which opened in 1922 and is one of Loudoun's largest African American cemeteries. Adults only, so that different child-burial practice on the two grounds cannot drive the result. ${POP}</p>
+    <p class="prose small-prose"><b>Why the comparison starts in ${L.before.start}.</b> Before ${L.before.start} the record holds ${n(L.before.lakeview_n)} dated adult deaths at Lakeview and ${n(L.before.pv_n)} at Pleasant Valley, the earliest in ${L.before.pv_earliest_death}, before the ground's 1922 opening. That is too few to carry a median, so both grounds are compared from ${L.before.start} onward and the earlier deaths are left out on both sides.</p>
     <div class="era-row">${L.eras.map(eraBlock).join('')}</div>
     <div class="callout narr-block"><p class="narr">Between ${first.lo} and ${first.hi} the median adult buried at Pleasant Valley died <b>${f1(first.gap)} years younger</b> than the median adult at Lakeview.</p><p class="narr-2">By ${last.lo} the difference had narrowed to where <b>this record can no longer detect it.</b></p></div>
     <h3>By decade of death</h3>
