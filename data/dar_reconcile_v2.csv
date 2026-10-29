@@ -1,0 +1,755 @@
+source_file,entry_no,dar_text,verdict,person_id,display_name,birth,death
+dar1948_lakeview_VERIFIED.txt,1,"Eppa O. Preston  Apr. 4, 1867 - Oct. 29, 1945",MATCH,LV0790,Eppa Oden Preston,1867-04-04,1945-10-29
+dar1948_lakeview_VERIFIED.txt,2,"Lucy Preston Hough  Sept. 5, 1849 - Apr. 26, 1930",MATCH,LV0537,Lucy Preston Hough,1849-09-05,1930-04-26
+dar1948_lakeview_VERIFIED.txt,3,"Thaddeus T. Preston  Died Feb. 9, 1922  Aged 72 yrs.",MATCH,LV0789,Thaddeus T. Preston,1850,1922-02-09
+dar1948_lakeview_VERIFIED.txt,4,"Infant dau. of Paul H. and Irene H. Gray  July 8, 1920",MATCH,LV0474,Infant Daughter Gray,,1920-07-08
+dar1948_lakeview_VERIFIED.txt,5,"A. Humphrey, son of J. W. and Harriet A. Beans, Wed.[sic] Sept. 9, 1892 at 2 mos. 22 ds.",MATCH,LV0097,A. Humphrey Beans,1892,1892-09-09
+dar1948_lakeview_VERIFIED.txt,6,"Harriet A. Beans d. Apr. 6, 1940  Aged 83 yrs.   1857 - 1940",MATCH,LV0096,Harriet A. Beans,1857,1940-04-06
+dar1948_lakeview_VERIFIED.txt,7,"James W. Beans d. June 29, 1939  Aged 81 yrs.   1858 - 1939",MATCH,LV0095,James W. Beans,1858,1939-06-29
+dar1948_lakeview_VERIFIED.txt,8,Sue W. Sagrario   1884 - 1933,CONFLICT,LV0812,Sue Catherine Wynkoop Sagrario,1888,1933
+dar1948_lakeview_VERIFIED.txt,9,"Conway O. Wynkoop d. May 18, 1939  Aged 19 yrs.",MATCH,LV0999,Conway O Wynkoop,1920,1939-05-18
+dar1948_lakeview_VERIFIED.txt,10,"Mrs. Lula Fincham d. Feb. 18, 1948  Aged 58 yrs. 2 mos. 6 ds.",MATCH,LV0418,Lula Estelle Starkey Fincham,1889-12-13,1948-02-18
+dar1948_lakeview_VERIFIED.txt,11,Jessie H. Laycock   1880 - 1945,MATCH,LV0596,Jessie Hess McFarland Laycock,1880,1945
+dar1948_lakeview_VERIFIED.txt,12,"Thomas C. Allder b. Mar. 12, 1863 d. Apr. 25, 1927  Aged 64 yrs.",CONFLICT,LV0017,Thomas C Allder,1862,1927
+dar1948_lakeview_VERIFIED.txt,13,Annie B. Flippo  1889 - 1943,MATCH,LV0434,Annie B. McFarland Flippo,1889,1943
+dar1948_lakeview_VERIFIED.txt,14,Frances H. Hutchison  1895 - 1940,MATCH,LV0546,Frances H. Hutchison,1895,1940
+dar1948_lakeview_VERIFIED.txt,15,Robert E. Hutchison  1892 - 1942,MATCH,LV0547,Robert E. Hutchison,1892,1942
+dar1948_lakeview_VERIFIED.txt,16,"Arthur S. Hough  July 17, 1864 - June 23, 1920",MATCH,LV0538,Arthur S. Hough,1864-07-17,1920-06-23
+dar1948_lakeview_VERIFIED.txt,17,"Emmett Lee Hutchison  July 9, 1895 - May 11, 1929",MATCH,LV0545,Emmett Lee Hutchison,1895-07-09,1929-05-11
+dar1948_lakeview_VERIFIED.txt,18,"Ann E., wife of R. W. Ruse, d. Jan. 19, 1905 Aged 76 yrs  6 mos.",MATCH,LV0811,Ann E. Tavenner Ruse,1829,1905-01-19
+dar1948_lakeview_VERIFIED.txt,19,"James E. Mock b. Feb. 15, 1853 d. May 18, 1943",MATCH,LV0683,James E. Mock,1853-02-15,1943-05-18
+dar1948_lakeview_VERIFIED.txt,20,"Sarah A., wife of James E. Mock, b. July 21, 1853 d. July 27, 1934",MATCH,LV0684,Sarah A. Fulton Mock,1853-07-21,1934-07-27
+dar1948_lakeview_VERIFIED.txt,21,Samuel R. Mock  1857 - 1920,MATCH,LV0685,Samuel R. Mock,1857,1920
+dar1948_lakeview_VERIFIED.txt,22,Charles M. Mock  1860 - 1927,MATCH,LV0686,Charles Minor Mock,1860,1927
+dar1948_lakeview_VERIFIED.txt,23,S. Alice Mock  1848 - 1929,MATCH,LV0687,S. Alice Mock,1848,1929
+dar1948_lakeview_VERIFIED.txt,24,Ida M. Mock  1865 - 1942,MATCH,LV0688,Ida M. Mock,1865,1942
+dar1948_lakeview_VERIFIED.txt,25,Cora E. Mock  1862 - 1948,MATCH,LV0689,Cora Etta Mock,1862,1948
+dar1948_lakeview_VERIFIED.txt,26,George W. Shoemaker  1861 - 1924,MATCH,LV0854,George W. Shoemaker,1861,1924
+dar1948_lakeview_VERIFIED.txt,27,"Alice M., dau. of Thos. B. and Ann Dowell Norris Sept. 5, 1853",MATCH,LV0731,Alice M. Norris,,1853-09-05
+dar1948_lakeview_VERIFIED.txt,28,Mary Virginia McFarland  1856 - 1928,MATCH,LV0654,Mary Virginia Hess McFarland,1856,1928
+dar1948_lakeview_VERIFIED.txt,29,William A. McFarland  1845 - 1925,MATCH,LV0655,William Alexander McFarland,1845,1925
+dar1948_lakeview_VERIFIED.txt,30,"Martha J., dau. ofJesse D. and Mary Carter Dowell, Sept. 10, 1835 - Jan. 11, 1932",MATCH,LV0349,Martha J. Dowell,1835-09-10,1932-01-11
+dar1948_lakeview_VERIFIED.txt,31,"Amanda E., dau. of Jesse D. and Mary Carter Dowell,June 24, 1840 - July 21, 1926",MATCH,LV0350,Amanda E Dowell,1840-06-24,1926-07-21
+dar1948_lakeview_VERIFIED.txt,32,"Edith A. Warner  Sept. 24, 1885 - Apr. 6, 1941",MATCH,LV0948,Edith A. Warner,1885-09-24,1941-04-06
+dar1948_lakeview_VERIFIED.txt,33,"F. Keen Warner  Nov. 1, 1882",MATCH,LV0949,F Keen Warner,,1882-11-01
+dar1948_lakeview_VERIFIED.txt,34,Alice Symons Orndorff  1906 - 1945,MATCH,LV0734,Alice Symons Orndorff,1906,1945
+dar1948_lakeview_VERIFIED.txt,35,James Samuel Orndorff  1904 - 19--,MATCH,LV0735,James Samuel Orndorff Cenotaph,1904,1969
+dar1948_lakeview_VERIFIED.txt,36,"Terry R. Creamer d. Nov. 18, 1946  Aged 1 day",MATCH,LV0273,Terry Raymond Creamer,1946-11-17,1946-11-18
+dar1948_lakeview_VERIFIED.txt,37,"Preston B. Gochnauer  May 21, 1872 d. Feb. 9, 1947",MATCH,LV0462,Preston B. Gochnauer,1872-05-21,1947-02-09
+dar1948_lakeview_VERIFIED.txt,38,"Fairfax L. Gochnauer  Dec. 11, 1898  d. Apr. 9, 1942",MATCH,LV0463,Fairfax L. Gochnauer,1898-12-11,1942-04-09
+dar1948_lakeview_VERIFIED.txt,39,"Benjamin F. Wine  Apr. 30, 1850 - Nov. 10, 1940",MATCH,LV0987,Benjamin Franklin Wine,1850-04-30,1940-11-10
+dar1948_lakeview_VERIFIED.txt,40,"Josephine H. Wine  Nov. 14, 1874 - Mar. 19, 1946",MATCH,LV0988,Josephine H. Wine,1874-11-14,1946-03-19
+dar1948_lakeview_VERIFIED.txt,41,"Oscar Lovette  d. Apr. 18, 1938  Aged 64 yrs.",MATCH,LV0627,Oscar Lovette,1874,1938-04-18
+dar1948_lakeview_VERIFIED.txt,42,"Sarah Ann Wine  Apr. 28, 1852 - Mar. 1, 1930",MATCH,LV0986,Sarah Ann Hemingway Wine,1852-04-28,1930-03-01
+dar1948_lakeview_VERIFIED.txt,43,"Mrs. C. O. Lovette  d. Apr. 26, 1932  Aged 50 yrs.",MATCH,LV0628,C. O. Lovette,1882,1932-04-26
+dar1948_lakeview_VERIFIED.txt,44,"Catherine C., dau. of W. O. and C. A. Leigh, b. Oct. 28, 1904--1-28-1918",MATCH,LV0607,Katherine Carrie Leigh,1904-10-28,1918-01-28
+dar1948_lakeview_VERIFIED.txt,45,"Robert E., son of W. O. and C. A. Leigh, b. June 11, 1909 d. Oct. 20, 1918",MATCH,LV0608,Robert Elvin Leigh,1909-06-11,1918-10-20
+dar1948_lakeview_VERIFIED.txt,46,"Thomas G., son of Howard and Cecilia Leigh, b. Apr. 16, 1935 d. Apr. 18, 1935",MATCH,LV0609,Thomas George Leigh,1935-04-16,1935-04-18
+dar1948_lakeview_VERIFIED.txt,47,"N. Ashby Peacock  Feb. 21, 1862 - July 25, 1919",MATCH,LV0762,N. Ashby Peacock,1862-02-21,1919-07-25
+dar1948_lakeview_VERIFIED.txt,48,"Theodore D. Follin  June 28, 1868 - Oct. 29, 1928",MATCH,LV0435,Theodore D. Follin,1868-06-28,1928-10-29
+dar1948_lakeview_VERIFIED.txt,49,"Rosa B., wife of Theodore D. Follin, Oct. 26, 1872 - Jan. 30, 1903",MATCH,LV0436,Rosa B. Follin,1872-10-26,1903-01-30
+dar1948_lakeview_VERIFIED.txt,50,"Sarah E., wife of Theodore D. Follin, May 10, 1872 - May 15, 1921",MATCH,LV0437,Sarah E. Follin,1872-05-10,1921-05-15
+dar1948_lakeview_VERIFIED.txt,51,"Martha J. Milbourne d. Jan. 12, 1945  Aged 10 mos. 7 ds.",MATCH,LV0666,Martha J. Milbourne,1945,1945-01-12
+dar1948_lakeview_VERIFIED.txt,52,"Henry Harrison Cross, husband of Franc S. Cross 1869 - 1939",MATCH,LV0277,Henry Harrison Cross,1869,1939
+dar1948_lakeview_VERIFIED.txt,53,"Hannah E. Shrigley, 1840 - 1888",MATCH,LV0856,Hannah E. Shrigley,1840,1888
+dar1948_lakeview_VERIFIED.txt,54,J. F. Shrigley  1863 - 1941,MATCH,LV0857,J. F. Shrigley,1863,1941
+dar1948_lakeview_VERIFIED.txt,55,Ella F. Shrigley  1863 - 1928,MATCH,LV0858,Ella F. Shrigley,1863,1928
+dar1948_lakeview_VERIFIED.txt,56,Evolyn S. Lee  1889 - 1929,MATCH,LV0606,Evolyn S. Lee,1889,1929
+dar1948_lakeview_VERIFIED.txt,57,"John W. Wiley  Apr. 4, 1853 - Feb. 13, 1917",MATCH,LV0974,John W. Wiley,1853-04-04,1917-02-13
+dar1948_lakeview_VERIFIED.txt,58,"Elizabeth S. Wiley  Mar. 20, 1826 - Sept. 5, 1857",MATCH,LV0975,Elizabeth S. Davis Wiley,1826-03-20,1857-09-05
+dar1948_lakeview_VERIFIED.txt,59,"J. H. Wiley  Jan. 6, 1823 - Mar. 28, 1884",MATCH,LV0976,John H. Wiley,1823-01-06,1884-03-28
+dar1948_lakeview_VERIFIED.txt,60,"Malinda E. Wiley  Nov. 24, 1832 - Mar. 10, 1879",MATCH,LV0977,Malinda E. Tavenner Wiley,1832-11-24,1879-03-10
+dar1948_lakeview_VERIFIED.txt,61,"Oscar T. Wiley  Feb. 19, 1867 - Mar. 12, 1878",MATCH,LV0978,Oscar T. Wiley,1867-02-19,1878-03-12
+dar1948_lakeview_VERIFIED.txt,62,"Infant dau. of E. T. and O. C. Wiley b. Oct. 10, 1901",MATCH,LV2052,Infant Daughter Wiley,,1901-10-10
+dar1948_lakeview_VERIFIED.txt,63,"Olive C. Wiley  b. Sept. 18, 1879",MATCH,LV0980,Olive C. Wine Wiley,1879-09-18,1957-04-01
+dar1948_lakeview_VERIFIED.txt,64,"Edgar T. Wiley  Mar. 13, 1865 - Mar. 10, 1931",MATCH,LV0981,Edgar T. Wiley,1865-03-13,1931-03-10
+dar1948_lakeview_VERIFIED.txt,65,"Edgar H. Wiley  Apr. 15, 1908 - Aug. 28, 1940",MATCH,LV0982,Edgar H. Wiley,1908-04-15,1940-08-28
+dar1948_lakeview_VERIFIED.txt,66,"John F. Wiley  Dec. 23, 1902 - May 31, 1945",MATCH,LV0983,John Francis Wiley,1902-12-23,1945-05-31
+dar1948_lakeview_VERIFIED.txt,67,"Clarkson L. Milbourn b. Aug. 5, 1854 d. July 24, 1913",MATCH,LV0664,Clarkson L. Milbourn,1854-08-05,1913-07-24
+dar1948_lakeview_VERIFIED.txt,68,"Mary M. Milbourn  b. Sept. 14, 1851 - d. Sept. 15, 1923",MATCH,LV0665,Mary M. Milbourn,1851-09-14,1923-09-15
+dar1948_lakeview_VERIFIED.txt,69,Lester J. Dillon  1874 - 1942,MATCH,LV0323,Lester J. Dillon,1874,1942
+dar1948_lakeview_VERIFIED.txt,70,Lillian A. Dillon  1874 -,MATCH,LV0324,Lillian A. Dillon,1874,1958
+dar1948_lakeview_VERIFIED.txt,71,C. Dow Hess  1870 - 1947,MATCH,LV0511,C. Dow Hess,1870,1947
+dar1948_lakeview_VERIFIED.txt,72,Walter A. Hess  1872 - 1911,MATCH,LV0515,Walter A. Hess,1872,1911
+dar1948_lakeview_VERIFIED.txt,73,Nellie B. Hess  1876 - 1903,MATCH,LV0516,Nellie B. Hess,1876,1903
+dar1948_lakeview_VERIFIED.txt,74,James R. Hess  1884 - 1920,MATCH,LV0517,James R. Hess,1884,1920
+dar1948_lakeview_VERIFIED.txt,75,"Richard Dow, son of W. S. and G. H. Francis  1922 - 1925",MATCH,LV0444,Richard Dow Francis,1922,1925
+dar1948_lakeview_VERIFIED.txt,76,"Elizabeth, wife of T. M. Wynkoop  June 4, 1831 d. Oct. 2, 1900",MATCH,LV1000,Ethel Elizabeth Lowe Wynkoop,1831-06-04,1900-10-02
+dar1948_lakeview_VERIFIED.txt,77,"James A., son of T. M. and E. Wynkoop, Nov. 4, 1851 or 7 d. Dec. 6, 1916",MATCH,LV1001,James A. Wynkoop,1851-11-04,1916-12-06
+dar1948_lakeview_VERIFIED.txt,78,"Gertrude, wife of J. A. Wynkoop  Feb. 5, 1858",MATCH,LV1002,Gertrude Wynkoop,1858-02-05,
+dar1948_lakeview_VERIFIED.txt,79,Joseph M. Tribby (living),UNDATED,LV0920,Joseph M Tribby,,
+dar1948_lakeview_VERIFIED.txt,80,"Jane A. Tribby  d. June 3, 1941  59 yrs.",MATCH,LV0921,Jane Ann Lewis Tribby,1882,1941-06-03
+dar1948_lakeview_VERIFIED.txt,81,"Joseph Mason Tribby d. Jan. 24, 1944 - 76 yrs.",MATCH,LV0922,Joseph Mason Tribby,1868,1944-01-24
+dar1948_lakeview_VERIFIED.txt,82,"Clara E. Tribby  Apr. 19, 1910 - July 21, 1910",MATCH,LV0923,Clara E. Tribby,1910-04-19,1910-07-21
+dar1948_lakeview_VERIFIED.txt,83,"Clarence O., son of Mr. and Mrs. J. M. Tribby Mar. 22, 1909 d. June 15, 1909",MATCH,LV0924,Clarence C. Tribby,1909-03-22,1909-06-15
+dar1948_lakeview_VERIFIED.txt,84,Mary Alice Poulsen  1864 - 1936,MATCH,LV0776,Mary Alice Lunsford Poulsen,1864,1936
+dar1948_lakeview_VERIFIED.txt,85,Niels Poulsen  1853 - 1938,MATCH,LV0777,Niels Poulsen,1853,1938
+dar1948_lakeview_VERIFIED.txt,86,R. C. Poulsen  (No dates),UNDATED,LV1668,Samuel Ross Poulsen,1905-10-21,1971-03-18
+dar1948_lakeview_VERIFIED.txt,87,E. Marion Moatz  1914 - 1914,MATCH,LV0674,E. Marion Moatz,1914,1914
+dar1948_lakeview_VERIFIED.txt,88,Robert G. Moatz  1910 - 1910,MATCH,LV0675,Robert G. Moatz,1910,1910
+dar1948_lakeview_VERIFIED.txt,89,M. M. Poulsen  (No dates),UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,90,"Francis Marian James b. Sept. 9, 1853 d. Jan. 11, 1902",MATCH,LV0565,Francis Marian James,1853-09-09,1902-01-11
+dar1948_lakeview_VERIFIED.txt,91,"Mary W. James  Aug. 29, 1855 - Oct. 2, 1938",MATCH,LV0566,Mary Winifred Fulton James,1855-08-29,1938-10-02
+dar1948_lakeview_VERIFIED.txt,92,"Mary E., wife of Washington Haines,b. Apr. 2, 1819 d. Jan. 29, 1896",MATCH,LV0489,Mary E. Haines,1819-04-02,1896-01-29
+dar1948_lakeview_VERIFIED.txt,93,"Washington Haines b. Dec. 18, 1815 - d. Jan. 24, 1895",MATCH,LV0490,Washington Haines,1815-12-18,1895-01-24
+dar1948_lakeview_VERIFIED.txt,94,Mary Margaret Poulsen  1898 - 1899,MATCH,LV0773,Mary Margaret Poulsen,1898,1899
+dar1948_lakeview_VERIFIED.txt,95,Robert Curtis Poulsen  1909 - 1916,MATCH,LV0774,Robert Curtis Poulsen,1909,1916
+dar1948_lakeview_VERIFIED.txt,96,"James H. Laycock b. Dec. 17, 1840 d. May 15, 1928",MATCH,LV0594,James Henry Laycock,1840-12-17,1928-05-15
+dar1948_lakeview_VERIFIED.txt,97,"Ophelia, wife of J. H. Laycock b. Feb. 10, 1849  d. Feb. 16, 1907",MATCH,LV0595,Ophelia Orrison Laycock,1849-02-10,1907-02-16
+dar1948_lakeview_VERIFIED.txt,98,"Elizabeth Brown, wife of H. W. Pierpoint, b. Apr. 18, 1886 - Mar. 9,194 2",MATCH,LV0772,Elizabeth Brown Pierpoint,1886-04-18,1942-03-09
+dar1948_lakeview_VERIFIED.txt,99,"Sarah Jane, wife of B. Frank Brown, b. Dec. 9, 1858 d. Oct. 31, 1928",MATCH,LV0178,Sarah Jane Brown,1858-12-09,1928-10-31
+dar1948_lakeview_VERIFIED.txt,100,"B. Frank Brown  b. Aug. 11, 1857 d. May 12, 1918",MATCH,LV0179,B. Frank Brown,1857-08-11,1918-05-12
+dar1948_lakeview_VERIFIED.txt,101,"T. William Weadon b. Apr. 1, 1828 d. Sept. 9, 1893",MATCH,LV0955,T. William Weadon,1828-04-01,1893-09-09
+dar1948_lakeview_VERIFIED.txt,102,"Virginia E., wife of T. William Weadon, b. Aug. 3, 1830 d. Feb. 20, 1917",MATCH,LV0956,Virginia E. Weadon,1830-08-03,1917-02-20
+dar1948_lakeview_VERIFIED.txt,103,"Chas. D. Weadon b. May 22, 1841 d. Aug. 1, 1914  Aged 73 yr. 2 mo. 9 ds.",MATCH,LV0957,Charles Duncan Weadon Sr.,1841-05-22,1914-08-01
+dar1948_lakeview_VERIFIED.txt,104,"Ann Elizabeth, wife of Chas. D. Weadon, b. Oct. 10, 1854 d. Feb. 10, 1931  Aged 76 yrs. 4 mos.",MATCH,LV0958,Ann Elizabeth Scatterday Weadon,1854-10-10,1931-02-10
+dar1948_lakeview_VERIFIED.txt,105,"Mary M., wife of Chas. D. Weadon, b. Dec. 4, 1846 d. Feb. 1, 1881",MATCH,LV0959,Mary Margaret Kuhlmann Weadon,1846-12-04,1881-02-01
+dar1948_lakeview_VERIFIED.txt,106,"Ruth E., dau. of C. & M. Weadon, b. July 21, 1871 d. Oct. 25, 1874 at 3 yrs, 3 mos. 4 ds.",MATCH,LV0960,Ruth E. Weadon,1871-07-21,1874-10-25
+dar1948_lakeview_VERIFIED.txt,107,"Infant son of C. D. and M. E. Weadon, Jr. Mar. 14, 1901",MATCH,LV0961,Infant Son Weadon,,1901-03-14
+dar1948_lakeview_VERIFIED.txt,108,"Clementina Hesser, mother  1846 - 1912",MATCH,LV0501,Clementina Hasser,1846,1912
+dar1948_lakeview_VERIFIED.txt,109,"Harry D. Hesser, son  1873 - 1927",MATCH,LV0518,Harry David Hesser,1873,1927
+dar1948_lakeview_VERIFIED.txt,110,"Lillie E. Hesser, dau.,  1876 - 1900",MATCH,LV0519,Lillie E. Hesser,1876,1900
+dar1948_lakeview_VERIFIED.txt,111,"Jonah Nichols Hampton b. Nov. 7, 1858 d. Sept. 10, 1907",MATCH,LV0494,Jonah Nichols Hampton,1858-11-07,1907-09-10
+dar1948_lakeview_VERIFIED.txt,112,"Allie R., wife of Jonah N. Hampton, b. Mar. 3, 1872 d. Feb. 13, 1924",MATCH,LV0495,Alcinda Rose Hesser Hampton,1872-03-03,1924-02-13
+dar1948_lakeview_VERIFIED.txt,113,"Harry Dillon, son of A. R. & J. N. Hampton, b. July 28, 1900 d. June 2, 1901",MATCH,LV0496,Harry Dillon Hampton,1900-07-28,1901-06-02
+dar1948_lakeview_VERIFIED.txt,114,"Amos Beans b. Mar. 24, 1826 d. Jan. 19, 1897",MATCH,LV0098,PVT Amos Beans,1826-03-24,1897-01-19
+dar1948_lakeview_VERIFIED.txt,115,"Elizabeth Ann, wife of Amos Beans, b. Dec. 17, 1827 d. Feb. 12, 1901",MATCH,LV0099,Elizabeth Ann Lacock Beans,1827-12-17,1901-02-12
+dar1948_lakeview_VERIFIED.txt,116,"Florence Y. Beans b. Jan. 8, 1858 d. Mar. 20, 1882",MATCH,LV0100,Florence V. Beans,1858-01-08,1882-03-10
+dar1948_lakeview_VERIFIED.txt,117,"Joseph A. Beans b. June 10, 1853 d. Mar. 8, 1900",MATCH,LV1035,Joseph A. Beans,1853-06-10,1900-03-08
+dar1948_lakeview_VERIFIED.txt,118,"Mary J. Beans b. Mar. 31, 1852 - d. Jan. 25, 1930",MATCH,LV0101,Mary Jane Beans,1852-03-31,1930-01-25
+dar1948_lakeview_VERIFIED.txt,119,"Louisa Ellen Beans b. Dec. 18, 1856 d. Dec. 19, 1943",MATCH,LV0102,Louisa Ellen Beans,1856-12-18,1943-12-19
+dar1948_lakeview_VERIFIED.txt,120,Victoria Beans  1867 - 1940,MATCH,LV0103,Victoria C. Miller Beans,1867,1940
+dar1948_lakeview_VERIFIED.txt,121,"Amos W. Beans  Dec. 6, 1857 - Oct. 21, 1916",MATCH,LV0104,Amos W. Beans,1857-12-06,1916-10-21
+dar1948_lakeview_VERIFIED.txt,122,"William H. Ballenger, b. Dec. 19, 1869 d. Apr. 5, 1922",MATCH,LV0052,William H. Ballenger,1869-12-19,1922-04-05
+dar1948_lakeview_VERIFIED.txt,123,"B. F. Cummings  b. May 8, 1852 d. Oct. 11, 1918",MATCH,LV0286,Benjamin F. Cummings,1852-05-08,1918-10-11
+dar1948_lakeview_VERIFIED.txt,124,"Mary L., wife of B. F. Cummings, b. Oct. 2, 1848 d. July 2, 1926",MATCH,LV0287,Mary L. Alder Cummings,1848-10-02,1926-07-02
+dar1948_lakeview_VERIFIED.txt,125,"Samuel C. Mullen d. Nov. 12, 1941  Aged 76 yrs.",MATCH,LV0697,Samuel Calwell Mullen,1865,1941-11-12
+dar1948_lakeview_VERIFIED.txt,126,"William Wynkoop  b. June 24, 1879 d. 19--",MATCH,LV1009,William Wynkoop,1879-06-24,1966-12-07
+dar1948_lakeview_VERIFIED.txt,127,"Margaret J. Wynkoop  Nov. 29, 1883 - Oct. 17, 1938",MATCH,LV1010,Margaret Jane Darr Wynkoop,1883-11-29,1938-10-17
+dar1948_lakeview_VERIFIED.txt,128,Oden H. Wynkoop  1874 - 1919,MATCH,LV1011,Oden Henry Wynkoop,1874,1919
+dar1948_lakeview_VERIFIED.txt,129,"Agnes Mullen Reynolds  Apr. 4, 1893 - Jan. 21, 1921",MATCH,LV0807,Agnes Mullen Reynolds,1893-04-04,1921-01-21
+dar1948_lakeview_VERIFIED.txt,130,"Martha W., wife of T. C. Ballenger, b. Mar. 15, 1869 d. Dec. 13, 1917",CONFLICT,LV0053,Martha Jane Wynkoop Ballenger,1869-03-15,1947-12-13
+dar1948_lakeview_VERIFIED.txt,131,"George W. Mullen  Sept. 14, 1855 - May 21, 1931",MATCH,LV0698,George William Mullen,1855-09-14,1931-05-21
+dar1948_lakeview_VERIFIED.txt,132,"Fannie Mullen  d. Feb. 8, 1940  Aged 83 yrs.",MATCH,LV0699,Fannie Mullen,1857,1940-02-08
+dar1948_lakeview_VERIFIED.txt,133,"Walter H. Mullen  d. Jan. 26, 1931",MATCH,LV0700,Walter H. Mullen,,1931-01-26
+dar1948_lakeview_VERIFIED.txt,134,"Gladys, dau. of S.J. & M.W. McMichael, b. Feb. 25, 1897 d. Mar.28, 1913",MATCH,LV0656,Gladys McMichael,1897-02-25,1913-03-28
+dar1948_lakeview_VERIFIED.txt,135,"Sarah E. Lang  May 18, 1842 d. Sept. 15, 1928",MATCH,LV0582,Sarah E. Lang,1842-05-18,1928-09-15
+dar1948_lakeview_VERIFIED.txt,136,"John W. Wynkoop, b. Oct. 15, 1831 d. Dec. 9, 1914",MATCH,LV1003,John William Wynkoop,1831-11-15,1914-12-09
+dar1948_lakeview_VERIFIED.txt,137,"Ruth H., wife of John W. Wynkoop, b. Nov. 9, 1843 d. Dec. 2, 1917",MATCH,LV1004,Ruth H Wynkoop,1843-11-19,1917-12-02
+dar1948_lakeview_VERIFIED.txt,138,"Bertha L. Wynkoop, b. Jan. 4, 1885 d. Dec. 22, 1911",MATCH,LV1005,Bertha L. Priest Wynkoop,1885-01-04,1911-12-22
+dar1948_lakeview_VERIFIED.txt,139,"Frank G. Wynkoop, b. Jan. 4, 1885 d. Aug. 18, 1921",MATCH,LV2086,Frank G. Wynkoop,1885-01-04,1921-08-18
+dar1948_lakeview_VERIFIED.txt,140,"Edna C., wife of Frank G. Wynkoop, b. Aug. 14, 1883 d.",MATCH,LV1007,Edna C. Bruin Wynkoop Cenotaph,1883-08-14,1965-02-10
+dar1948_lakeview_VERIFIED.txt,141,"Mildred H. wynkoop, dau. of F. G. & Edna C., b. Oct. 4, d. Oct. 27,1917",MATCH,LV1008,Mildred Hazel Wynkoop,1917-10-04,1917-10-27
+dar1948_lakeview_VERIFIED.txt,142,"John Alexander Lynch, Jr., b. Feb. 15, 1882, d. Jan. 23, 1927",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,143,"Walter L. Simpson, b. Aug. 25, 1866 d. Apr. 2, 1941",MATCH,LV0868,Walter L. Simpson,1866-09-25,1941-04-02
+dar1948_lakeview_VERIFIED.txt,144,"George Lee Hawley, b. Nov. 1, 1936 d.",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,145,J. F. Myers  1870 - 1932,MATCH,LV0701,John Frank Myers,1870,1932
+dar1948_lakeview_VERIFIED.txt,146,"Cora S., wife of J. F. Myers  1869 - 1929",MATCH,LV0702,Cora S. Warner Myers,1869,1929
+dar1948_lakeview_VERIFIED.txt,147,"Roger F. Myers, b. Sept. 25, 1895 d. Feb. 19, 1929",MATCH,LV0703,Roger F. Myers,1895-09-25,1929-02-19
+dar1948_lakeview_VERIFIED.txt,148,"Maria L. Presgraves, b. Aug. 24, 1847 d. July 29, 1915",MATCH,LV0787,Maria Louise Nixon Presgraves,1847-08-24,1915-07-29
+dar1948_lakeview_VERIFIED.txt,149,"John Presgraves, b. Apr. 16, 1832 d. Jan. 13, 1917",MATCH,LV0788,John Nixon Presgraves,1832-04-16,1917-01-13
+dar1948_lakeview_VERIFIED.txt,150,"Emma A. Halley, b. June 9, 1855 d. Jan. 24, 1920",MATCH,LV0493,Emma Augusta Halley,1855-06-09,1920-01-24
+dar1948_lakeview_VERIFIED.txt,151,"Flavius J. Beans, d. July 31, 1932 at 86 yrs.",MATCH,LV1034,Flavius J. Beans,1845,1932
+dar1948_lakeview_VERIFIED.txt,152,"Abramn Birckhead, b. Nov. 5, 1834 d. Nov. 20, 1927",MATCH,LV0134,Abram N Birckhead,1834-11-05,1927-11-20
+dar1948_lakeview_VERIFIED.txt,153,"Ella Nixon Birckhead, b. illegible  d. Mar. 7, 1935",MATCH,LV0135,Ella Nixon Birckhead,,1935-03-07
+dar1948_lakeview_VERIFIED.txt,154,Eva M. Everhart  1879 - 19,MATCH,LV0406,Eva M. Beans Everhart,1879,1953
+dar1948_lakeview_VERIFIED.txt,155,Walter M. Everhart  1874 - 1939,MATCH,LV0407,Walter M. Everhart,1874,1939
+dar1948_lakeview_VERIFIED.txt,156,"Samuel L. Nicholson, b. Oct. 3, 1939",MATCH,LV0729,Samuel L Nicholson,1939-10-03,
+dar1948_lakeview_VERIFIED.txt,157,Elizabeth S. Nicholson  no dates,UNDATED,LV0730,Elizabeth S Nicholson,,
+dar1948_lakeview_VERIFIED.txt,158,Napoleon B. Warner  no dates,UNDATED,LV0945,Napoleon B Warner,,
+dar1948_lakeview_VERIFIED.txt,159,"E. H. Tavenner, b. Oct. 2, 1842 d. Mar. 11, 1902",MATCH,LV0883,Edwin H. Tavenner,1842-10-02,1902-03-11
+dar1948_lakeview_VERIFIED.txt,160,"Catharine H., wife of Edwin H. Tavenner, b. Dec. 9, 1851 d. Jan.14,1885",MATCH,LV0884,Catharine H. Tavenner,1851-12-09,1885-01-14
+dar1948_lakeview_VERIFIED.txt,161,"Howard W. Tavenner, b. Sept. 29, 1875 d. Nov. 29, 1937",MATCH,LV0885,Howard W. Tavenner,1875-09-29,1937-11-29
+dar1948_lakeview_VERIFIED.txt,162,"Etta B., wife of Howard W. Tavenner, b. Oct. 4, 1875 d. Nov. 11, 1942",MATCH,LV0886,Etta B. Rumble Tavenner,1875-10-04,1942-11-11
+dar1948_lakeview_VERIFIED.txt,163,"Carrie B., wife of Hourry Becker, b. Aug. 3, 1872 d. Mar. 12, 1906",MATCH,LV0110,Carrie B. Becker,1872-08-03,1906-03-12
+dar1948_lakeview_VERIFIED.txt,164,"Gabriel V. Warner b. May 11, 1829 d. Sept. 25, 1909",MATCH,LV0943,Gabriel V Warner,1829-05-11,1909-09-25
+dar1948_lakeview_VERIFIED.txt,165,"Sarah J. Warner  b. Mar. 18, 1832 d. Mar. 11, 1918",MATCH,LV0944,Sarah J Stocks Warner,1832-03-18,1918-03-11
+dar1948_lakeview_VERIFIED.txt,166,"Albert M. Gore  b. Apr. 10, 1833 d. Oct. 26, 1906",MATCH,LV0467,Albert M. Gore,1833-04-10,1906-10-26
+dar1948_lakeview_VERIFIED.txt,167,"Sarah M., wife of A. M. Gore  b. Sept. 20, 1835 d. Oct. 17, 1922",MATCH,LV0468,Sarah M. Gore,1835-09-20,1922-10-17
+dar1948_lakeview_VERIFIED.txt,168,Louis Fenton Hough  1866 - 1933,MATCH,LV0535,Louis Fenton Hough,1866,1933-06
+dar1948_lakeview_VERIFIED.txt,169,Nannie Gore Hough  1870 - 1945,MATCH,LV0536,Nannie Gore Hough,1870,1945
+dar1948_lakeview_VERIFIED.txt,170,"Lizzie M. Beatty b. Jan. 8, 1837 d. Oct. 29, 1911",MATCH,LV0105,Lizzie M. Beatty,1837-01-08,1911-10-29
+dar1948_lakeview_VERIFIED.txt,171,"William Beatty  d. Nov. 24, 1915 at 82 yrs.",MATCH,LV0106,William Beatty,1833,1915-11-24
+dar1948_lakeview_VERIFIED.txt,172,C. Ernest Leith  1858 - 1923,MATCH,LV0610,G. Ernest Leith,1858,1923
+dar1948_lakeview_VERIFIED.txt,173,"Theodore D. Milton  Jan. 24, 1848 - July 31, 1906",MATCH,LV0669,Theodore Davisson Milton,1848-01-24,1906-07-31
+dar1948_lakeview_VERIFIED.txt,174,"Lydia Cecilia, wife of Theodore D. Milton, Nov. 28, 1852 d. June 22,1924",MATCH,LV0670,Lydia Cecilia Vandevanter Milton,1852-11-28,1924-06-22
+dar1948_lakeview_VERIFIED.txt,175,"Joseph V. Milton  d. Dec.16, 1911",MATCH,LV0671,Joseph Vandeventer Milton,1876-11-30,1911-12-16
+dar1948_lakeview_VERIFIED.txt,176,"Maury, only son of Joseph V. & Page Maury Milton, d. Aug. 13, 1909",MATCH,LV0672,Maury Milton,,1909-08-13
+dar1948_lakeview_VERIFIED.txt,177,Margaret A. Ballenger  1835 - 1906,MATCH,LV0054,Margaret Ann Breckenridge Ballenger,1835,1906
+dar1948_lakeview_VERIFIED.txt,178,Edger Ballenger  1850 - 1912,MATCH,LV0055,Edger Ballenger,1850,1912
+dar1948_lakeview_VERIFIED.txt,179,"Dorcas O., his wife  1850 - 1921",MATCH,LV0056,Dorcas O. Thompson Ballenger,1850,1921
+dar1948_lakeview_VERIFIED.txt,180,"Clinton G., son of E. & D. O. Ballenger  1876 - 1888",MATCH,LV0057,Clinton C. Ballenger,1876,1888
+dar1948_lakeview_VERIFIED.txt,181,"William Ballenger  Jan. 8, 1875 - Jan. 20, 1928",MATCH,LV0058,William E. Ballenger,1875-01-08,1928-01-20
+dar1948_lakeview_VERIFIED.txt,182,Mary V. Dowdell  1873 - 1915,MATCH,LV0344,Mary V. Dowdell,1873,1915
+dar1948_lakeview_VERIFIED.txt,183,Capt. Wm. F. Dowdell  1835 - 1888,MATCH,LV0345,Capt William Flavius Dowdell,1835,1888
+dar1948_lakeview_VERIFIED.txt,184,Sallie Leslie Dowdell  1836 - 1909,MATCH,LV0346,Sallie Leslie Dowdell,1836,1909
+dar1948_lakeview_VERIFIED.txt,185,Alice L. Dowdell 1867 - 1935,MATCH,LV0347,Alice L. Dowdell,1867,1935
+dar1948_lakeview_VERIFIED.txt,186,Allie T. Dowdell  1873 - 1941,CONFLICT,LV0348,Sallie T. Dowdell,1875,1941
+dar1948_lakeview_VERIFIED.txt,187,"Robert D. Thompson  b. Nov. 4, 1869 d. Oct. 19, 1912",MATCH,LV0912,Robert D. Thompson,1869-11-04,1912-10-19
+dar1948_lakeview_VERIFIED.txt,188,John Edwin Lowe  1858 - 1911,MATCH,LV0630,John Edwin Lowe,1858,1911
+dar1948_lakeview_VERIFIED.txt,189,Mary Dell Lowe  1877 - 1941,MATCH,LV0631,Mary Dell Schooley Lowe,1877,1941
+dar1948_lakeview_VERIFIED.txt,190,Leanna C. Werking  1841 - 1923,MATCH,LV0965,Leanna Clarke Moore Werking,1841,1923
+dar1948_lakeview_VERIFIED.txt,191,Addison Lowe  1901 - 1918,MATCH,LV0629,Addison Thomas Lowe,1901,1918
+dar1948_lakeview_VERIFIED.txt,192,"Robert A., son of R. J. T. & M. L. White, b. Jan. 1, 1862 d. Feb. 29, 1912",MATCH,LV0967,Robert A. White,1862-01-01,1912-02-29
+dar1948_lakeview_VERIFIED.txt,193,"Robert J. T. White, b. Feb. 27, 1822 d. May 13, 1889",MATCH,LV0968,Robert J. T. White,1822-02-27,1889-05-13
+dar1948_lakeview_VERIFIED.txt,194,"Georgianna Taylor White Keen, widow of Dr. Thomas Keen, 1867 - 1944",MATCH,LV0576,Georgianna Taylor Keen,1867,1944
+dar1948_lakeview_VERIFIED.txt,195,"Lloyd R. Holmes, b. Apr. 5, 1912 d. May 17, 1913",MATCH,LV0528,Floyd R. Holmes,1912-04-05,1913-05-17
+dar1948_lakeview_VERIFIED.txt,196,"Edger T. Preston, d. Sept. 17, 1909   Aged. 68 yrs. 11 mo. 8 ds.",MATCH,LV0791,Edgar T. Preston,1841,1909-09-17
+dar1948_lakeview_VERIFIED.txt,197,Lot 136 - L. L. Lake,UNDATED,LV0581,L L Lake,,
+dar1948_lakeview_VERIFIED.txt,198,"Rosanna Agnes, wife of J. T. Simpson, b. Feb. 6, 1834, d. Jan. 12,1918",MATCH,LV0867,Rosanna Agnes Allder Simpson,1834-02-06,1918-01-12
+dar1948_lakeview_VERIFIED.txt,199,"Maude Hall, d. Nov. 30, 1947 at 78 yrs.",MATCH,LV0491,Maude Hall,1869,1947-11-30
+dar1948_lakeview_VERIFIED.txt,200,Minnie O.Ballenger  1856 - 1916,MATCH,LV0059,Minnie O. Preston Ballenger,1856,1916
+dar1948_lakeview_VERIFIED.txt,201,Charles W. Ballenger  1847 - 1917,MATCH,LV0060,Charles William Ballenger Sr.,1847,1917
+dar1948_lakeview_VERIFIED.txt,202,Margaret Ann Sherman  1882 - 1938,MATCH,LV0853,Margaret Ann Ballenger Sherman,1882,1938
+dar1948_lakeview_VERIFIED.txt,203,"Infant dau., Rufus & Rebecca Ballenger, b. & d. Mar. 5, 1905",MATCH,LV0061,Infant Daughter Ballenger,1905-03-05,1905-03-05
+dar1948_lakeview_VERIFIED.txt,204,"Infant dau., L.C. & C.V. Rhodes, b. Nov. 18, 1924 d. Dec. 3, 1925",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,205,"Ida May, wife of H.M. Ball, b. Apr. 28, 1889 d. May 10, 1924",MATCH,LV0050,Ida May Ball,1889-04-28,1924-05-10
+dar1948_lakeview_VERIFIED.txt,206,Arvella L. Shutts  1912 - 1936,MATCH,LV0859,Arvella L. Shutts,1912,1936
+dar1948_lakeview_VERIFIED.txt,207,"Lena B. Corbin, b. Sept. 10, 1874 d. Dec. 25, 1935",MATCH,LV0254,Lena Blanche Corbin,1874-09-10,1935-12-25
+dar1948_lakeview_VERIFIED.txt,208,"Ernest L. Corbin, b. Dec. 7, 1869 d. Jan. 2, 1944",MATCH,LV0255,Ernest L. Corbin,1869-12-07,1944-01-02
+dar1948_lakeview_VERIFIED.txt,209,"J. T. Corbin, b. Mar. 26, 1860 d. Apr. 28, 1945",MATCH,LV0256,John Thomas Corbin,1860-04-26,1945-04-28
+dar1948_lakeview_VERIFIED.txt,210,"Jackie Rhodes, d. May 25, 1937  Aged 5 ds.",MATCH,LV0808,Jackie Rhodes,1937,1937-05-25
+dar1948_lakeview_VERIFIED.txt,211,"Samuel G. Presgraves, b. Apr. 24, 1883 d. July 3, 1944",MATCH,LV0786,Samuel Garnett Presgraves,1883-04-24,1944-07-03
+dar1948_lakeview_VERIFIED.txt,212,"Harry C. Corbin, b. Oct. 6, 1881 d. July 4, 1935",MATCH,LV0257,Harry C. Corbin,1881-10-06,1935-07-04
+dar1948_lakeview_VERIFIED.txt,213,"James M. Corbin, b. Jan. 25, 1859 d. June 16, 1933",CONFLICT,LV0258,James Milton Corbin,1859-01-25,1930-06-16
+dar1948_lakeview_VERIFIED.txt,214,"Rosa A. Corbin, b. Oct. 29, 1857 d. Dec. 27, 1935",MATCH,LV0259,Rosa A. Corbin,1857-10-29,1935-12-27
+dar1948_lakeview_VERIFIED.txt,215,"Eugene W. Corbin, b. Mar. 13, 1879 d. Mar. 26, 1940",MATCH,LV0260,Eugene W. Corbin,1879-04-13,1940-04-26
+dar1948_lakeview_VERIFIED.txt,216,"Willard C. Myers, b. Nov. 25, 1882 d. June 24, 1934",MATCH,LV0709,Willard C. Myers,1882-11-25,1934-06-24
+dar1948_lakeview_VERIFIED.txt,217,"Edna J., wife of Willard C. Myers, b.Jan. 15, 1885 d. Mar. 18, 1931",MATCH,LV0710,Edna J. Myers,1885-01-15,1931-04-18
+dar1948_lakeview_VERIFIED.txt,218,"Thomas Leon Shomaker, b. Sept. 14, 1925 d. July 6, 1946",MATCH,LV0855,Thomas Leon Shomaker,1925-09-14,1946-07-06
+dar1948_lakeview_VERIFIED.txt,219,"Mary F. Newton, b. Dec. 6, 1868 d. Jan. 23, 1933",MATCH,LV0725,Mary Florence Kidwell Newton,1868-12-06,1933-01-23
+dar1948_lakeview_VERIFIED.txt,220,"Wm. E., son of R.G. & D.M. Newton, b. Aug. 21, 1924 d. Dec. 11, 1929",MATCH,LV0726,William E. Newton,1924-08-21,1929-12-11
+dar1948_lakeview_VERIFIED.txt,221,"John March Seaton  Dec. 26, 1901 - Feb. 23, 1939",MATCH,LV0849,John March Seaton,1901-12-26,1939-02-23
+dar1948_lakeview_VERIFIED.txt,222,"Wm. B. Menefee  June 5, 1909 - July 2, 1927",MATCH,LV0660,William B. Menefee,1909-06-05,1927-07-02
+dar1948_lakeview_VERIFIED.txt,223,"Bertie, dau. Thos. & Bessie Seaton  Feb.18, 1919 - Aug. 19, 1924",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,224,"Charles Menefee  Nov. 27, 1931  at 64 yrs.",MATCH,LV0638,Charles Manefee,1867,1931-11-27
+dar1948_lakeview_VERIFIED.txt,225,"Edward J. Fincham  July 25, 1942  at 75 yrs.",MATCH,LV0416,Edward Jackson Fincham,1862,1942-07-25
+dar1948_lakeview_VERIFIED.txt,226,"Mary S. Fincham  Jan. 18, 1938  at 79 yrs.",MATCH,LV0417,Mary Susan Jenkins Fincham,1859,1938
+dar1948_lakeview_VERIFIED.txt,227,"Ola Moatz Ballenger  Feb. 18, 1883 - Aug. 7, 1946",MATCH,LV0062,Ola Moatz Ballenger,1883-02-18,1946-08-07
+dar1948_lakeview_VERIFIED.txt,228,"Edna May Reid  July 23, 1904 - Nov. 30, 1925",MATCH,LV0806,Edna May Reid,1904-07-23,1925-11-30
+dar1948_lakeview_VERIFIED.txt,229,William E. Paxon  1863 - 1941,MATCH,LV0743,William E Paxon,1863,1941
+dar1948_lakeview_VERIFIED.txt,230,May R. Paxon  1861 - --,MATCH,LV1599,May Russell Paxson,1861,1959
+dar1948_lakeview_VERIFIED.txt,231,"Jacob S. Smith  Feb. 18, 1862 - Jan. 3, 1930",MATCH,LV0871,Jacob S. Smith,1862-02-18,1930-01-03
+dar1948_lakeview_VERIFIED.txt,232,"Infant son of N. B. & L. P. Hawthorne  May 9, 1923",MATCH,LV0507,Infant Son Hawthorne,,1923-05-09
+dar1948_lakeview_VERIFIED.txt,233,"Benjamin Jasper Costello  Feb. 24, 1937  at 68 yrs.",MATCH,LV0264,Benjamin Jasper Costello,1869,1937-02-24
+dar1948_lakeview_VERIFIED.txt,234,"Ida Lee Costello  Mar.   , 1931  at 63 yrs. 29 ds.",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,235,"Pvt. Lynwood L. Payne  Feb. 17, 1896 - Feb. 16, 1918",MATCH,LV0745,Lynwood L. Payne,1896-02-17,1918-02-16
+dar1948_lakeview_VERIFIED.txt,236,"Minnie R., wife of Rodney L. Verts  Feb. 8, 1887 - Feb. 14, 1920",MATCH,LV0933,Minnie Payne Verts,1887-02-08,1920-02-14
+dar1948_lakeview_VERIFIED.txt,237,Lelia Stipe Milton  1907 - 1929,MATCH,LV0673,Lelia Stipe Milton,1907,1929
+dar1948_lakeview_VERIFIED.txt,238,Mildred Frances Payne  1856 - 1936,MATCH,LV0746,Mildred Frances Payne Payne,1856,1936
+dar1948_lakeview_VERIFIED.txt,239,"Mary V. Wiley  Sept. 28, 1851 - July 25, 1853",MATCH,LV0972,Mary V. Wiley,1851-09-28,1853-07-25
+dar1948_lakeview_VERIFIED.txt,240,Infant Wiley -  no dates,UNDATED,LV0973,Infant Wiley,,
+dar1948_lakeview_VERIFIED.txt,241,"Charles N. Thompson  Nov. 1, 1866 - Dec. 2, 1919",MATCH,LV0913,Charles N. Thompson,1866-11-01,1919-12-02
+dar1948_lakeview_VERIFIED.txt,242,"Lester Cummings  Feb. 2, 1939  at 53 yrs 2 mos. 5 ds.",MATCH,LV0288,Lester Franklin Cummings,1886,1939-02-02
+dar1948_lakeview_VERIFIED.txt,243,Nellie E. Burke  1886 - 1947,MATCH,LV0192,Nellie E. Burke,1886,1947
+dar1948_lakeview_VERIFIED.txt,244,Harry W. Burke  1883 - 19--,MATCH,LV0193,Harry Wilmer Burke,1883,1958
+dar1948_lakeview_VERIFIED.txt,245,"Elizabeth W. Hardy  July 14, 1904 - May 8, 1931",MATCH,LV0499,Elizabeth Wynkoop Hardy,1904-07-14,1931-05-08
+dar1948_lakeview_VERIFIED.txt,246,"Her son, Buddy Hardy  Feb. 11, 1929 - Jan. 3, 1932",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,247,"John Marbury Offley  b. Dec. 29, 1872 d. Oct. 6, 1932",MATCH,LV0732,John Marbury Offley,1872-12-29,1932-10-06
+dar1948_lakeview_VERIFIED.txt,248,"Nora B. Trussell  b. 1870  d. Jan. 15, 1941 at 71 yrs. 8 mos.",MATCH,LV0925,Nora Bell Roby Trussell,1870,1941-01-15
+dar1948_lakeview_VERIFIED.txt,249,"T. Eugene Trussell b. 1868 d. Sept. 9, 1941  at 73 yrs. 4 mos. 20 ds.",MATCH,LV0926,Thomas Eugene Trussell,1868,1941-09-09
+dar1948_lakeview_VERIFIED.txt,250,"Clarence G. Trussell, b. Jan. 2, 1895 d. Feb. 3, 1918",MATCH,LV0927,Clarence Gilbert Trussell,1895-01-02,1918-02-03
+dar1948_lakeview_VERIFIED.txt,251,"Martha J., wife of B. M. Hawley,   no dates",UNDATED,LV0506,Martha J Hawley,,
+dar1948_lakeview_VERIFIED.txt,252,"Charles W. Myers, b. Apr. 6, 1854 d. July 8, 1917",MATCH,LV0704,Charles Wilson Myers,1854-04-06,1917-06-08
+dar1948_lakeview_VERIFIED.txt,253,"Mary, wife of Charles W. Myers, b. Aug. 19, 1857 d. Apr. 17, 1932",MATCH,LV0705,Mary Elizabeth Mullen Myers,1857-08-19,1932-04-17
+dar1948_lakeview_VERIFIED.txt,254,"Isaac V. Warner, b. June 30, 1834 d. July 16, 1925",MATCH,LV0946,Isaac Valentine Warner,1834-06-30,1925-07-16
+dar1948_lakeview_VERIFIED.txt,255,"Annie E., wife of Isaac V. Warner, b. Apr. 1, 1845 d. Mar. 8, 1913",MATCH,LV0947,Elizabeth Ann Pumphrey Warner,1845-04-01,1913-03-08
+dar1948_lakeview_VERIFIED.txt,256,John H. Emerick  1861 - 1911,MATCH,LV0376,John H. Emerick,1861,1911
+dar1948_lakeview_VERIFIED.txt,257,"Carrie R., wife of John H. Emerick,  1856 - 19",MATCH,LV0377,Carrie R. Emerick,1856,1950
+dar1948_lakeview_VERIFIED.txt,258,"John F. Everhart, b. Aug. 9, 1861 d. July 21, 1939",MATCH,LV0399,John Frank Everhart,1861-09-09,1939-07-21
+dar1948_lakeview_VERIFIED.txt,259,"Mahalia N. Cooper, wife of John F. Everhart, b. July 15, 1858 d. May 16, 1919",MATCH,LV0400,Mahalia U. Cooper Everhart,1858-07-15,1919-05-16
+dar1948_lakeview_VERIFIED.txt,260,"Chas. W. Everhart, d. Apr. 9, 1939 at 74 yrs.",MATCH,LV0401,Charles William Everhart,1865,1939-04-09
+dar1948_lakeview_VERIFIED.txt,261,"Joseph M. Davis, b. Aug. 10, 1842 d. Apr. 15, 1915",MATCH,LV0307,PVT Joseph Madison Davis,1842-08-10,1915-04-15
+dar1948_lakeview_VERIFIED.txt,262,"Sallie E. Davis, b. Jan. 22, 1846 d. Apr. 12, 1921",MATCH,LV0308,Sarah Edith Glascock Davis,1846-01-22,1921-04-12
+dar1948_lakeview_VERIFIED.txt,263,"Robert A. Connor, b. Apr. 1, 1847 d. Oct. 21, 1920",MATCH,LV0250,Robert A. Connor,1847-04-01,1920-10-21
+dar1948_lakeview_VERIFIED.txt,264,"Jane J. Anderson d. Dec. 11, 1917 at about 80 yrs of age.",MATCH,LV0024,Jane J. Anderson,1837,1917-12-11
+dar1948_lakeview_VERIFIED.txt,265,"Mary E. Sibert, b. Sept. 30, 1860 d. Apr. 30, 1905",MATCH,LV0860,Mary Alice Keller Sibert,1860-09-30,1905-04-30
+dar1948_lakeview_VERIFIED.txt,266,"Elizabeth A. Wilson, b. Dec. 21, 1869 d. June 14, 1928",MATCH,LV0985,Elizabeth A. Wilson,1869-12-21,1928-06-14
+dar1948_lakeview_VERIFIED.txt,267,"Alice Wilson Myers, dau. of James E. Lupton, b. Dec. 26, 1846 d. Dec. 26, 1910",MATCH,LV0706,Alice L. Cox Wilson Myers,1846-12-26,1910-12-26
+dar1948_lakeview_VERIFIED.txt,268,"Wilson R. Myers, b. July 26, 1870 d. Oct. 10, 1904",MATCH,LV0707,Wilson R. Myers,1870-07-26,1904-10-10
+dar1948_lakeview_VERIFIED.txt,269,"Ettie H. Strother d. July 29, 1900 at 78 yrs. 7 mo. 26 ds.",MATCH,LV0881,Effie H. Strother,1822,1900-07-29
+dar1948_lakeview_VERIFIED.txt,270,"C. William Strother b. Feb. 23, 1823 d. Aug. 7, 1901",MATCH,LV0882,Giles William Strother,1823-02-23,1901-08-07
+dar1948_lakeview_VERIFIED.txt,271,"Summervill A., wife of Milton Schooley, d. Sept. 5, 1901 Aged 53 yrs.",MATCH,LV0842,Summerville A. Schooley,1848,1901-09-05
+dar1948_lakeview_VERIFIED.txt,272,"Lillian L., wife of Raymond I. Brown,  1879 - 1929",MATCH,LV0174,Lillian L. Brown,1879,1929
+dar1948_lakeview_VERIFIED.txt,273,Raymond I. Brown  1884 - 19,MATCH,LV0175,Raymond I Brown,1884,
+dar1948_lakeview_VERIFIED.txt,274,Virginia Brown  1905 - 1908,MATCH,LV0176,Virginia G. Brown,1905,1908
+dar1948_lakeview_VERIFIED.txt,275,Dorothy Brown  1908 - 1908,MATCH,LV0177,Dorothy L. Brown,1908,1908
+dar1948_lakeview_VERIFIED.txt,276,"Susie E., dau. of J.W. & M.J. McDonald, b. Sept. 8, 1897 d. 1899",MATCH,LV0653,Susie E. McDonald,1897-09-08,1899
+dar1948_lakeview_VERIFIED.txt,277,"J. Howard Saunders, b. Nov. 9, 1889 d. Aug. 10, 1910",MATCH,LV0813,J. Howard Saunders,1889-11-09,1910-08-10
+dar1948_lakeview_VERIFIED.txt,278,"Philip V. Saunders  Feb. 14, 1854 - July 14, 1937",MATCH,LV0814,Philip V. Saunders,1854-02-14,1937-07-14
+dar1948_lakeview_VERIFIED.txt,279,"Virginia Saunders  Oct. 17, 1858 - Nov. 1, 1946",MATCH,LV0815,Maria Virginia Rollins Saunders,1858-10-17,1946-11-01
+dar1948_lakeview_VERIFIED.txt,280,"Joseph R. Janney  Oct. 10, 1842 - Mar. 23, 1911",MATCH,LV0567,Joseph R Janney,1842-10-10,1911-03-23
+dar1948_lakeview_VERIFIED.txt,281,"Josephine V. Janney  Nov. 20, 1850 - May 12, 1925",MATCH,LV0568,Josephine N Orrison Janney,1850-11-20,1925-05-12
+dar1948_lakeview_VERIFIED.txt,282,"John N. Chamblin  Apr. 12, 1835 - Sept. 9, 1911",MATCH,LV0216,John Mahlon Chamblin,1835-04-12,1911-09-09
+dar1948_lakeview_VERIFIED.txt,283,"Mary J., wife of John N. Chamblin  Oct. 28, 1838 - Mar. 21, 1931",CONFLICT,LV0217,Mary Jane Burson Chamblin,1838-10-28,1921-03-04
+dar1948_lakeview_VERIFIED.txt,284,"Mason Loveless b. Sept. 5, 1826 d. Apr. 13, 1906",MATCH,LV0620,Mason Loveless,1826-09-05,1906-04-13
+dar1948_lakeview_VERIFIED.txt,285,"Catherine E., wife of Mason Loveless, b. Jan. 24, 1829 d. Jan. 25, 1917",MATCH,LV0621,Catherine E. White Loveless,1829-01-24,1917-01-25
+dar1948_lakeview_VERIFIED.txt,286,"Edgar T. Loveless  Dec. 6, 1868 - Oct. 22, 1932",MATCH,LV0622,Edgar Thomas Loveless,1868-12-06,1932-10-22
+dar1948_lakeview_VERIFIED.txt,287,E. C. Loveless  1861 - 1906,MATCH,LV0623,E. C. Loveless,1861,1906
+dar1948_lakeview_VERIFIED.txt,288,"Venetia, wife of J. H. Schooley,  Dec. 2, 1848 - Jan. 13, 1908",MATCH,LV0843,Venetia J. Divine Schooley,1848-12-02,1908-01-13
+dar1948_lakeview_VERIFIED.txt,289,"Samuel S., son of Venetia & J. H. Schooley  Apr. 6, 1870",MATCH,LV0844,Samuel S. Schooley,,1870-04-06
+dar1948_lakeview_VERIFIED.txt,290,"George W. Laycock  Aug. 8, 1861 - Sept. 11, 1936",MATCH,LV0597,George Washington Laycock,1861-08-08,1936-09-11
+dar1948_lakeview_VERIFIED.txt,291,"Ella F., wife of George W. Laycock, Oct. 4, 1861 - June 24, 1906",MATCH,LV0598,Ella C. Laycock,1861-10-04,1906-06-24
+dar1948_lakeview_VERIFIED.txt,292,"Hannah H., wife of George W. Laycock, Feb. 24, 1875 - Feb. 19, 1929",MATCH,LV0599,Hannah Emily Henderson Laycock,1875-02-24,1929-02-19
+dar1948_lakeview_VERIFIED.txt,293,Lola Everhart   no dates,UNDATED,LV0403,Lola Everhart,1879,1951
+dar1948_lakeview_VERIFIED.txt,294,Frank Everhart  1879 - 1937,MATCH,LV0404,Frank Everhart,1879,1937
+dar1948_lakeview_VERIFIED.txt,295,"George F. Everhart  Jan. 12, 1828 - June 25, 1918",MATCH,LV0405,George Franklin Everhart,1828-01-12,1918-06-25
+dar1948_lakeview_VERIFIED.txt,296,"Mary Belle Myers, his wife,  Dec. 31, 1838 - June 6, 1915",MATCH,LV0708,Mary Belle Myers,1838-12-31,1915-06-06
+dar1948_lakeview_VERIFIED.txt,297,Israel G. Powell  1836 - 1915,MATCH,LV0779,Israel Gurley Powell,1836,1915
+dar1948_lakeview_VERIFIED.txt,298,"Lydia C., his wife,  1845 - 1909",MATCH,LV0780,Lydia Catherine Ruse Powell,1845,1909
+dar1948_lakeview_VERIFIED.txt,299,"Fannie, dau. of Israel G. & Lydia C. Powell  1872 - 1890",MATCH,LV0781,Fannie Powell,1872,1890
+dar1948_lakeview_VERIFIED.txt,300,"Nellie, dau. of Israel G. & Lydia C. Powell  1869 - 1928",MATCH,LV0782,Nellie Powell,1869,1928
+dar1948_lakeview_VERIFIED.txt,301,Maurice Powell  1867 - 1939,MATCH,LV0783,Maurice Powell,1867,1939
+dar1948_lakeview_VERIFIED.txt,302,"Annice E., wife of Maurice Powell  1862 - 19--",MATCH,LV0784,Annice E. Powell,1862,
+dar1948_lakeview_VERIFIED.txt,303,"Nannie E., infant of Maurice & Annice E. Powell  1894",MATCH,LV0785,Nannie E. Powell,,1894
+dar1948_lakeview_VERIFIED.txt,304,"Albert H. Chamblin, son of John B. & E. M. Chamblin,  July 22, 1902 - Nov. 8, 1903",MATCH,LV0218,Albert H. Chamblin,1902-07-22,1903-11-08
+dar1948_lakeview_VERIFIED.txt,305,"John B. Chamblin  Sept. 29, 1867 - June 21, 1931",MATCH,LV0219,John Robert Chamblin,1867-09-23,1931-06-21
+dar1948_lakeview_VERIFIED.txt,306,"Joseph E. Clagett, b. Dec. 19, 1897 d. Oct. 27, 1935",MATCH,LV0223,Joseph Edward Clagett,1897-12-19,1935-10-27
+dar1948_lakeview_VERIFIED.txt,307,"Grace M., wife of C. L. Everhart, b. June 19, 1873 d. Feb. 1, 1921",MATCH,LV0402,Grace M. Everhart,1873-06-19,1921-02-01
+dar1948_lakeview_VERIFIED.txt,308,"Jane L. Grubb, wife of J. M. Bosart, M.D., b. Feb. 12, 1837 d. Jan. 2, 1911",MATCH,LV0481,Jane L Grubb,1837-02-12,1911-01-02
+dar1948_lakeview_VERIFIED.txt,309,"Mariette B. Grubb, b. Nov. 8, 1842 d. May 26, 1887",MATCH,LV0482,Marrietta B. Grubb,1842-11-08,1887-05-26
+dar1948_lakeview_VERIFIED.txt,310,"Ebenezer, son of Curtis & Harriet E. Grubb, b. Apr. 21, 1832 d. May 12, 1911",MATCH,LV0483,Ebenezer Grubb,1832-04-21,1911-05-12
+dar1948_lakeview_VERIFIED.txt,311,"M. Alice Myers, wife of Ebenezer Grubb, b. Nov. 27, 1849 d. Oct. 9,1936",MATCH,LV1184,Mary Alice Myers Grubb,1849-11-27,1936-10-09
+dar1948_lakeview_VERIFIED.txt,312,"Susan Carter d. Oct. 19, 1867 at 8 yrs.",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,313,"Alma, dau. of L.W.T. Carter, b. June 11, 1886 d. July 17, 1893",MATCH,LV0207,Alma N. Carter,1886-06-11,1893-07-17
+dar1948_lakeview_VERIFIED.txt,314,"Hasel V. Carter b. Jan. 11, 1904 d. Jan. 8, 1906",MATCH,LV0208,Hasel V. Carter,1904-01-11,1906-01-08
+dar1948_lakeview_VERIFIED.txt,315,"Lewis T. Carter b. May 20, 1860 d. Jan. 9, 1931",MATCH,LV0209,Lewis T. Carter,1860-05-20,1931-01-09
+dar1948_lakeview_VERIFIED.txt,316,"Willietta T., wife of Lewis T. Carter, b. July 31, 1862 d. Jan. 31,1937",MATCH,LV0210,Willie Etta T. Carter,1862-07-31,1937-01-31
+dar1948_lakeview_VERIFIED.txt,317,"Mary E., only child of A. C. & S.E. Davis, b. Jan. 7, 1862 d. Jan. 20, 1876",MATCH,LV0309,Mary E. Davis,1862-01-07,1876-01-20
+dar1948_lakeview_VERIFIED.txt,318,"Albert C. Davis, b. Aug. 24, 1822 d. June 9, 1898 at 75 yrs. 9 mo. 16 ds.",CONFLICT,LV0310,Albert C. Davis,1822-08-24,1998-06-09
+dar1948_lakeview_VERIFIED.txt,319,"Mary D. Davis b. Sept. 16, 1878 d. July 16, 1879 at 11 mo. 4 ds.",MATCH,LV0311,Mary D Davis,1878-09-16,1879-07-16
+dar1948_lakeview_VERIFIED.txt,320,"Alvin C. Davis b. Oct. 10, 1881 d. Feb.   , 1882 at 5 mo.",MATCH,LV0312,Alvin C (Alven?) Davis,1881-10-10,1882-02
+dar1948_lakeview_VERIFIED.txt,321,B. M. Hawley    no dates,UNDATED,LV1189,Addie Blanche Thomas Hall,1913-08-16,1966-03-17
+dar1948_lakeview_VERIFIED.txt,322,"William A. Lowe b. Oct. 13, 1856 d. Dec. 1, 1916",MATCH,LV0632,William Arthur Lowe,1856-10-13,1916-12-01
+dar1948_lakeview_VERIFIED.txt,323,"Lavinia C., wife of Wm. A. Lowe, d. Apr. 12, 1906 at 70 yr. 8 mo. 17 ds.",MATCH,LV0633,Lavinia Catherine Brown Lowe,1836,1906-04-12
+dar1948_lakeview_VERIFIED.txt,324,"Charles E. Silcott b. Oct. 14, 1855 d. Oct. 27, 1936",MATCH,LV0863,Charles E. Silcott,1855-10-14,1936-10-27
+dar1948_lakeview_VERIFIED.txt,325,"Mollie Silcott b. Feb. 19, 1854 d. Feb. 19, 1918",MATCH,LV0864,Mollie Wood Silcott,1854-02-19,1918-02-19
+dar1948_lakeview_VERIFIED.txt,326,George C. Mossburg  1874 - 1941,MATCH,LV0695,George C. Mossburg,1874,1941
+dar1948_lakeview_VERIFIED.txt,327,"Mary E., wife of George C. Mossburg,  1863 - 1928",MATCH,LV0696,Mary E. Mossburg,1863,1928
+dar1948_lakeview_VERIFIED.txt,328,"John T. Wiley b. Sept. 14, 1854 d. Feb. 21, 1921",MATCH,LV0984,John Thomas Wiley,1854-09-14,1921-02-21
+dar1948_lakeview_VERIFIED.txt,329,"Ellen D. Menard, dau. of Harriet E. & Curtis Grubb, b. Sept. 8, 1939 d. Mar. 25, 1905",CONFLICT,LV0658,Ellen D. Grubb Menard,1839-09-08,1905-03-25
+dar1948_lakeview_VERIFIED.txt,330,"Frances M. Menard, wife of Johan E. Olsen, b. Dec. 18, 1866 d. May 6, 1911",MATCH,LV0659,Frances M Menard,1866-12-18,1911-05-06
+dar1948_lakeview_VERIFIED.txt,331,Johan E. Olsen  1868 - 1936,MATCH,LV0733,Johan E. M. Olsen,1868,1936
+dar1948_lakeview_VERIFIED.txt,332,"Millard L., son of C. E. & L. L. Schooley, b. Nov. 1, 1901 d. Nov. 21, 1901",MATCH,LV0839,Millard L. Schooley,1901-12-12,1901-12-21
+dar1948_lakeview_VERIFIED.txt,333,"Clarence E. Schooley b. Nov. 18, 1873 d. Feb. 25, 1937",MATCH,LV0840,Clarence Eugene Schooley,1873-11-18,1937-02-25
+dar1948_lakeview_VERIFIED.txt,334,"Lizzie L. Schooley  Sept. 17, 1845 -  --",MATCH,LV0841,Lizzie L Schooley,1845-09-17,
+dar1948_lakeview_VERIFIED.txt,335,"William S. Tiffany  Nov. 24, 1845 - Aug. 30, 1918",MATCH,LV0914,William Swart Tiffany,1845-11-24,1918-08-30
+dar1948_lakeview_VERIFIED.txt,336,"Tagie H. Tiffany  June 12, 1850 - May 7, 1936",MATCH,LV0915,Tacie Humphrey Hixson Tiffany,1850-06-12,1936-05-07
+dar1948_lakeview_VERIFIED.txt,337,"Wilby S. Arnett  Sept. 10, 1855 - Jan. 18, 1939",MATCH,LV0026,Welby S. Arnett,1855-09-10,1939-01-18
+dar1948_lakeview_VERIFIED.txt,338,"Katie V., his wife, July 31, 1853 - Sept. 21, 1927",MATCH,LV0027,Katherine V. Simmons Arnett,1853-07-31,1927-09-21
+dar1948_lakeview_VERIFIED.txt,339,"Amanda M. Simmons  d. Oct. 13, 1902 at 42 yrs. 8 mo. 23 ds.",MATCH,LV0865,Amanda M Simmons,1860,1902-10-13
+dar1948_lakeview_VERIFIED.txt,340,"James B., son of Chas. & Margaret Lovett, Apr. 4, 1885 - Dec. 7, 1904",MATCH,LV0625,James B. Lovett,1885-04-04,1904-12-07
+dar1948_lakeview_VERIFIED.txt,341,"Charles Lovett  July 2, 1835 - Apr. 26, 1902  at 72 yrs.",MATCH,LV0626,Charles E. Lovett,1835-07-02,1902-04-26
+dar1948_lakeview_VERIFIED.txt,342,"Mary Frances Mills  Sept. 29, 1913 - Oct. 29, 1913",MATCH,LV0668,Mary Frances Mills,1913-09-29,1913-10-29
+dar1948_lakeview_VERIFIED.txt,343,"Frances Smith Perry  Dec. 27, 1847 - May 16, 1923",MATCH,LV0764,Frances Smith Perry,1847-12-27,1923-05-16
+dar1948_lakeview_VERIFIED.txt,344,"John H. Lovett  Feb. 8, 1934  at 11 ds.",MATCH,LV0624,John H Lovett,1934-02-08,
+dar1948_lakeview_VERIFIED.txt,345,"Margaret L. Pearson  May 20, 1939  at 32 yrs.8 mos. 7 ds.",MATCH,LV0763,Margaret L. Pearson,1907,1939-05-20
+dar1948_lakeview_VERIFIED.txt,346,"Daisy B. Ballenger  Dec. 9, 1897 - Aug. 12, 1934",MATCH,LV0063,Daisy B. Ballenger,1897-12-09,1934-08-12
+dar1948_lakeview_VERIFIED.txt,347,Robert J. N. Reid   1869 - 1922,MATCH,LV0803,Robert James Nelson Reid,1869,1922
+dar1948_lakeview_VERIFIED.txt,348,Lucy F. Reid  1860 - 1946,MATCH,LV0804,Lucy Ellen Myers Reid,1860,1946
+dar1948_lakeview_VERIFIED.txt,349,"Patsy B. Nelson, wife of Chas. E. Reid, Aug. 18, 1843 - Oct. 26, 1923",MATCH,LV0724,Patsy B Nelson,1843-08-18,1923-10-26
+dar1948_lakeview_VERIFIED.txt,350,"Anthon Christensen  June 3, 1843 - May 22, 1927",MATCH,LV0222,Anthon Christensen,1843-06-03,1927-05-22
+dar1948_lakeview_VERIFIED.txt,351,"Mary F. Myers, wife of Anthon C. Christensen, Aug. 9, 1857 - Sept. 11,1938",MATCH,LV0711,Mary F Myers,1857-08-09,1938-09-11
+dar1948_lakeview_VERIFIED.txt,352,"Frances, dau. of J. T. & C. M. Myers, Mar. 28, 1909 - Feb. 23, 1931",MATCH,LV0712,Frances May Myers,1909-04-28,1931-02-23
+dar1948_lakeview_VERIFIED.txt,353,"Edna B. Myers,  Dec. 31, 1916 - Sept. 5, 1917",MATCH,LV0713,Edna B. Myers,1916-12-31,1917-09-05
+dar1948_lakeview_VERIFIED.txt,354,"Isaac Ballenger  July 15, 1856 - Mar. 6, 1918",MATCH,LV0064,Isaac Ballenger,1856-07-15,1918-03-06
+dar1948_lakeview_VERIFIED.txt,355,"Eliza A., his wife, Mar. 17, 1855 - Mar. 8, 1917",MATCH,LV0065,Eliza A. Ballenger,1855-03-17,1917-03-08
+dar1948_lakeview_VERIFIED.txt,356,"Sarah V. Mock  July 23, 1855 - Mar. 2, 1946",MATCH,LV0679,Sarah Virginia Peacock Mock,1855-07-23,1946-03-02
+dar1948_lakeview_VERIFIED.txt,357,"J. Frank Mock  Feb. 17, 1855 - June 20, 1938",MATCH,LV0680,Joseph Franklin Mock,1855-02-17,1938-06-20
+dar1948_lakeview_VERIFIED.txt,358,"Infant son of J. F. & S. V. Mock, d. Dec. 14, 1888",MATCH,LV0681,Infant Son Mock,,1888-12-14
+dar1948_lakeview_VERIFIED.txt,359,"Mary Virginia, dau. of J. H. & B. L. Mock, Sept. 4, 1912 - Mar. 9, 1914",MATCH,LV0682,Mary Virginia Mock,1912-09-04,1914-03-09
+dar1948_lakeview_VERIFIED.txt,360,"James H. Peacock  July 23, 1855 - Oct. 9, 1929",MATCH,LV0756,James Henry Peacock,1855-07-23,1929-10-09
+dar1948_lakeview_VERIFIED.txt,361,"Noble B. Peacock  d. Sept. 11, 1904  at 83 yrs. 6 mo. 20 ds.",MATCH,LV0757,Noble Braden Peacock,1896,1904-09-11
+dar1948_lakeview_VERIFIED.txt,362,"Lola M., wife of N. B. Peacock, d. Feb. 11, 1897 at 44 yrs. 6 mo. 11 ds.",MATCH,LV0758,Lola M. Peacock,1853,1897-02-11
+dar1948_lakeview_VERIFIED.txt,363,"Lucinda, wife of N. B. Peacock, d. July 29, 1890 at 62 yrs. 10 mo. 21 ds.",MATCH,LV0759,Lucinda Beans Peacock,1828,1890-07-29
+dar1948_lakeview_VERIFIED.txt,364,"Winfield Scott, son of N. B. & Lucinda Peacock, Oct. 4, 1848 - Feb. 14, 1859",MATCH,LV0760,Winfield Scott Peacock,1848-10-04,1859-02-14
+dar1948_lakeview_VERIFIED.txt,365,"Nancy C., dau. of Noble B. & Lucinda Peacock, Dec. 23, 1852 - Jan. 25, 1859",MATCH,LV0761,Nancy C. Peacock,1852-12-23,1859-01-25
+dar1948_lakeview_VERIFIED.txt,366,"Samuel R. Tillett  Aug. 3, 1842 - May 7, 1909",MATCH,LV0916,Samuel R. Tillett,1842-08-23,1909-05-07
+dar1948_lakeview_VERIFIED.txt,367,"John L. Tillett d. Jan. 9, 1873 - in the 62nd yr. of his age",MATCH,LV0917,John Love Tillett,1812,1873-01-09
+dar1948_lakeview_VERIFIED.txt,368,"Harriett A., wife of John L. Tillett, d. Oct. 27, 1899 - in 83rd yr.",MATCH,LV0918,Harriet Ann Poulton Tillett,1817,1899-10-27
+dar1948_lakeview_VERIFIED.txt,369,"Mary E. Tillett Laycock  Jan. 12, 1854 - Jan. 29, 1925",MATCH,LV0593,Mary E. Thomas Tillett Laycock,1854-01-12,1925-01-29
+dar1948_lakeview_VERIFIED.txt,370,"Laura F., wife of J. H. Orrison, d. July 25, 1897 at 43 yrs. 9 mo. 1 da.",MATCH,LV0736,Laura F. Thomas Orrison,1854,1897-07-25
+dar1948_lakeview_VERIFIED.txt,371,"J. H. Orrison d. Sept. 22, 1900 at 56 yrs. 8 mo. 24 ds.",MATCH,LV0737,John H. Orrison,1844,1900-09-22
+dar1948_lakeview_VERIFIED.txt,372,"Lewis Taylor d. Oct. 21, 1900 at 87 yrs. 8 mos.",MATCH,LV0899,Lewis Taylor,1813,1900-10-21
+dar1948_lakeview_VERIFIED.txt,373,"Elizabeth R., wife of Lewis Taylor, d. Mar. 26, 1914 at 88 yr. 3 mo. 26 ds.",MATCH,LV0900,Elizabeth Roberts Taylor,1826,1914-03-26
+dar1948_lakeview_VERIFIED.txt,374,"Ruth W., wife of Lewis Taylor, Jan. 12, 1813  d. Dec. 8, 1857 at 44 yr. 10 mo. 26 ds.",MATCH,LV0901,Ruth W. Bradfield Taylor,1813-01-12,1857-12-08
+dar1948_lakeview_VERIFIED.txt,375,"Ella Gertrude, dau. of Lewis & Elizabeth Taylor, d. Apr. 14, 1861 at 1 yr. 2 mos. 3 ds.",MATCH,LV0902,Ella Gertrude Taylor,1860,1861-04-14
+dar1948_lakeview_VERIFIED.txt,376,"Willie N., son of Lewis & Elizabeth Taylor, d. Sept. 8, 1866 at 4 yrs 4 mo.",MATCH,LV0903,Willie N. Taylor,1862,1866-09-08
+dar1948_lakeview_VERIFIED.txt,377,"James E. Silcott  Aug. 6, 1851 - Dec. 28, 1925",MATCH,LV0861,James Edgar Silcott,1851-08-06,1925-12-28
+dar1948_lakeview_VERIFIED.txt,378,"Mary C., wife of James E. Silcott, July 10, 1849 - Feb. 17, 1936",MATCH,LV0862,Mary Cathrine Silcott,1849-07-10,1936-02-17
+dar1948_lakeview_VERIFIED.txt,379,"James Braden Peugh  Sept. 3, 1846 - Jan. 17, 1907",MATCH,LV0765,James Braden Peugh,1846-09-03,1907-01-17
+dar1948_lakeview_VERIFIED.txt,380,"Lydia Ellen Tavenner, wife of J. B. Peugh, June 5, 1843 - Jan. 15, 1925",MATCH,LV0766,Lydia Ellen Tavenner Peugh,1843-06-05,1925-01-15
+dar1948_lakeview_VERIFIED.txt,381,"Infant son of James B. & Lydia E. Peugh, b. 1880",MATCH,LV0767,Infant Son Peugh,1880,1880
+dar1948_lakeview_VERIFIED.txt,382,"Lester, son of T. J. & L. F. Reed, May 25, 1891 - Oct. 11, 1902",MATCH,LV0799,Lester Reed,1891-05-25,1902-10-11
+dar1948_lakeview_VERIFIED.txt,383,"Grafton, son of J. A. & Teresa M.        Jan. 25, 1918 - Jan. 23, 1920",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,384,"Lydia A. Cox  Mar. 1, 1808 - Oct. 21, 1885",MATCH,LV0270,Lydia A. Garner Cox,1808-03-01,1885-10-21
+dar1948_lakeview_VERIFIED.txt,385,T. J. Reed (probably)        stone illegible,UNDATED,LV1717,Julia Higgs Reed,1895-01-31,1984-06-19
+dar1948_lakeview_VERIFIED.txt,386,"L. F. Reed, wife of T. J. Reed (probably)  stone illegible",UNDATED,LV0802,Elizabeth F. Lee Reed,1860,1944-11-05
+dar1948_lakeview_VERIFIED.txt,387,"Janie A., wife of Manly Fox, d. Sept. 22, 1893 at 51 yrs. 5 mos.",MATCH,LV0442,Janie A. Fox,1842,1893-09-22
+dar1948_lakeview_VERIFIED.txt,388,"Malinda E. Everhart d. Aug. 15, 1906  at 62 yrs. 9 mo. 1 da.",MATCH,LV0398,Malinda E. Cox Everhart,1844,1906-08-15
+dar1948_lakeview_VERIFIED.txt,389,"Robert L. Myers  Oct. 22, 1857 - Mar. 21, 1931",MATCH,LV0714,Robert L. Myers,1857-10-22,1931-03-21
+dar1948_lakeview_VERIFIED.txt,390,"Annie B., wife of Robert L. Myers, Oct. 10, 1861 - June 17, 1940",MATCH,LV0715,Annie B. Kidwell Myers,1861-10-10,1940-06-17
+dar1948_lakeview_VERIFIED.txt,391,"E. Viola Souder  Oct. 15, 1894 - Feb. 9, 1920",MATCH,LV0875,E. Viola Souder,1894-10-15,1920-02-09
+dar1948_lakeview_VERIFIED.txt,392,"Nathan Myers  Feb. 7, 1876 - July 1, 1917",MATCH,LV0716,Nathan Myers,1876-02-07,1917-07-01
+dar1948_lakeview_VERIFIED.txt,393,"M. Anita, dau. of N. & Bessie E. Myers, Oct. 2, 1899 - Apr. 15, 1900",MATCH,LV0717,M. Anita Myers,1899-10-02,1900-04-15
+dar1948_lakeview_VERIFIED.txt,394,"J. William, son of J. H. & V. J. Myers, May 2, 1898 - June 21, 1922",MATCH,LV0718,J. William Myers,1898-05-02,1922-06-21
+dar1948_lakeview_VERIFIED.txt,395,"J. H. Myers  July 17, 1861 - May 3, 1935",MATCH,LV0719,John Henry Myers,1861-07-17,1935-05-03
+dar1948_lakeview_VERIFIED.txt,396,"Virginia J. Gulick, wife of J. H. Myers, Apr. 19, 1859 - Mar. 24, 1924",MATCH,LV0486,Virginia J Gulick,1859-04-19,1924-03-24
+dar1948_lakeview_VERIFIED.txt,397,"Francis A., dau. of R. L. & F. P. Cullen, Aug. 25, 1937 - Aug. 13, 1938",MATCH,LV0282,Francis A. Cullen,1937-08-25,1938-08-13
+dar1948_lakeview_VERIFIED.txt,398,"Francis P., wife of Robert L. Cullen, Sept. 10, 1910 - Jan. 11, 1939",MATCH,LV0283,Francis Heaton Palmer Cullen,1910-09-10,1939-01-11
+dar1948_lakeview_VERIFIED.txt,399,Elizabeth Cox  d. 1924,MATCH,LV0272,Elizabeth Cox,,1924
+dar1948_lakeview_VERIFIED.txt,400,"Laura L. Cox  d. May __, 193--",UNDATED,LV0269,Laura L. Cox,,1930-05
+dar1948_lakeview_VERIFIED.txt,401,Unmarked grave in Cox lot,UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,402,"Mary E., dau. of J. H. & Ann V. Gulick, Nov. 4, 1839 - Aug. 16, 1903",CONFLICT,LV0487,Mary E. Gulick,1839-11-04,1908-08-16
+dar1948_lakeview_VERIFIED.txt,403,Elliott S. Donaldson  1859 - 1940,MATCH,LV0325,Elliott S. Donaldson,1859,1940
+dar1948_lakeview_VERIFIED.txt,404,"Emma J., wife of Elliott S. Donaldson  1866 - 19--",MATCH,LV0326,Emma J. Spergeon Donaldson,1866,1954
+dar1948_lakeview_VERIFIED.txt,405,"Ruby G., dau. of M. D. & B. R. Payne, Sept. 28, 1915 - Apr. 8, 1918",MATCH,LV0753,Ruby G. Payne,1915-09-28,1918-04-08
+dar1948_lakeview_VERIFIED.txt,406,"Samuel Hough  Oct. 20, 1858 - Oct. 19, 1940",MATCH,LV0534,Samuel H. Hough,1858-10-20,1940-10-19
+dar1948_lakeview_VERIFIED.txt,407,"Lionel H. Leadam  d. Mar. 6, 1937 at 74 yrs.",MATCH,LV0603,Lionel H Leadam,1863,1937-03-06
+dar1948_lakeview_VERIFIED.txt,408,"Agnes Leadam  d. Apr. 1, 1937 at 73 yrs.",MATCH,LV0604,Agnes Leadham,1864,1937-04-01
+dar1948_lakeview_VERIFIED.txt,409,"Thomas W. Carter  Oct. 14, 1878 - Jan. 6, 1941",MATCH,LV0204,Thomas W. Carter,1878-10-14,1941-01-06
+dar1948_lakeview_VERIFIED.txt,410,"Lula A. Carter  Jan. 19, 1877 - Jan. 19, 1942",MATCH,LV0205,Lula A. Carter,1877-01-19,1942-01-19
+dar1948_lakeview_VERIFIED.txt,411,"Melissa B. Green  d. June 1, 1943 at 62 yrs. 5 mos. 4 ds.",MATCH,LV0475,Melissa Byrd Clipp Green,1881,1943-06-01
+dar1948_lakeview_VERIFIED.txt,412,"Archie M. Payne  Mar. 26, 1884 - Mar. 23, 1929",MATCH,LV0754,Archie Marshall Payne,1884-03-26,1929-03-23
+dar1948_lakeview_VERIFIED.txt,413,"Ann Elizabeth, inf. dau. Archie M. & Maggie Payne, Aug. 8, 1913 - Aug. 9, 1913",MATCH,LV0755,Ann Elizabeth Payne,1913-08-08,1913-08-09
+dar1948_lakeview_VERIFIED.txt,414,"Arthur Vaughn  d. Apr. 6, 1941 at. 64 yrs. 2 mos. 17 ds.",MATCH,LV0931,Arthur Vaughan,1877,1941-04-06
+dar1948_lakeview_VERIFIED.txt,415,"John W., son of Jacob & Emma E. Vaughan, Oct. 3, 1872 - Mar. 17, 1901",MATCH,LV0932,John W Vaughan,1872-10-03,1901-03-17
+dar1948_lakeview_VERIFIED.txt,416,"Nannie McDaniel  June 21, 1870 - Feb. 22, 1936",MATCH,LV0650,Nannie McDaniel,1870-06-21,1936-02-22
+dar1948_lakeview_VERIFIED.txt,417,"Ethel Arnett  Feb. 20, 1919 - Feb. 20, 1919 (dau. W. N. & Myrtle Arnett)",MATCH,LV0028,Ethel V. Arnett,1919-02-20,1919-02-20
+dar1948_lakeview_VERIFIED.txt,418,"Charles E. Arnett b. Feb. 20, 1917 - June 20, 1918 (son of W.N. & Myrtle Arnett)",MATCH,LV0033,Charles Edward Arnett,1917-02-20,1918-06-20
+dar1948_lakeview_VERIFIED.txt,419,"Grover C. Arnett  July 16, 1886 - May 30, 1912",MATCH,LV0029,Grover C. Arnett,1886-07-16,1912-05-30
+dar1948_lakeview_VERIFIED.txt,420,"Ida J., mother of Grover C. Arnett, June 20, 1855 - Oct. 12, 1917",MATCH,LV0030,Ida J. Jenkins Arnett,1855-06-20,1917-10-12
+dar1948_lakeview_VERIFIED.txt,421,F. C. Furr,UNDATED,LV0456,F C Furr,,
+dar1948_lakeview_VERIFIED.txt,422,J. L. Furr,UNDATED,LV1144,John Levin Furr,1867,1941-07-27
+dar1948_lakeview_VERIFIED.txt,423,"William N. Everhart  Oct. 23, 1817 - Jan. 10, 1903",MATCH,LV0395,William Nathaniel Everhart,1817-10-23,1903-01-10
+dar1948_lakeview_VERIFIED.txt,424,"Catharine S., wife of Wm. N. Everhart, Sept. 5, 1820 - Dec. 5, 1862",MATCH,LV0396,Catharine S. Deakins Everhart,1820-09-05,1862-12-05
+dar1948_lakeview_VERIFIED.txt,425,"Annie A., dau. of Catherine S. & Wm. N. Everhart, Feb. 20, 1844 - Aug. 9, 1866",MATCH,LV0397,Annie Arabella Everhart,1844-02-20,1866-09-09
+dar1948_lakeview_VERIFIED.txt,426,"John T. Cummings  Jan. 15, 1832 - Dec. 4, 1911",MATCH,LV0284,John T. Cummings,1832-01-15,1911-12-04
+dar1948_lakeview_VERIFIED.txt,427,"Lydia Jane, wife of J. T. Cummings, July 5, 1846 - Apr. 14, 1925",MATCH,LV0285,Lydia Jane Everhart Cummings,1846-07-05,1925-04-14
+dar1948_lakeview_VERIFIED.txt,428,"A. Truxtun, son of H. T. & B. K. Morrison, Sept. 10, 1900 - Jan. 29, 1902",MATCH,LV0693,A. Truxton Morrison,1900-09-13,1902-01-29
+dar1948_lakeview_VERIFIED.txt,429,"Horace T. Morrison  June 17, 1868 - Oct. 3, 1906",MATCH,LV0694,Horace Truxton Morrison,1868-06-17,1906-10-03
+dar1948_lakeview_VERIFIED.txt,430,Thomas F. Keen  1855 - 1915,MATCH,LV0574,Thomas F. Keen,1855,1915
+dar1948_lakeview_VERIFIED.txt,431,"Kathleen Stuart McVeigh, wife of Dr. Thos. F. Keen, 1859 - 1907",MATCH,LV0657,Kathleen Stuart Mcveigh,1859,1907
+dar1948_lakeview_VERIFIED.txt,432,"Hazel, only dau. of Dr. T. F. & Kathleen S. Keen, Jan. 5, 1885 - Mar. 11, 1894",MATCH,LV0575,Hazel Keen,1885-01-05,1894-03-11
+dar1948_lakeview_VERIFIED.txt,433,"John E. Benedum  Jan. 7, 1844 - June 2, 1934",CONFLICT,LV0118,Pvt John Edwin Benedum,1844-01-07,1924-06-02
+dar1948_lakeview_VERIFIED.txt,434,"S. Eliza, wife of J. E. Benedum, Oct. 21, 1844 - Mar. 26, 1908",MATCH,LV0119,S. Elizabeth Adams Benedum,1844-10-31,1908-03-26
+dar1948_lakeview_VERIFIED.txt,435,"Clinton Benedum  June 23, 1874 - Dec. 27, 1945",CONFLICT,LV0120,Clinton Benedum,1874-06-23,1946-12-27
+dar1948_lakeview_VERIFIED.txt,436,"G. Oscar Tavenner  Nov. 6, 1849 - Dec. 17, 1909",MATCH,LV0888,G. Oscar Tavenner,1849-11-06,1909-12-17
+dar1948_lakeview_VERIFIED.txt,437,"Mary Isabell Tavenner  Feb. 16, 1850 - Jan. 9, 1935",CONFLICT,LV0889,Mary Isabell Tavenner,1860-02-16,1935-01-09
+dar1948_lakeview_VERIFIED.txt,438,"Joseph F. Thompson  d. July 14, 1935 at 78 yrs.",MATCH,LV0909,Joseph F. Thompson,1859,1935-07-14
+dar1948_lakeview_VERIFIED.txt,439,"Mary F. Thompson  d. Oct. 14, 1912 at 76 yrs. 28 ds.",MATCH,LV0910,Mary Frances Norris Thompson,1836,1912-10-14
+dar1948_lakeview_VERIFIED.txt,440,"W. W. Thompson d. Jan. 16, 1888 at 56 yrs 3 mo. 6 ds.",MATCH,LV0911,William W. Thompson,1832,1888-01-16
+dar1948_lakeview_VERIFIED.txt,441,"Charlie H., son of J. E. & Eliza Benedum, d. Sept. 1, 1886 at 13 yr. 8 mo. 1 da.",MATCH,LV0121,Charles H Benedum,1873,1886-09-01
+dar1948_lakeview_VERIFIED.txt,442,"James, son of James E. & Eliza Benedum, July 20, 1871 - Nov. 13, 1876",MATCH,LV0122,James L. Benedum,1871-07-20,1876-11-12
+dar1948_lakeview_VERIFIED.txt,443,"John E., son of J. E. & Eliza Benedum, Dec. 12, 1879 - Apr. 4, 1880",MATCH,LV0123,John E Benedum,1879-12-12,1880-04-04
+dar1948_lakeview_VERIFIED.txt,444,"Wm. A. Benedum b. Jan. 21, 1851 d. Mar. 6, 1924",MATCH,LV0124,William Andrew Benedum,1851-01-21,1924-03-06
+dar1948_lakeview_VERIFIED.txt,445,"Aravella Tavenner, wife of W. A. Benedum, b. Aug. 21, 1851 d. Sept. 28, 1909",MATCH,LV0887,Aravella Tavenner,1851-08-21,1909-09-28
+dar1948_lakeview_VERIFIED.txt,446,Levi James  1825 - 1903,MATCH,LV0560,Levi James,1825,1903
+dar1948_lakeview_VERIFIED.txt,447,"Martha E., wife of Levi James,  1828 - 1915",CONFLICT,LV0561,Martha Ellen Paxson James,1824,1915
+dar1948_lakeview_VERIFIED.txt,448,"Nellie G. James b. Sept. 18, 1884 d. Feb. 17, 1944",MATCH,LV0562,Nellie Golden James,1884-09-18,1944-02-17
+dar1948_lakeview_VERIFIED.txt,449,Americus C. James  1852 - 1935,MATCH,LV0563,Americus Cauldwell James,1852,1935
+dar1948_lakeview_VERIFIED.txt,450,Sarah F. James  1855 - 1928,MATCH,LV0564,Sarah Frances Paxson James,1855,1928
+dar1948_lakeview_VERIFIED.txt,451,"James Laycock d. Mar. 23, 1899 in 88th yr.",MATCH,LV0588,James Laycock,1814,1899-03-23
+dar1948_lakeview_VERIFIED.txt,452,"Mary A., wife of James Laycock, d. May 17, 1875 in 53rd yr.",MATCH,LV0589,Mary Ann White Laycock,1823,1875-05-17
+dar1948_lakeview_VERIFIED.txt,453,"James Edger, son of J. & Mary Ann Laycock, d. Sept. 20, 1857 at 2 yr. 7 mo. 25 ds.",MATCH,LV0590,James Edgar Laycock,1855,1857-09-20
+dar1948_lakeview_VERIFIED.txt,454,"Frances Ann, dau. of James & Mary A. Laycock, d. Dec. 25, 1859 at 6 yrs. 8 mo. 27 ds.",MATCH,LV0591,Frances Ann Laycock,1853,1859-12-15
+dar1948_lakeview_VERIFIED.txt,455,"Mary A., dau. of John F. & M. C. Laycock, d. Apr. 5, 1870 at 2 yrs. 11 mo. 5 ds.",MATCH,LV0592,Mary A. Laycock,1868,1870-04-05
+dar1948_lakeview_VERIFIED.txt,456,"John F. Laycock b. Sept. 29, 1842 d. Jan. 7, 1927",MATCH,LV0600,John Franklin Laycock,1842,1927
+dar1948_lakeview_VERIFIED.txt,457,"Mary Roberts, wife of John F. Laycock, b. Aug. 25, 1849 d. Mar. 16,1929",MATCH,LV0810,Mary Roberts,1849-08-25,1929-03-16
+dar1948_lakeview_VERIFIED.txt,458,"Caroline E., wife of James H. Jones, b. Mar. 2, 1840 d. Mar. 6, 1908",MATCH,LV0569,Caroline E. Tavenner Jones,1840-03-02,1908-03-06
+dar1948_lakeview_VERIFIED.txt,459,"James H. Jones b. Apr. 15, 1823 d. Apr. 11, 1909",MATCH,LV0570,James H. Jones,1823-04-15,1909-04-11
+dar1948_lakeview_VERIFIED.txt,460,"Sarah E., wife of Landon Jones, b. May 16, 1821 d. Feb. 17, 1903",MATCH,LV0571,Sarah Elizabeth Wynkoop Jones,1821-05-16,1903-02-17
+dar1948_lakeview_VERIFIED.txt,461,"Landon Jones b. Dec. 15, 1819 d. Feb. 23, 1902",MATCH,LV0572,Landon Jones,1819-12-15,1902-02-23
+dar1948_lakeview_VERIFIED.txt,462,"Moses Thomas Wynkoop b. July 15, 1852 d. Nov. 15, 1912",MATCH,LV0997,Moses Thomas Wynkoop,1852-07-15,1912-11-15
+dar1948_lakeview_VERIFIED.txt,463,"Henrietta Wynkoop b. May 15, 1856 d. Dec. 24, 1939",MATCH,LV0998,Henrietta Jones Wynkoop,1856-05-15,1939-12-24
+dar1948_lakeview_VERIFIED.txt,464,"Elizabeth, dau. of N. & M. Waitkins, b. Mar. 27, 1913 d. June 25, 1913",MATCH,LV0934,Elizabeth Waitkins,1913-03-27,1913-06-25
+dar1948_lakeview_VERIFIED.txt,465,"Joseph B., son of J. T. & V. E. Myers, b. Sept. 17, 1878 d. Dec. 1, 1909",CONFLICT,LV0720,Joseph B. Myers,1876-09-17,1909-12-01
+dar1948_lakeview_VERIFIED.txt,466,"Virginia E., wife of J. T. Myers  1845 - 1926",MATCH,LV0721,Virginia E. Laycock Myers,1845,1926
+dar1948_lakeview_VERIFIED.txt,467,"J. Thomas Myers b. Sept. 7, 1841 d. Feb. 17, 1907",MATCH,LV0722,J. Thomas Myers,1841-09-07,1907-02-17
+dar1948_lakeview_VERIFIED.txt,468,"James Wm., son of Thos. & Virginia Myers, b. Sept. 9, 1866 d. Dec. 29, 1894",MATCH,LV0723,James William Myers,1866-09-09,1894-12-29
+dar1948_lakeview_VERIFIED.txt,469,"Woodward L. Dorrell b. Mar. 14, 1874 d. May 25, 1895",MATCH,LV0339,Woodward Luke Dorrell,1874-03-14,1895-05-25
+dar1948_lakeview_VERIFIED.txt,470,"Lalla J. Dorrell b. Feb. 29, 1868 d. Oct. 25, 1910",MATCH,LV0340,Lalla I. Dorrell,1868-02-29,1910-10-25
+dar1948_lakeview_VERIFIED.txt,471,"Sallie E. Dorrell b. Dec. 25, 1839 d. Feb. 28, 1916",MATCH,LV0341,Sarah E. Woodward Dorrell,1839-12-25,1916-02-29
+dar1948_lakeview_VERIFIED.txt,472,"James A. Dorrell  Nov. 6, 1837 - Apr. 15, 1915",MATCH,LV0342,PVT James A. Dorrell,1837-11-06,1915-04-15
+dar1948_lakeview_VERIFIED.txt,473,"George H. Dorrell  May 12, 1876 - Feb. 3, 1912",MATCH,LV0343,George H. Dorrell,1876-05-12,1912-02-03
+dar1948_lakeview_VERIFIED.txt,474,"Walter H. Lodge  Dec. 18, 1872 - Feb. 9, 1916",MATCH,LV0615,Walter Harmon Lodge,1872-12-18,1916-02-09
+dar1948_lakeview_VERIFIED.txt,475,"Sue W. Lodge  May 19, 1902 - Aug. 25, 1902",MATCH,LV0616,Sue W. Lodge,1902-05-19,1902-08-25
+dar1948_lakeview_VERIFIED.txt,476,"Hugh L. Lodge  Oct. 19, 1900 - Sept. 3, 1901",MATCH,LV0617,Hugh L. Lodge,1900-10-19,1901-09-03
+dar1948_lakeview_VERIFIED.txt,477,"Charles W. Hope  May 11, 1848 - Nov. 19, 1897",MATCH,LV0529,Charles William Hope,1848-05-11,1897-11-19
+dar1948_lakeview_VERIFIED.txt,478,"Annie C., wife of C. W. Hope, Feb. 25, 1849 - Oct. 30, 1915",MATCH,LV0530,Annie C. Kuhlmann Hope,1849-02-25,1915-10-30
+dar1948_lakeview_VERIFIED.txt,479,"W. J. Hope  Feb. 27, 1875 - Dec. 7, 1937",MATCH,LV0531,William Justus Hope,1875-02-27,1937-12-07
+dar1948_lakeview_VERIFIED.txt,480,"Ella W. Frame  d. Dec. 24, 1942  at 69 yrs.",MATCH,LV0443,Ella W. Frame,1873,1942-12-24
+dar1948_lakeview_VERIFIED.txt,481,"G. Wm. Warner  Aug. 24, 1859 - Mar. 25, 1923",CONFLICT,LV0939,George Zachary Warner,1847-06-25,1923-05-20
+dar1948_lakeview_VERIFIED.txt,482,"Medora V., wife of G. Wm. Warner, Aug. 18, 1862 - June 24, 1902",MATCH,LV0942,Medora Virginia Kuhlmann Warner,1862-08-18,1902-06-24
+dar1948_lakeview_VERIFIED.txt,483,Thomas H. James  1825 - 1906,MATCH,LV0558,Thomas H. James,1825,1906
+dar1948_lakeview_VERIFIED.txt,484,Virginia F. James  1837 - 1912,MATCH,LV0559,Virginia Friench Simpson James,1837,1912
+dar1948_lakeview_VERIFIED.txt,485,"Mary Elizabeth, wife of Frederick Alonzo Weadon, June 14, 1873 - Apr. 1, 1938",MATCH,LV0962,Mary Elizabeth Weadon,1873-06-14,1938-04-01
+dar1948_lakeview_VERIFIED.txt,486,"Mary C., wife of Rev. James M. Hawley, Dec. 7, 1856 - Mar. 10, 1930",MATCH,LV0503,Mary C. Hawley,1856-12-07,1930-03-10
+dar1948_lakeview_VERIFIED.txt,487,"Rev. James M. Hawley  May 29, 1856 - Oct. 10, 1939",MATCH,LV0504,Rev James M. Hawley,1856-05-29,1939-10-10
+dar1948_lakeview_VERIFIED.txt,488,"Thomas Wm. Lee  Mar. 22, 1886 - Jan. 21, 1933",MATCH,LV0605,Thomas William Lee,1886-03-22,1933-01-21
+dar1948_lakeview_VERIFIED.txt,489,"John T. Fleming  Apr. 30, 1945  at 49 yrs.",MATCH,LV0425,John Thomas Fleming,1894-05-24,1945-04-30
+dar1948_lakeview_VERIFIED.txt,490,"Wm. H. Fletcher  Jan. 3, 1841 - July 7, 1934",MATCH,LV0426,William Henry Fletcher,1841-01-03,1934-07-07
+dar1948_lakeview_VERIFIED.txt,491,"Alice Fletcher  Nov. 14, 1860 - Feb. 10, 1931",MATCH,LV0427,Alice Fletcher,1860-11-14,1931-02-10
+dar1948_lakeview_VERIFIED.txt,492,George R. Reid  1900 - 1944,MATCH,LV0805,George R. Reid,1900,1944
+dar1948_lakeview_VERIFIED.txt,493,"Elizabeth B., wife of Niels P. Larsen, 1860 - 1945",MATCH,LV1360,Elizabeth Breckenridge Alexander Larsen,1860-10-01,1945-10-21
+dar1948_lakeview_VERIFIED.txt,494,Niels P. Larson b. Denmark  1852 - 1934,UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,495,"Thaddeus Gill  b. Mar. 10, 1867",MATCH,LV0460,Thaddeus Gill,1867-03-10,1950-05-25
+dar1948_lakeview_VERIFIED.txt,496,"Clara S., wife of Thaddeus Gill, Aug. 1, 1864 - Feb. 20, 1940",MATCH,LV0461,Clara S. Gill,1864-08-01,1940-02-10
+dar1948_lakeview_VERIFIED.txt,497,Lizzie Moatz  1861 - 1940,CONFLICT,LV0676,Lizzie Swarbrick Moatz,1861,1943
+dar1948_lakeview_VERIFIED.txt,498,Daniel L. Moatz  1857 - 1943,MATCH,LV0677,Daniel L. Moatz,1857,1943
+dar1948_lakeview_VERIFIED.txt,499,"George L., son of Daniel & Lizzie Moatz  1884 - 1934",CONFLICT,LV0678,George L. Moatz,1857,1934
+dar1948_lakeview_VERIFIED.txt,500,"Walter H. Howell  Aug. 8, 1857 - Sept. 24, 1934",MATCH,LV0539,Walter H. Howell,1857-08-08,1934-09-24
+dar1948_lakeview_VERIFIED.txt,501,"Huldah I., wife of W. H. Howell, Dec. 5, 1858 - Jan. 10, 1906",MATCH,LV0540,Huldah I. Howell,1858-12-05,1906-01-10
+dar1948_lakeview_VERIFIED.txt,502,"John W. Clark  June 16, 1876 - Jan. 11, 1942",MATCH,LV0226,John W. Clark,1876-06-16,1942-01-11
+dar1948_lakeview_VERIFIED.txt,503,"Regina Neff, wife of J. W. Clark, Feb. 1, 1874 - Nov. 3, 1927",MATCH,LV0227,Regina Neff Clark,1874-02-01,1927-11-03
+dar1948_lakeview_VERIFIED.txt,504,"Edward Mauran, son of E. E. & S. S. Dunbar, stepson of R. N. McVeigh, born in N. Y. Sept. 22, 1860 d. June 8, 1887",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,505,"Grace, dau. of E. M. & C. T. Dunbar, b. Dec. 29, 1883, Prescott, Ia., d. July 28, 1884",MATCH,LV0354,Grace Dunbar,1883-12-19,1884-07-28
+dar1948_lakeview_VERIFIED.txt,506,"Virginia Reynolds, wife of Henry A. Simmons  Mar. 31, 1857 - July 29, 1896",MATCH,LV0866,Virginia Thomas Reynolds Simmons,1857-03-31,1896-07-29
+dar1948_lakeview_VERIFIED.txt,507,"Annie E. Baldwin  Feb. 5, 1865 - Apr. 16, 1941",MATCH,LV0044,Annie Elizabeth Schooley Baldwin,1865-02-15,1941-04-16
+dar1948_lakeview_VERIFIED.txt,508,"Julian Baldwin  Mar. 24, 1858 - Jan. 16, 1939",MATCH,LV0045,Julian Baldwin,1858-03-24,1939-01-16
+dar1948_lakeview_VERIFIED.txt,509,"M. Mirtha Schooley  May 6, 1872 - May 3, 1931",MATCH,LV0831,Mariah Mirtha Crawford Schooley,1872-05-06,1931-05-03
+dar1948_lakeview_VERIFIED.txt,510,"Rev. John H. Schooley  Dec. 20, 1867 - Sept. 26, 1930",MATCH,LV0832,Rev John Henry Schooley,1867-12-20,1930-09-26
+dar1948_lakeview_VERIFIED.txt,511,"Geo. T. Schooley  Sept. 13, 1860 - Aug. 4, 1932",MATCH,LV0833,George T. Schooley,1860-09-13,1932-08-04
+dar1948_lakeview_VERIFIED.txt,512,"E. Alice Schooley  Jan. 3, 1854 - Aug. 8, 1932",MATCH,LV0834,Eliza Alice Schooley,1854-01-03,1932-08-08
+dar1948_lakeview_VERIFIED.txt,513,"Chas. W., son of T. A. & Hannah A. Schooley, Dec. 7, 1848 - Nov. 21,1920",MATCH,LV0835,Charles William Schooley,1848-12-07,1920-11-21
+dar1948_lakeview_VERIFIED.txt,514,"Hannah, wife of T. A. Schooley, Aug. 28, 1827 - Dec. 24, 1884",MATCH,LV0836,Hannah Amy Hough Schooley,1827-08-28,1884-12-24
+dar1948_lakeview_VERIFIED.txt,515,"Thomas A. Schooley  Nov. 25, 1824 - Jan. 2, 1893",MATCH,LV0837,Thomas A. Schooley,1824-11-25,1893-01-02
+dar1948_lakeview_VERIFIED.txt,516,"Virginia E., dau. of T. A. & H. A. Schooley, Nov. 4, 1850 - Nov. 2, 1864",MATCH,LV0838,Virginia E. Schooley,1850-11-04,1864-11-02
+dar1948_lakeview_VERIFIED.txt,517,"Harmon McDaniel  Oct. 30, 1902 at 29 yrs. 8 mo. 17 ds.",MATCH,LV0646,Harmon Mcdaniel,1902-10-30,
+dar1948_lakeview_VERIFIED.txt,518,"Ellem McDaniel  Apr. 1, 1934 - 58 yrs. 11 mos. 14 ds.",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,519,"Ruby M., dau. of Shirley O. & Mary M. Ball, Aged 3 yrs. 5 mos. 8 ds.",UNDATED,LV0051,Ruby M. Ball,1922,1925-01-08
+dar1948_lakeview_VERIFIED.txt,520,"Martha J. Lake  Nov. 11, 1830 - Mar. 10, 1910",MATCH,LV0578,Martha J. Lake,1830-11-11,1910-03-10
+dar1948_lakeview_VERIFIED.txt,521,"Ernest Linwood Lake  Feb. 18, 1866 - June 17, 1933",MATCH,LV0579,Ernest Linwood Lake,1866-02-18,1933-06-17
+dar1948_lakeview_VERIFIED.txt,522,"David Ernest Lake  b. & d. May 10, 1911",MATCH,LV0580,David Ernest Lake,1911-05-10,1911-05-11
+dar1948_lakeview_VERIFIED.txt,523,CharlesA. Lewis  1853 - 1905,MATCH,LV0613,Charles A. Lewis,1853,1905
+dar1948_lakeview_VERIFIED.txt,524,"Orra V. McDonald  Oct. 16, 1873 - Feb. 23, 1943",MATCH,LV0651,Orra V. Hunt McDonald,1873-10-16,1943-02-23
+dar1948_lakeview_VERIFIED.txt,525,"Thomas W. McDonald  Aug. 1, 1868 - Dec. 15, 1934",MATCH,LV0652,Thomas W. McDonald,1868-08-01,1934-12-15
+dar1948_lakeview_VERIFIED.txt,526,"George Zachary Warner  June 25, 1847 - May 20, 1923",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,527,"Sarah Ann, wife of G. Z. Warner, Feb. 25, 1850 - May 15, 1927",MATCH,LV0940,Sarah Ann Phillips Warner,1850-02-25,1927-05-15
+dar1948_lakeview_VERIFIED.txt,528,Olivia N. Kidwell  1877 - 1945,MATCH,LV0577,Olivia Warner Kidwell,1877,1945
+dar1948_lakeview_VERIFIED.txt,529,Charles A. Howard  1866 - 1938,MATCH,LV1267,Charles Alonzo Howard,1866-02-09,1938-03-02
+dar1948_lakeview_VERIFIED.txt,530,"Robert R., son of R. T. & Mary E. Wyncoop  May 25, 1886 - Aug. 27, 1925",MATCH,LV0996,Robert R Wyncoop,1886-05-25,1925-09-27
+dar1948_lakeview_VERIFIED.txt,531,Mary Murray Goodrich  1857 - 1946,MATCH,LV0464,Mary Murray Goodrich,1857,1946
+dar1948_lakeview_VERIFIED.txt,532,Chas. Landon Goodrich  1859 - 19--,MATCH,LV0465,Charles Landon Goodrich,1859,1955-08-03
+dar1948_lakeview_VERIFIED.txt,533,Frances Traphagen Field  1868 - 1935,UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,534,"Rosalie R. Moore  Nov. 1, 1855 - July 28, 1926",MATCH,LV0690,Rosalie R. Moore,1855-11-01,1926-07-28
+dar1948_lakeview_VERIFIED.txt,535,"Lula F. Moore  Mar. 18, 1853 - May 30, 1925",MATCH,LV0691,Lula F. Moore,1853-03-18,1925-05-30
+dar1948_lakeview_VERIFIED.txt,536,"Alice Ann, dau. of Geo. L. & Ann A. Moore, Feb. 23, 1851 - Dec. 27, 1918",MATCH,LV0692,Alice Ann Moore,1851-02-23,1918-12-27
+dar1948_lakeview_VERIFIED.txt,537,"J. F. Utterback  Aug. 31, 1864 - Mar. 7, 1920",MATCH,LV0928,James Franklin Utterback,1864-08-31,1920-03-07
+dar1948_lakeview_VERIFIED.txt,538,"Gertrude Utterback  Feb. 20, 1874 - Dec. 30, 1916",MATCH,LV0929,Florence Gertrude Brown Utterback,1874-02-20,1916-12-30
+dar1948_lakeview_VERIFIED.txt,539,"Hattie Brown  Feb. 9, 1939  at 58 yrs. 6 mos. 29 ds.",MATCH,LV0180,Hattie V. Groves Brown,1881,1939-02-09
+dar1948_lakeview_VERIFIED.txt,540,"Harry H. Brown  Aug. 15, 1877 - Dec. 13, 1917",MATCH,LV0181,Harry Heaton Brown,1877-08-15,1917-12-13
+dar1948_lakeview_VERIFIED.txt,541,"Emily E., wife of T. A. Brown, July 27, 1846 - Aug. 11, 1908",MATCH,LV0182,Emily Ellen Simmons Brown,1846-07-27,1908-08-11
+dar1948_lakeview_VERIFIED.txt,542,John W. McDaniel  1866 -,MATCH,LV0648,John W. McDaniel,1866,1939-12-11
+dar1948_lakeview_VERIFIED.txt,543,Harry W. McDaniel  1869 - 1927,MATCH,LV0649,Harry Willmore McDaniel,1869,1927
+dar1948_lakeview_VERIFIED.txt,544,"Luta Iden  Apr. 23, 1853 - Mar. 10, 1924",MATCH,LV0548,Luta Iden,1853-04-23,1924-03-10
+dar1948_lakeview_VERIFIED.txt,545,"John T. Iden  May 9, 1822 - Dec. 4, 1875",MATCH,LV0549,John T. Iden,1822-05-09,1875-12-04
+dar1948_lakeview_VERIFIED.txt,546,"Virginia Iden  Apr. 16, 1830 - May 22, 1912",MATCH,LV0550,Virginia Stover Iden,1830-04-16,1912-05-22
+dar1948_lakeview_VERIFIED.txt,547,"Bessie M. Iden  Feb. 25, 1858 - Sept. 16, 1933",MATCH,LV0551,Bessie M. Iden,1858-02-25,1933-09-16
+dar1948_lakeview_VERIFIED.txt,548,"Adelaide C. Steele  Oct. 22, 1861 - Nov. 27, 1943",MATCH,LV0876,Adelaide C. Steele,1861-10-22,1943-11-27
+dar1948_lakeview_VERIFIED.txt,549,"Wm. S. Steele  Apr. 25, 1868 - Aug. 1, 1939",MATCH,LV0877,William S. Steele,1868-04-25,1939-08-01
+dar1948_lakeview_VERIFIED.txt,550,"Martha J. Steele  June 8, 1849 - Nov. 15, 1909",MATCH,LV0878,Martha J. Steele,1849-06-08,1909-11-15
+dar1948_lakeview_VERIFIED.txt,551,"Stuart R. Steele  July 26, 1833 - Apr. 12, 1902",MATCH,LV0879,Stuart R. Steele,1833-07-26,1902-04-12
+dar1948_lakeview_VERIFIED.txt,552,"Infant son of W. S. & M. A. Steele b. Dec. 27, 1900",MATCH,LV0880,Infant Son Steele,1900-12-27,
+dar1948_lakeview_VERIFIED.txt,553,"dau. of Sarah C. & A. J. Yowell, June 24, 1892 - Aug. 18, 1893",MATCH,LV1018,Mary Agnes Yowell,1892-06-24,1893-08-18
+dar1948_lakeview_VERIFIED.txt,554,"Irving F. Thomas  Jan. 16, 1902 - Apr. 29, 1942",MATCH,LV0907,Irving F. Thomas,1902-01-16,1942-04-29
+dar1948_lakeview_VERIFIED.txt,555,"Mary E. Warner  July 11, 1858 - June 19, 1930",MATCH,LV0935,Mary E. Warner,1858-07-11,1930-06-19
+dar1948_lakeview_VERIFIED.txt,556,"Edgar H., son of E. W. & M. E. Warner, Oct. 25, 1882 - Feb. 27, 1885",MATCH,LV0936,Edgar H. Warner,1882-10-25,1885-02-27
+dar1948_lakeview_VERIFIED.txt,557,"Elmyr W., son of E. W. & M. E. Warner, July 9, 1894 - July 31, 1901",MATCH,LV0937,Elmyr W. Warner,1894-07-09,1901-07-31
+dar1948_lakeview_VERIFIED.txt,558,"Edgar W. Warner  Jan. 19, 1858 - Feb. 1, 1934",MATCH,LV0938,Edgar W. Warner,1858-01-19,1934-02-01
+dar1948_lakeview_VERIFIED.txt,559,"Emma Irene Hunt  Apr. 6, 1885 - Sept. 18, 1905",MATCH,LV0541,Emma Irene Hunt,1885-04-06,1905-09-18
+dar1948_lakeview_VERIFIED.txt,560,"Hattie Purcell Hunt  Apr. 22, 1891 - Sept. 2, 1905",MATCH,LV0542,Hattie Purcell Hunt,1891-04-22,1905-09-02
+dar1948_lakeview_VERIFIED.txt,561,"Troy B., son of W. H. & E. Hunt d. Jan. 7, 1895 at 1 yr. 6 mo. 4 ds.",MATCH,LV0543,Troy B Hunt,1895-01-07,
+dar1948_lakeview_VERIFIED.txt,562,"Roger, son of Wm. & Mary Hunt, d. May 6, 1899  at 2 yrs. 3 mos. 19 ds.",MATCH,LV0544,Roger Hunt,1899-05-06,
+dar1948_lakeview_VERIFIED.txt,563,Genevieve T.Wheeler  1851 - 1929,MATCH,LV0966,Genevieve T. Wheeler,1851,1929
+dar1948_lakeview_VERIFIED.txt,564,"Robert W. Thomas  Oct. 14, 1825 - Apr. 29, 1905",MATCH,LV0906,PVT Robert W. Thomas,1825-10-14,1905-04-29
+dar1948_lakeview_VERIFIED.txt,565,"Lucy B. Laycock  Apr. 1, 1865 - Sept. 2, 1936",MATCH,LV0585,Lucy Bell Thomas Laycock,1865-04-01,1936-09-02
+dar1948_lakeview_VERIFIED.txt,566,"Wm. H. Laycock  Mar. 18, 1857 - Mar. 13, 1945",MATCH,LV0586,William Henry Laycock,1857-03-18,1945-03-13
+dar1948_lakeview_VERIFIED.txt,567,"Myrtle Alice Fulton  Feb. 23, 1887 - Feb. 9, 1915",MATCH,LV0451,Myrtle Alice Fulton,1887-02-23,1915-02-09
+dar1948_lakeview_VERIFIED.txt,568,"J. Lindsay Fulton  June 30, 1878 - Feb. 26, 1905",MATCH,LV0452,J. Lindsay Fulton,1878-06-30,1905-02-26
+dar1948_lakeview_VERIFIED.txt,569,"Hattie Lee Fulton  Oct. 4, 1874 - Aug. 31, 1910",MATCH,LV0453,Hattie Lee Fulton,1874-10-04,1910-08-31
+dar1948_lakeview_VERIFIED.txt,570,"Charlotte Ellen Fulton  Feb. 21, 1845 - Jan. 14, 1914",MATCH,LV0454,Charlotte Ellen Hope Fulton,1845-02-21,1914-01-14
+dar1948_lakeview_VERIFIED.txt,571,"Chas. Edgar Fulton  June 24, 1844 - July 31, 1915",MATCH,LV0455,Charles Edgar Fulton,1844-06-24,1915-07-31
+dar1948_lakeview_VERIFIED.txt,572,"Harry G. Laycock  Nov. 29, 1887 - Dec. 28, 1941",MATCH,LV0587,Harry Garland Laycock,1887-11-29,1941-12-28
+dar1948_lakeview_VERIFIED.txt,573,"Alice Marie Pierpoint  Oct. 10, 1905 - June 18, 1906",MATCH,LV0771,Alice Marie Pierpoint,1905-10-10,1906-06-18
+dar1948_lakeview_VERIFIED.txt,574,"Wilber E. Wortman  Mar. 4, 1861 - Feb. 16, 1915",MATCH,LV0990,Wilbur Lee Wortman,1861-03-04,1915-02-16
+dar1948_lakeview_VERIFIED.txt,575,Josephine Wortman  1885 - 1937,MATCH,LV0991,Josephine Colbert Wortman,1885,1937
+dar1948_lakeview_VERIFIED.txt,576,"Louis Young, dau. Rev. C. T. & Minnie K. Taylor,  June 25, 1907 - Feb. 23, 1928",MATCH,LV0904,Lois Young Taylor,1907-06-25,1928-02-23
+dar1948_lakeview_VERIFIED.txt,577,"Rev. Chas. Thomas Taylor  Oct. 21, 1867 - May 18, 1934",MATCH,LV0905,Rev Charles Thomas Taylor,1867-10-21,1934-05-18
+dar1948_lakeview_VERIFIED.txt,578,"Arthur Nichols d. June 17, 1922 at 58 yrs.",MATCH,LV0728,Arthur Nichols,1864,1922-06-17
+dar1948_lakeview_VERIFIED.txt,579,"Nannie Lee, wife of Arthur Nichols, b. Apr. 14, 1878 -",MATCH,LV0727,Nannie Lee Nichols,1878-04-14,1957-11-25
+dar1948_lakeview_VERIFIED.txt,580,"Louise R. Hawes  Sept. 19, 1940 at 77 yrs.",MATCH,LV0502,Louise Rebecca Hawes,1863,1940-09-19
+dar1948_lakeview_VERIFIED.txt,581,"Infant Albert  Nov. 12, 1942",MATCH,LV0011,Infant Albert,,1942-11-12
+dar1948_lakeview_VERIFIED.txt,582,"Raymond A. Gill  Mar. 5, 1915 - Oct. 22, 1915",MATCH,LV0459,Raymond Alford Gill,1915-03-05,1915-10-22
+dar1948_lakeview_VERIFIED.txt,583,Ethel H. Mansfield  1879 - 19,MATCH,LV0639,Ethel Cornelia Higgins Mansfield,1879,1958-06-10
+dar1948_lakeview_VERIFIED.txt,584,James E. Mansfield  1865 - 1946,MATCH,LV0640,James E. Mansfield,1865,1946
+dar1948_lakeview_VERIFIED.txt,585,"Wm. R. Gray d. Mar. 2, 1941 at 61 yrs.",MATCH,LV0473,William R. Gray,1880,1941-03-02
+dar1948_lakeview_VERIFIED.txt,586,"Lara A. Bailey d. Apr. 11, 1944 at 68 yrs.",MATCH,LV0040,Lara A. Bailey,1876,1944-04-11
+dar1948_lakeview_VERIFIED.txt,587,"George T. Colbert b. July 14, 1893 d. Feb. 25, 1927",MATCH,LV0238,George Thomas Colbert,1893-07-14,1927-02-25
+dar1948_lakeview_VERIFIED.txt,588,"Chas. F., son of Geo. T. & J. M. Colbert, b. Aug. 2, 1920 d. Aug. 29, 1920",MATCH,LV0239,Charles Franklin Colbert,1920-08-02,1920-08-09
+dar1948_lakeview_VERIFIED.txt,589,"Charles T. Arnett b. Oct. 14, 1859 d. July 4, 1933",MATCH,LV0031,Charles Edgar Arnett,1859-10-14,1933-07-04
+dar1948_lakeview_VERIFIED.txt,590,"Joseph Sisk d. Nov. 23, 1929 at 1 yr. 1 mo. 7 ds.",MATCH,LV1846,Joseph Sisk,,1929-11-23
+dar1948_lakeview_VERIFIED.txt,591,"Clayton M. Vaugham d. Apr. 11, 1945 at 70 yrs.",MATCH,LV0930,Clayton M Vaughan,1875,1945-04-11
+dar1948_lakeview_VERIFIED.txt,592,"Bennett Jackson b. May 26, 1874 d. July 19, 1926",MATCH,LV0552,Bennett Jackson,1874-05-26,1926-07-19
+dar1948_lakeview_VERIFIED.txt,593,"Cleveland Belt d. Feb. 11, 1948",MATCH,LV0117,Cleveland Belt,,1948-02-11
+dar1948_lakeview_VERIFIED.txt,594,"George Coffman d. July 7, 1941 at 88 yrs.",MATCH,LV0237,George Washington Coffman Jr.,1853-01-18,1941-07-07
+dar1948_lakeview_VERIFIED.txt,595,"Catherine M. Payne b. Mar. 1, 1944 d. Oct. 26, 1944",MATCH,LV0752,Catherine M. Payne,1944-03-01,1944-10-26
+dar1948_lakeview_VERIFIED.txt,596,"James A. Ainsworth, Jr., b. Jan. 18, 1932 d. July 11, 1943",MATCH,LV0010,James A. Ainsworth Jr.,1932-01-18,1943-07-11
+dar1948_lakeview_VERIFIED.txt,597,"Franklin Grimes d. Nov. 19, 1946 at 17 yrs.",MATCH,LV0476,Franklin Bernard Grimes,1929,1946-11-19
+dar1948_lakeview_VERIFIED.txt,598,"Frank A. Grimes b. Oct. 19, 1904 d. July 31, 1944",MATCH,LV0477,Franklin Ashby Grimes,1904-10-19,1944-07-31
+dar1948_lakeview_VERIFIED.txt,599,"Rebecca A. Grimes d. May 25, 1936 at 72 yrs.",MATCH,LV0478,Rebecca Jane Davis Grimes,1864,1936-05-25
+dar1948_lakeview_VERIFIED.txt,600,Elizabeth E. Grimes d. 1933 at 2 yrs.,MATCH,LV0479,Elizabeth E. Grimes,1931,1933
+dar1948_lakeview_VERIFIED.txt,601,"Ashby F. Grimes d. Dec. 5, 1933 at 69 yrs.",MATCH,LV0480,Ashby Franklin Grimes,1864,1933-12-05
+dar1948_lakeview_VERIFIED.txt,602,"Joseph E. Berles d. Mar. 20, 1935 at 28 yrs.",MATCH,LV0130,Joseph E Berles,1907,1935-03-20
+dar1948_lakeview_VERIFIED.txt,603,Lucy Ann Wortman  1923 - 1926,MATCH,LV0992,Lucy Anne Wortman,1923,1926
+dar1948_lakeview_VERIFIED.txt,604,John Curtis Wortman  1881 - 1941,MATCH,LV0993,John Curtis Wortman,1881,1941
+dar1948_lakeview_VERIFIED.txt,605,Lillie Mae Wortman  1881 - 1926,MATCH,LV0994,Lillie Mae Cornell Wortman,1881,1926
+dar1948_lakeview_VERIFIED.txt,606,Wm. Henry Wortman  1914 -,MATCH,LV0995,William Henry Wortman,1914,1914
+dar1948_lakeview_VERIFIED.txt,607,"Louise Locker, wife of Jonathon Evans, b. Mar. 3, 1827 d. May 10, 1912",MATCH,LV0383,Louise Locker Evans,1827-03-03,1912-05-10
+dar1948_lakeview_VERIFIED.txt,608,Wm. D. Hoskinson  1850 - 1932,MATCH,LV0532,William D. Hoskinson,1850,1932
+dar1948_lakeview_VERIFIED.txt,609,"Sophia G., wife of Wm. D. Hoskinson  1854 - 19",MATCH,LV0533,Sophia C. Evans Hoskinson,1854,1942
+dar1948_lakeview_VERIFIED.txt,610,"Ewell A. Payne b. Feb. 28, 1862 d. Mar. 25, 1920",MATCH,LV0747,Ewell Armistead Payne,1862-02-28,1920-03-25
+dar1948_lakeview_VERIFIED.txt,611,"Mary F., wife of Wm. H. Ballenger, b. Mar. 21, 1869 d. Apr. 18, 1923",MATCH,LV0066,Mary F. Coffman Ballenger,1869-03-21,1923-04-18
+dar1948_lakeview_VERIFIED.txt,612,"Elizabeth, dau. of E. A. & Susie Payne, b. July 20, 1901 d. Oct. 31,1918",MATCH,LV0748,Elizabeth Payne,1901-07-20,1918-10-31
+dar1948_lakeview_VERIFIED.txt,613,"Ruth, dau. of E. A. & Susie Payne, b. Aug. 29, 1894 d. Oct. 28, 1918",MATCH,LV0749,Ruth Payne,1894-08-29,1918-10-28
+dar1948_lakeview_VERIFIED.txt,614,"Susie E. Payne, b. Sept. 27, 1865 d. Mar. 4, 1942",MATCH,LV0750,Susie Elizabeth Payne Payne,1865-09-27,1942-03-04
+dar1948_lakeview_VERIFIED.txt,615,"Rodney, son of E.A. & Susie Payne, b. July 11, 1905 d. May 10, 1912",MATCH,LV0751,Rodney Payne,1905-07-11,1912-05-10
+dar1948_lakeview_VERIFIED.txt,616,Mary L. Pleasant Virginia Orrison,UNDATED,LV0738,Mary L Orrison,,
+dar1948_lakeview_VERIFIED.txt,617,Oscar T. Orrison  1859 - 1919,MATCH,LV0739,Oscar Taylor Orrison,1859,1919
+dar1948_lakeview_VERIFIED.txt,618,Ada Orrison  1861 - 1913,MATCH,LV0740,Ada Orrison,1861,1913
+dar1948_lakeview_VERIFIED.txt,619,"W. L. Evans, d. June 25, 1925 at 64 yrs. 11 mo.",MATCH,LV0384,W. L. Evans,1861,1925-06-25
+dar1948_lakeview_VERIFIED.txt,620,George Howard Hampton  1851 - 1939,MATCH,LV0497,George Howard Hampton,1851,1939
+dar1948_lakeview_VERIFIED.txt,621,"Mary E., dau. of G.H. & Ella Hampton, b. Aug. 11, 1883 d. Apr. 11,1891",MATCH,LV0498,Mary E. Hampton,1883-08-11,1891-04-11
+dar1948_lakeview_VERIFIED.txt,622,"Maggie J. Graham, b. May 25, 1871 d. July 27, 1943",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,623,"William R. Graham, b. May 3, 1856 d. Jan. 28, 1916",MATCH,LV0471,William Robert Graham,1856-05-03,1916-01-28
+dar1948_lakeview_VERIFIED.txt,624,"Infants b. to Wm. R. & Maggie Graham, b. June 5, 1905 d. June 6, 1905",MATCH,LV0472,Infant Graham,1904-06-05,1905-06-06
+dar1948_lakeview_VERIFIED.txt,625,"Joseph E. Schaffer, d. Aug. 27, 1924 at 51 yrs.",MATCH,LV0829,Joseph Elton Schaffer,1873,1924-08-27
+dar1948_lakeview_VERIFIED.txt,626,"Amanda J., wife of John Schaffer, d. June 9, 1916 at 68 yrs.",MATCH,LV0830,Amanda Judson Preston Schaffer,1848,1916-06-09
+dar1948_lakeview_VERIFIED.txt,627,Clarence C. Herrell  1856 - 1939,MATCH,LV0508,Clarence Clayton Herrell,1856,1939
+dar1948_lakeview_VERIFIED.txt,628,Annie L. Herrell  1863 - 1945,MATCH,LV0509,Annie L. Brady Herrell,1863,1945
+dar1948_lakeview_VERIFIED.txt,629,"Thaddeus Sidney Herrell b. Aug. 19, 1898 d. Nov. 11, 1899",MATCH,LV0510,Thaddeus Sidney Herrell,1898-08-19,1899-11-11
+dar1948_lakeview_VERIFIED.txt,630,"Martin Ainsworth b. May 7, 1872 d. Feb. 26, 1933",MATCH,LV0003,Martin Ainsworth,1872-05-07,1933-02-26
+dar1948_lakeview_VERIFIED.txt,631,"Julia A. Ainsworth b. May 29, 1871  d.",MATCH,LV0004,Julia Ann Carlisle Ainsworth,1871-05-29,1956-05-30
+dar1948_lakeview_VERIFIED.txt,632,Ernest F. Fletcher  1868 - 1940,MATCH,LV0432,Ernest F. Fletcher,1868,1940
+dar1948_lakeview_VERIFIED.txt,633,"Samuel M., inf. son of L. & N.B. Sexton, b. Nov. 22, 1903 d. June 29, 1904",MATCH,LV0850,Samuel M. Sexton,1903-11-22,1904-06-29
+dar1948_lakeview_VERIFIED.txt,634,Wm. L. Schooley   no dates,UNDATED,LV1782,Lizzie Lee Tiffany Schooley,1876-02-08,1945-09-17
+dar1948_lakeview_VERIFIED.txt,635,"Lucy M. Schooley, b. June 20, 1879 d. Nov. 26, 1933",MATCH,LV0847,Lucy Mae Curl Schooley,1879-06-20,1933-11-26
+dar1948_lakeview_VERIFIED.txt,636,"Emma A. Schooley, wife of Emerson P. Tinney,  1855 - 1925",MATCH,LV0919,Emma A Schooley Tinney,1855,1925
+dar1948_lakeview_VERIFIED.txt,637,"Cora Mildred Schooley d. Dec. 14, 1894 at 1 yr. 23 ds.",MATCH,LV0845,Cora Mildred Schooley,1893,1894-12-14
+dar1948_lakeview_VERIFIED.txt,638,"Amanda C., wife of P. Saunders, b. Mar. 23, 1815 d. Oct. 10, 1903",MATCH,LV0816,Amanda C. Beales Saunders,1815-03-23,1903-10-10
+dar1948_lakeview_VERIFIED.txt,639,"Annie C. Saunders, b. Aug. 18, 1851 d. Dec. 28, 1901",MATCH,LV0817,Annie C. Saunders,1851-08-18,1901-12-28
+dar1948_lakeview_VERIFIED.txt,640,"Hector A. Saunders, b. July 6, 1834 d. Feb. 16, 1900",CONFLICT,LV0828,Hector A. Saunders,1834,1909
+dar1948_lakeview_VERIFIED.txt,641,"Mortimer T., son of P. & A. C. Saunders, b. Feb. 26, 1859 d. Feb. 26, 1905",MATCH,LV0819,Mortimer T. Saunders,1859-02-26,1905-02-26
+dar1948_lakeview_VERIFIED.txt,642,"Margaret A., dau. of P. & A. C. Saunders, Aug. 14, 1848 - May 4, 1905 d.",MATCH,LV0820,Margaret A. Saunders,1848-08-14,1905-05-04
+dar1948_lakeview_VERIFIED.txt,643,"Clarence G. Frye/July 29, 1941 -  illegible dates. 1 Yr. 4 mo. -- ds.",MATCH,LV0447,Clarence C. Frye,1940,1941-07-29
+dar1948_lakeview_VERIFIED.txt,644,"John E. Warner  Dec. 11, 1871 - Mar. 22, 1937",MATCH,LV0950,John E. Warner,1871-12-11,1937-03-22
+dar1948_lakeview_VERIFIED.txt,645,"Wm. Thomas Tavenner  May 23, 1869 - Feb. 28, 1939",CONFLICT,LV0893,William Thomas Tavenner,1871-12-11,1939-02-28
+dar1948_lakeview_VERIFIED.txt,646,"Hannah Anne Tavenner  Mar. 9, 1871 -   dec'd",MATCH,LV0894,Hannah Anne Tavenner,1871-03-09,1946-03-09
+dar1948_lakeview_VERIFIED.txt,647,"James E. Tavenner  Oct. 11, 1867 - Aug. 16, 1931",MATCH,LV0895,James Edgar Tavenner,1867-10-11,1931-08-16
+dar1948_lakeview_VERIFIED.txt,648,"Rose May Tavenner  Mar. 30, 1870 - Apr. 14, 1913",MATCH,LV0896,Rose May Thomas Tavenner,1870-03-30,1913-04-14
+dar1948_lakeview_VERIFIED.txt,649,"Rebecca J. Tavenner  July 15, 1830 - Mar. 12, 1899",MATCH,LV0897,Rebecca Jane White Tavenner,1830-07-15,1899-03-12
+dar1948_lakeview_VERIFIED.txt,650,"Nimrod Tavenner  Feb. 6, 1812 - Apr. 2, 1890",MATCH,LV0898,Nimrod Tavenner,1812-02-06,1890-04-02
+dar1948_lakeview_VERIFIED.txt,651,"Orion Baldwin  Feb. 3, 1863 - Jan. 4, 1946",MATCH,LV0046,Orion Baldwin,1863-02-03,1946-01-04
+dar1948_lakeview_VERIFIED.txt,652,"Ora, wife of Orion Baldwin, Apr. 13, 1864 - Jan. 16, 1915",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,653,"Mary Ann Brown  Jan. 1, 1834 - Feb. 8, 1918",MATCH,LV0173,Mary Ann Brown,1834-01-01,1918-02-08
+dar1948_lakeview_VERIFIED.txt,654,Rosa L. Lickey  1872 - 1941,MATCH,LV0614,Rosa Lee Florance Lickey,1872,1941
+dar1948_lakeview_VERIFIED.txt,655,"Willis B. Leonard  Nov. 20, 1859 - May 25, 1942",CONFLICT,LV0611,Willis Bramble Leonard,1849-11-20,1942-05-25
+dar1948_lakeview_VERIFIED.txt,656,"Ruth C. Leonard  Nov. 24, 1864 -",MATCH,LV0612,Ruth Ann Curtiss Leonard,1864-11-24,1957-11-18
+dar1948_lakeview_VERIFIED.txt,657,Thomas H. Putnam  1863 -,MATCH,LV0796,Thomas H Putnam,1863,
+dar1948_lakeview_VERIFIED.txt,658,"Susie L., wife of Thomas H. Putnam  1873 - 1942",MATCH,LV0797,Susie L Putnam,1873,1942
+dar1948_lakeview_VERIFIED.txt,659,"Samuel A. Laycock  Feb. 5, 1851 - July 14, 1913",MATCH,LV0601,Samuel Adin Laycock,1851-02-05,1913-07-14
+dar1948_lakeview_VERIFIED.txt,660,"Sarah E. Laycock  Aug. 16, 1855 - Sept. 1, 1931",MATCH,LV0602,Sarah Ellen Laycock,1855-08-16,1931-09-01
+dar1948_lakeview_VERIFIED.txt,661,"Eliza J., wife of Levi H. Wynkoop, Mar. 17, 1850 - Feb. 13, 1899",MATCH,LV1014,Eliza Jane Carlisle Wynkoop,1850-03-17,1899-02-13
+dar1948_lakeview_VERIFIED.txt,662,"Levi H. Wynkoop  July 23, 1835 - June 18, 1911",CONFLICT,LV1015,Levi H. Wynkoop,1834-07-23,1911-06-18
+dar1948_lakeview_VERIFIED.txt,663,"Rebecca, dau. of W. E. & Grace Orrison, Oct. 12, 1917 - Feb. 9, 1918",MATCH,LV0741,Rebecca Orrison,1917-10-12,1918-02-09
+dar1948_lakeview_VERIFIED.txt,664,"Charles W. Preston d. Sept. 24, 1915",MATCH,LV0792,Charles William Preston,1821-10-18,1915-09-24
+dar1948_lakeview_VERIFIED.txt,665,Alice P. Milbourn  1866 - 1947,MATCH,LV0663,Alice P. Milbourn,1866,1947
+dar1948_lakeview_VERIFIED.txt,666,Fred A. Hindman  1904 - 1942,MATCH,LV0520,Fred A. Hindman,1904,1942
+dar1948_lakeview_VERIFIED.txt,667,E. V. Hindman  1912 - 1935,MATCH,LV0521,Evelyn Virginia Hindman,1912,1935
+dar1948_lakeview_VERIFIED.txt,668,"Hannah F. Hindman  Aug. 1, 1940 at 76 yrs.",MATCH,LV0522,Hannah F Hindman,1940-08-01,
+dar1948_lakeview_VERIFIED.txt,669,M. S. Hindman  1886 - 1932,MATCH,LV0523,Matthew Singleton Hindman,1886,1932
+dar1948_lakeview_VERIFIED.txt,670,K. A  Hindman    1926,MATCH,LV0524,Kenneth Augustus Hindman,1926-06-18,1926
+dar1948_lakeview_VERIFIED.txt,671,H. R. Hindman  1907 - 1917,MATCH,LV0525,Harry Royce Hindman,1907,1917
+dar1948_lakeview_VERIFIED.txt,672,"Mary A. Donaldson  d. Dec. 13, 1947 at 81 yrs",MATCH,LV0327,Alice Mary Donaldson,1866,1947
+dar1948_lakeview_VERIFIED.txt,673,"Minnie E., dau. of C. W. & S. E. White, b. Nov. 3, 1881 d. Dec. 23,1905",CONFLICT,LV0971,Minnie E. White,1861-11-03,1905-12-23
+dar1948_lakeview_VERIFIED.txt,674,"Hannah L., wife of Amos A. Beales, d. Sept. 26, 1901 at 34 yrs. 3 mo. 27 ds.",MATCH,LV0082,Hannah L. Beales,1901-09-26,
+dar1948_lakeview_VERIFIED.txt,675,"Sarah E., wife of Chas. W. White, b. June 8, 1845 d. Mar. 7, 1905",CONFLICT,LV0969,Sarah Elizabeth Beales White,1845-06-08,1907-03-07
+dar1948_lakeview_VERIFIED.txt,676,"Charles W. White b. July 20, 1834 d. Aug. 3, 1895",MATCH,LV0970,Charles W. White,1834-07-20,1895-08-03
+dar1948_lakeview_VERIFIED.txt,677,"Sarah J. Saunders  Oct. 11, 1859",MATCH,LV1771,Sarah Jane Saunders,1859-10-11,1943-03-24
+dar1948_lakeview_VERIFIED.txt,678,"Annie May, dau. of C. N. & A. B. Saunders, d. July 18, 1891",MATCH,LV0822,Annie May Saunders,1891,1891-07-18
+dar1948_lakeview_VERIFIED.txt,679,"Sarah E., wife of James A. Saunders, d. Jan. 1, 1898 at 74 yrs. 7 mo.9 ds.",MATCH,LV0823,Sarah E. Saunders,1898-01-01,
+dar1948_lakeview_VERIFIED.txt,680,"Annie B., wife of C. N. Saunders, d. Aug. 2, 1902 at 48 yrs. 10 mo. 15 ds.",MATCH,LV0824,Annie Bruce Myers Saunders,1854,1902-08-02
+dar1948_lakeview_VERIFIED.txt,681,"Christian N. Saunders b. Jan. 11, 1857 d. Feb. 12, 1917",MATCH,LV0825,Christian N. Saunders,1857-01-11,1917-02-12
+dar1948_lakeview_VERIFIED.txt,682,Anna B. Tavenner  1844 - 1913,MATCH,LV0891,Anna Baker Tavenner,1844,1913
+dar1948_lakeview_VERIFIED.txt,683,Edgar R. Tavenner  1843 - 1919,MATCH,LV0892,Edgar Hiram Tavenner,1843,1919
+dar1948_lakeview_VERIFIED.txt,684,"Charles E., son of S. C. & M. H. James, b. Sept. 4, 1914 d. Sept. 7,1914",MATCH,LV0554,Charles E. James,1914-09-04,1914-09-07
+dar1948_lakeview_VERIFIED.txt,685,Stanley C. James  1888 - 1935,MATCH,LV0555,Stanley C. James,1888,1935
+dar1948_lakeview_VERIFIED.txt,686,Roger K. Simpson  1941 - 1942,MATCH,LV0869,Roger Kilgore Simpson,1941,1942
+dar1948_lakeview_VERIFIED.txt,687,Robey M. Shepherd  1888 - 1944,MATCH,LV0852,Robey M. Shepherd,1888,1944
+dar1948_lakeview_VERIFIED.txt,688,Helen Moatz McDaniel  1896 - 1944,MATCH,LV0643,Helen Moatz McDaniel,1896,1944
+dar1948_lakeview_VERIFIED.txt,689,C. Frank McDaniel  1893 -,MATCH,LV0644,Carl Frank McDaniel Cenotaph,1893,1981-07-15
+dar1948_lakeview_VERIFIED.txt,690,"Clare Beth Miller, wife of Howard S. James, dau. of N. Guy and Elizabeth B. Miller,  1910 - 1945",MATCH,LV0667,Clare Beth Miller,1910,1945
+dar1948_lakeview_VERIFIED.txt,691,Isabelle A. Alder  1850 - 1929,CONFLICT,LV0014,Isabelle A Alder,1850,1926
+dar1948_lakeview_VERIFIED.txt,692,Rosa E. Alder  1854 - 1927,MATCH,LV0015,Rosa Ella Alder,1854,1927
+dar1948_lakeview_VERIFIED.txt,693,"Albert, son of J. & M. J. Alder, b. Aug. 26, 1865 d. May 4, 1904",MATCH,LV0016,Albert Alder,1865-08-26,1904-05-04
+dar1948_lakeview_VERIFIED.txt,694,"Mary Jane, wife of James Allder, b. Dec. 4, 1829 d. Jan. 6, 1913",MATCH,LV0018,Mary Jane Camp Allder,1829-12-04,1913-01-06
+dar1948_lakeview_VERIFIED.txt,695,"James Allder b. Apr. 3, 1820 - d. Aug. 3, 1899",MATCH,LV0019,James Allder,1820-04-03,1899-08-03
+dar1948_lakeview_VERIFIED.txt,696,Emma J. Jacobs  1861 - 1932,MATCH,LV0553,Emma Jane Alder Jacobs,1861,1932
+dar1948_lakeview_VERIFIED.txt,697,"Emma C., dau. of T. R. & E. M. Preston, b. July 29, 1905 d. Jan. 28,1913",MATCH,LV0795,Emma Gertrude Preston,1905-07-29,1913-01-28
+dar1948_lakeview_VERIFIED.txt,698,"Frank A. Weadon b. Aug. 12, 1914 d. Feb. 22, 1915",MATCH,LV0953,Frank A. Weadon,1914-08-12,1915-02-22
+dar1948_lakeview_VERIFIED.txt,699,"Mary E. Weadon  Apr. 16, 1875 - Sept. 11, 1914",MATCH,LV0954,Mary Elizabeth Tribby Weadon,1875-04-16,1914-09-11
+dar1948_lakeview_VERIFIED.txt,700,"Chas. D. Weadon, Jr.,  Sept. 9, 1877 - June 4, 1901",UNMATCHED,,,,
+dar1948_lakeview_VERIFIED.txt,701,"Ernest B. Works  June 25, 1874 - June 18, 1916",MATCH,LV0989,Ernest B. Works,1874-06-25,1916-06-18
+dar1948_lakeview_VERIFIED.txt,702,"James M. Wynkoop  Jan. 18, 1844 - Mar. 25, 1911",MATCH,LV1012,James M. Wynkoop,1844-01-18,1911-03-25
+dar1948_lakeview_VERIFIED.txt,703,"Jennie A. Wynkoop  Sept. 27, 1855 - Nov. 20, 1939",MATCH,LV1013,Virginia Ann Miller Wynkoop,1855-09-27,1939-11-20
+dar1948_lakeview_VERIFIED.txt,704,"George E. Thomas  July 18, 1868 - Nov. 5, 1944",MATCH,LV0908,George Edwin Thomas,1868-07-18,1944-11-05
+dar1948_lakeview_VERIFIED.txt,705,"R. W. Braden  Sept. 12, 1858 - June 23, 1925",MATCH,LV0152,Rodney Walter Braden,1858-09-12,1925-06-23
+dar1948_lakeview_VERIFIED.txt,706,"Cecilia D.,Wife of R. W. Braden  Nov. 29, 1857 - Apr. 25, 1924",MATCH,LV0153,Cecilia Decatur Heaton Braden,1857-11-29,1924-04-02
+dar1948_lakeview_VERIFIED.txt,707,"Dr. Albert V., son of R. W. & C. D. Braden, Feb. 19, 1888 - Nov. 8, 1919",MATCH,LV0154,Dr. Albert V. Braden,1888-02-19,1919-11-08
+dar1948_lakeview_VERIFIED.txt,708,"Walter D., son of R. W. & C. D. Braden, Sept. 11, 1891 - Oct. 17, 1918",MATCH,LV0155,Walter D. Braden,1891-09-11,1918-10-17
+dar1948_lakeview_VERIFIED.txt,709,"Townsend H., son of R. W. & C. D. Braden, Apr. 26, 1884 - Nov. 11, 1886",CONFLICT,LV0156,Townsend Heaton Braden,1884-04-26,1885-11-11
+dar1948_lakeview_VERIFIED.txt,710,"Benjamin F. Lowe  Nov. 15, 1872 - Apr. 24, 1930",MATCH,LV0635,Benjamin Franklin Lowe,1872-11-15,1930-04-24
+dar1948_lakeview_VERIFIED.txt,711,"Robert L. Preston  June 2, 1899 - Feb. 6, 1938",MATCH,LV0793,Robert Lee Preston,1899-06-02,1938-02-06
+dar1948_lakeview_VERIFIED.txt,712,"Joseph T. Preston  Apr. 4, 1929 - Jan. 17, 1932",MATCH,LV0794,Joseph Francis Preston,1929-04-04,1932-01-17
+dar1948_lakeview_VERIFIED.txt,713,Grace T. Marti  1881 - 1945,MATCH,LV0641,Grace T. Marti,1881,1945
+dar1948_lakeview_VERIFIED.txt,714,John H. Marti  1878 - 1932,MATCH,LV0642,John H. Marti,1878,1932
+dar1948_lakeview_VERIFIED.txt,715,Eugene W. Lowe  1878 - 1945,MATCH,LV0634,Eugene W. Lowe,1878,1945
+dar1948_lakeview_VERIFIED.txt,716,"J. Ratcliffe Merchant  Oct. 18, 1914 - Oct. 21, 1934",MATCH,LV0661,James Ratcliffe Merchant,1914-10-18,1934-10-21
+dar1948_lakeview_VERIFIED.txt,717,"Delia R. Merchant  Jan. 12, 1879 - Aug. 5, 1936",MATCH,LV0662,Delia Jane Ratcliffe Merchant,1879-01-12,1936-08-05
+dar1948_lakeview_VERIFIED.txt,718,"Chas. Richard Tavenner  July 30, 1856 - Oct. 28, 1928",MATCH,LV0890,Charles Richard Tavenner,1856-07-30,1928-10-28
+dar1948_lakeview_VERIFIED.txt,719,James E. Smith  1863 - 1926,MATCH,LV0872,James Edgar Smith,1863,1926
+dar1948_lakeview_VERIFIED.txt,720,"A. Graham Smith, DDS  1868 - 1941",MATCH,LV0873,Dr Andrew Graham Smith,1868,1941
+dar1948_lakeview_VERIFIED.txt,721,Graham Kolb Smith  1900 - 1901,MATCH,LV0874,Graham Kolb Smith,1900,1901
+dar1948_lakeview_VERIFIED.txt,722,"Ann A. Pierce  Aug. 26, 1845 - Sept. 19, 1927",MATCH,LV0768,Ann A. Dowdell Pierce,1845-08-26,1927-09-19
+dar1948_lakeview_VERIFIED.txt,723,"Z. T. Pierce  Oct. 20, 1847 - Mar. 8, 1943",MATCH,LV0769,Zachary Taylor Pierce,1847-10-20,1943-03-08
+dar1948_lakeview_VERIFIED.txt,724,"D. Thomas Beales  May 11, 1881 -",MATCH,LV0083,D. Thomas Beales,1881-05-11,1971-04-05
+dar1948_lakeview_VERIFIED.txt,725,"Golda M. Beales  Oct. 22, 1885 - Nov. 11, 1937",MATCH,LV0084,Golda M. Beales,1885-10-22,1937-11-11
+dar1948_lakeview_VERIFIED.txt,726,"Bertha E. Weaning  Aug. 30, 1938  at 54 yrs. 9 mos. 23 ds.",MATCH,LV0964,Bertha E Weaning,1938-08-30,
+dar1948_lakeview_VERIFIED.txt,727,"David H. Beales  June 28, 1848 - July 10, 1926",MATCH,LV0085,David Henry Beales,1848-06-28,1926-07-10
+dar1948_lakeview_VERIFIED.txt,728,"Anna R., wife of David H. Beales, b. Apr. 28, 1853 d. Apr. 10, 1928",MATCH,LV0086,Anna Rebecca Thompson Beales,1853-04-28,1928-04-10
+dar1948_lakeview_VERIFIED.txt,729,"Massie Fulton, wife of Arthur J. Pierpoint, b. Dec. 12, 1883 d. Sept. 21, 1921",MATCH,LV0770,Massie Ellen Fulton Pierpoint,1883-12-12,1921-09-21
+dar1948_lakeview_VERIFIED.txt,730,Robert D. Fulton  1848 - 1933,MATCH,LV0450,Robert D. Fulton,1848,1933
+dar1948_lakeview_VERIFIED.txt,731,"George W. James, b. Jan. 8, 1852 d.",MATCH,LV0556,George William James,1852-01-08,1954-10-26
+dar1948_lakeview_VERIFIED.txt,732,"Malinda E., wife of George W. James, b. May 23, 1851 d. May 10, 1938",MATCH,LV0557,Malinda E James,1851-05-23,1938-04-10
+dar1948_lakeview_VERIFIED.txt,733,"Fannie P. McDaniel b. Aug. 24, 1869 d. Feb. 14, 1936",MATCH,LV0645,Fannie P. McDaniel,1869-08-24,1936-02-14
+dar1948_lakeview_VERIFIED.txt,734,"Robert L. Saunders, b. Sept. 10, 1862 d. Jan. 6, 1939",MATCH,LV0826,Robert L. Saunders,1862-09-10,1939-01-06
+dar1948_lakeview_VERIFIED.txt,735,"Josephine Saunders, b. Oct. 1, 1856 d. Dec. 21, 1943",MATCH,LV0827,Josephine Warner Saunders,1856-10-01,1943-12-21
+dar1948_lakeview_VERIFIED.txt,736,"Arthur C. Warner, b. Aug. 20, 1876 d. Oct. 29, 1930",MATCH,LV0951,Arthur Clifton Warner,1876-08-20,1930-10-29
+dar1948_lakeview_VERIFIED.txt,737,John E. Fulton  1817 - 1873,MATCH,LV0448,John Edward Fulton,1817,1873
+dar1948_lakeview_VERIFIED.txt,738,Massa E. Fulton  1821 - 1918,MATCH,LV0449,Massa E. Warner Fulton,1821,1918
+dar1948_lakeview_VERIFIED.txt,739,"Cora B. Warner, b. Aug. 31, 1884 d. Aug. 14, 1941",MATCH,LV0952,Orra Belle Wynkoop Warner,1884-08-31,1941-08-14
+dar1948_lakeview_VERIFIED.txt,740,Margaret B. Guard  1857 - 1946,MATCH,LV0484,Margaret Brown Guard,1857,1946
+dar1948_lakeview_VERIFIED.txt,741,Edwin T. Guard  1868 - 1944,MATCH,LV0485,Edwin T Guard,1868,1944
+dar1948_lakeview_VERIFIED.txt,742,"Nona Carolyn, inf. dau. of H.K. & Anita Hirst, b. July 30, 1930 d. Aug. 24, 1930",MATCH,LV0526,Nona Carolyn Hirst,1930-07-30,1891-08-25
+dar1948_lakeview_VERIFIED.txt,743,"Edward B., son of E.T. & G.B. Hirst, b. Aug. 25, 1891 d. Sept. 4,1903",MATCH,LV0527,Edward B. Hirst,1891-08-25,1903-09-04
+dar1948_lakeview_VERIFIED.txt,744,"Walter N. Benedum, b. Jan. 5, 1877 d. Aug. 5, 1927",MATCH,LV0125,Walter Newton Benedum,1877-01-05,1927-08-05
+dar1948_lakeview_VERIFIED.txt,745,"Frances E., inf. dau. of H.C.C. & H.A. Brackenridge, b. May 29, 1916 d. Aug. 11, 1918",MATCH,LV0157,Frances E. Breckenridge,1916-11-29,1918-08-11
+dar1948_lakeview_VERIFIED.txt,746,"Charlotte H., wife of Marion B. Young, b. Sept. 25, 1872 d. Oct. 24, 1945",MATCH,LV1016,Charlotte Hollingsworth Young,1872-09-25,1945-10-25
+dar1948_lakeview_VERIFIED.txt,747,"Mary Atkinson, wife of Marion B. Young, b. Oct. 17, 1858, d. Jan. 27, 1923",MATCH,LV1017,Mary Lloyd Atkinson Young,1858-10-17,1923-01-27
+dar1948_lakeview_VERIFIED.txt,748,"Annie P.E., wife of Isaac P. Atkinson, b. Jan. 24, 1847 d. Sept. 19, 1911",MATCH,LV0038,Annie P. Eastburn Atkinson,1847-01-24,1911-09-19
+dar1948_lakeview_VERIFIED.txt,749,"Fenton M. Love, b. June 9, 1853 d. May 13, 1935",MATCH,LV1437,Fenton Mercer Love Jr.,1853-06-09,1935-05-13
+dar1948_lakeview_VERIFIED.txt,750,"Gertrude T., wife of F.M. Love, b. Apr. 15, 1853 d. May 24, 1934",MATCH,LV0618,Gertrude T. Woolf Love,1853-04-15,1934-05-24
+dar1948_lakeview_VERIFIED.txt,751,"James W., son of F.M. & G.T. Love, b. Nov. 1, 1859 d. May 27, 1924",CONFLICT,LV0619,James W. Love,1829-11-01,1924-05-27
+dar1948_lakeview_VERIFIED.txt,752,"T. Thomas Lunsford, b. Apr. 10, 1829 d. May 20, 1924",MATCH,LV0636,Joshua Thomas Lunsford,1829-04-10,1924-05-20
+dar1948_lakeview_VERIFIED.txt,753,"James Bernard Hackley, M.D.,  1876 - 1937",MATCH,LV0488,Dr James Bernard Hackley,1876,1937
+dar1948_lakeview_VERIFIED.txt,754,"H. Arthur Hall, d. Nov. 3, 1938 at 60 yrs.",MATCH,LV0492,Henry Arthur Hall,1878,1938-11-03

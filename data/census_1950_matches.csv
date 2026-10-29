@@ -1,0 +1,75 @@
+person_id,project_name,cemetery,birth_year,death_year,census_image,census_line,hh,census_name,census_age,race,sex,relation,occupation,industry,cls,note,match_basis
+LV1263,Blanche Anna Brown Hough,Lakeview,1872,1951,Harmony,,,Blanche B Hough,76,W,F,Mother,,,,1950 census; Harmony; birth 1874; Widowed,name+birthyear
+LV1939,Hugh A. Tiffany,Lakeview,1924,1986,Hamilton_Store,,,Hugh A Tiffany,26,W,M,Head,Repairing Autor,,,1950 census; Hamilton Store; birth 1924; Married,name+birthyear
+LV1938,Garland Swart Tiffany,Lakeview,1890,1966,Hamilton_Store,,,Garland S Tiffany,60,W,M,Head,Filling Station Operator,,,1950 census; Hamilton Store; birth 1890; Married,name+birthyear
+LV1948,Mary Virginia Hatcher Tiffany,Lakeview,1894,1962,Hamilton_Store,,,Mary V Tiffany,56,W,F,Wife,Taking Boarders,,,1950 census; Hamilton Store; birth 1894; Married,name+birthyear
+LV0370,Robert Lee Embrey,Lakeview,1883,1955,Harmony,,,Robert L Embrey,67,W,M,Head,,,,1950 census; Harmony; birth 1883; Widowed,name+birthyear
+LV1373,Albert Franklin Laycock,Lakeview,1914,1992,Hamilton_Store,,,Albert F Laycock,35,W,M,Head,Clerking in Store,,,1950 census; Hamilton Store; birth 1915; Mar,name+birthyear
+LV1387,Mary Elizabeth Thompson Laycock,Lakeview,1895,1990,Harmony,,,Mary E Laycock,54,W,F,Wife,,,,1950 census; Harmony; birth 1896; Mar,name+birthyear
+LV1391,Ruth Nunnally Laycock,Lakeview,1916,2013,Hamilton_Store,,,Ruth N Laycock,33,W,F,Wife,,,,1950 census; Hamilton Store; birth 1917; Mar,name+birthyear
+LV1376,Carroll Paul Laycock,Lakeview,1893,1983,Harmony,,,Carroll P Laycock,56,W,M,Head,Puring and Selling Stock,,,1950 census; Harmony; birth 1894; Mar,name+birthyear
+LV0366,George Richmond Ely,Lakeview,1931,1998,Harmony,,,George R Ely,18,W,M,Son,Teaching Kindergarten,,,1950 census; Harmony; birth 1932; Nev,name+birthyear
+LV0363,Mary Alvernon Thomas Ely,Lakeview,1900,1974,Harmony,,,Mary T Ely,49,W,F,Head,Keeping Cooks,,,1950 census; Harmony; birth 1901; Wd,name+birthyear
+LV0020,Dorothy Lee Rhodes Allder,Lakeview,1927,2015,Hamilton_Store,,,Dorothy R Allder,22,W,F,Wife,,,,1950 census; Hamilton Store; birth 1928; Mar,name+birthyear
+LV0023,Rodney Clark Allder,Lakeview,1927,1969,Hamilton_Store,,,Rodney C Allder,22,W,M,Head,Driver Milk Truck,,,1950 census; Hamilton Store; birth 1928; Mar,name+birthyear
+LV0076,Mabel M. Ballenger,Lakeview,1885,1968,Hamilton_Store,,,Mabel M Ballenger,64,W,F,Wife,,,,1950 census; Hamilton Store; birth 1886; Married,name+birthyear
+LV0079,Walter W. Ballenger,Lakeview,1883,1957,Hamilton_Store,,,Walter W Ballenger,67,W,M,Head,,,,1950 census; Hamilton Store; birth 1883; Married,name+birthyear
+LV1891,Clayton William Talton,Lakeview,1900,1960,Harmony,,,Clayton W Talton,49,W,M,Head,Lending Machinery,,,1950 census; Harmony; birth 1901; Married,name+birthyear
+LV1890,Clayton Talton Jr.,Lakeview,1932,2014,Harmony,,,Clayton W Jr Talton,18,W,M,Son,Caring For Bookkeeper,,,1950 census; Harmony; birth 1932; Single,name+birthyear
+LV1686,Genevieve Payne Preston,Lakeview,1899,1994,Harmony,,,Genevieve Preston,51,1,F,Other,Seamstress,,,1950 census; Harmony; birth 1899,name+birthyear
+LV1687,George Syndor Preston,Lakeview,1911,2002,Hamilton_Store,,,George S Preston,38,W,M,Son,Radio And Television Service,,,1950 census; Hamilton Store; birth 1912; Married,name+birthyear
+LV1683,Charles T. Preston,Lakeview,1939,2017,Hamilton_Store,,,Charles J Preston,10,W,M,Grandson,,,,1950 census; Hamilton Store; birth 1940; Single,name+birthyear
+LV1693,Thomas R. Preston,Lakeview,1872,1964,Hamilton_Store,,,Thomas A Preston,77,W,M,Head,Florists,,,1950 census; Hamilton Store; birth 1873; Married,name+birthyear
+LV1685,Edna May Tribby Preston,Lakeview,1873,1972,Hamilton_Store,,,Edna M Preston,76,W,F,Wife,,,,1950 census; Hamilton Store; birth 1874; Married,name+birthyear
+LV1690,Mildred Tuck Preston,Lakeview,1911,1975,Hamilton_Store,,,Mildred J Preston,38,W,F,Daughter-in-law,,,,1950 census; Hamilton Store; birth 1912; Married,name+birthyear
+LV0612,Ruth Ann Curtiss Leonard,Lakeview,1864,1957,Harmony,,,Ruth C Leonard,85,W,F,Other,,,,1950 census; Harmony; birth 1865; Wd,name+birthyear
+LV1228,Maude Aline Marcus Hindman,Lakeview,1892,1977,Harmony,,,Maude A Hindman,57,W,F,Wife,,,,1950 census; Harmony; birth 1893; Married,name+birthyear
+LV1232,Robert Cecil Hindman,Lakeview,1891,1972,Harmony,,,Robert C Hindman,58,W,M,Head,Plowing Gardener,,,1950 census; Harmony; birth 1892; Married,name+birthyear
+LV1565,Robert P. Newton,Lakeview,1900,1962,Hamilton_Store,,,Robert P Newton,49,W,M,Head,Clerks,,,1950 census; Hamilton Store; birth 1901; Married,name+birthyear
+LV1561,Dorothy Heaton Preston Newton,Lakeview,1904,1994,Hamilton_Store,,,Dorothy H Newton,45,W,F,Wife,Clerk,,,1950 census; Hamilton Store; birth 1905; Married,name+birthyear
+LV1268,Lula P. Warner Howard,Lakeview,1879,1964,Hamilton_Store,,,Lula W Howard,70,W,F,Head,,,,1950 census; Hamilton Store; birth 1880; Widowed,name+birthyear
+LV1809,Edna Mabel Warner Shoemaker,Lakeview,1876,1976,Harmony,,,Edna W Shoemaker,73,W,F,Head,,,,1950 census; Harmony; birth 1877; Widowed,name+birthyear
+LV0187,Frank I. Burke,Lakeview,1910,1986,Harmony,,,Frank I Burke,39,W,M,Head,Selling Cars,,,1950 census; Harmony; birth 1911; Mar,name+birthyear
+LV0193,Harry Wilmer Burke,Lakeview,1883,1958,Harmony,,,Harry W Burke,65,W,M,Head,,,,1950 census; Harmony; birth 1885; Married,name+birthyear
+LV1476,Margaret Virginia McFarland,Lakeview,1884,1962,Harmony,,,Margaret V McFarland,65,W,F,Head,,,,1950 census; Harmony; birth 1885; Single,name+birthyear
+LV1593,William Penn Pancoast,Lakeview,1890,1959,Hamilton_Store,,,William P Pancoast,59,W,M,Head,Carpenter,,,1950 census; Hamilton Store; birth 1891; Married,name+birthyear
+LV1592,Virginia Lee Pancoast,Lakeview,1886,1958,Hamilton_Store,,,Virginia L Pancoast,64,W,F,Wife,,,,1950 census; Hamilton Store; birth 1886; Married,name+birthyear
+LV1216,Mervyn Landstreet Herndon,Lakeview,1878,1962,Harmony,,,Mervyn L Herndon,72,W,M,Head,Bookkeeping,,,1950 census; Harmony; birth 1878; Mar,name+birthyear
+LV1215,Anna Blanche Thompson Herndon,Lakeview,1879,1954,Harmony,,,Anna B Herndon,71,W,F,Wife,,,,1950 census; Harmony; birth 1879; Mar,name+birthyear
+LV1587,Ruth B. Brown Orrison,Lakeview,1893,1958,Harmony,,,Ruth B Orrison,56,W,F,Head,,,,1950 census; Harmony; birth 1894; Wd,name+birthyear
+LV1584,George Albert Orrison III,Lakeview,1927,1992,Harmony,,,George A Orrison,22,W,M,Son,Driver Truck,,,1950 census; Harmony; birth 1928; Mar,name+birthyear
+LV1581,Edwin Raymond Orrison,Lakeview,1928,1989,Harmony,,,Edwin R Orrison,21,W,M,Son,Driver Truck,,,1950 census; Harmony; birth 1929; Nev,name+birthyear
+LV0742,Evelyn Fawley Orrison,Lakeview,1926,2012,Harmony,,,Evelyn F Orrison,23,W,F,Other,,,,1950 census; Harmony; birth 1927; Mar,name+birthyear
+LV0170,Willard H. Brown,Lakeview,1914,1976,Harmony,,,Willard H Brown,35,W,M,Head,Driver Truck,,,1950 census; Harmony; birth 1915; Mar,name+birthyear
+LV2036,G. Wesley White,Lakeview,1894,1968,Harmony,,,G Wesley White,55,W,M,Head,Mixer Feed,,,1950 census; Harmony; birth 1895; Married,name+birthyear
+LV2035,David Aden White,Lakeview,1869,1953,Harmony,,,David A White,82,W,M,Boarder,,,,1950 census; Harmony; birth 1868; Single,name+birthyear
+LV2040,Helen H. White,Lakeview,1910,2006,Harmony,,,Helen E White,39,W,F,Wife,,,,1950 census; Harmony; birth 1911; Married,name+birthyear
+LV2037,Gladys Virginia Burke White,Lakeview,1905,1983,Hamilton_Store,,,Gladys V White,46,W,F,Wife,,,,1950 census; Hamilton Store; birth 1904; Mar,name+birthyear
+LV1781,Eva M. Schooley,Lakeview,1875,1965,Hamilton_Store,,,Eva M Schooley,75,W,F,Head,,,,1950 census; Hamilton Store; birth 1875; Widowed,name+birthyear
+LV0225,James E. Clagett,Lakeview,1912,1967,Harmony,,,James E Clagett,38,W,M,Son,General Plumbing,,,1950 census; Harmony; birth 1912; Nev,name+birthyear
+LV1886,Eugene Erastas Sykes,Lakeview,1876,1963,Harmony,,,Eugene E Sykes,73,W,M,Head,,,,1950 census; Harmony; birth 1877; Divorced,name+birthyear
+LV2044,Robert L. White,Lakeview,1923,1973,Hamilton_Store,,,Robert L White,26,W,M,Son,Burs Printing Machine,,,1950 census; Hamilton Store; birth 1924; Nev,name+birthyear
+LV1906,Nellie Tavenner,Lakeview,1877,1952,Harmony,,,Nellie G Tavenner,73,W,F,Head,Taking Boarders,,,1950 census; Harmony; birth 1877; Widowed,name+birthyear
+LV0419,Mary McCarty Fink,Lakeview,1909,1958,Hamilton_Store,,,Mary K Fink,40,1,F,Other,Housework,,,1950 census; Hamilton Store; birth 1910,name+birthyear
+LV1196,Michael Alton Hall,Lakeview,1949,1955,Hamilton_Store,,,Michael A Hall,,W,M,Son,,,,1950 census; Hamilton Store; birth August 1949; Single,name-only
+LV1189,Addie Blanche Thomas Hall,Lakeview,1913,1966,Hamilton_Store,,,Addie B Hall,36,W,F,Wife,Writing For Paper,,,1950 census; Hamilton Store; birth 1914; Married,name+birthyear
+LV1741,Catherine Virginia Hurst Rhodes,Lakeview,1875,1959,Hamilton_Store,,,Catherine V Rhodes,75,W,F,Wife,,,,1950 census; Hamilton Store; birth 1875; Married,name+birthyear
+LV1751,Samuel M. Rhodes,Lakeview,1872,1960,Hamilton_Store,,,Samuel M Rhodes,78,W,M,Head,,,,1950 census; Hamilton Store; birth 1872; Married,name+birthyear
+LV1747,Lacey C. Rhodes,Lakeview,1895,1973,Hamilton_Store,,,Lacey D Rhodes,54,W,M,Boarder,Buildous House Parts,,,1950 census; Hamilton Store; birth 1896; Married,name+birthyear
+LV1740,Carrie Virginia Darr Rhodes,Lakeview,1902,1996,Hamilton_Store,,,Carrie Rhodes,47,W,F,Boarder,,,,1950 census; Hamilton Store; birth 1903; Married,name+birthyear
+LV1448,Rebecca May Thompson Lowe,Lakeview,1871,1962,Hamilton_Store,,,Rebecca M Lowe,77,W,F,Mother,,,,1950 census; Hamilton Store; birth 1873; Widowed,name+birthyear
+LV1446,Claude Mason Lowe,Lakeview,1897,1991,Hamilton_Store,,,Claude M Lowe,52,W,M,Head,Dairy Business And Milk Route,,,1950 census; Hamilton Store; birth 1898; Single,name+birthyear
+LV1915,Blanche M. Thomas,Lakeview,1871,1958,Hamilton_Store,,,Blanche M Thomas,78,W,F,Mother-in-law,,,,1950 census; Hamilton Store; birth 1872; Widowed,name+birthyear
+LV1544,Bessie Estelle Myers,Lakeview,1880,1964,Hamilton_Store,,,Bessie B Myers,70,W,F,Head,,,,1950 census; Hamilton Store; birth 1880; Widowed,name+birthyear
+LV1543,Anna L. Myers,Lakeview,1903,1953,Hamilton_Store,,,Anna L Myers,47,W,F,Daughter,,,,1950 census; Hamilton Store; birth 1903; Single,name+birthyear
+LV1552,Nora Thomas Myers,Lakeview,1869,1959,Hamilton_Store,,,Nora B Myers,80,W,F,Head,,,,1950 census; Hamilton Store; birth 1870; Widowed,name+birthyear
+LV0980,Olive C. Wine Wiley,Lakeview,1879,1957,Hamilton_Store,,,Olive C Wiley,71,W,F,Head,,,,1950 census; Hamilton Store; birth 1879; Widowed,name+birthyear
+LV0212,Elizabeth Pancoast Chamblin,Lakeview,1907,1956,Harmony,,,Elizabeth P Chamblin,41,W,F,Other,Teaching Music,,,1950 census; Harmony; birth 1909; Nev,name+birthyear
+PV0219,Janet Smith Rowe,Pleasant Valley,1891,1969,Mount_Gilead_District,,,Janet Rowe,,B,F,Other,,,,1950 census; Mount Gilead District; birth 1888; Widowed,name-only
+LV0176,Virginia G. Brown,Lakeview,1905,1908,Mount_Gilead_District,,,Virginia Brown,,B,F,Wife,Keeping House,,,1950 census; Mount Gilead District; birth 1893; Married,name-only
+PV0012,Walter W. Brown,Pleasant Valley,1907,1938,Mount_Gilead_District,,,Walter Brown,,B,M,Head,Caretaker,,,1950 census; Mount Gilead District; birth 1901; Divorced,name-only
+PV0128,John L. King,Pleasant Valley,1922,1969,Mount_Gilead_District,,,John Lewis King,27,B,M,Son-in-law,Own Booffing,,,1950 census; Mount Gilead District; birth 1923; Married,name+birthyear
+PV0030,Anna Gaskins Chinn,Pleasant Valley,1908,1992,Mount_Gilead_District,,,Annie Chinn,40,B,F,Wife,,,,1950 census; Mount Gilead District; birth 1910; Married,name+birthyear
+LV0752,Catherine M. Payne,Lakeview,1944,1944,Mount_Gilead_District,,,Catherine Payne,4,B,F,Daughter,,,,1950 census; Mount Gilead District; birth 1946; Single,name+birthyear
+PV0210,Stanley Edward Robinson,Pleasant Valley,1900,1994,Mount_Gilead_District,,,Stanley Robinson,48,B,M,Head,Butler,,,1950 census; Mount Gilead District; birth 1902; Married,name+birthyear
+PV0211,Mollie Elizabeth Robinson,Pleasant Valley,1903,2000,Mount_Gilead_District,,,Mollie Robinson,45,B,F,Wife,Maid,,,1950 census; Mount Gilead District; birth 1905; Married,name+birthyear

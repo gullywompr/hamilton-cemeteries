@@ -1,0 +1,1143 @@
+image,line,dwelling,surname,given,relation,race,sex,age,occupation,note
+1,1,1,Hoge,Jesse,Head,W,M,75,Farmer,
+1,2,1,Hoge,Mahala,Wife,W,F,69,,
+1,3,1,Hoge,Mary E,Daughter,W,F,33,,
+1,4,1,Craven,Grace,Daughter,W,F,27,,
+1,5,1,Craven,Roger,Grandson,W,M,4,,
+1,6,1,Cook,William,Servant,B,M,14,Servant,
+1,7,2,Hoge,George,Head,W,M,50,Farmer,
+1,8,2,Hoge,Gulielma,Wife,W,F,36,,
+1,9,2,Hoge,Rachel L,Daughter,W,F,0,,
+1,10,2,Thompson,Summerfield,Servant,B,M,24,Farm Laborer,
+1,11,2,Lucas,Sadie,Servant,B,F,19,Servant,
+1,12,3,Payne,Appleton,Head,W,M,30,Farmer,
+1,13,3,Payne,Emma H,Wife,W,F,27,,
+1,14,3,Payne,Rosie L,Daughter,W,F,7,,
+1,15,3,Payne,Joseph B,Son,W,M,5,,
+1,16,3,Payne,Althonia,Daughter,W,F,2,,
+1,17,3,Payne,Anna M,Daughter,W,F,0,,
+1,18,4,Champ,Charles,Head,B,M,47,,occupation blank; rents farm (R)
+1,19,4,Champ,Margaret,Wife,B,F,33,,
+1,20,4,Champ,Colin,Son,B,M,17,At School,
+1,21,4,Champ,Anna E,Daughter,B,F,13,At School,
+1,22,4,Champ,Jane,Daughter,B,F,8,At School,
+1,23,4,Champ,Gertrude,Daughter,B,F,6,At School,
+1,24,4,Champ,Charles W,Son,B,M,3,,
+1,25,4,Champ,Daisy L,Daughter,B,F,1,,
+1,26,5,White,Levi,Head,W,M,70,Farmer,
+1,27,5,White,Cynthia A,Wife,W,F,63,,
+1,28,5,White,Nora E,Daughter,W,F,37,,
+1,29,5,White,William L,Son,W,M,26,Farm Laborer,
+1,30,5,White,Edwin B,Son,W,M,20,Farm Laborer,
+1,31,6,Ball,John,Head,W,M,52,Farmer,
+1,32,6,Ball,Mary C,Wife,W,F,48,,
+1,33,6,Ball,Susan L,Daughter,W,F,21,,
+1,34,6,Ball,John W,Son,W,M,19,Farm Laborer,
+1,35,6,Ball,Garnett P,Son,W,M,18,Farm Laborer,
+1,36,6,Ball,Mary L,Daughter,W,F,13,,
+1,37,7,Logan,Anna,Head,W,F,45,Farmer,widow
+1,38,7,Holmes,Lorena M,Sister,W,F,38,,
+1,39,7,Bryant,Laura,Servant,B,F,16,Servant,
+1,40,7,Parker,Edmond,Servant,B,M,,Farm Laborer,
+1,41,8,Johnson,William,Head,B,M,30,Day Laborer,
+1,42,8,Johnson,Martha,Wife,B,F,22,,
+1,43,8,Johnson,Henry,Son,B,M,4,,
+1,44,8,Johnson,Ody,Son,B,M,3,,
+1,45,8,Johnson,George,Son,B,M,0,,
+1,46,9,White,Furr,Head,W,M,33,Farmer,
+1,47,9,White,Phila,Wife,W,F,32,,
+1,48,9,White,Granville,Son,W,M,6,,
+1,49,9,White,Leonard F,Son,W,M,4,,
+1,50,10,Titus,David,Head,W,M,44,Farmer,
+2,1,10,Titus,Hattie V,Wife,W,F,43,,
+2,2,10,Titus,Virgie M,Daughter,W,F,8,,
+2,3,10,Titus,Mary A,Daughter,W,F,1,,
+2,4,11,Plaster,James W,Head,W,M,64,,occupation blank; 12 months not employed
+2,5,11,Plaster,Sarah M,Wife,W,F,46,,
+2,6,11,Plaster,William E,Son,W,M,13,At School,
+2,7,11,Plaster,Tunis W,Son,W,M,12,At School,
+2,8,11,Plaster,David H,Son,W,M,7,At School,
+2,9,12,Hutt,Alcinda,Head,W,F,77,,widow
+2,10,12,Wynkoop,Susan,Sister,W,F,68,,
+2,11,12,Wynkoop,Emma,Sister,W,F,63,,
+2,12,12,Haley,Henry A,Boarder,W,M,47,Grocer,
+2,13,13,Jones,Landon,Head,W,M,79,,occupation blank; 12 months not employed
+2,14,13,Jones,Sarah C,Wife,W,F,78,,
+2,15,13,Russ,Minnie,Servant,B,F,43,Servant,
+2,16,14,Laycock,John F,Head,W,M,56,Farmer,
+2,17,14,Laycock,Mary C,Wife,W,F,50,,
+2,18,14,Laycock,John F,Son,W,M,16,Farm Laborer,
+2,19,14,Barnes,Lizzie,Servant,B,F,13,Servant,
+2,20,15,Laycock,Samuel A,Head,W,M,48,Farmer,
+2,21,15,Laycock,Sarah E,Wife,W,F,44,,
+2,22,15,Laycock,Mary E,Daughter,W,F,22,,
+2,23,15,Laycock,Grace,Daughter,W,F,19,,
+2,24,15,Laycock,Daisy B,Daughter,W,F,16,,
+2,25,16,Brown,Samuel S,Head,W,M,44,Day Laborer,widower; 7 months not employed
+2,26,16,Brown,Mary V,Sister,W,F,39,,
+2,27,16,Brown,Julia L,Daughter,W,F,15,,
+2,28,16,Brown,Rosia L,Son,W,M,13,At School,
+2,29,16,Brown,Arthur L,Son,W,M,11,At School,
+2,30,16,Brown,Virginia B,Daughter,W,F,9,At School,
+2,31,16,Brown,George C,Son,W,M,5,,
+2,32,16,Brown,Ashby V,Son,W,M,4,,
+2,33,17,Jackson,John,Head,B,M,55,Day Laborer,5 months not employed
+2,34,17,Jackson,Ann,Wife,B,F,64,,
+2,35,17,Jackson,Robert L,Nephew,B,M,4,,
+2,36,18,Low,Benjamin,Head,W,M,24,Farmer,
+2,37,18,Low,Rebecca,Wife,W,F,27,,
+2,38,18,Low,Claudius,Son,W,M,1,,
+2,39,19,White,Sarah E,Head,W,F,54,,widow; occupation blank
+2,40,19,White,David A,Son,W,M,31,Farm Laborer,
+2,41,19,White,Charles F,Son,W,M,27,Farm Laborer,
+2,42,19,White,Caroll,Son,W,M,20,Farm Laborer,
+2,43,19,White,Minnie G,Daughter,W,F,18,,
+2,44,20,Beales,Amos A,Head,W,M,48,Farm Laborer,
+2,45,20,Beales,Lola H,Wife,W,F,33,,
+2,46,21,Warner,Zacariah,Head,W,M,52,Farm Laborer,
+2,47,21,Warner,Sarah A,Wife,W,F,50,,
+2,48,21,Warner,Olivia B,Daughter,W,F,23,,
+2,49,21,Warner,Loulie Y,Daughter,W,F,20,,
+2,50,22,Jenkins,Herbert L,Head,W,M,39,Farmer,
+3,1,22,Jenkins,Mary M,Wife,W,F,37,,
+3,2,22,Jenkins,Bertha L,Daughter,W,F,12,At School,
+3,3,22,Jenkins,Virgie,Daughter,W,F,6,At School,
+3,4,22,Jenkins,Floyd M,Son,W,M,4,,
+3,5,22,Jenkins,Alma,Daughter,W,F,1,,
+3,6,22,Young,Julia,Servant,W,F,18,Servant,
+3,7,23,Loveless,Mason,Head,W,M,73,Day Laborer,6 months not employed; rents
+3,8,23,Loveless,Catharine,Wife,W,F,70,,
+3,9,23,Loveless,Mattie,Daughter,W,F,29,,
+3,10,24,Jenkins,Scott B,Head,W,M,40,Dry Goods Merchant,owns farm
+3,11,24,Jenkins,Fannie,Wife,W,F,31,,
+3,12,24,Jenkins,Arthur,Son,W,M,8,At School,
+3,13,24,Jenkins,Mary,Daughter,W,F,7,At School,
+3,14,25,Beales,Richard A,Head,W,M,49,Day Laborer,6 months not employed; rents
+3,15,25,Beales,Mary E,Wife,W,F,50,,
+3,16,25,Beales,Bessie,Daughter,W,F,18,,
+3,17,25,Beales,Harry,Son,W,M,13,,8 months school
+3,18,26,Holmes,George W,Head,W,M,52,Farmer,widower; owns farm
+3,19,26,Holmes,Elisha S,Son,W,M,21,Student,
+3,20,26,Holmes,May R,Daughter,W,F,19,,
+3,21,26,Tavenner,Mollie,Servant,W,F,20,House Keeper,
+3,22,26,Bryant,Lee,Servant,B,M,45,Farm Laborer,
+3,23,26,Bryant,May,Servant,B,F,20,Servant,
+3,24,27,Wynkoop,Thomas,Head,W,M,47,Farmer,owns farm
+3,25,27,Wynkoop,Hattie,Wife,W,F,44,,
+3,26,27,Wynkoop,Fannie E,Daughter,W,F,18,,
+3,27,27,Wynkoop,Orra B,Daughter,W,F,15,,
+3,28,27,Wynkoop,James M,Son,W,M,12,At School,
+3,29,28,Shumate,Joseph H,Head,W,M,26,Farmer,rents farm
+3,30,28,Shumate,Alma W,Wife,W,F,22,,
+3,31,28,Gardner,Daniel,Servant,B,M,26,Farm Laborer,
+3,32,28,Gardner,Clara,Servant,B,F,24,Servant,
+3,33,29,Johnson,Charles,Head,B,M,28,Farmer,rents farm
+3,34,29,Johnson,Ella,Wife,B,F,30,,
+3,35,29,Johnson,Lawrence,Son,B,M,5,,
+3,36,29,Johnson,Franklin,Son,B,M,3,,
+3,37,29,Johnson,Maggie,Daughter,B,F,2,,
+3,38,29,Johnson,Harrison,Son,B,M,0,,
+3,39,30,Simms,Charles,Head,B,M,40,Farm Laborer,rents
+3,40,30,Simms,Sarah,Wife,B,F,37,,
+3,41,30,Simms,Charles W,Son,B,M,22,Farm Laborer,
+3,42,30,Simms,Clide R,Son,B,M,17,Farm Laborer,
+3,43,30,Simms,Elizabeth,Daughter,B,F,9,,
+3,44,30,Simms,Mary A,Daughter,B,F,5,,
+3,45,31,Milbourn,Jonathan C,Head,W,M,64,Day Laborer,2 months not employed; owns house
+3,46,31,Milbourn,Martha I,Wife,W,F,55,,
+3,47,31,Milbourn,Maude T,Daughter,W,F,23,,
+3,48,31,Milbourn,Leond W,Son,W,M,22,Day Laborer,4 months not employed
+3,49,31,Milbourn,Claude W,Son,W,M,16,Day Laborer,3 months not employed
+3,50,32,Brown,Richard H,Head,W,M,49,Farmer,rents farm
+4,1,32,Brown,Margaret E,Wife,W,F,32,,
+4,2,32,Brown,Daniel E,Son,W,M,16,Farm Laborer,7 months not employed
+4,3,32,Brown,Mabel E,Daughter,W,F,12,,
+4,4,32,Brown,Samuel W,Son,W,M,6,At School,
+4,5,32,Hern,Henry,Servant,B,M,18,Farm Laborer,
+4,6,33,Saunders,Christian N,Head,W,M,43,Carpenter,2 months not employed
+4,7,33,Saunders,Anna T,Wife,W,F,45,,
+4,8,33,Saunders,Mary E,Daughter,W,F,19,,
+4,9,33,Saunders,James N,Son,W,M,17,Day Laborer,
+4,10,33,Saunders,Clarence A,Son,W,M,13,At School,
+4,11,33,Saunders,Charles C,Son,W,M,12,At School,
+4,12,34,Carr,John C,Head,W,M,51,Farmer,
+4,13,34,Carr,Dora E,Wife,W,F,40,,
+4,14,34,Carr,Thomas G,Son,W,M,8,At School,
+4,15,34,Carr,Elizabeth S,Daughter,W,F,6,,
+4,16,34,Carr,John L,Son,W,M,2,,
+4,17,34,Carr,Eleanor W,Daughter,W,F,0,,
+4,18,34,Carr,Nellie B,Daughter,W,F,16,At School,
+4,19,34,Bonds,Ada,Servant,B,F,17,Servant,
+4,20,34,Davis,Jerry,Servant,B,M,22,Farm Laborer,
+4,21,34,Hughes,George H,Servant,B,M,18,Farm Laborer,
+4,22,35,Thomas,James W,Head,W,M,57,Farmer,
+4,23,35,Thomas,Elizabeth A,Wife,W,F,55,,
+4,24,35,Thomas,James G B,Son,W,M,11,At School,
+4,25,35,Barrett,John W,Boarder,W,M,65,Farm Laborer,
+4,26,36,Nickens,Thomas,Head,B,M,60,Farm Laborer,index spells Nichens
+4,27,36,Nickens,Frances,Wife,B,F,45,,
+4,28,36,Nickens,Jerry,Son,B,M,14,Farm Laborer,
+4,29,36,Nickens,Roland,Son,B,M,12,,
+4,30,36,Nickens,Cecelia,Daughter,B,F,10,,
+4,31,36,Nickens,Virginia,Daughter,B,F,9,,
+4,32,36,Nickens,Sheridan,Son,B,M,8,,
+4,33,36,Nickens,Florence,Daughter,B,F,5,,
+4,34,36,Nickens,James,Daughter,B,F,3,,
+4,35,36,Nickens,Emma,Daughter,B,F,1,,
+4,36,37,Skinner,James M,Head,W,M,62,Day Laborer,widower; 6 months not employed
+4,37,37,Skinner,Batten W,Son,W,M,26,Day Laborer,6 months not employed
+4,38,37,Skinner,Mary E,Daughter,W,F,24,,
+4,39,37,Skinner,Charles W,Son,W,M,22,Farm Laborer,
+4,40,37,Skinner,Nathan E,Son,W,M,20,Engineer (saw mill),
+4,41,37,Skinner,James W,Son,W,M,14,Day Laborer,
+4,42,38,Belt,Townsend H,Head,W,M,57,Farmer,
+4,43,38,Belt,Ann M,Wife,W,F,53,,
+4,44,38,Belt,Mary R,Daughter,W,F,20,,
+4,45,38,Belt,Townsend A,Son,W,M,15,At School,
+4,46,38,Belt,Joseph M,Son,W,M,14,At School,
+4,47,38,Belt,Benjamin T,Son,W,M,11,At School,
+4,48,39,Rusk,Samuel C,Head,W,M,32,Farmer,
+4,49,39,Rusk,Alice,Wife,W,F,33,,
+4,50,39,Rusk,Asa,Son,W,M,6,,
+5,1,39,Hughes,Daniel M,Head,W,M,29,Farmer,
+5,2,39,Hughes,Cassie J,Wife,W,F,28,,
+5,3,39,Hughes,Donald M,Son,W,M,2,,
+5,4,39,Hughes,Marjorie J,Daughter,W,F,0,,
+5,5,40,Caruthers,Wesley,Head,W,M,75,,occupation blank; 12 months not employed (Lakeview: Wesley Carruthers)
+5,6,40,Caruthers,Edith,Wife,W,F,68,,
+5,7,40,Milbourne,Charles W,Boarder,W,M,72,,widower; occupation blank; 12 months not employed
+5,8,41,Milbourne,David A,Head,W,M,74,Farmer,single
+5,9,41,Milbourne,Maria A,Sister,W,F,64,,
+5,10,41,Milbourne,Lucinda C,Sister,W,F,60,,
+5,11,42,Preston,Edgar,Head,W,M,37,Farm Laborer,
+5,12,42,Preston,Ada L,Wife,W,F,32,,
+5,13,42,Preston,Terresa M,Daughter,W,F,11,At School,
+5,14,42,Preston,Ruth E,Daughter,W,F,5,,
+5,15,42,Preston,Robert G,Son,W,M,1,,
+5,16,43,Myers,Charles W,Head,W,M,47,Farmer,
+5,17,43,Myers,Bettie,Wife,W,F,42,,
+5,18,43,Myers,Mabel M,Daughter,W,F,14,At School,
+5,19,43,Myers,Mary A,Daughter,W,F,12,At School,
+5,20,43,Myers,Hattie W,Daughter,W,F,9,At School,
+5,21,43,Myers,Charles W,Son,W,M,8,At School,
+5,22,43,Myers,Elsa R,Daughter,W,F,2,,
+5,23,44,Shafer,Daniel,Head,W,M,57,Farmer,born Maryland
+5,24,44,Shafer,Sarah,Wife,W,F,56,,
+5,25,45,Bowie,John N,Head,W,M,50,Farmer,
+5,26,45,Bowie,Mary L,Wife,W,F,40,,
+5,27,45,Bowie,Robert G,Son,W,M,19,School Teacher,
+5,28,45,Bowie,Virginia T,Daughter,W,F,16,At School,
+5,29,46,Vandevander,Albert B,Head,W,M,43,Farmer,
+5,30,46,Vandevander,Emma,Wife,W,F,39,,
+5,31,46,Vandevander,Robert W,Son,W,M,15,At School,
+5,32,46,Vandevander,Josephine B,Daughter,W,F,11,At School,
+5,33,46,Vandevander,Albert L,Son,W,M,6,,
+5,34,46,Warren,William,Servant,W,M,24,Farm Laborer,
+5,35,46,Sanford,Lewis,Servant,B,M,15,Farm Laborer,
+5,36,46,Clark,Amelia,Servant,B,F,24,Servant,
+5,37,47,Ceser,Walter,Head,B,M,25,Day Laborer,6 months not employed
+5,38,47,Ceser,Lillie,Wife,B,F,22,,
+5,39,47,Ceser,Alma,Daughter,B,F,2,,
+5,40,48,Cox,John,Head,B,M,40,Stone Mason,3 months not employed
+5,41,48,Cox,Louisa,Wife,B,F,33,,
+5,42,48,Cox,Matilda,Daughter,B,F,23,Washwoman,
+5,43,48,Cox,John,Son,B,M,21,Stone Mason,
+5,44,48,Cox,Elizabeth,Daughter,B,F,19,,
+5,45,48,Cox,Emily J,Daughter,B,F,16,At School,
+5,46,48,Cox,Mary E,Daughter,B,F,14,At School,
+5,47,48,Cox,Walter F,Son,B,M,9,At School,
+5,48,48,Cox,Mattie,Daughter,B,F,7,At School,
+5,49,48,Cox,Presly,Son,B,M,4,,
+5,50,49,Cox,George,Head,B,M,38,Day Laborer,3 months not employed
+6,1,49,Cox,Minnie,Wife,B,F,34,Washwoman,4 months not employed
+6,2,49,Cox,Alcinda,Daughter,B,F,10,At School,
+6,3,49,Cox,Susan,Daughter,B,F,7,At School,
+6,4,49,Bell,John,Nephew,B,M,9,,
+6,5,50,Robison,Marshal,Head,B,M,40,Clergyman,widower
+6,6,50,Robison,Caroline,Daughter,B,F,10,Day Laborer,as written; 6 months not employed
+6,7,50,Robison,Virginia,Daughter,B,F,7,At School,
+6,8,51,Murry,Nancy,Head,B,F,57,Washwoman,widow; 6 months not employed
+6,9,51,Levenbury,Arthur,Nephew,B,M,12,At School,
+6,10,52,Wood,William H,Head,B,M,60,Day Laborer,widower
+6,11,52,Wood,Evelyn C,Daughter,B,F,19,At School,
+6,12,52,Wood,William C,Son,B,M,13,At School,
+6,13,53,Levenbury,James A,Head,B,M,40,Day Laborer,5 months not employed
+6,14,53,Levenbury,Mary E,Wife,B,F,40,Washwoman,10 months not employed
+6,15,53,Levenbury,James L,Son,B,M,17,At School,
+6,16,54,Moton,David B,Head,B,M,50,Farm Laborer,
+6,17,54,Moton,Martha E,Wife,B,F,48,,
+6,18,54,Moton,Lawrence W,Son,B,M,22,Farm Laborer,
+6,19,54,Moton,David F,Son,B,M,19,Farm Laborer,2 months not employed
+6,20,54,Moton,Martha E,Daughter,B,F,14,,
+6,21,54,Moton,Mary J,Daughter,B,F,11,,
+6,22,54,Moton,James W,Son,B,M,7,At School,
+6,23,54,Moton,Russel,Son,B,M,4,,
+6,24,54,Moton,Cordelia,Daughter,B,F,2,,
+6,25,55,West,Philip,Head,B,M,25,Farmer,
+6,26,55,West,Mary,Wife,B,F,24,,
+6,27,55,West,Anna,Daughter,B,F,10,,
+6,28,56,Mercier,Charles C,Head,W,M,53,Farmer,
+6,29,56,Mercier,Elizabeth F,Wife,W,F,49,,
+6,30,56,Mercier,Hannah G,Mother,W,F,78,,widow
+6,31,56,Brown,Allie A,Servant,B,F,65,House Servant,
+6,32,56,Mitchell,Norman,Servant,B,M,25,Farm Laborer,
+6,33,57,Coleman,Joseph F,Head,B,M,51,Farm Laborer,
+6,34,57,Coleman,Rachel,Wife,B,F,50,,
+6,35,57,Coleman,Mary B,Step-daughter,B,F,15,At School,
+6,36,57,Coleman,Julia L,Daughter,B,F,12,At School,
+6,37,57,Coleman,Gustercia,Daughter,B,F,8,At School,
+6,38,57,Foster,Charles,Boarder,B,M,8,At School,
+6,39,58,Utterback,James F,Head,W,M,34,Farmer,
+6,40,58,Utterback,Florence G,Wife,W,F,25,,
+6,41,58,Utterback,Royal L,Son,W,M,9,At School,
+6,42,58,Utterback,Harry S,Son,W,M,7,At School,
+6,43,58,Utterback,Millard V,Son,W,M,4,,
+6,44,58,Utterback,Rose L,Daughter,W,F,1,,
+6,45,59,White,Thomas D,Head,B,M,62,Day Laborer,6 months not employed
+6,46,59,White,Sarah,Wife,B,F,58,,
+6,47,59,White,Gregg,Son,B,M,17,Day Laborer,5 months not employed
+6,48,59,White,Daniel,Son,B,M,14,Day Laborer,4 months not employed
+6,49,59,White,Mary,Granddaughter,B,F,7,,
+6,50,60,Craven,Allison,Head,B,M,70,Farm Laborer,
+7,1,60,Craven,Alcinda,Wife,B,F,60,,
+7,2,61,Holmes,Hugh R,Head,W,M,69,Farmer,single
+7,3,61,Holmes,Martha J,Sister,W,F,61,,
+7,4,61,Holmes,Lydia A,Sister,W,F,59,,
+7,5,61,Barnes,George,Servant,B,M,30,Farm Laborer,4 months not employed
+7,6,61,Say,Mason,Servant,B,M,26,Farm Laborer,
+7,7,61,White,Madison,Servant,B,M,21,Day Laborer,6 months not employed
+7,8,61,Lewis,Louisa,Servant,B,F,44,Servant,widow
+7,9,62,Hoge,Almina R,Head,W,F,58,Farmer,widow
+7,10,62,Hoge,Rachel N,Daughter,W,F,25,,
+7,11,62,Gibson,Henry,Servant,B,M,28,Day Laborer,6 months not employed
+7,12,62,Gaskins,Clinton,Servant,B,M,17,Day Laborer,6 months not employed
+7,13,62,Cox,Minnie,Servant,B,F,19,Servant,
+7,14,62,Ramsey,Margaret E,Servant,W,F,20,Servant,
+7,15,63,Brown,James W,Head,B,M,60,Farmer,
+7,16,63,Brown,Anna M,Wife,B,F,40,,
+7,17,63,Brown,Robert,Son,B,M,20,Farm Laborer,
+7,18,63,Brown,James,Son,B,M,3,,
+7,19,63,Brown,Alberta,Daughter,B,F,1,,index says 21; image reads Jan 1899 age 1
+7,20,63,Willis,William H,Step-son,B,M,21,Farm Laborer,
+7,21,63,Willis,Lula,Step-daughter,B,F,17,,
+7,22,63,Willis,Cecelia,Step-daughter,B,F,15,,
+7,23,63,Willis,Anna M,Step-daughter,B,F,14,,
+7,24,63,Willis,Sarah S,Step-daughter,B,F,11,,
+7,25,64,Corbin,James M,Head,W,M,41,Farmer,
+7,26,64,Corbin,Rose A,Wife,W,F,41,,
+7,27,64,Corbin,Eugene,Son,W,M,21,Blacksmith,
+7,28,64,Corbin,Norman W,Son,W,M,19,Livery Man,
+7,29,64,Corbin,Beula,Daughter,W,F,16,,
+7,30,64,Corbin,Harry C,Son,W,M,14,,
+7,31,64,Corbin,Rose,Daughter,W,F,2,,
+7,32,65,Preston,Elzey,Head,W,M,60,Day Laborer,single; 6 months not employed
+7,33,65,Preston,Charles N,Brother,W,M,70,,widower
+7,34,65,Preston,Mary E,Sister,W,F,40,,
+7,35,65,Preston,Thadeus T,Brother,W,M,38,Day Laborer,widower; 6 months not employed
+7,36,65,Preston,Effy O,Niece,W,F,30,Nurse,
+7,37,65,Preston,Mary E,Niece,W,F,16,At School,
+7,38,65,Preston,Hugh,Nephew,W,M,10,At School,
+7,39,65,Preston,Inez L,Niece,W,F,8,At School,
+7,40,66,Shafer,John,Head,W,M,56,Carpenter,6 months not employed
+7,41,66,Shafer,Mandana,Wife,W,F,55,,
+7,42,66,Shafer,Ida,Daughter,W,F,33,,
+7,43,66,Shafer,Joseph E,Son,W,M,28,Blacksmith,6 months not employed
+7,44,66,Shafer,Blanche,Daughter,W,F,15,,
+7,45,67,Rogers,William T,Head,W,M,59,Farmer,
+7,46,67,Rogers,Alice G,Wife,W,F,50,,
+7,47,67,Rogers,Anna M,Daughter,W,F,15,At School,
+7,48,67,Rogers,Alice G,Daughter,W,F,14,At School,
+7,49,67,Jackson,Rosie,Servant,B,F,18,Servant,
+7,50,67,Howard,Datie,Servant,B,F,17,Servant,
+8,1,69,Milbourne,Clarkson,Head,W,M,45,Farmer,
+8,2,69,Milbourne,Mary M,Wife,W,F,36,,
+8,3,69,Milbourne,Gordon C,Son,W,M,15,At School,
+8,4,69,Milbourne,Mary E,Daughter,W,F,8,At School,
+8,5,69,Saunders,Sarah,Servant,W,F,38,Servant,
+8,6,69,Simms,Charles,Servant,B,M,20,Farm Laborer,
+8,7,70,Williams,Alcinda,Head,W,F,42,,widow; occupation blank
+8,8,70,Williams,John T,Son,W,M,25,Day Laborer,6 months not employed
+8,9,71,Fletcher,Arthur M,Head,W,M,23,Farmer,
+8,10,71,Fletcher,Ida M,Wife,W,F,19,,
+8,11,71,Fletcher,Nancy V,Aunt,W,F,46,,
+8,12,71,Robison,Julius,Servant,B,M,,Farm Laborer,
+8,13,72,Hatcher,Joshua A,Head,W,M,31,Farmer,
+8,14,72,Hatcher,Anna G,Wife,W,F,31,,
+8,15,72,Hatcher,Mary V,Daughter,W,F,5,,
+8,16,72,Hatcher,Caroline,Daughter,W,F,2,,
+8,17,72,Hatcher,Thomas J,Son,W,M,0,,
+8,18,73,Arnett,Welby S,Head,W,M,44,Farmer,
+8,19,73,Arnett,Hattie V,Wife,W,F,43,,
+8,20,73,Arnett,Eva M,Daughter,W,F,10,At School,
+8,21,73,Simmons,Amanda,Sister-in-law,W,F,40,,
+8,22,74,Peugh,James B,Head,W,M,51,Farmer,born Ohio
+8,23,74,Peugh,Lydia E,Wife,W,F,34,,
+8,24,74,Peugh,Ella G,Daughter,W,F,22,,
+8,25,74,Peugh,Charles B,Son,W,M,19,Farm Laborer,
+8,26,74,Peugh,Anna T,Daughter,W,F,15,At School,
+8,27,75,Taylor,Mary J,Head,W,F,63,Farmer,widow
+8,28,75,Taylor,Henry B,Son,W,M,26,Farm Laborer,
+8,29,75,Clark,Ada,Servant,B,F,28,Servant,
+8,30,76,Hoge,Charles W,Head,W,M,43,Farmer,
+8,31,76,Hoge,Clara V,Wife,W,F,34,,
+8,32,76,Hoge,George H,Son,W,M,6,,
+8,33,76,Chinn,Thomas,Servant,B,M,20,,occupation blank
+8,34,76,Henderson,Nellie,Servant,B,F,19,,occupation blank
+8,35,77,Brown,Joshua P,Head,W,M,42,Farmer,
+8,36,77,Brown,Nellie D,Wife,W,F,33,,
+8,37,77,Brown,Hazel,Daughter,W,F,10,At School,
+8,38,77,Brown,William I,Son,W,M,9,At School,
+8,39,77,Brown,Helen P,Daughter,W,F,7,,
+8,40,77,Brown,Raymond H,Son,W,M,5,,
+8,41,77,Brown,Jane P,Daughter,W,F,1,,
+8,42,78,Dawson,William F,Head,W,M,69,Farmer,
+8,43,78,Dawson,Catharine A,Wife,W,F,48,,
+8,44,78,Dawson,Ida F,Daughter,W,F,28,School Teacher,3 months not employed
+8,45,78,Joskins,Harvey,Servant,B,M,66,Farm Laborer,6 months not employed
+8,46,78,Palmer,John,Servant,B,M,50,Farm Laborer,3 months not employed
+8,47,79,Cole,Mary M,Head,W,F,58,Farmer,widow
+8,48,79,Cole,Rachel R,Daughter,W,F,28,Dress Maker,4 months not employed
+8,49,79,Cole,Kate V,Daughter,W,F,25,,
+8,50,79,Cole,Ada F,Daughter,W,F,22,,
+9,1,79,Cole,James M,Son,W,M,20,,
+9,2,79,Aldridge,Andrew P,Boarder,W,M,40,Farmer,
+9,3,79,Ball,Richard,Servant,B,M,60,Gardener,6 months not employed
+9,4,80,Carter,Robert,Head,B,M,48,Day Laborer,4 months not employed
+9,5,80,Carter,Ida,Wife,B,F,28,,
+9,6,80,Carter,John T,Son,B,M,3,,
+9,7,80,Carter,Eva,Daughter,B,F,1,,
+9,8,81,Tavenner,William,Head,W,M,51,Farm Laborer,4 months not employed
+9,9,81,Tavenner,Virginia,Wife,W,F,50,,
+9,10,81,Tavenner,Bessie L,Daughter,W,F,21,,
+9,11,81,Tavenner,William R,Son,W,M,17,Day Laborer,
+9,12,81,Tavenner,Richard M,Son,W,M,14,Day Laborer,born Kansas
+9,13,81,Tavenner,Daisy P,Daughter,W,F,12,At School,born Kansas
+9,14,81,Tavenner,Harry,Son,W,M,10,At School,
+9,15,81,Tavenner,Franklin,Son,W,M,8,At School,
+9,16,81,Lowe,William,Father-in-law,W,M,75,,
+9,17,81,Lowe,Jane,Mother-in-law,W,F,82,,
+9,18,82,Simpson,Henry R,Head,W,M,42,Farmer,
+9,19,82,Simpson,Anna E,Wife,W,F,45,,
+9,20,82,Donahoe,Amanda,Boarder,W,F,83,,
+9,21,82,Lockhart,Albert,Servant,W,M,58,Farm Laborer,
+9,22,82,Champ,Anna,Servant,B,F,13,At School,
+9,23,83,Vansickler,James B,Head,W,M,59,Farmer,
+9,24,83,Vansickler,Mary W,Wife,W,F,55,,
+9,25,83,Vansickler,Philip,Son,W,M,22,Farm Laborer,
+9,26,83,Vansickler,Mary,Daughter,W,F,20,,
+9,27,83,Palmer,Mary P,Servant,B,F,35,Servant,
+9,28,83,Moton,Levi,Servant,B,M,25,Farm Laborer,
+9,29,84,Young,Martha,Head,W,F,55,Farmer,widow
+9,30,84,Young,John N,Son,W,M,23,Farm Laborer,
+9,31,84,Young,Evelyn L,Daughter,W,F,22,,
+9,32,84,Young,Rose P,Daughter,W,F,18,,
+9,33,84,Woodson,Edgar,Servant,B,M,12,Servant,
+9,34,85,Young,John,Head,W,M,34,Engineer (saw mill),
+9,35,85,Young,Laura B,Wife,W,F,28,Dress Maker,
+9,36,85,Hamilton,Issabell,Boarder,W,F,69,,widow
+9,37,86,Seaton,Sarah,Head,W,F,34,Summer Boarders,widow; keeps summer boarders
+9,38,86,Seaton,Lula D,Daughter,W,F,13,At School,
+9,39,86,Seaton,Susan A,Daughter,W,F,12,At School,
+9,40,86,Seaton,Ivy M,Daughter,W,F,11,At School,
+9,41,86,Seaton,Jessie E,Daughter,W,F,9,At School,
+9,42,87,Weadon,Isaac,Head,W,M,45,Farmer,single
+9,43,87,Weadon,Mary M,Sister,W,F,54,,
+9,44,87,Weadon,Aquilla B,Brother,W,M,43,Day Laborer,6 months not employed
+9,45,87,Walter,Henry W,Servant,W,M,18,Farm Laborer,
+9,46,87,Howell,Madison,Servant,W,M,19,Farm Laborer,
+9,47,87,Hilaffer,Lavenia,Servant,W,F,16,Servant,
+9,48,88,Simpson,Henson,Head,W,M,70,Farmer,
+9,49,88,Simpson,Mary A,Wife,W,F,64,,
+9,50,88,Simpson,Emily P,Daughter,W,F,22,School Teacher,
+10,1,88,Williams,Robert,Servant,B,M,22,Farm Laborer,
+10,2,88,Williams,Fuller,Servant,B,M,24,Farm Laborer,
+10,3,89,Young,William,Head,W,M,74,Farmer,
+10,4,89,Young,Francis,Wife,W,F,61,,
+10,5,89,Young,Fenton,Son,W,M,13,Farm Laborer,
+10,6,89,Young,Charles W,Son,W,M,23,Farm Laborer,
+10,7,89,Haislep,Francis,Servant,W,F,33,Servant,
+10,8,90,Haislep,Walter,Head,W,M,44,Clergyman,
+10,9,90,Haislep,Anna D,Wife,W,F,48,,
+10,10,90,Haislep,Walter B,Son,W,M,12,At School,
+10,11,90,Haislep,Nelson,Son,W,M,9,At School,
+10,12,90,Haislep,Basilovian,Son,W,M,7,At School,
+10,13,90,Haislep,Lilian E,Daughter,W,F,5,,
+10,14,90,Haislep,Marion L,Daughter,W,F,1,,
+10,15,90,Thompson,Ethel,Servant,W,F,12,At School,born England
+10,16,91,Furr,Gregg,Head,B,M,51,Farm Laborer,
+10,17,91,Furr,Mary O,Wife,B,F,48,,
+10,18,91,Furr,Daniel,Son,B,M,22,Day Laborer,5 months not employed
+10,19,91,Furr,Garfield,Son,B,M,20,Day Laborer,6 months not employed
+10,20,91,Furr,Levi,Son,B,M,14,,
+10,21,91,Furr,Gertie,Daughter,B,F,12,,
+10,22,91,Furr,Lottie,Daughter,B,F,10,,
+10,23,91,Furr,Luther,Son,B,M,7,,index says 27; image Apr 1893
+10,24,91,Furr,Lester,Son,B,M,5,,index says 25; image Jan 1895
+10,25,91,Furr,Gabriel,Son,B,M,1,,
+10,26,92,Freeman,Walker,Head,B,M,60,Farm Laborer,
+10,27,92,Freeman,Betsy R,Wife,B,F,58,,
+10,28,92,Freeman,Walker,Son,B,M,21,Day Laborer,5 months not employed
+10,29,92,Freeman,Mollie,Daughter,B,F,18,,
+10,30,92,Freeman,Daniel,Son,B,M,16,Day Laborer,6 months not employed
+10,31,93,Cross,Joseph,Head,B,M,24,Day Laborer,6 months not employed
+10,32,93,Cross,Ida,Wife,B,F,28,,
+10,33,93,Champ,Loyd,Step-son,B,M,10,At School,
+10,34,93,Champ,Arena,Step-daughter,B,F,7,At School,
+10,35,94,Baldwin,James,Head,W,M,59,Farmer,
+10,36,94,Baldwin,Margaret F,Wife,W,F,52,,
+10,37,95,Cummins,Thomas,Head,W,M,49,Farmer,
+10,38,95,Cummins,Mary,Wife,W,F,44,,
+10,39,95,Cummins,Blanche,Daughter,W,F,17,,
+10,40,95,Cummins,Hattie,Daughter,W,F,9,At School,
+10,41,96,Trammel,Joseph,Head,B,M,38,Farm Laborer,
+10,42,96,Trammel,Ida,Wife,B,F,35,,
+10,43,96,Trammel,Elwood,Son,B,M,22,Farm Laborer,
+10,44,96,Trammel,Henrietta,Daughter,B,F,19,,
+10,45,96,Trammel,Ida,Daughter,B,F,16,,
+10,46,96,Trammel,Alice,Daughter,B,F,14,,
+10,47,97,Carson,Jacob,Head,W,M,36,Farmer,
+10,48,97,Carson,Nannie J,Wife,W,F,28,,
+10,49,97,Carson,Clara F,Daughter,W,F,3,,
+10,50,97,Carson,William D,Son,W,M,1,,
+11,1,97,Carson,Eva M,Daughter,W,F,0,,
+11,2,97,Kirk,Mary,Servant,W,F,20,Servant,
+11,3,97,Jenkins,Emma,Boarder,W,F,38,,widow
+11,4,97,Jenkins,Roy,Boarder,W,M,8,At School,
+11,5,98,Curns,Walter,Head,W,M,24,Farm Laborer,
+11,6,98,Curns,Pleasant,Wife,W,F,16,,
+11,7,99,Jenkins,John L,Head,W,M,43,Farmer,
+11,8,99,Jenkins,Anna B,Wife,W,F,42,,
+11,9,99,Jenkins,Joseph E,Son,W,M,18,Farm Laborer,
+11,10,99,Jenkins,Virginia M,Daughter,W,F,16,At School,
+11,11,99,Jenkins,Carl C,Son,W,M,11,At School,
+11,12,100,Freer,Charlotte,Head,W,F,55,Farmer,single
+11,13,101,Saffer,William C,Head,W,M,24,Farmer,
+11,14,101,Saffer,Kate A,Wife,W,F,27,,
+11,15,101,Smallwood,Carl,Servant,W,M,8,At School,
+11,16,102,Redman,Kate,Head,W,F,40,,widow; occupation blank
+11,17,102,Redman,Daisy D,Daughter,W,F,17,,
+11,18,102,Redman,Anna L,Daughter,W,F,15,At School,
+11,19,102,Redman,Edward M,Son,W,M,13,At School,
+11,20,102,Redman,Bertha F,Daughter,W,F,11,At School,
+11,21,102,Redman,Lilly M,Daughter,W,F,9,At School,
+11,22,102,Redman,Wilford C,Son,W,M,7,,
+11,23,103,Sutphin,Ewell,Head,W,M,25,Farmer,
+11,24,103,Sutphin,Belle,Wife,W,F,30,,
+11,25,103,Sutphin,Alvester G,Son,W,M,5,,
+11,26,103,Sutphin,Molrola C,Daughter,W,F,2,,
+11,27,103,Sutphin,Ann C,Daughter,W,F,0,,
+11,28,104,Adams,William H,Head,W,M,68,Day Laborer,5 months not employed
+11,29,104,Adams,Juliette,Wife,W,F,69,,
+11,30,104,Slack,Margaret A,Step-daughter,W,F,58,,
+11,31,105,Pierson,John L,Head,W,M,45,Farmer,
+11,32,105,Pierson,Mary E,Wife,W,F,41,,
+11,33,105,Pierson,George A,Son,W,M,18,Farm Laborer,
+11,34,105,Pierson,Thomas F,Son,W,M,15,At School,
+11,35,105,Pierson,Lucy M,Daughter,W,F,15,At School,
+11,36,105,Pierson,Anna E,Daughter,W,F,12,At School,
+11,37,105,Pierson,Randolph,Son,W,M,10,At School,
+11,38,105,Pierson,Elwood,Son,W,M,5,,
+11,39,106,Jackson,Samuel,Head,B,M,41,Day Laborer,9 months not employed
+11,40,106,Jackson,Lena M,Wife,B,F,,,
+11,41,106,Jackson,Argy,Step-son,B,M,3,,
+11,42,106,Jackson,Latty E,Step-son,B,M,2,,
+11,43,106,Jackson,Levi,Step-son,B,M,0,,
+11,44,107,McConaha,Mary,Head,W,F,70,,widow; occupation blank
+11,45,107,McConaha,Joseph T,Son,W,M,32,Farm Laborer,6 months not employed
+11,46,107,McConaha,James W,Son,W,M,43,Day Laborer,7 months not employed
+11,47,108,Lickey,George,Head,W,M,41,Farmer,
+11,48,108,Lickey,Vernie,Wife,W,F,26,,
+11,49,108,Slack,George P,Boarder,W,M,60,,widower; occupation blank
+11,50,109,Keys,John R,Head,W,M,39,Farmer,
+12,1,109,Keys,Mary C,Wife,W,F,33,,
+12,2,109,Keys,Ruth E,Daughter,W,F,8,At School,
+12,3,109,Keys,John S,Son,W,M,5,,
+12,4,109,Carter,Larence,Servant,B,M,26,Farm Laborer,
+12,5,109,Heaters,Robert,Servant,B,M,60,Day Laborer,widower; 6 months not employed
+12,6,109,Johnson,Virginia,Servant,B,F,26,Servant,
+12,7,110,Kreines,Fitzhugh,Head,W,M,40,Farmer,
+12,8,110,Kreines,Josephine G,Wife,W,F,30,,
+12,9,110,Kreines,Mozell,Daughter,W,F,14,At School,
+12,10,110,Kreines,William E,Son,W,M,12,At School,
+12,11,110,Kreines,Evelyn,Daughter,W,F,9,At School,
+12,12,110,Kreines,Erline,Daughter,W,F,8,At School,
+12,13,110,Kreines,Carroll,Son,W,M,4,,
+12,14,110,Kreines,Corinne,Daughter,W,F,2,,
+12,15,110,Hanback,Rufus,Servant,W,M,19,Farm Laborer,
+12,16,111,Warren,Edwin O,Head,W,M,22,Farmer,single; parents born England
+12,17,111,Warren,Mary,Sister,W,F,30,,born England
+12,18,111,Warren,Benjamin,Brother,W,M,19,Farm Laborer,
+12,19,111,Warren,Rosena,Sister,W,F,14,At School,
+12,20,112,Kephart,Morris N,Head,W,M,40,Farmer,
+12,21,112,Kephart,Virginia A,Wife,W,F,39,,
+12,22,112,Kephart,Lucian J,Son,W,M,15,At School,
+12,23,112,Kephart,Virgie F,Daughter,W,F,7,,
+12,24,113,Rusk,Frank,Head,W,M,33,Day Laborer,5 months not employed
+12,25,113,Rusk,Ethel A,Wife,W,F,27,,
+12,26,113,Rusk,Eleanor A,Daughter,W,F,2,,
+12,27,113,Rusk,Charles F,Son,W,M,0,,
+12,28,113,Dodd,Nora I,Sister-in-law,W,F,17,,
+12,29,114,Williams,John H,Head,W,M,78,Farmer,
+12,30,114,Williams,Catharine T,Wife,W,F,68,,
+12,31,114,Carlisle,Charles T,Grandson,W,M,8,At School,
+12,32,115,Jones,Nelson,Head,B,M,40,Day Laborer,2 months not employed
+12,33,115,Jones,Cinthia,Wife,B,F,30,,
+12,34,115,Jones,James W,Son,B,M,1,,
+12,35,116,Johnson,Burr C,Head,W,M,38,Farmer,
+12,36,116,Johnson,Sarah E,Wife,W,F,38,,
+12,37,116,Johnson,Ethel S,Daughter,W,F,14,At School,
+12,38,116,Johnson,Thomas C,Son,W,M,13,At School,
+12,39,116,Johnson,Alexander R,Son,W,M,12,At School,
+12,40,116,Johnson,Maranda E,Daughter,W,F,4,,
+12,41,116,Johnson,Anna,Sister,W,F,51,,
+12,42,116,Hall,James M,Brother-in-law,W,M,40,Farm Laborer,
+12,43,117,Bradley,William,Head,W,M,30,Day Laborer,3 months not employed
+12,44,117,Bradley,Mary E,Wife,W,F,27,,
+12,45,117,Bradley,Anna M,Daughter,W,F,8,At School,
+12,46,117,Bradley,James T,Son,W,M,5,,
+12,47,117,Bradley,Mary C,Daughter,W,F,2,,
+12,48,117,Bradley,Lizzie M,Daughter,W,F,0,,
+12,49,117,Bradley,William R,Son,W,M,0,,
+12,50,118,Trammel,Henrietta,Head,B,F,44,,widow; occupation blank
+13,1,118,Trammel,Thomas,Son,B,M,25,,occupation not captured (row cut off)
+13,2,118,Trammel,Herbert,Son,B,M,19,Day Laborer,6 months not employed
+13,3,118,Trammel,Elizabeth,Daughter,B,F,15,At School,
+13,4,118,Trammel,Amos,Son,B,M,14,At School,
+13,5,119,Trammel,Wesley,Head,B,M,30,Day Laborer,3 months not employed
+13,6,119,Trammel,Mollie,Wife,B,F,28,,
+13,7,119,Trammel,William,Son,B,M,15,At School,
+13,8,119,Trammel,Joseph,Son,B,M,7,,
+13,9,119,Trammel,Oley,Son,B,M,4,,
+13,10,119,Trammel,Pearl,Daughter,B,F,0,,
+13,11,120,Jackson,John,Head,B,M,45,Farm Laborer,4 months not employed
+13,12,120,Jackson,Florence,Wife,B,F,42,,
+13,13,120,Jackson,John W,Son,B,M,21,Farm Laborer,5 months not employed
+13,14,120,Jackson,Mary O,Daughter,B,F,19,,
+13,15,120,Jackson,Harrison,Son,B,M,10,,
+13,16,120,Jackson,Anna M,Daughter,B,F,7,,
+13,17,120,Jackson,Margaret A,Daughter,B,F,2,,
+13,18,121,Keys,Howard,Head,W,M,43,Farmer,widower
+13,19,121,Keys,Rose,Daughter,W,F,21,,
+13,20,121,Keys,James W,Son,W,M,17,At School,
+13,21,121,Keys,Virgie,Daughter,W,F,12,At School,
+13,22,121,Keys,Bessie,Daughter,W,F,10,,
+13,23,121,Keys,Katie,Daughter,W,F,9,At School,
+13,24,121,Keys,Anna H,Daughter,W,F,3,,
+13,25,122,Moss,John C,Head,W,M,79,Farmer,widower
+13,26,122,Moss,John C,Son,W,M,42,Farm Laborer,6 months not employed
+13,27,122,Moss,John T,Son,W,M,36,Farm Laborer,6 months not employed
+13,28,122,Moss,Charles W,Son,W,M,25,Farm Laborer,6 months not employed
+13,29,122,Walman,Harvey,Nephew,W,M,19,Farm Laborer,6 months not employed
+13,30,123,Carter,James W,Head,W,M,62,Farmer,
+13,31,123,Carter,Elizabeth H,Wife,W,F,57,,
+13,32,123,Carter,Robert L,Son,W,M,32,Farm Laborer,
+13,33,123,Carter,Mary O,Daughter,W,F,21,,
+13,34,123,Carter,John E,Son,W,M,15,At School,
+13,35,123,Overhall,Fannie,Servant,B,F,7,Servant,
+13,36,124,Rogers,Richard H,Head,W,M,62,Farmer,
+13,37,124,Rogers,Anna E,Wife,W,F,61,,
+13,38,124,Rogers,Maude H,Daughter,W,F,31,School Teacher,3 months not employed
+13,39,124,Rogers,Josephus C,Son,W,M,29,Farm Laborer,
+13,40,124,Rogers,Mittie J,Daughter,W,F,26,,
+13,41,124,Rogers,Mabel E,Daughter,W,F,23,,
+13,42,124,Thomas,Amanda,Servant,B,F,17,Servant,
+13,43,125,Kirkpatrick,Webster,Head,W,M,24,Farmer,
+13,44,125,Kirkpatrick,Lilly M,Wife,W,F,24,,
+13,45,125,Kirkpatrick,Kate K,Sister,W,F,8,At School,
+13,46,126,Howzer,Charles,Head,W,M,40,Day Laborer,widower; 6 months not employed
+13,47,126,Coates,Elizabeth,Mother-in-law,W,F,70,,widow
+13,48,127,Laycock,Samuel,Head,W,M,62,Farmer,
+13,49,127,Laycock,Susan A,Wife,W,F,44,,
+13,50,127,Kephart,Clarence H,Nephew,W,M,7,At School,
+14,1,128,Laycock,James,Head,W,M,60,Farmer,
+14,2,128,Laycock,Ophelia,Wife,W,F,50,,
+14,3,128,Laycock,Robert E,Son,W,M,25,Farm Laborer,
+14,4,129,Vansickler,John C,Head,W,M,35,Farmer,
+14,5,129,Vansickler,Kate B,Wife,W,F,31,,
+14,6,129,Vansickler,Anna E,Daughter,W,F,8,At School,
+14,7,129,Vansickler,Margarite L,Daughter,W,F,6,,
+14,8,129,Vansickler,Rachel F,Daughter,W,F,4,,
+14,9,129,Vansickler,William M,Son,W,M,2,,
+14,10,129,Vansickler,John A,Father,W,M,69,Mail Carrier,widower
+14,11,130,Kephart,Oscar M,Head,W,M,34,Farm Laborer,index spells Hephart
+14,12,130,Kephart,Mollie E,Wife,W,F,30,,
+14,13,130,Kephart,Pascol R,Son,W,M,9,At School,
+14,14,130,Kephart,Loretta P,Daughter,W,F,4,,
+14,15,130,Kephart,Lawrence L,Son,W,M,1,,
+14,16,131,Kearns,James R,Head,W,M,28,Farm Laborer,
+14,17,131,Kearns,Nancy E,Wife,W,F,26,,
+14,18,131,Kearns,Sarah E,Daughter,W,F,5,,
+14,19,131,Kearns,James R,Son,W,M,3,,
+14,20,131,Kearns,Ethel M,Daughter,W,F,1,,
+14,21,131,Kearns,Hasscock S,Cousin,W,F,14,At School,
+14,22,132,Mock,John T,Head,W,M,46,Farm Laborer,
+14,23,132,Mock,Virginia F,Wife,W,F,35,,
+14,24,132,Mock,Maude R,Daughter,W,F,11,At School,
+14,25,132,Mock,Mary C,Daughter,W,F,10,At School,
+14,26,132,Mock,Arthur M,Son,W,M,8,At School,
+14,27,132,Mock,Sarah F,Daughter,W,F,6,At School,
+14,28,132,Mock,James H,Son,W,M,4,,
+14,29,132,Mock,Thomas A,Son,W,M,2,,
+14,30,133,Kearns,Sarah E,Head,W,F,47,,widow; occupation blank
+14,31,133,Kearns,William H,Son,W,M,19,Day Laborer,5 months not employed
+14,32,133,Kearns,Mary L,Daughter,W,F,16,,
+14,33,134,Nixon,Jonah,Head,W,M,80,Farmer,
+14,34,134,Nixon,Mary,Wife,W,F,75,,
+14,35,134,Nixon,Mattie C,Daughter,W,F,35,,
+14,36,134,Presgrove,Maria L,Daughter,W,F,55,,widow
+14,37,134,Presgrove,John N,Grandson,W,M,18,Farm Laborer,
+14,38,135,Nixon,Ruth,Head,W,F,47,Farmer,widow
+14,39,135,Nixon,Martin,Son,W,M,20,Farm Laborer,
+14,40,135,Nixon,Mazie,Daughter,W,F,16,At School,
+14,41,135,Nixon,Mahlon,Son,W,M,13,At School,
+14,42,136,Cooper,Robert N,Head,W,M,56,Carpenter,4 months not employed
+14,43,136,Cooper,Margaret,Wife,W,F,52,,
+14,44,136,Cooper,Clinton,Son,W,M,22,Day Laborer,6 months not employed
+14,45,136,Cooper,Troy C,Son,W,M,19,Day Laborer,6 months not employed
+14,46,136,Cooper,Harry B,Son,W,M,17,At School,
+14,47,137,Smallwood,Josephine,Head,W,F,38,,widow; occupation blank
+14,48,137,Smallwood,Lovy,Son,W,M,5,,
+14,49,137,Smallwood,Lobena,Daughter,W,F,3,,
+14,50,137,Williams,Emily,Sister,W,F,19,,
+15,1,138,Costilla,Robert,Head,W,M,24,Farm Laborer,
+15,2,138,Costilla,Lydia,Wife,W,F,20,,
+15,3,138,Costilla,Ella,Daughter,W,F,1,,
+15,4,138,Costilla,Ludell,Daughter,W,F,0,,
+15,5,138,Crimm,Ellen,Mother-in-law,W,F,44,,widow
+15,6,138,Crimm,Cora B,Sister-in-law,W,F,8,,
+15,7,139,Waddel,John,Head,W,M,30,Day Laborer,6 months not employed
+15,8,139,Waddel,Mary,Wife,W,F,29,,
+15,9,139,Waddel,Rozella,Daughter,W,F,11,At School,
+15,10,139,Waddel,Mary,Daughter,W,F,3,,
+15,11,140,Swann,James M,Head,B,M,50,Waiter,
+15,12,140,Swann,Elizabeth,Wife,B,F,51,,
+15,13,140,Swann,Nelson,Son,B,M,19,Hostler,
+15,14,140,Swann,Dougless,Son,B,M,9,At School,
+15,15,140,Williams,Julia,Daughter,B,F,22,Dress Maker,married
+15,16,141,Rogers,Alexander H,Head,W,M,69,Farmer,
+15,17,141,Rogers,Julia H,Wife,W,F,54,,
+15,18,141,Rogers,Mary O,Daughter,W,F,23,,
+15,19,142,Higdon,Charles H,Head,W,M,74,Farmer,
+15,20,142,Higdon,Eliza A,Wife,W,F,72,,
+15,21,142,Davis,Sarah A,Daughter,W,F,49,,married
+15,22,142,Davis,Elsie,Granddaughter,W,F,14,,
+15,23,143,Thompson,Howard,Head,W,M,39,Farmer,
+15,24,143,Thompson,Mary E,Wife,W,F,33,,
+15,25,143,Thompson,Henry M,Son,W,M,9,At School,
+15,26,143,Thompson,Maggie E,Daughter,W,F,4,,
+15,27,143,Beales,Henry,Servant,W,M,21,Farm Laborer,
+15,28,144,Wynkoop,Richard,Head,W,M,56,Day Laborer,6 months not employed
+15,29,144,Wynkoop,Margaret,Wife,W,F,55,,
+15,30,144,Wynkoop,Betty,Sister-in-law,W,F,52,,
+15,31,145,Flaherty,James E,Head,W,M,38,Farmer,
+15,32,145,Flaherty,Anna V,Wife,W,F,40,,
+15,33,145,Flaherty,Emery,Son,W,M,10,At School,
+15,34,146,Fry,Foster,Head,B,M,70,Day Laborer,6 months not employed
+15,35,146,Fry,Dolly,Wife,B,F,75,,
+15,36,146,Robison,James,Grandson,B,M,10,At School,
+15,37,146,Robison,Elizabeth,Granddaughter,B,F,8,At School,
+15,38,146,Robison,Phoebe A,Granddaughter,B,F,7,At School,
+15,39,146,Robison,Francis,Granddaughter,B,F,6,At School,
+15,40,147,Janney,Henry T,Head,W,M,45,Farmer,
+15,41,147,Janney,Cosmelia H,Wife,W,F,41,,
+15,42,147,Hoge,Eliza P,Mother-in-law,W,F,76,,widow
+15,43,147,Trammel,Lou,Servant,B,F,17,Servant,
+15,44,147,Trammel,David,Servant,B,M,21,Farm Laborer,
+15,45,148,Fletcher,William H,Head,W,M,58,Farmer,
+15,46,148,Fletcher,Martha,Wife,W,F,48,,
+15,47,148,Fletcher,Alice,Sister,W,F,30,,
+15,48,148,Davis,Bettie,Servant,W,F,25,,occupation blank
+15,49,148,Frame,William,Nephew,W,M,16,At School,
+15,50,149,Hughes,Mary V,Head,W,F,37,Preacher,
+16,1,149,Hughes,Virginia,Mother,W,F,65,,widow
+16,2,149,Rector,Lewis,Servant,B,M,13,At School,
+16,3,150,James,Francis M,Head,W,M,46,Farmer,
+16,4,150,James,Mary W,Wife,W,F,43,,
+16,5,150,Preston,Thomas,Servant,W,M,27,Farm Laborer,
+16,6,151,Trammel,Frank,Head,B,M,30,Farm Laborer,
+16,7,151,Trammel,Florence,Wife,B,F,26,,
+16,8,151,Trammel,Frank,Son,B,M,10,At School,
+16,9,151,Trammel,Susan L,Daughter,B,F,6,,
+16,10,151,Trammel,George H,Son,B,M,4,,
+16,11,151,Trammel,Margaret E,Daughter,B,F,3,,
+16,12,152,Coleman,Margaret,Head,B,F,66,,widow; occupation blank
+16,13,152,Coleman,John L,Son,B,M,21,Day Laborer,6 months not employed
+16,14,152,Coleman,James L,Son,B,M,19,Day Laborer,4 months not employed
+16,15,152,Coleman,Bertha,Daughter,B,F,13,At School,
+16,16,152,Ball,James A,Son-in-law,B,M,26,Day Laborer,6 months not employed
+16,17,152,Ball,Hannah C,Daughter,B,F,25,,
+16,18,152,Ball,Laurence B,Grandson,B,M,11,At School,
+16,19,153,Brown,William,Head,B,M,42,Farmer,
+16,20,153,Brown,Anna B,Wife,B,F,23,,
+16,21,153,Brown,Mary,Daughter,B,F,3,,
+16,22,153,Brown,Lillian B,Daughter,B,F,1,,
+16,23,153,Brown,George G,Son,B,M,16,,
+16,24,154,Hoge,George W,Head,W,M,64,Farmer,widower
+16,25,154,Hoge,Flavius,Son,W,M,41,Farm Laborer,
+16,26,154,Hoge,Mary B,Daughter,W,F,40,,
+16,27,154,Tavenner,Sarah E,Sister-in-law,W,F,65,,
+16,28,154,Turner,Lathy,Servant,B,M,13,,occupation blank
+17,1,T1,Chamblin,Sarah E,Head,W,F,70,Boarding House,widow; TOWN begins
+17,2,T1,Chamblin,Laura C,Daughter,W,F,40,,
+17,3,T1,Holmes,Martha,Sister,W,F,66,,
+17,4,T1,Bork,Cora,Servant,B,F,17,Servant,
+17,5,T2,Silcott,Mortimer,Head,W,M,80,,widower; occupation blank
+17,6,T2,Silcott,Charles E,Son,W,M,44,Carpenter,
+17,7,T2,Silcott,Mollie,Daughter-in-law,W,F,43,,
+17,8,T2,Silcott,Zula A,Granddaughter,W,F,17,At School,
+17,9,T2,Silcott,May,Granddaughter,W,F,14,At School,
+17,10,T3,Orrison,Mary E,Head,W,F,45,Seamstress,single
+17,11,T3,Orrison,Pleasant,Sister,W,F,38,,
+17,12,T3,Orrison,Virginia,Sister,W,F,35,,
+17,13,T3,Orrison,Ada,Sister,W,F,33,,
+17,14,T4,Nichols,Phila,Head,W,F,63,Boarding House,widow
+17,15,T4,Craig,Phila,Niece,W,F,47,,
+17,16,T5,Somerville,Sarah,Head,W,F,68,Boarding House,single
+17,17,T5,Somerville,Mary L,Sister,W,F,64,,
+17,18,T5,Dorsett,Margaret,Niece,W,F,45,,
+17,19,T5,Allen,Mary,Servant,B,F,17,Servant,
+17,20,T5,Branson,Margaret,Servant,B,F,33,Servant,
+17,21,T6,Iden,Virginia,Head,W,F,69,,widow; occupation blank
+17,22,T6,Iden,Lutie L,Daughter,W,F,47,,
+17,23,T6,Iden,Bessie M,Daughter,W,F,42,,
+17,24,T6,Lewis,Elizabeth,Servant,B,F,14,At School,
+17,25,T7,Gregg,Albert J,Head,W,M,44,,occupation blank
+17,26,T7,Gregg,Mary E,Wife,W,F,28,,
+17,27,T7,Gregg,Mary L,Daughter,W,F,2,,
+17,28,T8,Hughes,Virginia D,Head,W,F,65,,single; occupation blank
+17,29,T8,Hughes,Sallie A,Sister,W,F,61,,
+17,30,T9,Everhart,William N,Head,W,M,82,,occupation blank
+17,31,T9,Everhart,Malinda E,Wife,W,F,56,,
+17,32,T9,Everhart,George F,Son,W,M,58,Farmer,
+17,33,T9,Everhart,Mary B,Daughter-in-law,W,F,60,,
+17,34,T9,Everhart,Catharine,Granddaughter,W,F,20,,
+17,35,T10,Wilson,William,Head,W,M,25,,single; occupation blank
+17,36,T10,Wilson,Kattie,Sister,W,F,29,,
+17,37,T11,Wynkoop,James A,Head,W,M,42,,occupation blank
+17,38,T11,Wynkoop,Emily G,Wife,W,F,39,,
+17,39,T11,Jacobs,Berry,Servant,W,F,13,At School,
+17,40,T12,Thomas,John H,Head,W,M,77,Town Sergeant,
+17,41,T12,Thomas,Emily J,Wife,W,F,53,,
+17,42,T12,Thomas,Ellen,Daughter,W,F,25,,
+17,43,T12,Thomas,Henry,Son,W,M,23,Day Laborer,6 months not employed
+17,44,T13,Myers,Israel,Head,W,M,41,Carpenter,
+17,45,T13,Myers,Ellen V,Wife,W,F,41,,
+17,46,T13,Myers,Mary E,Daughter,W,F,14,At School,
+17,47,T14,Thomas,Robert,Head,W,M,74,Machinist,
+17,48,T14,Thomas,Rebecca J,Wife,W,F,67,,
+17,49,T14,Myers,Nora B,Daughter,W,F,30,,widow
+17,50,T14,Myers,Vera L,Granddaughter,W,F,8,At School,
+18,1,T14,Myers,Mary L,Granddaughter,W,F,2,,
+18,2,T15,Thomas,George,Head,W,M,31,Mill Laborer,
+18,3,T15,Thomas,Mozella B,Wife,W,F,28,,
+18,4,T15,Thomas,Edwin,Son,W,M,2,,
+18,5,T15,Thomas,Hilda N,Daughter,W,F,0,,
+18,6,T16,Payne,Henry,Head,B,M,30,Day Laborer,6 months not employed
+18,7,T16,Payne,Lula,Wife,B,F,40,,
+18,8,T16,Payne,Ann,Daughter,B,F,19,,
+18,9,T16,Payne,Sanford,Son,B,M,12,At School,
+18,10,T16,Payne,Elizabeth,Daughter,B,F,10,At School,
+18,11,T16,Payne,Stanley,Son,B,M,8,At School,
+18,12,T16,Payne,William,Son,B,M,6,At School,
+18,13,T17,Coates,Sanford,Head,B,M,76,Day Laborer,single; 6 months not employed
+18,14,T17,Gibson,Elizabeth,Niece,B,F,60,,
+18,15,T17,Payne,Emily,Servant,B,F,62,Servant,
+18,16,T18,Collins,Franklin,Head,B,M,33,Day Laborer,6 months not employed
+18,17,T18,Collins,Maggie J,Wife,B,F,27,,
+18,18,T18,Collins,Charles C,Son,B,M,3,,
+18,19,T18,Collins,William M,Son,B,M,2,,
+18,20,T18,Collins,Joseph L,Son,B,M,0,,
+18,21,T18,Collins,William,Father,B,M,80,,widower
+18,22,T19,Offley,Holmes,Head,W,M,60,,born Maryland; occupation blank
+18,23,T19,Offley,Mary M,Wife,W,F,56,,
+18,24,T19,Fuller,Catherine,Daughter,W,F,28,,married
+18,25,T19,Fuller,Edward F,Grandson,W,M,7,,
+18,26,T19,Fuller,Daratha,Granddaughter,W,F,4,,
+18,27,T19,Offley,Marbrey,Son,W,M,24,Farm Laborer,6 months not employed
+18,28,T19,Anderson,Amy,Servant,B,F,24,Servant,
+18,29,T20,Robey,John,Head,W,M,59,Stone Mason,9 months not employed
+18,30,T20,Robey,Emma F,Wife,W,F,55,,
+18,31,T20,Robey,Joseph W,Son,W,M,28,Stone Mason,
+18,32,T20,Robey,Ella C,Daughter,W,F,19,,
+18,33,T20,Robey,Alice L,Daughter,W,F,17,At School,
+18,34,T20,Robey,Marcia E,Daughter,W,F,15,At School,
+18,35,T20,Robey,James F,Son,W,M,14,At School,
+18,36,T21,Hill,Laben L,Head,W,M,62,,widower; occupation blank
+18,37,T21,Hill,Maude A,Daughter,W,F,28,,
+18,38,T21,Hill,Evelyn O,Daughter,W,F,23,,
+18,39,T22,Beales,Joseph E,Head,W,M,46,Mill Laborer,
+18,40,T22,Beales,Fannie,Wife,W,F,36,,born Maryland
+18,41,T22,Beales,Joseph P,Son,W,M,10,At School,
+18,42,T23,Myers,Robert L,Head,W,M,42,Tinner,
+18,43,T23,Myers,Anna,Wife,W,F,38,,
+18,44,T23,Myers,Willard C,Son,W,M,17,At School,
+18,45,T23,Myers,Olive V,Daughter,W,F,15,At School,
+18,46,T23,Myers,Victor L,Son,W,M,8,At School,
+18,47,T23,Myers,Hester V,Daughter,W,F,5,At School,
+18,48,T23,Kidwell,James,Brother-in-law,W,M,22,Tinner,
+18,49,T24,Myers,Nathan,Head,W,M,24,Painter,
+18,50,T24,Myers,Bessie E,Wife,W,F,20,,
+19,1,T25,Dowell,Catherine,Head,W,F,66,Dress Maker,single
+19,2,T25,Dowell,Martha J,Sister,W,F,63,Dressmaker,
+19,3,T25,Dowell,Amanda E,Sister,W,F,59,Dressmaker,
+19,4,T25,Dowell,William F,Nephew,W,M,20,Type Setter,reading uncertain
+19,5,T25,Dowell,Walter F,Nephew,W,M,19,Dry Goods Clerk,
+19,6,T25,Norris,Alice M,Niece,W,F,44,School Teacher,
+19,7,T26,Chamblin,John W,Head,W,M,46,Dry Goods Merchant,
+19,8,T26,Chamblin,Lucy C,Wife,W,F,36,,
+19,9,T26,Chamblin,Nina E,Daughter,W,F,7,,
+19,10,T26,Chamblin,Lula V,Daughter,W,F,5,,
+19,11,T26,Chamblin,Lillian,Daughter,W,F,2,,
+19,12,T26,Chamblin,Minor E,Son,W,M,0,,
+19,13,T27,Hess,Anna R,Head,W,F,50,,widow; occupation blank
+19,14,T27,Hess,Claudius J,Son,W,M,29,Dry Goods Clerk,
+19,15,T27,Hess,Nellie B,Daughter,W,F,24,,
+19,16,T27,Hess,James R,Son,W,M,16,At School,
+19,17,T27,Hess,Gertrude,Daughter,W,F,13,At School,
+19,18,T28,Chase,Theodore L,Head,W,M,62,,born Maryland; occupation blank
+19,19,T28,Chase,Cora M,Wife,W,F,51,,
+19,20,T28,Chase,Helen M,Daughter,W,F,26,,
+19,21,T29,Jacobs,Leven,Head,W,M,58,Veterinary Surgeon,widower
+19,22,T30,Luckett,Mary A,Head,W,F,77,,widow; occupation blank
+19,23,T30,Luckett,Bettie C,Daughter,W,F,38,,
+19,24,T31,Tillett,Samuel R,Head,W,M,50,Farmer,
+19,25,T31,Tillett,Mary E,Wife,W,F,43,Dressmaker,
+19,26,T31,White,Lon,Servant,W,F,42,Dressmaker Asst,
+19,27,T32,Warner,Charles W,Head,W,M,40,Hardware Merchant,C. W. Warner's Hardware (newspaper)
+19,28,T32,Warner,Madora V,Wife,W,F,37,,
+19,29,T32,Warner,Paul L,Son,W,M,3,,
+19,30,T32,Wood,Cordell,Servant,B,F,18,Servant,6 months not employed
+19,31,T33,Woolf,William H,Head,W,M,47,Preacher,
+19,32,T33,Woolf,Jennie M,Wife,W,F,34,,born Maryland
+19,33,T33,Woolf,Marye M,Daughter,W,F,15,At School,
+19,34,T33,Woolf,William H,Son,W,M,14,At School,
+19,35,T33,Woolf,Elsie K,Daughter,W,F,12,At School,
+19,36,T34,Silcott,James E,Head,W,M,48,Carpenter,
+19,37,T34,Silcott,Mary C,Wife,W,F,50,,
+19,38,T34,Silcott,Carl F,Son,W,M,22,Day Laborer,6 months not employed
+19,39,T34,Silcott,Earl W,Son,W,M,16,At School,
+19,40,T34,Silcott,Iva I,Daughter,W,F,11,At School,
+19,41,T34,Wiley,Edgar T,Boarder,W,M,30,Asst Postmaster,
+19,42,T35,Rogers,Samuel E,Head,W,M,55,Miller,
+19,43,T35,Rogers,Elizabeth C,Wife,W,F,54,,
+19,44,T35,Rogers,Howard C,Son,W,M,15,At School,
+19,45,T35,Levanburg,Anna,Servant,W,F,40,Servant,widow
+19,46,T36,Laycock,George W,Head,W,M,38,Dry Goods Merchant,G. W. Laycock merchant (newspaper)
+19,47,T36,Laycock,Ella P,Wife,W,F,38,,
+19,48,T36,Johnson,Martha,Mother-in-law,W,F,73,,widow
+19,49,T36,Shoemaker,George W,Boarder,W,M,38,Dry Goods Merchant,single
+19,50,T37,Tavenner,Eddie,Head,W,M,58,Drummer,widower; travelling salesman
+20,1,T37,Tavenner,Howard W,Son,W,M,25,Day Laborer,
+20,2,T37,Tavenner,Linda E,Daughter,W,F,22,,
+20,3,T37,Tavenner,Catherine P,Daughter,W,F,18,,
+20,4,T37,Tavenner,Ann E,Sister,W,F,56,,
+20,5,T37,Nichols,William,Servant,W,M,63,Servant,widower
+20,6,T38,Curry,Mary F,Head,W,F,60,Boarding House,single
+20,7,T38,Curry,Martha C,Sister,W,F,58,,
+20,8,T38,Curry,Permelia N,Sister,W,F,40,,
+20,9,T39,Smith,Edward,Head,W,M,38,Hostler,
+20,10,T39,Smith,Sophia,Wife,W,F,33,,born Pennsylvania
+20,11,T39,Smith,Graham,Son,W,M,4,,
+20,12,T39,Smith,Dorothy,Daughter,W,F,2,,
+20,13,T39,Smith,Harry,Son,W,M,0,,
+20,14,T39,Benedum,Clinton,Boarder,W,M,25,Butcher,
+20,15,T40,Dunbar,Victoria C,Head,W,F,30,Milliner,widow; born Iowa
+20,16,T40,Dunbar,Edward M,Son,W,M,12,At School,
+20,17,T40,Henderson,Mary,Servant,B,F,18,,occupation blank
+20,18,T41,Hough,Arthur L,Head,W,M,35,Undertaker,reading faint - verify
+20,19,T41,Hough,Isadora,Wife,W,F,39,,
+20,20,T41,Hough,Margarette A,Daughter,W,F,8,At School,
+20,21,T41,Hough,Francis N,Daughter,W,F,5,At School,
+20,22,T41,Hough,Marvin H,Son,W,M,2,,
+20,23,T42,Schooley,George,Head,W,M,39,Blacksmith,single
+20,24,T42,Schooley,Alice,Sister,W,F,45,,
+20,25,T43,Lewis,Samuel,Head,W,M,60,Wheelwright,
+20,26,T43,Lewis,Virginia,Wife,W,F,53,,
+20,27,T44,Wine,Benjamin F,Head,W,M,50,Shoemaker,written Shoemender
+20,28,T44,Wine,Sarah A,Wife,W,F,48,,born England
+20,29,T44,Wine,Josephine H,Daughter,W,F,25,School Teacher,4 months not employed
+20,30,T44,Wine,Lillian M,Daughter,W,F,23,Compositor,
+20,31,T44,Wine,Olive C,Daughter,W,F,20,Post Office Clerk,
+20,32,T44,Wine,Mabel F,Daughter,W,F,18,At School,
+20,33,T44,Wine,Elizabeth B,Daughter,W,F,16,At School,
+20,34,T44,Wine,Ruth B,Daughter,W,F,15,At School,
+20,35,T45,Lang,Patience,Head,W,F,58,,widow; occupation blank
+20,36,T45,Lang,Dolly,Daughter,W,F,27,,
+20,37,T45,Lang,Katie B,Daughter,W,F,25,Dressmaker,
+20,38,T45,Lang,Harry,Son,W,M,23,Painter (house),8 months not employed
+20,39,T46,Evans,Louisa,Head,W,F,65,,widow; occupation blank
+20,40,T46,Evans,Anna H,Daughter,W,F,45,Milliner,
+20,41,T46,Webster,Phila,Servant,B,F,13,At School,
+20,42,T46,Peugh,Susan,Boarder,W,F,47,,
+20,43,T47,Silcott,Bushrod,Head,W,M,52,Day Laborer,single; 6 months not employed
+20,44,T47,Silcott,Nancy,Mother,W,F,80,,widow
+20,45,T48,Ruse,Richard W,Head,W,M,72,Carpenter,4 months not employed
+20,46,T48,Ruse,Ann E,Wife,W,F,70,,
+20,47,T49,Tavenner,James E,Head,W,M,32,Carpenter,
+20,48,T49,Tavenner,Rosa M,Wife,W,F,31,,
+20,49,T49,Tavenner,Altheus E,Son,W,M,3,,
+20,50,T49,Tavenner,Thomas N,Son,W,M,0,,
+21,1,T49,Tavenner,Anna E,Sister,W,F,28,,
+21,2,T49,Tavenner,William,Brother,W,M,30,Day Laborer,7 months not employed
+21,3,T50,McDaniel,Roy H,Head,W,M,27,Butcher,8 months not employed
+21,4,T50,McDaniel,Ella M,Wife,W,F,25,,
+21,5,T50,McDaniel,Annie A,Daughter,W,F,2,,
+21,6,T50,McDaniel,Mabel L,Daughter,W,F,1,,
+21,7,T51,Brown,Yardley T,Head,W,M,47,Editor (paper),Weekly Enterprise editor
+21,8,T51,Brown,Eleanor,Wife,W,F,47,,
+21,9,T51,Brown,Robert G,Son,W,M,19,At School,
+21,10,T51,Brown,Thomas H,Son,W,M,16,At School,
+21,11,T51,Gibson,Martha,Servant,B,F,15,At School,
+21,12,T52,Brown,Thomas,Head,W,M,81,Post Master,
+21,13,T52,Brown,Elizabeth T,Wife,W,F,77,,
+21,14,T52,Brown,Ruth H,Sister-in-law,W,F,72,,
+21,15,T52,Webster,Florence,Servant,B,F,16,,occupation blank
+21,16,T53,Muse,Edna J,Head,W,F,71,,widow; occupation blank
+21,17,T53,Brown,Sallie,Niece,W,F,35,,
+21,18,T53,Brown,Samuel A,Nephew,W,M,38,Day Laborer,7 months not employed
+21,19,T54,Crockett,Robert B,Head,W,M,42,Canvasser (Insurance),born Ireland; reading of parenthetical uncertain
+21,20,T54,Crockett,Evelyn E,Wife,W,F,36,,born Maryland
+21,21,T54,Crockett,Emma E,Daughter,W,F,5,,
+21,22,T54,Crockett,Robert S,Son,W,M,3,,
+21,23,T55,Beales,Elizabeth,Head,W,F,63,,widow; occupation blank
+21,24,T56,White,Mortimer,Head,W,M,33,Farm Laborer,
+21,25,T56,White,Cecelia,Wife,W,F,33,,
+21,26,T56,White,Harry L,Son,W,M,11,At School,
+21,27,T56,White,Cloyd M,Son,W,M,10,At School,
+21,28,T56,White,Hugh W,Son,W,M,7,At School,
+21,29,T56,White,George W,Son,W,M,6,,
+21,30,T56,White,Hannah B,Daughter,W,F,4,,
+21,31,T56,White,Charles L,Son,W,M,1,,
+21,32,T56,Nixon,Margaret,Boarder,W,F,80,,widow
+21,33,T57,Reid,Robert J,Head,W,M,30,Foreman Printing Office,
+21,34,T57,Reid,Lucy E,Wife,W,F,40,,
+21,35,T57,Reid,Robert T,Son,W,M,3,,
+21,36,T57,Myers,Charles F,Father-in-law,W,M,72,,widower
+21,37,T57,Thomas,India,Niece,W,F,15,At School,
+21,38,T58,Warner,Napoleon B,Head,W,M,29,Day Laborer,single; 6 months not employed
+21,39,T58,Warner,Gabriel V,Father,W,M,69,,
+21,40,T58,Warner,Sarah J,Mother,W,F,68,,
+21,41,T59,Everett,John,Head,W,M,66,Market man,born Indiana; reading uncertain; 6 months not employed
+21,42,T59,Everett,Harriet A,Wife,W,F,61,,
+21,43,T59,Everett,Mary M,Daughter,W,F,23,Nurse,5 months not employed
+21,44,T59,Everett,Hattie,Daughter,W,F,20,,
+21,45,T60,McFarland,William A,Head,W,M,54,Grocer,
+21,46,T60,McFarland,Mary V,Wife,W,F,44,,born Maryland
+21,47,T60,McFarland,Jessie,Daughter,W,F,20,,
+21,48,T60,McFarland,Mazie,Daughter,W,F,18,At School,
+21,49,T60,McFarland,Margaret,Daughter,W,F,16,At School,
+21,50,T60,McFarland,Anna,Daughter,W,F,11,At School,
+22,1,T60,McFarland,William L,Son,W,M,5,,
+22,2,T61,McFarland,Bethany A,Head,W,F,74,,widow; occupation blank
+22,3,T61,McFarland,Hannah,Daughter,W,F,47,,
+22,4,T62,Fisher,Simon,Head,B,M,44,Preacher,
+22,5,T62,Fisher,Hester C,Wife,B,F,40,,
+22,6,T62,Fisher,Mary V,Daughter,B,F,21,,
+22,7,T62,Fisher,Robert B,Son,B,M,13,At School,
+22,8,T62,Fisher,Richard L,Son,B,M,9,At School,
+22,9,T62,Fisher,Mary B,Mother,B,F,60,Washwoman,widow; 6 months not employed
+22,10,T63,Cox,James,Head,W,M,50,Carpenter,3 months not employed
+22,11,T63,Cox,Laura,Wife,W,F,50,,
+22,12,T63,Cox,Florence,Daughter,W,F,24,,
+22,13,T63,Cox,James A,Son,W,M,22,Type Setter,
+22,14,T63,Shipman,Charles H,Boarder,W,M,39,Butcher,single
+22,15,T64,Donahue,Mary N,Head,W,F,38,,widow; occupation blank
+22,16,T64,Donahue,Carrie E,Daughter,W,F,12,At School,
+22,17,T65,Tavenner,Oscar,Head,W,M,49,Dry Goods Clerk,
+22,18,T65,Tavenner,Mary,Wife,W,F,40,,
+22,19,T65,Tavenner,William O,Son,W,M,10,At School,
+22,20,T65,Thompson,Mary F,Mother-in-law,W,F,63,,widow
+22,21,T65,Thompson,Mary E,Niece,W,F,18,At School,
+22,22,T66,Levenberry,Charles,Head,B,M,55,Day Laborer,2 months not employed
+22,23,T66,Levenberry,Patsy,Wife,B,F,45,,
+22,24,T66,Levenberry,Alice,Daughter,B,F,28,Nurse,10 months not employed
+22,25,T67,Reed,Robert F,Head,W,M,48,Carpenter,
+22,26,T67,Reed,Alice,Wife,W,F,46,,
+22,27,T67,Reed,Lewis,Boarder,W,M,18,Day Laborer,born Maryland; 3 months not employed
+22,28,T68,Hough,Lewis F,Head,W,M,34,Dentist,
+22,29,T68,Hough,Nannie,Wife,W,F,27,,
+22,30,T68,Hough,Leigh C,Daughter,W,F,8,At School,
+22,31,T68,Hough,Majorie,Daughter,W,F,7,At School,
+22,32,T68,Gore,Albert,Father-in-law,W,M,58,,
+22,33,T68,Gore,Sarah M,Mother-in-law,W,F,50,,
+22,34,T68,Bryant,Henry,Servant,B,M,22,Servant,
+22,35,T68,Randolph,Elizabeth,Servant,B,F,31,Servant,widow
+22,36,T69,Franklin,Lucy H,Head,W,F,49,,widow; parents born Germany; occupation blank
+22,37,T69,Franklin,Frederic E,Son,W,M,16,At School,
+22,38,T70,Benedum,William A,Head,W,M,49,Tinner,
+22,39,T70,Benedum,Belle M,Wife,W,F,48,,
+22,40,T70,Tavenner,Laura J,Sister-in-law,W,F,48,,
+22,41,T70,Wilmarth,Mary,Boarder,W,F,83,,widow
+22,42,T71,Flippo,Monroe,Head,W,M,39,Day Laborer,2 months not employed
+22,43,T71,Flippo,Mattie G,Wife,W,F,31,,
+22,44,T71,Flippo,Clifton,Son,W,M,11,At School,
+22,45,T71,Flippo,Harry,Son,W,M,9,At School,
+22,46,T71,Flippo,Nina,Daughter,W,F,8,At School,
+22,47,T71,Flippo,Roy,Son,W,M,6,At School,
+22,48,T71,Flippo,Henry F,Son,W,M,0,,
+22,49,T72,Chalmers,Leigh,Head,W,M,68,Examiner Dept Justice,born Tennessee; reading uncertain
+22,50,T72,Chalmers,Virginia C,Wife,W,F,40,,born Texas
+23,1,T73,Lamothe,John I,Head,W,M,31,Preacher,born England; immigrated 1885; naturalized
+23,2,T73,Lamothe,Margaret,Wife,W,F,35,,
+23,3,T73,Lamothe,Margaret,Daughter,W,F,3,,
+23,4,T73,Walker,Cornelius,Father-in-law,W,M,80,,
+23,5,T73,Walker,Margaret T,Mother-in-law,W,F,73,,
+23,6,T74,Hough,Rolin,Head,W,M,39,Carpenter,
+23,7,T74,Hough,Charlotte B,Wife,W,F,37,,
+23,8,T74,Hough,Chester C,Son,W,M,4,,
+23,9,T74,Hough,Elouise,Daughter,W,F,2,,
+23,10,T74,Preston,Bertha,Servant,W,F,14,At School,
+23,11,T75,Milton,Theodore,Head,W,M,52,Carriage Agent,reading uncertain
+23,12,T75,Milton,Lydia C,Wife,W,F,48,Boarding House,
+23,13,T75,Milton,Nancy M,Daughter,W,F,25,,
+23,14,T75,Milton,Joseph V,Son,W,M,23,Student (Medicine),
+23,15,T75,Milton,Alexander M,Son,W,M,21,,
+23,16,T75,Milton,Catherine B,Daughter,W,F,18,,
+23,17,T75,Milton,Lydia H,Daughter,W,F,14,At School,
+23,18,T75,Milton,Mary S,Daughter,W,F,12,At School,
+23,19,T75,Milton,Louise A,Daughter,W,F,3,,
+23,20,T75,Walton,Richard L,Boarder,W,M,38,Druggist,widower
+23,21,T75,Walton,Lawrence W,Boarder,W,M,3,,
+23,22,T75,Walton,Francis B,Boarder,W,F,6,,
+23,23,T75,Maury,Ann P,Boarder,W,F,30,,single
+23,24,T75,McIntire,Herbert,Boarder,W,M,30,,
+23,25,T75,McIntire,Bessie,Boarder,W,F,22,,
+23,26,T75,McVeigh,Richard M,Boarder,W,M,72,Drummer,widower
+23,27,T75,Leith,George E,Boarder,W,M,40,,single; occupation obscured by ink blot
+23,28,T76,French,Charles F,Head,W,M,53,Jeweller,single
+23,29,T76,French,Mary A,Mother,W,F,83,,widow
+23,30,T76,French,Orra B,Sister,W,F,43,,
+23,31,T77,Ballinger,Isaac,Head,W,M,43,Livery Man,
+23,32,T77,Ballinger,Eliza A,Wife,W,F,44,,
+23,33,T77,Ballinger,Clinton,Son,W,M,19,Laborer (livery),
+23,34,T77,Ballinger,Walter W,Son,W,M,17,At School,
+23,35,T77,Ballinger,Lilly M,Daughter,W,F,15,At School,
+23,36,T77,Bolyn,John N,Uncle,W,M,60,,single
+23,37,T78,Allen,Arch,Head,B,M,55,Day Laborer,widower; 3 months not employed
+23,38,T78,Jennings,Nancy,Aunt,B,F,68,Housekeeper,widow
+23,39,T79,Herndon,Charles,Head,W,M,39,Preacher,
+23,40,T79,Herndon,Sarah G,Wife,W,F,38,,
+23,41,T79,Herndon,Thadeus,Son,W,M,8,,
+23,42,T79,Pearson,Hattie,Servant,W,F,22,Servant,
+23,43,T80,Nicholson,Augustus S,Head,W,M,69,,born New Jersey; occupation blank
+23,44,T80,Nicholson,Jane G,Wife,W,F,65,,
+23,45,T80,Flaharty,Bridget,Servant,W,F,50,Servant,born Ireland; immigrated 1867
+23,46,T80,Haves,Anna,Servant,W,F,24,,born Ireland; immigrated 1895; occupation blank
+23,47,T80,Nicholson,Charlotte G,Daughter-in-law,W,F,38,,widow
+23,48,T81,Lee,Daniel,Head,B,M,50,Day Laborer,6 months not employed
+23,49,T81,Lee,Julia,Wife,B,F,40,,
+23,50,T81,Lee,Robert A,Son,B,M,16,Day Laborer,6 months not employed
+24,1,T81,Lee,Archabal,Son,B,M,13,,
+24,2,T81,Lee,Amanda B,Daughter,B,F,10,,
+24,3,T81,Lee,Caroline N,Daughter,B,F,8,,
+24,4,T82,James,Thomas,Head,W,M,75,,occupation blank
+24,5,T82,James,Virginia F,Wife,W,F,63,,
+24,6,T82,James,Maggie T,Daughter,W,F,19,At School,
+24,7,T82,Rogers,Blanche,Niece,W,F,26,,
+24,8,T82,Chamblin,John B,Boarder,W,M,,Miller,
+24,9,T82,Chamblin,Ella,Boarder,W,F,,,
+24,10,T83,Keen,Thomas F,Head,W,M,44,Physician,
+24,11,T83,Keen,Katie T,Wife,W,F,39,,
+24,12,T83,Keen,Hugh R,Son,W,M,12,At School,
+24,13,T83,Henderson,Susan,Servant,B,F,26,Servant,
+24,14,T83,Bell,Walter,Servant,B,M,27,Day Laborer,3 months not employed

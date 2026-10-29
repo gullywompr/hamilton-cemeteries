@@ -1,0 +1,8 @@
+person_id,last,first,born_raw,died_raw,issue,source
+PV0043,COATES,EDNA,06/25/190-,Unknown,unparseable date,balch-db
+PV0085,FLINT,CEZAR,18--,1938,unparseable date,balch-db
+PV0096,HARRIS,VIOLET MALLORY,3/301916,2/15/2002,unparseable date,balch-db
+PV0131,LEE,MICHAEL JOHN,192-,196-,unparseable date,balch-db
+PV0149,LUCAS,MARY JANE,19009,1999,unparseable date,balch-db
+PV0193,RAMEY,BEVERLY,07/11/1896,05/31/1856,death before birth,balch-db
+PV0258,WATKINS,JOSEPH,1881,19--,unparseable date,balch-db

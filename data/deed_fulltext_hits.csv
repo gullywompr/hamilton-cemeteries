@@ -1,0 +1,48 @@
+person_id,name,census_1860_page,record_set,pages_hit,sample_arks,priority,note
+LV0828,Hector A. Saunders,188,"Loudoun, Virginia. Deed Books 1860-1861",6,3Q9M-CSYD-49VN-R 3Q9M-CSYX-M9F9-W 3Q9M-CSYD-49VJ-Y,HIGH,"Six pages in the deed book covering the year he was enumerated - the best single lead in this sweep for placing a man on the ground"
+LV0828,Hector A. Saunders,188,"Loudoun, Virginia. Deed Books 1857-1858",1,3Q9M-CSYD-H392-4,high,
+LV0828,Hector A. Saunders,188,"Loudoun, Virginia. Court Records 1859-1861",1,3Q9M-CSY6-13YB-J,high,"Pre-war court record"
+LV0828,Hector A. Saunders,188,"Virginia. Military Service Records 1861-1865",7,3QHN-B3YT-4L4S 3QHN-13YT-4PMK 3QHN-G3YT-4GX3,HIGH,"Confederate compiled service records - see README, these are in the free full-text corpus"
+LV0828,Hector A. Saunders,188,"Loudoun, Virginia. Court Records 1868-1869",1,3Q9M-CSYX-W565,med,
+LV0828,Hector A. Saunders,188,"Loudoun, Virginia. Court Records 1871-1872",1,3Q9M-CSY6-1QH9-M,med,
+LV0828,Hector A. Saunders,188,"Loudoun, Virginia. Court Records 1877-1881",2,3QHV-V385-4DMM 3QHV-V385-4DR4,med,
+LV0828,Hector A. Saunders,188,"Loudoun, Virginia. Gravestone Transcription Records 1948-1950",1,3Q9M-CSK7-5SDP-P,HIGH,"His inscription as transcribed in 1948-50, before 75 more years of weathering"
+HM0019,William Henry Beans,118,"Loudoun, Virginia. Court Records 1858-1866",8,3QHV-J385-HWQY 3QHV-J385-H48K 3QHV-V36K-6WXW,HIGH,"Eight pages spanning the war years - the richest wartime trail of the nine"
+HM0019,William Henry Beans,118,"Loudoun, Virginia. Deed Books 1861-1865",2,3Q9M-CSYX-FS49-Y 3Q9M-CSYD-49V6-J,HIGH,"Wartime land transactions"
+HM0019,William Henry Beans,118,"Loudoun, Virginia. Court Records 1858-1868",3,3QHV-J385-4D9H 3QHV-V385-4ZKJ 3QHV-V385-4ZFH,HIGH,
+HM0019,William Henry Beans,118,"Loudoun, Virginia. Will Books 1866-1867",2,3QS7-89P6-S933 3QS7-89P6-S93X,high,
+HM0019,William Henry Beans,118,"Loudoun, Virginia. Birth Records 1866-1896",1,3QHN-Y3YN-T6TL,med,"Probably a child's birth registration - names parents"
+HM0019,William Henry Beans,118,"Loudoun, Virginia. Birth Registers 1853-1896",1,3Q9M-C9YG-57B1-X,med,
+LV0567,Joseph R Janney,130,"Virginia. Military Service Records 1861-1865",7,3QHN-G3YT-D6GB 3QHN-13YT-D64Z 3QHN-G3YT-D649,HIGH,"Seven pages - the Quaker family's 8th Virginia man"
+LV0567,Joseph R Janney,130,"Loudoun, Virginia. Deed Books 1870-1871",1,3Q9M-CSYX-F929-F,high,"Earliest of his deed hits"
+LV0567,Joseph R Janney,130,"Loudoun, Virginia. Bonds 1857-1871",1,3QHN-R3YG-R9FC-B,high,
+LV0567,Joseph R Janney,130,"Loudoun, Virginia. Gravestone Transcription Records 1948-1950",1,3Q9M-CSK7-5SD5-Z,HIGH,"SAME PAGE as Everhart's transcription - the two were listed together in the 1948-50 survey"
+LV0567,Joseph R Janney,130,"Loudoun, Virginia. Deed Books (1879-1880, 1886-87, 1889-90, 1891-92, 1893-94, 1894, 1899-1900, 1900-01)",10,3Q9M-CSY6-1942-T 3Q9M-CSYX-CSS9 3Q9M-CSYX-H9Y6-B,low,"Later life; grouped to keep the file readable"
+LV0405,George Franklin Everhart,162,"Virginia. Military Service Records 1861-1865",5,3QHN-G3YG-QT6Q 3QHN-G3YG-QTR9 3QHN-13YG-QT7N,HIGH,"35th Battalion - and the census already corrected his birth year to 1842"
+LV0405,George Franklin Everhart,162,"Loudoun, Virginia. Gravestone Transcription Records 1948-1950",1,3Q9M-CSK7-5SD5-Z,HIGH,"Same transcription page as Janney"
+LV0405,George Franklin Everhart,162,"Loudoun, Virginia. Birth Records 1866-1896",1,3QHN-G3YN-T628,med,
+LV0405,George Franklin Everhart,162,"Loudoun, Virginia. Deed Books (1879, 1880-81, 1888-89, 1889-90, 1898-99, 1899-1900)",7,3Q9M-CSY6-197G-Z 3Q9M-CSY6-YSP6-4 3Q9M-CSYX-H9BZ-C,low,
+LV0405,George Franklin Everhart,162,"Loudoun, Virginia. Court Minutes (1885-88, 1888-92, 1892-96)",3,3Q9M-CSY6-YSCN-4 3Q9M-CSY6-YSC7-H 3Q9M-CSY6-BFW7,low,
+LV0916,Samuel R. Tillett,190,"Virginia. Military Service Records 1861-1865",3,3QHN-13YT-4DG5 3QHN-R3YT-4NQW 3QHN-13YT-4DG7,HIGH,
+LV0916,Samuel R. Tillett,190,"Loudoun, Virginia. Gravestone Transcription Records 1948-1950",1,3Q9M-CSK7-5S8L-8,HIGH,"Adjacent transcription page to Laycock's (5S8L-9)"
+LV0916,Samuel R. Tillett,190,"Loudoun, Virginia. Deed Books (1878-79, 1879, 1879-80, 1884-85, 1890-91, 1891, 1895-96, 1897-98)",10,3Q9M-CSY6-19W6-R 3Q9M-CSY6-197G-F 3Q9M-CSY6-19HW-M,low,
+LV0916,Samuel R. Tillett,190,"Loudoun, Virginia. Court Records (1879-81, 1885-88)",2,3QHV-J385-WF7B 3QHV-V385-WZS3,low,
+LV0600,John Franklin Laycock,153,"Loudoun, Virginia. Gravestone Transcription Records 1948-1950",1,3Q9M-CSK7-5S8L-9,HIGH,"Adjacent transcription page to Tillett's (5S8L-8)"
+LV0600,John Franklin Laycock,153,"Loudoun, Virginia. Marriage Records 1879-1895",1,3QS7-L9XF-29L6-V,HIGH,"A marriage record - the marriage events in events.json currently carry no dates at all"
+LV0600,John Franklin Laycock,153,"Loudoun, Virginia. Birth Records 1866-1896",1,3QHN-13YN-TDLL,high,"Names parents"
+LV0600,John Franklin Laycock,153,"Virginia. Military Service Records 1861-1865",1,3QHN-G3YT-DK34,HIGH,
+LV0600,John Franklin Laycock,153,"Loudoun, Virginia. Court Records 1872-1875",1,3Q9M-CSY6-194Q-F,med,
+LV0600,John Franklin Laycock,153,"Loudoun, Virginia. Deed Books (1882, 1883-84, 1884, 1886-87, 1899)",8,3Q9M-CSY6-1V75 3Q9M-CSY6-1VR6 3Q9M-CSY6-19FF-P,low,
+LV0600,John Franklin Laycock,153,"Loudoun, Virginia. Court Minutes (1881-85, 1885-88, 1896-99) and Court Records 1881-87",6,3Q9M-CSYX-W9HN-H 3Q9M-CSY6-YSC5-7 3Q9M-CSY6-BFMK,low,
+LV0216,John Mahlon Chamblin,76,"Loudoun, Virginia. Bonds 1857-1871",1,3QHN-G3YG-R9VY-Z,HIGH,"The only hit of his that reaches back to the war period"
+LV0216,John Mahlon Chamblin,76,"Loudoun, Virginia. Deed Books 1869-1870 and 1870",5,3Q9M-CSYX-P3PW-F 3Q9M-CSYX-P3GN-F 3Q9M-CSYX-P3PS-W,high,"Earliest deeds - he was newly married in 1860 and living with his wife's family, so these may be his first land"
+LV0216,John Mahlon Chamblin,76,"Loudoun, Virginia. Deed Books (1877-78, 1879, 1882, 1882-83, 1886-87, 1889-90, 1891, 1896)",11,3Q9M-CSY6-13VQ 3Q9M-CSY6-19H1-4 3Q9M-CSY6-1KZ5,low,
+LV0216,John Mahlon Chamblin,76,"Loudoun, Virginia. Court Records (1877-79, 1881-82)",3,3QHV-J385-WXJG 3QHV-V385-WCDS 3QHV-V385-W87S,low,
+LV0216,John Mahlon Chamblin,76,"NO military service record hit",0,,,"Unlike six of the others, no Virginia Military Service Records page surfaced for him - worth retrying as 'John Chamblin' and 'J M Chamblin'"
+HM0208,Moses Daniel Wilson II,102,"Virginia. Military Service Records 1861-1865",2,3QHN-G3YR-BXC9 3QHN-B3YR-B66V,HIGH,"May settle whether the 8th Virginia man is this Moses or his son Moses, 21 in 1860 - see the caution on his census row"
+HM0208,Moses Daniel Wilson II,102,"Loudoun, Virginia. Marriage Records 1751-1880",1,3Q9M-CSM7-5HH8,HIGH,"A marriage record in the right date range"
+HM0208,Moses Daniel Wilson II,102,"Loudoun, Virginia. Deed Books 1843 and Court Records 1842-1843",3,3Q9M-CSYX-F9T5-H 3Q9M-CSY8-KSYM-1 3Q9M-CSYD-C9PM-H,high,"He would be 33 in 1843 - fits him, but could be his father; check"
+HM0208,Moses Daniel Wilson II,102,"Loudoun, Virginia. Deed Books 1866-1867",1,3Q9M-CSYX-FS72-6,high,
+HM0208,Moses Daniel Wilson II,102,"Loudoun, Virginia. Will Books 1878-1879",1,3QS7-L9P6-M842,med,"CAUTION: he died in 1873, so this is either his estate being settled late or a different Moses Wilson"
+HM0208,Moses Daniel Wilson II,102,"Loudoun, Virginia. Deed Books (1883-84, 1888-89, 1890-91)",3,3Q9M-CSY6-1VFG 3Q9M-CSYX-H9YJ-3 3Q9M-CSYX-H9YL-D,low,"Postdate his death - probably a different Moses Wilson"
+LV0851,John Shaffer,111,"Loudoun, Virginia. Deed Books 1814-1821 only",10,3Q9M-CSYX-HS7F-X 3Q9M-CSL6-49T9-S 3Q9M-CSYX-H37K-C,none,"ALL hits are 1814-1821, decades before our man was born in 1837 - a different and earlier John Shaffer. Consistent with the caution already on his census row, where the enumerated principal was a John Shafer aged 64. His identification remains unresolved."

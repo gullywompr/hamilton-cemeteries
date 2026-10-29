@@ -1,0 +1,4 @@
+person_id,last,first,born_raw,died_raw,issue,source
+LV0088,BEALES,ELTON,03/,Unknown,unparseable date,balch-db
+LV0310,DAVIS,ALBERT C,08/24/1822,06/09/1998,lifespan 176 years,balch-db
+LV0526,HIRST,NONA CAROLYN,07/30/1930,08/25/1891,death before birth,balch-db

@@ -1,0 +1,85 @@
+person_id,project_name,cemetery,birth_year,death_year,census_image,census_line,zone,hh,census_name,census_age,race,sex,relation,occupation_1940,industry_1940,class_1940,note,match_basis
+LV0596,Jessie Hess McFarland Laycock,Lakeview,1880,1945,1,13,mtgilead-part,4,Jessie Laycock,60,W,F,Wife,,,,,name+birthyear
+LV1373,Albert Franklin Laycock,Lakeview,1914,1992,1,14,mtgilead-part,4,Albert Laycock,25,W,M,Son,Salesman,Retail Grocery,OA,60 hrs,name+birthyear
+LV1747,Lacey C. Rhodes,Lakeview,1895,1973,1,15,mtgilead-part,5,Lacey Rhodes,45,W,M,Head,Foreman,Lumber Mill,PW,48 hrs; $800,name+birthyear
+LV1740,Carrie Virginia Darr Rhodes,Lakeview,1902,1996,1,16,mtgilead-part,5,Carrie Rhodes,37,W,F,Wife,,,,,name+birthyear
+LV0683,James E. Mock,Lakeview,1853,1943,1,19,mtgilead-part,5,James E Mock,87,W,M,Lodger,,,,widower,name+birthyear
+LV2037,Gladys Virginia Burke White,Lakeview,1905,1983,1,29,mtgilead-part,9,Gladys White,35,W,F,Wife,Seamstress,At Home,OA,12 hrs,name+birthyear
+LV2044,Robert L. White,Lakeview,1923,1973,1,30,mtgilead-part,9,Robert Lee White,16,W,M,Son,Delivery Boy,Newspaper,PW,12 hrs; $30,name+birthyear
+LV1906,Nellie Tavenner,Lakeview,1877,1952,1,34,mtgilead-part,11,Nellie Tavenner,65,W,F,Housekeeper,Housekeeper,Private Family,,,name+birthyear
+LV0980,Olive C. Wine Wiley,Lakeview,1879,1957,2,52,mtgilead-part,17,Olive Wiley,60,W,F,Head,,,,widow,name+birthyear
+LV0982,Edgar H. Wiley,Lakeview,1908,1940,2,53,mtgilead-part,17,Edgar Wiley,31,W,M,Son,Employee,Navy Yard,GW,30 wks unemployed; 24 wks; $720,name+birthyear
+LV0204,Thomas W. Carter,Lakeview,1878,1941,2,54,mtgilead-part,18,Thomas W Carter,61,W,M,Head,,,,lived Loudoun rural 1935,name+birthyear
+LV0205,Lula A. Carter,Lakeview,1877,1942,2,55,mtgilead-part,18,Lula E Carter,63,W,F,Wife,,,,,name+birthyear
+LV0202,Adrian W. Carter,Lakeview,1912,1985,2,56,mtgilead-part,18,Adrian Carter,28,W,M,Son,Delivers Papers,Post Newspaper,PW,48 hrs; $300,name+birthyear
+LV1781,Eva M. Schooley,Lakeview,1875,1965,2,60,mtgilead-part,20,Eva Schooley,65,W,F,Head,,,,widow,name+birthyear
+LV1544,Bessie Estelle Myers,Lakeview,1880,1964,2,65,mtgilead-part,22,Bess Myers,59,W,F,Head,,,,widow,name+birthyear
+LV1543,Anna L. Myers,Lakeview,1903,1953,2,66,mtgilead-part,22,Anna Myers,37,W,F,Daughter,Sales Lady,Retail Clothing,PW,16 hrs; $100,name+birthyear
+LV0827,Josephine Warner Saunders,Lakeview,1856,1943,2,67,mtgilead-part,23,Josephine Saunders,83,W,F,Head,,,,widow,name+birthyear
+LV1552,Nora Thomas Myers,Lakeview,1869,1959,2,69,mtgilead-part,24,Nora B Myers,70,W,F,Head,,,,widow,name+birthyear
+LV1446,Claude Mason Lowe,Lakeview,1897,1991,2,74,mtgilead-part,27,Claude Lowe,42,W,M,Head,Bus Driver / Farmer,Public School / Farm,GW/OA,60 hrs; $990; two entries,name+birthyear
+LV0079,Walter W. Ballenger,Lakeview,1883,1957,2,80,mtgilead-part,29,Walter Ballenger,57,W,M,Head,Laborer,Painter,PW,18 hrs; $400,name+birthyear
+LV0076,Mabel M. Ballenger,Lakeview,1885,1968,3,1,mtgilead-part,29,Mabel Ballenger,54,W,F,Wife,,,,,name+birthyear
+LV0067,Charles Isaac Ballenger,Lakeview,1919,1989,3,2,mtgilead-part,29,Chas Isaac Ballenger,21,W,M,Son,Delivery Boy,Retail Grocery,PW,40 wks unemployed; $100,name+birthyear
+LV0921,Jane Ann Lewis Tribby,Lakeview,1882,1941,3,17,mtgilead-part,33,Jane Tribby,57,W,F,Wife,,,,,name+birthyear
+LV0586,William Henry Laycock,Lakeview,1857,1945,3,24,mtgilead-part,35,Will H Laycock,83,W,M,Head,,,,widower,name+birthyear
+LV0193,Harry Wilmer Burke,Lakeview,1883,1958,3,32,mtgilead-part,37,Harry W Burke,56,W,M,Head,Laborer,Painter,PW,26 wks unemployed; $400,name+birthyear
+LV0192,Nellie E. Burke,Lakeview,1886,1947,3,33,mtgilead-part,37,Nellie Burke,54,W,F,Wife,,,,,name+birthyear
+LV1741,Catherine Virginia Hurst Rhodes,Lakeview,1875,1959,4,51,mtgilead-part,43,Catherine Rhodes,65,W,F,Wife,,,,,name+birthyear
+LV1191,Charles Yates Hall,Lakeview,1910,1983,4,71,mtgilead-part,49,Chas Y Hall,29,W,M,Head,Grocerman,Retail Grocery Store,OA,52 wks; lived Loudoun rural 1935,name+birthyear
+LV1189,Addie Blanche Thomas Hall,Lakeview,1913,1966,4,72,mtgilead-part,49,Addie B Hall,26,W,F,Wife,,,,,name+birthyear
+LV1565,Robert P. Newton,Lakeview,1900,1962,4,74,mtgilead-part,50,Robert Newton,38,W,M,Head,Manager,Evandale Nursery Stock,PW,52 wks; $1000,name+birthyear
+LV0363,Mary Alvernon Thomas Ely,Lakeview,1900,1974,5,3,mtgilead-part,53,Mary Ely,39,W,F,Wife,,,,,name+birthyear
+LV0366,George Richmond Ely,Lakeview,1931,1998,5,5,mtgilead-part,53,George R Ely,8,W,M,Son,,,,,name+birthyear
+LV1693,Thomas R. Preston,Lakeview,1872,1964,5,13,mtgilead-part,56,Thomas R Preston,67,W,M,Head,Laborer,Evandale Nursery,PW,60 hrs; $650,name+birthyear
+LV1685,Edna May Tribby Preston,Lakeview,1873,1972,5,14,mtgilead-part,56,Edna May Preston,66,W,F,Wife,,,,,name+birthyear
+LV1687,George Syndor Preston,Lakeview,1911,2002,5,15,mtgilead-part,56,George Preston,28,W,M,Son,Salesman,Radio Retails,OA,48 hrs,name+birthyear
+LV1690,Mildred Tuck Preston,Lakeview,1911,1975,5,16,mtgilead-part,56,Mildred Preston,29,W,F,Daughter-in-law,,,,,name+birthyear
+LV1683,Charles T. Preston,Lakeview,1939,2017,5,17,mtgilead-part,56,Chas Preston,0,W,M,Grandson,,,,,name+birthyear
+LV1307,Margaret Virginia James,Lakeview,1880,1953,5,23,mtgilead-part,58,Margaret James,58,W,F,Head,Farmer,Farm,OA,60 hrs; born Texas,name+birthyear
+LV1755,Blanche Gulick Rogers,Lakeview,1870,1952,5,24,mtgilead-part,58,Blanche Rogers,69,W,F,Cousin,,,,,name+birthyear
+LV1922,Fred J. Thomas,Lakeview,1873,1957,5,28,mtgilead-part,60,Fred Thomas,66,W,M,Head,Carpenter,Home Construction,PW,30 hrs; $800,name+birthyear
+LV0577,Olivia Warner Kidwell,Lakeview,1877,1945,5,31,mtgilead-part,61,Olivia Kidwell,63,W,F,Wife,,,,,name+birthyear
+LV0562,Nellie Golden James,Lakeview,1884,1944,5,34,mtgilead-part,63,Nellie James,55,W,F,Head,,,,,name+birthyear
+LV1298,Glova M. James,Lakeview,1890,1953,5,35,mtgilead-part,63,Glova Mae James,49,W,F,Sister,,,,,name+birthyear
+LV0731,Alice M. Norris,Lakeview,,1853,5,37,mtgilead-part,64,Alice Norris,86,W,F,Head,,,,(School Teacher 1900),name-only
+LV1587,Ruth B. Brown Orrison,Lakeview,1893,1958,6,55,mtgilead-part,69,Ruth B Orrison,46,W,F,Head,,,,widow,name+birthyear
+LV1584,George Albert Orrison III,Lakeview,1927,1992,6,56,mtgilead-part,69,George A Orrison,12,W,M,Son,,,,,name+birthyear
+LV1581,Edwin Raymond Orrison,Lakeview,1928,1989,6,57,mtgilead-part,69,Edwin R Orrison,11,W,M,Son,,,,,name+birthyear
+LV0171,Mary Francenia Brown,Lakeview,1859,1944,6,59,mtgilead-part,69,Mary F Brown,81,W,F,Aunt,,,,,name+birthyear
+LV1969,Helen E. Burke Trussell,Lakeview,1907,1989,6,64,mtgilead-part,71,Helen Trussell,32,W,F,Wife,,,,,name+birthyear
+LV0225,James E. Clagett,Lakeview,1912,1967,6,67,mtgilead-part,72,Jim Clagett,28,W,M,Son,Laborer,Plumber,PW,48 hrs; 52 wks; $600,name+birthyear
+LV0096,Harriet A. Beans,Lakeview,1857,1940,6,73,mtgilead-part,75,Harriet Beans,83,W,F,Head,,,,widow (F. J. Beans undertaker household?),name+birthyear
+LV1316,Bessie Ann Wynkoop Jenkins,Lakeview,1882,1984,6,74,mtgilead-part,75,Bessie Jenkins,57,W,F,Daughter,,,,widow; lived Washington DC 1935,name+birthyear
+LV0908,George Edwin Thomas,Lakeview,1868,1944,7,2,mtgilead-part,79,George Thomas,71,W,M,Head,Assessor,County Work,GW,20 wks; $300 (Mill Laborer 1900),name+birthyear
+LV1915,Blanche M. Thomas,Lakeview,1871,1958,7,3,mtgilead-part,79,Blanche Thomas,67,W,F,Wife,,,,,name+birthyear
+LV1891,Clayton William Talton,Lakeview,1900,1960,7,17,mtgilead-part,85,Clayton Talton,39,W,M,Head,Laborer,Grain & Feed Mill,PW,48 hrs; $780; lived Loudoun rural 1935,name+birthyear
+LV1889,Charles William Talton,Lakeview,1924,2005,7,19,mtgilead-part,85,Charles Talton,16,W,M,Son,Laborer,Farm,PW,60 hrs; $240,name+birthyear
+LV1893,James Hedrick Talton,Lakeview,1929,1948,7,21,mtgilead-part,85,James Talton,11,W,M,Son,,,,,name+birthyear
+LV1890,Clayton Talton Jr.,Lakeview,1932,2014,7,22,mtgilead-part,85,Clayton Talton,8,W,M,Son,,,,,name+birthyear
+LV1884,Nellie K. Sulcer,Lakeview,1903,1981,7,27,mtgilead-part,87,Nellie Sulcer,37,W,F,Head,,,,widow,name+birthyear
+LV1809,Edna Mabel Warner Shoemaker,Lakeview,1876,1976,8,46,mtgilead-part,92,Edna W Shoemaker,63,W,F,Head,,,,widow,name+birthyear
+LV1810,Mildred Irene Shoemaker,Lakeview,1904,1986,8,47,mtgilead-part,92,Mildred Shoemaker,35,W,F,Daughter,,,,seeking work 52 wks,name+birthyear
+LV0689,Cora Etta Mock,Lakeview,1862,1948,8,48,mtgilead-part,93,Cora Mock,77,W,F,Head,,,,,name+birthyear
+LV0688,Ida M. Mock,Lakeview,1865,1942,8,49,mtgilead-part,93,Ida Mock,74,W,F,Sister,,,,,name+birthyear
+LV1268,Lula P. Warner Howard,Lakeview,1879,1964,8,54,mtgilead-part,95,Lula Howard,60,W,F,Head,,,,widow,name+birthyear
+PV0028,Maurice Chinn,Pleasant Valley,1931,1979,8,62,mtgilead-part,97,Maurice Chinn,10,B,M,Son,,,,,name+birthyear
+LV1476,Margaret Virginia McFarland,Lakeview,1884,1962,8,64,mtgilead-part,98,Margaret McFarland,55,W,F,Head,,,,single (McFarland grocer household 1900),name+birthyear
+PV0185,Joanna Mitchell Owens,Pleasant Valley,1916,1994,J1,7,jefferson-part,J1,Joanna Owens,23,B,F,Daughter,House Help,Private Home,PW,24 hrs; 26 wks; $45,name+birthyear
+PV0149,Mary J. Mitchell Lucas,Pleasant Valley,1909,1999,J1,13,jefferson-part,J2,Mary Lucas,30,B,F,Wife,House Help,Farm,PW,24 hrs; 26 wks; $45,name+birthyear
+PV0312,Charles M. Lucas,Pleasant Valley,1937,2010,J1,17,jefferson-part,J2,Charles Lucas,3,B,M,Son,,,,,name+birthyear
+PV0153,Lawrence Leo Lucas,Pleasant Valley,1939,1958,J1,18,jefferson-part,J2,Lawrence Lucas,1,B,M,Son,,,,,name+birthyear
+PV0255,Laura Virginia Marcellus Waters,Pleasant Valley,1892,1979,J1,27,jefferson-part,J5,Laura Waters,48,B,F,Wife,,,,,name+birthyear
+PV0256,Jerome Harrison Waters,Pleasant Valley,1933,1988,J1,29,jefferson-part,J5,Jerome Waters,6,B,M,Son,,,,,name+birthyear
+PV0038,George E. Clark,Pleasant Valley,1931,1999,J1,36,jefferson-part,J7,George Clark,9,B,M,Adopted son,,,,,name+birthyear
+LV1746,John S. Rhodes,Lakeview,1903,1964,J1,37,jefferson-part,J8,John S Rhodes,37,W,M,Head,Painting Contractor,Building,OA,60 hrs; 52 wks; rents $9,name+birthyear
+LV1750,Robert R. Rhodes,Lakeview,1925,1970,J1,39,jefferson-part,J8,Robert R Rhodes,14,W,M,Son,,,,,name+birthyear
+LV0271,Teresa Preston Cox,Lakeview,1889,1973,J2,41,jefferson-part,J9,Teresa Cox,50,W,F,Wife,,,,,name+birthyear
+PV0097,Fannie J. Harvey,Pleasant Valley,1860,1940,J2,47,jefferson-part,J12,Fannie J Harvey,79,B,F,Head,Laundress,Home,OA,6 hrs; 6 wks; widow; owns $500,name+birthyear
+PV0032,James E. Clark,Pleasant Valley,1927,1996,J2,50,jefferson-part,J13,James Clark,12,B,M,Grandson,,,,born New Jersey,name+birthyear
+PV0108,Lawrence H. Johnson,Pleasant Valley,1894,1940,J2,67,jefferson-part,J17,Lawrence Johnson,45,B,M,Head,Laborer,Flour Mill,PW,60 hrs; 52 wks; $624; owns $900 (PV0108 Lawrence H. Johnson - son of Charles Johnson farmer 1900),name+birthyear
+PV0106,Charles B. Johnson,Pleasant Valley,1920,1983,J2,69,jefferson-part,J17,Charles Johnson,19,B,M,Son,House Boy,Private Home,PW,60 hrs; 52 wks; $260,name+birthyear
+PV0146,Loretta Amelia Stewart Logan,Pleasant Valley,1910,1973,J2,74,jefferson-part,J18,Loretta Logan,30,B,F,Wife,Cook,Private Home,PW,42 hrs; 52 wks; $156; born DC,name+birthyear
+PV0220,Arthur William Sanford,Pleasant Valley,1923,1985,J2,80,jefferson-part,J19,Arthur Sanford,16,B,M,Son,,,,at school,name+birthyear
+LV0080,William F. Ballenger,Lakeview,1901,1959,J3,19,jefferson-part,J24,William S Ballenger,38,W,M,Head,Laborer,Road Maintenance,GW,48 hrs; 48 wks; $720; rents $10,name+birthyear
+LV0072,Elsie M. Putnam Ballenger,Lakeview,1915,1985,J3,20,jefferson-part,J24,Elsie May Ballenger,25,W,F,Wife,,,,,name+birthyear

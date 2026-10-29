@@ -1,0 +1,9 @@
+person_id,display_name,field,old_value,new_value,dar_entry,ark,note
+LV0600,John Franklin Laycock,birth_date,1842,1842-09-29,456,3Q9M-CSK7-5S8L-9,"DAR gives Sept. 29, 1842"
+LV0600,John Franklin Laycock,birth_precision,year,day,456,3Q9M-CSK7-5S8L-9,
+LV0600,John Franklin Laycock,death_date,1927,1927-01-07,456,3Q9M-CSK7-5S8L-9,"DAR gives Jan. 7, 1927"
+LV0600,John Franklin Laycock,death_precision,year,day,456,3Q9M-CSK7-5S8L-9,
+LV0842,Summerville A. Schooley,memo,,WOMAN - wife of Milton Schooley,271,3Q9M-CSK7-5S8L-W,"DAR reads 'Summervill A., wife of Milton Schooley, d. Sept. 5, 1901 Aged 53 yrs.' The dataset name reads male and no sex was recorded."
+LV0842,Summerville A. Schooley,relation_raw,,W/O MILTON SCHOOLEY,271,3Q9M-CSK7-5S8L-W,from the DAR entry
+LV0851,John Shaffer,memo,CSA 8TH VA,"CSA 8TH VA | wife Amanda J., d. 9 June 1916 aged 68",626,3Q9M-CSK7-5SDP-P,"DAR entry 626 names 'Amanda J., wife of John Schaffer'. Does not resolve which John Shaffer this stone belongs to."
+LV1385,Mary Catherine Roberts Laycock,relation_raw,,W/O JOHN F LAYCOCK,457,3Q9M-CSK7-5S8L-9,DAR names her as his wife

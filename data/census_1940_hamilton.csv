@@ -1,0 +1,410 @@
+image,line,hh,surname,given,relation,race,sex,age,occupation,industry,class,note
+1,1,1,Lee,Sara Ann,Head,W,F,77,,,,widow
+1,2,1,Lee,Beulah May,Daughter,W,F,49,,,,H (housework)
+1,3,1,Dowell,Sallie,Lodger,W,F,66,,,,
+1,4,2,Grimes,James E,Head,W,M,74,Laborer,,PW,42 hrs; $180
+1,5,2,Grimes,Elizabeth,Wife,W,F,69,,,,
+1,6,3,Clatterbuck,Thomas,Head,W,M,29,Truck Driver,Commercial Hauling,PW,48 hrs; $700; lived Fauquier Co 1935
+1,7,3,Clatterbuck,Francis,Wife,W,F,26,,,,
+1,8,3,Clatterbuck,Mary Ann,Daughter,W,F,4,,,,
+1,9,3,Clatterbuck,Marline,Daughter,W,F,3,,,,
+1,10,3,Clatterbuck,Joseph,Son,W,M,2,,,,
+1,11,3,Clatterbuck,Janice,Daughter,W,F,1,,,,
+1,12,4,Laycock,Frank,Head,W,M,57,Salesman,Retail Grocery,OA,60 hrs; owns $3000
+1,13,4,Laycock,Jessie,Wife,W,F,60,,,,
+1,14,4,Laycock,Albert,Son,W,M,25,Salesman,Retail Grocery,OA,60 hrs
+1,15,5,Rhodes,Lacey,Head,W,M,45,Foreman,Lumber Mill,PW,48 hrs; $800
+1,16,5,Rhodes,Carrie,Wife,W,F,37,,,,
+1,17,5,Rhodes,Edgar,Son,W,M,18,Laborer,Cleaning Establishment,PW,48 hrs; $240
+1,18,5,Rhodes,Dorothy,Daughter,W,F,12,,,,
+1,19,5,Mock,James E,Lodger,W,M,87,,,,widower
+1,20,6,Weening,Chas W,Head,W,M,34,Electrician,Retail Radio,OA,48 hrs
+1,21,6,Weening,Dean,Wife,W,F,32,,,,
+1,22,6,Weening,Sylvia J,Daughter,W,F,2,,,,
+1,23,7,Grimes,McNeese,Head,W,M,40,Laborer,Stone Mason,PW,22 wks unemployed; $750
+1,24,7,Grimes,Josie,Wife,W,F,26,,,,
+1,25,7,Grimes,Inez,Daughter,W,F,1,,,,
+1,26,8,Brown,Ralph,Head,W,M,53,Salesman,Grain and Feed Mill,PW,48 hrs; $450
+1,27,8,Brown,Chalmers,Wife,W,F,56,,,,
+1,28,9,White,Lee,Head,W,M,41,Laborer,Feed & Grain Mill,PW,60 hrs; $728
+1,29,9,White,Gladys,Wife,W,F,35,Seamstress,At Home,OA,12 hrs
+1,30,9,White,Robert Lee,Son,W,M,16,Delivery Boy,Newspaper,PW,12 hrs; $30
+1,31,9,Myers,Roger,Nephew,W,M,12,,,,
+1,32,10,Everette,Maude,Head,W,F,65,,,,single
+1,33,11,White,Frank,Head,W,M,69,Laborer,Painter,PW,$470
+1,34,11,Tavenner,Nellie,Housekeeper,W,F,65,Housekeeper,Private Family,,
+1,35,12,Tavenner,Annie,Head,W,F,69,,,,
+1,36,12,Pawell,Annis,Lodger,W,F,75,,,,
+1,37,13,Moorcones,Anthony,Head,W,M,35,Pressman,Newspaper,PW,60 hrs; $900; born Pennsylvania; lived Round Hill 1935
+1,38,13,Moorcones,Mary,Wife,W,F,25,Saleslady,Retail Clothing,PW,12 hrs; $360; born Rumania
+1,39,13,Moorcones,Anthony,Son,W,M,9,,,,born New Jersey
+1,40,13,Moorcones,Tom,Son,W,M,7,,,,born New Jersey
+2,41,13,Moorcones,John,Son,W,M,0,,,,
+2,42,13,Moorcones,Joseph,Brother,W,M,37,Pressman,Evening Star Newspaper,PW,60 hrs; $720; born Pennsylvania; lived Round Hill 1935
+2,43,13,Connoly,Helen W,Maid,W,F,25,Maid,Private Home,PW,60 hrs; $208
+2,44,14,Cannon,Chloe,Head,W,F,70,,,,
+2,45,14,Cannon,Harriet,Sister,W,F,65,,,,
+2,46,15,Magill,Chas W,Head,W,M,78,,,,born Maryland; lived Baltimore 1935
+2,47,15,Magill,Ora A,Wife,W,F,53,,,,
+2,48,15,Hatton,Betty,Granddaughter,W,F,10,,,,born Maryland
+2,49,16,Flippo,Monroe,Head,W,M,79,Laborer,Grain Mill,PW,52 wks; $600
+2,50,16,Flippo,Hattie,Wife,W,F,73,,,,
+2,51,16,Flippo,Nina,Daughter,W,F,43,Clerk,Comm. Bank,PW,36 hrs; $900
+2,52,17,Wiley,Olive,Head,W,F,60,,,,widow
+2,53,17,Wiley,Edgar,Son,W,M,31,Employee,Navy Yard,GW,30 wks unemployed; 24 wks; $720
+2,54,18,Carter,Thomas W,Head,W,M,61,,,,lived Loudoun rural 1935
+2,55,18,Carter,Lula E,Wife,W,F,63,,,,
+2,56,18,Carter,Adrian,Son,W,M,28,Delivers Papers,Post Newspaper,PW,48 hrs; $300
+2,57,19,Fishback,Maloy,Head,W,M,30,Foreman Carpenter,Private Construction,PW,48 hrs; $1000; lived Fauquier 1935
+2,58,19,Fishback,Ruth,Wife,W,F,28,,,,
+2,59,19,Fishback,Shirley,Daughter,W,F,4,,,,
+2,60,20,Schooley,Eva,Head,W,F,65,,,,widow
+2,61,20,Schooley,Alice,Daughter,W,F,27,Clerk,Social Security,GW,36 hrs; $1200
+2,62,21,Ayre,Edward S,Head,W,M,38,Tree Surgeon,Davey Tree Expert,PW,48 hrs; $568; lived Akron Ohio 1935
+2,63,21,Ayre,Anna D,Wife,W,F,39,,,,
+2,64,21,Ayre,Cornelia,Daughter,W,F,11,,,,born Ohio
+2,65,22,Myers,Bess,Head,W,F,59,,,,widow
+2,66,22,Myers,Anna,Daughter,W,F,37,Sales Lady,Retail Clothing,PW,16 hrs; $100
+2,67,23,Saunders,Josephine,Head,W,F,83,,,,widow
+2,68,23,French,Belle,Lodger,W,F,80,,,,
+2,69,24,Myers,Nora B,Head,W,F,70,,,,widow
+2,70,24,Myers,Marvin,Son,W,M,44,Laborer,Painter,PW,24 hrs; $400
+2,71,25,James,Margaret,Head,W,F,48,Practical Nurse,Private Home,PW,35 wks unemployed; $260
+2,72,26,Shoemaker,Arch,Head,W,M,54,Salesman,Automobiles,PW,48 hrs; $1200
+2,73,26,Shoemaker,Ada,Wife,W,F,55,,,,
+2,74,27,Lowe,Claude,Head,W,M,42,Bus Driver / Farmer,Public School / Farm,GW/OA,60 hrs; $990; two entries
+2,75,27,Lowe,Rebecca,Mother,W,F,65,,,,widow
+2,76,27,Manuel,Betty,Aunt,W,F,78,,,,
+2,77,28,Beales,Paul,Head,W,M,51,Auditor,Treasury,GW,48 hrs; $1600
+2,78,28,Beales,May,Wife,W,F,50,,,,
+2,79,28,Pearson,Hazel,Cousin,W,F,13,,,,
+2,80,29,Ballenger,Walter,Head,W,M,57,Laborer,Painter,PW,18 hrs; $400
+3,1,29,Ballenger,Mabel,Wife,W,F,54,,,,
+3,2,29,Ballenger,Chas Isaac,Son,W,M,21,Delivery Boy,Retail Grocery,PW,40 wks unemployed; $100
+3,3,29,Breckenridge,S Walter,Grandson,W,M,8,,,,
+3,4,30,Milbourne,Gordon,Head,W,M,57,Carpenter,Lumber Mill,PW,60 hrs; $800
+3,5,30,Milbourne,Mary,Wife,W,F,54,,,,
+3,6,30,Milbourne,William H,Son,W,M,19,Salesman,Retail Grocery Store,PW,60 hrs; $900
+3,7,30,Milbourne,Lomax,Son,W,M,13,,,,
+3,8,31,Paxson,Arthur K,Head,W,M,63,Manager,Own Retail Grocery Store,OA,50 hrs; lived Loudoun rural 1935
+3,9,31,Paxson,Maude,Wife,W,F,62,,,,
+3,10,31,Paxson,Audrey,Granddaughter,W,F,12,,,,
+3,11,32,Workman,Henry,Head,W,M,23,Laborer,Laundry,PW,50 hrs; $300; lived Loudoun rural 1935
+3,12,32,Workman,Mary,Wife,W,F,18,,,,
+3,13,32,Workman,Mary Ann,Daughter,W,F,2,,,,
+3,14,32,Workman,Betty Lou,Daughter,W,F,0,,,,
+3,15,32,Workman,Mildred,Sister,W,F,16,Ironer,Laundry,PW,40 wks unemployed; 12 wks; $72
+3,16,33,Tribby,Joseph M,Head,W,M,72,,,,lived Loudoun rural 1935
+3,17,33,Tribby,Jane,Wife,W,F,57,,,,
+3,18,33,Tribby,John,Son,W,M,24,Delivery Boy / Salesman,Retail Grocery,PW,48 hrs; $250
+3,19,34,Paxson,Arthur Jr,Head,W,M,38,Salesman,Retail Grocery,PW,60 hrs; $960; lived Washington DC 1935
+3,20,34,Paxson,Alice,Wife,W,F,38,,,,
+3,21,34,Paxson,Doris,Daughter,W,F,18,Attendant,Beauty Salon,PW,36 hrs; $150
+3,22,34,Paxson,Norma,Daughter,W,F,8,,,,
+3,23,34,Paxson,Arthur III,Son,W,M,2,,,,
+3,24,35,Laycock,Will H,Head,W,M,83,,,,widower
+3,25,36,Payne,Sue,Head,W,F,74,,,,widow
+3,26,36,Payne,Herbert,Son,W,M,52,,,,
+3,27,36,Payne,Ed,Son,W,M,28,Laborer,Painter,PW,26 wks unemployed; 20 wks; $260
+3,28,36,Preston,Gene,Daughter,W,F,40,Seamstress,At Home,OA,18 hrs
+3,29,36,Cormley,Mary,Daughter,W,F,30,,,,divorced
+3,30,36,Preston,Patsy,Granddaughter,W,F,7,,,,
+3,31,36,Cormley,Kay,Granddaughter,W,F,6,,,,
+3,32,37,Burke,Harry W,Head,W,M,56,Laborer,Painter,PW,26 wks unemployed; $400
+3,33,37,Burke,Nellie,Wife,W,F,54,,,,
+3,34,37,Burke,Mary Esther,Daughter,W,F,11,,,,
+3,35,38,Lorne,Eugene,Head,W,M,62,Laborer,Farm,PW,48 hrs; $300
+3,36,38,Lorne,Eva S,Wife,W,F,63,,,,
+3,37,38,O'Malley,James,Grandson,W,M,14,,,,born DC; lived Washington 1935
+3,38,39,Shepherd,William M,Head,W,M,27,Carpenter,Private Construction,PW,36 hrs; 26 wks; $300; lived Loudoun rural 1935
+3,39,39,Shepherd,Ola,Wife,W,F,20,,,,
+3,40,39,Shepherd,David,Son,W,M,2,,,,
+4,41,39,Shepherd,Helen,Sister,W,F,13,,,,
+4,42,40,Costello,Ella,Head,W,F,39,Practical Nurse,Private Home,PW,20 wks; $360; single; lived Loudoun rural 1935
+4,43,41,Wolford,Blaine,Head,W,M,48,Station Agent,Electric R. Road,PW,52 wks; $935
+4,44,41,Wolford,Elsie,Wife,W,F,42,Merchant,Grocery Store,OA,52 wks
+4,45,41,Wolford,Virginia,Daughter,W,F,21,,,,seeking work 68 wks
+4,46,41,Wolford,Dorothy,Daughter,W,F,18,,,,seeking work 68 wks
+4,47,42,Orrison,Pleasant,Head,W,F,94,,,,
+4,48,42,Orrison,Elizabeth,Sister,W,F,90,,,,
+4,49,42,Orrison,Virginia,Sister,W,F,87,,,,
+4,50,43,Rhodes,Sam M,Head,W,M,68,Laborer,Farm,PW,20 wks; $300
+4,51,43,Rhodes,Catherine,Wife,W,F,65,,,,
+4,52,43,Tribby,Robert,Lodger,W,M,25,Salesman,Retail Grocery,PW,52 wks; $624
+4,53,44,Monroe,Maclyn,Head,W,M,24,Laborer,Auto Garage,PW,40 wks; $720; born DC; lived Washington 1935
+4,54,44,Monroe,Evelyn,Wife,W,F,25,,,,
+4,55,44,Monroe,Nancy,Daughter,W,F,0,,,,
+4,56,45,Hoge,Laura,Head,W,F,72,Lodging House,,OA,widow; entry faint
+4,57,45,Chamblin,John W,Lodger,W,M,86,,,,widower (Dry Goods Merchant 1900)
+4,58,45,Hatcher,William B,Lodger,W,M,66,,,,
+4,59,45,Hess,Claude D,Lodger,W,M,67,Assistant Postmaster,U.S. Post Office,GW,34 wks; $550 (Dry Goods Clerk 1900)
+4,60,45,Janney,Cosmelia,Lodger,W,F,81,,,,widow
+4,61,45,Brent,Lula,Lodger,W,F,68,,,,
+4,62,46,Rollison,Geo E,Head,W,M,44,Contractor,Own Construction,OA,52 wks; lived Loudoun rural 1935
+4,63,46,Rollison,Mazie,Wife,W,F,44,,,,
+4,64,46,Rollison,Kennith,Son,W,M,16,,,,
+4,65,46,Rollison,Martha,Daughter,W,F,11,,,,
+4,66,46,Wightman,Walter,Lodger,W,M,73,Laborer,Floor Sanding,PW,24 wks; $228; born Pennsylvania
+4,67,47,Long,Bowen,Head,W,M,51,Salesman,Mens Retail Clothing,PW,30 wks; $500
+4,68,47,Long,Ruth C,Wife,W,F,51,,,,
+4,69,48,Thompson,Howard,Head,W,M,79,,,,(Farmer 1900 rural)
+4,70,48,Thompson,Mattie,Wife,W,F,69,,,,
+4,71,49,Hall,Chas Y,Head,W,M,29,Grocerman,Retail Grocery Store,OA,52 wks; lived Loudoun rural 1935
+4,72,49,Hall,Addie B,Wife,W,F,26,,,,
+4,73,49,Hall,Bonnie Sue,Daughter,W,F,4,,,,born DC
+4,74,50,Newton,Robert,Head,W,M,38,Manager,Evandale Nursery Stock,PW,52 wks; $1000
+4,75,50,Newton,Dorothy,Wife,W,F,33,,,,
+4,76,50,Newton,Betty,Daughter,W,F,12,,,,
+4,77,51,Silcott,William H,Head,W,M,82,,,,widower; index spells Silcoth
+4,78,51,Silcott,Etta,Daughter,W,F,53,,,,
+4,79,52,Brown,Williard,Head,W,M,25,Truck Driver,Laundry,PW,52 wks; $900; lived Loudoun rural 1935
+4,80,52,Brown,Nellie Ann,Wife,W,F,22,,,,
+5,1,52,Brown,Wayne Gibson,Son,W,M,1,,,,
+5,2,53,Ely,Richmond,Head,W,M,39,Salesman,Union Life Ins. Co.,OA,26 hrs; 52 wks
+5,3,53,Ely,Mary,Wife,W,F,39,,,,
+5,4,53,Ely,Patsy,Daughter,W,F,9,,,,
+5,5,53,Ely,George R,Son,W,M,8,,,,
+5,6,54,Dickens,Oden,Head,W,M,26,Foreman,Lumber Mill,PW,60 hrs; $1000; lived Loudoun rural 1935
+5,7,54,Dickens,Alene,Wife,W,F,26,,,,
+5,8,54,Dickens,Betty Jean,Daughter,W,F,4,,,,
+5,9,54,Dickens,Lowell E,Son,W,M,1,,,,
+5,10,55,Cole,Henry B,Head,W,M,48,Minister,Baptist Church,PW,48 hrs; $1600
+5,11,55,Cole,Lee,Wife,W,F,40,,,,
+5,12,55,Cole,H Ben,Son,W,M,6,,,,
+5,13,56,Preston,Thomas R,Head,W,M,67,Laborer,Evandale Nursery,PW,60 hrs; $650
+5,14,56,Preston,Edna May,Wife,W,F,66,,,,
+5,15,56,Preston,George,Son,W,M,28,Salesman,Radio Retails,OA,48 hrs
+5,16,56,Preston,Mildred,Daughter-in-law,W,F,29,,,,
+5,17,56,Preston,Chas,Grandson,W,M,0,,,,
+5,18,56,Preston,Alice,Sister,W,F,73,,,,
+5,19,57,Frazer,William P,Head,W,M,29,Medical Doctor,Private Practice,OA,60 hrs; lived Orange Va 1935
+5,20,57,Frazer,Ann,Wife,W,F,21,,,,lived Roanoke 1935
+5,21,57,Frazer,Linda Ann,Daughter,W,F,0,,,,
+5,22,57,Nemally,Ruth,Lodger,W,F,25,School Teacher,Public School,GW,30 hrs; 38 wks; $830; lived Dinwiddie 1935
+5,23,58,James,Margaret,Head,W,F,58,Farmer,Farm,OA,60 hrs; born Texas
+5,24,58,Rogers,Blanche,Cousin,W,F,69,,,,
+5,25,58,Wynkoop,Frank,Lodger,W,M,60,Merchant,Own Clothing & Retail Goods,OA,48 hrs
+5,26,59,Thomas,Holmes,Head,W,M,31,Assistant Secretary,Mutual Ins. Company,PW,48 hrs; $1500
+5,27,59,Thomas,Glennis,Wife,W,F,22,,,,
+5,28,60,Thomas,Fred,Head,W,M,66,Carpenter,Home Construction,PW,30 hrs; $800
+5,29,60,Thomas,Emma F,Wife,W,F,64,,,,born DC
+5,30,61,Kidwell,James,Head,W,M,63,Grocer,Own Retail Grocery Store,OA,60 hrs (Tinner 1900)
+5,31,61,Kidwell,Olivia,Wife,W,F,63,,,,
+5,32,62,Milbourne,Junius B,Head,W,M,64,Salesman,Emmons Nursery Co,PW,48 hrs; $600
+5,33,62,Milbourne,Mollie G,Wife,W,F,62,,,,
+5,34,63,James,Nellie,Head,W,F,55,,,,
+5,35,63,James,Glova Mae,Sister,W,F,49,,,,
+5,36,63,James,Forest,Brother,W,M,42,,,,
+5,37,64,Norris,Alice,Head,W,F,86,,,,(School Teacher 1900)
+5,38,65,Skinner,Earl,Head,W,M,31,Trucking,Commercial Hauling,OA,48 hrs
+5,39,65,Skinner,Edna H,Wife,W,F,32,,,,
+5,40,65,Skinner,Peggy Ann,Daughter,W,F,1,,,,
+6,41,66,Tillette,Hugh A,Head,W,M,55,Farmer,Farm,OA,48 hrs; 52 wks; farm schedule 2
+6,42,66,Tillette,Mary L,Wife,W,F,48,,,,born Massachusetts
+6,43,66,Tillette,Leonard R,Son,W,M,17,,,,born Massachusetts
+6,44,66,Tillette,Virginia,Daughter,W,F,15,,,,born Massachusetts
+6,45,66,Tillette,Ruth,Daughter,W,F,13,,,,born Massachusetts
+6,46,67,Ayre,Dan W,Head,W,M,42,Laborer,Auto Garage,PW,60 hrs; $625; lived Loudoun rural 1935
+6,47,67,Ayre,Lillian,Wife,W,F,39,,,,
+6,48,67,Ayre,Donald,Son,W,M,8,,,,
+6,49,67,Donaldson,Eliza,Lodger,W,F,78,,,,widow
+6,50,68,Smallwood,Lester,Head,W,M,47,Minister,Methodist Church,PW,48 hrs; $1800; born West Va; lived Staunton 1935
+6,51,68,Smallwood,Dorothy E,Wife,W,F,40,,,,born Pennsylvania
+6,52,68,Smallwood,Dorothy,Daughter,W,F,20,,,,born DC
+6,53,68,Smallwood,Lester H,Son,W,M,12,,,,
+6,54,68,Smallwood,Gerald,Son,W,M,10,,,,
+6,55,69,Orrison,Ruth B,Head,W,F,46,,,,widow
+6,56,69,Orrison,George A,Son,W,M,12,,,,
+6,57,69,Orrison,Edwin R,Son,W,M,11,,,,
+6,58,69,Orrison,John F,Son,W,M,10,,,,
+6,59,69,Brown,Mary F,Aunt,W,F,81,,,,
+6,60,70,Jacobs,Henry,Head,W,M,42,Laborer,Painter,PW,18 hrs; 30 wks; $450; lived Loudoun rural 1935
+6,61,70,Jacobs,Linnie,Wife,W,F,42,,,,
+6,62,70,Jacobs,Kenneth,Son,W,M,16,Laborer,Painter,PW,18 hrs; 26 wks; $530
+6,63,71,Trussell,Roger,Head,W,M,34,Mechanic,Own Garage,OA,48 hrs; 52 wks
+6,64,71,Trussell,Helen,Wife,W,F,32,,,,
+6,65,71,Trussell,Ann,Daughter,W,F,12,,,,
+6,66,72,Clagett,Bertie,Head,W,F,59,,,,widow
+6,67,72,Clagett,Jim,Son,W,M,28,Laborer,Plumber,PW,48 hrs; 52 wks; $600
+6,68,72,Clagett,Tom,Son,W,M,23,Egg Tester,Cudahay Meat Packers,PW,60 hrs; 52 wks; $900
+6,69,73,Hathaway,Lucille,Head,W,F,49,,,,
+6,70,73,Hathaway,Blanche,Sister,W,F,52,,,,
+6,71,74,Chamblin,Ella,Head,W,F,59,,,,widow
+6,72,74,Chamblin,Elizabeth,Daughter,W,F,30,Music Teacher,Own Studio,OA,18 hrs; 26 wks
+6,73,75,Beans,Harriet,Head,W,F,83,,,,widow (F. J. Beans undertaker household?)
+6,74,75,Jenkins,Bessie,Daughter,W,F,57,,,,widow; lived Washington DC 1935
+6,75,75,Wynkoop,Evelyn,Granddaughter,W,F,15,,,,
+6,76,76,Boyd,Laura,Head,W,F,60,,,,widow
+6,77,77,Nichols,Eliza,Head,W,F,83,,,,widow
+6,78,77,Nichols,Naomi,Daughter,W,F,45,,,,
+6,79,78,Shultz,Paul,Head,W,M,42,Clerk,U.S. Govt,GW,48 hrs; 52 wks; $1800; born New York
+6,80,78,Shultz,Nellie,Wife,W,F,46,,,,born New Jersey
+7,1,78,Shultz,Ruth,Daughter,W,F,15,,,,born China
+7,2,79,Thomas,George,Head,W,M,71,Assessor,County Work,GW,20 wks; $300 (Mill Laborer 1900)
+7,3,79,Thomas,Blanche,Wife,W,F,67,,,,
+7,4,80,Herndon,Merlin L,Head,W,M,61,Book Keeper,Hamilton Milling Co.,PW,48 hrs; $1500
+7,5,80,Herndon,Blanche,Wife,W,F,60,,,,
+7,6,81,Rogers,Howard,Head,W,M,54,Miller,Own Grain Mill,OA,36 hrs; 52 wks
+7,7,81,Rogers,Beulah,Wife,W,F,56,,,,
+7,8,81,Rogers,Esther,Daughter,W,F,23,,,,
+7,9,81,Rogers,Jane,Daughter,W,F,21,,,,
+7,10,82,Kerr,Floyd N,Head,W,M,66,Registered Druggist,Own Drug Store,OA,60 hrs; 52 wks
+7,11,82,Kerr,Lillian,Wife,W,F,63,,,,
+7,12,82,Kerr,Alice,Daughter,W,F,33,Teacher,Public School,GW,30 hrs; 38 wks; $900
+7,13,83,Love,F Mercer,Head,W,M,53,Farmer,Farm,OA,30 hrs; 52 wks
+7,14,83,Love,Gertrude,Wife,W,F,53,,,,
+7,15,84,Kuhlmann,Charles,Head,W,M,74,Farmer,Farm,OA,60 hrs; 52 wks
+7,16,84,Kuhlmann,Malinda,Wife,W,F,73,,,,
+7,17,85,Talton,Clayton,Head,W,M,39,Laborer,Grain & Feed Mill,PW,48 hrs; $780; lived Loudoun rural 1935
+7,18,85,Talton,Malcoma,Wife,W,F,37,,,,
+7,19,85,Talton,Charles,Son,W,M,16,Laborer,Farm,PW,60 hrs; $240
+7,20,85,Talton,George,Son,W,M,14,,,,
+7,21,85,Talton,James,Son,W,M,11,,,,
+7,22,85,Talton,Clayton,Son,W,M,8,,,,
+7,23,85,Talton,Albert,Son,W,M,2,,,,
+7,24,86,James,Will,Head,W,M,88,,,,widower
+7,25,86,Simmons,Anna,Servant,W,F,26,Housekeeper,Private Home,PW,35 hrs; $200; lived Loudoun rural 1935
+7,26,86,Simmons,Beatrice,Servant,W,F,8,,,,
+7,27,87,Sulcer,Nellie,Head,W,F,37,,,,widow
+7,28,87,Sulcer,Roger,Son,W,M,13,,,,
+7,29,87,Sulcer,Clarence,Son,W,M,11,,,,
+7,30,88,Mock,Henry,Head,W,M,39,Blacksmith,Own Business,OA,60 hrs; 52 wks
+7,31,88,Mock,Bertie,Wife,W,F,35,,,,
+7,32,88,Mock,Loraine,Daughter,W,F,13,,,,
+7,33,88,Mock,Anne,Daughter,W,F,11,,,,
+7,34,88,Mock,Nancy,Daughter,W,F,9,,,,
+7,35,89,Trussell,Harry,Head,W,M,45,Salesman,Leesburg Grain and Feed Co,PW,72 hrs; $840
+7,36,89,Trussell,Minnie Bell,Wife,W,F,38,Teacher,Public School,GW,30 hrs; 38 wks; $840
+7,37,89,Arnold,Richard,Brother-in-law,W,M,50,Rural Supervisor,Evening Star Paper,PW,60 hrs; $750
+7,38,90,Thornsberry,Richard,Head,W,M,34,Mechanic,Implement Company,PW,52 wks; $780; lived Loudoun rural 1935
+7,39,90,Thornsberry,Ruth,Wife,W,F,34,,,,
+7,40,90,Thornsberry,Patricia,Daughter,W,F,12,,,,
+8,41,90,Thornsberry,Northa,Daughter,W,F,10,,,,
+8,42,91,Nichols,Rodney,Head,W,M,73,,,,
+8,43,91,Nichols,Mary E,Wife,W,F,69,,,,
+8,44,91,Nichols,Mary Ann,Daughter,W,F,30,Post Mistress,U.S. Post Office,GW,44 hrs; 52 wks; $1500
+8,45,91,Morrow,Julia,Sister-in-law,W,F,63,,,,
+8,46,92,Shoemaker,Edna W,Head,W,F,63,,,,widow
+8,47,92,Shoemaker,Mildred,Daughter,W,F,35,,,,seeking work 52 wks
+8,48,93,Mock,Cora,Head,W,F,77,,,,
+8,49,93,Mock,Ida,Sister,W,F,74,,,,
+8,50,93,Myers,Mary,Housekeeper,W,F,50,Housekeeper,Private Home,PW,35 hrs; 52 wks; $200; widow
+8,51,93,Myers,Francis,Housekeeper's child,W,F,19,,,,
+8,52,94,Thompson,John,Head,W,M,80,,,,
+8,53,94,Thompson,Amelia,Wife,W,F,67,,,,
+8,54,95,Howard,Lula,Head,W,F,60,,,,widow
+8,55,96,Hough,Samuel,Head,W,M,78,,,,
+8,56,96,Hough,Blanche,Wife,W,F,65,,,,
+8,57,96,Hough,Berkley,Son,W,M,33,Farmer,Farm,OA,60 hrs; 52 wks; farm schedule 3
+8,58,96,Hough,Audrey Lee,Granddaughter,W,F,6,,,,
+8,59,97,Chinn,Daisy,Head,B,F,40,Maid,Private Home,PW,40 hrs; 26 wks; $250; widow; lived Loudoun rural 1935
+8,60,97,Chinn,Helen,Daughter,B,F,13,,,,
+8,61,97,Chinn,Gilbert,Son,B,M,12,,,,
+8,62,97,Chinn,Maurice,Son,B,M,10,,,,
+8,63,97,Chinn,Theodore,Son,B,M,9,,,,
+8,64,98,McFarland,Margaret,Head,W,F,55,,,,single (McFarland grocer household 1900)
+J1,1,J1,Mitchel,Norman,Head,B,M,65,Farm Laborer,Farm,PW,26 wks; $200; seeking work 39 wks; owns $700; ED 54-4 begins (Jefferson district part of town)
+J1,2,J1,Mitchel,Betty,Wife,B,F,60,House Help,Private Home,PW,48 hrs; 52 wks; $416
+J1,3,J1,Mitchel,Maria,Daughter,B,F,28,,,,H
+J1,4,J1,Mitchel,Norman,Son,B,M,26,Farm Laborer,Farm,PW,60 hrs; 40 wks; $480
+J1,5,J1,Mitchel,Charles W,Son,B,M,22,Farm Laborer,Farm,PW,20 wks; $210; seeking 45 wks
+J1,6,J1,Mitchel,Christelle,Daughter,B,F,18,House Help,Private Home,PW,24 hrs; 18 wks; $31
+J1,7,J1,Owens,Joanna,Daughter,B,F,23,House Help,Private Home,PW,24 hrs; 26 wks; $45
+J1,8,J1,Owens,John,Son-in-law,B,M,35,Farm Laborer,Farm,PW,52 wks; $360
+J1,9,J1,Owens,James,Grandson,B,M,10,,,,
+J1,10,J1,Owens,Lenwood,Grandson,B,M,4,,,,
+J1,11,J1,Owens,John,Grandson,B,M,1,,,,
+J1,12,J2,Lucas,John,Head,B,M,24,Farm Laborer,Farm,PW,60 hrs; 26 wks; $480; rents $3
+J1,13,J2,Lucas,Mary,Wife,B,F,30,House Help,Farm,PW,24 hrs; 26 wks; $45
+J1,14,J2,Lucas,Ruby,Daughter,B,F,9,,,,
+J1,15,J2,Lucas,Wesley,Son,B,M,7,,,,
+J1,16,J2,Lucas,Flossie,Daughter,B,F,5,,,,
+J1,17,J2,Lucas,Charles,Son,B,M,3,,,,
+J1,18,J2,Lucas,Lawrence,Son,B,M,1,,,,
+J1,19,J3,Owens,Robert,Head,B,M,68,Janitor,Public School,GW,50 hrs; 36 wks; $144; owns $800
+J1,20,J3,Owens,Emma,Wife,B,F,65,,,,
+J1,21,J3,Gibson,Ida May,Adopted daughter,B,F,4,,,,
+J1,22,J4,Cook,Alvernia,Head,B,F,64,Cook,Private Home,PW,60 hrs; 52 wks; $364; widow; owns $900
+J1,23,J4,Gaskins,George,Grandson,B,M,16,Farm Laborer,Farm,PW,26 wks; $234; seeking 39 wks
+J1,24,J4,Gaskins,Florence,Granddaughter,B,F,13,,,,
+J1,25,J4,Cook,Doris Anne,Granddaughter,B,F,8,,,,
+J1,26,J5,Waters,John,Head,B,M,52,Farm Laborer,Farm,PW,26 wks; $234; seeking 39 wks; rents $3
+J1,27,J5,Waters,Laura,Wife,B,F,48,,,,
+J1,28,J5,Waters,Helen,Daughter,B,F,13,,,,
+J1,29,J5,Waters,Jerome,Son,B,M,6,,,,
+J1,30,J6,Levenbury,Walter,Head,B,M,53,Boiler Operator,Slaughter House,PW,52 wks; $790; owns $600
+J1,31,J6,Rowe,Annabel,Housekeeper,B,F,29,Housekeeper,Private Home,PW,84 hrs; 52 wks; $156
+J1,32,J6,Rowe,Clarence Edgar,Housekeeper's son,B,M,14,,,,
+J1,33,J6,Rowe,William,Housekeeper's father,B,M,65,Farm Laborer,Farm,PW,26 wks; $234; seeking 39 wks
+J1,34,J7,Clark,Arthur,Head,B,M,59,,,,unable to work (U); owns $600
+J1,35,J7,Clark,Cannie,Wife,B,F,54,,,,
+J1,36,J7,Clark,George,Adopted son,B,M,9,,,,
+J1,37,J8,Rhodes,John S,Head,W,M,37,Painting Contractor,Building,OA,60 hrs; 52 wks; rents $9
+J1,38,J8,Rhodes,Lulu,Wife,W,F,34,,,,
+J1,39,J8,Rhodes,Robert R,Son,W,M,14,,,,
+J1,40,J9,Cox,Arthur,Head,W,M,62,Printer,Printing Office,PW,48 hrs; 40 wks; $600; rents $20
+J2,41,J9,Cox,Teresa,Wife,W,F,50,,,,
+J2,42,J9,Warner,Napoleon B,Lodger,W,M,70,,,,other (Ot); (Day Laborer 1900)
+J2,43,J10,Deskins,Edward,Head,B,M,59,Caretaker,Private Estate,PW,60 hrs; 52 wks; lived Montgomery Co Md 1935
+J2,44,J10,Deskins,Alena,Wife,B,F,46,,,,born Maryland
+J2,45,J11,Clasar,Walter,Head,B,M,66,Farm Laborer,Farm,PW,26 wks; $234; seeking 39 wks (Walter Ceser day laborer 1900)
+J2,46,J11,Clasar,Lillie,Wife,B,F,47,,,,
+J2,47,J12,Harvey,Fannie J,Head,B,F,79,Laundress,Home,OA,6 hrs; 6 wks; widow; owns $500
+J2,48,J13,Clark,Florence,Head,B,F,56,,,,widow; owns $600
+J2,49,J13,Clark,Rebecca,Daughter,B,F,12,,,,
+J2,50,J13,Clark,James,Grandson,B,M,12,,,,born New Jersey
+J2,51,J14,Davy,John,Head,B,M,51,Farm Laborer,Farm,PW,60 hrs; 40 wks; $360; owns $900
+J2,52,J14,Davy,Josephine,Wife,B,F,48,,,,
+J2,53,J14,Davy,Maria,Daughter,B,F,30,House Help,Private Home,PW,60 hrs; 48 wks; $208
+J2,54,J14,Davy,Maxine,Granddaughter,B,F,6,,,,
+J2,55,J14,Davy,Leroy,Grandson,B,M,6,,,,
+J2,56,J14,Davy,Bertha M,Granddaughter,B,F,5,,,,
+J2,57,J14,Davy,Lenard,Grandson,B,M,3,,,,
+J2,58,J15,Murray,Alphonso,Head,B,M,29,Laborer,Flour Mill,PW,48 hrs; 52 wks; $624; rents $6
+J2,59,J15,Murray,Ida,Mother,B,F,64,,,,widow
+J2,60,J15,Murray,Samuel,Brother,B,M,25,House Boy,Private Home,PW,60 hrs; 52 wks; $260
+J2,61,J15,Murray,Nannie,Sister,B,F,24,Cook,Private Home,PW,48 hrs; 52 wks; $208
+J2,62,J15,Murray,Blanche,Niece,B,F,10,,,,
+J2,63,J16,Ceasar,Emmaline,Head,B,F,63,,,,widow; owns $800
+J2,64,J16,Lewis,Irene,Daughter,B,F,36,House Work,Private Home,PW,52 wks; $?; divorced; seeking 4 wks
+J2,65,J16,Lewis,Hattie,Granddaughter,B,F,13,,,,
+J2,66,J16,Lewis,Robert Lee,Grandson,B,M,9,,,,
+J2,67,J17,Johnson,Lawrence,Head,B,M,45,Laborer,Flour Mill,PW,60 hrs; 52 wks; $624; owns $900 (PV0108 Lawrence H. Johnson - son of Charles Johnson farmer 1900)
+J2,68,J17,Johnson,Violet,Wife,B,F,40,,,,
+J2,69,J17,Johnson,Charles,Son,B,M,19,House Boy,Private Home,PW,60 hrs; 52 wks; $260
+J2,70,J17,Johnson,Clarence,Son,B,M,18,Odd Jobs,Private Home,PW,60 hrs; 48 wks; $576
+J2,71,J17,Johnson,Helen,Daughter,B,F,16,,,,at school
+J2,72,J17,Johnson,Matthew,Son,B,M,12,,,,
+J2,73,J18,Logan,Beaptist,Head,B,M,40,Farm Laborer,Farm,PW,60 hrs; 40 wks; $480; born Pennsylvania; owns $850
+J2,74,J18,Logan,Loretta,Wife,B,F,30,Cook,Private Home,PW,42 hrs; 52 wks; $156; born DC
+J2,75,J18,Logan,Annita,Daughter,B,F,12,,,,
+J2,76,J18,Hill,Lena,Mother,B,F,85,,,,widow
+J2,77,J18,Hill,Amelia,Aunt,B,F,71,,,,widow; lived DC 1935
+J2,78,J19,Sanford,Lewis,Head,B,M,52,Truck Driver,Milling Company,PW,52 wks; $780; rents $7 (Lewis Sanford farm laborer aged 15 in 1900)
+J2,79,J19,Sanford,Eva,Wife,B,F,38,,,,
+J2,80,J19,Sanford,Arthur,Son,B,M,16,,,,at school
+J3,1,J19,Ross,Theodora,Lodger,B,F,40,Teacher,Public School,GW,35 hrs; 36 wks; born DC
+J3,2,J20,Johnson,Charles F,Head,B,M,67,Farm Laborer,Farm,PW,60 hrs; 45 wks; $570; seeking 12 wks; owns $2000 (Charles Johnson farmer 1900 - renting; now owns)
+J3,3,J20,Johnson,Jessie Lee,Wife,B,F,54,,,,
+J3,4,J20,Gaskins,Gwendolyn,Adopted daughter,B,F,10,,,,
+J3,5,J20,Ford,Charles H,Grandson,B,M,1,,,,
+J3,6,J21,Tucas,Garland,Head,B,M,47,Farm Laborer,Farm,PW,26 wks; $234; seeking 39 wks; rents $6
+J3,7,J21,Tucas,Fannie,Wife,B,F,33,,,,
+J3,8,J21,Tucas,Grafton,Son,B,M,16,,,,at school
+J3,9,J21,Tucas,Emily,Daughter,B,F,14,,,,at school
+J3,10,J21,Tucas,Mamie,Daughter,B,F,12,,,,
+J3,11,J21,James,Leola,Daughter,B,F,22,,,,
+J3,12,J21,James,William,Son-in-law,B,M,23,Farm Laborer,Farm,PW,26 wks; $234; seeking 39 wks; lived Washington DC 1935
+J3,13,J22,Lewis,William,Head,B,M,63,Cemetery Caretaker,Cemetery,PW,48 hrs; 52 wks; $?; rents $6 (likely Lakeview sexton)
+J3,14,J23,Chinn,Earnest,Head,B,M,28,House Man,Private Home,PW,60 hrs; 52 wks; $360; rents $6
+J3,15,J23,Chinn,Anna,Wife,B,F,29,House Work,Private Home,PW,48 hrs; 52 wks; $260
+J3,16,J23,Chinn,Earnest Jr,Son,B,M,6,,,,
+J3,17,J23,Chinn,Harry,Son,B,M,2,,,,
+J3,18,J23,Dean,Dorothy,Niece,B,F,11,,,,
+J3,19,J24,Ballenger,William S,Head,W,M,38,Laborer,Road Maintenance,GW,48 hrs; 48 wks; $720; rents $10
+J3,20,J24,Ballenger,Elsie May,Wife,W,F,25,,,,
+J3,21,J24,Ballenger,Audrey June,Daughter,W,F,4,,,,
+J3,22,J24,Ballenger,Floyd Nelson,Son,W,M,2,,,,
+J3,23,J24,Ballenger,Douglas Wayne,Son,W,M,0,,,,
+J3,24,J25,Ward,William Fred,Head,W,M,43,Salesman,Trading Store,OA,60 hrs; 52 wks; owns $3000
+J3,25,J25,Ward,Mattie B,Wife,W,F,44,,,,born Grayson Co

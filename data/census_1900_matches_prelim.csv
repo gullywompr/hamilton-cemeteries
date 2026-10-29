@@ -1,0 +1,127 @@
+image,census_name,census_age,race,person_id,project_name,birth_year,match_basis
+2,Landon Jones,80,W,LV0572,Landon Jones,1819,year
+2,Sarah C Jones,78,W,LV0571,Sarah Elizabeth Wynkoop Jones,1821,year
+2,John F Laycock,57,W,LV0600,John Franklin Laycock,1842,year
+2,Mary C Laycock,51,W,LV1385,Mary Catherine Roberts Laycock,1849,year
+2,John F Laycock,17,W,LV1382,John Franklin Laycock,1883,year
+2,Samuel A Laycock,48,W,LV0601,Samuel Adin Laycock,1851,year
+2,Sarah E Laycock,45,W,LV0602,Sarah Ellen Laycock,1855,year
+2,Mary E Laycock,22,W,LV1386,Mary E. Laycock,1878,year
+2,Mary V Brown,40,W,LV0171,Mary Francenia Brown,1859,year
+2,Sarah E White,54,W,LV0969,Sarah Elizabeth Beales White,1845,year
+2,David A White,31,W,LV2035,David Aden White,1869,year
+2,Sarah A Warner,50,W,LV0940,Sarah Ann Phillips Warner,1850,year
+3,Mason Loveless,74,W,LV0620,Mason Loveless,1826,year
+3,Mason Loveless,74,W,LV0620,Mason Loveless,1826,year
+3,Lawrence Johnson,6,B,PV0108,Lawrence H. Johnson,1894,year
+3,Mary A Simms,6,B,PV0350,Mary Elizabeth Simms,,noage
+3,Daniel E Brown,17,W,LV0163,Daniel Earl Brown,1884,year
+4,Christian N Saunders,43,W,LV0825,Christian N. Saunders,1857,year
+5,Robert G Preston,1,W,LV0793,Robert Lee Preston,1899,year
+5,Charles W Myers,47,W,LV0704,Charles Wilson Myers,1854,year
+5,Elizabeth Cox,20,B,LV0272,Elizabeth Cox,,noage
+6,James F Utterback,35,W,LV0928,James Franklin Utterback,1864,year
+6,Florence G Utterback,25,W,LV0929,Florence Gertrude Brown Utterback,1874,year
+6,Mary White,7,B,LV2042,Mary L Taylor White,,noage
+7,James M Corbin,41,W,LV0258,James Milton Corbin,1859,year
+7,Eugene Corbin,21,W,LV0260,Eugene W. Corbin,1879,year
+7,Norman W Corbin,20,W,LV0253,Norman W. Corbin,1881,year
+7,Mary E Preston,16,W,LV1688,Mary E. Preston,1882,year
+8,Sarah Saunders,38,W,LV0821,Sarah J Saunders,,noage
+8,Arthur M Fletcher,24,W,LV0428,Arthur M. Fletcher,1875,year
+8,Welby S Arnett,45,W,LV0026,Welby S. Arnett,1855,year
+8,Amanda Simmons,40,W,LV0865,Amanda M Simmons,1860,year
+8,James B Peugh,52,W,LV0765,James Braden Peugh,1846,year
+8,Ella G Peugh,23,W,LV1642,Ella Gertrude Peugh,1877,year
+8,Charles B Peugh,19,W,LV1641,Charles Braden Peugh,1881,year
+8,Anna T Peugh,16,W,LV1640,Anna Tavenner Peugh,1884,year
+9,Mary M Weadon,55,W,LV0959,Mary Margaret Kuhlmann Weadon,1846,year
+14,James Laycock,61,W,LV0594,James Henry Laycock,1840,year
+14,Ophelia Laycock,50,W,LV0595,Ophelia Orrison Laycock,1849,year
+14,Robert E Laycock,26,W,LV1389,Robert Lee Laycock,1874,year
+15,Margaret Wynkoop,,W,LV1010,Margaret Jane Darr Wynkoop,1883,noage
+15,Foster Fry,,B,HM0229,Foster B Fry,1840,noage
+15,William H Fletcher,58,W,LV0426,William Henry Fletcher,1841,year
+16,Mary W James,44,W,LV0566,Mary Winifred Fulton James,1855,year
+17,Charles E Silcott,45,W,LV0863,Charles E. Silcott,1855,year
+17,Mollie Silcott,44,W,LV0864,Mollie Wood Silcott,1854,year
+17,Virginia Iden,69,W,LV0550,Virginia Stover Iden,1830,year
+17,Bessie M Iden,42,W,LV0551,Bessie M. Iden,1858,year
+17,William N Everhart,83,W,LV0395,William Nathaniel Everhart,1817,year
+17,Malinda E Everhart,57,W,LV0398,Malinda E. Cox Everhart,1844,year
+17,Mary B Everhart,60,W,LV0392,Mary Isabella Myers Everhart,1838,year
+17,Israel Myers,42,W,HM0138,Israel T. Myers,1856,year
+17,Rebecca J Thomas,67,W,LV1927,Rebecca J. Wright Thomas,1831,year
+17,Nora B Myers,30,W,LV1552,Nora Thomas Myers,1869,year
+18,George Thomas,32,W,LV0908,George Edwin Thomas,1868,year
+18,Edwin Thomas,3,W,LV1919,Edwin R. Thomas,1897,year
+18,Elizabeth Payne,11,B,LV1603,Elizabeth Rozelle Kirkpatrick Payne,1887,year
+18,Charles C Collins,,B,PV0051,Charles Collins,1894,noage
+18,Joseph L Collins,1,B,PV0053,Joseph L. Collins,1900,year
+18,Joseph E Beales,,W,LV0092,Joseph E. Beales,1855,noage
+18,Fannie Beales,37,W,LV0089,Fannie R. Beales,1863,year
+18,Robert L Myers,,W,LV0714,Robert L. Myers,1857,noage
+18,Willard C Myers,18,W,LV0709,Willard C. Myers,1882,year
+18,Nathan Myers,,W,LV0716,Nathan Myers,1876,noage
+18,Bessie E Myers,20,W,LV1544,Bessie Estelle Myers,1880,year
+19,Martha J Dowell,64,W,LV0349,Martha J. Dowell,1835,year
+19,Amanda E Dowell,60,W,LV0350,Amanda E Dowell,1840,year
+19,Alice M Norris,45,W,LV0731,Alice M. Norris,,noage
+19,Nellie B Hess,24,W,LV0516,Nellie B. Hess,1876,year
+19,James R Hess,16,W,LV0517,James R. Hess,1884,year
+19,Charles W Warner,40,W,LV0941,Charles William Warner,1859,year
+19,James E Silcott,48,W,LV0861,James Edgar Silcott,1851,year
+19,Mary C Silcott,51,W,LV0862,Mary Cathrine Silcott,1849,year
+19,George W Laycock,39,W,LV0597,George Washington Laycock,1861,year
+19,Ella P Laycock,39,W,LV0598,Ella C. Laycock,1861,year
+19,George W Shoemaker,39,W,LV0854,George W. Shoemaker,1861,year
+19,Howard W Tavenner,26,W,LV0885,Howard W. Tavenner,1875,year
+20,Sophia Smith,33,W,LV1864,Sophia A. Martin Smith,1868,year
+20,Clinton Benedum,25,W,LV0120,Clinton Benedum,1874,year
+20,Arthur L Hough,36,W,LV0538,Arthur S. Hough,1864,year
+20,George Schooley,40,W,LV0833,George T. Schooley,1860,year
+20,Samuel Lewis,60,W,HM0106,Samuel Lewis,1840,year
+20,Benjamin F Wine,50,W,LV0987,Benjamin Franklin Wine,1850,year
+20,Sarah A Wine,48,W,LV0986,Sarah Ann Hemingway Wine,1852,year
+20,Josephine H Wine,26,W,LV0988,Josephine H. Wine,1874,year
+20,Susan Peugh,,W,HM0139,Susan Ann Peugh,1846,noage
+20,Ann E Ruse,,W,LV0811,Ann E. Tavenner Ruse,1829,noage
+20,James E Tavenner,33,W,LV0895,James Edgar Tavenner,1867,year
+21,Roy H McDaniel,27,W,LV1472,Roy Harmon McDaniel,1873,year
+21,Ella M McDaniel,25,W,LV1470,Ella Maude Hunt McDaniel,1875,year
+21,Edna J Muse,72,W,HM0131,Edna Jane Bradfield Muse,1830,year
+21,Harry L White,12,W,LV2039,Harry L. White,1888,year
+21,Cloyd M White,10,W,LV2034,Cloyd M. White,1890,year
+21,Hugh W White,8,W,LV2041,Hugh W. White,1892,year
+21,Hannah B White,4,W,LV2038,Hannah L. White,,noage
+21,Robert J Reid,30,W,LV0803,Robert James Nelson Reid,1869,year
+21,Lucy E Reid,40,W,LV0804,Lucy Ellen Myers Reid,1860,year
+21,Robert T Reid,3,W,LV1729,Robert Theodore M. Reid,1897,year
+21,Charles F Myers,73,W,HM0134,Charles Fenton Myers,1827,year
+21,Gabriel V Warner,69,W,LV0943,Gabriel V Warner,1829,year
+21,Sarah J Warner,68,W,LV0944,Sarah J Stocks Warner,1832,year
+21,Mary M Everett,24,W,LV0385,Mary Maude Everett,1875,year
+21,William A McFarland,55,W,LV0655,William Alexander McFarland,1845,year
+21,Mary V McFarland,44,W,LV0654,Mary Virginia Hess McFarland,1856,year
+21,Mazie McFarland,18,W,LV1477,Mazie B. McFarland,1882,year
+21,Margaret McFarland,16,W,LV1476,Margaret Virginia McFarland,1884,year
+22,Bethany A McFarland,74,W,HM0113,Bethany Ann Lanham McFarland,1826,year
+22,Hannah McFarland,47,W,HM0112,Hannah E. McFarland,1853,year
+22,Laura Cox,51,W,LV0269,Laura L. Cox,,noage
+22,James A Cox,22,W,LV0268,James Arthur Cox,1878,year
+22,Mary Tavenner,40,W,LV0889,Mary Isabell Tavenner,1860,year
+22,Mary F Thompson,64,W,LV0910,Mary Frances Norris Thompson,1836,year
+22,William A Benedum,49,W,LV0124,William Andrew Benedum,1851,year
+22,Harry Flippo,10,W,LV0433,Harry Flippo,1890,year
+23,Theodore Milton,52,W,LV0669,Theodore Davisson Milton,1848,year
+23,Lydia C Milton,49,W,LV0670,Lydia Cecilia Vandevanter Milton,1852,year
+23,Joseph V Milton,24,W,LV0671,Joseph Vandeventer Milton,1876,year
+23,Mary S Milton,12,W,LV1525,Mary Stuart Milton,1888,year
+23,Charles F French,53,W,HM0051,Charles F. French,1846,year
+23,Mary A French,84,W,HM0055,Mary Ann Haines French,1816,year
+24,Thomas James,75,W,LV0558,Thomas H. James,1825,year
+24,Virginia F James,64,W,LV0559,Virginia Friench Simpson James,1837,year
+24,Blanche Rogers,,W,LV1755,Blanche Gulick Rogers,1870,noage
+24,Ella Chamblin,,W,LV0213,Ella May Hatcher Chamblin,1875,noage
+24,Thomas F Keen,45,W,LV0574,Thomas F. Keen,1855,year
+24,Hugh R Keen,13,W,LV1327,Hugh Broaddus Keen,1888,year

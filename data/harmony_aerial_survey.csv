@@ -1,0 +1,6 @@
+year,imagery,lot_south_of_church,west_drive,reading,confidence
+1957,"b&w, good detail for its age",absent,"unpaved track; no parked cars visible","Open ground and trees south and southwest of the church. No pavement anywhere adjacent to the church.",confident
+1980,"colour, low contrast",absent,"track with light-toned surface","Area south of the church reads as grass or bare ground. No striped lot, no sharp pavement edge.",confident
+1990,"b&w, grainy",absent,"drive with a line of parked cars along it","Vegetation and open ground where the lot later sits. Parking in 1990 is a row of cars along the west drive, not a formal lot.",confident
+1994,"b&w, coarse",indeterminate,"not resolvable","Dark blob (likely tree canopy) over lighter ground. Resolution and watermarking do not permit a call either way. DO NOT TREAT AS EITHER PRESENT OR ABSENT.",indeterminate
+2002,"colour, good",present,"drive with parked cars","Large asphalt lot south/southwest of the church with painted stall striping clearly visible.",confident

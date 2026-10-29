@@ -1,0 +1,892 @@
+image,line,hh,surname,given,relation,race,sex,age,occupation,industry,class,note
+1,1,1,Herndon,Mervyn L,Head,W,M,32,Merchant Retail,Dry Goods,Emp,Hamilton Town; enumerator George E. Thomas; 18 Apr 1910
+1,2,1,Herndon,Anna B,Wife,W,F,30,,,,
+1,3,1,Herndon,Marion G,Daughter,W,F,7,,,,
+1,4,1,Herndon,Alice L,Daughter,W,F,0,,,,
+1,5,2,Kerr,Floyd N,Head,W,M,35,Pharmacist,Drugs & Co,W,
+1,6,2,Kerr,Mary L,Wife,W,F,32,,,,
+1,7,2,Kerr,Catherine M,Daughter,W,F,6,,,,
+1,8,2,Kerr,Judith A,Daughter,W,F,3,,,,
+1,9,2,Kerr,Floyd A,Son,W,M,2,,,,
+1,10,3,Mock,James E,Head,W,M,57,Farmer,General Farm,Emp,
+1,11,3,Mock,Sarah A,Wife,W,F,56,,,,
+1,12,3,Fulton,Massa,Mother-in-law,W,F,89,,,,
+1,13,4,Thompson,John T,Head,W,M,51,Farmer,General Farm,Emp,
+1,14,4,Thompson,Mary A,Wife,W,F,59,,,,
+1,15,4,Thompson,Eva M,Daughter,W,F,22,,,,
+1,16,4,Thompson,Eula C,Daughter,W,F,20,,,,
+1,17,4,Thompson,Lucinda B,Daughter,W,F,19,,,,
+1,18,5,Mossburg,George C,Head,W,M,35,Farm Laborer,Working Out,W,12 wks out of work
+1,19,5,Mossburg,Mollie E,Wife,W,F,48,,,,
+1,20,5,Benedum,William A,Boarder,W,M,59,Tinner,Own Shop,Emp,
+1,21,5,Carruthers,Edith V,Boarder,W,F,79,,,,
+1,22,6,Warner,Franklin A,Head,W,M,41,Farm Laborer,Working Out,W,12 wks out
+1,23,6,Warner,Tamma D,Wife,W,F,27,,,,
+1,24,7,Warner,Arthur C,Head,W,M,33,Farm Laborer,Working Out,W,
+1,25,7,Warner,Orra B,Wife,W,F,25,,,,
+1,26,8,Bealer,Mary E,Head,W,F,74,,,,widow
+1,27,9,Cox,James A,Head,W,M,60,Carpenter,House Carpenter,W,6 wks out
+1,28,9,Cox,Laura E,Wife,W,F,60,,,,
+1,29,10,Ballenger,Clinton,Head,W,M,29,Laborer,Livery Stable,W,
+1,30,10,Ballenger,India G,Wife,W,F,25,,,,
+1,31,10,Ballenger,Mildred J,Daughter,W,F,6,,,,
+1,32,11,Warner,George Z,Head,W,M,62,Farm Laborer,Working Out,W,25 wks out
+1,33,11,Warner,Sarah A,Wife,W,F,60,,,,
+1,34,11,Warner,Olivia B,Daughter,W,F,33,School Teacher,Public School,W,16 wks out
+1,35,12,Everhart,John F,Head,W,M,47,Blacksmith,Own Shop,W,
+1,36,12,Everhart,Mahalie U,Wife,W,F,49,,,,
+1,37,13,McFarland,William A,Head,W,M,64,Merchant,Grocery,Emp,
+1,38,13,McFarland,Mary V,Wife,W,F,54,,,,
+1,39,13,McFarland,Mazie B,Daughter,W,F,27,Teacher,Public School,W,17 wks out
+1,40,13,McFarland,Margret V,Daughter,W,F,25,Trained Nurse,Private Family,W,14 wks out
+1,41,13,McFarland,Annie B,Daughter,W,F,20,,,,
+1,42,13,McFarland,William L,Son,W,M,15,,,,
+1,43,14,Tribby,Elton V,Head,W,M,32,Saddlery,Own Shop,OA,
+1,44,14,Tribby,Nolla O,Wife,W,F,25,,,,
+1,45,14,Tribby,Emma D,Daughter,W,F,2,,,,
+1,46,15,Beamer,George H,Head,W,M,57,Shoemaker,Own Shop,OA,
+1,47,15,Beamer,Ella E,Wife,W,F,51,,,,
+1,48,15,Harrison,Garney,Servant,W,M,10,Servant,Private Family,W,
+1,49,16,Silcott,Charley E,Head,W,M,55,Farm Laborer,Working Out,W,16 wks out
+1,50,16,Silcott,Mary C,Wife,W,F,57,,,,
+2,1,17,Powell,Maurice,Head,W,M,42,Carpenter,House,Emp,
+2,2,17,Powell,Annie E,Wife,W,F,47,,,,
+2,3,18,Wynkoop,Emily G,Head,W,F,50,Dressmaker,At Home,OA,widow
+2,4,19,McFarland,Bethany A,Head,W,F,83,,,,widow
+2,5,19,McFarland,Hannah E,Daughter,W,F,56,,,,
+2,6,20,Bently,William S,Head,W,M,75,,,,
+2,7,20,Bently,Elizabeth J,Wife,W,F,73,,,,
+2,8,21,Everett,John E,Head,W,M,73,,,,born Indiana
+2,9,21,Everett,Harriet A,Wife,W,F,71,,,,
+2,10,21,Everett,Mary M,Daughter,W,F,34,Trained Nurse,Private Family,W,10 wks out
+2,11,22,Warner,Isaac V,Head,W,M,75,Own Income,,,
+2,12,22,Warner,Annie E,Wife,W,F,65,,,,
+2,13,23,Dunahue,Mary W,Head,W,F,48,,,,widow
+2,14,23,Dunahue,Carrie E,Daughter,W,F,22,,,,born Washington DC
+2,15,24,Hess,Annie R,Head,W,F,60,,,,widow
+2,16,24,Hess,Claude D,Son,W,M,39,Salesman,Travelling,W,8 wks out
+2,17,24,Hess,Gertrude,Daughter,W,F,23,Music Teacher,Private Family,OA,
+2,18,25,Tavenner,Mary I,Head,W,F,50,,,,widow
+2,19,25,Tavenner,William O,Son,W,M,20,,,,
+2,20,25,Thompson,Mary F,Mother,W,F,73,,,,
+2,21,26,Hough,Arthur S,Head,W,M,46,Undertaker,Own Shop,Emp,confirms 1900 faint reading
+2,22,26,Hough,Isidora,Wife,W,F,49,,,,
+2,23,26,Hough,Francis N,Daughter,W,F,15,,,,
+2,24,26,Hough,Marvin H,Son,W,M,12,,,,
+2,25,27,Lewis,Samuel,Head,W,M,70,Wheelwright,Own Shop,OA,
+2,26,27,Lewis,Jennie F,Wife,W,F,62,,,,
+2,27,28,Milbourn,Lucinda C,Head,W,F,71,,,,
+2,28,28,Milbourn,Maria A,Sister,W,F,75,,,,
+2,29,29,James,George W,Head,W,M,55,Farmer,General Farm,Emp,
+2,30,29,James,Malinda E,Wife,W,F,56,,,,
+2,31,29,James,Mary W,Boarder,W,F,50,Own Income,,,
+2,32,30,Lewis,William,Head,B,M,29,Farm Laborer,Working Out,W,15 wks out (cemetery caretaker 1940)
+2,33,30,Lewis,Julia,Wife,B,F,32,Servant,Private Family,W,
+2,34,30,Lewis,Clarence,Step-son,B,M,16,Farm Laborer,Working Out,W,30 wks out
+2,35,30,Lewis,Lester,Step-son,B,M,10,,,,
+2,36,31,Wiley,Edgar T,Head,W,M,45,Retail Merchant,Clothing,Emp,(Asst Postmaster 1900)
+2,37,31,Wiley,Olive C,Wife,W,F,30,,,,(Olive C Wine post office clerk 1900)
+2,38,31,Wiley,John F,Son,W,M,7,,,,
+2,39,31,Wiley,Edgar H,Son,W,M,2,,,,
+2,40,32,Bealer,David T,Head,W,M,28,Farm Laborer,Working Out,W,
+2,41,32,Bealer,Golda M,Wife,W,F,24,,,,born West Virginia
+2,42,32,Bealer,Raymond A,Son,W,M,5,,,,
+2,43,32,Bealer,David M,Son,W,M,2,,,,
+2,44,32,Hutchison,Robt L,Boarder,W,M,34,Salesman,Clothing Store,W,
+3,1,33,Ballinger,Walter W,Head,W,M,27,Laborer,Livery Stable,W,
+3,2,33,Ballinger,Mable M,Wife,W,F,24,,,,
+3,3,33,Ballinger,Lillian F,Daughter,W,F,1,,,,
+3,4,34,French,Charles F,Head,W,M,64,Jeweler,Own Shop,OA,
+3,5,34,French,Orra B,Sister,W,F,53,,,,
+3,6,35,Kuhlmann,Charley A,Head,W,M,44,Apiarist,Own Apiary,OA,parents born Germany
+3,7,35,Kuhlmann,Malinda A,Wife,W,F,43,,,,
+3,8,35,Kuhlmann,Clara M,Daughter,W,F,16,,,,
+3,9,35,Kuhlmann,Hazel L,Daughter,W,F,13,,,,
+3,10,35,Kuhlmann,Dara E,Daughter,W,F,9,,,,
+3,11,36,Tavenner,James E,Head,W,M,42,Carpenter,House,W,
+3,12,36,Tavenner,Rose M,Wife,W,F,39,,,,
+3,13,36,Tavenner,Alpheus E,Son,W,M,12,,,,
+3,14,36,Tavenner,Thomas W,Son,W,M,10,,,,
+3,15,36,Tavenner,Annie M,Daughter,W,F,5,,,,
+3,16,37,Chamblin,John W,Head,W,M,57,Merchant,Retail Dry Goods,Emp,
+3,17,37,Chamblin,Lucy P,Wife,W,F,48,,,,
+3,18,37,Chamblin,Nina E,Daughter,W,F,16,,,,
+3,19,37,Chamblin,Julia V,Daughter,W,F,14,,,,
+3,20,37,Chamblin,Lillian A,Daughter,W,F,12,,,,
+3,21,37,Chamblin,Edwin M,Son,W,M,10,,,,
+3,22,37,Chamblin,Margaret,Daughter,W,F,8,,,,
+3,23,37,Payne,Herbert B,Salesman (lodger),W,M,22,Salesman,Retail Dry Goods,W,
+3,24,37,Davis,Clara B,Servant,B,F,14,Servant,Private Family,W,
+3,25,38,Luckett,Mary A,Head,W,F,87,,,,widow
+3,26,38,Luckett,Bettie C,Daughter,W,F,48,,,,
+3,27,39,Milbourn,Junius B,Head,W,M,34,Salesman,Nursery,W,6 wks out
+3,28,39,Milbourn,Mollie G,Wife,W,F,31,,,,
+3,29,39,Milbourn,Junius B Jr,Son,W,M,5,,,,
+3,30,40,Jacob,Leven T,Head,W,M,68,Veterinarian,Country,OA,widower
+3,31,41,Brown,Samuel A,Head,W,M,48,Janitor,Church,W,
+3,32,41,Brown,Sallie A,Sister,W,F,44,,,,
+3,33,42,Weadon,Carrie V,Head,W,F,41,,,,
+3,34,43,Tillett,Mary E,Head,W,F,55,Own Income,,,widow
+3,35,43,Thomas,Rebecca J,Mother,W,F,76,,,,widow
+3,36,44,Myers,Nathan,Head,W,M,34,Tinner,Own Shop,OA,(Painter 1900)
+3,37,44,Myers,Bessie E,Wife,W,F,30,,,,
+3,38,44,Myers,Anna L,Daughter,W,F,7,,,,
+3,39,45,Beales,Joseph E,Head,W,M,55,Miller,Flour,W,
+3,40,45,Beales,Fannie R,Wife,W,F,46,,,,born DC
+3,41,45,Beales,Joseph P,Son,W,M,20,Salesman,Retail Grocery,W,8 wks out
+3,42,46,Otley,William C,Head,W,M,41,Salesman,Sewing Machines,OA,
+3,43,46,Otley,Lula W,Wife,W,F,34,,,,
+3,44,46,Otley,Elroy D,Son,W,M,12,,,,
+3,45,46,Otley,Helen M E,Daughter,W,F,9,,,,
+3,46,46,Otley,William C G,Son,W,M,7,,,,
+3,47,46,Otley,Lula D,Daughter,W,F,5,,,,
+3,48,46,Otley,Wilbur H,Son,W,M,0,,,,
+3,49,47,Thomas,Frederick J,Head,W,M,36,Carpenter,House,W,6 wks out (Fred J. Thomas carpenter 1940)
+3,50,47,Thomas,Fannie C,Wife,W,F,32,,,,born DC
+4,1,47,Thomas,Irving F,Son,W,M,8,,,,
+4,2,47,Thomas,Howard J,Son,W,M,6,,,,
+4,3,48,Arnett,Welby S,Head,W,M,53,Laborer,Odd Jobs,W,4 wks out (Farmer 1900)
+4,4,48,Arnett,Kate V,Wife,W,F,53,,,,
+4,5,48,Arnett,Eva M,Daughter,W,F,20,,,,
+4,6,49,Cannon,Jane S,Head,W,F,67,Own Income,,,widow
+4,7,49,Cannon,Idella C,Daughter,W,F,41,,,,
+4,8,49,Cannon,Chloe J,Daughter,W,F,38,,,,
+4,9,49,Cannon,Hattie A,Daughter,W,F,33,,,,
+4,10,50,Dowell,Kate R,Head,W,F,77,Dressmaker,At Home,OA,
+4,11,50,Dowell,Martha J,Sister,W,F,75,,,,
+4,12,50,Dowell,Amanda E,Sister,W,F,69,,,,
+4,13,50,Norris,Alice M,Niece,W,F,56,Teacher,Public School,W,12 wks out
+4,14,51,Morrison,Blanch K,Head,W,F,31,Own Income,,,widow
+4,15,51,Morrison,Edward B,Son,W,M,6,,,,
+4,16,51,Morrison,James H,Son,W,M,4,,,,
+4,17,51,Morrison,Horace T,Son,W,M,3,,,,
+4,18,51,Bradley,Alice J,Mother,W,F,56,,,,widow
+4,19,52,Rogers,Richard H,Head,W,M,72,Own Income,,,(Farmer 1900 rural)
+4,20,52,Rogers,Annie E,Wife,W,F,71,,,,
+4,21,52,Rogers,Maud H,Daughter,W,F,40,Teacher,Public School,W,12 wks out
+4,22,52,Rogers,Josephus C,Son,W,M,38,Miller,Flour,W,
+4,23,52,Rogers,Mable E,Daughter,W,F,33,,,,
+4,24,53,Offley,Holmes E,Head,W,M,70,Farmer,General Farm,Emp,born DC
+4,25,53,Offley,Mary N,Wife,W,F,67,,,,
+4,26,53,Offley,John M,Son,W,M,38,,,,born DC
+4,27,54,Flippo,Monroe,Head,W,M,49,Butcher,Country Shop,W,(Day Laborer 1900; grain mill laborer 1940)
+4,28,54,Flippo,Mattie G,Wife,W,F,41,,,,
+4,29,54,Flippo,Clifton W,Son,W,M,22,,,,
+4,30,54,Flippo,Harry G,Son,W,M,19,Butcher,Country Shop,W,8 wks out
+4,31,54,Flippo,Nina E,Daughter,W,F,17,,,,
+4,32,54,Flippo,Roy M,Son,W,M,15,,,,
+4,33,54,Flippo,Henry F,Son,W,M,10,,,,
+4,34,55,Cook,Samuel F,Head,Mu,M,50,Wagoner,Flour Mill,W,widower
+4,35,55,Levenberry,James B,Lodger,B,M,26,Laborer,General Farm,W,12 wks out
+4,36,56,Foster,Hattie,Head,B,F,30,Servant,Private Family,W,8 wks out
+4,37,56,Foster,Ada,Daughter,B,F,8,,,,
+4,38,57,Jones,William,Head,B,M,60,,,,born Louisiana
+4,39,57,Jones,Minnie A,Wife,B,F,60,Laundress,At Home,OA,
+4,40,57,Taylor,Anna,Mother-in-law,B,F,75,,,,widow
+4,41,57,Briscoe,James F,Nephew,B,M,4,,,,
+4,42,58,Wiley,Thomas,Head,W,M,55,Laborer,General Farm,W,4 wks out; widower
+4,43,59,Tavenner,William T,Head,W,M,37,Laborer,Odd Jobs,W,4 wks out
+4,44,59,Tavenner,Annie,Sister,W,F,36,,,,
+4,45,59,Ruse,Richard W,Uncle,W,M,79,,,,widower (Carpenter 1900)
+4,46,60,Allen,William,Head,B,M,29,Laborer,Odd Jobs,W,8 wks out; born Ohio
+4,47,60,Allen,Rosa,Wife,B,F,22,,,,
+4,48,60,Allen,Lislie,Daughter,B,F,1,,,,born West Virginia
+4,49,60,Hill,Hattie,Mother-in-law,B,F,45,Laundress,At Home,W,widow
+5,1,61,Beales,Elmer L,Head,W,M,26,Farmer,General Farm,W,6 wks out
+5,2,61,Beales,Genevieve T,Wife,W,F,17,,,,
+5,3,61,Myers,Nora B,Mother-in-law,W,F,40,Trained Nurse,Private Family,W,10 wks out; widow (Nora Thomas Myers)
+5,4,61,Myers,Mary L,Sister-in-law,W,F,14,,,,
+5,5,61,Myers,William M,Brother-in-law,W,M,13,Salesman Retail,Grocery Store,W,12 wks out
+5,6,62,Myers,John F,Head,W,M,39,Butcher,Own Shop,Emp,
+5,7,62,Myers,Cora S,Wife,W,F,41,,,,
+5,8,62,Myers,Roger F,Son,W,M,14,Butcher,Home Shop,W,
+5,9,62,Myers,Gertrude E,Daughter,W,F,10,,,,
+5,10,62,Myers,Eva R,Daughter,W,F,8,,,,
+5,11,62,Myers,Ruth S V,Daughter,W,F,2,,,,
+5,12,62,White,Franklin C,Hired man,W,M,35,Butcher,Working Out,W,
+5,13,63,Thomas,Emma J,Head,W,F,63,,,,widow
+5,14,63,Thomas,Henry T,Son,W,M,35,Laborer,Odd Jobs,W,10 wks out
+5,15,63,Lowe,Sarah V,Sister,W,F,69,,,,widow
+5,16,64,Arthur,Samuel A,Head,W,M,77,Own Income,,,born Maryland
+5,17,64,Arthur,Annie E,Wife,W,F,72,,,,born Maryland
+5,18,64,Baldwin,Amie,Servant,B,F,12,Servant,Private,W,born DC
+5,19,65,Hoge,Henry I,Head,W,M,38,Farmer,General Farm,Emp,
+5,20,65,Hoge,Laura S,Wife,W,F,42,,,,
+5,21,65,Redman,Rosa L,Servant,Mu,F,29,Servant,Private Family,W,
+5,22,65,Redman,Goldenia,Servant,Mu,F,13,Servant,Private Family,W,28 wks out; born DC
+5,23,65,Redman,Fredonia H,Servant,Mu,F,12,Servant,Private Family,W,30 wks out; born DC
+5,24,65,Redman,Edgar T,Servant,Mu,M,6,Servant,Private Family,W,born DC
+5,25,66,Keen,Thomas F,Head,W,M,51,Physician,General Practice,OA,widower (Physician 1900)
+5,26,66,White,George A T,Housekeeper,W,F,40,Housekeeper,Private Family,W,born Arkansas
+5,27,66,Sanford,Lewis,Servant,B,M,24,Servant,Private Family,W,(truck driver 1940)
+5,28,66,Lee,Amanda B,Servant,B,F,21,Servant,Private Family,W,(Daniel Lee's daughter 1900)
+5,29,67,Hampton,Elwood J,Head,W,M,28,Engineer,Traction Engine,OA,
+5,30,67,Hampton,Ethel,Wife,W,F,30,,,,
+5,31,67,Hampton,Thelma M,Daughter,W,F,7,,,,
+5,32,67,Hampton,Ada J,Daughter,W,F,5,,,,
+5,33,67,Hampton,Elwood Jr,Son,W,M,0,,,,
+5,34,68,Aston,Edward,Head,W,M,67,Ditcher,Working Out,W,12 wks out; born England; immigrated 1872
+5,35,68,Aston,Laura V,Wife,W,F,69,,,,born Ohio
+5,36,69,Pierce,Zachary T,Head,W,M,62,Merchant,Feed & Flour,OA,
+5,37,69,Pierce,Ann A,Wife,W,F,62,,,,
+5,38,69,Pierce,Mary D,Daughter,W,F,34,Teacher,Public School,W,
+5,39,69,Pierce,Annie M,Daughter,W,F,28,,,,
+5,40,70,McCormick,Hugh P,Head,W,M,49,Minister,Country,W,
+5,41,70,McCormick,Anne P,Wife,W,F,48,,,,born Alabama
+5,42,70,McCormick,Catherine R,Daughter,W,F,23,,,,born Mexico
+5,43,70,McCormick,Hugh P,Son,W,M,18,,,,born Mexico
+5,44,70,McCormick,Charles P,Son,W,M,13,,,,born Mexico
+5,45,71,Warner,Charles M,Head,W,M,59,Laborer,Odd Jobs,W,7 wks out
+5,46,71,Warner,Thomas W,Brother,W,M,73,,,,
+5,47,71,Warner,Sarah C,Sister,W,F,71,,,,
+5,48,71,Warner,Alcinda P,Sister,W,F,57,Dressmaker,Private Family,OA,
+5,49,71,Warner,Gordon E,Adopted son,W,M,12,Laborer,Livery Stable,W,10 wks out
+5,50,72,Hawley,James M,Head,W,M,53,Minister,Own Home,,born Connecticut
+6,1,72,Hawley,Mary C,Wife,W,F,53,,,,born West Virginia
+6,2,72,Hawley,Helen C,Daughter,W,F,22,Teacher,Graded School,W,born West Virginia
+6,3,73,Hughes,Virginia D,Head,W,F,75,Own Income,,,
+6,4,73,Hughes,Sallie A,Sister,W,F,71,Own Income,,,
+6,5,74,Collins,Daniel L,Head,W,M,41,Salesman,Nursery,W,
+6,6,75,Laycock,George W,Head,W,M,48,Retail Merchant,Dry Goods & Co,OA,(Dry Goods Merchant 1900)
+6,7,75,Laycock,Hanah H,Wife,W,F,35,,,,born DC
+6,8,75,Laycock,George W Jr,Son,W,M,0,,,,
+6,9,75,Davis,Mary V,Servant,B,F,35,Servant,Private Family,W,
+6,10,76,Baldwin,Orion,Head,W,M,47,Proprietor,Hotel,Emp,
+6,11,76,Baldwin,Orianna,Wife,W,F,46,,,,
+6,12,76,Baldwin,Robert J,Son,W,M,14,,,,
+6,13,76,Baldwin,Adrian M,Son,W,M,12,,,,
+6,14,76,Baldwin,Mary E,Mother,W,F,71,,,,widow
+6,15,76,Deskins,Edgar,Servant,B,M,27,Servant,Hotel,W,(Edward Deskins caretaker 1940)
+6,16,76,Miller,Mary M,Boarder,W,F,56,Own Income,,,widow
+6,17,76,Wynkoop,David F,Boarder,W,M,29,Salesman,Retail Dry Goods,W,
+6,18,77,Merchant,Ellen G,Head,W,F,66,,,,widow
+6,19,77,Merchant,Leon E,Son,W,M,30,Painter,House,W,6 wks out
+6,20,78,Allen,Archibald,Head,B,M,65,Laborer,General Farm,W,6 wks out; widower (Arch Allen day laborer 1900)
+6,21,78,Allen,Martha E,Daughter,B,F,26,,,,
+6,22,78,Allen,Florence,Daughter,B,F,23,Laundress,At Home,OA,
+6,23,78,Allen,Beulah,Granddaughter,B,F,7,,,,
+6,24,78,Allen,Albert,Grandson,B,M,2,,,,
+6,25,79,James,Elizabeth S,Head,W,F,76,Own Income,,,widow
+6,26,79,Russ,Virginia K,Sister,W,F,74,Own Income,,,
+6,27,80,Saunders,Robert L,Head,W,M,47,Salesman,Retail Hardware,W,
+6,28,80,Saunders,Josephine,Wife,W,F,53,,,,
+6,29,80,Warner,William C,Boarder,W,M,50,Merchant,Retail Hardware,Emp,(C. W. Warner hardware 1900)
+6,30,80,Warner,Paul L,Boarder,W,M,13,,,,
+6,31,81,Thomas,George E,Head,W,M,41,Auctioneer,Commission,OA,(Mill Laborer 1900; Assessor 1940) - also the 1910 enumerator
+6,32,81,Thomas,Blanch M,Wife,W,F,38,,,,
+6,33,81,Thomas,Edwin R,Son,W,M,12,Newsboy,On the Street,OA,
+6,34,81,Thomas,Mary A,Daughter,W,F,9,,,,
+6,35,82,Ballinger,Isaac,Head,W,M,53,Farmer,General Farm,Emp,(Livery Man 1900)
+6,36,82,Ballinger,Eliza A,Wife,W,F,55,,,,
+6,37,83,Schooley,George T,Head,W,M,49,Farmer / Blacksmith,General Farm,Emp,(Blacksmith 1900)
+6,38,83,Schooley,Eva M,Wife,W,F,35,,,,born Maryland
+6,39,83,Schooley,Alice,Sister,W,F,54,,,,
+6,40,84,Hildebrand,Simpson V,Head,W,M,49,Clergyman,Ministry,W,
+6,41,84,Hildebrand,Edith H,Wife,W,F,39,,,,
+6,42,84,Hildebrand,Loucile R,Daughter,W,F,19,,,,born DC
+6,43,84,Hildebrand,Edward A,Son,W,M,15,,,,
+6,44,84,Hildebrand,Jesse B,Son,W,M,5,,,,
+6,45,84,Hildebrand,Joseph J,Son,W,M,0,,,,
+6,46,85,Carter,Annie,Head,Mu,F,43,Servant,Private Family,W,widow
+6,47,85,Carter,Lena E,Daughter,Mu,F,7,,,,
+6,48,85,Carter,Louisa E,Daughter,Mu,F,6,,,,
+7,1,86,Chamblin,John R,Head,W,M,43,Miller,Flour Mill,W,(John B Chamblin miller 1900)
+7,2,86,Chamblin,Ella M,Wife,W,F,31,,,,
+7,3,86,Chamblin,Elizabeth P,Daughter,W,F,2,,,,
+7,4,87,Wilson,George,Head,W,M,58,Hat Manufacturer,Retired,,born Scotland; immigrated 1870; naturalized
+7,5,88,Iden,Virginia,Head,W,F,80,Own Income,,,widow; born Massachusetts
+7,6,88,Iden,Lutta,Daughter,W,F,57,Own Income,,,
+7,7,88,Iden,Bessie M,Daughter,W,F,52,Own Income,,,
+7,8,89,Leith,George E,Head,W,M,49,Editor,Weekly Paper,OA,single (boarder 1900 - occupation then ink-blotted)
+7,9,90,Rogers,Samuel E,Head,W,M,64,Manager,Flour Mills,W,(Miller 1900)
+7,10,90,Rogers,Elizabeth C,Wife,W,F,63,,,,
+7,11,90,Rogers,Leslie T,Daughter,W,F,33,,,,
+7,12,90,Rogers,Howard C,Son,W,M,25,Own Income,,,(Miller own grain mill 1940)
+7,13,90,Rogers,Elizebeth M,Daughter,W,F,24,,,,
+7,14,91,Schafer,Jacob,Head,W,M,38,Retail Merchant,Dry Goods & Groceries,Emp,born Russia (German); immigrated 1890(?); Russian-German = Yiddish
+7,15,91,Schafer,Lena,Wife,W,F,37,,,,born Russia; immigrated 1890
+7,16,91,Schafer,Mayer,Son,W,M,15,,,,born Maryland
+7,17,91,Schafer,Rosa,Daughter,W,F,12,,,,born Maryland
+7,18,91,Schafer,Jennie,Daughter,W,F,11,,,,born Maryland
+7,19,91,Schafer,Etta,Daughter,W,F,9,,,,born Maryland
+7,20,91,Schafer,Harry,Son,W,M,8,,,,born Maryland
+7,21,91,Schafer,Mary,Daughter,W,F,6,,,,born Maryland
+7,22,91,Schafer,Annie,Daughter,W,F,3,,,,born Maryland
+7,23,91,Schafer,Solomon,Son,W,M,0,,,,born Maryland
+7,24,91,Schafer,Julius,Son,W,M,0,,,,born Maryland
+R9,1,87,Lows,Benjamin F,Head,W,M,35,Farmer,General Farm,Emp,Mt Gilead District rural part sheet 5A; enumerated 19 Apr 1910 George E. Thomas; owns farm
+R9,2,87,Lows,Rebecca M,Wife,W,F,37,,,,
+R9,3,87,Lows,Claude M,Son,W,M,12,,,,
+R9,4,87,Thompson,Rilla,Sister-in-law,W,F,45,,,,
+R9,5,87,Preston,Charles E,Hired man,W,M,39,Laborer,Farm,W,
+R9,6,87,Cox,James A,Boarder,W,M,30,Printer,Printing Office,W,
+R9,7,88,Orrison,Oscar T,Head,W,M,55,Farmer,General Farm,Emp,owns farm
+R9,8,88,Orrison,Lizzie M,Sister,W,F,63,,,,
+R9,9,88,Orrison,Pleasant,Sister,W,F,58,Dressmaker,At Home,OA,
+R9,10,88,Orrison,Jennie,Sister,W,F,56,,,,
+R9,11,88,Orrison,Ada,Sister,W,F,40,Dressmaker,At Home,OA,
+R9,12,89,Lee,Daniel,Head,B,M,70,Stone Mason,Block Work,W,owns home
+R9,13,89,Lee,Julia A,Wife,B,F,63,,,,
+R9,14,89,Lee,Carrie W,Daughter,B,F,17,,,,
+R9,15,89,Lee,Theodore B,Grandson,B,M,23,,,,
+R9,16,89,Lee,Anna B,Granddaughter,B,F,1,,,,
+R9,17,90,James,Virginia F,Head,W,F,72,Own income,,,widow; owns home
+R9,18,90,James,Margaret V,Daughter,W,F,29,Own income,,,
+R9,19,90,Rogers,Blanch G,Niece,W,F,39,,,,
+R9,20,90,Norman,Henry H,Nephew,W,M,22,,,,
+R9,21,91,Lucas,Ida A,Head,M,F,37,Laundress,At Home,OA,rents
+R9,22,91,Lucas,Mary E,Daughter,M,F,16,Servant,Private Family,W,
+R9,23,91,Lucas,Violet A,Daughter,M,F,10,,,,
+R9,24,91,Lucas,Berdie F,Daughter,M,F,7,,,,
+R9,25,91,Lucas,Rosa N,Daughter,M,F,6,,,,
+R9,26,91,Lucas,Roger P,Son,M,M,2,,,,
+R9,27,91,Lucas,Irvin G,Son,M,M,1,,,,
+R9,28,91,Lucas,Lewis R,Son,M,M,0,,,,
+R9,29,92,Cox,John W,Head,M,M,57,Farmer,Working out,W,owns home
+R9,30,92,Cox,Louisa A,Wife,M,F,53,Laundress,At Home,OA,
+R9,31,92,Cox,Walter A,Son,M,M,19,Laborer,Working out,W,
+R9,32,92,Cox,Mattie,Daughter,M,F,17,Laundress,At Home,OA,
+R9,33,92,Cox,Presley,Son,M,M,14,,,,
+R9,34,92,Simms,Chaley,Son-in-law,M,M,30,Laborer,General Farm,W,
+R9,35,92,Simms,Emily J,Daughter,M,F,26,Laundress,At Home,OA,
+R9,36,93,Cox,George R,Head,M,M,44,Laborer,General Farm,W,owns home
+R9,37,93,Cox,Minnie A,Wife,B,F,39,Laundress,At Home,OA,
+R9,38,93,Cox,Alcinda,Daughter,M,F,19,Laundress,At Home,OA,
+R9,39,93,Cox,Susan V,Daughter,M,F,17,,,,
+R9,40,93,Cox,Hattie M,Daughter,M,F,5,,,,
+R9,41,94,Murray,Nancy L,Head,B,F,65,Laundress,At Home,OA,widow; owns home
+R9,42,94,Murray,Walter F,Son,B,M,36,Laborer,Odd jobs,W,
+R9,43,95,Murray,Willard H,Head,B,M,31,Laborer,General Farm,W,owns home
+R9,44,95,Murray,Annie,Wife,B,F,30,Servant,Hotel,W,
+R9,45,96,Levenberry,James B,Head,B,M,48,Barber,Own Shop,OA,owns home
+R9,46,96,Levenberry,Mary L,Wife,B,F,50,Laundress,At Home,OA,
+R9,47,96,Levenberry,Hubert,Nephew,B,M,14,,,,
+R9,48,97,Palmer,John H,Head,B,M,53,Farm Laborer,Working out,W,born South Carolina; rents
+R9,49,97,Palmer,Mary C,Wife,B,F,50,,,,
+R9,50,97,Palmer,Samuel W,Son,B,M,18,Laborer,Odd jobs,W,
+R10,51,97,Palmer,Tiscia,Daughter,B,F,15,,,,sheet 5B
+R10,52,97,Palmer,Douglas F,Son,B,M,11,,,,
+R10,53,97,Palmer,Malinda O,Daughter,B,F,10,,,,
+R10,54,97,Palmer,Lily O,Daughter,B,F,5,,,,
+R10,55,97,Palmer,Florence O,Daughter,B,F,3,,,,
+R10,56,97,Jackson,Olie,Boarder,B,F,7,,,,
+R10,57,97,Tates,Alice,Boarder,B,F,50,,,,widow; born Maryland
+R10,58,98,Graham,William R,Head,W,M,53,Farmer,General Farm,Emp,owns farm
+R10,59,98,Graham,Maggie J,Wife,W,F,39,,,,
+R10,60,98,Graham,Mary C,Daughter,W,F,16,,,,
+R10,61,98,Graham,Annie R,Daughter,W,F,13,,,,
+R10,62,98,Graham,Charles M,Son,W,M,12,,,,
+R10,63,98,Graham,Ollie A,Daughter,W,F,10,,,,
+R10,64,98,Graham,Samuel O,Son,W,M,8,,,,
+R10,65,98,Graham,Ocie R,Daughter,W,F,6,,,,
+R10,66,98,Graham,Margaret L,Daughter,W,F,3,,,,
+R10,67,98,Graham,William W,Son,W,M,0,,,,sheet 5B ends at line 67 (rest blank)
+R11,1,99,Johnson,William H,Head,M,M,40,Laborer,General Farm,W,sheet 6A; 20 Apr 1910; rents
+R11,2,99,Johnson,Mary J,Wife,M,F,39,,,,
+R11,3,99,Johnson,Henry F,Son,M,M,15,Laborer,General Farm,W,
+R11,4,99,Johnson,Oda W,Son,M,M,13,Laborer,Odd jobs,W,
+R11,5,99,Johnson,George H,Son,M,M,10,,,,
+R11,6,99,Johnson,Lonza,Son,M,M,8,,,,
+R11,7,99,Johnson,Mary J,Daughter,M,F,6,,,,
+R11,8,99,Johnson,Mary M,Daughter,M,F,4,,,,
+R11,9,99,Johnson,Fannie,Daughter,M,F,3,,,,
+R11,10,99,Johnson,Robert,Son,M,M,0,,,,
+R11,11,100,Johnson,Charles F,Head,M,M,38,Farm Laborer,Working out,W,rents
+R11,12,100,Johnson,May E,Wife,M,F,40,,,,
+R11,13,100,Johnson,Lawrence H,Son,M,M,15,Farm Laborer,Working out,W,
+R11,14,100,Johnson,Franklin B,Son,M,M,14,Farm Laborer,Working out,W,
+R11,15,100,Johnson,Mary M,Daughter,M,F,11,,,,
+R11,16,100,Johnson,Charles H,Son,M,M,10,,,,
+R11,17,100,Johnson,Grace E,Daughter,M,F,8,,,,
+R11,18,100,Johnson,Sarah F,Daughter,M,F,7,,,,
+R11,19,100,Johnson,Thomas E,Son,M,M,7,,,,
+R11,20,100,White,James M,Nephew,M,M,5,,,,
+R11,21,101,Trammell,Frank B,Head,B,M,43,Farm Laborer,Working out,W,rents
+R11,22,101,Trammell,Florence L,Wife,B,F,34,,,,
+R11,23,101,Trammell,Frank H,Son,B,M,21,Farm Laborer,Working out,W,
+R11,24,101,Trammell,Susie L,Daughter,B,F,16,Servant,Working out,W,
+R11,25,101,Trammell,Margaret E,Daughter,B,F,13,,,,
+R11,26,101,Trammell,Malinda R,Daughter,B,F,10,,,,
+R11,27,101,Trammell,James W,Son,B,M,8,,,,
+R11,28,101,Trammell,Mable H,Daughter,B,F,6,,,,
+R11,29,101,Trammell,Haywood L,Son,B,M,3,,,,
+R11,30,101,Trammell,William H,Son,B,M,2,,,,
+R11,31,102,Milbourn,Jonathan C,Head,W,M,76,Farmer,Truck Farm,OA,owns farm 19
+R11,32,102,Milbourn,Martha J,Wife,W,F,63,,,,
+R11,33,102,Milbourn,Maude T,Daughter,W,F,36,,,,
+R11,34,102,Milbourn,John,Grandson,W,M,4,,,,
+R11,35,103,Shugars,George W,Head,W,M,74,Own income,,,widower; owns home
+R11,36,104,Milbourn,Leon W,Head,W,M,34,Farmer,General Farm,Emp,rents farm 20
+R11,37,104,Milbourn,Carrie K,Wife,W,F,25,,,,born Maryland
+R11,38,104,Milbourn,Leon W Jr,Son,W,M,2,,,,
+R11,39,104,Milbourn,James D,Son,W,M,0,,,,
+R11,40,105,Brown,Richard H,Head,W,M,59,Farmer,General Farm,Emp,owns farm 21
+R11,41,105,Brown,Margaret E,Wife,W,F,63,,,,
+R11,42,105,Brown,Melva E,Daughter,W,F,22,,,,
+R11,43,105,Brown,Samuel W,Son,W,M,16,,,,
+R11,44,106,Compher,Florrin S,Head,W,M,52,Farmer,General Farm,Emp,owns farm 22
+R11,45,106,Compher,Anna C,Wife,W,F,45,,,,
+R11,46,107,Hauser,Addie A,Head,W,F,62,Farmer,General Farm,Emp,widow; rents farm 23
+R11,47,107,Hauser,Lester G,Son,W,M,21,Farm Laborer,Home Farm,W,
+R11,48,107,Hauser,Sadie A,Daughter,W,F,21,,,,
+R11,49,108,Smith,William S,Head,W,M,44,Farm Laborer,General Farm,W,rents; parents born England
+R11,50,108,Smith,Mary E,Wife,W,F,43,,,,
+R12,51,109,Tribby,Joseph M,Head,W,M,32,Farm Laborer,General Farm,W,sheet 6B; rents
+R12,52,109,Tribby,Fannie A,Wife,W,F,26,,,,
+R12,53,109,Tribby,Harry F,Son,W,M,8,,,,
+R12,54,109,Tribby,Charles S,Son,W,M,6,,,,
+R12,55,109,Tribby,Joseph F,Son,W,M,3,,,,
+R12,56,110,Murray,Noble S,Head,B,M,38,Farm Laborer,Working out,W,rents
+R12,57,110,Murray,Helen M,Wife,B,F,35,Servant,Private Family,W,born District of Columbia
+R12,58,111,Grubb,Robert C,Head,W,M,39,Farmer,General Farm,Emp,owns farm 24
+R12,59,111,Grubb,Roberta,Wife,W,F,36,,,,
+R12,60,111,Grubb,Lester M,Son,W,M,12,,,,
+R12,61,112,Wood,Hamilton W,Head,B,M,68,Farmer,General Farm,OA,widower; owns farm 25; sheet 6B ends line 61
+R13,1,113,Fling,William H,Head,W,M,60,Retail Merchant,Dry Goods & Notions,OA,sheet 7A; owns home
+R13,2,113,Fling,Mary L,Wife,W,F,63,,,,
+R13,3,113,Fling,Henry,Son,W,M,24,Farmer,General Farm,W,
+R13,4,113,Fling,Ashby,Son,W,M,22,Farmer,General Farm,W,
+R13,5,114,Bowie,Allen W,Head,W,M,57,Telegraph Operator,Rail Road Station,W,single; born District of Columbia father; rents
+R13,6,115,Belt,Townsend W,Head,W,M,66,Farmer,General Farm,Emp,owns farm 27
+R13,7,115,Belt,Annie M,Wife,W,F,63,,,,
+R13,8,115,Belt,Mary R,Daughter,W,F,29,,,,
+R13,9,115,Belt,Benjamin B,Son,W,M,21,Farmer,Home Farm,W,
+R13,10,115,Bradshaw,Walter R,Boarder,W,M,24,Laborer,Working out,W,
+R13,11,115,Bradford,Rachel,Servant,B,F,50,Servant,Private Family,W,
+R13,12,115,Bradford,Albert,Hired man,B,M,23,Farm Laborer,Working out,W,
+R13,13,115,Nickens,Emma,Servant,B,F,9,Servant,Private Family,W,
+R13,14,115,Nickens,Sherdon,Servant,B,M,14,Servant,Private Family,W,
+R13,15,116,Morris,Sarah,Head,B,F,58,Laundress,At Home,OA,widow; rents
+R13,16,116,Simms,Nerva,Daughter,M,F,26,Servant,Private Family,W,
+R13,17,116,Morris,Caroline,Daughter,M,F,16,,,,
+R13,18,116,Morris,Daniel,Son,M,M,13,,,,
+R13,19,116,Morris,James,Son,M,M,10,,,,
+R13,20,116,Morris,Robert,Son,M,M,6,,,,
+R13,21,117,Rush,Edgar B,Head,W,M,48,Farmer,General Farm,Emp,rents farm 28
+R13,22,117,Rush,May E,Wife,W,F,42,,,,
+R13,23,117,Rush,Roger E,Son,W,M,14,Farm Laborer,Home Farm,W,
+R13,24,117,Rush,Gertrude M,Daughter,W,F,12,,,,
+R13,25,118,Cornell,George W,Head,W,M,49,Laborer,Odd jobs,W,rents
+R13,26,118,Cornell,Mary F,Wife,W,F,54,,,,
+R13,27,119,Carr,John C,Head,W,M,61,Farmer,General Farm,Emp,owns farm 29
+R13,28,119,Carr,Dora I,Wife,W,F,50,,,,born Maryland
+R13,29,119,Carr,Thomas G,Son,W,M,18,,,,
+R13,30,119,Carr,Eugenia C,Daughter,W,F,16,,,,
+R13,31,119,Carr,John Lewis,Son,W,M,12,,,,
+R13,32,119,Carr,Elenor C,Daughter,W,F,10,,,,
+R13,33,120,Carter,Robert L,Head,W,M,41,Farmer,General Farm,Emp,rents farm 30
+R13,34,120,Carter,Blanch V,Wife,W,F,35,,,,
+R13,35,120,Carter,Willard H,Son,W,M,4,,,,
+R13,36,120,Carter,Foster L G,Son,W,M,2,,,,
+R13,37,120,Carter,Alma V,Daughter,W,F,0,,,,
+R13,38,120,Hall,Bushrod H,Brother-in-law,W,M,40,Own income,,,
+R13,39,121,Saunders,Christian N,Head,W,M,53,Carpenter,Houses,W,owns home; born Maryland father
+R13,40,121,Saunders,Annie E,Wife,W,F,49,,,,born District of Columbia
+R13,41,122,Jackson,John W,Head,B,M,65,Farm Laborer,Working out,W,owns home
+R13,42,122,Jackson,Louisa M,Wife,B,F,56,,,,
+R13,43,122,Jackson,Robert,Nephew,B,M,14,,,,
+R13,44,122,Tates,Lucy,Adopted daughter,B,F,13,Servant,Working out,W,
+R13,45,123,Shumate,Joseph H,Head,W,M,36,Farmer,General Farm,Emp,rents farm 32
+R13,46,123,Shumate,Alma W,Wife,W,F,31,,,,
+R13,47,123,Shumate,Mary H,Daughter,W,F,9,,,,
+R13,48,123,Shumate,Sallie W,Daughter,W,F,5,,,,sheet 7A ends line 48
+R14,51,124,Smith,Preston,Head,B,M,42,Farm Laborer,General Farm,W,sheet 7B; 22 Apr 1910; rents
+R14,52,124,Smith,Catherine,Wife,B,F,40,,,,
+R14,53,124,Smith,Lucy H,Daughter,B,F,16,,,,
+R14,54,124,Smith,William D,Son,B,M,15,,,,
+R14,55,124,Smith,Henry A,Son,B,M,12,,,,
+R14,56,124,Smith,Rogers,Son,B,M,10,,,,
+R14,57,124,Smith,Mary E,Daughter,B,F,7,,,,
+R14,58,124,Smith,Hanah B,Daughter,B,F,7,,,,
+R14,59,124,Smith,John,Son,B,M,4,,,,
+R14,60,124,Smith,Beattrice,Daughter,B,F,2,,,,
+R14,61,124,Smith,Bessie,Daughter,B,F,0,,,,
+R14,62,125,Hoge,Flavius,Head,W,M,51,Farmer,General Farm,Emp,widower; owns farm 33
+R14,63,125,Hoge,George W,Father,W,M,74,Own income,,,widower
+R14,64,125,Philips,Mable P,Servant,W,F,29,Servant,Private Family,W,born District of Columbia
+R14,65,125,Philips,Raymond T,Servant,W,M,8,,,,born District of Columbia
+R14,66,126,Shumaker,Charles,Head,W,M,19,Farm Laborer,General Farm,W,born West Virginia; rents
+R14,67,126,Grimes,Fannie M,Servant,W,F,39,Servant,Private Family,W,
+R14,68,126,Grimes,Ervin,Boarder,W,M,6,,,,
+R14,69,127,Hindman,Matthew S,Head,W,M,24,Engineer,Traction Engine,W,rents
+R14,70,127,Hindman,Clara F,Wife,W,F,23,,,,
+R14,71,127,Hindman,Harry R,Son,W,M,3,,,,
+R14,72,127,Hindman,Annie M,Daughter,W,F,1,,,,
+R14,73,127,Milbourn,Margaret M,Sister-in-law,W,F,20,Servant,Working out,W,
+R14,74,128,White,Daniel T,Head,B,M,23,Retail Merchant,Grocery Store,OA,rents; Black grocer
+R14,75,129,Simpson,Henry R,Head,W,M,53,Farmer,General Farm,Emp,rents farm 34
+R14,76,129,Simpson,Annie E,Wife,W,F,53,,,,
+R14,77,129,Simpson,Ida M,Daughter,W,F,28,,,,
+R14,78,129,White,David A,Hired man,W,M,38,Farm Laborer,Working out,W,
+R14,79,130,Rogers,Henry H,Head,W,M,34,Farmer,General Farm,Emp,rents farm 35
+R14,80,130,Rogers,Ada C,Wife,W,F,32,,,,
+R14,81,130,Rogers,Margaret L,Daughter,W,F,4,,,,
+R14,82,130,Rogers,Nellie C,Daughter,W,F,1,,,,
+R14,83,130,Rogers,Jesse S,Father,W,M,72,,,,widower
+R14,84,130,Rogers,Ada H,Aunt,W,F,54,,,,
+R14,85,130,Pinkett,Lucy,Servant,B,F,16,Servant,Private Family,W,
+R14,86,130,Trammell,Joseph J,Hired boy,B,M,18,Farm Laborer,General Farm,W,
+R14,87,131,Laycock,Robert L,Head,W,M,34,Farmer,General Farm,Emp,rents farm 36
+R14,88,131,Laycock,Francis E,Wife,W,F,27,,,,
+R14,89,131,Laycock,Hazel L,Daughter,W,F,7,,,,
+R14,90,131,Laycock,Virgie B,Daughter,W,F,6,,,,
+R14,91,131,Laycock,Francis M,Son,W,M,2,,,,
+R14,92,132,Wynkoop,Moses T,Head,W,M,57,Farmer,General Farm,Emp,owns farm 37
+R14,93,132,Wynkoop,Henrietta,Wife,W,F,54,,,,
+R14,94,132,Wynkoop,James M,Son,W,M,22,Farmer,Home Farm,W,
+R14,95,133,Laycock,John F,Head,W,M,66,Farmer,General Farm,Emp,owns farm 38
+R14,96,133,Laycock,Mary C,Wife,W,F,61,,,,
+R14,97,133,Laycock,John F Jr,Son,W,M,26,Farmer,Home Farm,W,
+R14,98,133,Laycock,Jesse,Daughter-in-law,W,F,20,,,,
+R14,99,133,Champ,Raymond,Servant,B,M,8,,,,
+R14,100,134,Jackson,Samuel,Head,B,M,64,Laborer,Odd jobs,W,rents
+R15,1,135,Trammell,Herbert,Head,M,M,28,Farm Laborer,General Farm,W,sheet 8A; 22 Apr 1910; owns farm 39
+R15,2,135,Trammell,Virgie,Wife,M,F,28,,,,
+R15,3,136,Jones,Lewis,Head,B,M,60,Farmer,General Farm,Emp,born Maryland; owns farm 40
+R15,4,136,Jones,Jennie,Wife,B,F,65,,,,born Maryland
+R15,5,136,Grayson,Jennie,Granddaughter,B,F,22,,,,
+R15,6,136,Grayson,Josephine,Granddaughter,B,F,3,,,,
+R15,7,137,Laycock,Samuel A,Head,W,M,59,Farmer,General Farm,Emp,rents farm 41
+R15,8,137,Laycock,Sarah E,Wife,W,F,55,,,,
+R15,9,137,Laycock,Mary E,Daughter,W,F,32,,,,
+R15,10,137,Brown,Benjamin,Father-in-law,W,M,81,,,,widower
+R15,11,137,Brown,Mary A,Aunt,W,F,76,,,,
+R15,12,138,Fry,Foster B,Head,B,M,68,Servant,Private Family,W,widower; owns home
+R15,13,138,Robinson,Ella V,Daughter,B,F,45,Laundress,At Home,OA,widow
+R15,14,138,Robinson,James,Grandson,B,M,26,Farm Laborer,Working out,W,
+R15,15,138,Robinson,Stanley,Grandson,B,M,9,,,,
+R15,16,138,Robinson,Clara,Granddaughter,B,F,7,,,,
+R15,17,138,Rush,Edward,Boarder,B,M,39,Farm Laborer,General Farm,W,
+R15,18,139,Cravens,Allison,Head,B,M,75,Farm Laborer,General Farm,W,owns home
+R15,19,139,Cravens,Alcinda,Wife,M,F,75,,,,
+R15,20,139,Payne,Bertha,Granddaughter,M,F,8,,,,
+R15,21,139,Price,Nathan D,Grandson,B,M,34,Farm Laborer,Working out,W,sheet 8A ends line 21
+R16,51,140,Preston,Eppa O,Head,W,M,43,Farm Nurse?,Private Family,OA,sheet 8B; 23 Apr 1910; single; owns farm 43; occupation reads like "Farmhouse"/"Farm nurse" - uncertain
+R16,52,140,Preston,Charles W,Uncle,W,M,80,Own income,,,widower
+R16,53,140,Preston,Mary E,Aunt,W,F,70,,,,
+R16,54,140,Haugh,Lucy N,Aunt,W,F,68,,,,widow
+R16,55,140,Preston,Thaddeus T,Uncle,W,M,65,Laborer,Odd jobs,W,widower
+R16,56,140,Preston,Mollie E,Niece,W,F,27,Dressmaker,Working out,W,
+R16,57,140,Preston,Inez L,Niece,W,F,17,,,,
+R16,58,141,Schaeffer,John,Head,W,M,70,Carpenter,Houses,W,owns farm 44
+R16,59,141,Schaeffer,Mandana J,Wife,W,F,61,,,,
+R16,60,141,Schaeffer,Ida,Daughter,W,F,39,,,,
+R16,61,141,Schaeffer,Ella B,Daughter,W,F,25,,,,
+R16,62,142,Sexton,Burnard,Head,W,M,26,Laborer,Odd jobs,W,rents
+R16,63,142,Sexton,Edith,Wife,W,F,21,,,,
+R16,64,142,Sexton,Sarah A,Daughter,W,F,3,,,,
+R16,65,143,Grubb,Charles O,Head,W,M,41,Farmer,General Farm,Emp,rents farm 45
+R16,66,143,Grubb,Carrie V,Wife,W,F,35,,,,
+R16,67,143,Allen,William,Servant,B,M,12,Servant,Private Family,W,
+R16,68,143,Lewis,Richard,Hired boy,B,M,17,Farm Laborer,General Farm,W,
+R16,69,144,Holmes,Hugh R,Head,W,M,79,Farmer,General Farm,Emp,owns farm 46
+R16,70,144,Holmes,Martha J,Sister,W,F,71,Own income,,,
+R16,71,144,Holmes,Lidia A,Sister,W,F,69,Own income,,,
+R16,72,144,Cox,Robt W,Hired man,M,M,25,Farm Laborer,General Farm,W,
+R16,73,144,Cox,Luella,Servant,M,F,22,Servant,Private Family,W,
+R16,74,145,Hughes,Mary E,Head,W,F,46,Own income,,,owns home
+R16,75,145,Hughes,Emily,Boarder,W,F,73,Own income,,,widow; born Pennsylvania
+R16,76,146,Gordon,Daniel,Head,B,M,36,Farmer,General Farm,Emp,rents farm 47
+R16,77,146,Gordon,Clara V,Wife,M,F,31,,,,
+R16,78,146,Gordon,Margaret S,Daughter,M,F,12,,,,
+R16,79,146,Gordon,Charles W,Son,M,M,10,,,,
+R16,80,147,Hughes,Daniel M,Head,W,M,39,Farmer,General Farm,Emp,owns farm 48
+R16,81,147,Hughes,Cornelia J,Wife,W,F,37,,,,
+R16,82,147,Hughes,Donald M,Son,W,M,12,,,,
+R16,83,147,Hughes,Marjorie J,Daughter,W,F,10,,,,
+R16,84,147,Hughes,Anna N,Daughter,W,F,9,,,,
+R16,85,147,Hughes,Lelia C,Daughter,W,F,8,,,,
+R16,86,147,Hughes,Edward,Son,W,M,3,,,,
+R16,87,147,Thompson,Minnie L,Teacher,W,F,60,Teacher,Private Family,W,
+R16,88,148,Helm,Thomas M,Head,W,M,28,Own income,,,owns home
+R16,89,148,Helm,Lula M,Wife,W,F,32,,,,
+R16,90,149,Hatcher,Joshua P,Head,W,M,41,Farmer,General Farm,Emp,owns farm 49
+R16,91,149,Hatcher,Mary V,Wife,W,F,36,,,,
+R16,92,149,Hatcher,Mary V,Daughter,W,F,15,,,,
+R16,93,149,Hatcher,Caroline A,Daughter,W,F,12,,,,
+R16,94,149,Hatcher,Thomas J,Son,W,M,10,,,,
+R16,95,149,Carter,Norman,Hired boy,B,M,16,Farm Laborer,General Farm,W,sheet 8B ends line 95
+R17,1,150,Raymie,William,Head,M,M,40,Farm Laborer,General Farm,W,sheet 9A; 25 Apr 1910; rents
+R17,2,150,Raymie,Mary,Wife,M,F,40,,,,
+R17,3,150,Raymie,Beverly,Son,M,M,13,Servant,Private Family,W,
+R17,4,150,Raymie,James W,Son,M,M,12,,,,
+R17,5,150,Raymie,Martha,Daughter,M,F,10,,,,
+R17,6,150,Raymie,Carroll,Son,M,M,5,,,,
+R17,7,150,Raymie,Franklin,Son,M,M,1,,,,
+R17,8,151,Champ,Charley,Head,B,M,50,Farm Laborer,General Farm,W,rents
+R17,9,151,Champ,Jannie,Daughter,B,F,18,,,,
+R17,10,151,Champ,Gertrude,Daughter,B,F,16,,,,
+R17,11,151,Champ,Charley Jr,Son,B,M,13,Laborer,Odd jobs,W,
+R17,12,151,Champ,Walter,Grandson,B,M,1,,,,
+R17,13,152,Laycock,William H,Head,W,M,54,Farmer,General Farm,Emp,owns farm 50
+R17,14,152,Laycock,Lucy B,Wife,W,F,45,,,,
+R17,15,152,Laycock,Carrol T,Son,W,M,16,Farm Laborer,Home Farm,W,
+R17,16,152,Edwards,Thorton,Servant,B,M,11,Servant,Private Family,W,
+R17,17,153,Pearson,John C,Head,W,M,36,Farm Laborer,General Farm,W,rents
+R17,18,153,Pearson,Nannie B,Wife,W,F,36,,,,
+R17,19,153,Pearson,Fern C,Son,W,M,11,,,,
+R17,20,153,Pearson,Paul H,Son,W,M,8,,,,
+R17,21,153,Pearson,Julia L,Daughter,W,F,6,,,,
+R17,22,153,Pearson,Homer I,Son,W,M,3,,,,
+R17,23,153,Pearson,Mazie,Daughter,W,F,0,,,,
+R17,24,154,Scott,Charles W,Head,W,M,42,Laborer,Odd jobs,W,rents; father born Ireland
+R17,25,154,Scott,Jennie C,Wife,W,F,39,,,,
+R17,26,154,Scott,Minnie A,Daughter,W,F,19,,,,
+R17,27,154,Scott,Lester A,Son,W,M,14,Farm Laborer,General Farm,W,
+R17,28,154,Scott,William W,Son,W,M,12,,,,
+R17,29,154,Scott,Mae A,Daughter,W,F,8,,,,
+R17,30,154,Scott,Raymond R,Son,W,M,5,,,,
+R17,31,154,Scott,Annie V,Daughter,W,F,1,,,,
+R17,32,155,Wynkoop,Susan A,Head,W,F,73,Own income,,,single; rents
+R17,33,155,Wynkoop,Emma V,Sister,W,F,68,Own income,,,
+R17,34,155,Wynkoop,Richard D,Cousin,W,M,65,Farm Laborer,General Farm,W,widower
+R17,35,156,Saunders,James D,Head,W,M,67,Laborer,Odd jobs,W,rents
+R17,36,156,Saunders,Sarah M,Wife,W,F,55,,,,
+R17,37,156,Saunders,Ada G,Daughter,W,F,27,,,,
+R17,38,156,Saunders,Mary M,Daughter,W,F,16,,,,
+R17,39,156,Saunders,Lewis B,Son,W,M,8,,,,
+R17,40,157,Russell,James E,Head,W,M,58,Retail Merchant,Dry Goods & Groceries,OA,owns farm 51
+R17,41,157,Russell,Mary V,Wife,W,F,55,,,,
+R17,42,157,Munday,Lucinda,Servant,W,F,56,Servant,Private Family,W,widow
+R17,43,158,Swann,James N,Head,B,M,59,Gardener,Vegetable Garden,OA,owns home
+R17,44,158,Swann,Elizabeth,Wife,B,F,56,,,,
+R17,45,158,Moton,Julia C,Daughter,B,F,31,,,,
+R17,46,158,Moton,Arthur M,Son-in-law,M,M,27,Farm Laborer,General Farm,W,
+R17,47,158,Williams,Mary E,Granddaughter,M,F,10,,,,
+R17,48,158,Moton,Edna L,Granddaughter,M,F,2,,,,
+R17,49,159,Costello,Jasper B,Head,W,M,32,Farm Laborer,General Farm,W,rents
+R17,50,159,Costello,Ida L,Wife,W,F,31,,,,
+R18,51,159,Costello,Benjamin J,Son,W,M,7,,,,sheet 9B
+R18,52,159,Costello,Hilda D,Daughter,W,F,6,,,,
+R18,53,159,Costello,Alice C,Daughter,W,F,5,,,,
+R18,54,159,Costello,Ira T,Son,W,M,2,,,,
+R18,55,159,Costello,Edward,Son,W,M,0,,,,
+R18,56,159,McCauley,John O,Father-in-law,W,M,79,,,,
+R18,57,159,McCauley,Christian A,Mother-in-law,W,F,74,,,,
+R18,58,160,Casilear,William D,Head,W,M,27,Own income,,,born District of Columbia; owns farm 52
+R18,59,160,Casilear,Kate G,Wife,W,F,25,,,,
+R18,60,160,Casilear,Raymond,Son,W,M,0,,,,
+R18,61,160,Legg,Wesley,Stepson,W,M,4,,,,
+R18,62,160,Legg,May,Stepdaughter,W,F,3,,,,
+R18,63,160,Legg,Lula,Daughter,W,F,0,,,,
+R18,64,161,Shepard,Henry,Head,B,M,70,Laborer,Odd jobs,W,rents
+R18,65,161,Shepard,Sallie,Wife,B,F,70,,,,
+R18,66,162,Nixon,Ruth,Head,W,F,55,Farmer,General Farm,OA,widow; owns farm 53
+R18,67,162,Nixon,Mazie A,Daughter,W,F,26,,,,
+R18,68,162,Nixon,Mahlon J,Son,W,M,23,Farmer,Home Farm,OA,
+R18,69,163,Carter,Robert,Head,B,M,54,Farm Laborer,General Farm,W,rents
+R18,70,163,Carter,Ida C,Wife,B,F,40,Laundress,Working out,W,
+R18,71,163,Carter,Thomas,Son,B,M,14,Farm Laborer,General Farm,W,
+R18,72,163,Carter,Eva,Daughter,B,F,11,,,,
+R18,73,163,Carter,Wodey,Daughter,B,F,8,,,,
+R18,74,163,Washington,William,Boarder,B,M,28,Laborer,Odd jobs,W,
+R18,75,164,Smallwood,Frank M,Head,W,M,55,Stone Mason,Foundation Work,W,rents
+R18,76,164,Smallwood,Fannie C,Wife,W,F,24,,,,
+R18,77,164,Smallwood,Annie B,Daughter,W,F,6,,,,
+R18,78,164,Smallwood,Lola F,Daughter,W,F,3,,,,
+R18,79,164,Smallwood,William J,Son,W,M,1,,,,
+R18,80,165,Loveless,Catherine E,Head,W,F,81,Own income,,,widow; owns home
+R18,81,165,Loveless,Martha E,Daughter,W,F,39,,,,
+R18,82,165,Beales,Amos A,Son,W,M,58,Carpenter,Houses,W,widower
+R18,83,166,Beales,Henry J,Head,W,M,31,Carpenter,Houses,W,rents
+R18,84,166,Beales,Anna B,Wife,W,F,23,,,,
+R18,85,166,Beales,Helen A,Daughter,W,F,0,,,,
+R18,86,167,Higdon,Eliza,Head,W,F,83,Own income,,,widow; rents
+R18,87,167,Davis,Sallie A,Daughter,W,F,60,Own income,,,widow
+R18,88,167,Davis,Elsie V,Granddaughter,W,F,26,,,,
+R18,89,168,White,Gregg C,Head,B,M,29,Farm Laborer,General Farm,W,owns home
+R18,90,168,White,Dorothy E,Wife,B,F,24,Servant,Private Family,W,
+R18,91,168,White,James M,Son,B,M,5,,,,
+R18,92,168,White,Thomas T,Son,B,M,4,,,,sheet 9B ends line 92
+R29,1,232,Lewis,Elis J,Head,B,M,31,Farm Laborer,General Farm,W,sheet 15A; 3 May 1910; rents
+R29,2,232,Lewis,Annie,Wife,B,F,23,Servant,Private Family,W,
+R29,3,232,Trammell,George,Servant,B,M,15,Servant,Private Family,W,
+R29,4,233,Robertson,William D,Head,W,M,39,Farmer,General Farm,Emp,born Scotland; immigrated 1883 naturalized; owns farm 102
+R29,5,233,Robertson,Isabelle,Wife,W,F,35,,,,born New York
+R29,6,233,Robertson,Donald M,Son,W,M,1,,,,
+R29,7,234,Bryant,David E,Head,B,M,31,Farm Laborer,General Farm,W,owns farm 103
+R29,8,234,Bryant,Loretta,Wife,B,F,27,,,,
+R29,9,234,Bryant,Harland,Son,B,M,10,,,,
+R29,10,234,Bryant,Henry O,Son,B,M,8,,,,
+R29,11,234,Bryant,Edith M,Daughter,B,F,4,,,,
+R29,12,234,Bryant,Louisa E,Daughter,B,F,2,,,,
+R29,13,234,Bryant,Lee W,Son,B,M,0,,,,
+R29,14,235,Parker,Edmond,Head,B,M,65,Farm Laborer,General Farm,W,rents
+R29,15,236,Harrington,Edward,Head,B,M,35,Farm Laborer,General Farm,W,rents
+R29,16,236,Harrington,Fannie M,Wife,B,F,34,,,,
+R29,17,236,Harrington,Virginia,Daughter,B,F,13,,,,
+R29,18,236,Harrington,Relius,Son,B,M,10,,,,
+R29,19,236,Harrington,William,Son,B,M,6,,,,
+R29,20,236,Campbell,Matthew,Nephew,B,M,10,,,,
+R29,21,236,Campbell,William,Nephew,B,M,9,,,,
+R29,22,236,Campbell,Bessie,Niece,B,F,6,,,,
+R29,23,236,Campbell,Mary C,Niece,B,F,4,,,,
+R29,24,236,Grayson,Daniel,Nephew,B,M,12,Odd jobs,Working out,W,
+R29,25,236,Grayson,Elizebeth,Niece,B,F,7,,,,
+R29,26,236,Grayson,Orra A,Niece,B,F,4,,,,
+R29,27,236,Grayson,Ann,Mother-in-law,B,F,65,Laundress,Working out,OA,widow
+R29,28,237,Baldwin,James A,Head,W,M,69,Farmer,General Farm,Emp,owns farm 104
+R29,29,237,Baldwin,Margaret F,Wife,W,F,62,,,,
+R29,30,238,Trammell,Joseph H,Head,M,M,48,Farmer,General Farm,Emp,owns farm 105
+R29,31,238,Trammell,Ida,Wife,M,F,53,,,,
+R29,32,238,Trammell,Henrietta,Daughter,M,F,27,,,,
+R29,33,238,Trammell,Ida M,Daughter,M,F,25,,,,
+R29,34,238,Trammell,Alice,Daughter,M,F,22,,,,
+R29,35,238,Brady,John,Lodger,B,M,80,,,,
+R29,36,239,Costello,Charles E,Head,W,M,44,Farm Laborer,General Farm,W,rents
+R29,37,239,Costello,Lillie,Wife,W,F,41,,,,
+R29,38,239,Costello,Lula,Daughter,W,F,18,,,,
+R29,39,239,Costello,Emma,Daughter,W,F,16,,,,
+R29,40,239,Costello,Minnie,Daughter,W,F,13,,,,
+R29,41,239,Costello,Charley M,Son,W,M,11,,,,
+R29,42,239,Costello,Clarence B,Son,W,M,9,,,,
+R29,43,239,Costello,Luther L,Son,W,M,6,,,,
+R29,44,239,Costello,Ruby J,Daughter,W,F,3,,,,
+R29,45,239,Costello,Lola V,Daughter,W,F,0,,,,
+R29,46,240,Embrey,Meredith E,Head,W,M,45,Farm Laborer,General Farm,W,rents
+R29,47,240,Embrey,Mollie L,Wife,W,F,43,,,,
+R29,48,240,Embrey,Clarence R,Son,W,M,18,Farm Laborer,Working out,W,
+R29,49,240,Embrey,Arthur L,Son,W,M,16,Farm Laborer,Working out,W,
+R29,50,240,Embrey,Annie E,Daughter,W,F,14,,,,
+R30,51,240,Embrey,Edith C,Daughter,W,F,12,,,,sheet 15B
+R30,52,240,Embrey,Meredith C,Son,W,M,9,,,,
+R30,53,241,Embrey,Quilla I,Head,W,M,51,Farm Laborer,General Farm,W,rents
+R30,54,241,Embrey,Dollie,Wife,W,F,40,,,,
+R30,55,241,Embrey,Bessie,Daughter,W,F,19,,,,
+R30,56,242,Polen,Clayton L,Head,W,M,32,Farm Laborer,General Farm,W,rents
+R30,57,242,Polen,Alice V,Wife,W,F,25,,,,
+R30,58,242,Polen,Mozell R,Daughter,W,F,5,,,,
+R30,59,243,Thomas,James W,Head,W,M,66,Farmer,General Farm,Emp,owns farm 106
+R30,60,243,Thomas,Elizabeth A,Wife,W,F,64,,,,
+R30,61,243,Thomas,James G,Son,W,M,21,Farm Laborer,Home Farm,W,
+R30,62,243,Campbell,Turner,Hired man,W,M,19,Farm Laborer,General Farm,W,
+R30,63,244,Shafer,Daniel,Head,W,M,67,Farmer,General Farm,Emp,widower; born Maryland father Germany; owns farm 107
+R30,64,244,Lovett,Lizzie F,Housekeeper,W,F,32,Housekeeper,Private Family,W,
+R30,65,245,Simpson,Henley B,Head,W,M,50,Farmer,General Farm,Emp,owns farm 108
+R30,66,245,Simpson,Ida F,Wife,W,F,45,,,,
+R30,67,245,Simpson,Marvin B,Son,W,M,12,,,,
+R30,68,245,Simpson,Thomas L,Son,W,M,11,,,,
+R30,69,246,Brown,Benjamin F,Head,W,M,53,Farmer,General Farm,Emp,owns farm 109
+R30,70,246,Brown,Sarah J,Wife,W,F,50,,,,
+R30,71,246,Brown,Sarah C,Daughter,W,F,23,,,,
+R30,72,246,Weadon,Virginia,Mother-in-law,W,F,80,,,,widow
+R30,73,246,Brown,Addison,Uncle,W,M,79,,,,single; sheet 15B ends line 73
+R31,1,247,Preston,Thomas R,Head,W,M,37,Farm Laborer,General Farm,W,sheet 16A; 4 May 1910; rents
+R31,2,247,Preston,Edna M,Wife,W,F,37,,,,
+R31,3,247,Preston,Emma G,Daughter,W,F,4,,,,
+R31,4,247,Milbourn,Annie P,Niece,W,F,16,,,,
+R31,5,248,Peugh,Lidia E,Head,W,F,66,Farmer,General Farm,Emp,widow; owns farm 110
+R31,6,248,Peugh,Ella G,Daughter,W,F,32,,,,
+R31,7,248,Peugh,Charles B,Son,W,M,28,Farm Laborer,Home Farm,W,
+R31,8,248,Peugh,Annie T,Daughter,W,F,25,Teacher,Public School,W,
+R31,9,249,Corbin,James M,Head,W,M,52,Blacksmith,Own Shop,OA,owns farm 111
+R31,10,249,Corbin,Rosa A,Wife,W,F,52,,,,
+R31,11,249,Corbin,Eugene W,Son,W,M,30,Printer,Weekly Paper,W,
+R31,12,249,Corbin,Beulah O,Daughter,W,F,27,Seamstress,At Home,OA,
+R31,13,249,Corbin,Rosamond M,Daughter,W,F,12,,,,
+R31,14,249,Jackson,Edgar,Servant,B,M,18,Servant,Private Family,W,
+R31,15,249,Walker,John,Hired man,W,M,54,Gardener,Private Family,W,born District of Columbia; sheet 16A ends line 15
+R32,51,250,Pearson,Barnett C,Head,W,M,50,Farmer,General Farm,Emp,sheet 16B; 5 May 1910; rents farm 113
+R32,52,250,Pearson,Ruth A,Wife,W,F,49,,,,
+R32,53,250,Pearson,Arthur W,Son,W,M,26,Farm Laborer,General Farm,W,
+R32,54,250,Pearson,Ida E,Daughter,W,F,25,,,,
+R32,55,250,Pearson,Clara G,Daughter,W,F,15,,,,
+R32,56,250,Pearson,Olie M,Daughter,W,F,6,,,,
+R32,57,250,Pearson,Paul,Nephew,W,M,9,,,,
+R32,58,251,Logan,Ann E,Head,W,F,68,Farmer,General Farm,Emp,widow; owns farm 113
+R32,59,251,Holmes,Lorena M,Sister,W,F,47,Own income,,,
+R32,60,252,Bryant,Lee,Head,M,M,57,Farm Laborer,General Farm,OA,owns farm 114
+R32,61,252,Bryant,Mary E,Wife,M,F,46,,,,
+R32,62,253,Cole,James M,Head,W,M,30,Farmer,General Farm,Emp,rents farm 115
+R32,63,253,Cole,Mary W,Wife,W,F,32,,,,
+R32,64,253,Chinn,Clarence,Hired boy,B,M,16,Farm Laborer,General Farm,W,
+R32,65,253,Jackson,Nancy,Servant,B,F,15,Servant,Private Family,W,
+R32,66,254,Hixson,Claudius T,Head,W,M,30,Farmer,General Farm,Emp,owns farm 116
+R32,67,254,Hixson,Edith S,Wife,W,F,34,,,,
+R32,68,255,Chinn,Thomas,Head,B,M,31,Laborer,General Farm,W,rents
+R32,69,255,Chinn,Susan,Wife,B,F,28,,,,
+R32,70,256,Hoge,Louis C,Head,W,M,25,Farmer,General Farm,Emp,single; rents farm 117
+R32,71,256,Hoge,Julia C,Sister,W,F,30,,,,
+R32,72,256,Robinson,William,Servant,B,M,21,Servant,Private Family,W,
+R32,73,257,Hoge,Elmina R,Head,W,F,66,Farmer,General Farm,Emp,widow; owns farm 118
+R32,74,257,Hoge,Rachel M,Daughter,W,F,35,Farmer,General Farm,Emp,owns farm 119
+R32,75,257,Cox,Winnie H,Servant,M,F,28,Servant,Private Family,W,
+R32,76,258,Vandevanter,Albert B,Head,W,M,53,Farm Manager,General Farm,W,widower; rents
+R32,77,258,Vandevanter,Josephine B,Daughter,W,F,21,,,,
+R32,78,258,Vandevanter,Albert L,Son,W,M,15,,,,
+R32,79,258,Samuels,Sarah,Servant,B,F,50,Servant,Private Family,W,
+R32,80,259,Vandevanter,Joseph,Head,W,M,64,Farmer,General Farm,Emp,owns farm 120
+R32,81,259,Vandevanter,Florence,Wife,W,F,44,,,,born Michigan; sheet 16B ends line 81
+R25,4,214,Virts,William E,Head,W,M,32,Odd jobs,Working out,W,sheet 13A; 29 Apr 1910; rents
+R25,5,214,Virts,Susan,Wife,W,F,24,,,,
+R25,6,214,Virts,Howard F,Son,W,M,4,,,,born Maryland
+R25,7,214,Virts,Alice V,Daughter,W,F,2,,,,
+R25,8,214,Virts,Littie E,Daughter,W,F,1,,,,
+R25,9,214,Vickers,James,Brother-in-law,W,M,28,Odd jobs,Working out,W,
+R25,10,215,Legg,Henry F,Head,W,M,21,Farm Laborer,General Farm,W,rents
+R25,11,215,Legg,Hanah,Wife,W,F,21,,,,
+R25,12,216,Howell,Eugene D,Head,W,M,34,Farmer,General Farm,Emp,owns farm 89
+R25,13,216,Howell,Rosa F,Wife,W,F,31,,,,
+R25,14,216,Howell,Lillian P,Daughter,W,F,8,,,,
+R25,15,216,Howell,Joseph H,Son,W,M,5,,,,
+R25,16,217,Gray,Rodney W,Head,W,M,45,Farmer,General Farm,Emp,owns farm 90
+R25,17,217,Gray,Ida L,Wife,W,F,38,,,,
+R25,18,217,Gray,Minnie C,Daughter,W,F,17,,,,
+R25,19,217,Gray,Welby T,Son,W,M,14,,,,
+R25,20,217,Gray,Edith E,Daughter,W,F,12,,,,
+R25,21,217,Gray,Herbert L,Son,W,M,8,,,,
+R25,22,217,Gray,Irvin G,Son,W,M,5,,,,
+R25,23,217,Gray,Virginia E,Daughter,W,F,3,,,,
+R25,24,218,Jones,Nelson,Head,B,M,62,Farmer,General Farm,Emp,owns farm 91
+R25,25,218,Jones,(blank),Wife,B,F,41,,,,
+R25,26,218,Nelson,James T,Stepson,M,M,12,,,,sheet 13A ends line 26
+R27,1,219,Holmes,George W,Head,W,M,62,Farmer,General Farm,Emp,sheet 14A; 2 May 1910; owns farm 92
+R27,2,219,Presgraves,Louisa,Housekeeper,W,F,64,House Keeper,Private Family,W,
+R27,3,220,Lovett,Charles O,Head,W,M,33,Farm Laborer,General Farm,W,rents
+R27,4,220,Lovett,May E,Wife,W,F,27,,,,
+R27,5,220,Lovett,Daisy M,Daughter,W,F,8,,,,
+R27,6,220,Lovett,Lillian C,Daughter,W,F,7,,,,
+R27,7,220,Lovett,Charles H,Son,W,M,4,,,,
+R27,8,220,Lovett,Luther H,Son,W,M,4,,,,
+R27,9,220,Lovett,Mary L,Daughter,W,F,2,,,,
+R27,10,221,Cross,Joseph,Head,B,M,36,Farm Laborer,General Farm,W,rents
+R27,11,221,Cross,Ida M,Wife,B,F,35,,,,
+R27,12,221,Cross,Irena,Daughter,B,F,13,,,,
+R27,13,221,Cross,George W,Son,B,M,7,,,,
+R27,14,222,Laycock,James H,Head,W,M,69,Farmer,General Farm,Emp,owns farm 93
+R27,15,222,Laycock,Gertrude H,Wife,W,F,43,,,,
+R27,16,223,Tavenner,William M,Head,W,M,62,Farmer,General Farm,Emp,owns farm 94
+R27,17,223,Tavenner,Jennie,Wife,W,F,60,,,,
+R27,18,223,Tavenner,William R,Son,W,M,27,Farm Laborer,Home Farm,W,
+R27,19,223,Tavenner,Daisey V,Daughter,W,F,22,Teacher,Public School,W,
+R27,20,223,Tavenner,Harry E,Son,W,M,20,Farm Laborer,Home Farm,W,
+R27,21,223,Tavenner,Frank R,Son,W,M,18,Farm Laborer,Home Farm,W,
+R27,22,224,Morris,Robert M,Head,W,M,43,Farmer,General Farm,Emp,owns farm 95
+R27,23,224,Morris,Sallie C,Wife,W,F,45,,,,
+R27,24,224,Morris,Grace,Daughter,W,F,16,,,,
+R27,25,224,Morris,Robert M Jr,Son,W,M,14,Farm Laborer,Home Farm,W,
+R27,26,224,Morris,Frederick L,Son,W,M,12,,,,
+R27,27,224,Morris,Mahlon,Son,W,M,10,,,,
+R27,28,224,Morris,Sarah C,Daughter,W,F,8,,,,
+R27,29,224,Brown,James A,Hired man,W,M,25,Farm Laborer,General Farm,W,
+R27,30,224,Smallwood,George F,Hired boy,W,M,17,Farm Laborer,General Farm,W,
+R27,31,225,Moss,John T,Head,W,M,44,Farmer,General Farm,Emp,owns farm 96
+R27,32,225,Moss,Maggie,Wife,W,F,19,,,,
+R27,33,225,Lanham,George,Stepson,W,M,2,,,,
+R27,34,225,Wildman,Harvey,Cousin,W,M,27,Farm Laborer,General Farm,W,
+R27,35,226,Dodd,John G,Head,W,M,31,Farmer,General Vineyard,Emp,owns farm 97
+R27,36,226,Dodd,Luana V,Wife,W,F,29,,,,
+R27,37,226,Dodd,Charles G,Son,W,M,7,,,,
+R27,38,226,Dodd,Wesley F,Son,W,M,4,,,,
+R27,39,227,Flynn,Robert F,Head,W,M,37,Farmer,General Farm,W,rents
+R27,40,227,Flynn,Lizzie V,Wife,W,F,31,,,,
+R27,41,227,Flynn,Nellie E,Daughter,W,F,11,,,,
+R27,42,227,Flynn,Ina W,Son,W,M,9,,,,
+R27,43,227,Flynn,Florence E,Daughter,W,F,7,,,,
+R27,44,227,Flynn,Lewis F,Son,W,M,4,,,,
+R27,45,227,Flynn,James M,Son,W,M,2,,,,
+R27,46,227,Flynn,Baby,Son,W,M,0,,,,
+R27,47,228,Taylor,John,Head,B,M,68,Laborer,Working out,W,owns home
+R27,48,228,Taylor,Elizabeth,Wife,B,F,65,,,,
+R27,49,228,Taylor,James H,Son,B,M,22,Odd jobs,Working out,W,
+R27,50,228,Ashby,Ethel,Boarder,B,F,25,,,,sheet 14A ends line 50

@@ -1,0 +1,120 @@
+person_id,project_name,cemetery,birth_year,death_year,census_image,census_line,zone,dwelling,census_name,census_age,race,sex,relation,occupation_1900,note,match_basis
+LV0572,Landon Jones,Lakeview,1819,1902,2,13,rural,13,Landon Jones,79,W,M,Head,,occupation blank; 12 months not employed,name+birthyear
+LV0571,Sarah Elizabeth Wynkoop Jones,Lakeview,1821,1903,2,14,rural,13,Sarah C Jones,78,W,F,Wife,,,name+birthyear
+LV0600,John Franklin Laycock,Lakeview,1842,1927,2,16,rural,14,John F Laycock,56,W,M,Head,Farmer,,name+birthyear
+LV1385,Mary Catherine Roberts Laycock,Lakeview,1849,1929,2,17,rural,14,Mary C Laycock,50,W,F,Wife,,,name+birthyear
+LV1382,John Franklin Laycock,Lakeview,1883,1962,2,18,rural,14,John F Laycock,16,W,M,Son,Farm Laborer,,name+birthyear
+LV0601,Samuel Adin Laycock,Lakeview,1851,1913,2,20,rural,15,Samuel A Laycock,48,W,M,Head,Farmer,,name+birthyear
+LV0602,Sarah Ellen Laycock,Lakeview,1855,1931,2,21,rural,15,Sarah E Laycock,44,W,F,Wife,,,name+birthyear
+LV1386,Mary E. Laycock,Lakeview,1878,1967,2,22,rural,15,Mary E Laycock,22,W,F,Daughter,,,name+birthyear
+LV0171,Mary Francenia Brown,Lakeview,1859,1944,2,26,rural,16,Mary V Brown,39,W,F,Sister,,,name+birthyear
+LV0969,Sarah Elizabeth Beales White,Lakeview,1845,1907,2,39,rural,19,Sarah E White,54,W,F,Head,,widow; occupation blank,name+birthyear
+LV2035,David Aden White,Lakeview,1869,1953,2,40,rural,19,David A White,31,W,M,Son,Farm Laborer,,name+birthyear
+LV0940,Sarah Ann Phillips Warner,Lakeview,1850,1927,2,47,rural,21,Sarah A Warner,50,W,F,Wife,,,name+birthyear
+LV0620,Mason Loveless,Lakeview,1826,1906,3,7,rural,23,Mason Loveless,73,W,M,Head,Day Laborer,6 months not employed; rents,name+birthyear
+PV0108,Lawrence H. Johnson,Pleasant Valley,1894,1940,3,35,rural,29,Lawrence Johnson,5,B,M,Son,,,name+birthyear
+PV0350,Mary Elizabeth Simms,Pleasant Valley,,1950,3,44,rural,30,Mary A Simms,5,B,F,Daughter,,,name-only
+LV0163,Daniel Earl Brown,Lakeview,1884,1974,4,2,rural,32,Daniel E Brown,16,W,M,Son,Farm Laborer,7 months not employed,name+birthyear
+LV0825,Christian N. Saunders,Lakeview,1857,1917,4,6,rural,33,Christian N Saunders,43,W,M,Head,Carpenter,2 months not employed,name+birthyear
+LV0793,Robert Lee Preston,Lakeview,1899,1938,5,15,rural,42,Robert G Preston,1,W,M,Son,,,name+birthyear
+LV0704,Charles Wilson Myers,Lakeview,1854,1917,5,16,rural,43,Charles W Myers,47,W,M,Head,Farmer,,name+birthyear
+LV0272,Elizabeth Cox,Lakeview,,1924,5,44,rural,48,Elizabeth Cox,19,B,F,Daughter,,,name-only
+LV0928,James Franklin Utterback,Lakeview,1864,1920,6,39,rural,58,James F Utterback,34,W,M,Head,Farmer,,name+birthyear
+LV0929,Florence Gertrude Brown Utterback,Lakeview,1874,1916,6,40,rural,58,Florence G Utterback,25,W,F,Wife,,,name+birthyear
+LV2042,Mary L Taylor White,Lakeview,,,6,49,rural,59,Mary White,7,B,F,Granddaughter,,,name-only
+LV0258,James Milton Corbin,Lakeview,1859,1930,7,25,rural,64,James M Corbin,41,W,M,Head,Farmer,,name+birthyear
+LV0260,Eugene W. Corbin,Lakeview,1879,1940,7,27,rural,64,Eugene Corbin,21,W,M,Son,Blacksmith,,name+birthyear
+LV0253,Norman W. Corbin,Lakeview,1881,1938,7,28,rural,64,Norman W Corbin,19,W,M,Son,Livery Man,,name+birthyear
+LV1688,Mary E. Preston,Lakeview,1882,1961,7,37,rural,65,Mary E Preston,16,W,F,Niece,At School,,name+birthyear
+LV0821,Sarah J Saunders,Lakeview,,1854,8,5,rural,69,Sarah Saunders,38,W,F,Servant,Servant,,name-only
+LV0428,Arthur M. Fletcher,Lakeview,1875,1959,8,9,rural,71,Arthur M Fletcher,23,W,M,Head,Farmer,,name+birthyear
+LV0026,Welby S. Arnett,Lakeview,1855,1939,8,18,rural,73,Welby S Arnett,44,W,M,Head,Farmer,,name+birthyear
+LV0865,Amanda M Simmons,Lakeview,1860,1902,8,21,rural,73,Amanda Simmons,40,W,F,Sister-in-law,,,name+birthyear
+LV1642,Ella Gertrude Peugh,Lakeview,1877,1961,8,24,rural,74,Ella G Peugh,22,W,F,Daughter,,,name+birthyear
+LV1641,Charles Braden Peugh,Lakeview,1881,1963,8,25,rural,74,Charles B Peugh,19,W,M,Son,Farm Laborer,,name+birthyear
+LV1640,Anna Tavenner Peugh,Lakeview,1884,1966,8,26,rural,74,Anna T Peugh,15,W,F,Daughter,At School,,name+birthyear
+LV0959,Mary Margaret Kuhlmann Weadon,Lakeview,1846,1881,9,43,rural,87,Mary M Weadon,54,W,F,Sister,,,name+birthyear
+LV0594,James Henry Laycock,Lakeview,1840,1928,14,1,rural,128,James Laycock,60,W,M,Head,Farmer,,name+birthyear
+LV0595,Ophelia Orrison Laycock,Lakeview,1849,1907,14,2,rural,128,Ophelia Laycock,50,W,F,Wife,,,name+birthyear
+LV1389,Robert Lee Laycock,Lakeview,1874,1958,14,3,rural,128,Robert E Laycock,25,W,M,Son,Farm Laborer,,name+birthyear
+LV0426,William Henry Fletcher,Lakeview,1841,1934,15,45,rural,148,William H Fletcher,58,W,M,Head,Farmer,,name+birthyear
+LV0565,Francis Marian James,Lakeview,1853,1902,16,3,rural,150,Francis M James,46,W,M,Head,Farmer,,name+birthyear
+LV0566,Mary Winifred Fulton James,Lakeview,1855,1938,16,4,rural,150,Mary W James,43,W,F,Wife,,,name+birthyear
+LV1693,Thomas R. Preston,Lakeview,1872,1964,16,5,rural,150,Thomas Preston,27,W,M,Servant,Farm Laborer,,name+birthyear
+LV0863,Charles E. Silcott,Lakeview,1855,1936,17,6,town,T2,Charles E Silcott,44,W,M,Son,Carpenter,,name+birthyear
+LV0550,Virginia Stover Iden,Lakeview,1830,1912,17,21,town,T6,Virginia Iden,69,W,F,Head,,widow; occupation blank,name+birthyear
+LV0551,Bessie M. Iden,Lakeview,1858,1933,17,23,town,T6,Bessie M Iden,42,W,F,Daughter,,,name+birthyear
+LV0395,William Nathaniel Everhart,Lakeview,1817,1903,17,30,town,T9,William N Everhart,82,W,M,Head,,occupation blank,name+birthyear
+LV0398,Malinda E. Cox Everhart,Lakeview,1844,1906,17,31,town,T9,Malinda E Everhart,56,W,F,Wife,,,name+birthyear
+LV0392,Mary Isabella Myers Everhart,Lakeview,1838,1915,17,33,town,T9,Mary B Everhart,60,W,F,Daughter-in-law,,,name+birthyear
+LV1927,Rebecca J. Wright Thomas,Lakeview,1831,1918,17,48,town,T14,Rebecca J Thomas,67,W,F,Wife,,,name+birthyear
+LV1552,Nora Thomas Myers,Lakeview,1869,1959,17,49,town,T14,Nora B Myers,30,W,F,Daughter,,widow,name+birthyear
+LV0908,George Edwin Thomas,Lakeview,1868,1944,18,2,town,T15,George Thomas,31,W,M,Head,Mill Laborer,,name+birthyear
+LV1919,Edwin R. Thomas,Lakeview,1897,1979,18,4,town,T15,Edwin Thomas,2,W,M,Son,,,name+birthyear
+PV0053,Joseph L. Collins,Pleasant Valley,1900,1967,18,20,town,T18,Joseph L Collins,0,B,M,Son,,,name+birthyear
+LV0092,Joseph E. Beales,Lakeview,1855,1933,18,39,town,T22,Joseph E Beales,46,W,M,Head,Mill Laborer,,name+birthyear
+LV0089,Fannie R. Beales,Lakeview,1863,1943,18,40,town,T22,Fannie Beales,36,W,F,Wife,,born Maryland,name+birthyear
+LV0714,Robert L. Myers,Lakeview,1857,1931,18,42,town,T23,Robert L Myers,42,W,M,Head,Tinner,,name+birthyear
+LV0709,Willard C. Myers,Lakeview,1882,1934,18,44,town,T23,Willard C Myers,17,W,M,Son,At School,,name+birthyear
+LV0716,Nathan Myers,Lakeview,1876,1917,18,49,town,T24,Nathan Myers,24,W,M,Head,Painter,,name+birthyear
+LV1544,Bessie Estelle Myers,Lakeview,1880,1964,18,50,town,T24,Bessie E Myers,20,W,F,Wife,,,name+birthyear
+LV0349,Martha J. Dowell,Lakeview,1835,1932,19,2,town,T25,Martha J Dowell,63,W,F,Sister,Dressmaker,,name+birthyear
+LV0350,Amanda E Dowell,Lakeview,1840,1926,19,3,town,T25,Amanda E Dowell,59,W,F,Sister,Dressmaker,,name+birthyear
+LV0731,Alice M. Norris,Lakeview,,1853,19,6,town,T25,Alice M Norris,44,W,F,Niece,School Teacher,,name-only
+LV0516,Nellie B. Hess,Lakeview,1876,1903,19,15,town,T27,Nellie B Hess,24,W,F,Daughter,,,name+birthyear
+LV0517,James R. Hess,Lakeview,1884,1920,19,16,town,T27,James R Hess,16,W,M,Son,At School,,name+birthyear
+LV0941,Charles William Warner,Lakeview,1859,1923,19,27,town,T32,Charles W Warner,40,W,M,Head,Hardware Merchant,C. W. Warner's Hardware (newspaper),name+birthyear
+LV0861,James Edgar Silcott,Lakeview,1851,1925,19,36,town,T34,James E Silcott,48,W,M,Head,Carpenter,,name+birthyear
+LV0862,Mary Cathrine Silcott,Lakeview,1849,1936,19,37,town,T34,Mary C Silcott,50,W,F,Wife,,,name+birthyear
+LV0597,George Washington Laycock,Lakeview,1861,1936,19,46,town,T36,George W Laycock,38,W,M,Head,Dry Goods Merchant,G. W. Laycock merchant (newspaper),name+birthyear
+LV0598,Ella C. Laycock,Lakeview,1861,1906,19,47,town,T36,Ella P Laycock,38,W,F,Wife,,,name+birthyear
+LV0854,George W. Shoemaker,Lakeview,1861,1924,19,49,town,T36,George W Shoemaker,38,W,M,Boarder,Dry Goods Merchant,single,name+birthyear
+LV0885,Howard W. Tavenner,Lakeview,1875,1937,20,1,town,T37,Howard W Tavenner,25,W,M,Son,Day Laborer,,name+birthyear
+LV1864,Sophia A. Martin Smith,Lakeview,1868,1924,20,10,town,T39,Sophia Smith,33,W,F,Wife,,born Pennsylvania,name+birthyear
+LV0120,Clinton Benedum,Lakeview,1874,1946,20,14,town,T39,Clinton Benedum,25,W,M,Boarder,Butcher,,name+birthyear
+LV0538,Arthur S. Hough,Lakeview,1864,1920,20,18,town,T41,Arthur L Hough,35,W,M,Head,Undertaker,reading faint - verify,name+birthyear
+LV0833,George T. Schooley,Lakeview,1860,1932,20,23,town,T42,George Schooley,39,W,M,Head,Blacksmith,single,name+birthyear
+HM0106,Samuel Lewis,Harmony,1840,1914,20,25,town,T43,Samuel Lewis,60,W,M,Head,Wheelwright,,name+birthyear
+LV0987,Benjamin Franklin Wine,Lakeview,1850,1940,20,27,town,T44,Benjamin F Wine,50,W,M,Head,Shoemaker,written Shoemender,name+birthyear
+LV0986,Sarah Ann Hemingway Wine,Lakeview,1852,1930,20,28,town,T44,Sarah A Wine,48,W,F,Wife,,born England,name+birthyear
+LV0988,Josephine H. Wine,Lakeview,1874,1946,20,29,town,T44,Josephine H Wine,25,W,F,Daughter,School Teacher,4 months not employed,name+birthyear
+LV0811,Ann E. Tavenner Ruse,Lakeview,1829,1905,20,46,town,T48,Ann E Ruse,70,W,F,Wife,,,name+birthyear
+LV0895,James Edgar Tavenner,Lakeview,1867,1931,20,47,town,T49,James E Tavenner,32,W,M,Head,Carpenter,,name+birthyear
+LV0893,William Thomas Tavenner,Lakeview,1871,1939,21,2,town,T49,William Tavenner,30,W,M,Brother,Day Laborer,7 months not employed,name+birthyear
+LV1472,Roy Harmon McDaniel,Lakeview,1873,1902,21,3,town,T50,Roy H McDaniel,27,W,M,Head,Butcher,8 months not employed,name+birthyear
+LV1470,Ella Maude Hunt McDaniel,Lakeview,1875,1934,21,4,town,T50,Ella M McDaniel,25,W,F,Wife,,,name+birthyear
+HM0131,Edna Jane Bradfield Muse,Harmony,1830,1907,21,16,town,T53,Edna J Muse,71,W,F,Head,,widow; occupation blank,name+birthyear
+LV2039,Harry L. White,Lakeview,1888,1956,21,26,town,T56,Harry L White,11,W,M,Son,At School,,name+birthyear
+LV2034,Cloyd M. White,Lakeview,1890,1952,21,27,town,T56,Cloyd M White,10,W,M,Son,At School,,name+birthyear
+LV2041,Hugh W. White,Lakeview,1892,1955,21,28,town,T56,Hugh W White,7,W,M,Son,At School,,name+birthyear
+LV2038,Hannah L. White,Lakeview,,1901,21,30,town,T56,Hannah B White,4,W,F,Daughter,,,name-only
+LV0803,Robert James Nelson Reid,Lakeview,1869,1922,21,33,town,T57,Robert J Reid,30,W,M,Head,Foreman Printing Office,,name+birthyear
+LV0804,Lucy Ellen Myers Reid,Lakeview,1860,1946,21,34,town,T57,Lucy E Reid,40,W,F,Wife,,,name+birthyear
+LV1729,Robert Theodore M. Reid,Lakeview,1897,1963,21,35,town,T57,Robert T Reid,3,W,M,Son,,,name+birthyear
+HM0134,Charles Fenton Myers,Harmony,1827,1907,21,36,town,T57,Charles F Myers,72,W,M,Father-in-law,,widower,name+birthyear
+LV0943,Gabriel V Warner,Lakeview,1829,1909,21,39,town,T58,Gabriel V Warner,69,W,M,Father,,,name+birthyear
+LV0944,Sarah J Stocks Warner,Lakeview,1832,1918,21,40,town,T58,Sarah J Warner,68,W,F,Mother,,,name+birthyear
+LV0385,Mary Maude Everett,Lakeview,1875,1963,21,43,town,T59,Mary M Everett,23,W,F,Daughter,Nurse,5 months not employed,name+birthyear
+LV0655,William Alexander McFarland,Lakeview,1845,1925,21,45,town,T60,William A McFarland,54,W,M,Head,Grocer,,name+birthyear
+LV0654,Mary Virginia Hess McFarland,Lakeview,1856,1928,21,46,town,T60,Mary V McFarland,44,W,F,Wife,,born Maryland,name+birthyear
+LV1477,Mazie B. McFarland,Lakeview,1882,1964,21,48,town,T60,Mazie McFarland,18,W,F,Daughter,At School,,name+birthyear
+LV1476,Margaret Virginia McFarland,Lakeview,1884,1962,21,49,town,T60,Margaret McFarland,16,W,F,Daughter,At School,,name+birthyear
+HM0113,Bethany Ann Lanham McFarland,Harmony,1826,1914,22,2,town,T61,Bethany A McFarland,74,W,F,Head,,widow; occupation blank,name+birthyear
+HM0112,Hannah E. McFarland,Harmony,1853,1930,22,3,town,T61,Hannah McFarland,47,W,F,Daughter,,,name+birthyear
+LV0269,Laura L. Cox,Lakeview,,1930,22,11,town,T63,Laura Cox,50,W,F,Wife,,,name-only
+LV0268,James Arthur Cox,Lakeview,1878,1945,22,13,town,T63,James A Cox,22,W,M,Son,Type Setter,,name+birthyear
+LV0889,Mary Isabell Tavenner,Lakeview,1860,1935,22,18,town,T65,Mary Tavenner,40,W,F,Wife,,,name+birthyear
+LV0910,Mary Frances Norris Thompson,Lakeview,1836,1912,22,20,town,T65,Mary F Thompson,63,W,F,Mother-in-law,,widow,name+birthyear
+LV0124,William Andrew Benedum,Lakeview,1851,1924,22,38,town,T70,William A Benedum,49,W,M,Head,Tinner,,name+birthyear
+LV0433,Harry Flippo,Lakeview,1890,1971,22,45,town,T71,Harry Flippo,9,W,M,Son,At School,,name+birthyear
+LV0669,Theodore Davisson Milton,Lakeview,1848,1906,23,11,town,T75,Theodore Milton,52,W,M,Head,Carriage Agent,reading uncertain,name+birthyear
+LV0670,Lydia Cecilia Vandevanter Milton,Lakeview,1852,1924,23,12,town,T75,Lydia C Milton,48,W,F,Wife,Boarding House,,name+birthyear
+LV0671,Joseph Vandeventer Milton,Lakeview,1876,1911,23,14,town,T75,Joseph V Milton,23,W,M,Son,Student (Medicine),,name+birthyear
+LV1525,Mary Stuart Milton,Lakeview,1888,1975,23,18,town,T75,Mary S Milton,12,W,F,Daughter,At School,,name+birthyear
+HM0051,Charles F. French,Harmony,1846,1928,23,28,town,T76,Charles F French,53,W,M,Head,Jeweller,single,name+birthyear
+HM0055,Mary Ann Haines French,Harmony,1816,1904,23,29,town,T76,Mary A French,83,W,F,Mother,,widow,name+birthyear
+LV0558,Thomas H. James,Lakeview,1825,1906,24,4,town,T82,Thomas James,75,W,M,Head,,occupation blank,name+birthyear
+LV0559,Virginia Friench Simpson James,Lakeview,1837,1912,24,5,town,T82,Virginia F James,63,W,F,Wife,,,name+birthyear
+LV0213,Ella May Hatcher Chamblin,Lakeview,1875,1956,24,9,town,T82,Ella Chamblin,,W,F,Boarder,,,name-only
+LV0574,Thomas F. Keen,Lakeview,1855,1915,24,10,town,T83,Thomas F Keen,44,W,M,Head,Physician,,name+birthyear
+LV1327,Hugh Broaddus Keen,Lakeview,1888,1978,24,12,town,T83,Hugh R Keen,12,W,M,Son,At School,,name+birthyear

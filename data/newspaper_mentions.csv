@@ -1,0 +1,29 @@
+surname,hits_in_TWEP,category,quoted_snippet,what_it_gives
+BEANS,107,occupation/business,"F. J. BEANS, Undertaker, HAMILTON, VA.",A Hamilton UNDERTAKER. Likely handled burials in these very cemeteries.
+WARNER,121,occupation/business,"Goods may be had at C. W. Warner's Hardware Store, Hamilton, Va. POCKET CUTLERY. SCISSORS. SPOONS. TIN",C. W. Warner ran a hardware store in Hamilton.
+SCHOOLEY,14,occupation/business,"G. T. SCHOOLEY, HAMILTON, VIRGINIA. Breeder of Thoroughbred ...",G. T. Schooley bred thoroughbred livestock.
+LAYCOCK,77,occupation/business,"Mr. G. W. Laycock, the well known merchant of Hamilton, is offering ... ~~ FOR CHRISTMAS GIFTS LARGEST STOCK EVER PURCHASED Laycock & Thompson's","G. W. Laycock, merchant; the firm Laycock & Thompson - and THOMPSON is also a cemetery surname."
+WYNKOOP,20,occupation/business,... creamery and started into the hardware business with James Wynkoop in the building now occupied by The Hamilton Mercantile ...,James Wynkoop: creamery then hardware. Also dates the Hamilton Mercantile building's earlier use.
+TIFFANY,19,occupation/business,"setting of 15, $4.50 per hundred. Mrs. G. S. Tiffany, Hamilton, Va.",Mrs. G. S. Tiffany sold poultry settings - a woman trading under her own name.
+EVERHART,18,classified ad,"cupboard, double doors, glass front, five shelves. W. N. Everhart, Hamilton, Va.","W. N. Everhart almost certainly = LV0395 William Nathaniel Everhart, d.1903-01-10, already a target."
+TAVENNER,25,occupation/business,"T. HIRST BRO., Purcellville, Va. G.O. TAVENNER, Hamilton, Va. M. M. FADELEY, ...",G. O. Tavenner listed among area businesses.
+SAUNDERS,46,occupation/business,"Hamilton Mercantile Co., C. O. Oochnauer, R. L. Saunders, and Flippo Bros.",R. L. Saunders among named Hamilton businesses.
+ARNETT,9,occupation/business,"Charles K. Arnett, Manager ... WANTED A good dairy hand",Charles K. Arnett managing; a dairy operation hiring.
+MYERS,69,property,"Mr. R. L. Myers has sold his dwelling house in this town, to ...",A property transaction in Hamilton.
+PRESTON,17,property/establishment,"Mildred Luck, who is a guest at the Preston House, visited in Clarke county last Sunday.",The Preston House - a Hamilton establishment taking guests.
+HINDMAN,1,MARRIAGE,Mr. Lester Payne and Miss Hannah Hindman were married in Washington and have begun housekeeping in ...,"A MARRIAGE EVENT joining two cemetery surnames, Payne and Hindman. Feeds the family layer directly."
+REID,28,occupation,Mr. Theodore Reid left on Wednesday morning to attend the Bankers Association,Theodore Reid in banking.
+DONALDSON,4,court,"... testimony in the trial of Rev. Austin U. Donaldson, charged with the murder of Louis N. Meyer at ...",A murder trial involving a Rev. Donaldson. Relationship to the buried Donaldsons NOT established.
+JAMES,232,social,"visitor at the home of Mr. and Mrs. Paul James, in this town, on Thursday","Household of Mr. and Mrs. Paul James, in Hamilton."
+SMITH,225,social,"of Mrs. Colbert's parents, Mr. and Mrs. W. A. Smith, near this town.",Parent-child relationship stated in a social note.
+BEALES,3,social,"Mr. Elmer Beales and family, of Leesburg, spent Sunday with his brother, ... Sunday with his mother, Mrs. Frank Everhart.","Sibling and mother relationships, and a Beales-Everhart marriage link."
+MCDANIEL,23,social,"Mrs. R. L. Saunders, of Hamilton; Mrs. Fannie V. McDaniel, of Fairfax; Mrs. T. D. Frame, of Middleburg.",A list of related women across towns - typical of a funeral or family notice.
+WEADON,9,social,Mr. and Mrs. Ira Cost are visiting Mrs. Betty Weadon at her home near Hamilton.,Mrs. Betty Weadon kept a home near Hamilton.
+MOCK,88,social,"spending a few days with her brother, Mr. James Mock, has returned to her home.",Sibling relationship.
+PAYNE,44,obituary,"DEATH CLAIMS MR. CHARLES W. PAYNE. Mr. Charles W. Payne, aged 76 years, ...","An obituary with an age, outside the 46-person target list."
+WARNER,121,agricultural fair,... N. B. Warner 1 do bronze turkeys. A. E. Warner 2d ...,A fair premium list - placings for bronze turkeys. Names people and what they raised.
+PRESGRAVES,2,social,"Mr. Presgraves and sons, of Lower Loudoun, have recently spent some ...",Family of origin placed in Lower Loudoun.
+BEANS,—,occupation/business,"F. J. BEANS, Undertaker, HAMILTON, VA. An Experienced Funeral Director","Full ad wording. CANDIDATE MATCH: LV1034 Flavius J. Beans, b.1845 d.1932, buried Lakeview - the only F. J. Beans in the project. NOT CONFIRMED: no line in any paper calls Flavius an undertaker."
+BEANS,—,obituary (Blue Ridge Herald),"FLAVIUS BEANS DIES AT WATERFORD. Flavius Beans, aged 85 years, ... [Blue Ridge Herald, 4 Aug 1932] ~~ CARD OF THANKS. Mrs. Flavius Beans wishes to express the gratitude of herself and ... [11 Aug 1932]","Death early Aug 1932 at WATERFORD, aged 85 (dataset has b.1845 d.1932 - consistent). He left a widow. Place of death is Waterford, NOT Hamilton."
+BEANS,—,obituary (Blue Ridge Herald),"RETIRED FARMER DIES. G. T. Beans, retired farmer, 75 years of age, died at his ... [Blue Ridge Herald, 18 Aug 1932]",A SECOND Beans death in the same month. Guard against conflating the two.
+CORNWELL,—,occupation/business (competitor),"JOHN B. CORNWELL, UNDERTAKER, PURCELLVILLE, VIRGINIA. I beg to inform the people of ...",A competing undertaker at Purcellville. Burials in these cemeteries were not necessarily all handled by Beans.

@@ -1,0 +1,337 @@
+person_id,person_name,date,precision,event,about_person_id,about_person_name,note,confidence
+HM0158,Solomon Ruse,1824-04-22,day,child_born,HM0159,William Nixon Ruse,birth of William Nixon Ruse,derived from a resolved parent-child link
+HM0162,Tabitha Tavenner Ruse,1824-04-22,day,child_born,HM0159,William Nixon Ruse,birth of William Nixon Ruse,derived from a resolved parent-child link
+HM0158,Solomon Ruse,1831-08-08,day,child_born,HM0160,Emily Ruse,birth of Emily Ruse,derived from a resolved parent-child link
+HM0162,Tabitha Tavenner Ruse,1831-08-08,day,child_born,HM0160,Emily Ruse,birth of Emily Ruse,derived from a resolved parent-child link
+HM0158,Solomon Ruse,1835-08-16,day,child_born,HM0161,Elizabeth James Ruse,birth of Elizabeth James Ruse,derived from a resolved parent-child link
+HM0162,Tabitha Tavenner Ruse,1835-08-16,day,child_born,HM0161,Elizabeth James Ruse,birth of Elizabeth James Ruse,derived from a resolved parent-child link
+HM0019,William Henry Beans,1836,year,child_born,HM0017,Louisa E Beans,birth of Louisa E Beans,derived from a resolved parent-child link
+HM0172,Nancy Anne Willett Tavenner,1837-08-18,day,widowed,HM0173,Richard Tavenner,death of spouse Richard Tavenner,derived from a resolved spouse link
+HM0080,Lydia Catherine Reed Hope,1839-01-25,day,child_born,HM0085,Mary Elizabeth Hope,birth of Mary Elizabeth Hope,derived from a resolved parent-child link
+HM0158,Solomon Ruse,1841-11-28,day,child_born,HM0157,Lavinia Ruse,birth of Lavinia Ruse,derived from a resolved parent-child link
+HM0162,Tabitha Tavenner Ruse,1841-11-28,day,child_born,HM0157,Lavinia Ruse,birth of Lavinia Ruse,derived from a resolved parent-child link
+HM0019,William Henry Beans,1842-05-31,day,child_born,HM0023,Aaron Humphrey Beans,birth of Aaron Humphrey Beans,derived from a resolved parent-child link
+HM0158,Solomon Ruse,1843-06-20,day,child_died,HM0160,Emily Ruse,death of Emily Ruse aged 12,derived from a resolved parent-child link
+HM0162,Tabitha Tavenner Ruse,1843-06-20,day,child_died,HM0160,Emily Ruse,death of Emily Ruse aged 12,derived from a resolved parent-child link
+LV0395,William Nathaniel Everhart,1844-02-20,day,child_born,LV0397,Annie Arabella Everhart,birth of Annie Arabella Everhart,derived from a resolved parent-child link
+LV0396,Catharine S. Deakins Everhart,1844-02-20,day,child_born,LV0397,Annie Arabella Everhart,birth of Annie Arabella Everhart,derived from a resolved parent-child link
+HM0140,Leonidas Peugh,1846,year,child_born,HM0139,Susan Ann Peugh,birth of Susan Ann Peugh,derived from a resolved parent-child link
+LV0759,Lucinda Beans Peacock,1848-10-04,day,child_born,LV0760,Winfield Scott Peacock,birth of Winfield Scott Peacock,derived from a resolved parent-child link
+LV0836,Hannah Amy Hough Schooley,1848-12-07,day,child_born,LV0835,Charles William Schooley,birth of Charles William Schooley,derived from a resolved parent-child link
+HM0091,Robert J Hoskinson,1849,year,child_born,HM0093,Ann A Hoskinson,birth of Ann A Hoskinson,derived from a resolved parent-child link
+HM0019,William Henry Beans,1850-05-29,day,child_born,HM0018,Isaac Newton Beans,birth of Isaac Newton Beans,derived from a resolved parent-child link
+HM0237,Sarah Elizabeth Ruse James,1851-10-02,day,child_born,HM0094,Sarah Malinda James,birth of Sarah Malinda James,derived from a resolved parent-child link
+HM0237,Sarah Elizabeth Ruse James,1851-11-23,day,child_died,HM0094,Sarah Malinda James,death of Sarah Malinda James aged 0,derived from a resolved parent-child link
+HM0234,Mary Hawkings,1852-07-20,day,child_born,HM0076,Joseph N. Hawkings,birth of Joseph N. Hawkings,derived from a resolved parent-child link
+LV0759,Lucinda Beans Peacock,1852-12-23,day,child_born,LV0761,Nancy C. Peacock,birth of Nancy C. Peacock,derived from a resolved parent-child link
+HM0091,Robert J Hoskinson,1853-07-29,day,child_died,HM0093,Ann A Hoskinson,death of Ann A Hoskinson aged 4,derived from a resolved parent-child link
+LV0588,James Laycock,1855,year,child_born,LV0590,James Edgar Laycock,birth of James Edgar Laycock,derived from a resolved parent-child link
+HM0080,Lydia Catherine Reed Hope,1855-05-26,day,child_died,HM0085,Mary Elizabeth Hope,death of Mary Elizabeth Hope aged 16,derived from a resolved parent-child link
+HM0158,Solomon Ruse,1856-07-15,day,child_died,HM0159,William Nixon Ruse,death of William Nixon Ruse aged 32,derived from a resolved parent-child link
+HM0162,Tabitha Tavenner Ruse,1856-07-15,day,child_died,HM0159,William Nixon Ruse,death of William Nixon Ruse aged 32,derived from a resolved parent-child link
+HM0080,Lydia Catherine Reed Hope,1856-11-27,day,child_born,HM0084,Lillie R. Hope,birth of Lillie R. Hope,derived from a resolved parent-child link
+LV0975,Elizabeth S. Davis Wiley,1857-09-05,day,died_in_childbirth,,,"cause of death recorded as ""Child Bed""",stated in the death register
+LV0588,James Laycock,1857-09-20,day,child_died,LV0590,James Edgar Laycock,death of James Edgar Laycock aged 2,derived from a resolved parent-child link
+HM0091,Robert J Hoskinson,1857-11-13,day,child_born,HM0092,Francis Emory Hoskinson,birth of Francis Emory Hoskinson,derived from a resolved parent-child link
+LV0899,Lewis Taylor,1857-12-08,day,widowed,LV0901,Ruth W. Bradfield Taylor,death of spouse Ruth W. Bradfield Taylor,derived from a resolved spouse link
+HM0029,William Butler,1858-04-26,day,widowed,HM0028,Harriet Butler,death of spouse Harriet Butler,derived from a resolved spouse link
+HM0091,Robert J Hoskinson,1858-08-19,day,child_died,HM0092,Francis Emory Hoskinson,death of Francis Emory Hoskinson aged 1,derived from a resolved parent-child link
+LV0173,Mary Ann Brown,1859,year,child_born,LV0171,Mary Francenia Brown,birth of Mary Francenia Brown,derived from a resolved parent-child link
+LV0759,Lucinda Beans Peacock,1859-01-25,day,child_died,LV0761,Nancy C. Peacock,death of Nancy C. Peacock aged 7,derived from a resolved parent-child link
+LV0759,Lucinda Beans Peacock,1859-02-14,day,child_died,LV0760,Winfield Scott Peacock,death of Winfield Scott Peacock aged 11,derived from a resolved parent-child link
+HM0100,Louisa A Keys,1859-08-18,day,widowed,HM0101,James F Keys,death of spouse James F Keys,derived from a resolved spouse link
+HM0080,Lydia Catherine Reed Hope,1859-10-18,day,child_born,HM0082,John R. Hope,birth of John R. Hope,derived from a resolved parent-child link
+HM0081,John A. Hope,1859-10-18,day,child_born,HM0082,John R. Hope,birth of John R. Hope,derived from a resolved parent-child link
+HM0126,Charlotte Moore,1859-10-22,day,child_born,HM0127,Margaret Moore,birth of Margaret Moore,derived from a resolved parent-child link
+HM0129,Presley Moore,1859-10-22,day,child_born,HM0127,Margaret Moore,birth of Margaret Moore,derived from a resolved parent-child link
+LV0899,Lewis Taylor,1860,year,child_born,LV0902,Ella Gertrude Taylor,birth of Ella Gertrude Taylor,derived from a resolved parent-child link
+LV0900,Elizabeth Roberts Taylor,1860,year,child_born,LV0902,Ella Gertrude Taylor,birth of Ella Gertrude Taylor,derived from a resolved parent-child link
+HM0080,Lydia Catherine Reed Hope,1860-06-06,day,child_died,HM0082,John R. Hope,death of John R. Hope aged 1,derived from a resolved parent-child link
+HM0081,John A. Hope,1860-06-06,day,child_died,HM0082,John R. Hope,death of John R. Hope aged 1,derived from a resolved parent-child link
+LV0899,Lewis Taylor,1861-04-14,day,child_died,LV0902,Ella Gertrude Taylor,death of Ella Gertrude Taylor aged 1,derived from a resolved parent-child link
+LV0900,Elizabeth Roberts Taylor,1861-04-14,day,child_died,LV0902,Ella Gertrude Taylor,death of Ella Gertrude Taylor aged 1,derived from a resolved parent-child link
+LV0969,Sarah Elizabeth Beales White,1861-11-03,day,child_born,LV0971,Minnie E. White,birth of Minnie E. White,derived from a resolved parent-child link
+LV0899,Lewis Taylor,1862,year,child_born,LV0903,Willie N. Taylor,birth of Willie N. Taylor,derived from a resolved parent-child link
+LV0900,Elizabeth Roberts Taylor,1862,year,child_born,LV0903,Willie N. Taylor,birth of Willie N. Taylor,derived from a resolved parent-child link
+LV0968,Robert J. T. White,1862-01-01,day,child_born,LV0967,Robert A. White,birth of Robert A. White,derived from a resolved parent-child link
+LV0395,William Nathaniel Everhart,1862-12-05,day,widowed,LV0396,Catharine S. Deakins Everhart,death of spouse Catharine S. Deakins Everhart,derived from a resolved spouse link
+LV0899,Lewis Taylor,1866-09-08,day,child_died,LV0903,Willie N. Taylor,death of Willie N. Taylor aged 4,derived from a resolved parent-child link
+LV0900,Elizabeth Roberts Taylor,1866-09-08,day,child_died,LV0903,Willie N. Taylor,death of Willie N. Taylor aged 4,derived from a resolved parent-child link
+LV0395,William Nathaniel Everhart,1866-09-09,day,child_died,LV0397,Annie Arabella Everhart,death of Annie Arabella Everhart aged 22,derived from a resolved parent-child link
+LV0396,Catharine S. Deakins Everhart,1866-09-09,day,child_died,LV0397,Annie Arabella Everhart,death of Annie Arabella Everhart aged 22,derived from a resolved parent-child link
+LV0721,Virginia E. Laycock Myers,1866-09-09,day,child_born,LV0723,James William Myers,birth of James William Myers,derived from a resolved parent-child link
+LV0600,John Franklin Laycock,1868,year,child_born,LV0592,Mary A. Laycock,birth of Mary A. Laycock,derived from a resolved parent-child link
+LV0779,Israel Gurley Powell,1869,year,child_born,LV0782,Nellie Powell,birth of Nellie Powell,derived from a resolved parent-child link
+LV0780,Lydia Catherine Ruse Powell,1869,year,child_born,LV0782,Nellie Powell,birth of Nellie Powell,derived from a resolved parent-child link
+HM0158,Solomon Ruse,1870-02-14,day,widowed,HM0162,Tabitha Tavenner Ruse,death of spouse Tabitha Tavenner Ruse,derived from a resolved spouse link
+LV0600,John Franklin Laycock,1870-04-05,day,child_died,LV0592,Mary A. Laycock,death of Mary A. Laycock aged 2,derived from a resolved parent-child link
+LV0843,Venetia J. Divine Schooley,1870-04-06,day,child_died,LV0844,Samuel S. Schooley,death of Samuel S. Schooley,derived from a resolved parent-child link
+LV0957,Charles Duncan Weadon Sr.,1871-07-21,day,child_born,LV0960,Ruth E. Weadon,birth of Ruth E. Weadon,derived from a resolved parent-child link
+LV0959,Mary Margaret Kuhlmann Weadon,1871-07-21,day,child_born,LV0960,Ruth E. Weadon,birth of Ruth E. Weadon,derived from a resolved parent-child link
+LV0779,Israel Gurley Powell,1872,year,child_born,LV0781,Fannie Powell,birth of Fannie Powell,derived from a resolved parent-child link
+LV0780,Lydia Catherine Ruse Powell,1872,year,child_born,LV0781,Fannie Powell,birth of Fannie Powell,derived from a resolved parent-child link
+LV0918,Harriet Ann Poulton Tillett,1873-01-09,day,widowed,LV0917,John Love Tillett,death of spouse John Love Tillett,derived from a resolved spouse link
+HM0234,Mary Hawkings,1874-06-25,day,child_died,HM0076,Joseph N. Hawkings,death of Joseph N. Hawkings aged 22,derived from a resolved parent-child link
+LV0957,Charles Duncan Weadon Sr.,1874-10-25,day,child_died,LV0960,Ruth E. Weadon,death of Ruth E. Weadon aged 3,derived from a resolved parent-child link
+LV0959,Mary Margaret Kuhlmann Weadon,1874-10-25,day,child_died,LV0960,Ruth E. Weadon,death of Ruth E. Weadon aged 3,derived from a resolved parent-child link
+LV0600,John Franklin Laycock,1875-05-17,day,widowed,LV0589,Mary Ann White Laycock,death of spouse Mary Ann White Laycock,derived from a resolved spouse link
+LV0056,Dorcas O. Thompson Ballenger,1876,year,child_born,LV0057,Clinton C. Ballenger,birth of Clinton C. Ballenger,derived from a resolved parent-child link
+LV0721,Virginia E. Laycock Myers,1876-09-17,day,child_born,LV0720,Joseph B. Myers,birth of Joseph B. Myers,derived from a resolved parent-child link
+HM0238,James W Jones,1877-08-25,day,widowed,HM0099,Lydia A Mock Jones,death of spouse Lydia A Mock Jones,derived from a resolved spouse link
+HM0126,Charlotte Moore,1878-03,month,child_died,HM0127,Margaret Moore,death of Margaret Moore aged 19,derived from a resolved parent-child link
+HM0129,Presley Moore,1878-03,month,child_died,HM0127,Margaret Moore,death of Margaret Moore aged 19,derived from a resolved parent-child link
+HM0165,John N. Schooley,1880,year,child_born,HM0164,C Norris Schooley,birth of C Norris Schooley,derived from a resolved parent-child link
+LV0765,James Braden Peugh,1880,year,child_born,LV0767,Infant Son Peugh,birth of Infant Son Peugh,derived from a resolved parent-child link
+LV0765,James Braden Peugh,1880,year,child_died,LV0767,Infant Son Peugh,death of Infant Son Peugh aged 0,derived from a resolved parent-child link
+LV0766,Lydia Ellen Tavenner Peugh,1880,year,child_born,LV0767,Infant Son Peugh,birth of Infant Son Peugh,derived from a resolved parent-child link
+LV0766,Lydia Ellen Tavenner Peugh,1880,year,child_died,LV0767,Infant Son Peugh,death of Infant Son Peugh aged 0,derived from a resolved parent-child link
+HM0132,James Henry Muse,1880-11-26,day,widowed,HM0133,Mary Elizabeth Hook Muse,death of spouse Mary Elizabeth Hook Muse,derived from a resolved spouse link
+LV0957,Charles Duncan Weadon Sr.,1881-02-01,day,widowed,LV0959,Mary Margaret Kuhlmann Weadon,death of spouse Mary Margaret Kuhlmann Weadon,derived from a resolved spouse link
+LV0497,George Howard Hampton,1883-08-11,day,child_born,LV0498,Mary E. Hampton,birth of Mary E. Hampton,derived from a resolved parent-child link
+LV1200,Ella Ruse Hampton,1883-08-11,day,child_born,LV0498,Mary E. Hampton,birth of Mary E. Hampton,derived from a resolved parent-child link
+HM0080,Lydia Catherine Reed Hope,1883-10-12,day,child_died,HM0084,Lillie R. Hope,death of Lillie R. Hope aged 27,derived from a resolved parent-child link
+LV0353,Edward Mauran Dunbar,1883-12-19,day,child_born,LV0354,Grace Dunbar,birth of Grace Dunbar,derived from a resolved parent-child link
+LV0353,Edward Mauran Dunbar,1884-07-28,day,child_died,LV0354,Grace Dunbar,death of Grace Dunbar aged 1,derived from a resolved parent-child link
+LV0574,Thomas F. Keen,1885-01-05,day,child_born,LV0575,Hazel Keen,birth of Hazel Keen,derived from a resolved parent-child link
+LV1328,Kathleen Stuart McVeigh Keen,1885-01-05,day,child_born,LV0575,Hazel Keen,birth of Hazel Keen,derived from a resolved parent-child link
+LV0883,Edwin H. Tavenner,1885-01-14,day,widowed,LV0884,Catharine H. Tavenner,death of spouse Catharine H. Tavenner,derived from a resolved spouse link
+LV0626,Charles E. Lovett,1885-04-04,day,child_born,LV0625,James B. Lovett,birth of James B. Lovett,derived from a resolved parent-child link
+LV1445,Margaret Lewis Creel Lovett,1885-04-04,day,child_born,LV0625,James B. Lovett,birth of James B. Lovett,derived from a resolved parent-child link
+LV0030,Ida J. Jenkins Arnett,1886-07-16,day,child_born,LV0029,Grover C. Arnett,birth of Grover C. Arnett,derived from a resolved parent-child link
+HM0138,Israel T. Myers,1886-09-03,day,widowed,HM0137,Mary V. Myers,death of spouse Mary V. Myers,derived from a resolved spouse link
+LV0056,Dorcas O. Thompson Ballenger,1888,year,child_died,LV0057,Clinton C. Ballenger,death of Clinton C. Ballenger aged 12,derived from a resolved parent-child link
+LV0779,Israel Gurley Powell,1890,year,child_died,LV0781,Fannie Powell,death of Fannie Powell aged 18,derived from a resolved parent-child link
+LV0780,Lydia Catherine Ruse Powell,1890,year,child_died,LV0781,Fannie Powell,death of Fannie Powell aged 18,derived from a resolved parent-child link
+LV0824,Annie Bruce Myers Saunders,1891,year,child_born,LV0822,Annie May Saunders,birth of Annie May Saunders,derived from a resolved parent-child link
+LV0825,Christian N. Saunders,1891,year,child_born,LV0822,Annie May Saunders,birth of Annie May Saunders,derived from a resolved parent-child link
+HM0165,John N. Schooley,1891-01-24,day,child_died,HM0164,C Norris Schooley,death of C Norris Schooley aged 11,derived from a resolved parent-child link
+LV0497,George Howard Hampton,1891-04-11,day,child_died,LV0498,Mary E. Hampton,death of Mary E. Hampton aged 8,derived from a resolved parent-child link
+LV1200,Ella Ruse Hampton,1891-04-11,day,child_died,LV0498,Mary E. Hampton,death of Mary E. Hampton aged 8,derived from a resolved parent-child link
+HM0200,Hannah E Beales White,1891-06-15,day,widowed,HM0199,George Washington White,death of spouse George Washington White,derived from a resolved spouse link
+LV0824,Annie Bruce Myers Saunders,1891-07-18,day,child_died,LV0822,Annie May Saunders,death of Annie May Saunders aged 0,derived from a resolved parent-child link
+LV0825,Christian N. Saunders,1891-07-18,day,child_died,LV0822,Annie May Saunders,death of Annie May Saunders aged 0,derived from a resolved parent-child link
+LV1235,Catherine A. Brown Hirst,1891-08-25,day,child_born,LV0527,Edward B. Hirst,birth of Edward B. Hirst,derived from a resolved parent-child link
+LV1236,Edwin T. Hirst,1891-08-25,day,child_born,LV0527,Edward B. Hirst,birth of Edward B. Hirst,derived from a resolved parent-child link
+LV0152,Rodney Walter Braden,1891-09-11,day,child_born,LV0155,Walter D. Braden,birth of Walter D. Braden,derived from a resolved parent-child link
+LV0153,Cecilia Decatur Heaton Braden,1891-09-11,day,child_born,LV0155,Walter D. Braden,birth of Walter D. Braden,derived from a resolved parent-child link
+LV0095,James W. Beans,1892,year,child_born,LV0097,A. Humphrey Beans,birth of A. Humphrey Beans,derived from a resolved parent-child link
+LV0096,Harriet A. Beans,1892,year,child_born,LV0097,A. Humphrey Beans,birth of A. Humphrey Beans,derived from a resolved parent-child link
+LV0095,James W. Beans,1892-09-09,day,child_died,LV0097,A. Humphrey Beans,death of A. Humphrey Beans aged 0,derived from a resolved parent-child link
+LV0096,Harriet A. Beans,1892-09-09,day,child_died,LV0097,A. Humphrey Beans,death of A. Humphrey Beans aged 0,derived from a resolved parent-child link
+HM0019,William Henry Beans,1893-04-20,day,widowed,HM0020,Louisa Berry Beans,death of spouse Louisa Berry Beans,derived from a resolved spouse link
+HM0019,William Henry Beans,1893-04-29,day,child_died,HM0017,Louisa E Beans,death of Louisa E Beans aged 57,derived from a resolved parent-child link
+LV0956,Virginia E. Weadon,1893-09-09,day,widowed,LV0955,T. William Weadon,death of spouse T. William Weadon,derived from a resolved spouse link
+LV0574,Thomas F. Keen,1894-03-11,day,child_died,LV0575,Hazel Keen,death of Hazel Keen aged 9,derived from a resolved parent-child link
+LV1328,Kathleen Stuart McVeigh Keen,1894-03-11,day,child_died,LV0575,Hazel Keen,death of Hazel Keen aged 9,derived from a resolved parent-child link
+LV0750,Susie Elizabeth Payne Payne,1894-08-29,day,child_born,LV0749,Ruth Payne,birth of Ruth Payne,derived from a resolved parent-child link
+LV0721,Virginia E. Laycock Myers,1894-12-29,day,child_died,LV0723,James William Myers,death of James William Myers aged 28,derived from a resolved parent-child link
+LV0489,Mary E. Haines,1895-01-24,day,widowed,LV0490,Washington Haines,death of spouse Washington Haines,derived from a resolved spouse link
+HM0035,Sarah E Cooper,1896-11-14,day,child_born,HM0036,Andrew J Cooper,birth of Andrew J Cooper,derived from a resolved parent-child link
+HM0131,Edna Jane Bradfield Muse,1897-02-11,day,widowed,HM0132,James Henry Muse,death of spouse James Henry Muse,derived from a resolved spouse link
+LV1483,Mary Ella Wynkoop McMichael,1897-02-25,day,child_born,LV0656,Gladys McMichael,birth of Gladys McMichael,derived from a resolved parent-child link
+LV0737,John H. Orrison,1897-07-25,day,widowed,LV0736,Laura F. Thomas Orrison,death of spouse Laura F. Thomas Orrison,derived from a resolved spouse link
+HM0010,Nancy Cummings Arnett,1898-04-21,day,widowed,HM0009,Samuel Arnett,death of spouse Samuel Arnett,derived from a resolved spouse link
+HM0071,Laura B Grey,1899-02-11,day,widowed,HM0073,Albert Grey,death of spouse Albert Grey,derived from a resolved spouse link
+LV1015,Levi H. Wynkoop,1899-02-13,day,widowed,LV1014,Eliza Jane Carlisle Wynkoop,death of spouse Eliza Jane Carlisle Wynkoop,derived from a resolved spouse link
+HM0015,Elizabeth Beales,1899-07-15,day,widowed,HM0016,Charles Agustus Beales,death of spouse Charles Agustus Beales,derived from a resolved spouse link
+LV0018,Mary Jane Camp Allder,1899-08-03,day,widowed,LV0019,James Allder,death of spouse James Allder,derived from a resolved spouse link
+LV0716,Nathan Myers,1899-10-02,day,child_born,LV0717,M. Anita Myers,birth of M. Anita Myers,derived from a resolved parent-child link
+LV1544,Bessie Estelle Myers,1899-10-02,day,child_born,LV0717,M. Anita Myers,birth of M. Anita Myers,derived from a resolved parent-child link
+HM0158,Solomon Ruse,1900-01-31,day,child_died,HM0157,Lavinia Ruse,death of Lavinia Ruse aged 59,derived from a resolved parent-child link
+HM0162,Tabitha Tavenner Ruse,1900-01-31,day,child_died,HM0157,Lavinia Ruse,death of Lavinia Ruse aged 59,derived from a resolved parent-child link
+LV0099,Elizabeth Ann Lacock Beans,1900-03-08,day,widowed,LV1035,Joseph A. Beans,death of spouse Joseph A. Beans,derived from a resolved spouse link
+LV0716,Nathan Myers,1900-04-15,day,child_died,LV0717,M. Anita Myers,death of M. Anita Myers aged 1,derived from a resolved parent-child link
+LV1544,Bessie Estelle Myers,1900-04-15,day,child_died,LV0717,M. Anita Myers,death of M. Anita Myers aged 1,derived from a resolved parent-child link
+LV0494,Jonah Nichols Hampton,1900-07-28,day,child_born,LV0496,Harry Dillon Hampton,birth of Harry Dillon Hampton,derived from a resolved parent-child link
+LV0495,Alcinda Rose Hesser Hampton,1900-07-28,day,child_born,LV0496,Harry Dillon Hampton,birth of Harry Dillon Hampton,derived from a resolved parent-child link
+HM0140,Leonidas Peugh,1900-09-21,day,child_died,HM0139,Susan Ann Peugh,death of Susan Ann Peugh aged 54,derived from a resolved parent-child link
+LV0900,Elizabeth Roberts Taylor,1900-10-21,day,widowed,LV0899,Lewis Taylor,death of spouse Lewis Taylor,derived from a resolved spouse link
+HM0098,Mary J. Wood Janney,1901-02-09,day,widowed,HM0095,Asa M. Janney,death of spouse Asa M. Janney,derived from a resolved spouse link
+LV0957,Charles Duncan Weadon Sr.,1901-03-14,day,child_died,LV0961,Infant Son Weadon,death of Infant Son Weadon,derived from a resolved parent-child link
+LV0494,Jonah Nichols Hampton,1901-06-02,day,child_died,LV0496,Harry Dillon Hampton,death of Harry Dillon Hampton aged 1,derived from a resolved parent-child link
+LV0495,Alcinda Rose Hesser Hampton,1901-06-02,day,child_died,LV0496,Harry Dillon Hampton,death of Harry Dillon Hampton aged 1,derived from a resolved parent-child link
+LV0750,Susie Elizabeth Payne Payne,1901-07-20,day,child_born,LV0748,Elizabeth Payne,birth of Elizabeth Payne,derived from a resolved parent-child link
+LV1782,Lizzie Lee Tiffany Schooley,1901-12-12,day,child_born,LV0839,Millard L. Schooley,birth of Millard L. Schooley,derived from a resolved parent-child link
+LV1782,Lizzie Lee Tiffany Schooley,1901-12-21,day,child_died,LV0839,Millard L. Schooley,death of Millard L. Schooley aged 0,derived from a resolved parent-child link
+LV0571,Sarah Elizabeth Wynkoop Jones,1902-02-23,day,widowed,LV0572,Landon Jones,death of spouse Landon Jones,derived from a resolved spouse link
+LV0219,John Robert Chamblin,1902-07-22,day,child_born,LV0218,Albert H. Chamblin,birth of Albert H. Chamblin,derived from a resolved parent-child link
+LV0825,Christian N. Saunders,1902-08-02,day,widowed,LV0824,Annie Bruce Myers Saunders,death of spouse Annie Bruce Myers Saunders,derived from a resolved spouse link
+LV0561,Martha Ellen Paxson James,1903,year,widowed,LV0560,Levi James,death of spouse Levi James,derived from a resolved spouse link
+LV0435,Theodore D. Follin,1903-01-30,day,widowed,LV0436,Rosa B. Follin,death of spouse Rosa B. Follin,derived from a resolved spouse link
+LV1235,Catherine A. Brown Hirst,1903-09-04,day,child_died,LV0527,Edward B. Hirst,death of Edward B. Hirst aged 12,derived from a resolved parent-child link
+LV1236,Edwin T. Hirst,1903-09-04,day,child_died,LV0527,Edward B. Hirst,death of Edward B. Hirst aged 12,derived from a resolved parent-child link
+LV0219,John Robert Chamblin,1903-11-08,day,child_died,LV0218,Albert H. Chamblin,death of Albert H. Chamblin aged 1,derived from a resolved parent-child link
+LV1413,William Oscar Leigh,1904-10-28,day,child_born,LV0607,Katherine Carrie Leigh,birth of Katherine Carrie Leigh,derived from a resolved parent-child link
+LV0626,Charles E. Lovett,1904-12-07,day,child_died,LV0625,James B. Lovett,death of James B. Lovett aged 19,derived from a resolved parent-child link
+LV1445,Margaret Lewis Creel Lovett,1904-12-07,day,child_died,LV0625,James B. Lovett,death of James B. Lovett aged 19,derived from a resolved parent-child link
+LV0078,Rufus M. Ballenger,1905-03-05,day,child_born,LV0061,Infant Daughter Ballenger,birth of Infant Daughter Ballenger,derived from a resolved parent-child link
+LV0078,Rufus M. Ballenger,1905-03-05,day,child_died,LV0061,Infant Daughter Ballenger,death of Infant Daughter Ballenger aged 0,derived from a resolved parent-child link
+LV0750,Susie Elizabeth Payne Payne,1905-07-11,day,child_born,LV0751,Rodney Payne,birth of Rodney Payne,derived from a resolved parent-child link
+LV0969,Sarah Elizabeth Beales White,1905-12-23,day,child_died,LV0971,Minnie E. White,death of Minnie E. White aged 44,derived from a resolved parent-child link
+LV0539,Walter H. Howell,1906-01-10,day,widowed,LV0540,Huldah I. Howell,death of spouse Huldah I. Howell,derived from a resolved spouse link
+LV0621,Catherine E. White Loveless,1906-04-13,day,widowed,LV0620,Mason Loveless,death of spouse Mason Loveless,derived from a resolved spouse link
+LV0670,Lydia Cecilia Vandevanter Milton,1906-07-31,day,widowed,LV0669,Theodore Davisson Milton,death of spouse Theodore Davisson Milton,derived from a resolved spouse link
+LV0468,Sarah M. Gore,1906-10-26,day,widowed,LV0467,Albert M. Gore,death of spouse Albert M. Gore,derived from a resolved spouse link
+LV0594,James Henry Laycock,1907-02-16,day,widowed,LV0595,Ophelia Orrison Laycock,death of spouse Ophelia Orrison Laycock,derived from a resolved spouse link
+LV0905,Rev Charles Thomas Taylor,1907-06-25,day,child_born,LV0904,Lois Young Taylor,birth of Lois Young Taylor,derived from a resolved parent-child link
+LV1910,Minnie Kelly Taylor,1907-06-25,day,child_born,LV0904,Lois Young Taylor,birth of Lois Young Taylor,derived from a resolved parent-child link
+LV0495,Alcinda Rose Hesser Hampton,1907-09-10,day,widowed,LV0494,Jonah Nichols Hampton,death of spouse Jonah Nichols Hampton,derived from a resolved spouse link
+LV0570,James H. Jones,1908-03-06,day,widowed,LV0569,Caroline E. Tavenner Jones,death of spouse Caroline E. Tavenner Jones,derived from a resolved spouse link
+HM0019,William Henry Beans,1908-06-18,day,child_died,HM0018,Isaac Newton Beans,death of Isaac Newton Beans aged 58,derived from a resolved parent-child link
+LV0779,Israel Gurley Powell,1909,year,widowed,LV0780,Lydia Catherine Ruse Powell,death of spouse Lydia Catherine Ruse Powell,derived from a resolved spouse link
+LV1545,Carrie May Ballenger Myers,1909-04-28,day,child_born,LV0712,Frances May Myers,birth of Frances May Myers,derived from a resolved parent-child link
+LV1413,William Oscar Leigh,1909-06-11,day,child_born,LV0608,Robert Elvin Leigh,birth of Robert Elvin Leigh,derived from a resolved parent-child link
+LV0671,Joseph Vandeventer Milton,1909-08-13,day,child_died,LV0672,Maury Milton,death of Maury Milton,derived from a resolved parent-child link
+LV1525,Mary Stuart Milton,1909-08-13,day,child_died,LV0672,Maury Milton,death of Maury Milton,derived from a resolved parent-child link
+LV0721,Virginia E. Laycock Myers,1909-12-01,day,child_died,LV0720,Joseph B. Myers,death of Joseph B. Myers aged 33,derived from a resolved parent-child link
+LV0377,Carrie R. Emerick,1911,year,widowed,LV0376,John H. Emerick,death of spouse John H. Emerick,derived from a resolved spouse link
+HM0231,Hattie C Davis Gray,1911-03-16,day,child_born,HM0066,Edward H Gray,birth of Edward H Gray,derived from a resolved parent-child link
+LV0733,Johan E. M. Olsen,1911-05-06,day,widowed,LV0659,Frances M Menard,death of spouse Frances M Menard,derived from a resolved spouse link
+LV1184,Mary Alice Myers Grubb,1911-05-12,day,widowed,LV0483,Ebenezer Grubb,death of spouse Ebenezer Grubb,derived from a resolved spouse link
+HM0035,Sarah E Cooper,1911-07-01,day,child_died,HM0036,Andrew J Cooper,death of Andrew J Cooper aged 15,derived from a resolved parent-child link
+LV0217,Mary Jane Burson Chamblin,1911-09-09,day,widowed,LV0216,John Mahlon Chamblin,death of spouse John Mahlon Chamblin,derived from a resolved spouse link
+LV0285,Lydia Jane Everhart Cummings,1911-12-04,day,widowed,LV0284,John T. Cummings,death of spouse John T. Cummings,derived from a resolved spouse link
+LV0056,Dorcas O. Thompson Ballenger,1912,year,widowed,LV0055,Edger Ballenger,death of spouse Edger Ballenger,derived from a resolved spouse link
+LV0968,Robert J. T. White,1912-02-29,day,child_died,LV0967,Robert A. White,death of Robert A. White aged 50,derived from a resolved parent-child link
+LV0750,Susie Elizabeth Payne Payne,1912-05-10,day,child_died,LV0751,Rodney Payne,death of Rodney Payne aged 7,derived from a resolved parent-child link
+LV0030,Ida J. Jenkins Arnett,1912-05-30,day,child_died,LV0029,Grover C. Arnett,death of Grover C. Arnett aged 26,derived from a resolved parent-child link
+PV0248,Elizabeth Trammell,1913,year,widowed,PV0358,Somerfield Thompson,death of spouse Somerfield Thompson,derived from a resolved spouse link
+PV0356,Elizabeth Trammel Thompson,1913,year,widowed,PV0249,Somerfield Trammell,death of spouse Somerfield Trammell,derived from a resolved spouse link
+LV0946,Isaac Valentine Warner,1913-03-08,day,widowed,LV0947,Elizabeth Ann Pumphrey Warner,death of spouse Elizabeth Ann Pumphrey Warner,derived from a resolved spouse link
+LV1483,Mary Ella Wynkoop McMichael,1913-03-28,day,child_died,LV0656,Gladys McMichael,death of Gladys McMichael aged 16,derived from a resolved parent-child link
+HM0231,Hattie C Davis Gray,1913-12-07,day,child_died,HM0066,Edward H Gray,death of Edward H Gray aged 2,derived from a resolved parent-child link
+LV0958,Ann Elizabeth Scatterday Weadon,1914-08-01,day,widowed,LV0957,Charles Duncan Weadon Sr.,death of spouse Charles Duncan Weadon Sr.,derived from a resolved spouse link
+LV0576,Georgianna Taylor Keen,1915,year,widowed,LV0574,Thomas F. Keen,death of spouse Thomas F. Keen,derived from a resolved spouse link
+LV0046,Orion Baldwin,1915-01-16,day,widowed,LV0047,Orianna Chamblin Baldwin,death of spouse Orianna Chamblin Baldwin,derived from a resolved spouse link
+LV0405,George Franklin Everhart,1915-06-06,day,widowed,LV0392,Mary Isabella Myers Everhart,death of spouse Mary Isabella Myers Everhart,derived from a resolved spouse link
+LV0405,George Franklin Everhart,1915-06-06,day,widowed,LV0708,Mary Belle Myers,death of spouse Mary Belle Myers,derived from a resolved spouse link
+LV1603,Elizabeth Rozelle Kirkpatrick Payne,1915-09-28,day,child_born,LV0753,Ruby G. Payne,birth of Ruby G. Payne,derived from a resolved parent-child link
+LV1617,Mason Dice Payne,1915-09-28,day,child_born,LV0753,Ruby G. Payne,birth of Ruby G. Payne,derived from a resolved parent-child link
+LV1775,PVT John Schaffer Jr.,1916-06-09,day,widowed,LV0830,Amanda Judson Preston Schaffer,death of spouse Amanda Judson Preston Schaffer,derived from a resolved spouse link
+HM0019,William Henry Beans,1916-11-28,day,child_died,HM0023,Aaron Humphrey Beans,death of Aaron Humphrey Beans aged 74,derived from a resolved parent-child link
+HM0022,Louisa E Beans,1916-11-28,day,widowed,HM0023,Aaron Humphrey Beans,death of spouse Aaron Humphrey Beans,derived from a resolved spouse link
+LV0159,Hazel Herrell Breckenridge,1916-11-29,day,child_born,LV0157,Frances E. Breckenridge,birth of Frances E. Breckenridge,derived from a resolved parent-child link
+LV0034,Myrtle P. Payne Arnett,1917-02-20,day,child_born,LV0033,Charles Edward Arnett,birth of Charles Edward Arnett,derived from a resolved parent-child link
+LV0035,Walter Whitley Arnett,1917-02-20,day,child_born,LV0033,Charles Edward Arnett,birth of Charles Edward Arnett,derived from a resolved parent-child link
+LV0064,Isaac Ballenger,1917-03-08,day,widowed,LV0065,Eliza A. Ballenger,death of spouse Eliza A. Ballenger,derived from a resolved spouse link
+LV0705,Mary Elizabeth Mullen Myers,1917-06-08,day,widowed,LV0704,Charles Wilson Myers,death of spouse Charles Wilson Myers,derived from a resolved spouse link
+HM0143,Elizabeth Hannah Love Piggott,1917-08-19,day,widowed,HM0142,John Piggott,death of spouse John Piggott,derived from a resolved spouse link
+LV1007,Edna C. Bruin Wynkoop Cenotaph,1917-10-04,day,child_born,LV1008,Mildred Hazel Wynkoop,birth of Mildred Hazel Wynkoop,derived from a resolved parent-child link
+LV1007,Edna C. Bruin Wynkoop Cenotaph,1917-10-27,day,child_died,LV1008,Mildred Hazel Wynkoop,death of Mildred Hazel Wynkoop aged 0,derived from a resolved parent-child link
+PV0135,Mary V. Lee,1918,year,child_born,PV0138,Jonathan A. Lee,birth of Jonathan A. Lee,derived from a resolved parent-child link
+LV0271,Teresa Preston Cox,1918-01-25,day,child_born,LV0267,James Grafton Cox,birth of James Grafton Cox,derived from a resolved parent-child link
+LV1413,William Oscar Leigh,1918-01-28,day,child_died,LV0607,Katherine Carrie Leigh,death of Katherine Carrie Leigh aged 14,derived from a resolved parent-child link
+LV1603,Elizabeth Rozelle Kirkpatrick Payne,1918-04-08,day,child_died,LV0753,Ruby G. Payne,death of Ruby G. Payne aged 3,derived from a resolved parent-child link
+LV1617,Mason Dice Payne,1918-04-08,day,child_died,LV0753,Ruby G. Payne,death of Ruby G. Payne aged 3,derived from a resolved parent-child link
+LV0178,Sarah Jane Brown,1918-05-12,day,widowed,LV0179,B. Frank Brown,death of spouse B. Frank Brown,derived from a resolved spouse link
+LV0034,Myrtle P. Payne Arnett,1918-06-20,day,child_died,LV0033,Charles Edward Arnett,death of Charles Edward Arnett aged 1,derived from a resolved parent-child link
+LV0035,Walter Whitley Arnett,1918-06-20,day,child_died,LV0033,Charles Edward Arnett,death of Charles Edward Arnett aged 1,derived from a resolved parent-child link
+LV0159,Hazel Herrell Breckenridge,1918-08-11,day,child_died,LV0157,Frances E. Breckenridge,death of Frances E. Breckenridge aged 2,derived from a resolved parent-child link
+LV0152,Rodney Walter Braden,1918-10-17,day,child_died,LV0155,Walter D. Braden,death of Walter D. Braden aged 27,derived from a resolved parent-child link
+LV0153,Cecilia Decatur Heaton Braden,1918-10-17,day,child_died,LV0155,Walter D. Braden,death of Walter D. Braden aged 27,derived from a resolved parent-child link
+LV1413,William Oscar Leigh,1918-10-20,day,child_died,LV0608,Robert Elvin Leigh,death of Robert Elvin Leigh aged 9,derived from a resolved parent-child link
+LV0750,Susie Elizabeth Payne Payne,1918-10-28,day,child_died,LV0749,Ruth Payne,death of Ruth Payne aged 24,derived from a resolved parent-child link
+LV0750,Susie Elizabeth Payne Payne,1918-10-31,day,child_died,LV0748,Elizabeth Payne,death of Elizabeth Payne aged 17,derived from a resolved parent-child link
+LV1789,Thomas S. Seaton,1919-02-18,day,child_born,LV0848,Bernice W. Seaton,birth of Bernice W. Seaton,derived from a resolved parent-child link
+LV0034,Myrtle P. Payne Arnett,1919-02-20,day,child_born,LV0028,Ethel V. Arnett,birth of Ethel V. Arnett,derived from a resolved parent-child link
+LV0034,Myrtle P. Payne Arnett,1919-02-20,day,child_died,LV0028,Ethel V. Arnett,death of Ethel V. Arnett aged 0,derived from a resolved parent-child link
+LV0035,Walter Whitley Arnett,1919-02-20,day,child_born,LV0028,Ethel V. Arnett,birth of Ethel V. Arnett,derived from a resolved parent-child link
+LV0035,Walter Whitley Arnett,1919-02-20,day,child_died,LV0028,Ethel V. Arnett,death of Ethel V. Arnett aged 0,derived from a resolved parent-child link
+HM0158,Solomon Ruse,1919-03-14,day,child_died,HM0161,Elizabeth James Ruse,death of Elizabeth James Ruse aged 84,derived from a resolved parent-child link
+HM0162,Tabitha Tavenner Ruse,1919-03-14,day,child_died,HM0161,Elizabeth James Ruse,death of Elizabeth James Ruse aged 84,derived from a resolved parent-child link
+LV0399,John Frank Everhart,1919-05-16,day,widowed,LV0400,Mahalia U. Cooper Everhart,death of spouse Mahalia U. Cooper Everhart,derived from a resolved spouse link
+LV0271,Teresa Preston Cox,1920-01-23,day,child_died,LV0267,James Grafton Cox,death of James Grafton Cox aged 2,derived from a resolved parent-child link
+LV1987,Rodney Lewis Verts,1920-02-14,day,widowed,LV0933,Minnie Payne Verts,death of spouse Minnie Payne Verts,derived from a resolved spouse link
+LV0238,George Thomas Colbert,1920-08-02,day,child_born,LV0239,Charles Franklin Colbert,birth of Charles Franklin Colbert,derived from a resolved parent-child link
+LV0242,Jessie Margarite Arnett Colbert,1920-08-02,day,child_born,LV0239,Charles Franklin Colbert,birth of Charles Franklin Colbert,derived from a resolved parent-child link
+LV0238,George Thomas Colbert,1920-08-09,day,child_died,LV0239,Charles Franklin Colbert,death of Charles Franklin Colbert aged 0,derived from a resolved parent-child link
+LV0242,Jessie Margarite Arnett Colbert,1920-08-09,day,child_died,LV0239,Charles Franklin Colbert,death of Charles Franklin Colbert aged 0,derived from a resolved parent-child link
+LV0836,Hannah Amy Hough Schooley,1920-11-21,day,child_died,LV0835,Charles William Schooley,death of Charles William Schooley aged 72,derived from a resolved parent-child link
+LV0388,Clayton L. Everhart,1921-02-01,day,widowed,LV0402,Grace M. Everhart,death of spouse Grace M. Everhart,derived from a resolved spouse link
+LV0435,Theodore D. Follin,1921-05-15,day,widowed,LV0437,Sarah E. Follin,death of spouse Sarah E. Follin,derived from a resolved spouse link
+LV1647,Arthur Joseph Pierpoint,1921-09-21,day,widowed,LV0770,Massie Ellen Fulton Pierpoint,death of spouse Massie Ellen Fulton Pierpoint,derived from a resolved spouse link
+LV0727,Nannie Lee Nichols,1922-06-17,day,widowed,LV0728,Arthur Nichols,death of spouse Arthur Nichols,derived from a resolved spouse link
+LV1016,Charlotte Hollingsworth Young,1923-01-27,day,widowed,LV1017,Mary Lloyd Atkinson Young,death of spouse Mary Lloyd Atkinson Young,derived from a resolved spouse link
+LV1212,Louise Paxson Hawthorne,1923-05-09,day,child_died,LV0507,Infant Son Hawthorne,death of Infant Son Hawthorne,derived from a resolved parent-child link
+LV1213,Noah Brackendell Hawthorne,1923-05-09,day,child_died,LV0507,Infant Son Hawthorne,death of Infant Son Hawthorne,derived from a resolved parent-child link
+LV0940,Sarah Ann Phillips Warner,1923-05-20,day,widowed,LV0939,George Zachary Warner,death of spouse George Zachary Warner,derived from a resolved spouse link
+LV1789,Thomas S. Seaton,1924-08-19,day,child_died,LV0848,Bernice W. Seaton,death of Bernice W. Seaton aged 5,derived from a resolved parent-child link
+PV0027,Daisy May Chinn,1925-11-11,day,child_born,PV0029,John D. Chinn,birth of John D. Chinn,derived from a resolved parent-child link
+LV0862,Mary Cathrine Silcott,1925-12-28,day,widowed,LV0861,James Edgar Silcott,death of spouse James Edgar Silcott,derived from a resolved spouse link
+PV0085,Cezar Flint,1926,year,widowed,PV0084,Sarah R. Flint,death of spouse Sarah R. Flint,derived from a resolved spouse link
+LV0086,Anna Rebecca Thompson Beales,1926-07-10,day,widowed,LV0085,David Henry Beales,death of spouse David Henry Beales,derived from a resolved spouse link
+LV1385,Mary Catherine Roberts Laycock,1927-01-07,day,widowed,LV0600,John Franklin Laycock,death of spouse John Franklin Laycock,derived from a resolved spouse link
+LV0711,Mary F Myers,1927-05-22,day,widowed,LV0222,Anthon Christensen,death of spouse Anthon Christensen,derived from a resolved spouse link
+LV0026,Welby S. Arnett,1927-09-21,day,widowed,LV0027,Katherine V. Simmons Arnett,death of spouse Katherine V. Simmons Arnett,derived from a resolved spouse link
+LV0226,John W. Clark,1927-11-03,day,widowed,LV0227,Regina Neff Clark,death of spouse Regina Neff Clark,derived from a resolved spouse link
+LV0695,George C. Mossburg,1928,year,widowed,LV0696,Mary E. Mossburg,death of spouse Mary E. Mossburg,derived from a resolved spouse link
+LV0779,Israel Gurley Powell,1928,year,child_died,LV0782,Nellie Powell,death of Nellie Powell aged 59,derived from a resolved parent-child link
+LV0780,Lydia Catherine Ruse Powell,1928,year,child_died,LV0782,Nellie Powell,death of Nellie Powell aged 59,derived from a resolved parent-child link
+PV0135,Mary V. Lee,1928,year,child_born,PV0137,Arthur B. Lee,birth of Arthur B. Lee,derived from a resolved parent-child link
+LV0905,Rev Charles Thomas Taylor,1928-02-23,day,child_died,LV0904,Lois Young Taylor,death of Lois Young Taylor aged 21,derived from a resolved parent-child link
+LV1910,Minnie Kelly Taylor,1928-02-23,day,child_died,LV0904,Lois Young Taylor,death of Lois Young Taylor aged 21,derived from a resolved parent-child link
+PV0027,Daisy May Chinn,1928-03-03,day,child_died,PV0029,John D. Chinn,death of John D. Chinn aged 3,derived from a resolved parent-child link
+PV0132,Rev Carrell H. Lee,1930,year,widowed,PV0133,Lillie Flint Lee,death of spouse Lillie Flint Lee,derived from a resolved spouse link
+LV0504,Rev James M. Hawley,1930-03-10,day,widowed,LV0503,Mary C. Hawley,death of spouse Mary C. Hawley,derived from a resolved spouse link
+LV1234,Anita Fox Hirst,1930-07-30,day,child_born,LV0526,Nona Carolyn Hirst,birth of Nona Carolyn Hirst,derived from a resolved parent-child link
+LV1237,Ralph K. Hirst,1930-07-30,day,child_born,LV0526,Nona Carolyn Hirst,birth of Nona Carolyn Hirst,derived from a resolved parent-child link
+LV1234,Anita Fox Hirst,1930-08-25,day,child_died,LV0526,Nona Carolyn Hirst,death of Nona Carolyn Hirst aged 0,derived from a resolved parent-child link
+LV1237,Ralph K. Hirst,1930-08-25,day,child_died,LV0526,Nona Carolyn Hirst,death of Nona Carolyn Hirst aged 0,derived from a resolved parent-child link
+LV0210,Willie Etta T. Carter,1931-01-09,day,widowed,LV0209,Lewis T. Carter,death of spouse Lewis T. Carter,derived from a resolved spouse link
+LV1545,Carrie May Ballenger Myers,1931-02-23,day,child_died,LV0712,Frances May Myers,death of Frances May Myers aged 22,derived from a resolved parent-child link
+LV0715,Annie B. Kidwell Myers,1931-03-21,day,widowed,LV0714,Robert L. Myers,death of spouse Robert L. Myers,derived from a resolved spouse link
+LV0709,Willard C. Myers,1931-04-18,day,widowed,LV0710,Edna J. Myers,death of spouse Edna J. Myers,derived from a resolved spouse link
+PV0027,Daisy May Chinn,1931-06-02,day,child_born,PV0028,Maurice Chinn,birth of Maurice Chinn,derived from a resolved parent-child link
+LV0533,Sophia C. Evans Hoskinson,1932,year,widowed,LV0532,William D. Hoskinson,death of spouse William D. Hoskinson,derived from a resolved spouse link
+PV0135,Mary V. Lee,1932,year,child_born,PV0136,Carolyn V. Lee,birth of Carolyn V. Lee,derived from a resolved parent-child link
+LV0583,Elizabeth B Larson,1934,year,widowed,LV0584,Niels P Larson,death of spouse Niels P Larson,derived from a resolved spouse link
+PV0155,Garland G. Lucas,1934,year,widowed,PV0154,Eliza Brown Lucas,death of spouse Eliza Brown Lucas,derived from a resolved spouse link
+LV1437,Fenton Mercer Love Jr.,1934-05-24,day,widowed,LV0618,Gertrude T. Woolf Love,death of spouse Gertrude T. Woolf Love,derived from a resolved spouse link
+HM0069,George E Gray,1934-06-09,day,widowed,HM0068,Alice Virginia Furr Gray,death of spouse Alice Virginia Furr Gray,derived from a resolved spouse link
+LV0683,James E. Mock,1934-07-27,day,widowed,LV0684,Sarah A. Fulton Mock,death of spouse Sarah A. Fulton Mock,derived from a resolved spouse link
+LV1360,Elizabeth Breckenridge Alexander Larsen,1934-11-12,day,widowed,LV1361,Niels Peter Larsen,death of spouse Niels Peter Larsen,derived from a resolved spouse link
+PV0103,Alvernie G. Gaskins Jackson,1935,year,widowed,PV0102,John Lewis Jackson,death of spouse John Lewis Jackson,derived from a resolved spouse link
+LV1410,James Howard Leigh,1935-04-16,day,child_born,LV0609,Thomas George Leigh,birth of Thomas George Leigh,derived from a resolved parent-child link
+LV1410,James Howard Leigh,1935-04-18,day,child_died,LV0609,Thomas George Leigh,death of Thomas George Leigh aged 0,derived from a resolved parent-child link
+LV0422,Mary Esther Wynkoop Finnelle,1936,year,widowed,LV0421,Edward Clarke Finnelle,death of spouse Edward Clarke Finnelle,derived from a resolved spouse link
+LV0283,Francis Heaton Palmer Cullen,1937-08-25,day,child_born,LV0282,Francis A. Cullen,birth of Francis A. Cullen,derived from a resolved parent-child link
+LV0886,Etta B. Rumble Tavenner,1937-11-29,day,widowed,LV0885,Howard W. Tavenner,death of spouse Howard W. Tavenner,derived from a resolved spouse link
+LV0556,George William James,1938-04-10,day,widowed,LV0557,Malinda E James,death of spouse Malinda E James,derived from a resolved spouse link
+LV0283,Francis Heaton Palmer Cullen,1938-08-13,day,child_died,LV0282,Francis A. Cullen,death of Francis A. Cullen aged 1,derived from a resolved parent-child link
+LV0276,Frances M. Small Cross,1939,year,widowed,LV0277,Henry Harrison Cross,death of spouse Henry Harrison Cross,derived from a resolved spouse link
+LV0326,Emma J. Spergeon Donaldson,1940,year,widowed,LV0325,Elliott S. Donaldson,death of spouse Elliott S. Donaldson,derived from a resolved spouse link
+PV0109,A. Violet Johnson,1940,year,widowed,PV0108,Lawrence H. Johnson,death of spouse Lawrence H. Johnson,derived from a resolved spouse link
+LV0460,Thaddeus Gill,1940-02-10,day,widowed,LV0461,Clara S. Gill,death of spouse Clara S. Gill,derived from a resolved spouse link
+LV0173,Mary Ann Brown,1944,year,child_died,LV0171,Mary Francenia Brown,death of Mary Francenia Brown aged 85,derived from a resolved parent-child link
+PV0135,Mary V. Lee,1944,year,child_died,PV0136,Carolyn V. Lee,death of Carolyn V. Lee aged 12,derived from a resolved parent-child link
+LV1301,Howard Stanley James,1945,year,widowed,LV0667,Clare Beth Miller,death of spouse Clare Beth Miller,derived from a resolved spouse link
+PV0090,Clara Gordon,1945,year,widowed,PV0091,Daniel Gordon,death of spouse Daniel Gordon,derived from a resolved spouse link
+PV0135,Mary V. Lee,1945,year,child_died,PV0137,Arthur B. Lee,death of Arthur B. Lee aged 17,derived from a resolved parent-child link
+LV0274,Betty Myers Creamer,1946-11-17,day,child_born,LV0273,Terry Raymond Creamer,birth of Terry Raymond Creamer,derived from a resolved parent-child link
+LV0275,PVT Guy Reese Creamer,1946-11-17,day,child_born,LV0273,Terry Raymond Creamer,birth of Terry Raymond Creamer,derived from a resolved parent-child link
+LV0274,Betty Myers Creamer,1946-11-18,day,child_died,LV0273,Terry Raymond Creamer,death of Terry Raymond Creamer aged 0,derived from a resolved parent-child link
+LV0275,PVT Guy Reese Creamer,1946-11-18,day,child_died,LV0273,Terry Raymond Creamer,death of Terry Raymond Creamer aged 0,derived from a resolved parent-child link
+LV1021,Gilbert C. Albert,1947-11-13,day,child_born,LV0012,Gilbert C Albert,birth of Gilbert C Albert,derived from a resolved parent-child link
+PV0135,Mary V. Lee,1954,year,child_died,PV0138,Jonathan A. Lee,death of Jonathan A. Lee aged 36,derived from a resolved parent-child link
+LV1023,Ruth Ellen Wolford Anderson,1959-06-30,day,child_born,LV0025,Vicki Lynn Anderson,birth of Vicki Lynn Anderson,derived from a resolved parent-child link
+LV1023,Ruth Ellen Wolford Anderson,1959-07-01,day,child_died,LV0025,Vicki Lynn Anderson,death of Vicki Lynn Anderson aged 0,derived from a resolved parent-child link
+PV0035,Ida M. Nokes Clark,1960,year,widowed,PV0039,Howard W. Clark,death of spouse Howard W. Clark,derived from a resolved spouse link
+PV0112,John E. Jones,1963,year,widowed,PV0113,Marie Pollard Jones,death of spouse Marie Pollard Jones,derived from a resolved spouse link
+PV0023,William Calvery,1963-01-20,day,widowed,PV0022,Alma W. Calvery,death of spouse Alma W. Calvery,derived from a resolved spouse link
+PV0064,Ethel Mae Curtis,1965-11-03,day,widowed,PV0065,Dudley S. Curtis,death of spouse Dudley S. Curtis,derived from a resolved spouse link
+PV0202,Abraham L. Redmond,1966-01-04,day,widowed,PV0201,Rosa Lee W. Redmond,death of spouse Rosa Lee W. Redmond,derived from a resolved spouse link
+PV0078,Towney Rodger Ferrell,1968,year,widowed,PV0079,Annabelle Jones Ferrell,death of spouse Annabelle Jones Ferrell,derived from a resolved spouse link
+LV0214,M. Edwin Chamblin,1968-08-10,day,widowed,LV0215,Margaret Sexton Taylor Chamblin,death of spouse Margaret Sexton Taylor Chamblin,derived from a resolved spouse link
+PV0147,Roger P. Lucas,1970-01-18,day,widowed,PV0148,Mary C. Lucas,death of spouse Mary C. Lucas,derived from a resolved spouse link
+PV0146,Loretta Amelia Stewart Logan,1972,year,widowed,PV0145,Beaptis Logan,death of spouse Beaptis Logan,derived from a resolved spouse link
+PV0217,Clayton Elwood Rowe,1973,year,widowed,PV0216,Josephine Emma Marcellus Rowe,death of spouse Josephine Emma Marcellus Rowe,derived from a resolved spouse link
+LV0167,Inez Cassell Brown,1978-01-15,day,widowed,LV0164,Ethel L. Brown,death of spouse Ethel L. Brown,derived from a resolved spouse link
+PV0027,Daisy May Chinn,1979-10-07,day,child_died,PV0028,Maurice Chinn,death of Maurice Chinn aged 48,derived from a resolved parent-child link
+PV0035,Ida M. Nokes Clark,1980,year,widowed,PV0040,Howard W. Clark Jr.,death of spouse Howard W. Clark Jr.,derived from a resolved spouse link
+LV0126,Annie Throckmorton Benedum,1982-11-07,day,widowed,LV0128,Charles Douglas Benedum,death of spouse Charles Douglas Benedum,derived from a resolved spouse link
+PV0008,Julia L. Ashe Booton,1983,year,widowed,PV0007,William David Booton,death of spouse William David Booton,derived from a resolved spouse link
+PV0025,Helen Beatrice Mason Chinn,1988-11-23,day,widowed,PV0031,John Newton Chinn Sr.,death of spouse John Newton Chinn Sr.,derived from a resolved spouse link
+PV0185,Joanna Mitchell Owens,1989-04-28,day,widowed,PV0188,Johnnie Garrett Owens Sr.,death of spouse Johnnie Garrett Owens Sr.,derived from a resolved spouse link
+PV0032,James E. Clark,1991,year,widowed,PV0033,Grace E. Clark,death of spouse Grace E. Clark,derived from a resolved spouse link
+PV0224,Bernard Shaw Sr.,1991-02-08,day,widowed,PV0223,Helen J. Shaw,death of spouse Helen J. Shaw,derived from a resolved spouse link
+PV0211,Mollie Elizabeth Robinson,1994,year,widowed,PV0210,Stanley Edward Robinson,death of spouse Stanley Edward Robinson,derived from a resolved spouse link

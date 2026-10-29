@@ -1,0 +1,16 @@
+year,geography,total,white,free_black,enslaved,black_total,black_share_pct,source,note
+1790,Loudoun County VA,18962,14749,183,4030,4213,22.2,"Loudoun Museum / loudounhistory.org, 'Era of Enslavement: Loudoun County Virginia 1757-1861'",US decennial census as reported by the Loudoun Museum
+1800,Loudoun County VA,20523,15200,333,4990,5323,25.9,"Loudoun Museum / loudounhistory.org, 'Era of Enslavement'",
+1810,Loudoun County VA,21338,15577,604,5157,5761,27.0,"Loudoun Museum / loudounhistory.org, 'Era of Enslavement'",
+1820,Loudoun County VA,22702,16144,819,5729,6548,28.8,"Loudoun Museum / loudounhistory.org, 'Era of Enslavement'",
+1830,Loudoun County VA,21939,15497,1079,5363,6442,29.4,"Loudoun Museum / loudounhistory.org, 'Era of Enslavement'",
+1840,Loudoun County VA,20431,13840,1318,5273,6591,32.3,"Loudoun Museum / loudounhistory.org, 'Era of Enslavement'",
+1850,Loudoun County VA,22079,15066,1373,5641,7014,31.8,"Loudoun Museum / loudounhistory.org, 'Era of Enslavement'",
+1860,Loudoun County VA,21774,15021,1251,5501,6752,31.0,"Loudoun Museum / loudounhistory.org, 'Era of Enslavement'",Last census before emancipation
+1870,Loudoun County VA,,,,,5691,,"Loudoun County African-American Historic Architectural Resources Survey, p.16",First census after emancipation. Free/enslaved columns no longer apply. The survey notes many African Americans 'held their own referendum on slavery during the Civil War and immediately afterwards by leaving Loudoun County'.
+1900,Loudoun County VA,,,,,5868,,"Loudoun Museum, 'From Loudoun to Montclair: One Woman's Experience of the Great Migration' (loudounmuseum.org)",Start of the documented Great Migration decline series.
+1910,Loudoun County VA,,,,,5221,,"Loudoun Museum, 'From Loudoun to Montclair: One Woman's Experience of the Great Migration' (loudounmuseum.org)",STEEPEST DECADE DROP: -11.0 percent.
+1920,Loudoun County VA,,,,,4810,,"Loudoun Museum, 'From Loudoun to Montclair: One Woman's Experience of the Great Migration' (loudounmuseum.org)",-7.9 percent.
+1930,Loudoun County VA,,,,,4347,,"Loudoun Museum, 'From Loudoun to Montclair: One Woman's Experience of the Great Migration' (loudounmuseum.org)",SECOND STEEPEST: -9.6 percent. This is the decade Curtis asked about.
+1940,Loudoun County VA,,,,,4094,,"Loudoun Museum, 'From Loudoun to Montclair: One Woman's Experience of the Great Migration' (loudounmuseum.org)",-5.8 percent.
+1950,Loudoun County VA,,,,,3976,,"Loudoun Museum, 'From Loudoun to Montclair: One Woman's Experience of the Great Migration' (loudounmuseum.org)","-2.9 percent. Loudoun's Black population fell in EVERY decade from 1900 to 1950. CRITICAL: these raw counts UNDERSTATE out-migration, because they do not account for natural population growth - a flat count with ordinary birth rates means substantial net outflow."

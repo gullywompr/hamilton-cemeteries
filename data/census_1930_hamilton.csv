@@ -1,0 +1,444 @@
+image,line,hh,surname,given,relation,race,sex,age,occupation,industry,class,note
+1,1,1,Bradford,George C,Head,W,M,40,Plumber,Job Work,OA,ED 54-17 Hamilton town; enumerator Stella M. Collins; 4 Apr 1930; rents; born Maryland
+1,2,1,Bradford,Myra O,Wife,W,F,33,,,,
+1,3,1,Bradford,Harold,Son,W,M,9,,,,
+1,4,1,Bradford,Helen,Daughter,W,F,8,,,,
+1,5,1,Bradford,Alma,Daughter,W,F,6,,,,
+1,6,2,Laycock,Ella,Head,W,F,74,,,,widow; owns $2500
+1,7,2,Laycock,Mary E,Daughter,W,F,52,,,,
+1,8,3,Gover,Sallie E,Head,W,F,73,,,,widow; owns $2500
+1,9,4,Sydnor,William,Head,W,M,54,Doctor,General Practice,OA,owns
+1,10,4,Sydnor,Fairy R,Wife,W,F,39,,,,born West Virginia
+1,11,4,Sydnor,William,Son,W,M,15,,,,
+1,12,5,Taylor,Charles T,Head,W,M,62,Pastor,Baptist Church,W,rents $12
+1,13,5,Taylor,Minnie K,Wife,W,F,62,,,,
+1,14,5,Taylor,Margaret,Daughter,W,F,29,Teacher,Public School,W,
+1,15,5,Taylor,Frances,Daughter,W,F,27,Teacher,Public School,W,
+1,16,5,Cross,Virginia,Servant,N,F,17,Servant,Private Family,W,
+1,17,6,Preston,Thomas,Head,W,M,57,Florist,Green House,W,owns
+1,18,6,Preston,Edna,Wife,W,F,56,,,,
+1,19,6,Preston,George,Son,W,M,18,Salesman,Radio,W,
+1,20,6,Tribby,Emma,Mother-in-law,W,F,83,,,,widow
+1,21,6,Thomas,Jackson,Lodger,W,M,64,Cabinet Maker,Furniture Shop,OA,
+1,22,7,Hoge,Henry J,Head,W,M,58,Administrator,Personal Estate,OA,owns
+1,23,7,Hoge,Laura S,Wife,W,F,62,,,,
+1,24,7,Sinkfield,William,Servant,N,M,80,Gardner,Private Family,W,
+1,25,7,Sinkfield,Octavius,Servant,N,M,66,Cook,Private Family,W,
+1,26,8,Rhodes,Lacy C,Head,W,M,34,Truckman,Lumber Yard,W,rents $10 (lumber mill foreman 1940)
+1,27,8,Rhodes,Carrie,Wife,W,F,27,,,,
+1,28,8,Rhodes,Edgar,Son,W,M,8,,,,
+1,29,8,Rhodes,Dorothy,Daughter,W,F,2,,,,
+1,30,9,Darr,Charles,Head,W,M,80,Caretaker,Cemetery,W,rents (Lakeview sexton?)
+1,31,9,Darr,Henryetta,Wife,W,F,60,,,,
+1,32,9,Darr,Mary E,Daughter,W,F,24,Operator,Telephone,W,
+1,33,10,Thompson,Howard,Head,W,M,69,,,,owns
+1,34,10,Thompson,Martha,Wife,W,F,58,,,,
+1,35,11,Rhodes,George D,Head,W,M,36,Mail Carrier,Rural Route,W,owns $3500
+1,36,11,Rhodes,Gertrude,Wife,W,F,30,,,,
+1,37,11,Rhodes,Helen,Daughter,W,F,8,,,,
+1,38,11,Rhodes,Esther,Daughter,W,F,6,,,,
+1,39,12,Myers,J Frank,Head,W,M,59,Paper Hanger,Job Work,OA,widower; owns $3500 (Butcher 1910)
+1,40,12,Myers,Ruth V,Daughter,W,F,22,,,,
+1,41,13,Hawley,James,Head,W,M,73,Minister,Methodist Church,W,widower; owns
+1,42,14,Orrison,Elizabeth,Head,W,F,83,,,,owns $3200
+1,43,14,Orrison,Pleasant,Sister,W,F,75,Seamstress,Own Shop,OA,
+1,44,14,Orrison,Virginia,Sister,W,F,73,,,,
+1,45,15,Thomas,Frederick,Head,W,M,55,Carpenter,General House,W,owns $2500
+1,46,15,Thomas,Frances E,Wife,W,F,53,,,,born DC; father born England
+1,47,15,Thomas,Howard J,Son,W,M,26,Carpenter,Construction Shop,W,
+1,48,16,Milburne,Julian,Head,W,M,54,Sales Agent,Nursery,W,rents
+1,49,16,Milburne,Mollie,Wife,W,F,50,,,,
+1,50,16,Milburne,Bruce,Son,W,M,24,Clerk,Dept Store,W,
+2,1,17,Kidwell,James L,Head,W,M,53,Merchant,Grocery Store,OA,owns $3500 (Tinner 1900; grocer 1940)
+2,2,17,Kidwell,Olivia,Wife,W,F,53,,,,
+2,3,17,Kidwell,James,Son,W,M,22,Clerk,Store,W,
+2,4,17,Kidwell,Martin,Son,W,M,17,Manager,Chain Grocery,W,
+2,5,18,Offley,John M,Head,W,M,57,,,,born DC; owns
+2,6,19,James,Caldwell,Head,W,M,78,,,,widower; owns (Americus C James 1920)
+2,7,19,James,Nellie J,Daughter,W,F,45,,,,
+2,8,19,James,Glova M,Daughter,W,F,40,,,,
+2,9,19,James,Forrest C,Son,W,M,49,,,,
+2,10,20,Hunter,Lillian S,Head,W,F,55,,,,widow; owns $4000
+2,11,20,Hunter,Helen,Daughter,W,F,19,Operator,Telephone,W,
+2,12,20,Hunter,Aubrey S,Son,W,M,14,,,,
+2,13,20,Gott,Kenneth,Lodger,W,M,28,Trouble Man,Telephone Line,W,
+2,14,20,Cornwell,Rose,Daughter,W,F,30,,,,
+2,15,21,Ballenger,Walter,Head,W,M,47,Contractor,Building,Emp,owns $6000 (laborer painter 1940)
+2,16,21,Ballenger,Mabel,Wife,W,F,44,,,,
+2,17,21,Ballenger,Isaac,Son,W,M,11,,,,
+2,18,21,Myers,Elizabeth,Mother-in-law,W,F,72,,,,widow
+2,19,21,Myers,Helen O,Aunt,W,F,75,,,,widow; born West Virginia
+2,20,21,Breckenridge,James,Son-in-law,W,M,31,Mechanic,Automobile,W,born West Virginia
+2,21,21,Breckenridge,Lillian,Daughter,W,F,20,Operator,Telephone,W,
+2,22,22,Shoemaker,Archibald,Head,W,M,45,Operator,Garage,OA,rents $20
+2,23,22,Shoemaker,Ada S,Wife,W,F,47,,,,
+2,24,23,Lowe,Benjamin,Head,W,M,54,Operator,General Farm,OA,owns
+2,25,23,Lowe,Rebecca,Wife,W,F,55,,,,
+2,26,23,Lowe,Claude,Son,W,M,32,Manager,Farm,W,
+2,27,23,Preston,Rilla,Niece,W,F,19,,,,
+2,28,23,Preston,Grace,Niece,W,F,16,,,,
+2,29,23,Milliken,Geddes,Lodger,W,M,19,,,,born DC
+2,30,24,Preston,Robert L,Head,W,M,31,Mechanic,Garage,W,rents $8
+2,31,24,Preston,Genevieve,Wife,W,F,31,Seamstress,General Work,W,
+2,32,24,Preston,Joseph F,Son,W,M,0,,,,
+2,33,24,Preston,Ada W,Mother,W,F,59,Seamstress,General Work,W,widow
+2,34,25,Saunders,Robert L,Head,W,M,67,Proprietor,Hardware Store,OA,rents $35
+2,35,25,Saunders,Josephine,Wife,W,F,73,,,,
+2,36,26,Flippo,Harry G,Head,W,M,41,Operator,Grocery Store,OA,owns $3100 (type setter 1920)
+2,37,26,Flippo,Annie,Wife,W,F,41,,,,
+2,38,27,Belt,Thomas A,Head,W,M,43,Traffic Inspector,State Road,W,rents $15
+2,39,27,Belt,Myrtle S,Wife,W,F,53,,,,
+2,40,27,Belt,Dorothy M,Daughter,W,F,15,,,,
+2,41,27,Belt,Mary A,Daughter,W,F,13,,,,
+2,42,27,Belt,Townsend W,Son,W,M,11,,,,
+2,43,28,Herndon,Mervin,Head,W,M,53,Manager,Grain Mill,W,owns $7000 (merchant 1910; postmaster 1920; book keeper 1940)
+2,44,28,Herndon,Blanche,Wife,W,F,52,,,,
+2,45,28,Herndon,Marian,Daughter,W,F,24,Secretary,Statistical School,W,
+2,46,28,Herndon,Alice,Daughter,W,F,19,,,,
+2,47,29,Kerr,Floyd N,Head,W,M,55,Proprietor,Drug Store,OA,owns $7000
+2,48,29,Kerr,Lillian R,Wife,W,F,53,,,,
+2,49,29,Kerr,Judith A,Daughter,W,F,23,Teacher,Public School,W,
+2,50,29,Kerr,F Alex,Son,W,M,22,Secretary,Grain Mill,W,
+3,1,30,Wolford,Gelespie B,Head,W,M,36,,,,rents $12; occupation at page top not captured (Station Agent 1940)
+3,2,30,Wolford,Elsie P,Wife,W,F,31,,,,
+3,3,30,Wolford,Virginia,Daughter,W,F,11,,,,
+3,4,30,Wolford,Dorothy M,Daughter,W,F,9,,,,
+3,5,31,Shoemaker,Edna,Head,W,F,53,,,,widow; owns $6000
+3,6,31,Shoemaker,Mildred,Daughter,W,F,25,,,,
+3,7,31,French,Belle,Roomer,W,F,73,,,,born Maryland
+3,8,32,Silcott,Charles,Head,W,M,75,Orchardist,General Fruits,OA,widower; owns $2500
+3,9,33,Beamer,Henry,Head,W,M,71,Carpenter,House,W,owns (George H Beamer shoemaker/cobbler 1910-20)
+3,10,33,Beamer,Ella,Wife,W,F,73,,,,
+3,11,34,Tribby,Elton V,Head,W,M,51,Shoemaker,Shoe Repair Shop,OA,widower; rents $10 (saddler 1910; plumber 1920)
+3,12,34,Tribby,Dean,Daughter,W,F,22,,,,
+3,13,35,Thompson,John,Head,W,M,70,Carpenter,House,OA,owns $3000
+3,14,35,Thompson,Amelia,Wife,W,F,57,,,,
+3,15,36,Mock,James M,Head,W,M,77,,,,owns $2500
+3,16,36,Mock,Sarah,Wife,W,F,76,,,,
+3,17,37,Laycock,J Frank,Head,W,M,46,Partner,Grocery Store,OA,owns $6500 (salesman retail grocery 1940)
+3,18,37,Laycock,Jessie,Wife,W,F,50,Partner,Grocery Store,OA,
+3,19,37,Laycock,Albert,Son,W,M,15,,,,
+3,20,37,Laycock,Mary,Daughter,W,F,10,,,,
+3,21,38,Howard,Charles,Head,W,M,64,,,,born Maine; owns $3000
+3,22,38,Howard,Lula W,Wife,W,F,50,,,,
+3,23,39,Tavenner,James E,Head,W,M,61,Repair Worker,Furniture Shop,OA,owns (carpenter 1900-20)
+3,24,39,Tavenner,Nellie,Wife,W,F,52,,,,
+3,25,39,White,Charles F,Boarder,W,M,59,Painter,Contract Work,OA,
+3,26,40,Rogers,Howard C,Head,W,M,44,Partner,Elevator Mill,OA,owns $7000
+3,27,40,Rogers,Beaulah,Wife,W,F,47,,,,
+3,28,40,Rogers,Esther E,Daughter,W,F,14,,,,
+3,29,40,Rogers,Jane C,Daughter,W,F,11,,,,
+3,30,40,Fred,Charles H,Lodger,W,M,57,Proprietor,Stock Farm,OA,
+3,31,41,Rogers,Elizabeth,Head,W,F,83,,,,widow; owns $7000
+3,32,41,Rogers,Lula L,Daughter,W,F,53,,,,
+3,33,41,Rogers,Elizabeth,Daughter,W,F,43,Assistant,Hospital Staff,W,
+3,34,42,Love,Fenton M,Head,W,M,76,,,,owns
+3,35,42,Love,Gertrude T,Wife,W,F,76,,,,
+3,36,42,Kincheloe,Kate S,Sister-in-law,W,F,75,,,,widow
+3,37,43,Chamblin,John W,Head,W,M,76,,,,owns
+3,38,43,Chamblin,Lucy P,Wife,W,F,67,Keeper,Boarding House,OA,
+3,39,43,Chamblin,Margaret,Daughter,W,F,28,Teacher,Physical Culture,W,
+3,40,43,Iden,Bessie M,Boarder,W,F,72,,,,
+3,41,43,Russell,Minnie W,Boarder,W,F,68,,,,
+3,42,43,Wright,Minnie,Servant,W,F,42,Servant,Private Family,W,
+3,43,43,Evans,Anna,Boarder,W,F,68,Milliner,Hat Shop,OA,
+3,44,44,Schooley,George F,Head,W,M,69,Merchant,Hardware,OA,owns (blacksmith 1900)
+3,45,44,Schooley,Eva,Wife,W,F,55,,,,born Maryland
+3,46,44,Schooley,Alice,Daughter,W,F,18,,,,
+3,47,44,Schooley,Alice,Sister,W,F,76,Seamstress,At Home,OA,
+3,48,45,Wiley,Edgar T,Head,W,M,65,Merchant,Dry Goods,OA,owns $4000
+3,49,45,Wiley,Olive,Wife,W,F,50,,,,
+3,50,45,Wiley,Edgar H,Son,W,M,21,Machinist,Navy Yard,W,
+4,1,46,Flippo,Frank,Head,W,M,30,,,,rents $15; occupation at page top not captured
+4,2,46,Flippo,Hilda G,Wife,W,F,21,,,,
+4,3,47,Flippo,Monroe,Head,W,M,69,Miller,Elevator Mill,W,owns $4000 (day laborer 1900; butcher 1910; farm laborer 1920; grain mill laborer 1940)
+4,4,47,Flippo,Martha G,Wife,W,F,62,,,,
+4,5,47,Flippo,Roy,Son,W,M,37,Retail Merchant,Meat & Grocery,OA,WWI veteran
+4,6,47,Flippo,Nina E,Daughter,W,F,35,Cashier,Bank,W,
+4,7,48,Kuhlmann,Charles,Head,W,M,64,Manager,Apiary,W,parents born Germany; owns
+4,8,48,Kuhlmann,Malinda,Wife,W,F,62,,,,
+4,9,48,Kuhlmann,Dora,Daughter,W,F,29,File Clerk,Government Dept,W,
+4,10,49,Mullen,George W,Head,W,M,74,,,,rents $10
+4,11,49,Mullen,Fannie,Wife,W,F,73,,,,born DC
+4,12,50,James,George W,Head,W,M,77,Farmer,General Farm,OA,owns
+4,13,50,James,Malinda E,Wife,W,F,78,,,,
+4,14,50,James,Mary N,Sister-in-law,W,F,72,,,,widow
+4,15,51,Cannon,Ida,Head,W,F,60,,,,owns $3000
+4,16,51,Cannon,Chloe,Sister,W,F,54,,,,
+4,17,51,Cannon,Hattie,Sister,W,F,50,,,,
+4,18,52,Graves,Francis C,Head,W,M,72,,,,born Maryland; rents
+4,19,52,Graves,Aline V,Wife,W,F,63,,,,born Ohio
+4,20,53,Tavenner,William,Head,W,M,59,Butcher,Meat Store,W,owns
+4,21,53,Tavenner,Annie,Sister,W,F,58,,,,
+4,22,54,Pearson,Barnette,Head,W,M,72,Laborer,General Farm,W,owns $3000 (farmer 1920)
+4,23,54,Pearson,Ruth S,Wife,W,F,68,,,,
+4,24,54,Pearson,Ollie M,Daughter,W,F,25,Seamstress,At Home,OA,
+4,25,54,Brent,Lula,Lodger,W,F,50,Cook,Private Family,W,
+4,26,55,Tavenner,Mary I,Head,W,F,70,,,,widow; owns $3500
+4,27,55,Wynkoop,Robert,Lodger,W,M,70,Laborer,Day Work,W,
+4,28,55,Wynkoop,Mary,Servant,W,F,63,Housekeeper,Private Family,W,
+4,29,55,Thompson,Joseph,Brother,W,M,72,Tinsmith,Hardware Store,W,widower
+4,30,56,McFarland,Margaret,Head,W,F,45,Nurse,Practical,W,owns $3000; born West Virginia? (index says Va)
+4,31,56,McFarland,Maisie,Sister,W,F,48,Secretary,Revenue,W,
+4,32,57,Everett,Maude,Head,W,F,55,,,,rents $6
+4,33,58,Hough,Samuel,Head,W,M,69,Farmer,General Farm,OA,owns
+4,34,58,Hough,Anna B,Wife,W,F,55,,,,
+4,35,58,Hough,Samuel,Son,W,M,22,Laborer,Road,W,
+4,36,58,Hough,Mary C,Daughter-in-law,W,F,18,,,,
+4,37,58,Thomas,Henry,Boarder,W,M,55,Laborer,Farm,W,
+4,38,59,Arnold,Raymond,Head,W,M,36,Laborer,Day Work,W,owns
+4,39,59,Arnold,Mary S,Wife,W,F,28,,,,born DC
+4,40,59,Arnold,Raymond,Son,W,M,3,,,,
+4,41,59,Arnold,Edna E,Daughter,W,F,2,,,,
+4,42,59,Arnold,Robert S,Son,W,M,0,,,,
+4,43,60,Grimes,Edward,Head,W,M,54,Patrolman,State Road,W,owns
+4,44,60,Grimes,Elizabeth,Wife,W,F,61,,,,
+4,45,60,Grimes,McNeece,Son,W,M,29,Stone Mason,Job Work,OA,
+4,46,61,Lee,Sarah A,Head,W,F,67,,,,widow; owns
+4,47,61,Lee,Beaulah,Daughter,W,F,39,Operator,Telephone,W,
+4,48,61,Sanders,Elizabeth,Aunt,W,F,91,,,,
+4,49,62,Myers,Bessie,Head,W,F,49,Chief Operator,Telephone,W,widow; owns $7000
+4,50,62,Myers,Anna L,Daughter,W,F,26,,,,
+5,1,63,Clagett,Joseph,Head,W,M,50,Physician,,OA,born West Virginia; owns $3600
+5,2,63,Clagett,Bertha K,Wife,W,F,49,,,,
+5,3,63,Clagett,James,Son,W,M,18,,,,born West Virginia
+5,4,63,Clagett,Thomas,Son,W,M,13,,,,
+5,5,64,Chamblin,John R,Head,W,M,61,,,,owns $7000 (miller 1910)
+5,6,64,Chamblin,Ella M,Wife,W,F,49,,,,
+5,7,64,Chamblin,Elizabeth,Daughter,W,F,22,Teacher,Music,OA,
+5,8,65,Hathaway,Blanche,Head,W,F,75,,,,widow; owns $10000
+5,9,65,Hathaway,Blanchie,Daughter,W,F,42,,,,
+5,10,65,Hathaway,M Lucile,Daughter,W,F,39,,,,
+5,11,66,Thomas,George E,Head,W,M,57,Commissioner,Revenue,W,owns $4500 (mill laborer 1900; auctioneer 1910; mail carrier 1920; assessor 1940)
+5,12,66,Thomas,Blanche,Wife,W,F,55,,,,
+5,13,66,Thomas,Addie,Daughter,W,F,16,,,,
+5,14,66,Thomas,Edwin,Son,W,M,32,Register Clerk,Post Office,W,WWI veteran
+5,15,67,Mock,Henry,Head,W,M,30,Blacksmith,Shop,OA,owns
+5,16,67,Mock,Berdie,Wife,W,F,25,,,,
+5,17,67,Mock,Lorraine,Daughter,W,F,2,,,,
+5,18,67,Mock,Ann,Daughter,W,F,1,,,,
+5,19,67,Mock,Mervin,Brother,W,M,23,Laborer,Road,W,
+5,20,67,Mock,Lillian,Sister,W,F,16,,,,
+5,21,67,Beans,Franklin,Father-in-law,W,M,70,,,,widower
+5,22,68,Saunders,Rowena,Head,W,F,66,,,,owns $2500
+5,23,68,Saunders,Sarah,Sister,W,F,81,,,,
+5,24,68,Saunders,Martha,Sister,W,F,70,,,,
+5,25,69,Gochnaur,Preston,Head,W,M,57,,,,owns $5000
+5,26,69,Gochnaur,Annie F,Wife,W,F,58,,,,
+5,27,69,Gochnaur,Hilda K,Daughter,W,F,15,,,,
+5,28,69,Gochnaur,Anne,Daughter,W,F,11,,,,
+5,29,69,Hall,Otto G,Grandson,W,M,10,,,,
+5,30,70,Hampton,George,Head,W,M,78,Carpenter,House,OA,owns $3000
+5,31,70,Hampton,Ella,Wife,W,F,68,,,,
+5,32,71,Lewis,Jennie,Head,W,F,77,,,,widow; owns $2500
+5,33,72,Cady,Howard,Head,W,M,49,Pastor,Episcopal Church,W,born New York; rents $25
+5,34,73,Warner,Gordon E,Head,W,M,32,Proprietor,Garage,OA,owns $3000; WWI veteran (machinist 1920)
+5,35,73,Warner,Nancy D,Wife,W,F,29,,,,
+5,36,74,Traham,Charles,Head,W,M,32,Painter,Contract Work,OA,rents $15
+5,37,74,Traham,Kathleen,Wife,W,F,28,,,,
+5,38,74,Traham,Bondena,Daughter,W,F,5,,,,
+5,39,75,Beales,Joseph E,Head,W,M,75,Relief Agent,W&OD Line,W,owns $3000 (miller 1910; mill laborer 1900)
+5,40,75,Beales,Frances B,Wife,W,F,64,,,,
+5,41,75,Beales,Paul,Son,W,M,40,Bookkeeper,W&OD Line,W,(Treasury auditor 1940)
+5,42,75,Beales,Mae,Daughter-in-law,W,F,40,Assistant,Lunch Room,W,
+5,43,76,Tillett,Hugh A,Head,W,M,45,Operator,Dairy Farm,OA,owns $4000; WWI veteran
+5,44,76,Tillett,Mary L,Wife,W,F,38,,,,born Massachusetts
+5,45,76,Tillett,Leonard R,Son,W,M,7,,,,born Massachusetts
+5,46,76,Tillett,Virginia,Daughter,W,F,5,,,,born Massachusetts
+5,47,76,Tillett,Ruth,Daughter,W,F,3,,,,born Massachusetts
+5,48,77,Dowell,Martha J,Head,W,F,94,,,,owns $2000
+5,49,77,Norris,Alice M,Niece,W,F,76,,,,(teacher 1900-1920)
+5,50,78,Nichols,Eliza,Head,W,F,73,,,,widow; rents $5
+6,1,78,Nichols,Naomi,Daughter,W,F,35,,,,born Georgia
+6,2,79,Arnette,Wilby S,Head,W,M,74,Laborer,General Farm,W,widower; owns $2000 (Welby S Arnett farmer 1900/1920)
+6,3,80,Gochenans,Obed L,Head,W,M,43,Minister,Methodist Church,W,rents
+6,4,80,Gochenans,Lottie L,Wife,W,F,38,,,,
+6,5,80,Gochenans,Curtis D,Son,W,M,18,Clerk,Chain Grocery Store,W,
+6,6,80,Gochenans,Marie,Daughter,W,F,16,,,,
+6,7,80,Gochenans,Hazel,Daughter,W,F,14,,,,
+6,8,80,Gochenans,Obed L,Son,W,M,13,,,,
+6,9,80,Gochenans,W Baron,Son,W,M,12,,,,
+6,10,80,Gochenans,G Elvin,Daughter,W,F,10,,,,
+6,11,80,Gochenans,Edwin,Son,W,M,7,,,,
+6,12,80,Gochenans,Dennis M,Son,W,M,5,,,,
+6,13,80,Gochenans,Glenn V,Son,W,M,3,,,,
+6,14,80,Gochenans,Beatrice,Daughter,W,F,18,,,,
+6,15,81,Milburne,Gordon C,Head,W,M,44,Woodworker,Shop Work Lumber Mill,W,rents $20 (carpenter lumber mill 1940)
+6,16,81,Milburne,Mary S,Wife,W,F,42,,,,
+6,17,81,Milburne,Margaret,Daughter,W,F,19,,,,
+6,18,81,Milburne,G Clark,Son,W,M,14,,,,
+6,19,81,Milburne,William,Son,W,M,9,,,,
+6,20,81,Milburne,Lomas,Son,W,M,3,,,,
+6,21,82,Orrison,George A,Head,W,M,37,Assistant,Post Office,W,born DC; rents $20
+6,22,82,Orrison,Ruth E,Wife,W,F,36,Postmistress,Post Office,W,
+6,23,82,Orrison,George,Son,W,M,2,,,,
+6,24,82,Orrison,Edwin R,Son,W,M,1,,,,
+6,25,82,Orrison,John F,Son,W,M,0,,,,
+6,26,82,Brown,Francenia,Aunt,W,F,71,,,,(Mary Francenia Brown LV0171)
+6,27,82,Cross,Dorothy,Servant,N,F,18,Maid,Private Family,W,
+6,28,83,Rollison,Elvin,Head,W,M,36,Carpenter,House,W,rents $8; WWI veteran (contractor 1940)
+6,29,83,Rollison,Maisie,Wife,W,F,35,,,,
+6,30,83,Rollison,Kenneth,Son,W,M,7,,,,
+6,31,83,Rollison,Martha,Daughter,W,F,2,,,,
+6,32,84,Newton,Robert P,Head,W,M,29,Rural Carrier,Mail Route,W,rents $10 (nursery manager 1940)
+6,33,84,Newton,Dorothy H,Wife,W,F,26,,,,
+6,34,84,Newton,Betty H,Daughter,W,F,2,,,,
+6,35,85,Shoemaker,Evelyn,Head,W,F,74,,,,widow; rents $15
+6,36,85,Thomas,Charles,Son-in-law,W,M,45,Engineer,B&O Railroad,W,born Maryland
+6,37,85,Thomas,Nellie S,Daughter,W,F,39,,,,
+6,38,86,Trussell,Roger B,Head,W,M,24,Mechanic,Automobile,W,rents $8 (own garage 1940)
+6,39,86,Trussell,Helen B,Wife,W,F,22,,,,
+6,40,86,Trussell,A Elizabeth,Daughter,W,F,2,,,,
+6,41,87,Laycock,William,Head,W,M,73,,,,owns
+6,42,87,Laycock,Lucy,Wife,W,F,65,,,,
+6,43,88,Payne,Susie E,Head,W,F,64,,,,widow; owns
+6,44,88,Payne,Mary,Daughter,W,F,20,,,,
+6,45,88,Payne,Edward,Son,W,M,18,Laborer,Day Work,W,
+J8,52,J1,Johnson,William,Head,N,M,57,Laborer,,W,ED 7 Jefferson district sheet 4B - Hamilton west end / Jefferson side; rents $6
+J8,53,J1,Johnson,Mary,Wife,N,F,49,,,,
+J8,54,J1,Johnson,Isaah,Son,N,M,18,Laborer,,W,
+J8,55,J1,Johnson,Pearl,Daughter,N,F,17,,,,
+J8,56,J1,Johnson,Welby,Son,N,M,16,Laborer,,W,
+J8,57,J1,Johnson,Margarett,Daughter,N,F,14,,,,
+J8,58,J1,Johnson,Nellie,Daughter,N,F,10,,,,
+J8,59,J1,Johnson,Helen,Granddaughter,N,F,8,,,,
+J8,60,J1,Davis,William,Boarder,N,M,39,,,,
+J8,61,J2,Williams,John R,Head,N,M,51,Laborer,General Farm,W,rents $5
+J8,62,J2,Williams,Gertrude,Wife,N,F,49,Laborer,General Farm,W,
+J8,63,J2,Williams,John Jr,Son,N,M,20,,,,
+J8,64,J2,Williams,Mary F,Daughter,N,F,17,Laborer,General Farm,W,
+J8,65,J2,Williams,Henrietta,Daughter,N,F,15,,,,
+J8,66,J2,Williams,Gertrude,Daughter,N,F,14,Servant,Private Family,W,
+J8,67,J2,Williams,Martha A,Daughter,N,F,8,,,,
+J8,68,J2,Williams,Almona,Granddaughter,N,F,10,,,,
+J8,69,J2,Williams,Theodore,Grandson,N,M,6,,,,
+J8,70,J3,Warner,P Ambrose,Head,W,M,42,Farmer,Dairy Farm,Emp,rents
+J8,71,J3,Warner,Louise M,Wife,W,F,40,,,,
+J8,72,J3,Warner,Mary L,Daughter,W,F,13,,,,
+J8,73,J3,Warner,Ruth M,Daughter,W,F,11,,,,
+J8,74,J3,Warner,Paul A Jr,Son,W,M,9,,,,
+J8,75,J3,Warner,Eugene L,Son,W,M,5,,,,
+J8,76,J4,Burkhead,C Ellen,Head,W,F,68,Farmer,General Farm,Emp,widow; owns
+J8,77,J4,Casilear,Mattie L,Sister,W,F,63,,,,widow
+J8,78,J5,Ford,Doalin,Head,W,M,47,Laborer,Farm,W,born Kentucky; rents $10
+J8,79,J5,Ford,Winnie D,Wife,W,F,37,,,,born Kentucky
+J8,80,J6,Pearson,Arthur W,Head,W,M,46,Farmer,General Farm,Emp,rents (Arnett son-in-law 1920)
+J8,81,J6,Pearson,Eva M,Wife,W,F,39,,,,
+J8,82,J6,Pearson,Welby C,Son,W,M,16,Laborer,General Farm,W,
+J8,83,J6,Pearson,Lillian D,Daughter,W,F,11,,,,
+J8,84,J6,Pearson,Gladys M,Daughter,W,F,7,,,,
+J8,85,J6,Pearson,Helen R,Daughter,W,F,3,,,,
+J8,86,J6,Fletcher,Alice,Boarder,W,F,69,,,,
+J8,87,J7,Utterback,H Stanley,Head,W,M,36,Farmer,General Farm,Emp,born Maryland; owns
+J8,88,J7,Utterback,Josephine,Wife,W,F,33,,,,
+J8,89,J7,Utterback,Hilda G,Daughter,W,F,13,,,,
+J8,90,J7,Utterback,William S,Son,W,M,10,,,,
+J8,91,J8,Deskins,Edgar,Head,N,M,49,Laborer,Odd Jobs,W,rents $6
+J8,92,J9,Clark,Henry,Head,N,M,64,Farmer,General Farm,Emp,owns
+J8,93,J9,Clark,Mary E,Wife,N,F,62,,,,
+J8,94,J10,Cox,Arthur J,Head,W,M,52,Printer,Job Office,W,rents $12 (printer 1940)
+J8,95,J10,Cox,Teresa M,Wife,W,F,41,,,,
+J8,96,J10,Cox,Edgar M,Son,W,M,15,Mechanic,Auto Repair,W,
+J8,97,J10,Cox,Rebecca M,Daughter,W,F,9,,,,
+J8,98,J10,Cox,Laura E,Mother,W,F,80,,,,widow
+J8,99,J11,Rhodes,John S,Head,W,M,27,Painter,General,W,rents $9 (painting contractor 1940)
+J9,1,J11,Rhodes,Lula U,Wife,W,F,24,,,,sheet 5A
+J9,2,J11,Rhodes,Robert R,Son,W,M,4,,,,
+J9,3,J12,Brown,Cornelia,Head,N,F,66,,,,widow; owns $1200
+J9,4,J12,Davis,Mary,Niece,N,F,60,,,,
+J9,5,J13,Levenbury,Walter,Head,N,M,48,Laborer,Odd Jobs,W,owns $1000 (boiler operator slaughter house 1940)
+J9,6,J13,Levenbury,Margurett,Wife,N,F,51,Nurse,Practical,W,
+J9,7,J14,Hill,Lena,Head,N,F,73,,,,widow; owns $400
+J9,8,J14,Stewart,Loretta,Adopted daughter,N,F,19,Servant,Private Family,W,(Loretta Logan cook 1940; PV0146)
+J9,9,J14,Stewart,Armeta A,Granddaughter,N,F,1,,,,
+J9,10,J15,Owens,Robert,Head,N,M,56,Janitor,School & Church,W,born Pennsylvania; rents $5 (school janitor 1940)
+J9,11,J15,Owens,Emma,Wife,N,F,56,Laundress,At Home,OA,
+J9,12,J15,Manley,Cornelia,Mother,N,F,74,,,,widow (laundress 1920)
+J9,13,J16,Mitchell,Norman L,Head,N,M,55,Laborer,General Farm,W,owns $600
+J9,14,J16,Mitchell,Bettie L,Wife,N,F,50,Laborer,General Farm,W,
+J9,15,J16,Mitchell,James H,Son,N,M,23,,,,
+J9,16,J16,Mitchell,Mary F,Daughter,N,F,20,Servant,Private Family,W,
+J9,17,J16,Mitchell,Annie M,Daughter,N,F,18,,,,
+J9,18,J16,Mitchell,Lewis N,Son,N,M,16,Laborer,General Farm,W,
+J9,19,J16,Mitchell,Joanna,Daughter,N,F,14,,,,(PV0185 Joanna Mitchell Owens)
+J9,20,J16,Mitchell,Charles W,Son,N,M,12,,,,
+J9,21,J16,Mitchell,Crisdel,Daughter,N,F,8,,,,
+J9,22,J17,Clark,Eugene,Head,N,M,48,Laborer,Odd Jobs,W,owns $700
+J9,23,J17,Clark,Florence S,Wife,N,F,47,,,,
+J9,24,J17,Clark,Eleanor F,Daughter,N,F,13,,,,
+J9,25,J17,Clark,Rebecca B,Daughter,N,F,3,,,,
+J9,26,J17,Clark,James E,Grandson,N,M,3,,,,
+J9,27,J18,Rector,Rachel,Head,N,F,70,,,,widow; owns $600
+J9,28,J18,Roy,Evelyn,Boarder,N,F,11,,,,
+J9,29,J19,Harvey,Fannie J,Head,N,F,69,Laundress,At Home,OA,widow; owns $500 (PV0097)
+J9,30,J19,Harvey,Mahala,Daughter,N,F,43,,,,
+J9,31,J19,Harvey,Annie V,Granddaughter,N,F,13,,,,
+J9,32,J20,Ceaser,Walter,Head,N,M,50,Laborer,General Farm,W,owns $900 (Walter Ceser day laborer 1900; Clasar 1940)
+J9,33,J20,Ceaser,Lillie,Wife,N,F,47,Laundress,At Home,OA,
+J9,34,J20,Ceaser,Walter Jr,Son,N,M,18,Laborer,Odd Jobs,W,
+J9,35,J20,Ceaser,Carl,Son,N,M,15,,,,
+J9,36,J20,Ceaser,Thomas,Son,N,M,12,,,,
+J9,37,J21,Johnson,Lawrence,Head,N,M,36,Laborer,Odd Jobs,W,owns $800 (PV0108; flour mill laborer 1940)
+J9,38,J21,Johnson,Mandy V,Wife,N,F,30,Laundress,At Home,OA,
+J9,39,J21,Johnson,Curtis,Son,N,M,11,,,,
+J9,40,J21,Johnson,Charles,Son,N,M,10,,,,(PV0106)
+J9,41,J21,Johnson,Clarence,Son,N,M,8,,,,
+J9,42,J21,Johnson,Helen,Daughter,N,F,5,,,,
+J9,43,J21,Johnson,Matthew,Son,N,M,2,,,,
+J9,44,J22,Clark,Howard W,Head,N,M,53,Laborer,Odd Jobs,W,owns $1000
+J9,45,J22,Clark,Effie,Wife,N,F,48,Laundress,At Home,OA,
+J9,46,J22,Clark,Charles W,Son,N,M,22,Agent,Insurance,W,
+J9,47,J22,Clark,Howard W Jr,Son,N,M,17,Laborer,Odd Jobs,W,
+J9,48,J22,Clark,Susie S,Daughter,N,F,17,,,,
+J9,49,J22,Clark,Bulah U,Daughter,N,F,8,,,,
+J9,50,J23,Gaskins,Lindsey,Head,N,M,52,Auto Taxi,Livery,OA,owns $1000
+J10,51,J23,Gaskins,Viola,Wife,N,F,56,,,,sheet 5B
+J10,52,J24,Dean,John,Head,N,M,21,Laborer,State Road,W,rents $6
+J10,53,J24,Dean,Ethel,Wife,N,F,18,,,,
+J10,54,J25,Mossburg,George C,Head,W,M,54,Laborer,State Road,W,widower; owns $2000 (farm laborer 1910)
+J10,55,J26,Randolph,Marshall A,Head,N,M,47,Barber,Own Shop,OA,owns $1100; born Maryland
+J10,56,J26,Randolph,Nellie B,Wife,N,F,47,,,,
+J10,57,J27,Burnett,Robert E,Head,N,M,42,Minister,Methodist Church,W,born Georgia; rents $10
+J10,58,J27,Burnett,Jessie,Wife,N,F,39,,,,born Georgia
+J10,59,J27,Burnett,Mildred,Daughter,N,F,13,,,,born Georgia
+J10,60,J27,Burnett,Ruben,Son,N,M,11,,,,born Georgia
+J10,61,J27,Burnett,Ruth,Daughter,N,F,11,,,,born Georgia
+J10,62,J27,Burnett,Alice,Daughter,N,F,8,,,,born Georgia
+J10,63,J27,Burnett,Jessie,Daughter,N,F,5,,,,born West Virginia
+J10,64,J27,Burnett,Catherine U,Daughter,N,F,3,,,,
+J10,65,J28,Collins,James A,Head,N,M,78,Laborer,Odd Jobs,W,owns $1000
+J10,66,J28,Collins,Serene R,Wife,N,F,77,,,,
+J10,67,J29,Lewis,William,Head,N,M,54,Laborer,Odd Jobs,W,rents $5 (farm laborer 1910/1920; cemetery caretaker 1940)
+J10,68,J29,Lewis,Julia,Wife,N,F,44,,,,
+J10,69,J29,Gaskins,Robert,Grandson,N,M,9,,,,
+J10,70,J29,Gaskins,Carline,Granddaughter,N,F,6,,,,
+J10,71,J30,Sanford,Lewis,Head,N,M,39,Laborer,Flour Mill,W,rents $6 (servant 1910; farm laborer 1920; milling truck driver 1940)
+J10,72,J30,Sanford,Eva F,Wife,N,F,27,,,,born Pennsylvania
+J10,73,J30,Sanford,Arthur,Son,N,M,6,,,,
+J10,74,J31,Ceaser,Emeline,Head,N,F,58,,,,widow; owns $300
+J10,75,J31,Lewis,Irene,Daughter,N,F,24,,,,
+J10,76,J31,Lewis,George A,Grandson,N,M,7,,,,
+J10,77,J31,Lewis,Mary,Granddaughter,N,F,4,,,,
+J10,78,J31,Lewis,Hadie,Granddaughter,N,F,4,,,,
+J10,79,J31,Lewis,Robert L,Grandson,N,M,0,,,,
+J10,80,J31,Ceaser,Mary,Daughter,N,F,18,Servant,Private Family,W,
+J10,81,J32,Day,John,Head,N,M,45,Laborer,General Farm,W,rents $4 (John Davy farm laborer 1940)
+J10,82,J32,Day,Josephine,Wife,N,F,39,,,,
+J10,83,J32,Day,Maria,Daughter,N,F,20,,,,
+J10,84,J32,Day,Martha E,Daughter,N,F,15,,,,
+J10,85,J32,Lewis,Annabell,Cousin,N,F,10,,,,
+J10,86,J32,Day,Bruce,Father,N,M,70,Laborer,Odd Jobs,W,widower
+J10,87,J33,Cook,Alverna,Head,N,F,60,Servant,Private Family,W,widow; owns $400 (cook 1940)
+J10,88,J33,Cook,Margurett,Daughter,N,F,15,,,,
+J10,89,J33,Gaskins,George,Grandson,N,M,7,,,,
+J10,90,J33,Gaskins,Florence,Granddaughter,N,F,3,,,,
+J10,91,J33,Gaskins,Clarence,Son-in-law,N,M,35,Laborer,State Road,W,
+J10,92,J34,Clark,Arthur,Head,N,M,48,Laborer,Rail Road Track,W,owns $800 (unable to work 1940)
+J10,93,J34,Clark,Cannie,Wife,N,F,47,,,,
+J10,94,J34,Clark,Nathan,Son,N,M,22,Laborer,Odd Jobs,W,
+J10,95,J35,Donaldson,G Willis,Head,W,M,34,Farmer,General Farm,Emp,rents; WWI veteran
+J10,96,J35,Donaldson,Annie U,Wife,W,F,34,,,,
+J10,97,J35,Donaldson,G William,Son,W,M,9,,,,born DC
+J10,98,J35,Donaldson,Robert B,Son,W,M,8,,,,
+J10,99,J35,Donaldson,Frederick L,Son,W,M,6,,,,
+J10,100,J35,Parker,Fred F,Brother-in-law,W,M,38,Blacksmith,Own Shop,OA,

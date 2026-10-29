@@ -1,0 +1,756 @@
+Isaac C. Hope|M|36|White|Head|Farmer|Married
+Isaac F. Hope|M|0|White|Son|Home|Single
+Bernard Hough|M|65|White|Head|Merchant|Married
+H. Vandebanta|M|30|White|Head|Merchant|Married
+Armistead W. Vandebanta|M|3|White|Son||Single
+Wm. H. Working|M|31|White|Head|Carpenter|Married
+John Ammel|M|11|Black|Other|Servant|Single
+Dan. Gardner|M|10|Black|Other|Servant|Single
+Jas. M. Hoge|M|40|White|Head||Married
+Danl. J. Hoge|M|41|White|Head|Farmer|Married
+Howard M. Hoge|M|18|White|Son|School|Single
+R. H. Hoskinson|M|26|White|Head|Farmer|Single
+Henry J. Hoge|M|8|White|Son|School|Single
+Gabriel Vandavanta|M|76|White|Head|Retired Farmer|Married
+Archie Allen|M|34|Mulatto|Head|Works On Farm|Married
+Jno. A. Allen|M|7|Mulatto|Son|School|Single
+Bales Hawley|M|38|White|Head|Farmer|Married
+George Laycock|M|18|White|Other|Shoemaker|Single
+Jas. Hawley|M|14|Black|Other|Servant|Single
+Wm. M. Hawley|M|10|Black|Other|Home|Single
+Ben Williams|M|58|Black|Other|Works On Farm|Married
+Landon Thompson|M|30|Black|Other||
+John Logan|M|18|Mulatto|Other|Works On Farm|Single
+Lot Wyler|M|28|Black|Other|Works On Farm|Married
+F. Trammel|M|13|Mulatto|Other|Servant|Single
+Adie Jones|M|51|Black|Head|Work On Farm|Married
+Henderson W. Fields|M|8|Mulatto|Son|Home|Single
+Rosier M. Fields|M|13|Mulatto|Son|Home|Single
+Pembroke Fields|M|20|Mulatto|Son|Works On Farm|Single
+Chas. Fields|M|48|Mulatto|Head|Works On Farm|Married
+Jns. R. Redman|M|4|Black|Son|Home|Single
+Jas. Redman|M|30|Black|Head|Works On Farm|Married
+Chas Havenner|M|28|White|Head|Works On Farm|Single
+Jerry Havenner|M|79|White|Head|Works On Farm|Single
+J. Wynkoop|M|29|White|Other|Works On Farm|Single
+Mahlon Cooper|M|8|Black|Other||Single
+William Everhart|M|63|White|Head|Carpenter|Married
+D. A. Milburn|M|50|White|Head|Farmer|Single
+L. C. Milburn|M|45|White|Head|Farmer|Married
+Johnathan J. Milburn|M|36|White|Brother|Farmer|Single
+A. J. Melbourne|M|65|White|Head|Farmer|Married
+Franklin Milbourn|M|62|White|Brother|Carpenter|
+John Milbourn|M|42|White|Brother|Farmhand|
+Leon W. Milburn|M|4|White|Son|Home|Single
+S. R. Tillet|M|34|White|Head|Livery Man|Single
+Henry Branch|M|38|White|Head|Minister|Married
+B. H. Branch|M|18|White|Son||Single
+Charles Branch|M|7|White|Son||Single
+C. Hardin Branch|M|5|White|Son||Single
+Thomas E. Silcott|M|22|White|Son|Farmer|Single
+Mason D. Silcott|M|19|White|Son|Works On Farm|Single
+Wm. Silcott|M|65|White|Head|Farmer|Married
+Johnathan Silcott|M|28|White|Son|Farmer|Single
+William A. Silcott|M|22|White|Son|Carpenter|Single
+Mort Silcott|M|60|White|Head|Works On Farm|Married
+Chas. E. Silcott|M|25|White|Head|Works On Farm|Married
+C. F. Silcott|M|2|White|Son||Single
+Charles N. Silcott|M|34|White|Head|Carpenter|Married
+W. Silcott|M|67|White|Head|Gardiner|Married
+J. E. Silcott|M|27|White|Head|Harness Maker|Married
+Theodore Silcott|M|1|White|Son||Single
+Mortimore Silcott|M|60|White|Head|Works On Farm|Married
+Thos. Preston|M|79|White|Father|Farmer|Single
+E. T. Preston|M|48|White|Head|Farmer|Married
+T. T. Preston|M|35|White|Head|Farmer|Married
+Edward Preston|M|20|White|Other|Farmhand|
+J. F. Preston|M|36|White|Head|Farmer|Single
+Edgar V. Preston|M|20|White|Nephew|Home|Single
+David H. Birdsell|M|34|White|Head|Farmer|Married
+Thos. Harvey|M|24|Mulatto|Other|Servant|Married
+C. M. Dawson|M|27|White|Head|Work On Farm|Married
+Jno. W. Dawson|M|23|White|Other|Works On Farm|Single
+Harry Jones|M|10|Black|Son|School|Single
+Henry Clark|M|20|Black|Other|Servant|Single
+William Benedun|M|25|White|Son|Tinsmith|Single
+Philip Renas|M|18|Black|Other|Farmhand|Single
+Henry Framil|M|27|Mulatto|Head|Engineer|Married
+Charles Herst|M|20|White|Other|Farmhand|
+J. R. Bromwell|M|37|White|Head|Medical Doctor|Married
+Jos. L. Chamk|M|67|Black|Head|Works On Farm|Married
+Wesley Caruthers|M|54|White|Head|Farmer|Married
+Godfrey Friar|M|75|Black|Head|Works On Farm|Widowed
+Forrester Friar|M|45|Black|Head|Works On Farm|Married
+Foster Fryor|M|38|Black|Head|Works On Farm|Married
+Weldon Ball|M|2|White|Son|Home|Single
+Giles H. Ball|M|8|White|Son||Single
+Turney A. Ball|M|19|Mulatto|Other|Farmhand|
+Wm. Ball|M|43|White|Head|Farmer|Married
+Mathew E. Ball|M|0|White|Son||Single
+Chas T. Ball|M|10|White|Son||Single
+Wm. E. Ball|M|7|White|Son||Single
+Tom Breckinridge|M|21|Black|Other|Home|
+W. C. Zeolly|M|30|White|Head|Farmer|Married
+Andrew Behan|M|54|White|Head|Farmer|Married
+Frank Behan|M|17|White|Other||Single
+Edwa. Behan|M|13|White|Son|Home|Single
+Chas W. Beaner|M|13|Black|Son|School|Single
+David A. Beaner|M|12|Black|Son|School|Single
+Robt. A. Beaner|M|11|Black|Son|School|Single
+Adam Beaner|M|39|Black|Head|Works On Farm|Married
+Lones F. Beaner|M|5|Black|Son|Home|Single
+William Varney|M|8|White|Son||Single
+Walter Varney|M|7|White|Son||Single
+John Varney|M|33|White|Head|Shoemaker|Married
+John W. Bowie|M|30|White|Son|Farmer|Married
+Allen W. Bowie|M|28|White|Son||Single
+Robt. G. Bowie|M|71|White|Head|Farmer|Married
+Robert Smith|M|10|Black|Other||Single
+F. Murphy|M|11|Black|Other|Servant|Single
+Charles W. Burke|M|45|White|Head|Carpenter|Married
+S. S. Ware|M|30|White|Head|Minister|Married
+Wm. F. Barrett|M|43|White|Head|Farmer|Married
+Henry M. Brent|M|38|White|Head||Married
+Edwin H. Brent|M|6|White|Son||Single
+R. Carter Brent|M|4|White|Son||Single
+Thos. Pinn|M|27|Black|Head|Works On Farm|Married
+William Pinn|M|10|Black|Son|School|Single
+W. J. French|M|29|White|Son|House Painter|Single
+Charles F. French|M|32|White|Son|Silversmith|Single
+Joseph F. Paxson|M|3|White|Son|Home|Single
+Chas. G. Paxson|M|11|White|Son|School|Single
+S.B. Paxson|M|37|White|Head|Farmer|Married
+Samuel Brown|M|62|White|Head|Farmer|Married
+Alpheus Brown|M|17|Black|Other|Servant|Single
+Y. T. Brown|M|27|White|Other|Editor|Married
+Walter C. Brown|M|11|White|Son||Single
+Santfera Coats|M|56|Black|Head|Farmhand|Married
+William H. Coats|M|29|Black|Son|Farmhand|Married
+Geo. W. Coats|M|14|Black|Son||Single
+Jno. Schaffer|M|41|White|Head|Carpenter|Married
+Willard Schaffer|M|1|White|Son||Single
+Joseph E. Schaffer|M|7|White|Son|Home|Single
+Danl. Shafer|M|37|White|Head|Farmer|Married
+Joseph Furr|M|72|White|Head|Farmer|Married
+Geo. W. Furr|M|28|White|Head|Farmer|Married
+Harry Shugert|M|5|White|Son||Single
+J. Z. Shugert|M|34|White|Head|Merchant|Married
+R. W. Ruse|M|40|White|Head|Carpenter|Married
+Eli. F. Ruse|M|12|White|Other|School|Single
+Eli. T. Ruse|M|54|White|Head|Work On Farm|Married
+Robt. E. Ruse|M|14|White|Other|School|Single
+Rich W. Ruse|M|2|White|Other|Home|Single
+W. H. Carter|M|30|Black|Other|Farmhand|Married
+Geo. W. Carter|M|55|Black|Head|Works On Farm|Married
+Levi W. Nixon|M|57|White|Head|Farmer|Married
+J.B. Nixon|M|38|White|Other|Farmer|Single
+Chas. Simmes|M|24|White|Other|Works On Farm|Married
+Chas Wm. Semmes|M|0|Black|Other|Home|Single
+William Orrison|M|60|White|Head|Farmhand|Married
+Edwin M. Brown|M|16|White|Son|At Home|Single
+R. H. Brown|M|29|White|Head|Farmer|Single
+W. L. Brown|M|15|White|Nephew|School|Single
+William T. Brown|M|14|White|Son|At Home|Single
+A. Brown|M|49|White|Other||Single
+Eppe Hinston Lovett|M|9|White|Other||Single
+W. T. Corbin|M|3|White|Son|At Home|Single
+D. G. Corbin|M|36|White|Head|Runs Steam Mill|Married
+Samuel Crook|M|24|Mulatto|Other|Farmhand|Single
+James Cox|M|30|White|Head|Carpenter|Married
+Jn. Wm. Cox|M|1|Black|Son|Home|Single
+Authar Cox|M|13|White|Son||Single
+Chas. Cox|M|21|Black|Other|Works On Farm|
+William Cox|M|53|Mulatto|Head|Farmer|Married
+John Cox|M|25|Black|Head|Works On Farm|Married
+Geo. R. Cox|M|13|Mulatto|Son|Works On Farm|Single
+Edgar Mc Cray|M|32|White|Son|Works On Farm|
+William Mc Cray|M|62|White|Head|Farmer|Married
+David Carr|M|84|White|Head|Farmer|Married
+Jacob T. Shrigley|M|17|White|Son|School|Single
+Lazariah James|M|8|White|Other|Servant|Single
+Chas. James|M|15|Black|Other|Servant|Single
+Thaddius Hatcher|M|40|White|Head|Farmer|Married
+William L. Collins|M|14|Black|Son|School|Single
+Wm. Collins|M|55|Black|Head|Works On Farm|Married
+David L. Coleman|M|2|Black|Son|Home|Single
+Charles F. Coleman|M|6|Black|Son|Home|Single
+Robt Coleman|M|31|Black|Head|Works On Farm|Married
+Robt. Coleman|M|10|Black|Son|School|Single
+Morgan Campbell|M|18|White|Other|Works On Farm|Single
+J. S. Shne.|M|40|White|Other|Engineer|
+B. F. Longaore|M|5|White|Other|Home|Single
+Thos. White|M|7|Black|Son|Home|Single
+Bruce White|M|22|Black|Other|Works On Farm|Single
+Edgar Gregg|M|34|White|Head|Farmer|Married
+Albert Grigsby|M|40|Black|Head|Servant|Married
+Welford Crampy|M|22|White|Other|Painter|
+Wm. Carroll|M|72|Black|Other|Servant|Married
+Fenton Stewart|M|25|Black|Head|Works On Farm|Married
+Noble Zena|M|25|Black|Other|Works On Farm|
+John H. Schooley|M|11|White|Son|Home|Single
+Thos. A. Schooley|M|55|White|Head|Blacksmith|
+Geo. T. Schooley|M|19|White|Son|Works In Shop|Single
+Wm. H. Wood|M|42|Black|Head|Works On Farm|Married
+William Taylor|M|26|Black|Head|Works On Farm|Married
+Samuel Taylor|M|2|Black|Son|Home|Single
+William Taylor|M|8|Black|Son|School|Single
+Thos. Eppa Taylor|M|4|White|Son|Home|Single
+Loues Jones|M|43|Black|Head|Works On Farm|Married
+James J. Jones|M|20|Black|Head|Works On Farm|Single
+W.T. Rogers|M|37|White|Brother|Farmer|Single
+Hugh Rogers|M|2|White|Son|Home|Single
+Sam'l Rogers|M|35|White|Head|Farmer|Married
+Pleasant Janney|M|84|White|Other|Home|Widowed
+I. R. Janny|M|73|White|Other|Servant|Single
+I. W. Jenning|M|60|Black|Head|Works On Farm|Married
+Robert J. Destans|M|5|Black|Son||Single
+Benjamine Destans|M|15|Black|Son|Works On Farm|Single
+Curthrie Destans|M|3|Black|Son||Single
+David Morten|M|24|Black|Head|Works On Farm|Married
+Manley Fox|M|39|Mulatto|Other|Farmer|Married
+Mason Day|M|19|Black|Other|Servant|Single
+Samuel Day|M|25|Black|Other|Farmhand|
+David H. Helm|M|6|Mulatto|Son|Home|Single
+Geo. R. Helm|M|5|Mulatto|Son|Home|Single
+Joseph Helm|M|7|White|Son|Home|Single
+Louis C. Helm|M|45|White|Head|Farmer|Married
+William Helm|M|28|Mulatto|Other|Works On Farm|Married
+H.R. Holmes|M|49|White|Head|Farmer|Single
+Joseph Helm|M|74|White|Head|Farmer|Married
+Capt. T. Doradle|M|45|White|Head|Drumming|Married
+Albert C. Davis|M|56|White|Head|Carpenter|Married
+J. L. Davis|M|61|White|Head|Plasterer|Married
+J.B. White|M|71|White|Other|Farmer|
+Henry White|M|5|Black|Nephew|Home|Single
+Madison White|M|2|Black|Son|Home|Single
+Thos. White|M|44|Black|Head|Farmer|Married
+Moses D. White|M|14|Black|Son|Works On Farm|Single
+Willard Murry|M|1|Black|Son|Home|Single
+Noble Murry|M|9|Black|Son|School|Single
+Walter Murry|M|7|Black|Son|School|Single
+Henry Thomas|M|4|White|Son||Single
+William H. Thomas|M|8|White|Son||Single
+Raymon Thomas|M|4|White|Son||Single
+John Tavennor|M|75|White|Head|Farmer|Married
+Thomas E. Tavennor|M|33|White|Son|Works At Home|Married
+E. H. Tavenner|M|36|White|Head|Merchant|Married
+Lowe E. Tavenner|M|21|White|Other|Works In Livory|Single
+H. N. Tavenner|M|73|White|Other||Single
+John A. Tavennor|M|29|White|Son|Works At Home|Married
+Geo. O. Tavenner|M|30|White|Other|Clerk In Store|Single
+Howard W. Tavenner|M|4|White|Son|Home|Single
+John A. Tavennor|M|31|White|Head|Farmer|Married
+Wm. Lucas|M|18|Mulatto|Other|Servant|Single
+George Hill|M|29|Black|Head|Farmhand|Married
+C. C. Mercier|M|31|White|Head|Farmer|Married
+Robt. Taylor|M|5|Black|Son|Home|Single
+Thos. E. Taylor|M|48|White|Head|Farmer|Married
+Henry Brou Taylor|M|6|White|Son|School|Single
+Harry Mason Taylor|M|0|Black|Son|Home|Single
+Thos. M. Weadon|M|38|White|Head|Tanner|Married
+William W. Weadon|M|7|White|Son|Home|Single
+Jno. E. Weadon|M|10|White|Son|School|Single
+Oscar Hiegman|M|5|Black|Son|Home|Single
+Jas. Goram|M|21|White|Other|Works On Farm|Single
+Luther P. Warren|M|7|White|Son|School|Single
+P. J. Warren|M|40|White|Head|Baptist Minister|Married
+Charles Warner|M|10|White|Son|Farmhand|Single
+Napalian R. Warner|M|10|White|Son||Single
+Jno. F. Warner|M|23|White|Brother|Undertaker|Single
+Jonah D. Warner|M|25|White|Brother||Single
+Gabriel Warner|M|51|White|Head|Farmhand|Married
+J. Wilber Neal|M|11|White|Son|At Home|Single
+Charles A. D. Neal|M|14|White|Son|At Home|Single
+Abner P. Neal|M|39|White|Head|Minister Of The Gospel|Married
+Harrie C. Hughes|M|2|White|Other|Home|Single
+J. W. Hughes|M|25|White|Other|Lawyer|
+Thos. L. Hughes|M|6|White|Other|Home|Single
+John Milmese Hews|M|24|White|Son|Lawyer|
+Geo. Hughes|M|35|Black|Head|Works On Farm|Married
+John H. Hews|M|67|White|Head||Widowed
+Lenes Hughes|M|3|Black|Other|Home|Single
+Annistead Hughes|M|2|Black|Other|Home|Single
+Elias Hughes|M|54|White|Head|Farmer|Married
+Amos Hughes|M|57|White|Head|Farmer|Married
+Danl. M. Hughes|M|10|White|Son|School|Single
+Chas H. Lacey|M|51|White|Head|Works On Rr|Married
+Ellis Lacey|M|23|White|Son|Works On Farm|Single
+Joseph Lacey|M|22|White|Son|Works On Farm|Single
+C. Randolph|M|21|Black|Other|Works On Farm|Single
+Dolph Randolph|M|27|Black|Other|Farmhand|
+W. R. Jackson|M|18|Mulatto|Other|Works In House|Single
+Henry Jackson|M|30|Black|Other|Farmhand|Married
+John Edwin Lowe|M|21|White|Son|Works At Home|Single
+Thomas Lowe|M|50|White|Head|Farmhand|Married
+Lee Mason|M|60|Black|Other|Farmhand|
+Wm. Lewis|M|16|White|Other|Farm Hand|
+Jn. Milton|M|40|White|Son|Mercantile Agent|Married
+Jas. H. Muse|M|60|White|Head|Tailor|Married
+Robert Thomas|M|54|White|Head|Sells Agricultural Prod.|Married
+John Thomas|M|56|White|Head|Carpenter|Married
+Jn. F. Myers|M|8|White|Other|School|Single
+Thos. Myers|M|38|White|Head|Carpenter|Married
+Edgar T. Myers|M|7|White|Other|School|Single
+Joseph B. Myers|M|1|White|Other|Home|Single
+Charles E. Myers|M|6|White|Other|School|Single
+Nathan Myers|M|4|White|Other|Home|Single
+Jas. W. Myers|M|14|White|Other|School|Single
+Robb Myers|M|22|White|Head|Tinner|Married
+A. Wayne Myers|M|1|White|Son|Home|Single
+Clifton Myers|M|8|White|Son|School|Single
+Floyd Myers|M|5|White|Son|Home|Single
+Charles F. Myers|M|53|White|Head|Carpenter|Married
+Edward B. Myers|M|15|White|Son||Single
+F.M. Myers|M|38|White|Head|Farmer|Married
+George W. Payne|M|3|Black|Son||Single
+Jas. Payne|M|27|Black|Head|Works On Farm|Married
+John W. Payne|M|21|Black|Other|Farmhand|
+Wade H. Payne|M|3|Black|Son|Home|Single
+C.N. Saunders|M|23|White|Head|Farmer|Married
+E. Saunders|M|40|White|Other|Home|Single
+John H. Stocks|M|46|White|Brother-in-law||
+Joseph F. Thompson|M|22|White|Son|Tinner|Single
+W. W. Thompson|M|48|White|Head|Tinner|Married
+Danl Willis|M|27|Black|Head|Works On Farm|Married
+W.H. Wiley|M|30|White|Head|Shoemaker|Married
+J. W. Wiley|M|27|White|Other|Confectioner|Single
+Chas H. Wiley|M|10|White|Son|School|Single
+Danl. Willis|M|25|Black|Other|Servant|Married
+William Willis|M|1|Black|Other|Home|Single
+J.H. Wiley|M|57|White|Head|Shoe Merchant|Married
+Wm. A. Wiley|M|30|White|Head|Shoemaker|Married
+Harry C. Wiley|M|1|White|Son|Home|Single
+William H. Wiley|M|32|White|Head|Shoemaker|Married
+W. A. Wiley|M|30|White|Head|Shoemaker|Married
+Edgar T. Wiley|M|15|White|Son|School|Single
+Harry C. Wiley|M|1|White|Son||Single
+D. Vandevanter|M|23|White|Other|Farmer|
+L.H. Seldon|M|40|Black|Head|Works On Farm|Married
+Abbert Adams|M|23|Black|Other|Farmhand|
+Elmina Hope|F|36|White|Wife|House Keeper|Married
+Phoebe Hope|F|65|White|Aunt|Home|
+Rachel N. Hope|F|5|White|Daughter|Home|Single
+Bessie H. Hope|F|9|White|Daughter|School|Single
+Sallie Nelson|F|16|Black|Other|Servant|Single
+Margaret Hawlen|F|11|Black|Other|Servant|Single
+Sarah Hough|F|60|White|Other|House Keeping|Married
+Eliza B. Vandebanta|F|25|White|Wife|Keeps House|Married
+Sallie E. Working|F|26|White|Wife|House Keeper|Married
+Kitty Wilkison|F|78|White|Other||Single
+Pearl E. Working|F|1|White|Daughter|Home|Single
+Emma Lee|F|9|Black|Other||Single
+Ellen G. Archer|F|13|White|Daughter|School|Single
+Maggie R. Hoge|F|29|White|Sister|Boarding|Single
+Elizabeth Hoskinson|F|56|White|Mother|Keeping House|Widowed
+Julia N. Hoge|F|38|White|Wife|Housekeeping|Married
+Fuddie P. Hoge|F|27|White|Sister|Boarding|
+Sarah E. Hoge|F|41|White|Wife|Housekeeping|Married
+Julia B. Hoge|F|0|White|Daughter|Home|Single
+Alice T. Hoge|F|14|White|Daughter|School|Single
+Cecelia Vandavanta|F|67|White|Wife|Keeps House|Married
+Sarah V. Allen|F|5|Mulatto|Daughter|Home|Single
+Virginia Allen|F|25|Mulatto|Wife|House Keeper|Married
+Ada Allen|F|4|Mulatto|Daughter|Home|Single
+Martha E. Allen|F|2|Mulatto|Daughter|Home|Single
+Roberta Allen|F|10|Mulatto|Daughter|School|Single
+Martha J. Hawley|F|32|White|Wife|Keeps House|Married
+Mary F. Thompson|F|43|White|Wife|Keeping House|Married
+Mary E. Thompson|F|19|White|Daughter|Home|Single
+E. C. Thompson|F|63|White|Grandmother||Widowed
+Ann C. Shriver|F|46|White|Head|Keeps House|Widowed
+Emily G. Shriver|F|23|White|Daughter||Single
+Alice B. Shriver|F|26|White|Daughter|At Home|Single
+Estelle Jones|F|14|Black|Daughter|School|Single
+Martha J. Jones|F|11|Black|Other|Servant|Single
+Lettie Jones|F|18|Black|Sister||Single
+Rebecca Fields|F|18|Mulatto|Daughter|Servant|Single
+Laurena Fields|F|4|Mulatto|Daughter|Home|Single
+Mary V. Fields|F|25|Mulatto|Daughter|Servant|Married
+Jane L. Fields|F|15|Mulatto|Daughter|Home|Single
+Alice E. Fields|F|12|Mulatto|Daughter|Home|Single
+Sarah E. Fields|F|46|Mulatto|Wife|Housekeeping|Married
+Susie Fields|F|6|Mulatto|Daughter|Home|Single
+Florence Fields|F|2|Mulatto|Daughter|Home|Single
+Caroline Redman|F|7|Black|Daughter|Home|Single
+Mary L. Redman|F|3|Black|Daughter|Home|Single
+Bettie L. Redman|F|1|Black|Daughter|Home|Single
+Julia Redman|F|24|Black|Wife|Housekeeping|Married
+Mary F. Havenner|F|40|White|Daughter|House Keeper|Single
+Sarah R. Havenner|F|38|White|Daughter|Home|
+Ada Dean|F|12|Black|Other|Servant|Single
+F. A. Ballenger|F|66|White|Mother-in-law|Home|Widowed
+Carrie Sheams|F|0|Mulatto|Sister|Home|Single
+Hattie Sheams|F|20|Mulatto|Head|Servant|Single
+Vetaria Wynkoop|F|54|White|Sister|Boarder|Single
+Rachael Cooper|F|35|Black|Head|Cook|Married
+Alice Cooper|F|10|Mulatto|Other|Nurse|Single
+Martha Ward|F|10|Black|Other|Servant|Single
+Malenda Everhart|F|35|White|Wife|Keeping House|Married
+Harriet Hamner|F|28|White|Niece|Home|Single
+Cecelia Smithfield|F|50|Black|Other||
+M. L. Melbourne|F|14|White|Daughter|Home|Single
+Lucinda C. Milburn|F|36|White|Sister|Home|Single
+Mozella B. Melbourne|F|8|White|Daughter|School|Single
+Jane Milbourn|F|48|White|Head|Keeping House|Single
+Martha J. Milburn|F|35|White|Wife|Housekeeping|Married
+Maud Milburn|F|6|White|Daughter|Home|Single
+Mary E. Melbourne|F|48|White|Wife|Housekeeping|Married
+Marie A. Milburn|F|40|White|Sister|House Keeper|Single
+Harriet A. Tillet|F|55|White|Mother|House Keeper|Widowed
+Melessie M. Branch|F|31|White|Wife|Keeps House|Married
+R. Bell Branch|F|1|White|Daughter||Single
+Bell Branch|F|39|White|Sister||Single
+Eliza Dixon|F|22|Black|Other|Servant|Single
+Anna Bight|F|10|Black|Other|Helps In House|Single
+Orra W. Silcott|F|19|White|Daughter|Home|
+Mary C. Silcott|F|30|White|Wife|Keeps House|Married
+Sallie A. Silcott|F|21|White|Daughter|Home|Single
+Mary Va. Silcott|F|27|White|Wife|Keeping House|Married
+Elizabeth W. Silcott|F|60|White|Wife|Housekeeping|Married
+Orra Silcott|F|20|White|Daughter|At Home|Single
+Elizebeth Silcott|F|62|White|Wife|Keeps House|Married
+Sally Ann Silcott|F|22|White|Daughter|At Home|Single
+Eveline Silcott|F|56|White|Wife|House Keeper|Married
+Elizabeth Silcott|F|22|White|Wife|Housekeeping|Married
+Emma E. Silcott|F|24|White|Daughter|House Keeper|Single
+Frances Silcott|F|64|White|Wife|Housekeeping|Married
+Eppie Preston|F|12|White|Niece|Home|Single
+Lydia A. Preston|F|60|White|Wife|House Keeper|Married
+Mary Preston|F|34|White|Sister|Home|
+Addie Preston|F|24|White|Wife|Housekeeping|Married
+Lucy Preston|F|31|White|Sister|Home|Single
+Eliza Preston|F|39|White|Sister|House Keeper|Single
+Annie E. Dillon|F|20|White|Daughter|At Home|Single
+Doretta Sanford|F|13|Black|Other|Servant|Single
+Lilian Birdsell|F|3|White|Daughter|At Home|Single
+R. Hannah Birdsell|F|33|White|Wife|Keeps House|Married
+Fannie Harvey|F|35|Black|Other|Servant|Married
+Ann Harvy|F|51|White|Other||Single
+N. E. Morgan|F|49|White|Head|House Keeper|Widowed
+Annie E. Morgan|F|22|White|Daughter|Home|Single
+Parthenia S. Dawson|F|24|White|Other|House Keeper|Married
+Ginnie Jones|F|45|Black|Wife|Housekeeping|Married
+Martha I. Jones|F|0|Mulatto|Daughter|Home|Single
+Sarah Benedun|F|59|White|Head|Keeps House|Widowed
+Emaline Sinis|F|25|Black|Other|Cook|
+Henry Etta Framil|F|41|Mulatto|Wife|Keeps House|Married
+E. Nesmith|F|16|White|Niece|House Keeper|Single
+Leah Herst|F|68|White|Grandmother||
+Catharine M. Bromwell|F|29|White|Wife||Married
+Mary Dowell|F|79|White|Mother|House Keeper|Widowed
+Mattie Dowell|F|55|White|Sister||Single
+Kate Dowell|F|38|White|Head|Dress Maker|Single
+Amanda Dowell|F|51|White|Sister||Single
+Catharine Chamk|F|62|Black|Wife|Keeping House|Married
+Edith Va. Caruthers|F|49|White|Wife|House Keeper|Married
+Virginia Ellen Friar|F|14|Black|Other|School|Single
+Ellen Fryor|F|16|Black|Other|Servant|
+Ellie Fryor|F|18|Black|Other||Single
+Dolly Friar|F|49|Black|Daughter-in-law|House Keeper|Married
+Dollie Fryor|F|40|Black|Other|Housekeeping|Married
+Kate May Ball|F|11|White|Daughter|School|Single
+May E. Ball|F|5|White|Daughter||Single
+Musa Ball|F|35|White|Daughter|Housekeeping|Married
+Nannie Breckinridge|F|5|Black|Other|Home|Single
+Nattie Breckenridge|F|11|Black|Other|Nurse|Single
+M. Breckinridge|F|35|Black|Other|Servant|Single
+Rachael H. Zeolly|F|26|White|Wife|Keeps House|Married
+Mrs. Behan|F|24|White|Head||Married
+Lucinda Beaner|F|39|Black|Wife|Housekeeping|Married
+Elizabeth Beaner|F|0|Black|Sister|Home|Single
+M.E. Pusey|F|55|White|Other||Widowed
+Girty West|F|4|Black|Niece|Home|Single
+Jenny V. Varney|F|4|White|Daughter||Single
+Liza Varney|F|2|White|Daughter||Single
+Mary Varney|F|32|White|Wife|Keeps House|Married
+Julia A. Bowie|F|58|White|Wife|House Keeper|Married
+Mary Bowie|F|22|White|Wife|Boarding|Married
+Mary E. Mc Daniel|F|12|Mulatto|Other|Waits On Table|Single
+Margarett Mc Daniel|F|38|Black|Head|Cook|Widowed
+Ruth Hannah Smith|F|74|White|Other||
+Mary Smith|F|14|Black|Other|Servant|Single
+Bettie Diggs|F|14|Black|Daughter|Servant|Single
+Sally Micon|F|20|White|Other||Single
+Annie E. Burke|F|6|White|Daughter||Single
+Mahala Bink|F|78|White|Grandmother||Widowed
+Emma V. Burke|F|50|White|Wife|Keeps House|Married
+Lillian T. Burke|F|1|White|Daughter||Single
+Mary E. Burke|F|8|White|Daughter||Single
+Helen Henry|F|16|Black|Other|Servant|
+Elizebeth Ware|F|26|White|Wife|Keeps House|Married
+E.A. Barrett|F|35|White|Wife|House Keeper|Married
+B. McFarland|F|54|White|Head|Housekeeping|Widowed
+Hannah E. McFarland|F|27|White|Other|Home|Single
+Laura M. McFarland|F|25|White|Other|Home|Single
+Julia McFarland|F|21|White|Other|Home|Single
+Ella R. Brent|F|30|White|Wife|Keeps House|Married
+Bessie W. Brent|F|7|White|Daughter||Single
+Harriet M. Brent|F|31|Black|Other|Servant|Married
+Hally E. Brent|F|12|White|Daughter|At Home|Single
+Jeffie Pinn|F|1|Black|Daughter|Home|Single
+Sallie Pinn|F|25|Black|Wife|House Keeper|Married
+Ona B. French|F|26|White|Daughter|At Home|Single
+Mary Ann French|F|57|White|Head|Keeps House|Widowed
+Eliza Brisco|F|82|White|Other|Boarding|Widowed
+Ella C. Paxson|F|7|White|Daughter|School|Single
+Sallie E. Paxson|F|36|White|Wife|Housekeeping|Married
+Alma W. Paxson|F|1|White|Daughter|Home|Single
+Mary Piggott|F|62|White|Aunt||Single
+Sarah Ann Brown|F|19|White|Daughter|At Home|Single
+Catharine Brown|F|16|White|Other|Servant|Single
+May A. Brown|F|46|White|Other|Home|Single
+Henry E. T. Coats|F|21|Black|Daughter||Single
+Mendanie J. Schaffer|F|31|White|Wife|Housekeeping|Married
+Sarah Shafer|F|56|White|Other|House Keeper|Married
+Ida Schaffer|F|12|White|Daughter|School|Single
+Mary Shafer|F|9|White|Other|School|Single
+Ann E. Furr|F|1|White|Daughter|Home|Single
+Rosa Furr|F|30|White|Wife|House Keeper|Married
+Mary A. Furr|F|56|White|Wife|House Keeper|Married
+M. J. Shugert|F|36|White|Wife|Keeps House|Married
+Elizebeth Shugert|F|6|White|Daughter||Single
+Edminia Ruse|F|8|White|Other|Home|Single
+Ann Ruse|F|38|White|Wife|House Keeper|Married
+Lavinia E. Ruse|F|9|White|Other|School|Single
+Cora Ruse|F|21|White|Niece|Home|
+Mary Ruse|F|16|White|Other|Home|Single
+Sarah E. Ruse|F|40|White|Other|Housekeeping|Married
+Georgie Carter|F|14|White|Other|School|Single
+Daisy Carter|F|24|White|Other|School Teacher|Single
+Charlotte Carter|F|55|Black|Wife|House Keeper|Married
+Orra Carter|F|51|White|Head|Housekeeping|Divorced
+Hannah Nixon|F|68|White|Other|House Keeper|Widowed
+Margaret Nixon|F|58|White|Wife|House Keeper|Married
+Sarah Semmes|F|19|Black|Other|Servant|Single
+Aida Orrison|F|15|White|Daughter|At Home|Single
+Pleasant Orrison|F|19|White|Daughter|At Home|Single
+Virginia Orrison|F|17|White|Daughter|At Home|Single
+Mary E. Orrison|F|21|White|Daughter|At Home|Single
+Permelia Ann Orrison|F|62|White|Wife|Keeps House|Married
+J. Virginia Brown|F|49|White|Wife|Keeps House|Married
+Virginia Brown|F|17|Black|Other|Cook|
+Emma Etta Brown|F|8|White|Daughter||Single
+May E. Brown|F|21|White|Daughter|At Home|Single
+Alice Lovett|F|12|White|Daughter|At Home|Single
+Mary Lovett|F|35|White|Head|Keeps House|Widowed
+Mary Jane Corbin|F|2|White|Daughter||Single
+Elizebeth Ann Corbin|F|37|White|Wife|Keeps House|Married
+Laura Cox|F|30|White|Wife|Keeps House|Married
+Lucy E. Cox|F|8|Black|Daughter|Home|Single
+Phoebe A. Cox|F|6|Mulatto|Daughter|Home|Single
+Emily R. Cox|F|9|Mulatto|Daughter|Home|Single
+Louisa Cox|F|23|Black|Wife|Housekeeping|Married
+Matilda Cox|F|3|Black|Daughter|Home|Single
+Lydia A. Cox|F|72|White|Head|Keeps House|Widowed
+Winnie Cox|F|22|Mulatto|Head|Cook|Married
+Clara Va. Cox|F|0|Mulatto|Daughter|Home|Single
+Jane A. Cox|F|33|White|Daughter|Works In House|Single
+Florence Cox|F|6|White|Daughter||Single
+Harriet Cox|F|3|Mulatto|Other||Single
+Alcinda Cox|F|48|Mulatto|Wife|House Keeper|Married
+Laura Mc Cray|F|23|White|Daughter|At Home|
+Elizebeth Mc Cray|F|66|White|Wife|Keeping House|Married
+Nancy Cochran|F|78|White|Head|Housekeeping|Single
+Ann Cochran|F|72|White|Sister|Housekeeping|Single
+Susanna Carr|F|79|White|Wife||Married
+H. E. Schrigley|F|40|White|Head|Keeping House|Widowed
+Virginia Hatcher|F|30|White|Wife|Keeps House|Married
+Beatrice Collins|F|2|Mulatto|Daughter|Home|Single
+Estille Collins|F|6|Mulatto|Daughter|Home|Single
+Helen Collins|F|55|Black|Wife|Housekeeping|Married
+Kate Collins|F|24|Mulatto|Head|Servant|Married
+Sarah J. Coleman|F|30|Black|Wife|House Keeper|Married
+Julia W. Coleman|F|0|Black|Daughter|Home|Single
+Ada B. Coleman|F|4|Black|Daughter|Home|Single
+Sarah E. Coleman|F|8|Black|Daughter|Home|Single
+A. Campbell|F|56|White|Head|Housekeeping|Widowed
+Betty Cambell|F|12|Black|Other|Works In House|Single
+Susan C. Gore|F|46|White|Head|Keeps House|Widowed
+Ella White|F|10|Black|Daughter|Home|Single
+G. A. T. White|F|12|White|Daughter|School|Single
+Susanna White|F|4|Black|Daughter|Home|Single
+Fannie White|F|0|Black|Daughter|Home|Single
+Sarah White|F|40|Black|Wife|House Keeper|Married
+Helen Grigsby|F|45|Black|Wife|Servant|Married
+Mary C. Gregg|F|26|White|Wife|Keeps House|Married
+Alice Gregg|F|27|White|Niece||
+Lydia Ann Gregg|F|60|White|Other||Widowed
+Louisa Keyes|F|54|White|Other||Widowed
+E. Lanham|F|82|White|Other|Home|Widowed
+Francis Stewart|F|23|Mulatto|Wife|Housekeeping|Married
+Mary Schooley|F|9|White|Daughter|Home|Single
+Annie Schooley|F|15|White|Daughter|Home|Single
+H. A. Schooley|F|52|White|Head|Housekeeping|Married
+Emma Schooley|F|24|White|Daughter|Home|Single
+Alice Schooley|F|25|White|Daughter|Home|Single
+Catharine A. Wood|F|6|Black|Daughter|School|Single
+Annie E. Wood|F|8|Black|Daughter|School|Married
+Sarah M. Wood|F|11|Black|Daughter|School|Single
+Mary E. Wood|F|38|Black|Wife|Housekeeping|Single
+Nettie L. Wood|F|3|Black|Daughter|Home|Single
+Josie M. Wood|F|1|Black|Daughter|Home|Single
+Cornatea Taylor|F|23|Black|Other||Single
+Mary I. Taylor|F|38|White|Wife|Housekeeping|Married
+Mary Williams|F|60|White|Sister-in-law|House Keeper|Single
+Martha Jones|F|12|Black|Daughter|Servant|Single
+Jane Jones|F|45|Mulatto|Wife|Housekeeping|Married
+Elizabeth Rogers|F|30|White|Wife|House Keeper|Married
+Lulu Rogers|F|4|White|Daughter|Home|Single
+Sally Ann Combs|F|45|White|Daughter||Widowed
+L. J. Janney|F|49|White|Head|Keeps Boarding House|Single
+Ann I. Jenning|F|45|Black|Wife|House Keeper|Married
+Henry Etta Janney|F|39|White|Other||Single
+Louiza Giles|F|36|Black|Other|Cook|
+Joanna Destans|F|32|Black|Head|Works In House|Married
+Martha Morten|F|26|Black|Wife|House Keeper|Married
+Rebecca Day|F|21|Black|Other|Servant|Single
+Lydia Helm|F|13|Mulatto|Daughter|Home|Single
+Rosa Helm|F|3|Mulatto|Daughter|Home|Single
+Jane Helm|F|4|Mulatto|Daughter|Home|Single
+Francis Helm|F|10|Mulatto|Daughter|Home|Single
+Ellen Helm|F|0|White|Daughter|Home|Single
+Mary Helm|F|25|Mulatto|Head||Married
+Martha J. Holmes|F|42|White|Sister|Assistant|Single
+Emily Holmes|F|53|White|Sister|House Keeper|Single
+Mary E. Helm|F|68|White|Wife|Home|Married
+Phoebe Helm|F|14|Mulatto|Daughter|Home|Single
+May A. Helm|F|38|White|Wife|Housekeeping|Married
+Louisa Helm|F|0|Mulatto|Daughter|Home|Single
+Lizzie C. Helm|F|5|White|Daughter|Home|Single
+Lydia A. Holmes|F|40|White|Sister||Single
+Alice S. Doradle|F|12|White|Daughter||Single
+Sally F. Doradle|F|5|White|Daughter||Single
+Mary V. Doradle|F|7|White|Daughter||Single
+Sally Ann Doradle|F|44|White|Wife|Keeping House|Married
+Bulah Doradle|F|9|White|Daughter||Single
+Belle Tanner|F|34|White|Other|Home|Single
+M. Tanner|F|58|White|Head|Keeping House|Widowed
+Julia Davis|F|56|White|Wife|House Keeper|Married
+Susan E. Davis|F|43|White|Head|Milliner|Married
+Laura F. Davis|F|15|Black|Other|Servant|
+Tamzen Davis|F|81|White|Other||Widowed
+Rachael Recton|F|20|Black|Other|Cook|
+M. L. T. White|F|10|White|Daughter|School|Single
+Mary White|F|9|Black|Daughter|Home|Single
+Susie Pugh|F|39|White|Other|Boarding|Single
+Nancy Murry|F|39|Black|Head|Housekeeping|Married
+Ella Murry|F|4|Black|Daughter|Home|Single
+Lilly Thomas|F|8|White|Daughter||Single
+Emily J. Thomas|F|34|White|Wife|Keeps House|Married
+Martha Thomas|F|14|Black|Niece|Home|Single
+Rebecca J. Thomas|F|46|White|Wife|Keeps House|Married
+Maggy Thomas|F|15|White|Daughter|At Home|Single
+Mattie E. Thomas|F|13|White|Daughter|At Home|Single
+May E. Thomas|F|25|White|Head|Mantua Maker|Single
+Caroline V. Tavennor|F|30|White|Daughter|Works At Home|Married
+Ethel Rae Tavennor|F|4|White|Daughter||Single
+Carrie B. Tavenner|F|7|White|Daughter|School|Single
+Linda E. Tavenner|F|2|White|Daughter|Home|Single
+Sarah Tavenner|F|20|White|Other||
+Arabella Tavennor|F|26|White|Daughter|Works At Home|Single
+Rebecca Tavennor|F|61|White|Wife|Keeps House|Married
+Rebecca Ann Tavennor|F|35|White|Daughter|Does House Work|Married
+Emma Tavennor|F|30|White|Wife|Keeps House|Married
+Laura Tavennor|F|26|White|Daughter|Works At Home|Single
+C. H. Tavenner|F|28|White|Wife|Housekeeping|Married
+Edith Tavennor|F|1|White|Daughter||Single
+Mahaly Lucas|F|79|Black|Mother|Home|
+Harriet Hill|F|20|Mulatto|Wife|Keeps House|Married
+Edith Hill|F|10|Black|Other||Single
+Alcinda Hill|F|12|Black|Other|Servant|Single
+Kate B. Mercier|F|34|White|Wife|House Keeper|Married
+Hannah J. Taylor|F|68|White|Other|Home|Widowed
+Mary J. Taylor|F|24|Black|Wife|Keeping House|Married
+Cate Stenier|F|15|White|Other|Nurse|Single
+Mary V. Weadon|F|13|White|Daughter|School|Single
+Frances A. Weadon|F||White|Wife|House Keeper|Married
+Hannah Major|F|35|White|Other||Single
+Lucinda Ash|F|50|Black|Mother|Home|
+Annie Ash|F|15|Mulatto|Other|Servant|
+Sophia Hiegman|F|12|Black|Daughter|School|Single
+Martha Hiegman|F|4|Black|Daughter|Home|Single
+May Hiegman|F|1|Black|Daughter|Home|Single
+B. Hiegman|F|36|Black|Head|Servant|Widowed
+Elizebeth Grayson|F|12|Black|Other||Single
+Eliza A. S. Gray|F|11|Mulatto|Other|Nurse|Single
+Mary H. Warren|F|4|White|Daughter|Home|Single
+Odell A. Warren|F|1|White|Daughter|Home|Single
+Mary P. Warren|F|35|White|Wife|House Keeper|Married
+Molly Warner|F|18|White|Daughter|Works In House|Single
+Elizebeth S. Warner|F|7|White|Daughter||Single
+Alcinda Warner|F|26|White|Daughter|Seamstress|Single
+Malinda Warner|F|22|White|Sister|Home|Single
+Sally Warner|F|42|White|Head|Keeps House|Single
+Sarah J. Warner|F|48|White|Wife|Keeps House|Married
+Hannah D. Warren|F|3|White|Daughter|Home|Single
+Lilla Henderson|F|88|Black|Mother|Home|Widowed
+Edith P. Neal|F|15|White|Daughter|At Home|Single
+Alice A. Neal|F|9|White|Daughter|At Home|Single
+Bulah M. Neal|F|1|White|Daughter|At Home|Single
+Ida C. Neal|F|24|White|Wife|Keeps House|Married
+Cansemelia Hughes|F|44|White|Other|House Keeper|
+Sally Ann Hews|F|41|White|Daughter||Single
+Virginia D. Hews|F|44|White|Daughter||Single
+Mary E. Hughes|F|17|White|Daughter|Home|Single
+Mary E. Hughes|F|5|Black|Other|Home|Single
+Sarah P. Hughes|F|15|White|Other|School|Single
+Mary E. Hews|F|28|White|Daughter||Single
+Elizabeth J. Hughes|F|13|White|Other|School|Single
+Virginie I. Hughes|F|45|White|Wife|Housekeeping|Married
+Mary H. Hughes|F|24|Black|Other|House Keepers|Married
+Clara V. Hughes|F|14|White|Daughter|School|Single
+Martha Lacey|F|17|White|Daughter|Home|Single
+A. Randolph|F|12|White|Other|Servant|Single
+Teny Jackson|F|25|Mulatto|Other|Cook|Single
+Virginia Lemon|F|29|White|Other||Single
+Catharine T. Lowe|F|24|White|Daughter|Works At Home|Married
+Eliza Ann Lowe|F|60|White|Wife|Keeps House|Married
+Savannah C. Lowe|F|19|White|Daughter||Single
+Lucy Mason|F|60|Black|Other|Servant|Single
+Anne C. Milton|F|61|White|Head|House Keeper|Widowed
+Mary E. Muse|F|58|White|Wife|House Keeper|Married
+Susan J. Muse|F|14|White|Daughter|School|Single
+Rosey Thomas|F|10|White|Daughter|At Home|Single
+Nora B. Thomas|F|11|White|Daughter||Single
+Maud Thomas|F|6|White|Daughter||Single
+Virginia A. Thomas|F|28|White|Other|Mantua Maker|Single
+Freddie Thomas|F|6|White|Daughter||Single
+Lucy B. Thomas|F|15|White|Daughter|At Home|Single
+Molly Thomas|F|17|White|Daughter|At Home|Single
+Annie B. Myers|F|18|White|Other|Keeping House|Married
+Bessie Myers|F|0|White|Daughter||Single
+Virginia E. Myers|F|35|White|Other|House Keeper|Married
+Nannie Myers|F|3|White|Daughter|Home|Single
+Bertha E. Myers|F|2|White|Daughter||Single
+Susan H. Myers|F|49|White|Wife|Keeps House|Married
+Mary J. Myers|F|10|White|Daughter||Single
+Josephene Myers|F|24|White|Daughter|Works In House|Single
+Lucy E. Myers|F|20|White|Daughter||Single
+Francis A. Myers|F|33|White|Wife|Housekeeping|Married
+Lizzie Payne|F|2|Black|Daughter|Home|Single
+Malinda Payne|F|26|Black|Wife|Servant|Married
+Emily Payne|F|48|Black|Head|Keeps House|Married
+Mary Payne|F|6|Black|Daughter||Single
+Julia Payne|F|26|Black|Head|Works In House|Widowed
+Henry Etta Payne|F|1|Black|Daughter||Single
+Louisa H. A. Payne|F|0|Black|Daughter|Home|Single
+Clara Payne|F|5|Black|Daughter|Home|Single
+Melinda Payne|F|21|Black|Head|Servant|Married
+Sarah G. Saunders|F|26|White|Daughter|Home|
+Sallie E. Saunders|F|57|White|Mother|Home|Married
+Annie Saunders|F|26|White|Wife|House Keeper|Married
+J. Thomson|F|15|White|Granddaughter|School|Single
+Nannie Wiley|F|27|White|Wife||Married
+Eller F. Wiley|F|15|White|Daughter|Home|Single
+Annie Willis|F|17|Black|Other|Servant|Married
+Annie J. Wiley|F|8|White|Daughter||Single
+Nannie E. Wiley|F|27|White|Wife|Keeping House|Married
+Anna D. Wiley|F|25|White|Wife|Keeps House|Married
+Annie D. Wiley|F|23|White|Wife|Keeping House|Married
+Molly Wiley|F|18|White|Niece|Works At Home|
+Mary M. Wiley|F|17|White|Daughter|Keeping House|Single
+Louisa Reckin|F|10|Mulatto|Other|Servant|Single
+Lydia Heaton|F|26|White|Niece||Single
+Cecelia D. Heaton|F|22|White|Niece||Single
+Ida Seldon|F|30|Mulatto|Wife|Servant|Married
+Sidney Osburn|F|60|Black|Mother-in-law|Housekeeping|Widowed

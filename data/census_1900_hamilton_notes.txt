@@ -1,0 +1,43 @@
+# Sheet 8B line 29 (image 16): "Here ends the enumeration of all the territory outside the limits of the corporation of Hamilton town." Images 1-16 = ED 55 outside town limits; images 17-24 = incorporated Hamilton.
+# Image 24 line 15: "Here ends the enumeration of Hamilton Town." Enumerator Geo. N. Hoge(?), enumerated 1-18 June 1900.
+# 1940 ED 54-21 image 8 line 65: "End of Hamilton Incorporated." Enumerator Anne G. VanDeventer. 304 people, 98 households, 5 Black (Daisy Chinn family). This is only the Mount Gilead-district PART of the town; the Jefferson-district part is a separate ED (not yet read).
+# 1940 ED 54-4 (Jefferson district part of Hamilton town): 3 sheets, image 4 blank. Enumerator Patience A. Purcell, 29 April 1940. 105 people, 25 households; 95 Black, 10 white. Dwelling values $500-$900 (Black-owned) vs $3000 (Ward). Line order on sheet 1A/2A differs from FamilySearch index order in places; CSV follows the SHEET.
+# 1910 ED 71 image 7 line 25: "Here ends the enumeration of Hamilton Town." 316 people, 91 households; images 9-34 are rural ED 71 (not read; index saved). Enumerator George E. Thomas (himself an auctioneer in the town, hh 81).
+# 1920 ED 75 image 6 (sheet 3B) line 88: "Here Ends the Enumeration of the Incorporated Town of Hamilton." 287 people, 78 households; images 7-22 rural (index saved). Enumerator Gordon G. Morland, 2-10 January 1920.
+# 1930 ED 54-17 image 6 line 97-99: "Here Ends the Enumeration of the Town of Hamilton, Enumeration District 54-17." 295 people, 88 households, enumerator Stella M. Collins, April 1930. Black west end not included (4 Black servants only).
+# 1920 ED 66 Jefferson, sheets 11A-12A (images 21-23): margin reads "West Edge of Hamilton Town"; "Here ends the Enumeration of District no 66" after line 26 of 12A. 1920 west end = 76 Black/mulatto residents in 20 households (plus ~20 white). Enumerator Albert L. Painter, 12 Feb 1920.
+
+1910, Jefferson district, Loudoun (collection 1727033)
+- ED 61 = PURCELLVILLE and its outskirts, NOT Hamilton. Enumerator Clifton M. Warner. Heads include Copeland, Brent, Ford, Dorrell, Poston, Adams, Colbert, Reid, Huff, Willingham, Bach, Carlisle, Flaherty, Hern, Reynolds, Larrick, Omson, Ballenger, Carruthers, Brady, Mock, Clothier, Paxson, Hurst, Hall, Gill. Its Black neighbourhood (images 6-8, sheets 3B-4B: Waters, Rodney C Clark, Turner, Scipio, Levenberry, Welby Anderson, Fletcher, Parrott, Jackson, Williams, Grimes, Ashby) is Purcellville's, not Hamilton's. Checked and set aside.
+- ED 62 = Jefferson district part of / Waterford town. Images 1-8 (sheets 1A-4B), enumerator Clifton M. Warner, are the Hamilton-adjacent portion: white heads Brown, Fling, James, Hawes, Gaskins, Paxson, Hanvey, Divine, Graham, Keyes, Russell, Hough, Mullen, Skinner, Moreland, Rinker, Myers, Virts, Walker, Densmore, White, Dean, Palmer, Beans (Amos & Flavius J), Fox, Werking, Everhart, Corbin, Parker, Moore, Shawen, Spinks, Haines, Mock, Shomaker, Eamick, Mansfield, Merchant, Heaton, Philips, Sidwell, Minor, Smith, McGavack, Vandavanter, Steer, Gray, Perryman, Spratt, Shry, Pratt, Baldwin; Black/mulatto households Gaskins, Jackson, Page, Collins, Coates, Weems, Johnson, Boyd, Barlow, Mallory, Dean, Clagette, Robinson, Lewis, Sims, Parms, Jones, McCuvens, Clark, Rucker, Mallery, Burton, Taylor, Simms, Walker, Lee, Minor.
+- In 1910 the Black households of the Hamilton west end are interleaved through ED 62 sheets 1A-4B rather than grouped; the separate "West Edge of Hamilton Town" block in the margins first appears in 1920 (ED 66).
+- Images 9-11+ of ED 62 run on into rural Jefferson (Horthorne, Ayre, Kimes, Beach, Kirby, Peacock, Myers, Painter, Vanscler, Ward, Pearson, Palmer, Fox) and are out of Hamilton's orbit.
+
+ADDRESS COLUMNS — checked 27 Oct 2026 for 241 E. Colonial Hwy
+- 1950, ED 54-5 (Hamilton), 8 images, enumerator Walter R. Lee Jr., 15 June 1950.
+  Cover sheet: 176 persons, 58 dwelling units.
+  Column 1 (street) IS filled, written vertically: "Route 7", "Washington Street",
+  "Cemetery" / "Cemetery St", and one more on image 2 not confidently read.
+  Column 2 (house number) is BLANK on every sheet checked (images 2,3,4,5,7).
+  Where a building held more than one household the enumerator wrote
+  "upstairs" / "downstairs" / "left side" / "right side" in place of a number.
+- 1940, ED 54-21 (Mount Gilead Magisterial District, Hamilton Town part), 8 images.
+  Column 1 (street) filled, vertical: "Colonial Highway No 7" and another road
+  above it (reads like "Mineral Road 7" — not confidently transcribed).
+  Column 2 (house number) BLANK.
+- CONCLUSION: Hamilton had no street numbering in 1940 or 1950, so no census read
+  for this project can match a modern street address. Numbering most likely came
+  with E-911 addressing decades later. Households can only be placed by street
+  and by the enumerator's walking order.
+- 1940 Colonial Highway stretch, in order (household no., tenure, value/rent):
+  8 R $11  Ralph Brown 53 salesman; wife Chalmers 56
+  9 O $2000 Lee White 44 laborer; Gladys 36 seamstress at home; Robert Lee 16
+            delivery boy newspaper; Roger Myers nephew 12
+  10 R $4  Maude Cockrell 65
+  11 O $2000 Frank White 69; Nellie Tavenner housekeeper 65
+  12 O $2000 Annie Tavenner 69; Annie Powell lodger 74
+- FRY: the only Fry household anywhere in the Hamilton census reads is
+  Foster B. Fry — 1880 (as Foster Fryor, 38, works on farm), 1900 (70, day
+  labourer), 1910 (68, servant, OWNS HIS HOME, rural Mt Gilead sheet 8A).
+  Black; buried Harmony; 1840-1919. No Fry or Frye in the Hamilton town
+  enumerations 1920-1950. Other Fryes in the burial list are at Pleasant Valley.

@@ -1,0 +1,31 @@
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# build output (whichever toolchain ends up being used)
+build/
+target/
+dist/
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# derived by `npm run data` from data/*.csv; the Pages workflow rebuilds it
+app/data/
+
+# captured from Find a Grave; kept locally, not republished
+data/findagrave.csv
+data/harmony_findagrave.csv
+data/pleasantvalley_findagrave.csv
+data/events_findagrave.json
+data/harmony_events_findagrave.json
+data/pleasantvalley_events_findagrave.json

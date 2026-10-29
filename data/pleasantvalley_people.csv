@@ -1,0 +1,264 @@
+person_id,last_name,first_name,plot,birth_date,birth_precision,birth_raw,birth_note,death_date,death_precision,death_raw,death_note,documented_age,birth_year,death_year,sex_inferred,status,relation_raw,relation_type,relation_target,memo,military,cemetery,source,source_row
+PV0001,ASH,PRESLEY E,,1862,year,1862,,1932,year,1932,,,1862,1932,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,1
+PV0002,ASH,PRESLY EDMOND,,1912-01-20,day,01/20/1912,,1971-02-02,day,02/02/1971,,,1912,1971,,deceased,,,,DISTRICT OF COLUMBIA PVT HQ CO 372 INF,PVT,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,2
+PV0003,BALL,MATILDA E,,1907,year,1907,,1959,year,1959,,,1907,1959,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,3
+PV0004,BALL JR,CARROLL E,,1933-06-17,day,06/17/1933,,1953-07-21,day,07/21/1953,,,1933,1953,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,4
+PV0005,BELL,ANTONIA R,,1962,year,1962,,1996,year,1996,,,1962,1996,,deceased,,,,LYLES FUNERAL HOME MARKER,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,5
+PV0006,BOLLING,MAHALA O,,1913-02-24,day,02/24/1913,,1973-03-22,day,03/22/1973,,,1913,1973,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,6
+PV0007,BOOTON,WILLIAM DAVID,,1903,year,1903,,1983,year,1983,,,1903,1983,M,deceased,H/O JULIA L ASHE BOOTON,husband_of,JULIA L ASHE BOOTON,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,7
+PV0008,BOOTON,JULIA L ASHE,,1896,year,1896,,1989,year,1989,,,1896,1989,F,deceased,W/O WILLIAM DAVID BOOTON,wife_of,WILLIAM DAVID BOOTON,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,8
+PV0009,BRENT,GLADYS L,,1919-12-28,day,12/28/1919,,1982-07-22,day,07/22/1982,,,1919,1982,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,9
+PV0010,BROWN,HATTIE E,,1874,year,1874,,1957,year,1957,,,1874,1957,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,10
+PV0011,BROWN,BURTON F,,1896,year,1896,,1932,year,1932,,,1896,1932,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,11
+PV0012,BROWN,WALTER W,,1907,year,1907,,1938,year,1938,,,1907,1938,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,12
+PV0013,BROWN,J WALTER,,1871,year,1871,,1938,year,1938,,,1871,1938,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,13
+PV0014,BROWN,CHARLES A,,1864-01-06,day,01/06/1864,,1926-03-12,day,03/12/1926,,,1864,1926,M,deceased,H/O CORNELIA A BROWN,husband_of,CORNELIA A BROWN,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,14
+PV0015,BROWN,CORNELIA A,,1863-12-26,day,12/26/1863,,,none,Unknown,,,1863,,F,deceased,W/O CHARLES A BROWN,wife_of,CHARLES A BROWN,NO DEATH DATE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,15
+PV0016,BRYANT,JAMES W,,1965,year,1965,,1998,year,1998,,,1965,1998,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,16
+PV0017,BUTLER,LAURA JANE,,1856,year,1856,,1940,year,1940,,,1856,1940,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,17
+PV0018,BYAMS,ALICE V,,1928,year,1928,,1995,year,1995,,,1928,1995,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,18
+PV0019,BYAMS,TILLMAN F,,1931,year,1931,,1997,year,1997,,,1931,1997,,deceased,,,,LOUDOUN FUNERAL HOME MARKER,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,19
+PV0020,CAESAR,CORRINE,,1906,year,Unknown,derived from death date minus documented age (21 years),1927-12-31,day,12/31/1927,,21 years,1906,1927,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,20
+PV0021,CAESAR,CARL LUTHER,,1912-12-02,day,12/2/1912,,1979-01-13,day,1/13/1979,,,1912,1979,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,21
+PV0022,CALVERY,ALMA W,,1895-07-05,day,07/05/1895,,1963-01-20,day,01/20/1963,,,1895,1963,F,deceased,W/O WILLIAM W CALVERY,wife_of,WILLIAM W CALVERY,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,22
+PV0023,CALVERY,WILLIAM W,,1892-01-21,day,01/21/1892,,1966-01-07,day,01/07/1966,,,1892,1966,M,deceased,H/O ALMA W CALVERY,husband_of,ALMA W CALVERY,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,23
+PV0024,CEASAR,WALTER,,1904,year,1904,,1968,year,1968,,,1904,1968,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,24
+PV0025,CHINN,HELEN B,,1914-03-19,day,03/19/1914,,2001-04-08,day,4/8/2001,,,1914,2001,F,deceased,W/O JOHN N CHINN SR,wife_of,JOHN N CHINN SR,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,25
+PV0026,CHINN,RONALD D,,1966-07-05,day,07/05/1966,,1993-03-10,day,03/10/1993,,,1966,1993,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,26
+PV0027,CHINN,DAISY MAY,,1897,year,1897,,1959,year,1959,,,1897,1959,F,deceased,M/O MAURICE & JOHN D CHINN,mother_of,MAURICE & JOHN D CHINN,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,27
+PV0028,CHINN,MAURICE,,1931-06-02,day,06/02/1931,,1979-10-07,day,10/07/1979,,,1931,1979,M,deceased,S/O DAISY MAY CHINN,son_of,DAISY MAY CHINN,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,28
+PV0029,CHINN,JOHN D,,1925-11-11,day,11/11/1925,,1928-03-03,day,3/3/1928,,,1925,1928,M,deceased,S/O DAISY MAY CHINN,son_of,DAISY MAY CHINN,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,29
+PV0030,CHINN,ANNA GASKINS,,1908-04-04,day,4/4/1908,,1992-02-08,day,2/8/1992,,,1908,1992,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,30
+PV0031,CHINN SR,JOHN N,,1912-06-12,day,06/12/1912,,1988-11-23,day,11/23/1988,,,1912,1988,M,deceased,H/O HELEN B CHINN,husband_of,HELEN B CHINN,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,31
+PV0032,CLARK,JAMES E,,1927,year,1927,,1996,year,1996,,,1927,1996,M,deceased,H/O GRACE E CLARK,husband_of,GRACE E CLARK,NO DEATH DATE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,32
+PV0033,CLARK,GRACE E,,1926,year,1926,,1991,year,1991,,,1926,1991,F,deceased,W/O JAMES E CLARK,wife_of,JAMES E CLARK,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,33
+PV0034,CLARK,FRANCIS RALPH,,1907-08-31,day,08/31/1907,,1972-01-02,day,01/02/1972,,,1907,1972,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,34
+PV0035,CLARK,IDA M,,1916,year,1916,,1999,year,1999,,,1916,1999,F,deceased,W/O HOWARD W CLARK JR,wife_of,HOWARD W CLARK JR,NO DEATH DATE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,35
+PV0036,CLARK,EPPIE,,1882,year,1882,,1943,year,1943,,,1882,1943,,deceased,,,,NEXT TO EDWARD W CLARK,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,36
+PV0037,CLARK,EDWARD W,,1876,year,1876,,1960,year,1960,,,1876,1960,,deceased,,,,NEXT TO EPPIE CLARK,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,37
+PV0038,CLARK,GEORGE E,,1931-08-04,day,8/4/1931,,1999-02-14,day,2/14/1999,,,1931,1999,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,38
+PV0039,CLARK,HOWARD W,,1876,year,1876,,1960,year,1960,,,1876,1960,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,39
+PV0040,CLARK JR,HOWARD W,,1912,year,1912,,1980,year,1980,,,1912,1980,M,deceased,H/O IDA M CLARK,husband_of,IDA M CLARK,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,40
+PV0041,COATES,EVA LEE,,1923-12-30,day,12/30/1923,,1955-08-10,day,08/10/1955,,,1923,1955,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,41
+PV0042,COATES,CLARENCE C,,1899-02-06,day,02/06/1899,,1966-05-31,day,05/31/1966,,,1899,1966,M,deceased,H/O EDNA COATES,husband_of,EDNA COATES,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,42
+PV0043,COATES,EDNA,,,none,06/25/190-,unparseable,,none,Unknown,,,,,F,deceased,W/O CLARENCE C COATES,wife_of,CLARENCE C COATES,NO DEATH DATE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,43
+PV0044,COATES,JAMES C,,1925,year,1925,,1988,year,1988,,,1925,1988,,deceased,,,,NEXT TO CLARENCE C & EDNA COATES STONE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,44
+PV0045,COATES,JOHN A,,1894,year,1894,,1970,year,1970,,,1894,1970,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,45
+PV0046,COLEMAN,OSCAR,,1913,year,1913,,1967,year,1967,,,1913,1967,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,46
+PV0047,COLEMAN,REBECCA B,,1927,year,1927,,2003,year,2003,,,1927,2003,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,47
+PV0048,COLLINS,W B FRANK,,1867,year,1867,,1952,year,1952,,,1867,1952,,deceased,,,,ON COLLINS FAMILY STONE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,48
+PV0049,COLLINS,MARGARET,,1872,year,1872,,1939,year,1939,,,1872,1939,,deceased,,,,ON COLLINS FAMILY STONE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,49
+PV0050,COLLINS,HELEN C,,1889,year,1889,,1945,year,1945,,,1889,1945,,deceased,,,,ON COLLINS FAMILY STONE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,50
+PV0051,COLLINS,CHARLES,,1894,year,1894,,1928,year,1928,,,1894,1928,,deceased,,,,ON COLLINS FAMILY STONE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,51
+PV0052,COLLINS,MCKINLEY,,1896,year,1896,,1944,year,1944,,,1896,1944,,deceased,,,,ON COLLINS FAMILY STONE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,52
+PV0053,COLLINS,JOSEPH L,,1900,year,1900,,1967,year,1967,,,1900,1967,,deceased,,,,ON COLLINS FAMILY STONE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,53
+PV0054,COLLINS,MARGARET C,,1898,year,1898,,1968,year,1968,,,1898,1968,,deceased,,,,ON COLLINS FAMILY STONE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,54
+PV0055,COLLINS,KATE R,,1853-01-12,day,01/12/1853,,1936-07-11,day,07/11/1936,,,1853,1936,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,55
+PV0056,COLLINS,JAMES A,,1850-09-01,day,09/01/1850,,1930-09-26,day,09/26/1930,,,1850,1930,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,56
+PV0057,COLLINS,ANNIE E,,1871-05-10,day,05/10/1871,,1928-03-18,day,03/18/1928,,,1871,1928,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,57
+PV0058,COLLINS / BENTLEY,,,,none,Unknown,,,none,Unknown,,,,,,deceased,,,,STONE FOR COLLINS FAMILY PLOT,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,58
+PV0059,COOPER,JOHN H,,1913,year,1913,,1971,year,1971,,,1913,1971,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,59
+PV0060,CORBIN,PATIENCE MARIE,,1911,year,1911,,1995,year,1995,,,1911,1995,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,60
+PV0061,CRAVENS,JAMES M,,1919-03-25,day,03/25/1919,,1992-01-11,day,01/11/1992,,,1919,1992,,deceased,,,,USMC WWII,USMC,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,61
+PV0062,CRAVENS,ALBERTA B,,1921-10-18,day,10/18/1921,,1997-01-29,day,1/29/1997,,,1921,1997,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,62
+PV0063,CROSS,JENNIE D,,1888-06-07,day,06/07/1888,,1969-03-08,day,03/08/1969,,,1888,1969,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,63
+PV0064,CURTIS,ETHEL MAE,,1900-04-24,day,04/24/1900,,1988-01-10,day,01/10/1988,,,1900,1988,F,deceased,W/O DUDLEY S CURTIS,wife_of,DUDLEY S CURTIS,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,64
+PV0065,CURTIS,DUDLEY S,,1885-06-22,day,06/22/1885,,1965-11-03,day,11/03/1965,,,1885,1965,M,deceased,H/O ETHEL MAE CURTIS,husband_of,ETHEL MAE CURTIS,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,65
+PV0066,DADE,BLANCHE E,,1926-03-08,day,3/8/1926,,,none,Unknown,,,1926,,,no_death_on_stone,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,66
+PV0067,DADE,ROBERT,,1920-11-28,day,11/28/1920,,,none,Unknown,,,1920,,,no_death_on_stone,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,67
+PV0068,DAVENPORT,ANNIE PAYNE,,1880,year,1880,,1957,year,1957,,,1880,1957,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,68
+PV0069,DAVIS,WILLIAM,,1888-11-10,day,11/10/1888,,1977-04-14,day,04/14/1977,,,1888,1977,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,69
+PV0070,DAVIS,ELIZABETH A,,1905,year,1905,,1994,year,1994,,,1905,1994,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,70
+PV0071,DAVIS,R W,,1921,year,1921,,1963,year,1963,,,1921,1963,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,71
+PV0072,DAY,DORIS A,,1931,year,1931,,1987,year,1987,,,1931,1987,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,72
+PV0073,DAYE,LAKISHA,,1996,year,1996,,1996,year,1996,,,1996,1996,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,73
+PV0074,DESKINS,NELLIE,,,none,Unknown,,,none,Unknown,,,,,F,deceased,W/O EDWARD DESKINS,wife_of,EDWARD DESKINS,NO DATES,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,74
+PV0075,DESKINS,EDWARD,,,none,Unknown,,,none,Unknown,,,,,M,deceased,H/O NELLIE PAYNE DESKINS,husband_of,NELLIE PAYNE DESKINS,NO DATES,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,75
+PV0076,FERRELL,DELIAH ANN,,1946,year,1946,,1964,year,1964,,,1946,1964,F,deceased,W/O(?) GARLAND E FERRELL SR,wife_of,(?) GARLAND E FERRELL SR,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,76
+PV0077,FERRELL,KENNETH LEE,,1934-04-23,day,04/23/1934,,1987-03-30,day,03/30/1987,,,1934,1987,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,77
+PV0078,FERRELL,TOWNEY,,1895,year,1895,,1982,year,1982,,,1895,1982,M,deceased,H/O ANNA B FERRELL,husband_of,ANNA B FERRELL,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,78
+PV0079,FERRELL,ANNA B,,1892,year,1892,,1968,year,1968,,,1892,1968,F,deceased,W/O TOWNEY FERRELL,wife_of,TOWNEY FERRELL,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,79
+PV0080,FERRELL JR,GARLAND E,,1949-03-15,day,3/15/1949,,1999-09-05,day,9/5/1999,,,1949,1999,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,80
+PV0081,FERRELL SR,GARLAND E,,1917,year,1917,,1985,year,1985,,,1917,1985,M,deceased,H/O(?) DELIAH ANN FERRELL,husband_of,(?) DELIAH ANN FERRELL,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,81
+PV0082,FIELDS,ANNIE C,,1986,year,1986,,1987,year,1987,,,1986,1987,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,82
+PV0083,FIELDS,CHARLES L,,1923,year,1923,,1996,year,1996,,,1923,1996,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,83
+PV0084,FLINT,SARAH R,,1874,year,1874,,1926,year,1926,,,1874,1926,F,deceased,W/O CEZAR FLINT,wife_of,CEZAR FLINT,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,84
+PV0085,FLINT,CEZAR,,,none,18--,unparseable,1938,year,1938,,,,1938,M,deceased,H/O SARAH R FLINT,husband_of,SARAH R FLINT,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,85
+PV0086,FRYE,ROBERT LEE,,1939,year,1939,,1976,year,1976,,,1939,1976,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,86
+PV0087,GANT,CATHERINE,,1908,year,1908,,1995,year,1995,,,1908,1995,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,87
+PV0088,GIBSON,EVERETT G,,1934-03-17,day,3/17/1934,,1982-08-30,day,8/30/1982,,,1934,1982,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,88
+PV0089,GORDON,CHARLES W,,1899-06-07,day,06/07/1899,,1986-06-05,day,06/05/1986,,,1899,1986,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,89
+PV0090,GORDON,CLARA,,1877,year,1877,,1970,year,1970,,,1877,1970,F,deceased,W/O DANIEL GORDON,wife_of,DANIEL GORDON,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,90
+PV0091,GORDON,DANIEL,,1868,year,1868,,1945,year,1945,,,1868,1945,M,deceased,H/O CLARA GORDON,husband_of,CLARA GORDON,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,91
+PV0092,GORDON,SARAH J,,1896,year,1896,,1992,year,1992,,,1896,1992,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,92
+PV0093,GREEN,EARL,,1931,year,1931,,1984,year,1984,,,1931,1984,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,93
+PV0094,HARRIS,WARREN H,,1913-01-20,day,01/20/1913,,1973-07-10,day,07/10/1973,,,1913,1973,,deceased,,,,TEC 5 US ARMY WWII,US ARMY,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,94
+PV0095,HARRIS,DARRELL,,1960-03-20,day,3/20/1960,,1961-03-21,day,3/21/1961,,,1960,1961,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,95
+PV0096,HARRIS,VIOLET MALLORY,,,none,3/301916,unparseable,2002-02-15,day,2/15/2002,,,,2002,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,96
+PV0097,HARVEY,FANNIE J,,1860,year,1860,,1940,year,1940,,,1860,1940,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,97
+PV0098,HARVEY,THOMAS,,1854,year,1854,,1911,year,1911,,,1854,1911,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,98
+PV0099,HELMS,JANE DAVIS,,1877-06-17,day,06/17/1877,,,none,Unknown,,,1877,,F,deceased,W/O GEORGE R HELMS,wife_of,GEORGE R HELMS,NO DEATH DATE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,99
+PV0100,HELMS,GEORGE R,,1875-03-19,day,03/19/1875,,1950-09-28,day,09/28/1950,,,1875,1950,M,deceased,H/O JANE DAVIS HELMS,husband_of,JANE DAVIS HELMS,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,100
+PV0101,HILL,ANNIE,,1829,year,Unknown,derived from death date minus documented age (92 years),1921-04-23,day,04/23/1921,,92 years,1829,1921,M,deceased,S/O DELILA J JONES,son_of,DELILA J JONES,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,101
+PV0102,JACKSON,JOHN LEWIS,,1861,year,1861,,1935,year,1935,,,1861,1935,M,deceased,H/O ALVERNIE G JACKSON,husband_of,ALVERNIE G JACKSON,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,102
+PV0103,JACKSON,ALVERNIE G,,1877,year,1877,,1967,year,1967,,,1877,1967,F,deceased,W/O JOHN LEWIS JACKSON,wife_of,JOHN LEWIS JACKSON,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,103
+PV0104,JACKSON,JOHN EARL,,1893-03-04,day,03/04/1893,,1985-06-22,day,06/22/1985,,,1893,1985,,deceased,,,,PVT USA WWI,PVT,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,104
+PV0105,JOHNSON,MARY J,,1907,year,1907,,1954,year,1954,,,1907,1954,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,105
+PV0106,JOHNSON,CHARLES B,,1920-06-10,day,06/10/1920,,1983-07-23,day,07/23/1983,,,1920,1983,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,106
+PV0107,JOHNSON,ROBERT,,1924,year,1924,,1985,year,1985,,,1924,1985,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,107
+PV0108,JOHNSON,LAWRENCE H,,1894,year,1894,,1940,year,1940,,,1894,1940,M,deceased,H/O A VIOLET JOHNSON,husband_of,A VIOLET JOHNSON,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,108
+PV0109,JOHNSON,A VIOLET,,1900,year,1900,,1977,year,1977,,,1900,1977,F,deceased,W/O LAWRENCE H JOHNSON,wife_of,LAWRENCE H JOHNSON,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,109
+PV0110,JOHNSON JR,DWIGHT A L,,1977-08-27,day,08/27/1977,,1978-03-06,day,03/06/1978,,,1977,1978,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,110
+PV0111,JONES,ELLWOOD B,,,none,Unknown,,,none,Unknown,,,,,,deceased,,,,NO DATES,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,111
+PV0112,JONES,JOHN E,,1898,year,1898,,1965,year,1965,,,1898,1965,M,deceased,H/O MARIE P JONES,husband_of,MARIE P JONES,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,112
+PV0113,JONES,MARIE P,,1896,year,1896,,1963,year,1963,,,1896,1963,F,deceased,W/O JOHN E JONES,wife_of,JOHN E JONES,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,113
+PV0114,JONES,HENRY C,,1904-05-07,day,05/07/1904,,1961-03-28,day,03/28/1961,,,1904,1961,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,114
+PV0115,JONES,LENA L,,1901-04-16,day,04/16/1901,,1975-09-17,day,09/17/1975,,,1901,1975,F,deceased,W/O THOMAS A JONES,wife_of,THOMAS A JONES,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,115
+PV0116,JONES,THOMAS A,,,none,Unknown,,,none,Unknown,,,,,M,deceased,H/O LENA L JONES,husband_of,LENA L JONES,NO DATES,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,116
+PV0117,JONES,WILLIAM THOMAS,,1931-10-10,day,10/10/1931,,1990-12-30,day,12/30/1990,,,1931,1990,,deceased,,,,US ARMY KOREA,US ARMY KOREA,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,117
+PV0118,JONES,LEWIS,,,none,Unknown,,,none,Unknown,,,,,M,deceased,H/O DELILA J JONES,husband_of,DELILA J JONES,"CO B US C INFANTRY, NO DATES",CO B US C INFANTRY,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,118
+PV0119,JONES,DELILA J,,1838-03-11,day,03/11/1838,,,none,Unknown,,,1838,,F,deceased,W/O LEWIS JONES,wife_of,LEWIS JONES,"BIRTH YEAR QUESTIONABLE, NO DEATH DATE",,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,119
+PV0120,JONES,IDA B,,1877,year,1877,,1968,year,1968,,,1877,1968,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,120
+PV0121,JONES,BERKLEY T,,1902,year,1902,,1975,year,1975,,,1902,1975,M,deceased,H/O LUCY E JONES,husband_of,LUCY E JONES,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,121
+PV0122,JONES,LUCY E,,1902,year,1902,,,none,Unknown,,,1902,,F,no_death_on_stone,W/O BERKLEY T JONES,wife_of,BERKLEY T JONES,NO DEATH DATE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,122
+PV0123,JONES,ERNEST O,,1892-04-03,day,04/03/1892,,1932-04-17,day,04/17/1932,,,1892,1932,M,deceased,S/O HELEN M MURRAY,son_of,HELEN M MURRAY,WWI,WWI,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,123
+PV0124,JONES,JOHN H,,1875-06-17,day,06/17/1875,,1931-03-20,day,03/20/1931,,,1875,1931,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,124
+PV0125,JONES,NANNIE V,,1872-01-01,day,01/01/1872,,1932-12-26,day,12/26/1932,,,1872,1932,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,125
+PV0126,KING,NANNIE R,,1916,year,1916,,1999,year,1999,,,1916,1999,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,126
+PV0127,KING,ALPHONZO C,,1944-08-11,day,08/11/1944,,1995-04-17,day,04/17/1995,,,1944,1995,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,127
+PV0128,KING,JOHN L,,1922,year,1922,,1969,year,1969,,,1922,1969,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,128
+PV0129,KINNEY,PAMELA E,,1965,year,1965,,1995,year,1995,,,1965,1995,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,129
+PV0130,LACEY,MILDRED ANN,,1951-03-08,day,03/08/1951,,1993-08-24,day,08/24/1993,,,1951,1993,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,130
+PV0131,LEE,MICHAEL JOHN,,,none,192-,unparseable,,none,196-,unparseable,,,,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,131
+PV0132,LEE,CARRELL H [REV],,1884,year,1884,,1938,year,1938,,,1884,1938,M,deceased,H/O LILLIAN FLINT LEE,husband_of,LILLIAN FLINT LEE,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,132
+PV0133,LEE,LILLIAN FLINT,,1887,year,1887,,1930,year,1930,,,1887,1930,F,deceased,W/O REV CARRELL H LEE,wife_of,REV CARRELL H LEE,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,133
+PV0134,LEE,CARRIE H,,1879,year,1879,,1949,year,1949,,,1879,1949,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,134
+PV0135,LEE,MARY V,,1900,year,1900,,1987,year,1987,,,1900,1987,F,deceased,"M/O CAROLYN V, ARTHUR B, & JONATHAN LEE",mother_of,"CAROLYN V, ARTHUR B, & JONATHAN LEE",,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,135
+PV0136,LEE,CAROLYN V,,1932,year,1932,,1944,year,1944,,,1932,1944,F,deceased,D/O MARY V LEE,daughter_of,MARY V LEE,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,136
+PV0137,LEE,ARTHUR B,,1928,year,1928,,1945,year,1945,,,1928,1945,M,deceased,S/O MARY V LEE,son_of,MARY V LEE,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,137
+PV0138,LEE,JONATHAN A,,1918,year,1918,,1954,year,1954,,,1918,1954,M,deceased,S/O MARY V LEE,son_of,MARY V LEE,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,138
+PV0139,LEE,VERNELLE V,,1926-04-25,day,4/25/1926,,1972-03-14,day,3/14/1972,,,1926,1972,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,139
+PV0140,LEE,JONATHAN B,,1898,year,1898,,1968,year,1968,,,1898,1968,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,140
+PV0141,LEE,THEADORA B,,1890,year,Unknown,derived from death date minus documented age (36 years),1926-03-27,day,03/27/1926,,36 years,1890,1926,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,141
+PV0142,LEVENBERRY,WALTER H,,1887,year,1887,,1952,year,1952,,,1887,1952,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,142
+PV0143,LEVENBERRY,MARGARET,,1897-08-16,day,08/16/1897,,1972-10-06,day,10/06/1972,,,1897,1972,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,143
+PV0144,LEWIS,ROBERT,,1891,year,1891,,1969,year,1969,,,1891,1969,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,144
+PV0145,LOGAN,BEAPTIS,,1899,year,1899,,1972,year,1972,,,1899,1972,M,deceased,H/O LORETTA A LOGAN,husband_of,LORETTA A LOGAN,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,145
+PV0146,LOGAN,LORETTA,,1910,year,1910,,1973,year,1973,,,1910,1973,F,deceased,W/O BEAPTIS LOGAN,wife_of,BEAPTIS LOGAN,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,146
+PV0147,LUCAS,ROGER P,,1907-07-25,day,07/25/1907,,1990-07-07,day,07/07/1990,,,1907,1990,M,deceased,H/O MARY C LUCAS,husband_of,MARY C LUCAS,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,147
+PV0148,LUCAS,MARY C,,1913-08-30,day,08/30/1913,,1970-01-18,day,01/18/1970,,,1913,1970,F,deceased,W/O ROGER P LUCAS,wife_of,ROGER P LUCAS,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,148
+PV0149,LUCAS,MARY JANE,,,none,19009,unparseable,1999,year,1999,,,,1999,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,149
+PV0150,LUCAS,MATTHEW G,,1903-10-05,day,10/5/1903,,1941-01-27,day,1/27/1941,,,1903,1941,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,150
+PV0151,LUCAS,MARY C,,1882,year,1882,,1962,year,1962,,,1882,1962,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,151
+PV0152,LUCAS,HOWARD,,1891,year,1891,,1958,year,1958,,,1891,1958,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,152
+PV0153,LUCAS,LAWRENCE LEO,,1939,year,1939,,1958,year,1958,,,1939,1958,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,153
+PV0154,LUCAS,ELIZA B,,1902,year,1902,,1934,year,1934,,,1902,1934,F,deceased,W/O GARLAND G LUCAS,wife_of,GARLAND G LUCAS,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,154
+PV0155,LUCAS,GARLAND G,,1892,year,1892,,1955,year,1955,,,1892,1955,M,deceased,H/O ELIZA B LUCAS,husband_of,ELIZA B LUCAS,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,155
+PV0156,LUCAS,LOUISE E,,1909-06-16,day,06/16/1909,,1971-09-21,day,09/21/1971,,,1909,1971,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,156
+PV0157,LUCAS,CHARLES A,,1888,year,1888,,1957,year,1957,,,1888,1957,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,157
+PV0158,LUCAS,BERTHA,,1908-08-27,day,08/27/1908,,1969-02-02,day,02/02/1969,,,1908,1969,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,158
+PV0159,LUCAS,RUTH,,1920-07-09,day,07/09/1920,,1946-11-11,day,11/11/1946,,,1920,1946,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,159
+PV0160,MALLORY,HARRISON,,1921,year,1921,,1985,year,1985,,,1921,1985,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,160
+PV0161,MALLORY,HARRY & FAMILY,,,none,Unknown,,,none,Unknown,,,,,,deceased,,,,NO OTHER INFORMATION,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,161
+PV0162,MALLORY,BERNARD LEE,,1923,year,1923,,1979,year,1979,,,1923,1979,,deceased,,,,PVT USA WWII,PVT,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,162
+PV0163,MALLORY,HERBERT L,,1933,year,1933,,1954,year,1954,,,1933,1954,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,163
+PV0164,MALLORY,MARY LOUISE,,1920-01-17,day,01/17/1920,,1986-12-16,day,12/16/1986,,,1920,1986,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,164
+PV0165,MALLORY,JAMES,,1923-05-01,day,5/1/1923,,1977-04-04,day,4/4/1977,,,1923,1977,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,165
+PV0166,MALLOY JR,FLOYD,,1914,year,1914,,1991,year,1991,,,1914,1991,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,166
+PV0167,MARCELLUS,DOROTHY,,1904,year,1904,,1982,year,1982,,,1904,1982,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,167
+PV0168,MASON,SHIRLEY,,1894,year,1894,,1989,year,1989,,,1894,1989,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,168
+PV0169,MITCHELL,NORMAN,,1913,year,1913,,2001,year,2001,,,1913,2001,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,169
+PV0170,MITCHELL,CHARLES W,,1917-08-02,day,08/02/1917,,1996-04-01,day,04/01/1996,,,1917,1996,,deceased,,,,PFC USA WWII,WWII,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,170
+PV0171,MITCHELL,ANNIE M,,1911,year,1911,,1994,year,1994,,,1911,1994,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,171
+PV0172,MORINA,CHARLES W,,1914-02-24,day,02/24/1914,,1967-01-26,day,01/26/1967,,,1914,1967,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,172
+PV0173,MORRIS,A,,1907,year,1907,,1984,year,1984,,,1907,1984,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,173
+PV0174,MOTIN,SUE,,,none,Unknown,,,none,Unknown,,,,,,deceased,,,,"NO DATES, ON STONE WITH LAWRENCE LEO LUCAS",,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,174
+PV0175,MOTIN JR,DAVE,,,none,Unknown,,,none,Unknown,,,,,,deceased,,,,"NO DATES, ON STONE WITH LAWRENCE LEO LUCAS",,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,175
+PV0176,MOTIN SR,DAVE,,,none,Unknown,,,none,Unknown,,,,,,deceased,,,,"NO DATES, ON STONE WITH LAWRENCE LEO LUCAS",,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,176
+PV0177,MURRAY,JOSEPH D,,1918-05-24,day,05/24/1918,,1983-03-27,day,03/27/1983,,,1918,1983,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,177
+PV0178,MURRAY,WILLARD H,,1872-01-12,day,01/12/1872,,1927-07-02,day,07/02/1927,,,1872,1927,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,178
+PV0179,MURRAY JR,WALTER F,,1910-05-20,day,05/20/1910,,1969-06-01,day,06/01/1969,,,1910,1969,,deceased,,,,TEC 5 WWII,WWII,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,179
+PV0180,MYRICK,ANITA V,,1928,year,1928,,2002,year,2002,,,1928,2002,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,180
+PV0181,MYRICK,ANTHONY LEE,,1948,year,1948,,1992,year,1992,,,1948,1992,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,181
+PV0182,NICKENS,ROY L,,1925-04-16,day,04/16/1925,,1993-11-15,day,11/15/1993,,,1925,1993,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,182
+PV0183,NICKENS,ARTHUR [REV],,1890-07-16,day,07/16/1890,,1962-02-25,day,02/25/1962,,,1890,1962,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,183
+PV0184,OWENS,TRAVIS G,,1986,year,1986,,1987,year,1987,,,1986,1987,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,184
+PV0185,OWENS,JOANNA M,,1916-02-11,day,02/11/1916,,1994-04-20,day,04/20/1994,,,1916,1994,F,deceased,W/O JOHN G OWENS,wife_of,JOHN G OWENS,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,185
+PV0186,OWENS,KASAHN ISAIAH,,2000,year,2000,,2000,year,2000,,,2000,2000,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,186
+PV0187,OWENS,LONNIE CARSON,,1962,year,1962,,2002,year,2002,,,1962,2002,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,187
+PV0188,OWENS SR,JOHN G (JONNIE),,1907-12-25,day,12/25/1907,,1989-04-28,day,04/28/1989,,,1907,1989,M,deceased,H/O JOANNA M OWENS,husband_of,JOANNA M OWENS,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,188
+PV0189,PALMER,MARGUERITE E,,1914,year,1914,,1979,year,1979,,,1914,1979,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,189
+PV0190,PARMES,MARTHA T,,1894,year,1894,,1989,year,1989,,,1894,1989,,deceased,,,,WITH AMANDA R STEWART,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,190
+PV0191,PAYNE,TEULA LUCAS,,,none,Unknown,,,none,Unknown,,,,,,deceased,,,,NO DATES,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,191
+PV0192,RAMEY,DANIEL G,,1920-12-09,day,12/09/1920,,1982-03-15,day,03/15/1982,,,1920,1982,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,192
+PV0193,RAMEY,BEVERLY,,1896-07-11,day,07/11/1896,,1856-05-31,day,05/31/1856,,,1896,1856,,deceased,,,,DATES ARE QUESTIONABLE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,193
+PV0194,RAMEY,HELEN,,1946-10-30,day,10/30/1946,,1964-10-13,day,10/13/1964,,,1946,1964,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,194
+PV0195,RAMEY,MARY JANE,,1869,year,1869,,1957,year,1957,,,1869,1957,F,deceased,W/O WILLIAM RAMEY,wife_of,WILLIAM RAMEY,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,195
+PV0196,RAMEY,WILLIAM,,1870,year,1870,,1957,year,1957,,,1870,1957,M,deceased,H/O MARY JANE RAMEY,husband_of,MARY JANE RAMEY,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,196
+PV0197,RAMEY,CARROLL,,1904,year,1904,,1982,year,1982,,,1904,1982,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,197
+PV0198,RAMEY,ROBERT P,,1926-01-01,day,01/01/1926,,1993-11-14,day,11/14/1993,,,1926,1993,,deceased,,,,STM1 USN WWII,USN,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,198
+PV0199,RECTOR,JOHN T,,1846-09-20,day,09/20/1846,,1928-02-23,day,02/23/1928,,,1846,1928,M,deceased,H/O RACHEL B RECTOR,husband_of,RACHEL B RECTOR,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,199
+PV0200,RECTOR,RACHEL B,,1850-12-01,day,12/1/1850,,,none,Unknown,,,1850,,F,deceased,W/O JOHN T RECTOR,wife_of,JOHN T RECTOR,NO DEATH DATE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,200
+PV0201,REDMOND,ROSA LEE W,,1880-05-07,day,05/07/1880,,1966-01-04,day,01/04/1966,,,1880,1966,F,deceased,W/O ABRAHAM L REDMOND,wife_of,ABRAHAM L REDMOND,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,201
+PV0202,REDMOND,ABRAHAM L,,1888-03-30,day,03/30/1888,,1973-06-24,day,06/24/1973,,,1888,1973,M,deceased,H/O ROSA LEE W REDMOND,husband_of,ROSA LEE W REDMOND,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,202
+PV0203,REDMOND,J H,,,none,Unknown,,,none,Unknown,,,,,,deceased,,,,FAMILY STONE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,203
+PV0204,REDMOND,CHARLES P,,1896,year,1896,,,none,Unknown,,,1896,,,no_death_on_stone,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,204
+PV0205,REDMOND,MARIE J,,1900,year,1900,,1971,year,1971,,,1900,1971,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,205
+PV0206,REEVES,MILDRED C,,1903,year,1903,,1995,year,1995,,,1903,1995,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,206
+PV0207,REID,HENRY G,,1922,year,1922,,1988,year,1988,,,1922,1988,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,207
+PV0208,REID,ELVA,,1927,year,1927,,2000,year,2000,,,1927,2000,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,208
+PV0209,ROBINSON,JACK L,,1942,year,1942,,1998,year,1998,,,1942,1998,,deceased,,,,GREEN FUNERAL HOME MARKER,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,209
+PV0210,ROBINSON,STANLEY EDWARD,,1900,year,1900,,1994,year,1994,,,1900,1994,M,deceased,H/O MOLLIE ELIZABETH ROBINSON,husband_of,MOLLIE ELIZABETH ROBINSON,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,210
+PV0211,ROBINSON,MOLLIE ELIZABETH,,1903,year,1903,,2000,year,2000,,,1903,2000,F,deceased,W/O STANLEY EDWARD ROBINSON,wife_of,STANLEY EDWARD ROBINSON,NO DEATH DATE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,211
+PV0212,ROBINSON,G E,,,none,Unknown,,1989,year,1989,,,,1989,,deceased,,,,NO BIRTH DATE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,212
+PV0213,ROBINSON,SOPHIE ANN,,1918,year,1918,,1970,year,1970,,,1918,1970,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,213
+PV0214,ROBINSON,JACK,,1898-01-16,day,01/16/1898,,1985-05-02,day,05/02/1985,,,1898,1985,,deceased,,,,US ARMY WWI,US ARMY,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,214
+PV0215,ROBINSON,ELLA V,,1865-05-08,day,05/08/1865,,1942-07-05,day,07/05/1942,,,1865,1942,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,215
+PV0216,ROWE,JOSEPHINE E,,1916,year,1916,,1973,year,1973,,,1916,1973,F,deceased,W/O CLAYTON E ROWE,wife_of,CLAYTON E ROWE,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,216
+PV0217,ROWE,CLAYTON E,,1913-01-09,day,01/09/1913,,1989-08-30,day,08/30/1989,,,1913,1989,M,deceased,H/O JOSEPHINE E ROWE,husband_of,JOSEPHINE E ROWE,CPL US ARMY WWII,US ARMY,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,217
+PV0218,ROWE,HERSEY W,,1882,year,1882,,1928,year,1928,,,1882,1928,,deceased,,,,NEXT TO JANET S ROWE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,218
+PV0219,ROWE,JANET S,,1891,year,1891,,1969,year,1969,,,1891,1969,,deceased,,,,NEXT TO HERSEY W ROWE,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,219
+PV0220,SANFORD,ARTHUR W,,1923,year,1923,,1985,year,1985,,,1923,1985,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,220
+PV0221,SANFORD,HENRIETTA PAYNE,,,none,Unknown,,,none,Unknown,,,,,,deceased,,,,NO DATES,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,221
+PV0222,SCOTT,PEGGY E,,1941,year,1941,,1989,year,1989,,,1941,1989,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,222
+PV0223,SHAW,HELEN J,,1914-01-15,day,01/15/1914,,1991-02-08,day,02/08/1991,,,1914,1991,F,deceased,W/O BERNARD SHAW SR,wife_of,BERNARD SHAW SR,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,223
+PV0224,SHAW SR,BERNARD,,1914-09-05,day,09/05/1914,,1992-12-25,day,12/25/1992,,,1914,1992,M,deceased,H/O HELEN J SHAW,husband_of,HELEN J SHAW,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,224
+PV0225,SIMMS,LELA E,,1895,year,1895,,1956,year,1956,,,1895,1956,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,225
+PV0226,SIMMS,CHARLES PEARLE,,1894-08-19,day,08/19/1894,,1979-02-04,day,02/04/1979,,,1894,1979,,deceased,,,,US ARMY WWI,US ARMY,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,226
+PV0227,SIMMS,ALBERTA,,1912,year,1912,,1991,year,1991,,,1912,1991,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,227
+PV0228,SMITH,EDWARD LEE,,1941,year,1941,,1957,year,1957,,,1941,1957,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,228
+PV0229,SMITH,BLANCHE L,,1929,year,1929,,1960,year,1960,,,1929,1960,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,229
+PV0230,SMITH,JAMES N,,1927-08-23,day,8/23/1927,,2002-03-26,day,3/26/2002,,,1927,2002,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,230
+PV0231,SMITH,JOSEPHINE N,,1909-08-21,day,8/21/1909,,1953-12-23,day,12/23/1953,,,1909,1953,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,231
+PV0232,SMITH,NATHANIEL,,1903-03-08,day,3/8/1903,,1996-10-04,day,10/4/1996,,,1903,1996,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,232
+PV0233,SMITH,EMMA MAY,,1892,year,1892,,1980,year,1980,,,1892,1980,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,233
+PV0234,SMITH,JOSEPH J,,1909-08-21,day,08/21/1909,,1953-12-23,day,12/23/1953,,,1909,1953,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,234
+PV0235,STEWART,AMANDA R,,1891,year,1891,,1986,year,1986,,,1891,1986,,deceased,,,,WITH MARTHA T PARMES,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,235
+PV0236,THOMAS,ANNA MORRIS,,1935,year,1935,,1972,year,1972,,,1935,1972,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,236
+PV0237,THOMAS,LUCY B,,1894,year,1894,,1947,year,1947,,,1894,1947,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,237
+PV0238,THOMPSON,ELLA C,,1907-06-13,day,06/13/1907,,1989-12-01,day,12/01/1989,,,1907,1989,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,238
+PV0239,THOMPSON,THOMAS E,,1910-04-16,day,04/16/1910,,1991-01-02,day,01/02/1991,,,1910,1991,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,239
+PV0240,THOMPSON,CHRISTINE E,,1939-12-31,day,12/31/1939,,2000-04-11,day,4/11/2000,,,1939,2000,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,240
+PV0241,THOMPSON,HAL,,1871-11-15,day,11/15/1871,,1959-01-04,day,1/4/1959,,,1871,1959,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,241
+PV0242,THOMPSON,JAMES JOSEPH,,1912-09-22,day,9/22/1912,,1992-12-06,day,12/6/1992,,,1912,1992,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,242
+PV0243,THOMPSON III,THOMAS E,,,none,Unknown,,1966-03-04,day,3/4/1966,,,,1966,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,243
+PV0244,THOMPSON JR,THOMAS E,,1935-02-02,day,2/2/1935,,,none,Unknown,,,1935,,,no_death_on_stone,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,244
+PV0245,TRAMMEL JR,THOMAS W,,1946-03-05,day,03/05/1946,,1973-07-30,day,07/30/1973,,,1946,1973,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,245
+PV0246,TRAMMEL SR,THOMAS W,,1927-05-14,day,05/14/1927,,1994-12-19,day,12/19/1994,,,1927,1994,,deceased,,,,PFC US ARMY WWII,US ARMY,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,246
+PV0247,TRAMMELL,BERNARD E,,1922-03-22,day,03/22/1922,,1992-08-17,day,08/17/1992,,,1922,1992,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,247
+PV0248,TRAMMELL,ELIZABETH,,1884,year,1884,,1967,year,1967,,,1884,1967,F,deceased,W/O SOMERFIELD THOMPSON,wife_of,SOMERFIELD THOMPSON,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,248
+PV0249,TRAMMELL,SOMERFIELD,,1874,year,1874,,1913,year,1913,,,1874,1913,M,deceased,H/O ELIZABETH THOMPSON,husband_of,ELIZABETH THOMPSON,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,249
+PV0250,TRAMMELL,MAY L,,1928-07-11,day,7/11/1928,,1999-04-13,day,4/13/1999,,,1928,1999,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,250
+PV0251,WALLACE,MARY ELIZABETH,,1919-11-02,day,11/2/1919,,1999-04-10,day,4/10/1999,,,1919,1999,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,251
+PV0252,WALLACE,ELL JACKSON,,1931,year,1931,,1987,year,1987,,,1931,1987,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,252
+PV0253,WARD,CHARLES LEO,,1931-06-10,day,06/10/1931,,1995-02-06,day,02/06/1995,,,1931,1995,,deceased,,,,PVT US ARMY,PVT,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,253
+PV0254,WARREN,AUDREY VIRGINIA,,1921,year,1921,,1996,year,1996,,,1921,1996,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,254
+PV0255,WATERS,LAURA V,,1892-05-16,day,05/16/1892,,1979-06-19,day,06/19/1979,,,1892,1979,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,255
+PV0256,WATERS,JEROME H,,1933,year,1933,,1988,year,1988,,,1933,1988,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,256
+PV0257,WATERS,FANNIE G,,1889-04-25,day,4/25/1889,,1932-07-25,day,7/25/1932,,,1889,1932,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,257
+PV0258,WATKINS,JOSEPH,,1881,year,1881,,,none,19--,unparseable,,1881,,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,258
+PV0259,WATKINS,ROOSEVELT,,1906,year,1906,,1969,year,1969,,,1906,1969,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,259
+PV0260,WEBB,,,,none,Unknown,,,none,Unknown,,,,,,deceased,,,,NO DATES OR NAMES,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,260
+PV0261,WEBB,ROSIE THOMAS,,1917,year,1917,,1992,year,1992,,,1917,1992,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,261
+PV0262,WHITE,LAWRENCE,,1902-12-25,day,12/25/1902,,1948-06-27,day,06/27/1948,,,1902,1948,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,262
+PV0263,WILEY,SUSIE,,1915,year,1915,,1988,year,1988,,,1915,1988,,deceased,,,,,,"Pleasant Valley Cemetery, Hamilton, VA",balch-db,263

@@ -1,0 +1,521 @@
+# FamilySearch Image Index, 1910 census, Loudoun, Jefferson district, ED 62, 34 images (images 1-11 scraped). image|name|age|race|rel|sheet
+# Images 1-8 = sheets 1A-4B: the Jefferson-district side of Hamilton and its outskirts (F.J. Beans, Heaton, Hough, Merchant, Rinker, Paxson, McGavack, Vandevanter, Spratt, Pratt; Black households Gaskins, Collins, Jackson, Page, Coates, Dean, Robinson, Lewis, Burton, Mallory, Simms, Walker).
+# Images 9-11 = sheets 5A-6A: Horthorne, Ayre, Kimes, Beach, Kirby, Peacock, Myers, Painter, Vanscler, Ward, Pearson, Palmer, Fox - rural Jefferson beyond the town.
+1|Luther G Brown|42|W|Head|A1
+1|Malinda Brown|13|W|Moth|A1
+1|Violet Jones|16|B|Serv|A1
+1|J Israel Brown|48|W|Head|A1
+1|Lilly Brown|37|W|Wife|A1
+1|Earl L Brown|12|W|Son|A1
+1|Emerson C Brown|1|W|Son|A1
+1|Elizabeth Hough|35|W|Sist|A1
+1|Walter P Brown|45|W|Head|A1
+1|Gussie I Brown|35|W|Wife|A1
+1|Elizabeth P Brown|1|W|Daug|A1
+1|Jane E Berry|74|W|Moth|A1
+1|J R Walker|63|W|Head|A1
+1|M R Williams|73|W|Sist|A1
+1|Amy A Simms|68|M|Serv|A1
+1|A S Bates|47|W|Boar|A1
+1|Dan Walker|46|B|Head|A1
+1|Violet Walker|67|M|Wife|A1
+1|Henrietta Simms|35|B|Head|A1
+1|Lizzie Taylor|70|M|Moth|A1
+1|William M Fling|42|W|Head|A1
+1|Fannie S Fling|40|W|Wife|A1
+1|Mary L Fling|20|W|Daug|A1
+1|Maynard W Fling|18|W|Son|A1
+1|Lillian E Fling|11|W|Daug|A1
+1|William T Fling|8|W|Son|A1
+1|Emerson S Fling|3|W|Son|A1
+1|Dorothy C Fling|2|W|Daug|A1
+1|Mary T Sherman|62|W|Moth|A1
+1|Earnest L James|46|W|Head|A1
+1|Minor L James|16|W|Son|A1
+1|Howard W James|11|W|Son|A1
+1|Margaret E James|9|W|Daug|A1
+1|Jennings J James|8|W|Son|A1
+1|Eleanor W James|4|W|Daug|A1
+1|Margaret T Minor|46|W|Sist|A1
+1|Samuel E Hawes|58|W|Head|A1
+1|Mary E Hawes|40|W|Wife|A1
+1|William E Hawes|19|W|Son|A1
+1|Arthur C Hawes|14|W|Son|A1
+1|Essie M Hawes|10|W|Daug|A1
+1|Lizzie Simms|44|M|Head|A1
+1|Charles Simms|15|M|Son|A1
+1|Violet Simms|49|M|Sist|A1
+1|Roy Jones|8|M|Neph|A1
+1|Thomas Lee|37|M|Boar|A1
+1|Nora Simms|27|M|Head|A1
+1|Robert Simms|6|M|Son|A1
+1|Elmer Simms|4|M|Son|A1
+2|Edward Gaskins|48|B|Head|B1
+2|Hampton Gaskins|19|M|Son|B1
+2|Edgar C James|49|W|Head|B1
+2|Lizzie James|49|W|Wife|B1
+2|Herbert H James|22|W|Son|B1
+2|Robert R James|18|W|Son|B1
+2|Mary F James|17|W|Daug|B1
+2|Helen S James|15|W|Daug|B1
+2|Carrie L James|12|W|Daug|B1
+2|J W McKinney|57|W|Head|B1
+2|Virginia McKinney|59|W|Wife|B1
+2|Clarence B James|27|W|Head|B1
+2|Nettie James|24|W|Wife|B1
+2|Elmer James|4|W|Son|B1
+2|Susie James|1|W|Daug|B1
+2|Arthur Jackson|29|B|Head|B1
+2|Minnie Jackson|27|M|Wife|B1
+2|Albert Jackson|5|M|Son|B1
+2|Mozell Jackson|4|M|Daug|B1
+2|Emma Jackson|2|M|Daug|B1
+2|Charles H Jackson|0|M|Son|B1
+2|Mime Gaskins|80|B|Head|B1
+2|Forest Gaskins|25|B|Gran|B1
+2|Arthur K Paxson|32|W|Head|B1
+2|Maud A Paxson|31|W|Wife|B1
+2|Elsie Paxson|12|W|Daug|B1
+2|Lola Paxson|10|W|Daug|B1
+2|Arthur Paxson|8|W|Son|B1
+2|Chester Paxson|6|W|Son|B1
+2|Gussie McPhearson|21|W|Niec|B1
+2|J Oscar Hanvey|59|W|Head|B1
+2|Marth E Hanvey|54|W|Wife|B1
+2|Charles C Divine|67|W|Head|B1
+2|Eugenia Divine|50|W|Wife|B1
+2|Robert Graham|71|W|Head|B1
+2|Sarah Graham|68|W|Wife|B1
+2|Annie C Keyes|73|W|Head|B1
+2|James W Russell|76|W|Head|B1
+2|Harriett J Russell|78|W|Wife|B1
+2|Harry C Russell|48|W|Son|B1
+2|Laura Page|68|B|Head|B1
+2|Elliott Page|6|B|Gran|B1
+2|Henry Collins|33|B|Head|B1
+2|Bearty Collins|40|M|Wife|B1
+2|Lizzie Collins|18|M|Daug|B1
+2|Louise Collins|6|M|Daug|B1
+2|Morris Simms|2|M|Gran|B1
+2|Dorothy Simms|0|M|Gran|B1
+3|Bernard Hough|32|W|Head|A2
+3|Lula Hough|32|W|Wife|A2
+3|Ruth Hough|11|W|Daug|A2
+3|Reginald Hough|6|W|Son|A2
+3|Stanley Hough|4|W|Son|A2
+3|Emma Hanvey|54|W|Head|A2
+3|Martha Hanvey|61|W|Sist|A2
+3|Frances A Mullen|75|W|Head|A2
+3|Florence V Mullen|40|W|Daug|A2
+3|Edgar O Mullen|49|W|Son|A2
+3|Agnes L Mullen|17|W|Gran|A2
+3|J Elbert Divine|36|W|Head|A2
+3|Nannie M Divine|31|W|Wife|A2
+3|William Coates|62|M|Head|A2
+3|Emma J Coates|53|M|Wife|A2
+3|Alfred Coates|11|M|Gran|A2
+3|Clarence Coates|10|M|Gran|A2
+3|Earnest L Skinner|38|W|Head|A2
+3|Della Skinner|34|W|Wife|A2
+3|Eva Skinner|13|W|Daug|A2
+3|Mamie Skinner|7|W|Daug|A2
+3|Earnest Skinner|4|W|Son|A2
+3|Heaton Skinner|3|W|Son|A2
+3|George Skinner|1|W|Son|A2
+3|Julia A Weems|47|M|Head|A2
+3|Mattie Johnson|24|M|Boar|A2
+3|Charles Moreland|59|W|Head|A2
+3|Ella Moreland|27|W|Daug|A2
+3|Alice Moreland|3|W|Gran|A2
+3|Samuel Boyd|60|M|Head|A2
+3|Lydia Boyd|47|M|Wife|A2
+3|Anna Rinker|65|W|Head|A2
+3|Lawrence Rinker|42|W|Son|A2
+3|Thomas Rinker|35|W|Son|A2
+3|Ed B Myers|45|W|Head|A2
+3|Daisy Myers|35|W|Wife|A2
+3|Leslie Myers|15|W|Son|A2
+3|Douglas Myers|12|W|Son|A2
+3|Bruce Myers|8|W|Son|A2
+3|E Frank Rinker|56|W|Head|A2
+3|Florence Rinker|41|W|Wife|A2
+3|Lydia A Virts|87|W|Head|A2
+3|Frank Hanvey|24|W|Head|A2
+3|Texie E Hanvey|23|W|Wife|A2
+3|Edith B Walker|51|W|Head|A2
+3|Grace Barlow|54|M|Serv|A2
+3|Charlie Mallory|58|M|Head|A2
+3|Mary E Mallory|57|M|Wife|A2
+3|Horace Gaskins|24|M|Head|A2
+3|Dillie Gaskins|23|M|Wife|A2
+4|John S Densmore|64|W|Head|B2
+4|Anne E Densmore|63|W|Wife|B2
+4|Robert Densmore|33|W|Son|B2
+4|Isaac S Hough|69|W|Head|B2
+4|Amanda H Hough|65|W|Wife|B2
+4|Clarice Hough|42|W|Daug|B2
+4|Edward T White|65|W|Head|B2
+4|Elizabeth White|60|W|Wife|B2
+4|Spenser Virts|42|W|Head|B2
+4|Nina Virts|40|W|Wife|B2
+4|Marion Virts|10|W|Daug|B2
+4|Mozelle Virts|5|W|Daug|B2
+4|George W Dean|60|M|Head|B2
+4|Elizabeth Dean|59|M|Wife|B2
+4|Barxstall Hestard|8|M|Gran|B2
+4|Charles Dean|7|M|Gran|B2
+4|Richard E Collins|62|M|Head|B2
+4|Mary E Collins|55|M|Wife|B2
+4|(blank)|59|M|Head|B2
+4|Mattie Clagette|44|M|Niec|B2
+4|Alphozo Palmer|73|W|Head|B2
+4|Anna E Palmer|56|W|Wife|B2
+4|Benar W Paxson|63|W|Head|B2
+4|Mary E Paxson|63|W|Wife|B2
+4|Amos Beans|60|W|Head|B2
+4|Phoebe E Beans|60|W|Wife|B2
+4|Edgar H Beans|27|W|Son|B2
+4|Mary B Fox|31|W|Daug|B2
+4|Mary V Fox|10|W|Gran|B2
+4|Anita L Fox|6|W|Gran|B2
+4|Noble Robinson|56|M|Head|B2
+4|Emma Robinson|48|M|Wife|B2
+4|George Robinson|22|M|Son|B2
+4|Ada Robinson|21|M|Daug|B2
+4|Sarah Robinson|18|M|Daug|B2
+4|Walker Robinson|17|M|Son|B2
+4|Robert Robinson|15|M|Son|B2
+4|Hesie Robinson|11|M|Daug|B2
+4|James Lewis|69|B|Head|B2
+4|Mary Lewis|38|M|Wife|B2
+4|Cole B Rinker|36|W|Head|B2
+4|Della Rinker|25|W|Wife|B2
+4|William M Rinker|4|W|Son|B2
+4|Thelma E Rinker|0|W|Daug|B2
+4|William J Werking|86|W|Fath|B2
+4|Annie E Werking|60|W|Moth|B2
+4|Hecter O C Hough|60|W|Head|B2
+4|Jane E Hough|48|W|Wife|B2
+4|Sherman Hough|18|W|Son|B2
+4|Mary Hough|14|W|Daug|B2
+5|Charles A Everhart|45|W|Head|A3
+5|Emma Everhart|40|W|Wife|A3
+5|William E Virts|30|W|Brot|A3
+5|John T Corbin|50|W|Head|A3
+5|Lena Corbin|35|W|Sist|A3
+5|Harvey B Parker|23|W|Head|A3
+5|Bessie A Parker|20|W|Wife|A3
+5|Joseph T Divine|68|W|Head|A3
+5|Clara W Divine|39|W|Daug|A3
+5|Herbert Divine|20|W|Son|A3
+5|Jane Roberts|88|W|Moth|A3
+5|Samuel L Moore|67|W|Head|A3
+5|Kate J Moore|58|W|Wife|A3
+5|Lelia J Moore|34|W|Daug|A3
+5|W Hunter Moore|23|W|Son|A3
+5|Herbert James|21|W|Head|A3
+5|Cora James|20|W|Wife|A3
+5|William Shawen|58|W|Head|A3
+5|Mary Shawen|53|W|Sist|A3
+5|John D Spinks|59|W|Head|A3
+5|Nancy C Spinks|53|W|Wife|A3
+5|Nora B Spinks|19|W|Daug|A3
+5|Katheryn L Spinks|16|W|Daug|A3
+5|Essie I Spinks|12|W|Daug|A3
+5|Margaret G Haines|44|W|Head|A3
+5|James H Mock|68|W|Head|A3
+5|Mary E Mock|66|W|Wife|A3
+5|Mollie Sheas|52|W|Head|A3
+5|Alice Berg|51|W|Sist|A3
+5|Archie L Shomaker|23|W|Head|A3
+5|Ada Shomaker|24|W|Wife|A3
+5|Amanda Shawen|45|W|Head|A3
+5|Hugh Shawen|16|W|Son|A3
+5|Elsie Shawen|8|W|Daug|A3
+5|Reginald Shawen|6|W|Son|A3
+5|Olive Shawen|4|W|Daug|A3
+5|Bruce Eamick|28|W|Head|A3
+5|Daisy Eamick|31|W|Wife|A3
+5|Carroll Eamick|4|W|Son|A3
+5|John Eamick|66|W|Fath|A3
+5|Elton James|39|W|Head|A3
+5|Nellie James|35|W|Wife|A3
+5|Louise James|12|W|Daug|A3
+5|Katheryn James|10|W|Daug|A3
+5|Elizabeth James|0|W|Daug|A3
+5|Alice A Moore|55|W|Head|A3
+5|Lula T Moore|53|W|Sist|A3
+5|Rosalie Moore|50|W|Sist|A3
+5|Virginia H Mansfield|62|W|Head|A3
+6|Charlie Merchant|42|W|Head|B3
+6|Mamie Merchant|40|W|Wife|B3
+6|Leo Merchant|5|W|Son|B3
+6|Edward Merchant|1|W|Son|B3
+6|James K Merchant|76|W|Head|B3
+6|Sarah K Merchant|62|W|Wife|B3
+6|Clarence Merchant|28|W|Son|B3
+6|Hunton H Heaton|44|W|Head|B3
+6|Mattie D Heaton|38|W|Wife|B3
+6|Natheniel Heaton|17|W|Son|B3
+6|Dora L Heaton|15|W|Daug|B3
+6|Julian M Heaton|13|W|Son|B3
+6|R Townsend Heaton|10|W|Son|B3
+6|James F Heaton|4|W|Son|B3
+6|Lelia Sims|15|B|Serv|B3
+6|Elizabeth J Philips|82|W|Head|B3
+6|Martha L Sidwell|80|W|Sist|B3
+6|Mary E Minor|76|W|Head|B3
+6|Jackson Minor|44|W|Son|B3
+6|Nellie Minor|31|W|Daug|B3
+6|Arch R Mullen|32|W|Head|B3
+6|Cora Mullen|30|W|Wife|B3
+6|Robert Mullen|2|W|Son|B3
+6|Frances Mullen|0|W|Daug|B3
+6|Robert W Hough|65|W|Fath|B3
+6|Flavius J Beans|62|W|Head|B3
+6|Rosie Beans|51|W|Wife|B3
+6|Carie Beans|23|W|Daug|B3
+6|Margaret Monroe|21|W|Boar|B3
+6|Charles W Virsts|65|W|Head|B3
+6|Carrie Furr|26|W|Daug|B3
+6|Annie Minor|60|M|Head|B3
+6|Wilmer Rinker|35|W|Head|B3
+6|Hattie Rinker|37|W|Wife|B3
+6|Annie May Rinker|6|W|Daug|B3
+6|Louise Rinker|5|W|Daug|B3
+6|Dorothy Rinker|3|W|Daug|B3
+6|Cornelia Rinker|0|W|Daug|B3
+6|Decatur H Vandavanter|62|W|Head|B3
+6|Carrie Vandavanter|42|W|Wife|B3
+6|Lemuel P Smith|58|W|Head|B3
+6|Ella W Smith|62|W|Wife|B3
+6|Andrew M Hough|58|W|Head|B3
+6|Edith V Hough|53|W|Wife|B3
+6|Andrew L McGavack|40|W|Head|B3
+6|Addie V McGavack|34|W|Wife|B3
+6|Andrew L McGavack, Jr|6|W|Son|B3
+6|Martha Parms|16|B|Serv|B3
+7|Robert R Walker|59|W|Head|A4
+7|Eliza N Walker|51|W|Wife|A4
+7|Cornelia N Walker|17|W|Daug|A4
+7|Ella M Jackson|50|M|Serv|A4
+7|Mary I Hough|72|W|Head|A4
+7|William E Steir|16|W|Brot|A4
+7|Sarah A Walker|72|W|Head|A4
+7|Ella Steer|66|W|Sist|A4
+7|Rachiel Steer|96|W|Boar|A4
+7|Frank M Steer|75|W|Head|A4
+7|Mary F Steer|69|W|Wife|A4
+7|L Kate Paxson|58|W|Head|A4
+7|Jessie L Rickard|35|W|Daug|A4
+7|Raymond Paxson|20|W|Son|A4
+7|Ida Russell|50|W|Head|A4
+7|Minnie E Russell|42|W|Sist|A4
+7|Edmonia Russell|39|W|Sist|A4
+7|Delia Jones|34|B|Head|A4
+7|Inez Jones|14|B|Daug|A4
+7|Myriah McCuvens|60|B|Head|A4
+7|William Clark|35|M|Head|A4
+7|Susan Clark|60|B|Wife|A4
+7|Malinda Rucker|49|M|Head|A4
+7|Isaac Rucker|13|M|Son|A4
+7|Ella Rucker|12|M|Daug|A4
+7|William C James|50|W|Head|A4
+7|M Cecelia James|50|W|Wife|A4
+7|Arthur A James|28|W|Son|A4
+7|Frederick C James|21|W|Son|A4
+7|Imogene M James|19|W|Daug|A4
+7|Virginia Mallery|62|B|Head|A4
+7|John F F Gray|60|W|Head|A4
+7|Margaret V Gray|52|W|Wife|A4
+7|Alexander N Perryman|35|W|Head|A4
+7|Viola Perryman|33|W|Wife|A4
+7|Virginia Perryman|6|W|Daug|A4
+7|Marion Perryman|4|W|Daug|A4
+8|William E Paxson|46|W|Head|B4
+8|May Russell Paxson|48|W|Wife|B4
+8|Louise R Paxson|12|W|Daug|B4
+8|Lula C Baker|27|W|Head|B4
+8|Clarke Baker|7|W|Son|B4
+8|Claud Baker|4|W|Son|B4
+8|Nellie M Baker|0|W|Daug|B4
+8|James P Spratt Sr|57|W|Head|B4
+8|Lenora Spratt|43|W|Wife|B4
+8|Anne Spratt|20|W|Daug|B4
+8|Lola Spratt|18|W|Daug|B4
+8|John Spratt|16|W|Son|B4
+8|George Spratt|14|W|Son|B4
+8|Samuel Spratt|10|W|Son|B4
+8|Dorothy Spratt|7|W|Daug|B4
+8|James P Spratt Jr|5|W|Son|B4
+8|Charles P Shry|38|W|Head|B4
+8|Bertha L Shry|26|W|Wife|B4
+8|Alice V Shry|8|W|Daug|B4
+8|Wilbert P Shry|6|W|Son|B4
+8|Silby L Shry|4|W|Daug|B4
+8|Lillie M Shry|2|W|Daug|B4
+8|James D Pratt|60|W|Head|B4
+8|Lillie E Pratt|42|W|Wife|B4
+8|Otway Pratt|21|W|Son|B4
+8|Florence R Pratt|19|W|Daug|B4
+8|Lillian A Pratt|16|W|Daug|B4
+8|Alton Pratt|13|W|Son|B4
+8|Dallas Pratt|10|W|Son|B4
+8|Samuel Pratt|7|W|Son|B4
+8|Kenneth Pratt|5|W|Son|B4
+8|Eliza H Baldwin|84|W|Moth|B4
+8|John Burton|56|B|Head|B4
+8|Fannie Burton|59|?|Wife|B4
+8|Fannie Burton|22|M|Daug|B4
+8|Elizabeth Burton|20|M|Daug|B4
+8|Beartee Burton|15|M|Daug|B4
+8|Leona Burton|13|M|Daug|B4
+8|James Burton|8|M|Son|B4
+8|Philipp Burton|4|M|Gran|B4
+8|Wilber Burton|3|M|Gran|B4
+8|Christopher Jones|2|M|Gran|B4
+8|Earlston Mallory|0|M|Gran|B4
+8|Guy Mallory|22|M|Son-|B4
+8|Leslie Page|13|M|Gran|B4
+9|Noah Horthorne|51|W|Head|A5
+9|Hettie Horthorne|42|W|Wife|A5
+9|Hugh R Horthorne|24|W|Son|A5
+9|Mary L Horthorne|22|W|Daug|A5
+9|Elizabeth Horthorne|20|W|Daug|A5
+9|Frank Horthorne|18|W|Son|A5
+9|Dell Horthorne|15|W|Son|A5
+9|David Horthorne|11|W|Son|A5
+9|Laura E Horthorne|8|W|Daug|A5
+9|Kyle G Horthorne|5|W|Son|A5
+9|James Horthorne|2|W|Son|A5
+9|Henry Dean|54|B|Head|A5
+9|Susan Dean|54|M|Wife|A5
+9|Emma F Dean|9|M|Daug|A5
+9|Pauline Curtis|6|M|Niec|A5
+9|Richard Curtis|2|B|Neph|A5
+9|James Kimes|38|W|Head|A5
+9|Annie Kimes|28|W|Wife|A5
+9|Nillie L Kimes|7|W|Daug|A5
+9|Martha Kimes|4|W|Daug|A5
+9|George Kimes|81|W|Fath|A5
+9|Martha F Kimes|78|W|Moth|A5
+9|Natheniel Beach|31|W|Head|A5
+9|Nellie Beach|22|W|Wife|A5
+9|Edward V Ayre|53|W|Head|A5
+9|Annie B Ayre|46|W|Wife|A5
+9|Ethivian Ayre|21|W|Son|A5
+9|Ethel H Ayre|19|W|Daug|A5
+9|Annie L Ayre|16|W|Daug|A5
+9|Irene Ayre|15|W|Daug|A5
+9|Edward S Ayre|7|W|Son|A5
+9|George S Ayre|93|W|Fath|A5
+9|William Mathers|42|W|Head|A5
+9|Bell Mathers|38|W|Wife|A5
+9|Mary Mathers|12|W|Daug|A5
+9|Isabel Mathers|10|W|Daug|A5
+9|Leolan Mathers|5|W|Son|A5
+9|Allie B Butts|27|W|Head|A5
+9|Sadie G Butts|25|W|Wife|A5
+9|Robert E Woctman|5|W|Son|A5
+9|Viola M Butts|3|W|Daug|A5
+9|Charles Hill|56|W|Head|A5
+9|Kate Hill|51|W|Wife|A5
+9|Essie M Hill|24|W|Daug|A5
+9|John Reed|55|W|Head|A5
+9|Ida V Reed|50|W|Wife|A5
+9|Robert Reed|18|W|Son|A5
+9|Raymond Reed|13|W|Son|A5
+9|J Carroll Baker|1|W|Gran|A5
+10|Stephen Beach|28|W|Head|B5
+10|Louisa Beach|27|W|Sist|B5
+10|Herbert Beach|20|W|Brot|B5
+10|Virginia Beach|59|W|Moth|B5
+10|Paxton Kirby|29|W|Head|B5
+10|Jennie Kirby|27|W|Wife|B5
+10|E Pauline Kirby|4|W|Daug|B5
+10|Mary L Kirby|2|W|Daug|B5
+10|Elsie S Kirby|1|W|Daug|B5
+10|Charlie Simms|50|M|Head|B5
+10|Sarah Simms|47|M|Wife|B5
+10|Mary Simms|14|M|Daug|B5
+10|Sarah B Simms|5|M|Daug|B5
+10|John Berton|26|B|Head|B5
+10|Rachiel Berton|28|B|Wife|B5
+10|Dwelvin Wise|9|M|Boar|B5
+10|Edgar Peacock|52|W|Head|B5
+10|Mary C Peacock|47|W|Wife|B5
+10|Arthur R Peacock|23|W|Son|B5
+10|Robert L Myers|52|W|Head|B5
+10|Annie B Myers|48|W|Wife|B5
+10|Victor L Myers|19|W|Son|B5
+10|Ester Viola Myers|16|W|Daug|B5
+10|George Burns|17|W|Hire|B5
+10|Chester R Wood|23|W|Head|B5
+10|Olive Wood|23|W|Wife|B5
+10|Robert N Wood|1|W|Son|B5
+10|William R Thomas|42|W|Head|B5
+10|Viola Thomas|42|W|Wife|B5
+10|Lavenia Thomas|12|W|Daug|B5
+10|Margaret Thomas|8|W|Daug|B5
+10|James W Russell|60|W|Head|B5
+10|Alice G Russell|54|W|Wife|B5
+10|Georgia Russell|16|W|Daug|B5
+10|Elizabeth J Russell|79|W|Moth|B5
+10|Charles Bentley|61|B|Head|B5
+10|Jennie Bentley|58|M|Wife|B5
+10|Wade Bentley|16|M|Son|B5
+10|George W Painter|35|W|Head|B5
+10|Mary E Painter|30|W|Wife|B5
+10|Earnest H Painter|10|W|Son|B5
+10|Ada E Painter|7|W|Daug|B5
+10|Lillian I Painter|5|W|Daug|B5
+10|Leeroy A Painter|4|W|Son|B5
+10|Edgar A Painter|2|W|Son|B5
+10|Turner W Darr|59|W|Fath|B5
+11|John E Vanscler|45|W|Head|A6
+11|Kate Vanscler|40|W|Wife|A6
+11|Nannie Vanscler|18|W|Daug|A6
+11|Margarite Vanscler|16|W|Daug|A6
+11|Rachiel Vanscler|14|W|Daug|A6
+11|Mathew Vanscler|12|W|Son|A6
+11|Paul Vanscler|7|W|Son|A6
+11|Giles Vanscler|0|W|Son|A6
+11|Berkeley Ward|49|W|Head|A6
+11|Peris W Ward|42|W|Wife|A6
+11|Grace H Ward|14|W|Daug|A6
+11|Sarah Jones|45|M|Serv|A6
+11|Lucy Lee|26|B|Serv|A6
+11|Fred Jackson|21|B|Coac|A6
+11|J Samuel Pearson|37|W|Head|A6
+11|Edith Pearson|25|W|Wife|A6
+11|Paul Pearson|11|W|Son|A6
+11|Emory Pearson|7|W|Son|A6
+11|Carl Pearson|3|W|Son|A6
+11|Margaret Pearson|1|W|Daug|A6
+11|Henry Mallory|45|B|Hire|A6
+11|Henry Moreland|26|W|Hire|A6
+11|Edward Myers|42|W|Head|A6
+11|Essie Myers|37|W|Wife|A6
+11|Raymond R Myers|16|W|Son|A6
+11|Icy Myers|14|W|Daug|A6
+11|Myrtle L Myers|13|W|Daug|A6
+11|Walter P Myers|11|W|Son|A6
+11|Harold K Myers|10|W|Son|A6
+11|J Lemarl Myers|8|W|Son|A6
+11|Robert W Myers|5|W|Son|A6
+11|Claude A Myers|3|W|Son|A6
+11|Omar L Fox|35|W|Head|A6
+11|Mary Fox|68|W|Moth|A6
+11|Bushrod Fox|86|W|Fath|A6
+11|Maggie Green|33|B|Serv|A6
+11|Henry T Palmer|33|W|Head|A6
+11|Maud Palmer|30|W|Wife|A6
+11|Margaret Palmer|7|W|Daug|A6
+11|Emory Palmer|6|W|Son|A6
+11|Arbory Palmer|5|W|Son|A6
+11|Elizabeth Palmer|2|W|Daug|A6
+11|Frances Palmer|0|W|Daug|A6
+11|Harry Baker|12|W|Hire|A6
+11|Charles K Lennig|40|W|Head|A6
+11|Maggie I Wilson||W|Hous|A6
+11|Mabel Wise|20|M|Serv|A6

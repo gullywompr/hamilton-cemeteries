@@ -1,0 +1,307 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Hamilton Epidemics</title>
+<style>html,body{margin:0;background:#1a1a19;width:1280px;height:720px;overflow:hidden}canvas{display:block}</style>
+</head><body>
+<canvas id="c" width="1280" height="720"></canvas>
+<script>
+/* ============================================================
+   WHAT WAS GOING AROUND — 90-second animated infographic
+   Infectious disease and the families of Hamilton / Loudoun Co.
+   Deterministic: window.render(t) draws the frame for time t.
+   Every constant below is emitted by scripts/epi_emit.py from
+   data/loudoun_deaths.csv and data/family_losses.csv — do not
+   hand-edit; re-run the emitter.
+   Palette: same validated dark instance as hamilton.html.
+   ============================================================ */
+const W=1280,H=720;
+const cv=document.getElementById('c'), g=cv.getContext('2d');
+const SURF='#1a1a19', INK='#f0efec', INK2='#dad9cf', INK3='#a3a29b', GRID='#2b2b29';
+const S1='#3987e5', S2='#d95926', S3='#199e70', MUTE='#55544f';
+// narration at the foot of each scene, set apart from the chart ink
+const NARR='#ecdfc2', NARR2='#cdc2a6';
+const SERIF='"DejaVu Serif", Georgia, serif', SANS='"DejaVu Sans", Helvetica, Arial, sans-serif';
+
+/* ---------- data: scripts/epi_emit.py ---------- */
+const REG_TOTAL=1817, REG_YEARS=47;
+const REGYEAR=[[1818,1],[1819,3],[1820,24],[1821,30],[1853,196],[1854,209],[1855,162],[1856,132],[1857,141],[1858,146],[1859,116],[1864,78],[1865,125],[1866,98],[1867,2],[1868,14],[1869,8],[1870,1],[1871,3],[1872,7],[1873,9],[1874,9],[1875,4],[1876,9],[1877,10],[1878,10],[1879,12],[1880,14],[1881,17],[1882,13],[1883,16],[1884,14],[1885,4],[1886,11],[1888,13],[1889,17],[1890,1],[1891,1],[1892,15],[1893,9],[1894,17],[1895,27],[1896,16],[1897,20],[1898,14],[1899,11],[1900,8]];
+const WIN=[1853,1866], WIN_N=1403, WIN_CAUSED=1123;
+const INF_N=682, INF_PCT=61;
+const CG=[["Dysentery & bowel",195,4.8,62],["Consumption (TB)",167,33.2,12],["Diphtheria & throat",85,3.9,84],["Typhoid",84,27.0,10],["Pneumonia & lung",77,31.4,27],["Whooping cough",24,1.8,96],["Scarlet fever",18,4.4,83],["Other fevers",14,18.0,46],["Measles",10,14.1,44],["Cholera",7,50.0,17],["Smallpox",1,18.8,0]];
+const NONINF=441;
+const U10_ALL=34, U1_ALL=10, MED_ALL=26.0;
+const M_DYS=[2,0,1,5,3,9,44,64,36,13,9,1], N_DYS=187;
+const M_CONS=[13,13,17,16,16,12,14,10,9,16,10,18], N_CONS=164;
+const M_ALL=[89,76,90,98,103,90,144,172,157,127,111,110], N_ALL=1367;
+const FAM_N=44, FAM_KIDS=28, FAM_3PLUS=4;
+const SURN_ON_STONES=17;
+// decade, burials with a usable age, of which under ten — timeline_people.csv
+const STONES=[[1850,29,15],[1860,14,5],[1870,45,12],[1880,58,13],[1890,79,17],[1900,144,21],[1910,190,29],[1920,183,25],[1930,209,9],[1940,207,8],[1950,198,6],[1960,211,5],[1970,209,1],[1980,192,6],[1990,180,5]];
+const MONTHS=['J','F','M','A','M','J','J','A','S','O','N','D'];
+const MONFULL=['January','February','March','April','May','June','July','August','September','October','November','December'];
+// family_losses.csv — verbatim register detail
+const DULIN=[['Henry T.','8 yrs. 11 mo.','July 28',0],['James W.','3 yrs.','August 2',5],
+             ['Charles E.','4 yrs. 5 mo.','August, no day',20],['Ann B.','6 yrs. 4 mo.','September 13',47]];
+const CARTER=[['Courtney Newton','7 yrs. 1 mo. 18 ds.','May 12',0],['Emma L.','6 yrs.','May 15',3],['Juliet N.','8 yrs.','May 18',6]];
+
+/* ---------- helpers ---------- */
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const eo=t=>1-Math.pow(1-clamp(t,0,1),3);
+const span=(t,a,b)=>clamp((t-a)/(b-a),0,1);
+const fmt=n=>Math.round(n).toLocaleString('en-US');
+function txt(s,x,y,size,color,font=SANS,align='left',weight=''){g.font=`${weight} ${size}px ${font}`;g.fillStyle=color;g.textAlign=align;g.textBaseline='alphabetic';g.fillText(s,x,y)}
+function fadeIn(t,a,d=0.6){return eo(span(t,a,a+d))}
+function fadeOut(t,b,d=0.5){return 1-eo(span(t,b-d,b))}
+function alpha(a,f){g.globalAlpha=clamp(a*f,0,1)}
+function kicker(s,x,y,a){alpha(a,1);g.fillStyle=S2;g.fillRect(x,y-18,34,2);txt(s,x,y,14,S2,SANS,'left','bold');g.globalAlpha=1}
+function title(s,x,y,a,size=44){alpha(a,1);txt(s,x,y,size,INK,SERIF,'left','bold');g.globalAlpha=1}
+function body(s,x,y,a,size=19,color=INK2){alpha(a,1);txt(s,x,y,size,color,SANS);g.globalAlpha=1}
+function src(s,a){body('SOURCE  '+s,64,702,a*0.85,14,INK3)}
+// narration line with **bold** runs on the load-bearing phrase
+function rich(s,x,y,a,size,color){alpha(a,1);g.textAlign='left';g.textBaseline='alphabetic';
+ const parts=s.split('**');
+ const meas=sz=>{let w=0,b=false;parts.forEach(q=>{if(q){g.font=(b?'bold ':'')+sz+'px '+SANS;w+=g.measureText(q).width}b=!b});return w};
+ // bold runs are wider than the plain text they replace: never let a line
+ // run off the frame, shrink it slightly instead
+ let sz=size; const lim=W-x-48, w0=meas(sz);
+ if(w0>lim) sz=Math.max(14,Math.floor(sz*lim/w0));
+ let cx=x, bold=false;
+ parts.forEach(part=>{ if(part){ g.font=(bold?'bold ':'')+sz+'px '+SANS; g.fillStyle=color; g.fillText(part,cx,y); cx+=g.measureText(part).width; } bold=!bold; });
+ g.globalAlpha=1}
+function roundBar(x,y,w,h,color){if(w<=0)return;g.fillStyle=color;g.beginPath();const r=Math.min(4,h/2,Math.abs(w)/2);
+ g.moveTo(x,y);g.lineTo(x+w-r,y);g.quadraticCurveTo(x+w,y,x+w,y+r);g.lineTo(x+w,y+h-r);g.quadraticCurveTo(x+w,y+h,x+w-r,y+h);g.lineTo(x,y+h);g.closePath();g.fill()}
+
+/* ---------- scenes ---------- */
+const T={open:[0,19],causes:[19,44],ages:[44,71],august:[71,96],allfams:[96,121],families:[121,146],stones:[146,177]};
+
+/* 1. the register, and its holes ------------------------------ */
+function sceneOpen(t){const [a,b]=T.open, f=fadeIn(t,a,0.7)*fadeOut(t,b,0.7);
+ kicker('LOUDOUN COUNTY DEATH REGISTER',64,96,f);
+ title('What was going around',64,152,f);
+ body('Every death the county wrote down between 1818 and 1900.',64,192,f*fadeIn(t,a+0.5),20,INK2);
+ // per-year columns
+ const x0=64,x1=1216,yB=470,hMax=210, mx=Math.max(...REGYEAR.map(r=>r[1]));
+ const Y=y=>x0+(x1-x0)*(y-1818)/(1900-1818);
+ g.strokeStyle=GRID;g.lineWidth=1;alpha(f,1);
+ g.beginPath();g.moveTo(x0,yB+.5);g.lineTo(x1,yB+.5);g.stroke();g.globalAlpha=1;
+ const prog=eo(span(t,a+1.2,a+5.0));
+ REGYEAR.forEach(([y,n])=>{ const px=Y(y); if((px-x0)/(x1-x0) > prog) return;
+   const kept = (y>=1853&&y<=1859)||(y>=1864&&y<=1866);
+   const h=(n/mx)*hMax, hi=fadeIn(t,a+5.6);
+   alpha(f,1); g.fillStyle = kept ? (hi>0.02? S2 : MUTE) : MUTE;
+   if(kept && hi>0.02){ g.globalAlpha=clamp(f*(0.45+0.55*hi),0,1); }
+   g.fillRect(px-5,yB-h,10,h); g.globalAlpha=1; });
+ [1820,1840,1860,1880,1900].forEach(y=>body(String(y),Y(y)-18,yB+24,f,15,INK3));
+ // the point
+ const f2=fadeIn(t,a+5.8);
+ alpha(f*f2,1); g.strokeStyle=S2; g.lineWidth=1.5; g.setLineDash([4,4]);
+ g.beginPath(); g.moveTo(Y(1853)-9,yB-hMax-14); g.lineTo(Y(1866)+9,yB-hMax-14); g.stroke();
+ g.setLineDash([]); g.globalAlpha=1;
+ body('fourteen years',Y(1853)-9,yB-hMax-24,f*f2,14,S2);
+ rich('**'+fmt(WIN_N)+'** of the '+fmt(REG_TOTAL)+' deaths fall inside them.',64,542,f*f2,24,NARR);
+ rich('Virginia made registration law in 1853. **Compliance collapsed with the war** and never came back.',64,588,f*fadeIn(t,a+8.0),20,NARR2);
+ rich('So what follows is **not a count of the century’s dead.** It is the shape of what killed them, in the years the county kept the book.',64,616,f*fadeIn(t,a+11.5),20,NARR2);
+ src('loudoun_deaths.csv · 1,817 register entries, 47 years present',f);
+}
+
+/* 2. what killed them ----------------------------------------- */
+function sceneCauses(t){const [a,b]=T.causes, f=fadeIn(t,a,0.7)*fadeOut(t,b,0.7);
+ kicker('1853–1866 · '+fmt(WIN_CAUSED)+' DEATHS WITH A CAUSE WRITTEN DOWN',64,96,f);
+ title('What killed them',64,152,f);
+ const rows=[['Other / non-infectious',NONINF,false]].concat(CG.map(c=>[c[0],c[1],true]));
+ const mx=Math.max(...rows.map(r=>r[1])), x0=326, wMax=700, y0=200, dy=34;
+ rows.forEach(([nm,n,infec],i)=>{
+   const fi=fadeIn(t,a+1.0+i*0.21), y=y0+i*dy;
+   alpha(f*fi,1); txt(nm,x0-16,y+15,17,infec?INK:INK3,SANS,'right'); g.globalAlpha=1;
+   const w=eo(span(t,a+1.15+i*0.21,a+2.1+i*0.21))*(n/mx)*wMax;
+   alpha(f*fi,1); roundBar(x0,y,w,20,infec?S2:MUTE);
+   txt(fmt(n),x0+w+10,y+16,16,infec?INK:INK3,SANS,'left','bold'); g.globalAlpha=1;
+ });
+ const f2=fadeIn(t,a+6.6);
+ alpha(f*f2,1); g.fillStyle=S2; g.fillRect(64,618,3,56); g.globalAlpha=1;
+ rich(INF_PCT+'% of them — '+fmt(INF_N)+' people — **died of something catching.**',82,642,f*f2,25,NARR);
+ rich('**Dysentery** alone outran every other cause in the book.',82,668,f*fadeIn(t,a+10.5),20,NARR2);
+ src('loudoun_deaths.csv, cause field grouped by 19th-century nomenclature (scripts/epi_emit.py)',f);
+}
+
+/* 3. who they killed ------------------------------------------ */
+function sceneAges(t){const [a,b]=T.ages, f=fadeIn(t,a,0.7)*fadeOut(t,b,0.7);
+ kicker('MEDIAN AGE AT DEATH, BY DISEASE',64,96,f);
+ title('Who they killed',64,152,f);
+ const show=CG.filter(c=>c[1]>=10);
+ const x0=330, x1=1120, y0=208, dy=40, AMAX=55;
+ const X=age=>x0+(x1-x0)*clamp(age/AMAX,0,1);
+ // age axis
+ alpha(f*fadeIn(t,a+0.6),1); g.strokeStyle=GRID; g.lineWidth=1;
+ [0,10,20,30,40,50].forEach(v=>{g.beginPath();g.moveTo(X(v)+.5,y0-10);g.lineTo(X(v)+.5,y0+show.length*dy-18);g.stroke();
+   txt(String(v),X(v),y0+show.length*dy+2,13,INK3,SANS,'center')});
+ g.globalAlpha=1;
+ body('age',x1+22,y0+show.length*dy+2,f,15,INK3);
+ // the line at ten
+ const fl=fadeIn(t,a+1.0);
+ alpha(f*fl,1); g.strokeStyle=S2; g.lineWidth=2;
+ g.beginPath();g.moveTo(X(10)+.5,y0-30);g.lineTo(X(10)+.5,y0+show.length*dy-14);g.stroke(); g.globalAlpha=1;
+ body('ten years old',X(10)+8,y0-36,f*fl,14,S2);
+ show.forEach(([nm,n,med,u10],i)=>{
+   const fi=fadeIn(t,a+1.6+i*0.3), y=y0+i*dy, child=med<10;
+   alpha(f*fi,1); txt(nm,x0-18,y+5,17,child?INK:INK2,SANS,'right'); g.globalAlpha=1;
+   const px=X(med), pr=eo(span(t,a+1.75+i*0.3,a+2.7+i*0.3));
+   alpha(f*fi,1); g.strokeStyle=child?S2:S1; g.lineWidth=2.5;
+   g.beginPath();g.moveTo(X(0),y);g.lineTo(X(0)+(px-X(0))*pr,y);g.stroke();
+   if(pr>0.98){ g.fillStyle=child?S2:S1; g.beginPath(); g.arc(px,y,6,0,7); g.fill();
+     g.strokeStyle=SURF; g.lineWidth=2; g.stroke();
+     txt(med.toFixed(1),px+14,y+5,15,child?S2:S1,SANS,'left','bold');
+     txt(u10+'% under ten',px+66,y+5,16,INK3); }
+   g.globalAlpha=1;
+ });
+ const f2=fadeIn(t,a+9.0);
+ alpha(f*f2,1); g.fillStyle=S2; g.fillRect(64,606,3,62); g.globalAlpha=1;
+ rich('Four of these diseases had a median victim **under five years old.**',82,628,f*f2,21,NARR);
+ rich(U10_ALL+'% of every recorded death was **a child under ten.** One in ten had not reached a first birthday.',82,656,f*fadeIn(t,a+13.5),21,NARR2);
+ src('loudoun_deaths.csv age field parsed from "8 yrs. 11 mo." form; groups with n≥10 shown',f);
+}
+
+/* 4. August --------------------------------------------------- */
+function sceneAugust(t){const [a,b]=T.august, f=fadeIn(t,a,0.7)*fadeOut(t,b,0.7);
+ kicker('DEATHS BY MONTH, 1853–1866',64,96,f);
+ title('August',64,152,f);
+ const x0=140,x1=1140,yB=500,hMax=250, mx=Math.max(...M_DYS,...M_CONS);
+ const cw=(x1-x0)/12;
+ MONTHS.forEach((m,i)=>{ const cx=x0+cw*i+cw/2;
+   alpha(f*fadeIn(t,a+0.4+i*0.04),1); txt(m,cx,yB+24,14,i===7?S2:INK3,SANS,'center',i===7?'bold':''); g.globalAlpha=1;});
+ alpha(f,1);g.strokeStyle=GRID;g.lineWidth=1;g.beginPath();g.moveTo(x0,yB+.5);g.lineTo(x1,yB+.5);g.stroke();g.globalAlpha=1;
+ // dysentery columns
+ M_DYS.forEach((n,i)=>{ const fi=fadeIn(t,a+1.0+i*0.16);
+   const h=(n/mx)*hMax*eo(span(t,a+1.0+i*0.16,a+1.9+i*0.16));
+   alpha(f*fi,1); g.fillStyle=i===7?S2:'#a8441d'; g.fillRect(x0+cw*i+9,yB-h,cw-18,h);
+   if(n>=30) txt(String(n),x0+cw*i+cw/2,yB-h-9,15,i===7?S2:INK2,SANS,'center','bold'); g.globalAlpha=1;});
+ body('Dysentery  n='+N_DYS,x0+6,yB-hMax-46,f*fadeIn(t,a+1.2),17,S2);
+ // consumption line
+ const fc=fadeIn(t,a+4.4), pr=eo(span(t,a+4.4,a+6.2));
+ alpha(f*fc,1); g.strokeStyle=S1; g.lineWidth=2.5; g.beginPath();
+ M_CONS.forEach((n,i)=>{ const cx=x0+cw*i+cw/2, cy=yB-(n/mx)*hMax;
+   if((i/11)<=pr){ i===0?g.moveTo(cx,cy):g.lineTo(cx,cy); }});
+ g.stroke();
+ M_CONS.forEach((n,i)=>{ if((i/11)<=pr){ const cx=x0+cw*i+cw/2, cy=yB-(n/mx)*hMax;
+   g.fillStyle=S1;g.beginPath();g.arc(cx,cy,3.5,0,7);g.fill(); }});
+ g.globalAlpha=1;
+ alpha(f*fadeIn(t,a+5.0),1); txt('Consumption  n='+N_CONS,x1-6,yB-hMax-46,17,S1,SANS,'right'); g.globalAlpha=1;
+ const f2=fadeIn(t,a+7.6);
+ alpha(f*f2,1); g.fillStyle=S2; g.fillRect(64,566,3,42); g.globalAlpha=1;
+ rich('144 of 187 dysentery deaths fell in July, August and September. **Sixty-four in August alone.**',82,590,f*f2,21,NARR);
+ rich('**It was in the water.** Every summer the wells dropped, the heat rose, and it took the smallest children in the house.',64,634,f*fadeIn(t,a+11.5),20,NARR2);
+ rich('Consumption kept **no season at all.** It simply ground on, thirteen or fourteen a month, year in and year out.',64,662,f*fadeIn(t,a+15.0),20,NARR2);
+ src('loudoun_deaths.csv death_date month; entries without a legible month excluded',f);
+}
+
+/* 5b. every household ------------------------------------------ */
+const FAMCOL={bowel:'#d95926',throat:'#e8a33d',typhoid:'#3987e5',consumption:'#199e70',other:'#7b7a74'};
+// year, children lost, dominant cause — family_losses.csv, grouped by scripts/epi_emit.py
+const ALLFAM=[[1821,3,'other'],[1853,2,'typhoid'],[1853,2,'other'],[1853,4,'bowel'],[1853,2,'bowel'],[1853,2,'bowel'],[1853,2,'throat'],[1853,2,'other'],[1853,2,'other'],[1853,2,'typhoid'],[1853,2,'bowel'],[1853,2,'bowel'],[1853,2,'bowel'],[1854,2,'bowel'],[1854,2,'bowel'],[1854,2,'bowel'],[1854,2,'bowel'],[1855,2,'other'],[1857,2,'throat'],[1858,2,'throat'],[1858,2,'bowel'],[1858,2,'other'],[1858,2,'other'],[1858,2,'other'],[1859,2,'typhoid'],[1859,2,'other'],[1859,2,'consumption'],[1864,2,'consumption'],[1864,2,'consumption'],[1864,2,'bowel'],[1864,2,'other'],[1864,2,'bowel'],[1864,2,'bowel'],[1864,2,'throat'],[1865,3,'throat'],[1865,2,'consumption'],[1865,2,'throat'],[1865,2,'bowel'],[1865,2,'bowel'],[1865,3,'typhoid'],[1865,2,'bowel'],[1865,2,'throat'],[1866,2,'typhoid'],[1866,2,'bowel']];
+const LOSTTOT=93, WK=13;
+function sceneAllFams(t){const [a,b]=T.allfams, f=fadeIn(t,a,0.8)*fadeOut(t,b,0.8);
+ kicker('EVERY HOUSEHOLD THAT BURIED MORE THAN ONE, 1821\u20131866',64,96,f);
+ title('Ninety-three children',64,152,f);
+ body('Forty-four households. Each dot is a child; each cluster, one family inside one year.',64,196,f*fadeIn(t,a+0.6),21,INK2);
+ const cols=11, cw=104, ch=84, x0=90, y0=258;
+ ALLFAM.forEach(([yr,n,cz],i)=>{ const fi=fadeIn(t,a+1.4+i*0.145);
+   const cx=x0+(i%cols)*cw, cy=y0+Math.floor(i/cols)*ch;
+   alpha(f*fi,1);
+   for(let k=0;k<n;k++){ g.fillStyle=FAMCOL[cz];
+     g.beginPath(); g.arc(cx+(k-(n-1)/2)*20, cy, 7.5, 0, 7); g.fill();
+     g.strokeStyle=SURF; g.lineWidth=2; g.stroke(); }
+   txt(String(yr),cx,cy+30,15,INK3,SANS,'center');
+   g.globalAlpha=1; });
+ // legend
+ const fl=fadeIn(t,a+9.0); let lx=90;
+ [['Dysentery & bowel','bowel',18],['Diphtheria & throat','throat',7],['Typhoid','typhoid',5],
+  ['Consumption','consumption',4],['Other / not recorded','other',10]].forEach(([nm,cz,n])=>{
+   alpha(f*fl,1); g.fillStyle=FAMCOL[cz]; g.beginPath(); g.arc(lx+7,586,7,0,7); g.fill();
+   txt(nm+'  '+n,lx+22,591,16,INK2); g.globalAlpha=1;
+   g.font='16px '+SANS; lx+=42+g.measureText(nm+'  '+n).width; });
+ const f2=fadeIn(t,a+11.0);
+ alpha(f*f2,1); g.fillStyle=S2; g.fillRect(64,616,3,52); g.globalAlpha=1;
+ rich(WK+' of the 44 lost every one of them **inside a single week.**',82,640,f*f2,23,NARR);
+ rich('Eighteen households were emptied by the same thing: **what was in the summer water.**',82,666,f*fadeIn(t,a+14.5),20,NARR2);
+ src('family_losses.csv \u00b7 44 households, 93 children \u00b7 dominant cause where the register gives one',f);
+}
+
+/* 5. the families --------------------------------------------- */
+function sceneFamilies(t){const [a,b]=T.families, f=fadeIn(t,a,0.7)*fadeOut(t,b,0.7);
+ kicker('TWO OF THE FORTY-FOUR, AS THE REGISTER WROTE THEM DOWN',64,96,f);
+ title('Two weeks in two houses',64,152,f);
+ body('Twenty-eight of the forty-four households lost nothing but children.',64,196,f*fadeIn(t,a+0.5),21,INK2);
+ // Dulin strip
+ const fd=fadeIn(t,a+1.6), x0=150, x1=760, yD=316;
+ body('Alfred & Margaret Dulin · 1853 · four children in forty-seven days',64,258,f*fd,21,INK);
+ const X=d=>x0+(x1-x0)*(d/47);
+ alpha(f*fd,1);g.strokeStyle=GRID;g.lineWidth=2;g.beginPath();g.moveTo(x0,yD);g.lineTo(x1,yD);g.stroke();g.globalAlpha=1;
+ DULIN.forEach(([nm,age,when,d],i)=>{ const fi=fadeIn(t,a+2.1+i*0.75);
+   const px=X(d); alpha(f*fi,1);
+   g.fillStyle=S2;g.beginPath();g.arc(px,yD,7,0,7);g.fill();
+   g.strokeStyle=SURF;g.lineWidth=2.5;g.stroke();
+   const up = i%2===0;
+   txt(nm,px,yD+(up?-20:34),16,INK,SANS,'center','bold');
+   txt(age+' · '+when,px,yD+(up?-40:52),13,INK3,SANS,'center');
+   g.globalAlpha=1; });
+ body('register cause: “Water on Brain”, “dysentery”',x1+30,yD+5,f*fadeIn(t,a+5.4),18,INK3);
+ // Carter strip
+ const fc=fadeIn(t,a+6.4), yC=476, xc1=460;
+ body('E. L. & M. L. Carter · 1865 · three children in six days · diphtheria',64,418,f*fc,21,INK);
+ const XC=d=>x0+(xc1-x0)*(d/6);
+ alpha(f*fc,1);g.strokeStyle=GRID;g.lineWidth=2;g.beginPath();g.moveTo(x0,yC);g.lineTo(xc1,yC);g.stroke();g.globalAlpha=1;
+ CARTER.forEach(([nm,age,when,d],i)=>{ const fi=fadeIn(t,a+6.9+i*0.7);
+   const px=XC(d); alpha(f*fi,1);
+   g.fillStyle=S2;g.beginPath();g.arc(px,yC,7,0,7);g.fill();
+   g.strokeStyle=SURF;g.lineWidth=2.5;g.stroke();
+   txt(nm,px,yC+(i%2===0?-20:32),16,INK,SANS,'center','bold');
+   txt(age+' · '+when,px,yC+(i%2===0?-38:50),13,INK3,SANS,'center');
+   g.globalAlpha=1; });
+ rich('Seven, six and eight years old. **Three graves in one week.**',xc1+40,yC+5,f*fadeIn(t,a+11.0),20,NARR2);
+ const f2=fadeIn(t,a+11.4);
+ rich('These are the county’s records. The people in the three cemeteries came from the farms and villages all around it.',64,598,f*f2,20,NARR2);
+ rich(SURN_ON_STONES+' of these forty-four surnames are **carved on stones in those cemeteries.** Carter is one of them.',64,628,f*fadeIn(t,a+14.5),20,NARR);
+ src('family_losses.csv · register detail verbatim · surname cross-check against timeline_people.csv',f);
+}
+
+/* 6. the three cemeteries' own stones -------------------------- */
+function sceneStones(t){const [a,b]=T.stones, f=fadeIn(t,a,0.8)*fadeOut(t,b,1.2);
+ kicker('THE THREE CEMETERIES \u00b7 SHARE OF BURIALS THAT WERE CHILDREN UNDER TEN',64,96,f);
+ title('And then the children stop',64,152,f);
+ const x0=104,x1=1216,yB=470,hMax=236, cw=(x1-x0)/STONES.length;
+ const mx=52;
+ alpha(f,1);g.strokeStyle=GRID;g.lineWidth=1;
+ [0,10,20,30,40,50].forEach(v=>{const yy=yB-(v/mx)*hMax;g.beginPath();g.moveTo(x0,yy+.5);g.lineTo(x1,yy+.5);g.stroke();
+   txt(v+'%',x0-14,yy+5,13,INK3,SANS,'right')});
+ g.globalAlpha=1;
+ STONES.forEach(([dec,n,k],i)=>{ const pct=100*k/n, fi=fadeIn(t,a+1.0+i*0.19);
+   const h=(pct/mx)*hMax*eo(span(t,a+1.0+i*0.19,a+1.9+i*0.19));
+   const cx=x0+cw*i, pre=dec<1930;
+   alpha(f*fi,1); g.fillStyle=pre?S2:S3; g.fillRect(cx+7,yB-h,cw-14,h);
+   txt(Math.round(pct)+'%',cx+cw/2,yB-h-9,14,pre?S2:S3,SANS,'center','bold');
+   txt(String(dec).slice(2)+'s',cx+cw/2,yB+22,13,INK3,SANS,'center');
+   txt('n='+n,cx+cw/2,yB+42,13,'#96958e',SANS,'center');
+   g.globalAlpha=1; });
+ // 1923
+ const fh=fadeIn(t,a+5.0), xh=x0+cw*8;
+ alpha(f*fh,1); g.strokeStyle=INK2; g.lineWidth=1.5; g.setLineDash([5,4]);
+ g.beginPath();g.moveTo(xh,yB-hMax-10);g.lineTo(xh,yB);g.stroke(); g.setLineDash([]);
+ txt('1923',xh+10,yB-hMax-14,15,INK,SANS,'left','bold');
+ txt('Loudoun County Health Unit \u2014 Schick tests in the schools',x1,yB-hMax-14,14,INK2,SANS,'right');
+ g.globalAlpha=1;
+ const f2=fadeIn(t,a+7.4);
+ alpha(f*f2,1); g.fillStyle=S3; g.fillRect(64,552,3,46); g.globalAlpha=1;
+ rich('In the 1920s one burial in seven was a child under ten. In the 1930s, **one in twenty-five.**',82,576,f*f2,22,NARR);
+ rich('Nothing about the graveyard changed except **who stopped arriving in it.**',82,600,f*fadeIn(t,a+11.5),20,NARR2);
+ rich('These diseases **did not fade of their own accord.** They were filtered, tested and vaccinated out,',64,644,f*fadeIn(t,a+14.0),21,NARR2);
+ rich('**one well and one schoolroom at a time.**',64,670,f*fadeIn(t,a+16.5),21,NARR2);
+ src('timeline_people.csv \u2014 2,732 burials, age at death where the stone gives one \u00b7 hamilton_health_news.csv',f);
+}
+
+window.render=function(t){
+ g.fillStyle=SURF; g.fillRect(0,0,W,H);
+ for(const [k,[a,b]] of Object.entries(T)){ if(t>=a-1 && t<b+1){
+   ({open:sceneOpen,causes:sceneCauses,ages:sceneAges,august:sceneAugust,allfams:sceneAllFams,families:sceneFamilies,stones:sceneStones})[k](t); } }
+ g.fillStyle=GRID; g.fillRect(0,H-2,W,2); g.fillStyle=S2; g.fillRect(0,H-2,W*clamp(t/177,0,1),2);
+};
+window.DUR=177; window.READY=true;
+</script></body></html>

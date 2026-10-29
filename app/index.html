@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamilton Cemeteries Timeline</title>
+<meta name="description" content="Stop on a date and see who, of the 2,732 people buried in Hamilton, Virginia's three cemeteries, was alive on it.">
+<link rel="stylesheet" href="./styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231a1a19'/%3E%3Cpath d='M9 26V12a7 7 0 0 1 14 0v14z' fill='%23f0efec'/%3E%3Crect x='15' y='4' width='2' height='24' fill='%23d95926'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="brand" href="#/timeline">
+    <span class="brand-town">Hamilton, Virginia</span>
+    <span class="brand-sub">Three cemeteries, 2,732 people, 1754 to 2026</span>
+  </a>
+  <nav class="nav" aria-label="Views">
+    <a href="#/timeline" data-view="timeline">Timeline</a>
+    <a href="#/people" data-view="people">People</a>
+    <a href="#/families" data-view="families">Families</a>
+    <a href="#/record" data-view="record">The record</a>
+    <a href="#/map" data-view="map">1853 map</a>
+  </nav>
+  <form class="search" role="search" autocomplete="off">
+    <input id="q" type="search" placeholder="Find a name, surname or plot" aria-label="Find a person" aria-controls="q-results" aria-expanded="false">
+    <div id="q-results" class="q-results" role="listbox" hidden></div>
+  </form>
+</header>
+
+<main id="main">
+  <p id="loading" class="loading">Reading the record…</p>
+
+  <section id="view-timeline" class="view" hidden>
+    <div class="tl" id="tl">
+      <canvas id="tl-canvas" role="img" aria-label="A scrolling timeline, 1754 to 2026. Each placeable person is a thin line from birth to death; the red line is the chosen date."></canvas>
+      <div id="tl-tip" class="tip" hidden></div>
+    </div>
+    <div class="tl-bar">
+      <div class="tl-legend" aria-label="How to read the marks">
+        <span class="lg lg-person"><i></i>a documented person</span>
+        <span class="lg lg-measure"><i></i>a measured count</span>
+        <span class="lg lg-absence"><i></i>no surviving record</span>
+        <div class="source"><span>SOURCE</span>timeline_people.csv · timeline_population.csv · context_events.csv · context_eras.csv</div>
+      </div>
+      <div class="tl-nav">
+        <button class="btn" id="btn-back" title="Back one year (Shift: ten, Alt: one day)" aria-label="Back one year">‹</button>
+        <input id="date-input" class="date-input" type="date" min="1754-01-01" max="2026-12-31" aria-label="Go to a date">
+        <button class="btn" id="btn-fwd" title="Forward one year (Shift: ten, Alt: one day)" aria-label="Forward one year">›</button>
+        <button class="btn btn-text" id="btn-play" aria-pressed="false">Play</button>
+        <span class="zoom">
+          <button class="btn" id="btn-zoom-out" aria-label="Zoom out">−</button>
+          <button class="btn" id="btn-zoom-in" aria-label="Zoom in">+</button>
+          <button class="btn btn-text" id="btn-zoom-all" title="Show all 272 years">All</button>
+        </span>
+        <div class="jumps" id="jumps"></div>
+      </div>
+      <div class="tl-opts">
+        <button class="btn btn-text" id="btn-detail" aria-pressed="false" title="Give every event layer and every stratum its own row">Detail</button>
+        <button class="btn btn-text" id="btn-layers" aria-expanded="false" aria-controls="tl-layers">Layers</button>
+      </div>
+      <div class="tl-layers" id="tl-layers" hidden></div>
+    </div>
+    <div class="tl-below">
+      <aside class="cursor-panel" id="cursor-panel" aria-live="polite"></aside>
+      <section class="living" id="living" aria-label="People alive on the chosen date"></section>
+    </div>
+  </section>
+
+  <section id="view-people" class="view page" hidden></section>
+  <section id="view-families" class="view page" hidden></section>
+  <section id="view-record" class="view page" hidden></section>
+  <section id="view-map" class="view page" hidden></section>
+</main>
+
+<div id="scrim" class="scrim" hidden></div>
+<aside id="drawer" class="drawer" hidden aria-label="Person record" role="dialog" aria-modal="false">
+  <button class="drawer-close btn" id="drawer-close" aria-label="Close">×</button>
+  <div id="drawer-body" class="drawer-body"></div>
+</aside>
+
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

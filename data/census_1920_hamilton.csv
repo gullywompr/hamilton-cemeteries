@@ -1,0 +1,414 @@
+image,line,hh,surname,given,relation,race,sex,age,occupation,industry,class,note
+1,1,1,Mullen,George W,Head,W,M,64,Farmer,Truck Farm,W,ED 75 Hamilton Town; enumerator Gordon G. Morland; Jan 1920; rents
+1,2,1,Mullen,Fannie V,Wife,W,F,63,,,,born DC
+1,3,2,Hampton,Ellwood J,Head,W,M,38,Engineer,Threshing Machine,OA,owns free
+1,4,2,Hampton,Ethel,Wife,W,F,40,,,,
+1,5,2,Hampton,Thelma M,Daughter,W,F,17,,,,
+1,6,2,Hampton,Ada J,Daughter,W,F,15,,,,
+1,7,2,Hampton,Ellwood N,Son,W,M,10,,,,
+1,8,2,Hampton,Ethel H,Daughter,W,F,4,,,,
+1,9,3,Baker,George T,Head,W,M,44,Minister,Baptist Church,W,Rev.; born South Carolina; rents
+1,10,3,Baker,Willa H,Wife,W,F,35,,,,born South Carolina
+1,11,3,Baker,Lucia H,Daughter,W,F,15,,,,born South Carolina
+1,12,3,Baker,William H,Son,W,M,10,,,,born Missouri
+1,13,3,Taylor,Mary G,Servant,B,F,46,Cook,Private Family,W,
+1,14,3,Taylor,Lizzie,Servant,B,F,89,Servant,Private Family,W,
+1,15,4,Warner,Charles M,Head,W,M,68,Farmer,General Farm,OA,owns free (Laborer odd jobs 1910)
+1,16,4,Warner,Alcinda P,Sister,W,F,65,,,,
+1,17,4,Warner,Sara C,Sister,W,F,81,,,,
+1,18,4,Warner,Jonathan O,Brother,W,M,65,Laborer,Farm,W,
+1,19,5,Speer,James A,Head,W,M,32,Merchant,Hardware Store,Emp,born Missouri; owns mortgaged
+1,20,5,Speer,Catherine,Wife,W,F,31,,,,born Colorado; father born Canada
+1,21,5,Speer,Catherine E,Daughter,W,F,1,,,,
+1,22,6,Thomas,Fred J,Head,W,M,46,Carpenter,House,W,owns mortgaged
+1,23,6,Thomas,Annie E,Wife,W,F,44,,,,born DC; father born England
+1,24,6,Thomas,Irvin F,Son,W,M,17,Salesman,Dry Goods,W,
+1,25,6,Thomas,Howard J,Son,W,M,16,Errand Boy,Dry Goods Store,W,
+1,26,7,Offley,John M,Head,W,M,47,Farmer,Truck Farm,OA,born DC; owns free
+1,27,7,Offley,Mary M,Mother,W,F,76,,,,widow
+1,28,8,James,Americus C,Head,W,M,67,,,,owns free
+1,29,8,James,Sarah F,Wife,W,F,65,,,,
+1,30,8,James,Clifton L,Son,W,M,47,Farmer,General Farm,OA,
+1,31,8,James,Forest,Son,W,M,37,Laborer,Farm,W,
+1,32,8,James,Nellie G,Daughter,W,F,35,,,,
+1,33,8,James,Glova M,Daughter,W,F,27,,,,
+1,34,8,James,Paul N,Son,W,M,22,Laborer,Farm,W,
+1,35,9,Dowell,Mattie,Head,W,F,84,,,,owns free
+1,36,9,Dowell,Amanda,Sister,W,F,80,,,,
+1,37,9,Norris,Alice M,Niece,W,F,66,Teacher,Public School,W,
+1,38,10,Wynkoop,E Gertrude,Head,W,F,61,Seamstress,At Home,OA,widow; owns free
+1,39,11,Arnett,Welby S,Head,W,M,64,Farmer,General Farm,OA,owns free
+1,40,11,Arnett,Katie V,Wife,W,F,65,,,,
+1,41,11,Pearson,Eva M,Daughter,W,F,29,,,,
+1,42,11,Pearson,Author W,Son-in-law,W,M,38,Farmer,General Farm,OA,
+1,43,11,Pearson,Welby C,Grandson,W,M,6,,,,
+1,44,11,Pearson,Lillian V,Granddaughter,W,F,1,,,,
+1,45,12,Burr,Henry T,Head,W,M,50,Minister,Methodist Church,W,Rev.; born West Virginia; rents
+1,46,12,Burr,Cora A,Wife,W,F,40,,,,born Pennsylvania
+1,47,12,Burr,Elizabeth B,Daughter,W,F,16,,,,born West Virginia
+1,48,12,Burr,Randolf W,Son,W,M,14,,,,born West Virginia
+1,49,12,Burr,Emma M,Daughter,W,F,12,,,,born West Virginia
+1,50,12,Burr,Alice D,Daughter,W,F,8,,,,born West Virginia
+2,1,12,Burr,John M,Son,W,M,4,,,,
+2,2,13,Ottey,William C,Head,W,M,51,,,,occupation not captured (row at page top); owns free
+2,3,13,Ottey,Lula,Wife,W,F,43,,,,
+2,4,13,Ottey,Maxine,Daughter,W,F,19,,,,
+2,5,13,Ottey,Clay G,Son,W,M,17,,,,
+2,6,13,Ottey,Dorothy L,Daughter,W,F,14,,,,
+2,7,13,Ottey,Harold W,Son,W,M,10,,,,
+2,8,14,Rogers,Samuel E,Head,W,M,74,,,,owns free (Miller 1900; mill manager 1910)
+2,9,14,Rogers,Elizabeth,Wife,W,F,73,,,,
+2,10,14,Rogers,Lula T,Daughter,W,F,41,,,,
+2,11,14,Rogers,Elizabeth,Daughter,W,F,31,,,,
+2,12,14,Young,Rogers,Boarder,W,M,11,,,,born China; father born DC
+2,13,15,Oden,Bessie M,Head,W,F,62,,,,owns free (Bessie M Iden)
+2,14,15,Oden,Luta,Sister,W,F,66,,,,
+2,15,16,Dunnahue,Junie,Head,W,F,58,,,,widow; rents
+2,16,16,Dunnahue,Carry,Daughter,W,F,30,,,,born DC
+2,17,17,Lloyd,John,Head,W,M,29,Clergyman,,W,rents; single
+2,18,18,Cox,James,Head,W,M,70,Carpenter,House,W,rents
+2,19,18,Cox,Laura E,Wife,W,F,70,,,,
+2,20,19,Brown,Asa,Head,W,M,58,,,,rents; none
+2,21,19,Brown,Sallie A,Sister,W,F,54,,,,
+2,22,19,Weaden,Carrie V,Nurse,W,F,51,Nurse,Private Family,W,
+2,23,20,Hough,Arthur,Head,W,M,55,Undertaker,,OA,rents
+2,24,20,Hough,Isidora,Wife,W,F,59,,,,
+2,25,20,Hough,Marvin H,Son,W,M,22,Assistant Undertaker,,W,
+2,26,21,Chamblin,John,Head,W,M,53,,,,owns free (Miller 1910) - none
+2,27,21,Chamblin,Ella,Wife,W,F,42,,,,
+2,28,21,Chamblin,Elizabeth,Daughter,W,F,12,,,,
+2,29,22,Claggett,Joseph E,Head,W,M,40,Doctor,Medicine,W,born West Virginia; owns free
+2,30,22,Claggett,Bernice,Wife,W,F,39,,,,
+2,31,22,Claggett,James,Son,W,M,7,,,,born West Virginia
+2,32,22,Claggett,Thomas,Son,W,M,3,,,,born West Virginia
+2,33,23,Herndon,Mervyn L,Head,W,M,41,Postmaster,Post Office,W,owns free (Dry goods merchant 1910)
+2,34,23,Herndon,Anna B,Wife,W,F,40,,,,
+2,35,23,Herndon,Marian G,Daughter,W,F,16,,,,
+2,36,23,Herndon,Alice L,Daughter,W,F,10,,,,
+2,37,24,Rogers,Howard C,Head,W,M,35,Manager,Milling Co,OA,owns mortgaged
+2,38,24,Rogers,Beulah O,Wife,W,F,37,,,,
+2,39,24,Rogers,Esther E,Daughter,W,F,4,,,,
+2,40,24,Rogers,Jane C,Daughter,W,F,1,,,,
+2,41,25,French,Charles F,Head,W,M,73,Merchant,Jewelry Store,OA,owns free
+2,42,25,French,Ora B,Sister,W,F,61,,,,
+2,43,26,Kuhlmann,Charles,Head,W,M,54,Keeper,Bees,OA,parents born Germany (German); owns free
+2,44,26,Kuhlmann,Mae,Wife,W,F,53,,,,
+2,45,26,Kuhlmann,Dora E,Daughter,W,F,19,,,,
+2,46,27,Milbourne,Lucinda C,Head,W,F,81,,,,owns free
+2,47,27,Milbourne,Maria A,Sister,W,F,85,,,,
+2,48,28,James,George W,Head,W,M,68,Farmer,General Farm,OA,owns free
+2,49,28,James,Malinda E,Wife,W,F,69,,,,
+2,50,28,James,Mary W,Sister-in-law,W,F,60,,,,
+3,1,28,Remsburg,Harriet,Head,W,F,39,,,,widow; rents; sheet 2A
+3,2,28,Remsburg,John E,Son,W,M,8,,,,born Maryland
+3,3,28,Everet,Harriet,Mother,W,F,80,,,,widow
+3,4,28,Everet,Maude,Sister,W,F,45,Nurse,General,W,(Mary M Everett trained nurse 1900/1910)
+3,5,29,Tavenner,Mary I,Head,W,F,54,,,,widow; owns free
+3,6,30,Pearson,Varner C,Head,W,M,60,Farmer,General Farm,OA,owns free
+3,7,30,Pearson,Ruth A,Wife,W,F,59,,,,
+3,8,30,Pearson,Clara,Daughter,W,F,23,Teacher,Public School,W,
+3,9,30,Pearson,Ollie Mae,Daughter,W,F,15,,,,
+3,10,30,Green,Rebecca,Sister-in-law,W,F,60,Dressmaker,At Home,W,widow
+3,11,31,Harriet,Frances,Head,W,F,73,,,,widow; born New York; rents
+3,12,32,Laycock,John F,Head,W,M,76,,,,owns free (Farmer 1900 rural)
+3,13,32,Laycock,Mary C,Wife,W,F,70,,,,born Ohio
+3,14,33,McFarland,William A,Head,W,M,74,,,,owns free (Grocer 1900/1910)
+3,15,33,McFarland,Mary V,Wife,W,F,64,,,,born West Virginia
+3,16,33,McFarland,Margarett V,Daughter,W,F,35,,,,
+3,17,33,McFarland,Annie B,Daughter,W,F,30,,,,
+3,18,34,Shoemaker,George,Head,W,M,58,Proprietor,General Store,OA,owns free (Dry goods merchant boarder 1900)
+3,19,34,Shoemaker,Edna,Wife,W,F,43,,,,born Maryland
+3,20,34,Shoemaker,Elizabeth C,Daughter,W,F,18,,,,
+3,21,34,Shoemaker,Mildred I,Daughter,W,F,15,,,,
+3,22,35,Burton,Charles S,Head,W,M,45,,,,born Scotland (English); naturalized; owns mortgaged; none
+3,23,35,Burton,Sarah S,Wife,W,F,50,,,,born Illinois
+3,24,35,Burton,Paul,Son,W,M,3,,,,
+3,25,35,Moore,Edmonia,Sister-in-law,W,F,55,,,,born Illinois
+3,26,36,Warner,Gordon Z,Head,W,M,72,Laborer,Farm,W,owns free (George Z Warner farm laborer 1910)
+3,27,36,Warner,Sarah,Wife,W,F,69,,,,
+3,28,36,Warner,Livia,Daughter,W,F,49,Teacher,Public School,W,(Olivia B Warner teacher 1910)
+3,29,37,Thompson,John J,Head,W,M,60,Farmer,General Farm,OA,owns mortgaged
+3,30,37,Thompson,Amelia,Wife,W,F,47,,,,
+3,31,38,Milbourn,Junius B,Head,W,M,44,Salesman,Nursery,W,rents
+3,32,38,Milbourn,Molly G,Wife,W,F,41,,,,born Ohio
+3,33,38,Milbourn,Bruce,Son,W,M,15,,,,
+3,34,39,Beales,Elmer L,Head,W,M,36,Butcher,Shop,OA,rents (Farmer 1910)
+3,35,39,Beales,Veva,Wife,W,F,27,,,,
+3,36,39,Beales,Rebecca,Daughter,W,F,6,,,,
+3,37,39,Beales,Mary L,Daughter,W,F,2,,,,
+3,38,39,Myers,Nora,Mother-in-law,W,F,49,Nurse,General Work,W,widow
+3,39,40,Kirkpatrick,Rhoda,Head,W,F,63,,,,widow; rents
+3,40,40,Kirkpatrick,Clarence,Son,W,M,28,Laborer,Farm,W,
+3,41,40,Kirkpatrick,Florence,Daughter,W,F,26,,,,
+3,42,41,Mock,James E,Head,W,M,66,Farmer,General Farm,OA,owns free
+3,43,41,Mock,Sarah A,Wife,W,F,66,,,,
+3,44,42,Beamer,George H,Head,W,M,62,Cobbler,Shop,OA,owns free (Shoemaker own shop 1910)
+3,45,42,Beamer,Ella,Wife,W,F,62,,,,
+3,46,42,Tribby,Nola,Daughter,W,F,35,,,,
+3,47,42,Tribby,Elton,Son-in-law,W,M,41,Plumber,General,OA,(Saddlery own shop 1910)
+3,48,42,Tribby,Emma D,Granddaughter,W,F,12,,,,
+3,49,43,Reid,Robert,Head,W,M,67,Carpenter,House,W,owns free (Foreman printing office 1900)
+3,50,43,Reid,Anna R,Wife,W,F,67,,,,
+4,1,43,Reid,Louie,Son,W,M,38,,,,
+4,2,44,Cannon,Ida,Head,W,F,51,,,,owns free
+4,3,44,Cannon,Hattie,Sister,W,F,38,,,,
+4,4,45,Flippo,Maurice,Head,W,M,60,Laborer,Farm,W,owns free (Monroe Flippo; butcher 1910)
+4,5,45,Flippo,Mattie G,Wife,W,F,57,,,,
+4,6,45,Flippo,Clifton,Son,W,M,31,Plumber,General,W,
+4,7,45,Flippo,Harry,Son,W,M,29,Type Setter,Printing Office,W,
+4,8,45,Flippo,Nina,Daughter,W,F,27,Assistant,Post Master,W,(bank clerk 1940)
+4,9,45,Flippo,Roy,Son,W,M,25,Salesman,Dry Goods Store,W,
+4,10,45,Flippo,Frank,Son,W,M,19,Laborer,Farm,W,
+4,11,46,Whitacre,Archie B C,Head,W,M,60,Laborer,Farm,W,owns free
+4,12,46,Whitacre,Lucy,Wife,W,F,61,,,,born Illinois
+4,13,47,Hoge,Henry J,Head,W,M,49,Assistant Cashier,Bank,W,owns free
+4,14,47,Hoge,Laura S,Wife,W,F,32,,,,
+4,15,47,Sanford,Lewis,Servant,B,M,32,Laborer,Farm,W,
+4,16,47,Boyd,Lydia,Servant,B,F,55,Cook,Private Family,W,
+4,17,48,Alder,Joseph,Head,W,M,40,Produce Buyer,Market,OA,rents
+4,18,48,Alder,Lilian,Wife,W,F,38,,,,
+4,19,48,Alder,Joseph F,Son,W,M,7,,,,
+4,20,49,Tavenner,William,Head,W,M,48,Butcher,General,W,owns mortgaged
+4,21,49,Tavenner,Hannah A,Sister,W,F,47,,,,
+4,22,50,Tavenner,James E,Head,W,M,51,Carpenter,General,W,owns free
+4,23,50,Tavenner,Nellie M,Wife,W,F,41,,,,
+4,24,50,Tavenner,Alpheus,Son,W,M,21,Chauffeur,Milling Co,W,
+4,25,50,Tavenner,Willie T,Son,W,M,19,Laborer,Milling Co,W,
+4,26,50,Tavenner,Nannie M,Daughter,W,F,15,,,,
+4,27,51,Tavenner,Thomas W,Head,W,M,20,Laborer,Farm,W,rents
+4,28,51,Tavenner,Annie M,Sister,W,F,16,,,,
+4,29,52,Wiley,Edward T,Head,W,M,54,Merchant,Dry Goods,OA,owns free
+4,30,52,Wiley,Olive C,Wife,W,F,39,,,,
+4,31,52,Wiley,Francis J,Son,W,M,17,,,,
+4,32,52,Wiley,Edgar H,Son,W,M,11,,,,
+4,33,53,Chamblin,John W,Head,W,M,65,Agent,Insurance,W,owns free (Dry Goods Merchant 1900/1910)
+4,34,53,Chamblin,Lucy,Wife,W,F,58,,,,
+4,35,53,Chamblin,Edwin,Son,W,M,20,,,,
+4,36,53,Chamblin,Lillian,Daughter,W,F,22,Teacher,Public School,W,
+4,37,53,Chamblin,Margaret,Daughter,W,F,17,,,,
+4,38,54,Schooley,George T,Head,W,M,59,Merchant,Hardware,OA,owns free (Blacksmith 1900; farmer/blacksmith 1910)
+4,39,54,Schooley,Eva M,Wife,W,F,40,,,,
+4,40,54,Schooley,Annie A,Daughter,W,F,8,,,,
+4,41,54,Schooley,Charles W,Brother,W,M,72,,,,widower
+4,42,54,Schooley,Elizabeth A,Sister,W,F,62,,,,
+4,43,55,Stohlman,Linda,Head,W,F,41,,,,widow; owns free
+4,44,56,Gregg,Russel S,Head,W,M,39,Partner,Garage,OA,born Ohio; rents
+4,45,56,Gregg,Annie P,Wife,W,F,38,,,,
+4,46,56,Evans,Annie H,Boarder,W,F,58,Milliner,Store,W,
+4,47,57,Laycock,George W,Head,W,M,56,Merchant,Clothing Store,OA,owns free
+4,48,57,Laycock,Hannah H,Wife,W,F,44,,,,born DC
+4,49,57,Laycock,George Jr,Son,W,M,10,,,,
+4,50,57,Laycock,Mary L,Daughter,W,F,7,,,,
+5,1,57,Laycock,Eugene,Son,W,M,3,,,,sheet 3A
+5,2,58,Kerr,Floyd N,Head,W,M,45,Druggist,Store,OA,rents (Pharmacist 1910)
+5,3,58,Kerr,Lillian R,Wife,W,F,43,,,,
+5,4,58,Kerr,Margaret K,Daughter,W,F,15,,,,
+5,5,58,Kerr,Judith E,Daughter,W,F,13,,,,
+5,6,58,Kerr,Floyd A,Son,W,M,11,,,,
+5,7,59,Saunders,Robert L,Head,W,M,57,Merchant,Hardware,OA,rents (Hardware salesman 1910)
+5,8,59,Saunders,Josephine,Wife,W,F,63,,,,
+5,9,59,Warner,Charles W,Boarder,W,M,60,Evangelist,Methodist,W,(Hardware merchant 1900/1910)
+5,10,59,Warner,Paul L,Boarder,W,M,22,,,,
+5,11,60,Laycock,Charles F,Head,W,M,72,,,,owns free
+5,12,60,Laycock,Molly E,Wife,W,F,64,,,,
+5,13,61,Ballenger,Walter,Head,W,M,35,,,,owns free; occupation blank (Livery laborer 1910; painter 1940)
+5,14,61,Ballenger,Mabel,Wife,W,F,34,,,,
+5,15,61,Ballenger,Lillian F,Daughter,W,F,11,,,,
+5,16,61,Ballenger,Charles I,Son,W,M,0,,,,
+5,17,62,Lewis,William,Head,B,M,43,Laborer,Farm,W,rents
+5,18,62,Lewis,Julia,Wife,B,F,45,Cook,Private Family,W,
+5,19,62,Gaskins,Clarence,Step-son,B,M,28,Laborer,Farm,W,
+5,20,62,Gaskins,Lester,Step-son,B,M,23,Laborer,Farm,W,
+5,21,63,Thomas,George E,Head,W,M,49,Mail Carrier,,W,owns free (Mill laborer 1900; auctioneer 1910; assessor 1940)
+5,22,63,Thomas,Blanch M,Wife,W,F,44,,,,
+5,23,63,Thomas,Mary A,Daughter,W,F,19,,,,
+5,24,63,Thomas,Addie B,Daughter,W,F,6,,,,
+5,25,64,Kidwell,John W,Head,W,M,45,Painter,House,W,rents; widower
+5,26,64,Kidwell,James W,Son,W,M,12,,,,
+5,27,64,Kidwell,Louise,Daughter,W,F,10,,,,
+5,28,64,Kidwell,Paul M,Son,W,M,8,,,,
+5,29,64,Thompson,Mariam,Mother-in-law,W,F,82,,,,widow
+5,30,64,Gregg,Harriet,Aunt,W,F,80,,,,widow
+5,31,65,Shoemaker,Archie L,Head,W,M,35,Machinist,Garage,W,rents (auto salesman 1940)
+5,32,65,Shoemaker,Ada,Wife,W,F,36,,,,
+5,33,65,Warner,Gordon,Boarder,W,M,22,Machinist,Garage,W,(adopted son 1910; livery laborer)
+5,34,66,Payne,Ewell A,Head,W,M,57,Farmer,General Farm,OA,owns free
+5,35,66,Payne,Susa E,Wife,W,F,24,,,,
+5,36,66,Payne,Jeneveve,Daughter,W,F,20,,,,
+5,37,66,Payne,Ewell A,Son,W,M,22,Plumber,House,W,
+5,38,66,Payne,Mary,Daughter,W,F,10,,,,
+5,39,66,Payne,Edward N,Son,W,M,8,,,,
+5,40,67,Myers,Isreal,Head,W,M,64,Farmer,General Farm,OA,owns free (Carpenter 1900)
+5,41,67,Myers,Helen V,Wife,W,F,62,,,,
+5,42,67,Jones,John W,Brother-in-law,W,M,76,Laborer,Farm,W,widower
+5,43,68,Watkins,Noland,Head,W,M,34,Carpenter,House,W,born Tennessee; rents
+5,44,68,Watkins,May,Wife,W,F,30,,,,
+5,45,68,Watkins,Virginia,Daughter,W,F,8,,,,born Tennessee
+5,46,68,Watkins,Rosa Lee,Daughter,W,F,6,,,,
+5,47,68,Watkins,Margaret,Daughter,W,F,2,,,,
+5,48,69,Manley,Cornelia,Head,B,F,63,Laundress,At Home,W,widow; rents
+5,49,69,Owens,Charles R,Son,B,M,48,Laborer,Farm,W,born Pennsylvania
+5,50,69,Owens,Emma,Daughter-in-law,B,F,41,Cook,Private Family,W,
+6,1,70,Mullen,Frank B,Brother,W,M,12,,,,sheet 3B; born Maryland; in Henry Thomas hh
+6,2,70,Thomas,Henry,Head,W,M,44,Laborer,Farm,W,rents; single (Laborer odd jobs 1910)
+6,3,71,Orrison,Elizabeth,Head,W,F,71,,,,owns free
+6,4,71,Orrison,Pleasant,Sister,W,F,67,Seamstress,At Home,W,
+6,5,71,Orrison,Virginia,Sister,W,F,62,,,,
+6,6,72,Hawley,M,Head,W,M,63,Minister,Southern Methodist,W,born Connecticut; owns free (James M Hawley 1910)
+6,7,72,Hawley,Mary C,Wife,W,F,63,,,,born West Virginia
+6,8,73,Rhodes,Samuel M,Head,W,M,48,Merchant,Meat Store,OA,father born Germany (English); owns free
+6,9,73,Rhodes,Catherine,Wife,W,F,44,,,,
+6,10,73,Rhodes,George,Son,W,M,25,Partner,Meat Store,OA,
+6,11,73,Rhodes,Nathan,Son,W,M,24,Laborer,Farm,W,
+6,12,73,Rhodes,Charlie,Son,W,M,19,Plumber,House or Barn,W,
+6,13,73,Rhodes,John,Son,W,M,17,Laborer,Farm,W,
+6,14,74,Sydnor,William D,Head,W,M,43,Doctor,Medicine,OA,Dr.; father born England; owns free
+6,15,74,Sydnor,Fairy,Wife,W,F,28,,,,born West Virginia
+6,16,74,Sydnor,Helen,Daughter,W,F,18,,,,
+6,17,74,Sydnor,Charles W,Son,W,M,16,,,,
+6,18,74,Sydnor,Catherine,Daughter,W,F,15,,,,
+6,19,74,Sydnor,Bessie,Daughter,W,F,13,,,,
+6,20,74,Sydnor,William,Son,W,M,3,,,,
+6,21,74,Ryneal,Annie R,Mother-in-law,W,F,56,,,,born West Virginia; widow
+6,22,75,Thompson,Howard,Head,W,M,59,,,,owns free; none (Farmer 1900 rural)
+6,23,75,Thompson,Mary E,Wife,W,F,52,,,,
+6,24,75,Thompson,Ellen H,Daughter,W,F,18,,,,
+6,25,76,Myers,Bessie,Head,W,F,39,Operator,Telephone,W,widow; rents
+6,26,76,Myers,Anna,Daughter,W,F,17,,,,
+6,27,76,Newton,James,Cousin,W,M,26,Mail Carrier,,W,
+6,28,76,Deskins,Edward,Servant,B,M,39,Laborer,Farm,W,
+6,29,77,Luce,Wills,Head,W,M,35,Manager,Telephone Co,W,rents
+6,30,77,Luce,Elizabeth,Wife,W,F,30,,,,
+6,31,78,Lowe,Benjamin F,Head,W,M,46,Farmer,General Farm,OA,owns free (Benjamin Low 1900; Lows 1910)
+6,32,78,Lowe,Rebecca,Wife,W,F,49,,,,
+6,33,78,Lowe,Claudius,Son,W,M,22,Laborer,Farm,W,
+6,34,78,Lowe,Mildred,Daughter,W,F,18,,,,
+6,35,78,Lowe,Viola,Daughter,W,F,16,,,,
+6,36,78,White,Wesley,Laborer,W,M,35,Laborer,Farm,W,
+6,37,78,Preston,Paul,Lodger,W,M,19,Laborer,Farm,W,
+J21,1,J1,Thomas,Daniel,Hired man,B,M,16,Laborer,Farm,W,ED 66 Jefferson sheet 11A "West Edge of Hamilton Town"; enumerator Albert L. Painter; 12 Feb 1920; in white hh at top
+J21,2,J2,Rector,John T,Head,B,M,65,Laborer,Farm,W,owns free
+J21,3,J2,Rector,Rachel,Wife,B,F,68,,,,
+J21,4,J2,Sanford,James,Boarder,B,M,14,,,,born Tennessee
+J21,5,J2,Sanford,Donald,Boarder,B,M,15,,,,born Tennessee
+J21,6,J2,Waters,Hazel,Boarder,B,F,16,Cook,Farm Home,W,
+J21,7,J3,Day,John,Head,B,M,39,Laborer,Farm,W,rents (John Davy 1930/1940)
+J21,8,J3,Day,Josephine,Wife,B,F,30,,,,
+J21,9,J3,Day,Maria,Daughter,B,F,11,,,,
+J21,10,J3,Day,Martha E,Daughter,B,F,6,,,,
+J21,11,J3,Day,Bruce,Father,B,M,62,Laborer,Farm,W,widower
+J21,12,J4,Clark,Eugene,Head,B,M,39,Laborer,Farm,W,owns free
+J21,13,J4,Clark,Florence,Wife,B,F,37,Washerwoman,At Home,W,
+J21,14,J4,Clark,Madline,Daughter,B,F,18,Cook,Farm,W,
+J21,15,J4,Clark,Mildred A,Daughter,B,F,16,Cook,Farm,W,
+J21,16,J4,Clark,Ardella,Daughter,B,F,13,,,,
+J21,17,J4,Clark,Alice E,Daughter,B,F,11,,,,
+J21,18,J4,Clark,Ralph,Son,B,M,7,,,,
+J21,19,J4,Clark,Elmer,Daughter,B,F,2,,,,
+J21,20,J4,Clark,Mable,Daughter,B,F,1,,,,
+J21,21,J5,Ceaser,Julius,Head,B,M,79,,,,owns free; none
+J21,22,J5,Ceaser,Eline,Wife,B,F,50,Washerwoman,At Home,W,
+J21,23,J5,Ceaser,Corena,Daughter,B,F,14,,,,
+J21,24,J5,Ceaser,Irene,Daughter,B,F,14,,,,
+J21,25,J5,Ceaser,Mary E,Daughter,B,F,6,,,,
+J21,26,J5,Right,George,Step-son,B,M,25,Laborer,Farm,W,
+J21,27,J5,Chapman,Mandy,Sister,B,F,75,,,,widow
+J21,28,J6,Johnson,Lawrence,Head,Mu,M,25,Laborer,Farm,W,rents (PV0108)
+J21,29,J6,Johnson,Violet,Wife,Mu,F,19,,,,
+J21,30,J6,Johnson,Curtis H,Son,Mu,M,1,,,,
+J21,31,J6,Lucas,Rosie,Sister-in-law,Mu,F,15,,,,
+J21,32,J7,Bryant,Benjamin,Head,B,M,84,Janitor,School & Church,W,rents
+J21,33,J7,Bryant,Harriet,Wife,B,F,75,,,,
+J21,34,J8,Collins,James A,Head,B,M,68,Laborer,Farm,W,owns free
+J21,35,J8,Collins,Serena R,Wife,B,F,66,,,,
+J21,36,J9,Randolph,Marshall,Head,B,M,37,Barber,Own Shop,OA,rents (barber 1930)
+J21,37,J9,Randolph,Nellie B,Wife,Mu,F,37,,,,
+J21,38,J9,Randolph,James L,Son,Mu,M,17,,,,
+J21,39,J10,Williams,Eugene,Head,B,M,30,Minister,,W,born South Carolina; rents
+J21,40,J10,Williams,Mazarine,Wife,B,F,27,,,,born South Carolina
+J21,41,J10,Williams,Eugene Jr,Son,B,M,7,,,,born South Carolina
+J21,42,J10,Williams,Elinor E,Daughter,B,F,5,,,,born South Carolina
+J21,43,J11,Gaskins,Lindsay,Head,B,M,43,Laborer,Farm,W,owns free (auto taxi 1930)
+J21,44,J11,Gaskins,Ola O,Wife,B,F,43,,,,
+J21,45,J11,Gaskins,Haywood,Son,B,M,17,,,,
+J21,46,J11,Gaskins,Milford,Son,B,M,14,,,,
+J21,47,J11,Gaskins,Anna,Daughter,B,F,11,,,,
+J21,48,J11,Gaskins,Ethel,Daughter,B,F,8,,,,
+J21,49,J11,Gaskins,Henry,Son,B,M,4,,,,
+J21,50,J12,Perkins,Clint,Head,B,M,33,Farmer,General Farm,Emp,owns free
+J22,51,J12,Perkins,Florence,Wife,Mu,F,35,,,,sheet 11B
+J22,52,J13,Clark,Henry,Head,B,M,54,Laborer,Farm,W,owns free
+J22,53,J13,Clark,Mary E,Wife,B,F,50,,,,
+J22,54,J13,Clark,Irvin,Son,Mu,M,11,,,,born DC
+J22,55,J13,Fields,Sarah E,Mother-in-law,B,F,73,,,,widow
+J22,56,J14,Cox,J Arthur,Head,W,M,41,Printer,,W,rents (printer 1930/1940)
+J22,57,J14,Cox,Teresa M,Wife,W,F,29,,,,
+J22,58,J14,Cox,Edgar M,Son,W,M,5,,,,
+J22,59,J15,Rhodes,Burr,Head,B,M,71,Laborer,Farm,W,owns free
+J22,60,J15,Rhodes,Mary Jane,Wife,B,F,70,,,,
+J22,61,J16,Clark,Arthur,Head,B,M,37,Section Hand,W&OD RR,W,owns mortgaged (railroad track laborer 1930)
+J22,62,J16,Clark,Cannie,Wife,B,F,39,,,,
+J22,63,J16,Clark,Paul,Son,B,M,18,Laborer,Farm,W,
+J22,64,J16,Clark,Eva,Daughter,B,F,17,,,,
+J22,65,J16,Clark,Nathan,Son,B,M,12,,,,
+J22,66,J17,Levenbury,Walter,Head,B,M,32,Laborer,Farm,W,rents (odd jobs 1930; boiler operator 1940)
+J22,67,J17,Levenbury,Margarett,Wife,Mu,F,48,,,,
+J22,68,J18,Hill,Quahnar,Head,B,F,90,,,,widow; owns free
+J22,69,J18,Anderson,Francis,Sister,B,F,73,,,,widow
+J22,70,J19,Simms,Charles Jr,Head,B,M,46,Laborer,Farm,W,rents
+J22,71,J19,Simms,Emily,Wife,Mu,F,35,,,,
+J22,72,J19,Simms,Mollie,Daughter,Mu,F,12,,,,
+J22,73,J19,Simms,Charles,Son,Mu,M,10,,,,
+J22,74,J19,Butler,Matilda,Boarder,Mu,F,57,,,,
+J22,75,J20,Cook,Alverta,Head,B,F,45,,,,widow; owns free
+J22,76,J20,Cook,Margaret,Daughter,B,F,5,,,,
+J22,77,J20,Ruen,Susan,Daughter,B,F,14,,,,
+J22,78,J20,Ruen,Milton,Grandson,B,M,9,,,,
+J22,79,J20,Ruen,Harrison,Grandson,B,M,35,Laborer,Farm,W,
+J22,80,J21,Mitchel,Norman,Head,B,M,45,Laborer,Farm,W,owns free (Norman L Mitchell 1930/1940)
+J22,81,J21,Mitchel,Bettie,Wife,B,F,41,,,,
+J22,82,J21,Mitchel,James,Son,B,M,13,,,,
+J22,83,J21,Mitchel,Julia,Daughter,B,F,11,,,,
+J22,84,J21,Mitchel,Mary,Daughter,B,F,10,,,,
+J22,85,J21,Mitchel,Marketa,Daughter,B,F,8,,,,
+J22,86,J21,Mitchel,Louis N,Son,B,M,6,,,,
+J22,87,J21,Mitchel,Johana,Daughter,B,F,4,,,,(PV0185)
+J22,88,J21,Mitchel,Charles,Son,B,M,2,,,,
+J22,89,J21,Mitchel,Marga,Mother,B,F,84,,,,widow
+J22,90,J21,Logan,Batus,Nephew,B,M,20,,,,born Pennsylvania (Beaptist Logan 1940)
+J22,91,J22,Harvey,Fanny,Head,B,F,59,Washerwoman,At Home,W,widow; owns free (PV0097)
+J22,92,J22,Harvey,Mahaley,Daughter,B,F,33,,,,
+J22,93,J22,Harvey,Hazel,Granddaughter,B,F,17,Cook,Private Family,W,
+J22,94,J22,Smith,Bertha,Granddaughter,Mu,F,10,,,,
+J22,95,J23,Ceaser,Walter,Head,B,M,47,Laborer,Farm,W,rents (1900/1930/1940)
+J22,96,J23,Ceaser,Lillie,Wife,B,F,37,,,,
+J22,97,J23,Ceaser,Elmer,Son,B,M,17,,,,
+J22,98,J23,Ceaser,Drucillay,Daughter,B,F,9,,,,
+J22,99,J23,Ceaser,Carl,Son,B,M,4,,,,
+J22,100,J23,Ceaser,Thomas,Son,B,M,2,,,,
+J23,1,J24,Johnson,Charles F,Head,B,M,48,,,,sheet 12A; owns free; none (Charles F Johnson farmer 1900; owns $2000 in 1940)
+J23,2,J24,Johnson,Ella M,Wife,B,F,50,,,,
+J23,3,J24,Johnson,Grace E,Daughter,B,F,18,Cooking,,W,
+J23,4,J24,Johnson,Thomas E,Son,B,M,17,Laborer,Farm,W,
+J23,5,J24,Johnson,Malicie,Mother,B,F,74,,,,widow
+J23,6,J24,Mathew,Harris,Nephew,B,M,13,,,,
+J23,7,J25,Clark,Howard W,Head,B,M,43,Laborer,,W,owns free (odd jobs 1930)
+J23,8,J25,Clark,Effie,Wife,B,F,39,,,,
+J23,9,J25,Clark,Sarah,Daughter,B,F,16,,,,
+J23,10,J25,Clark,Mildred,Daughter,B,F,14,,,,
+J23,11,J25,Clark,Charles,Son,B,M,12,,,,
+J23,12,J25,Clark,Lillian,Daughter,B,F,10,,,,
+J23,13,J25,Clark,Howard Jr,Son,B,M,6,,,,
+J23,14,J25,Clark,Susie,Daughter,B,F,5,,,,
+J23,15,J26,Lowe,Eugene W,Head,W,M,41,Farmer,General Farm,Emp,owns free
+J23,16,J26,Lowe,Eva G,Wife,W,F,43,,,,
+J23,17,J26,Lowe,Eleanor,Daughter,W,F,16,,,,
+J23,18,J26,Lowe,Mercer,Son,W,M,15,,,,
+J23,19,J26,Lowe,Milton,Son,W,M,13,,,,
+J23,20,J26,Lowe,Catherine,Daughter,W,F,12,,,,
+J23,21,J27,Reid,R J N,Head,W,M,51,Editor,Paper,W,rents (Robert J Reid printing foreman 1900)
+J23,22,J27,Reid,Lucy E,Wife,W,F,59,,,,
+J23,23,J27,Reid,R Thornton M,Son,W,M,22,Clerk,Bank,W,
+J23,24,J28,Paine,Ashby C,Head,W,M,38,Farmer,Dairy Farm,Emp,owns mortgaged
+J23,25,J28,Paine,Florie,Wife,W,F,36,,,,
+J23,26,J28,Paine,Edwin N,Son,W,M,8,,,,

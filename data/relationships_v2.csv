@@ -1,0 +1,846 @@
+person_id,person_name,relation,related_raw_name,related_person_id,confidence,basis,source_field,date_check
+LV0012,Gilbert C Albert,child_of,E ALBERT,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0012,Gilbert C Albert,child_of,L C ALBERT,LV1021,medium,given initial + surname + same plot C-7,relation_raw,no dates to check
+LV0013,Judith A Albert,child_of,D E ALBERT,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0013,Judith A Albert,child_of,L C ALBERT,,ambiguous,2 in plot C-7 share the initial,relation_raw,not checkable
+LV0016,Albert Alder,child_of,J ALDER,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0016,Albert Alder,child_of,M J ALDER,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0016,Albert Alder,child_of,J Alder,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0016,Albert Alder,child_of,M. J. Alder,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0018,Mary Jane Camp Allder,spouse_of,JAMES ALLDER,LV0019,high,given name + surname + same plot N-25,relation_raw,ok
+LV0018,Mary Jane Camp Allder,spouse_of,James Allder,LV0019,high,given name + surname + same plot N-25,dar_text,ok
+LV0025,Vicki Lynn Anderson,child_of,THOMAS ANDERSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0025,Vicki Lynn Anderson,child_of,RUTH ANDERSON,LV1023,high,given name + surname + same plot E-25,relation_raw,ok
+LV0027,Katherine V. Simmons Arnett,spouse_of,WELLBY S ARNETT,LV0026,medium,given initial + surname + same plot C-86,relation_raw,ok
+LV0027,Katherine V. Simmons Arnett,spouse_of,"(unnamed: ""his wife"")",LV0026,medium,"DAR wrote ""his wife"" with no name; resolved to the immediately preceding survey entry 337 (Welby S. Arnett)",dar_text,ok
+LV0028,Ethel V. Arnett,child_of,W N ARNETT,LV0035,medium,given initial + surname + same plot C-23,relation_raw,ok
+LV0028,Ethel V. Arnett,child_of,MYRTLE ARNETT,LV0034,high,given name + surname + same plot C-23,relation_raw,ok
+LV0030,Ida J. Jenkins Arnett,parent_of,GROVER C ARNETT,LV0029,high,given name + surname + same plot C-23,relation_raw,ok
+LV0030,Ida J. Jenkins Arnett,parent_of,Grover C. Arnett,LV0029,high,given name + surname + same plot C-23,dar_text,ok
+LV0033,Charles Edward Arnett,child_of,W N ARNETT,LV0035,medium,given initial + surname + same plot C-23,relation_raw,ok
+LV0033,Charles Edward Arnett,child_of,MYRTLE ARNETT,LV0034,high,given name + surname + same plot C-23,relation_raw,ok
+LV0033,Charles Edward Arnett,child_of,W.N Arnett,LV0035,medium,given initial + surname + same plot C-23,dar_text,ok
+LV0033,Charles Edward Arnett,child_of,Myrtle Arnett),LV0034,high,given name + surname + same plot C-23,dar_text,ok
+LV0038,Annie P. Eastburn Atkinson,spouse_of,ISAAC P ATKINSON,,unresolved,only self matched,relation_raw,not checkable
+LV0038,Annie P. Eastburn Atkinson,spouse_of,Isaac P. Atkinson,,unresolved,only self matched,dar_text,not checkable
+LV0047,Orianna Chamblin Baldwin,spouse_of,ORION BALDWIN,LV0046,high,given name + surname + same plot C-11,relation_raw,ok
+LV0047,Orianna Chamblin Baldwin,spouse_of,Orion Baldwin,LV0046,high,given name + surname + same plot C-11,dar_text,ok
+LV0050,Ida May Ball,spouse_of,H M BALL,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0050,Ida May Ball,spouse_of,H.M. Ball,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0051,Ruby M. Ball,child_of,SHIRLEY O BALL,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0051,Ruby M. Ball,child_of,MARY M BALL,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0051,Ruby M. Ball,child_of,Shirley O Ball,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0051,Ruby M. Ball,child_of,Mary M. Ball,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0053,Martha Jane Wynkoop Ballenger,spouse_of,T C BALLENGER,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0053,Martha Jane Wynkoop Ballenger,spouse_of,T. C. Ballenger,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0056,Dorcas O. Thompson Ballenger,spouse_of,EDGER BALLENGER,LV0055,high,given name + surname + same plot C-102,relation_raw,ok
+LV0056,Dorcas O. Thompson Ballenger,spouse_of,"(unnamed: ""his wife"")",LV0055,medium,"DAR wrote ""his wife"" with no name; resolved to the immediately preceding survey entry 178 (Edger Ballenger)",dar_text,ok
+LV0057,Clinton C. Ballenger,child_of,E BALLENGER,,ambiguous,2 in plot C-102 share the initial,relation_raw,not checkable
+LV0057,Clinton C. Ballenger,child_of,D O BALLENGER,LV0056,medium,given initial + surname + same plot C-102,relation_raw,ok
+LV0057,Clinton C. Ballenger,child_of,E Ballenger,,ambiguous,2 in plot C-102 share the initial,dar_text,not checkable
+LV0057,Clinton C. Ballenger,child_of,D. O. Ballenger  1876 - 1888,LV0056,medium,given initial + surname + same plot C-102,dar_text,ok
+LV0061,Infant Daughter Ballenger,child_of,RUFUS BALLENGER,LV0078,high,given name + surname + same plot C-114,relation_raw,ok
+LV0061,Infant Daughter Ballenger,child_of,REBECCA BALLENGER,LV0078,medium,given initial + surname + same plot C-114,relation_raw,ok
+LV0065,Eliza A. Ballenger,spouse_of,ISAAC BALLENGER,,ambiguous,2 people share that name in plot C-86,relation_raw,not checkable
+LV0065,Eliza A. Ballenger,spouse_of,"(unnamed: ""his wife"")",LV0064,medium,"DAR wrote ""his wife"" with no name; resolved to the immediately preceding survey entry 354 (Isaac Ballenger)",dar_text,ok
+LV0066,Mary F. Coffman Ballenger,spouse_of,WM H BALLENGER,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0066,Mary F. Coffman Ballenger,spouse_of,Wm. H. Ballenger,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0082,Hannah L. Beales,spouse_of,AMOS A BEALES,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0082,Hannah L. Beales,spouse_of,Amos A. Beales,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0086,Anna Rebecca Thompson Beales,spouse_of,DAVID H BEALES,LV0085,high,given name + surname + same plot N-18,relation_raw,ok
+LV0086,Anna Rebecca Thompson Beales,spouse_of,David H. Beales,LV0085,high,given name + surname + same plot N-18,dar_text,ok
+LV0097,A. Humphrey Beans,child_of,J W BEANS,LV0095,medium,given initial + surname + same plot E-30,relation_raw,ok
+LV0097,A. Humphrey Beans,child_of,HARRIET BEANS,LV0096,high,given name + surname + same plot E-30,relation_raw,ok
+LV0097,A. Humphrey Beans,child_of,J. W Beans,LV0095,medium,given initial + surname + same plot E-30,dar_text,ok
+LV0097,A. Humphrey Beans,child_of,Harriet A. Beans,LV0096,high,given name + surname + same plot E-30,dar_text,ok
+LV0099,Elizabeth Ann Lacock Beans,spouse_of,AMOS BEANS,LV1035,medium,given initial + surname + same plot C-56,relation_raw,ok
+LV0099,Elizabeth Ann Lacock Beans,spouse_of,Amos Beans,LV1035,medium,given initial + surname + same plot C-56,dar_text,ok
+LV0110,Carrie B. Becker,spouse_of,HOURRY BECKER,,unresolved,only self matched,relation_raw,not checkable
+LV0110,Carrie B. Becker,spouse_of,Hourry Becker,,unresolved,only self matched,dar_text,not checkable
+LV0119,S. Elizabeth Adams Benedum,spouse_of,J E BENEDUM,,ambiguous,3 in plot C-25 share the initial,relation_raw,not checkable
+LV0119,S. Elizabeth Adams Benedum,spouse_of,J. E. Benedum,,ambiguous,3 in plot C-25 share the initial,dar_text,not checkable
+LV0121,Charles H Benedum,child_of,J E BENDEDUM,,ambiguous,4 in plot C-25 share the initial,relation_raw,not checkable
+LV0121,Charles H Benedum,child_of,ELIZA BENDEDUM,,ambiguous,3 in plot C-25 share the initial,relation_raw,not checkable
+LV0121,Charles H Benedum,child_of,J. E Benedum,,ambiguous,4 in plot C-25 share the initial,dar_text,not checkable
+LV0121,Charles H Benedum,child_of,Eliza Benedum,,ambiguous,3 in plot C-25 share the initial,dar_text,not checkable
+LV0122,James L. Benedum,child_of,JAMES E BENEDUM,,ambiguous,3 in plot C-25 share the initial,relation_raw,not checkable
+LV0122,James L. Benedum,child_of,ELIZA BENEDUM,,ambiguous,3 in plot C-25 share the initial,relation_raw,not checkable
+LV0122,James L. Benedum,child_of,James E Benedum,,ambiguous,3 in plot C-25 share the initial,dar_text,not checkable
+LV0122,James L. Benedum,child_of,Eliza Benedum,,ambiguous,3 in plot C-25 share the initial,dar_text,not checkable
+LV0123,John E Benedum,child_of,J E BENEDUM,,ambiguous,3 in plot C-25 share the initial,relation_raw,not checkable
+LV0123,John E Benedum,child_of,ELIZA BENEDUM,,ambiguous,2 in plot C-25 share the initial,relation_raw,not checkable
+LV0123,John E Benedum,child_of,J. E Benedum,,ambiguous,3 in plot C-25 share the initial,dar_text,not checkable
+LV0123,John E Benedum,child_of,Eliza Benedum,,ambiguous,2 in plot C-25 share the initial,dar_text,not checkable
+LV0126,Annie Throckmorton Benedum,spouse_of,C D BENEDUM,LV0128,medium,given initial + surname + same plot N-1,relation_raw,ok
+LV0127,Arabella Tavenner Benedum,spouse_of,W A BENEDUM,,ambiguous,3 in plot C-25 share the initial,relation_raw,not checkable
+LV0151,Jane Lodge Grubb Bosart,spouse_of,J M BOSART MD,,unresolved,no MD in Lakeview Cemetery,relation_raw,not checkable
+LV0153,Cecilia Decatur Heaton Braden,spouse_of,R W BRADEN,,ambiguous,2 in plot N-28 share the initial,relation_raw,not checkable
+LV0153,Cecilia Decatur Heaton Braden,spouse_of,R. W. Braden  Nov. 29,,unresolved,no NOV in Lakeview Cemetery,dar_text,not checkable
+LV0154,Dr. Albert V. Braden,child_of,R W BRADEN,,ambiguous,2 in plot N-28 share the initial,relation_raw,not checkable
+LV0154,Dr. Albert V. Braden,child_of,C D BRADEN,,ambiguous,2 in plot N-28 share the initial,relation_raw,not checkable
+LV0154,Dr. Albert V. Braden,child_of,R. W Braden,,ambiguous,2 in plot N-28 share the initial,dar_text,not checkable
+LV0154,Dr. Albert V. Braden,child_of,C. D. Braden,,ambiguous,2 in plot N-28 share the initial,dar_text,not checkable
+LV0155,Walter D. Braden,child_of,R W BRADEN,LV0152,medium,given initial + surname + same plot N-28,relation_raw,ok
+LV0155,Walter D. Braden,child_of,C D BRADEN,LV0153,medium,given initial + surname + same plot N-28,relation_raw,ok
+LV0155,Walter D. Braden,child_of,R. W Braden,LV0152,medium,given initial + surname + same plot N-28,dar_text,ok
+LV0155,Walter D. Braden,child_of,C. D. Braden,LV0153,medium,given initial + surname + same plot N-28,dar_text,ok
+LV0156,Townsend Heaton Braden,child_of,R W BRADEN,,ambiguous,2 in plot N-28 share the initial,relation_raw,not checkable
+LV0156,Townsend Heaton Braden,child_of,C D BRADEN,,ambiguous,2 in plot N-28 share the initial,relation_raw,not checkable
+LV0156,Townsend Heaton Braden,child_of,R. W Braden,,ambiguous,2 in plot N-28 share the initial,dar_text,not checkable
+LV0156,Townsend Heaton Braden,child_of,C. D. Braden,,ambiguous,2 in plot N-28 share the initial,dar_text,not checkable
+LV0157,Frances E. Breckenridge,child_of,C C BRECKENRIDGE,,ambiguous,2 in plot N-2 share the initial,relation_raw,not checkable
+LV0157,Frances E. Breckenridge,child_of,H H BRECKENRIDGE,LV0159,medium,given initial + surname + same plot N-2,relation_raw,ok
+LV0157,Frances E. Breckenridge,child_of,H.C.C Brackenridge,,ambiguous,3 in plot N-2 share the initial,dar_text,not checkable
+LV0157,Frances E. Breckenridge,child_of,H.A. Brackenridge,LV0159,medium,given initial + surname + same plot N-2 (surname fuzzy-matched BRACKENRIDGE~BRECKENRIDGE),dar_text,ok
+LV0161,Nancy Hoskinson Bright,spouse_of,THE LATE CAPT A D BRIGHT,,unresolved,only self matched,relation_raw,not checkable
+LV0167,Inez Cassell Brown,spouse_of,JAMES L BROWN,LV0164,medium,given initial + surname + same plot N-7,relation_raw,ok
+LV0171,Mary Francenia Brown,child_of,ISAAC BROWN,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0171,Mary Francenia Brown,child_of,MARY E PIERPOINT BROWN,LV0173,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+LV0174,Lillian L. Brown,spouse_of,RAYMOND I BROWN,LV0175,high,given name + surname + same plot C-90,relation_raw,ok
+LV0174,Lillian L. Brown,spouse_of,Raymond I. Brown,LV0175,high,given name + surname + same plot C-90,dar_text,ok
+LV0178,Sarah Jane Brown,spouse_of,B FRANK BROWN,LV0179,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+LV0178,Sarah Jane Brown,spouse_of,B. Frank Brown,LV0179,medium,"given name + surname, same cemetery (plot differs or unknown)",dar_text,ok
+LV0182,Emily Ellen Simmons Brown,spouse_of,T A BROWN,LV0165,medium,given initial + surname + same plot C-74,relation_raw,FAILS: spouses b.1846 and b.1905
+LV0182,Emily Ellen Simmons Brown,spouse_of,T. A. Brown,LV0165,medium,given initial + surname + same plot C-74,dar_text,FAILS: spouses b.1846 and b.1905
+LV0206,Edward F. Carter,child_of,SUSAN CARTER,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0207,Alma N. Carter,child_of,L W T CARTER,,ambiguous,2 in plot C-89 share the initial,relation_raw,not checkable
+LV0207,Alma N. Carter,child_of,L.W.T. Carter,,ambiguous,2 in plot C-89 share the initial,dar_text,not checkable
+LV0210,Willie Etta T. Carter,spouse_of,LEWIS T CARTER,LV0209,high,given name + surname + same plot C-89,relation_raw,ok
+LV0210,Willie Etta T. Carter,spouse_of,Lewis T. Carter,LV0209,high,given name + surname + same plot C-89,dar_text,ok
+LV0215,Margaret Sexton Taylor Chamblin,spouse_of,M EDWIN CHAMBLIN,LV0214,high,given name + surname + same plot C-59,relation_raw,ok
+LV0217,Mary Jane Burson Chamblin,spouse_of,JOHN M CHAMBLIN,LV0216,high,given name + surname + same plot C-121,relation_raw,ok
+LV0217,Mary Jane Burson Chamblin,spouse_of,John N. Chamblin  Oct. 28,,unresolved,no OCT in Lakeview Cemetery,dar_text,not checkable
+LV0218,Albert H. Chamblin,child_of,JOHN B CHAMBLIN,LV0219,high,given name + surname + same plot C-104,relation_raw,ok
+LV0218,Albert H. Chamblin,child_of,E M CHAMBLIN,,ambiguous,2 in plot C-104 share the initial,relation_raw,not checkable
+LV0218,Albert H. Chamblin,child_of,John B Chamblin,LV0219,high,given name + surname + same plot C-104,dar_text,ok
+LV0218,Albert H. Chamblin,child_of,E. M. Chamblin,,ambiguous,2 in plot C-104 share the initial,dar_text,not checkable
+LV0227,Regina Neff Clark,spouse_of,J. W. Clark,LV0226,medium,given initial + surname + same plot N-5,dar_text,ok
+LV0235,Mary Elsie Williams Coffman,spouse_of,ALLEN E,,unresolved,no E in Lakeview Cemetery,relation_raw,not checkable
+LV0239,Charles Franklin Colbert,child_of,GEORGE T COLBERT,LV0238,high,given name + surname + same plot C-6,relation_raw,ok
+LV0239,Charles Franklin Colbert,child_of,J M COLBERT,LV0242,medium,given initial + surname + same plot C-6,relation_raw,ok
+LV0239,Charles Franklin Colbert,child_of,Geo. T Colbert,LV0238,medium,given initial + surname + same plot C-6,dar_text,ok
+LV0239,Charles Franklin Colbert,child_of,J. M. Colbert,LV0242,medium,given initial + surname + same plot C-6,dar_text,ok
+LV0246,Betty Virginia Swartz Cole,spouse_of,LESTER J COLE,,ambiguous,2 people share that name in plot E-81,relation_raw,not checkable
+LV0267,James Grafton Cox,child_of,J A COX,,ambiguous,2 in plot C-36 share the initial,relation_raw,not checkable
+LV0267,James Grafton Cox,child_of,TERESA M COX,LV0271,high,given name + surname + same plot C-36,relation_raw,ok
+LV0267,James Grafton Cox,child_of,J. A Jan,,unresolved,no JAN in Lakeview Cemetery,dar_text,not checkable
+LV0267,James Grafton Cox,child_of,Teresa M.        Jan. 25,,unresolved,no JAN in Lakeview Cemetery,dar_text,not checkable
+LV0273,Terry Raymond Creamer,child_of,BETTY M CREAMER,LV0274,high,given name + surname + same plot E-57,relation_raw,ok
+LV0273,Terry Raymond Creamer,child_of,GUY R CREAMER,LV0275,high,given name + surname + same plot E-57,relation_raw,ok
+LV0276,Frances M. Small Cross,spouse_of,HENRY HARRISON CROSS,LV0277,high,given name + surname + same plot E-55,relation_raw,ok
+LV0277,Henry Harrison Cross,spouse_of,FRANC S CROSS,LV0276,medium,given initial + surname + same plot E-55,relation_raw,ok
+LV0277,Henry Harrison Cross,spouse_of,Franc S. Cross 1869 - 1939,LV0276,medium,given initial + surname + same plot E-55,dar_text,ok
+LV0282,Francis A. Cullen,child_of,R L CULLEN,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0282,Francis A. Cullen,child_of,F P CULLEN,LV0283,medium,given initial + surname + same plot C-8,relation_raw,ok
+LV0282,Francis A. Cullen,child_of,R. L Cullen,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0282,Francis A. Cullen,child_of,F. P. Cullen,LV0283,medium,given initial + surname + same plot C-8,dar_text,ok
+LV0283,Francis Heaton Palmer Cullen,spouse_of,ROBERT L CULLEN,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0283,Francis Heaton Palmer Cullen,spouse_of,Robert L. Cullen,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0285,Lydia Jane Everhart Cummings,spouse_of,J T CUMMINS,LV0284,medium,given initial + surname + same plot C-37 (surname fuzzy-matched CUMMINS~CUMMINGS),relation_raw,ok
+LV0285,Lydia Jane Everhart Cummings,spouse_of,J. T. Cummings,LV0284,medium,given initial + surname + same plot C-37,dar_text,ok
+LV0287,Mary L. Alder Cummings,spouse_of,B F CUMMINGS,,ambiguous,2 in plot C-137 share the initial,relation_raw,not checkable
+LV0287,Mary L. Alder Cummings,spouse_of,B. F. Cummings,,ambiguous,2 in plot C-137 share the initial,dar_text,not checkable
+LV0309,Mary E. Davis,child_of,A. C Davis,,ambiguous,2 in plot C-88 share the initial,dar_text,not checkable
+LV0309,Mary E. Davis,child_of,S.E. Davis,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0326,Emma J. Spergeon Donaldson,spouse_of,ELLIOTT S DONALDSON,LV0325,high,given name + surname + same plot C-8,relation_raw,ok
+LV0326,Emma J. Spergeon Donaldson,spouse_of,Elliott S. Donaldson  1866 - 19--,LV0325,high,given name + surname + same plot C-8,dar_text,ok
+LV0349,Martha J. Dowell,child_of,JESSE D DOWELL,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0349,Martha J. Dowell,child_of,MARY CARTER DOWELL,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0350,Amanda E Dowell,child_of,JESSE D DOWELL,LV0349,medium,given initial + surname + same plot E-27,relation_raw,"FAILS: parent b.1835, child b.1840"
+LV0350,Amanda E Dowell,child_of,MARY CARTER DOWELL,LV0349,medium,given initial + surname + same plot E-27,relation_raw,"FAILS: parent b.1835, child b.1840"
+LV0350,Amanda E Dowell,child_of,Jesse D Dowell,LV0349,medium,given initial + surname + same plot E-27,dar_text,"FAILS: parent b.1835, child b.1840"
+LV0350,Amanda E Dowell,child_of,Mary Carter Dowell,LV0349,medium,given initial + surname + same plot E-27,dar_text,"FAILS: parent b.1835, child b.1840"
+LV0351,Emma Louise Kent Downs,spouse_of,H CARLTON DOWNS/MARR 16 NOV 1943,,unresolved,no NOV in Lakeview Cemetery,relation_raw,not checkable
+LV0353,Edward Mauran Dunbar,child_of,E DUNBAR,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0353,Edward Mauran Dunbar,child_of,S DUNBAR,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0353,Edward Mauran Dunbar,child_of,E. E Dunbar,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0353,Edward Mauran Dunbar,child_of,S. S. Dunbar,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0354,Grace Dunbar,child_of,E M IOWA,,unresolved,no IOWA in Lakeview Cemetery,relation_raw,not checkable
+LV0354,Grace Dunbar,child_of,C T DUNBAR B PRESCOTT IOWA,,unresolved,no IOWA in Lakeview Cemetery,relation_raw,not checkable
+LV0354,Grace Dunbar,child_of,E. M Dunbar,LV0353,medium,given initial + surname + same plot C-77,dar_text,ok
+LV0354,Grace Dunbar,child_of,C. T. Dunbar,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0371,Carrie Emerick,child_of,J H EMERICK,,ambiguous,2 in plot C-108 share the initial,relation_raw,not checkable
+LV0371,Carrie Emerick,child_of,C R EMERICK,,ambiguous,4 in plot C-108 share the initial,relation_raw,not checkable
+LV0377,Carrie R. Emerick,spouse_of,JOHN H EMERICK,LV0376,high,given name + surname + same plot C-108,relation_raw,ok
+LV0377,Carrie R. Emerick,spouse_of,John H. Emerick,LV0376,high,given name + surname + same plot C-108,dar_text,ok
+LV0382,Sarah A. Evans,spouse_of,W L EVANS,,ambiguous,2 in plot C-20 share the initial,relation_raw,not checkable
+LV0383,Louise Locker Evans,spouse_of,JONATHAN EVANS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0383,Louise Locker Evans,spouse_of,Jonathon Evans,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0392,Mary Isabella Myers Everhart,spouse_of,GEORGE F EVERHART,LV0405,high,given name + surname + same plot C-119,relation_raw,ok
+LV0396,Catharine S. Deakins Everhart,spouse_of,WM N EVERHART,LV0395,medium,given initial + surname + same plot C-37,relation_raw,ok
+LV0396,Catharine S. Deakins Everhart,spouse_of,Wm. N. Everhart,LV0395,medium,given initial + surname + same plot C-37,dar_text,ok
+LV0397,Annie Arabella Everhart,child_of,CATHARINE S EVERHART,LV0396,high,given name + surname + same plot C-37,relation_raw,ok
+LV0397,Annie Arabella Everhart,child_of,WM N EVERHART,LV0395,medium,given initial + surname + same plot C-37,relation_raw,ok
+LV0397,Annie Arabella Everhart,child_of,Catherine S Everhart,LV0396,medium,given initial + surname + same plot C-37,dar_text,ok
+LV0397,Annie Arabella Everhart,child_of,Wm. N. Everhart,LV0395,medium,given initial + surname + same plot C-37,dar_text,ok
+LV0400,Mahalia U. Cooper Everhart,spouse_of,F EVERHART,LV0399,medium,given initial + surname + same plot C-95,relation_raw,ok
+LV0400,Mahalia U. Cooper Everhart,spouse_of,John F. Everhart,LV0399,high,given name + surname + same plot C-95,dar_text,ok
+LV0402,Grace M. Everhart,spouse_of,C L EVERHART,LV0388,medium,given initial + surname + same plot C-90,relation_raw,ok
+LV0402,Grace M. Everhart,spouse_of,C. L. Everhart,LV0388,medium,given initial + surname + same plot C-90,dar_text,ok
+LV0422,Mary Esther Wynkoop Finnelle,spouse_of,EDWARD FINNELLE,LV0421,high,given name + surname + same plot N-27,relation_raw,ok
+LV0436,Rosa B. Follin,spouse_of,THEODORE D FOLLIN,LV0435,high,given name + surname + same plot E-26,relation_raw,ok
+LV0436,Rosa B. Follin,spouse_of,Theodore D. Follin,LV0435,high,given name + surname + same plot E-26,dar_text,ok
+LV0437,Sarah E. Follin,spouse_of,THEODORE D FOLLIN,LV0435,high,given name + surname + same plot E-26,relation_raw,ok
+LV0437,Sarah E. Follin,spouse_of,Theodore D. Follin,LV0435,high,given name + surname + same plot E-26,dar_text,ok
+LV0442,Janie A. Fox,spouse_of,Manly Fox,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0444,Richard Dow Francis,child_of,W S FRANCIS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0444,Richard Dow Francis,child_of,G H FRANCIS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0444,Richard Dow Francis,child_of,W. S Francis,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0444,Richard Dow Francis,child_of,G. H. Francis  1922 - 1925,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0445,Audrey Harpham Francis,spouse_of,SYDNOR FRANCIS JR,,ambiguous,3 people share that name in plot N-36,relation_raw,not checkable
+LV0458,Willard E Gaver,child_of,C T GAVER,,unresolved,only self matched,relation_raw,not checkable
+LV0458,Willard E Gaver,child_of,DEAN GAVER,,unresolved,only self matched,relation_raw,not checkable
+LV0461,Clara S. Gill,spouse_of,Thaddeus Gill,LV0460,high,given name + surname + same plot N-6,dar_text,ok
+LV0466,Frances Traphagen Field Goodrich,spouse_of,CHARLES L,,unresolved,no L in Lakeview Cemetery,relation_raw,not checkable
+LV0468,Sarah M. Gore,spouse_of,A M GORE,LV0467,medium,given initial + surname + same plot C-117,relation_raw,ok
+LV0468,Sarah M. Gore,spouse_of,A. M. Gore  b. Sept. 20,,unresolved,no SEPT in Lakeview Cemetery,dar_text,not checkable
+LV0469,Infant Grafton,child_of,J A M,,unresolved,no M in Lakeview Cemetery,relation_raw,not checkable
+LV0469,Infant Grafton,child_of,TERESA M,,unresolved,no M in Lakeview Cemetery,relation_raw,not checkable
+LV0474,Infant Daughter Gray,child_of,Paul H July,,unresolved,no JULY in Lakeview Cemetery,dar_text,not checkable
+LV0474,Infant Daughter Gray,child_of,Irene H. Gray  July 8,,unresolved,no JULY in Lakeview Cemetery,dar_text,not checkable
+LV0481,Jane L Grubb,spouse_of,J M BOSART MD,,unresolved,no MD in Lakeview Cemetery,relation_raw,not checkable
+LV0481,Jane L Grubb,spouse_of,J. M. Bosart,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0483,Ebenezer Grubb,child_of,CURTIS GRUBB,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0483,Ebenezer Grubb,child_of,HARRIET E GRUBB,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0483,Ebenezer Grubb,child_of,Curtis Grubb,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0483,Ebenezer Grubb,child_of,Harriet E. Grubb,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0486,Virginia J Gulick,spouse_of,J H MYERS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0486,Virginia J Gulick,spouse_of,J. H. Myers,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0487,Mary E. Gulick,child_of,J H GULICK,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0487,Mary E. Gulick,child_of,ANN V GULICK,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0487,Mary E. Gulick,child_of,J. H Gulick,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0487,Mary E. Gulick,child_of,Ann V. Gulick,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0489,Mary E. Haines,spouse_of,WASHINGTON HAINES,LV0490,high,given name + surname + same plot C-66,relation_raw,ok
+LV0489,Mary E. Haines,spouse_of,Washington Haines,LV0490,high,given name + surname + same plot C-66,dar_text,ok
+LV0495,Alcinda Rose Hesser Hampton,spouse_of,JONAH N HAMPTON,LV0494,high,given name + surname + same plot C-70,relation_raw,ok
+LV0495,Alcinda Rose Hesser Hampton,spouse_of,Jonah N. Hampton,LV0494,high,given name + surname + same plot C-70,dar_text,ok
+LV0496,Harry Dillon Hampton,child_of,A R HAMPTON,LV0495,medium,given initial + surname + same plot C-70,relation_raw,ok
+LV0496,Harry Dillon Hampton,child_of,J N HAMPTON,LV0494,medium,given initial + surname + same plot C-70,relation_raw,ok
+LV0496,Harry Dillon Hampton,child_of,A. R Hampton,LV0495,medium,given initial + surname + same plot C-70,dar_text,ok
+LV0496,Harry Dillon Hampton,child_of,J. N. Hampton,LV0494,medium,given initial + surname + same plot C-70,dar_text,ok
+LV0498,Mary E. Hampton,child_of,G H HAMPTON,LV0497,medium,given initial + surname + same plot C-35,relation_raw,ok
+LV0498,Mary E. Hampton,child_of,ELLA HAMPTON,LV1200,high,given name + surname + same plot C-35,relation_raw,ok
+LV0498,Mary E. Hampton,child_of,G.H Hampton,LV0497,medium,given initial + surname + same plot C-35,dar_text,ok
+LV0498,Mary E. Hampton,child_of,Ella Hampton,LV1200,high,given name + surname + same plot C-35,dar_text,ok
+LV0503,Mary C. Hawley,spouse_of,REV JAMES M HAWLEY,LV0504,high,given name + surname + same plot N-13,relation_raw,ok
+LV0503,Mary C. Hawley,spouse_of,James M. Hawley,LV0504,high,given name + surname + same plot N-13,dar_text,ok
+LV0506,Martha J Hawley,spouse_of,B M HAWLEY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0506,Martha J Hawley,spouse_of,B. M. Hawley,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0507,Infant Son Hawthorne,child_of,N B HAWTHORNE,LV1213,medium,given initial + surname + same plot E-23,relation_raw,no dates to check
+LV0507,Infant Son Hawthorne,child_of,L P HAWTHORNE,LV1212,medium,given initial + surname + same plot E-23,relation_raw,no dates to check
+LV0507,Infant Son Hawthorne,child_of,N. B May,,unresolved,no MAY in Lakeview Cemetery,dar_text,not checkable
+LV0507,Infant Son Hawthorne,child_of,L. P. Hawthorne  May 9,,unresolved,no MAY in Lakeview Cemetery,dar_text,not checkable
+LV0526,Nona Carolyn Hirst,child_of,H.K Hirst,LV1237,medium,given initial + surname + same plot N-1,dar_text,ok
+LV0526,Nona Carolyn Hirst,child_of,Anita Hirst,LV1234,high,given name + surname + same plot N-1,dar_text,ok
+LV0527,Edward B. Hirst,child_of,E T HIRST,LV1236,medium,given initial + surname + same plot N-1,relation_raw,ok
+LV0527,Edward B. Hirst,child_of,G B HIRST,LV1235,medium,given initial + surname + same plot N-1,relation_raw,ok
+LV0527,Edward B. Hirst,child_of,E.T Hirst,LV1236,medium,given initial + surname + same plot N-1,dar_text,ok
+LV0527,Edward B. Hirst,child_of,G.B. Hirst,LV1235,medium,given initial + surname + same plot N-1,dar_text,ok
+LV0530,Annie C. Kuhlmann Hope,spouse_of,G W HOPE,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0530,Annie C. Kuhlmann Hope,spouse_of,C. W. Hope,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0533,Sophia C. Evans Hoskinson,spouse_of,Wm. D. Hoskinson  1854 - 19,LV0532,medium,given initial + surname + same plot C-20,dar_text,ok
+LV0540,Huldah I. Howell,spouse_of,W H HOWELL,LV0539,medium,given initial + surname + same plot N-5,relation_raw,ok
+LV0540,Huldah I. Howell,spouse_of,W. H. Howell,LV0539,medium,given initial + surname + same plot N-5,dar_text,ok
+LV0543,Troy B Hunt,child_of,W H HUNT,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0543,Troy B Hunt,child_of,E HUNT,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0543,Troy B Hunt,child_of,W. H Jan,,unresolved,no JAN in Lakeview Cemetery,dar_text,not checkable
+LV0543,Troy B Hunt,child_of,E. Hunt d. Jan. 7,,unresolved,no JAN in Lakeview Cemetery,dar_text,not checkable
+LV0544,Roger Hunt,child_of,WM HUNT,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0544,Roger Hunt,child_of,MARY HUNT,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+LV0544,Roger Hunt,child_of,Wm Hunt,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0544,Roger Hunt,child_of,Mary Hunt,,ambiguous,2 people share that name in the cemetery,dar_text,not checkable
+LV0554,Charles E. James,child_of,S C JAMES,,ambiguous,2 in plot C-14 share the initial,relation_raw,not checkable
+LV0554,Charles E. James,child_of,M H JAMES,,ambiguous,2 in plot C-14 share the initial,relation_raw,not checkable
+LV0554,Charles E. James,child_of,S. C James,,ambiguous,2 in plot C-14 share the initial,dar_text,not checkable
+LV0554,Charles E. James,child_of,M. H. James,,ambiguous,2 in plot C-14 share the initial,dar_text,not checkable
+LV0557,Malinda E James,spouse_of,GEORGE W JAMES,LV0556,high,given name + surname + same plot N-17,relation_raw,ok
+LV0557,Malinda E James,spouse_of,George W. James,LV0556,high,given name + surname + same plot N-17,dar_text,ok
+LV0561,Martha Ellen Paxson James,spouse_of,LEVI JAMES,LV0560,high,given name + surname + same plot C-26,relation_raw,ok
+LV0561,Martha Ellen Paxson James,spouse_of,Levi James,LV0560,high,given name + surname + same plot C-26,dar_text,ok
+LV0569,Caroline E. Tavenner Jones,spouse_of,JAMES H JONES,LV0570,high,given name + surname + same plot C-41,relation_raw,ok
+LV0569,Caroline E. Tavenner Jones,spouse_of,James H. Jones,LV0570,high,given name + surname + same plot C-41,dar_text,ok
+LV0571,Sarah Elizabeth Wynkoop Jones,spouse_of,LANDON JONES,LV0572,high,given name + surname + same plot C-41,relation_raw,ok
+LV0571,Sarah Elizabeth Wynkoop Jones,spouse_of,Landon Jones,LV0572,high,given name + surname + same plot C-41,dar_text,ok
+LV0575,Hazel Keen,child_of,DR T R KEEN,,ambiguous,2 in plot C-38 share the initial,relation_raw,not checkable
+LV0575,Hazel Keen,child_of,KATHLEEN N KEEN,LV1328,high,given name + surname + same plot C-38,relation_raw,ok
+LV0575,Hazel Keen,child_of,T. F Keen,LV0574,medium,given initial + surname + same plot C-38,dar_text,ok
+LV0575,Hazel Keen,child_of,Kathleen S. Keen,LV1328,high,given name + surname + same plot C-38,dar_text,ok
+LV0576,Georgianna Taylor Keen,spouse_of,Thomas Keen,LV0574,medium,"given name + surname, same cemetery (plot differs or unknown)",dar_text,ok
+LV0583,Elizabeth B Larson,spouse_of,NIELS P LARSON,LV0584,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+LV0589,Mary Ann White Laycock,spouse_of,James Laycock,LV0600,medium,given initial + surname + same plot C-40,dar_text,ok
+LV0590,James Edgar Laycock,child_of,JAMES LAYCOCK,LV0588,high,given name + surname + same plot C-40,relation_raw,ok
+LV0590,James Edgar Laycock,child_of,MARY LAYCOCK,,ambiguous,3 people share that name in plot C-40,relation_raw,not checkable
+LV0590,James Edgar Laycock,child_of,J Laycock,,ambiguous,2 in plot C-40 share the initial,dar_text,not checkable
+LV0590,James Edgar Laycock,child_of,Mary Ann Laycock,,ambiguous,4 people share that name in plot C-40,dar_text,not checkable
+LV0591,Frances Ann Laycock,child_of,JAMES LAYCOCK,LV0600,medium,given initial + surname + same plot C-40,relation_raw,"FAILS: parent b.1842, child b.1853"
+LV0591,Frances Ann Laycock,child_of,MARY LAYCOCK,,ambiguous,3 people share that name in plot C-40,relation_raw,not checkable
+LV0591,Frances Ann Laycock,child_of,James Laycock,LV0600,medium,given initial + surname + same plot C-40,dar_text,"FAILS: parent b.1842, child b.1853"
+LV0591,Frances Ann Laycock,child_of,Mary A. Laycock,,ambiguous,3 people share that name in plot C-40,dar_text,not checkable
+LV0592,Mary A. Laycock,child_of,JOHN F LAYCOCK,LV0600,high,given name + surname + same plot C-40,relation_raw,ok
+LV0592,Mary A. Laycock,child_of,M C LAYCOCK,,ambiguous,2 in plot C-40 share the initial,relation_raw,not checkable
+LV0592,Mary A. Laycock,child_of,John F Laycock,LV0600,high,given name + surname + same plot C-40,dar_text,ok
+LV0592,Mary A. Laycock,child_of,M. C. Laycock,,ambiguous,2 in plot C-40 share the initial,dar_text,not checkable
+LV0595,Ophelia Orrison Laycock,spouse_of,J H LAYCOCK,LV0594,medium,given initial + surname + same plot C-67,relation_raw,ok
+LV0595,Ophelia Orrison Laycock,spouse_of,J. H. Laycock b. Feb. 10,,unresolved,no FEB in Lakeview Cemetery,dar_text,not checkable
+LV0598,Ella C. Laycock,spouse_of,GEORGE W LAYCOCK,,ambiguous,2 people share that name in plot C-105,relation_raw,not checkable
+LV0598,Ella C. Laycock,spouse_of,George W. Laycock,,ambiguous,2 people share that name in plot C-105,dar_text,not checkable
+LV0599,Hannah Emily Henderson Laycock,spouse_of,GEORGE W LAYCOCK,,ambiguous,2 people share that name in plot C-105,relation_raw,not checkable
+LV0599,Hannah Emily Henderson Laycock,spouse_of,George W. Laycock,,ambiguous,2 people share that name in plot C-105,dar_text,not checkable
+LV0607,Katherine Carrie Leigh,child_of,W O LEIGH,LV1413,medium,given initial + surname + same plot E-10,relation_raw,ok
+LV0607,Katherine Carrie Leigh,child_of,C A LEIGH,,ambiguous,2 in plot E-10 share the initial,relation_raw,not checkable
+LV0607,Katherine Carrie Leigh,child_of,W. O Leigh,LV1413,medium,given initial + surname + same plot E-10,dar_text,ok
+LV0607,Katherine Carrie Leigh,child_of,C. A. Leigh,,ambiguous,2 in plot E-10 share the initial,dar_text,not checkable
+LV0608,Robert Elvin Leigh,child_of,W O LEIGH,LV1413,medium,given initial + surname + same plot E-10,relation_raw,ok
+LV0608,Robert Elvin Leigh,child_of,C A LEIGH,,ambiguous,3 in plot E-10 share the initial,relation_raw,not checkable
+LV0608,Robert Elvin Leigh,child_of,W. O Leigh,LV1413,medium,given initial + surname + same plot E-10,dar_text,ok
+LV0608,Robert Elvin Leigh,child_of,C. A. Leigh,,ambiguous,3 in plot E-10 share the initial,dar_text,not checkable
+LV0609,Thomas George Leigh,child_of,HOWARD LEIGH,LV1410,high,given name + surname + same plot E-10,relation_raw,ok
+LV0609,Thomas George Leigh,child_of,CECILIA LEIGH,,ambiguous,3 in plot E-10 share the initial,relation_raw,not checkable
+LV0609,Thomas George Leigh,child_of,Howard Leigh,LV1410,high,given name + surname + same plot E-10,dar_text,ok
+LV0609,Thomas George Leigh,child_of,Cecilia Leigh,,ambiguous,3 in plot E-10 share the initial,dar_text,not checkable
+LV0618,Gertrude T. Woolf Love,spouse_of,F M LOVE,LV1437,medium,given initial + surname + same plot N-3,relation_raw,ok
+LV0618,Gertrude T. Woolf Love,spouse_of,F.M. Love,LV1437,medium,given initial + surname + same plot N-3,dar_text,ok
+LV0619,James W. Love,child_of,F M LOVE,LV1437,medium,given initial + surname + same plot N-3,relation_raw,"FAILS: parent b.1853, child b.1829"
+LV0619,James W. Love,child_of,G T LOVE,LV0618,medium,given initial + surname + same plot N-3,relation_raw,"FAILS: parent b.1853, child b.1829"
+LV0619,James W. Love,child_of,F.M Love,LV1437,medium,given initial + surname + same plot N-3,dar_text,"FAILS: parent b.1853, child b.1829"
+LV0619,James W. Love,child_of,G.T. Love,LV0618,medium,given initial + surname + same plot N-3,dar_text,"FAILS: parent b.1853, child b.1829"
+LV0621,Catherine E. White Loveless,spouse_of,MASON LOVELESS,LV0620,high,given name + surname + same plot C-106,relation_raw,ok
+LV0621,Catherine E. White Loveless,spouse_of,Mason Loveless,LV0620,high,given name + surname + same plot C-106,dar_text,ok
+LV0625,James B. Lovett,child_of,CHAS LOVETT,LV0626,medium,given initial + surname + same plot C-85,relation_raw,ok
+LV0625,James B. Lovett,child_of,MARGARET LOVETT,LV1445,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+LV0625,James B. Lovett,child_of,Chas Lovett,LV0626,medium,given initial + surname + same plot C-85,dar_text,ok
+LV0625,James B. Lovett,child_of,Margaret Lovett,LV1445,medium,"given name + surname, same cemetery (plot differs or unknown)",dar_text,ok
+LV0633,Lavinia Catherine Brown Lowe,spouse_of,WM A LOWE,,ambiguous,2 in plot C-88 share the initial,relation_raw,not checkable
+LV0633,Lavinia Catherine Brown Lowe,spouse_of,Wm. A. Lowe,,ambiguous,2 in plot C-88 share the initial,dar_text,not checkable
+LV0653,Susie E. McDonald,child_of,J W MCDONALD,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0653,Susie E. McDonald,child_of,M J MCDONALD,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0653,Susie E. McDonald,child_of,J.W McDonald,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0653,Susie E. McDonald,child_of,M.J. McDonald,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0656,Gladys McMichael,child_of,S J MCMICHAEL,,ambiguous,4 in plot C-137 share the initial,relation_raw,not checkable
+LV0656,Gladys McMichael,child_of,M W MCMICHAEL,LV1483,medium,given initial + surname + same plot C-137,relation_raw,ok
+LV0656,Gladys McMichael,child_of,S.J McMichael,,ambiguous,4 in plot C-137 share the initial,dar_text,not checkable
+LV0656,Gladys McMichael,child_of,M.W. McMichael,LV1483,medium,given initial + surname + same plot C-137,dar_text,ok
+LV0657,Kathleen Stuart Mcveigh,spouse_of,DR THOS F KEEN,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0657,Kathleen Stuart Mcveigh,spouse_of,Thos. F. Keen,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0658,Ellen D. Grubb Menard,child_of,HARRIET E GRUBB,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0658,Ellen D. Grubb Menard,child_of,CURTIS GRUBB,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0658,Ellen D. Grubb Menard,child_of,Harriet E Grubb,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0658,Ellen D. Grubb Menard,child_of,Curtis Grubb,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0659,Frances M Menard,spouse_of,JOHN E OLSEN,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0659,Frances M Menard,spouse_of,Johan E. Olsen,LV0733,medium,"given name + surname, same cemetery (plot differs or unknown)",dar_text,ok
+LV0667,Clare Beth Miller,spouse_of,HOWARD S JAMES,LV1301,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+LV0667,Clare Beth Miller,spouse_of,Howard S. James,LV1301,medium,"given name + surname, same cemetery (plot differs or unknown)",dar_text,ok
+LV0667,Clare Beth Miller,child_of,N. Guy Miller,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0667,Clare Beth Miller,child_of,Elizabeth B. Miller,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0670,Lydia Cecilia Vandevanter Milton,spouse_of,Theodore D. Milton,LV0669,high,given name + surname + same plot C-131,dar_text,ok
+LV0672,Maury Milton,child_of,JOSEPH V MILTON,LV0671,high,given name + surname + same plot C-131,relation_raw,no dates to check
+LV0672,Maury Milton,child_of,PAGE MAURY MILTON,LV1525,medium,given initial + surname + same plot C-131,relation_raw,no dates to check
+LV0672,Maury Milton,child_of,Joseph V Milton,LV0671,high,given name + surname + same plot C-131,dar_text,no dates to check
+LV0672,Maury Milton,child_of,Page Maury Milton,LV1525,medium,given initial + surname + same plot C-131,dar_text,no dates to check
+LV0678,George L. Moatz,child_of,DANIEL MOATZ,LV0677,high,given name + surname + same plot N-5,relation_raw,"FAILS: parent b.1857, child b.1857"
+LV0678,George L. Moatz,child_of,LIZZA MOATZ,,ambiguous,2 in plot N-5 share the initial,relation_raw,not checkable
+LV0678,George L. Moatz,child_of,Daniel Moatz,LV0677,high,given name + surname + same plot N-5,dar_text,"FAILS: parent b.1857, child b.1857"
+LV0678,George L. Moatz,child_of,Lizzie Moatz  1884 - 1934,LV0676,high,given name + surname + same plot N-5,dar_text,"FAILS: parent b.1861, child b.1857"
+LV0681,Infant Son Mock,child_of,J F MOCK,,ambiguous,3 in plot C-55 share the initial,relation_raw,not checkable
+LV0681,Infant Son Mock,child_of,S V MOCK,,ambiguous,2 in plot C-55 share the initial,relation_raw,not checkable
+LV0681,Infant Son Mock,child_of,J. F Mock,,ambiguous,3 in plot C-55 share the initial,dar_text,not checkable
+LV0681,Infant Son Mock,child_of,S. V. Mock,,ambiguous,2 in plot C-55 share the initial,dar_text,not checkable
+LV0682,Mary Virginia Mock,child_of,J H MOCK,,ambiguous,3 in plot C-55 share the initial,relation_raw,not checkable
+LV0682,Mary Virginia Mock,child_of,B L MOCK,,ambiguous,2 in plot C-55 share the initial,relation_raw,not checkable
+LV0682,Mary Virginia Mock,child_of,J. H Mock,,ambiguous,3 in plot C-55 share the initial,dar_text,not checkable
+LV0682,Mary Virginia Mock,child_of,B. L. Mock,,ambiguous,2 in plot C-55 share the initial,dar_text,not checkable
+LV0684,Sarah A. Fulton Mock,spouse_of,JAMES E MOCK,LV0683,high,given name + surname + same plot E-12,relation_raw,ok
+LV0684,Sarah A. Fulton Mock,spouse_of,James E. Mock,LV0683,high,given name + surname + same plot E-12,dar_text,ok
+LV0692,Alice Ann Moore,child_of,GEORGE L MOORE,LV0691,medium,given initial + surname + same plot C-72,relation_raw,"FAILS: parent b.1853, child b.1851"
+LV0692,Alice Ann Moore,child_of,ANN A MOORE,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0692,Alice Ann Moore,child_of,Geo. L Moore,LV0691,medium,given initial + surname + same plot C-72,dar_text,"FAILS: parent b.1853, child b.1851"
+LV0692,Alice Ann Moore,child_of,Ann A. Moore,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0693,A. Truxton Morrison,child_of,H T MORRISON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0693,A. Truxton Morrison,child_of,B K MORRISON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0693,A. Truxton Morrison,child_of,H. T Morrison,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0693,A. Truxton Morrison,child_of,B. K. Morrison,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0696,Mary E. Mossburg,spouse_of,GEORGE C MOSSBURG,LV0695,high,given name + surname + same plot C-88,relation_raw,ok
+LV0696,Mary E. Mossburg,spouse_of,George C. Mossburg,LV0695,high,given name + surname + same plot C-88,dar_text,ok
+LV0702,Cora S. Warner Myers,spouse_of,J F MYERS,,ambiguous,2 in plot C-135 share the initial,relation_raw,not checkable
+LV0702,Cora S. Warner Myers,spouse_of,J. F. Myers  1869 - 1929,,ambiguous,2 in plot C-135 share the initial,dar_text,not checkable
+LV0705,Mary Elizabeth Mullen Myers,spouse_of,CHARLES W MYERS,LV0704,high,given name + surname + same plot C-123,relation_raw,ok
+LV0705,Mary Elizabeth Mullen Myers,spouse_of,Charles W. Myers,LV0704,high,given name + surname + same plot C-123,dar_text,ok
+LV0706,Alice L. Cox Wilson Myers,child_of,JAMES E LUPTON,,unresolved,no LUPTON in Lakeview Cemetery,relation_raw,not checkable
+LV0706,Alice L. Cox Wilson Myers,child_of,James E. Lupton,,unresolved,no LUPTON in Lakeview Cemetery,dar_text,not checkable
+LV0708,Mary Belle Myers,spouse_of,GEORGE F EVERHART,LV0405,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+LV0708,Mary Belle Myers,spouse_of,"(unnamed: ""his wife"")",LV0405,medium,"DAR wrote ""his wife"" with no name; resolved to the immediately preceding survey entry 295 (George Franklin Everhart)",dar_text,ok
+LV0710,Edna J. Myers,spouse_of,WILLARD C MYERS,LV0709,high,given name + surname + same plot E-36,relation_raw,ok
+LV0710,Edna J. Myers,spouse_of,Willard C. Myers,LV0709,high,given name + surname + same plot E-36,dar_text,ok
+LV0711,Mary F Myers,spouse_of,ANTHON C CHRISTENSEN,LV0222,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+LV0711,Mary F Myers,spouse_of,Anthon C. Christensen,LV0222,medium,"given name + surname, same cemetery (plot differs or unknown)",dar_text,ok
+LV0712,Frances May Myers,child_of,J T MYERS,,ambiguous,2 in plot C-100 share the initial,relation_raw,not checkable
+LV0712,Frances May Myers,child_of,C M MYERS,LV1545,medium,given initial + surname + same plot C-100,relation_raw,ok
+LV0712,Frances May Myers,child_of,J. T Myers,,ambiguous,2 in plot C-100 share the initial,dar_text,not checkable
+LV0712,Frances May Myers,child_of,C. M. Myers,LV1545,medium,given initial + surname + same plot C-100,dar_text,ok
+LV0715,Annie B. Kidwell Myers,spouse_of,ROBERT L MYERS,LV0714,high,given name + surname + same plot C-22,relation_raw,ok
+LV0715,Annie B. Kidwell Myers,spouse_of,Robert L. Myers,LV0714,high,given name + surname + same plot C-22,dar_text,ok
+LV0717,M. Anita Myers,child_of,N MYERS,LV0716,medium,given initial + surname + same plot C-22,relation_raw,ok
+LV0717,M. Anita Myers,child_of,BESSIE E MYERS,LV1544,high,given name + surname + same plot C-22,relation_raw,ok
+LV0717,M. Anita Myers,child_of,N Myers,LV0716,medium,given initial + surname + same plot C-22,dar_text,ok
+LV0717,M. Anita Myers,child_of,Bessie E. Myers,LV1544,high,given name + surname + same plot C-22,dar_text,ok
+LV0718,J. William Myers,child_of,J H MYERS,,ambiguous,2 in plot C-8 share the initial,relation_raw,not checkable
+LV0718,J. William Myers,child_of,V J MYERS,,ambiguous,2 in plot C-8 share the initial,relation_raw,not checkable
+LV0718,J. William Myers,child_of,J. H Myers,,ambiguous,2 in plot C-8 share the initial,dar_text,not checkable
+LV0718,J. William Myers,child_of,V. J. Myers,,ambiguous,2 in plot C-8 share the initial,dar_text,not checkable
+LV0720,Joseph B. Myers,child_of,J T MYERS,,ambiguous,3 in plot C-27 share the initial,relation_raw,not checkable
+LV0720,Joseph B. Myers,child_of,V E MYERS,LV0721,medium,given initial + surname + same plot C-27,relation_raw,ok
+LV0720,Joseph B. Myers,child_of,J. T Myers,,ambiguous,3 in plot C-27 share the initial,dar_text,not checkable
+LV0720,Joseph B. Myers,child_of,V. E. Myers,LV0721,medium,given initial + surname + same plot C-27,dar_text,ok
+LV0721,Virginia E. Laycock Myers,spouse_of,J T MYERS,,ambiguous,4 in plot C-27 share the initial,relation_raw,not checkable
+LV0721,Virginia E. Laycock Myers,spouse_of,J. T. Myers  1845 - 1926,,ambiguous,4 in plot C-27 share the initial,dar_text,not checkable
+LV0723,James William Myers,child_of,THOS MYERS,,ambiguous,2 in plot C-27 share the initial,relation_raw,not checkable
+LV0723,James William Myers,child_of,VIRGINIA MYERS,LV0721,high,given name + surname + same plot C-27,relation_raw,ok
+LV0723,James William Myers,child_of,Thos Myers,,ambiguous,2 in plot C-27 share the initial,dar_text,not checkable
+LV0723,James William Myers,child_of,Virginia Myers,LV0721,high,given name + surname + same plot C-27,dar_text,ok
+LV0724,Patsy B Nelson,spouse_of,CHAS E REID,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0724,Patsy B Nelson,spouse_of,Chas. E. Reid,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0726,William E. Newton,child_of,R G NEWTON,,ambiguous,3 in plot E-20 share the initial,relation_raw,not checkable
+LV0726,William E. Newton,child_of,D M NEWTON,,ambiguous,2 in plot E-20 share the initial,relation_raw,not checkable
+LV0726,William E. Newton,child_of,R.G Newton,,ambiguous,3 in plot E-20 share the initial,dar_text,not checkable
+LV0726,William E. Newton,child_of,D.M. Newton,,ambiguous,2 in plot E-20 share the initial,dar_text,not checkable
+LV0727,Nannie Lee Nichols,spouse_of,ARTHUR NICHOLS,LV0728,high,given name + surname + same plot C-58,relation_raw,ok
+LV0727,Nannie Lee Nichols,spouse_of,Arthur Nichols,LV0728,high,given name + surname + same plot C-58,dar_text,ok
+LV0731,Alice M. Norris,child_of,THOS B NORRIS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0731,Alice M. Norris,child_of,ANN DOWELL NORRIS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0731,Alice M. Norris,child_of,Thos. B Sept,,unresolved,no SEPT in Lakeview Cemetery,dar_text,not checkable
+LV0731,Alice M. Norris,child_of,Ann Dowell Norris Sept. 5,,unresolved,no SEPT in Lakeview Cemetery,dar_text,not checkable
+LV0736,Laura F. Thomas Orrison,spouse_of,J H ORRISON,LV0737,medium,given initial + surname + same plot C-67,relation_raw,ok
+LV0736,Laura F. Thomas Orrison,spouse_of,J. H. Orrison,LV0737,medium,given initial + surname + same plot C-67,dar_text,ok
+LV0741,Rebecca Orrison,child_of,W E ORRISON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0741,Rebecca Orrison,child_of,GRACE ORRISON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0741,Rebecca Orrison,child_of,W. E Orrison,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0741,Rebecca Orrison,child_of,Grace Orrison,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0748,Elizabeth Payne,child_of,E A PAYNE,,ambiguous,4 in plot C-21 share the initial,relation_raw,not checkable
+LV0748,Elizabeth Payne,child_of,SUSIE PAYNE,LV0750,high,given name + surname + same plot C-21,relation_raw,ok
+LV0748,Elizabeth Payne,child_of,E. A Payne,,ambiguous,4 in plot C-21 share the initial,dar_text,not checkable
+LV0748,Elizabeth Payne,child_of,Susie Payne,LV0750,high,given name + surname + same plot C-21,dar_text,ok
+LV0749,Ruth Payne,child_of,E A PAYNE,,ambiguous,5 in plot C-21 share the initial,relation_raw,not checkable
+LV0749,Ruth Payne,child_of,SUSIE PAYNE,LV0750,high,given name + surname + same plot C-21,relation_raw,ok
+LV0749,Ruth Payne,child_of,E. A Payne,,ambiguous,5 in plot C-21 share the initial,dar_text,not checkable
+LV0749,Ruth Payne,child_of,Susie Payne,LV0750,high,given name + surname + same plot C-21,dar_text,ok
+LV0751,Rodney Payne,child_of,E A PAYNE,,ambiguous,5 in plot C-21 share the initial,relation_raw,not checkable
+LV0751,Rodney Payne,child_of,SUSIE PAYNE,LV0750,high,given name + surname + same plot C-21,relation_raw,ok
+LV0751,Rodney Payne,child_of,E.A Payne,,ambiguous,5 in plot C-21 share the initial,dar_text,not checkable
+LV0751,Rodney Payne,child_of,Susie Payne,LV0750,high,given name + surname + same plot C-21,dar_text,ok
+LV0753,Ruby G. Payne,child_of,M D PAYNE,LV1617,medium,given initial + surname + same plot C-8,relation_raw,ok
+LV0753,Ruby G. Payne,child_of,B R PAYNE,LV1603,medium,given initial + surname + same plot C-8,relation_raw,ok
+LV0753,Ruby G. Payne,child_of,M. D Payne,LV1617,medium,given initial + surname + same plot C-8,dar_text,ok
+LV0753,Ruby G. Payne,child_of,B. R. Payne,LV1603,medium,given initial + surname + same plot C-8,dar_text,ok
+LV0758,Lola M. Peacock,spouse_of,N. B. Peacock,,ambiguous,3 in plot C-54 share the initial,dar_text,not checkable
+LV0759,Lucinda Beans Peacock,spouse_of,N B PEACOCK,,ambiguous,2 in plot C-54 share the initial,relation_raw,not checkable
+LV0759,Lucinda Beans Peacock,spouse_of,N. B. Peacock,,ambiguous,2 in plot C-54 share the initial,dar_text,not checkable
+LV0760,Winfield Scott Peacock,child_of,N B PEACOCK,,ambiguous,3 in plot C-54 share the initial,relation_raw,not checkable
+LV0760,Winfield Scott Peacock,child_of,LUCINDA PEACOCK,LV0759,high,given name + surname + same plot C-54,relation_raw,ok
+LV0760,Winfield Scott Peacock,child_of,N. B Peacock,,ambiguous,3 in plot C-54 share the initial,dar_text,not checkable
+LV0760,Winfield Scott Peacock,child_of,Lucinda Peacock,LV0759,high,given name + surname + same plot C-54,dar_text,ok
+LV0761,Nancy C. Peacock,child_of,NOBLE B PEACOCK,LV0757,high,given name + surname + same plot C-54,relation_raw,"FAILS: parent b.1896, child b.1852"
+LV0761,Nancy C. Peacock,child_of,LUCINDA PEACOCK,LV0759,high,given name + surname + same plot C-54,relation_raw,ok
+LV0761,Nancy C. Peacock,child_of,Noble B Peacock,LV0757,high,given name + surname + same plot C-54,dar_text,"FAILS: parent b.1896, child b.1852"
+LV0761,Nancy C. Peacock,child_of,Lucinda Peacock,LV0759,high,given name + surname + same plot C-54,dar_text,ok
+LV0766,Lydia Ellen Tavenner Peugh,spouse_of,J B PEUGH,,ambiguous,2 in plot C-51 share the initial,relation_raw,not checkable
+LV0766,Lydia Ellen Tavenner Peugh,spouse_of,J. B. Peugh,,ambiguous,2 in plot C-51 share the initial,dar_text,not checkable
+LV0767,Infant Son Peugh,child_of,James B Peugh,LV0765,high,given name + surname + same plot C-51,dar_text,ok
+LV0767,Infant Son Peugh,child_of,Lydia E. Peugh,LV0766,high,given name + surname + same plot C-51,dar_text,ok
+LV0770,Massie Ellen Fulton Pierpoint,spouse_of,ARTHUR J PIERPOINT,LV1647,high,given name + surname + same plot N-17,relation_raw,ok
+LV0770,Massie Ellen Fulton Pierpoint,spouse_of,Arthur J. Pierpoint,LV1647,high,given name + surname + same plot N-17,dar_text,ok
+LV0772,Elizabeth Brown Pierpoint,spouse_of,H W PIERPOINT,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0772,Elizabeth Brown Pierpoint,spouse_of,H. W. Pierpoint,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0780,Lydia Catherine Ruse Powell,spouse_of,ISRAEL G POWELL,LV0779,high,given name + surname + same plot C-120,relation_raw,ok
+LV0780,Lydia Catherine Ruse Powell,spouse_of,"(unnamed: ""his wife"")",LV0779,medium,"DAR wrote ""his wife"" with no name; resolved to the immediately preceding survey entry 297 (Israel Gurley Powell)",dar_text,ok
+LV0781,Fannie Powell,child_of,ISRAEL G POWELL,LV0779,high,given name + surname + same plot C-120,relation_raw,ok
+LV0781,Fannie Powell,child_of,LYDIA C POWELL,LV0780,high,given name + surname + same plot C-120,relation_raw,ok
+LV0781,Fannie Powell,child_of,Israel G Powell,LV0779,high,given name + surname + same plot C-120,dar_text,ok
+LV0781,Fannie Powell,child_of,Lydia C. Powell  1872 - 1890,LV0780,high,given name + surname + same plot C-120,dar_text,ok
+LV0782,Nellie Powell,child_of,ISRAEL C POWELL,LV0779,high,given name + surname + same plot C-120,relation_raw,ok
+LV0782,Nellie Powell,child_of,LYDIA C POWELL,LV0780,high,given name + surname + same plot C-120,relation_raw,ok
+LV0782,Nellie Powell,child_of,Israel G Powell,LV0779,high,given name + surname + same plot C-120,dar_text,ok
+LV0782,Nellie Powell,child_of,Lydia C. Powell  1869 - 1928,LV0780,high,given name + surname + same plot C-120,dar_text,ok
+LV0784,Annice E. Powell,spouse_of,MAURICE POWELL,LV0783,high,given name + surname + same plot C-120,relation_raw,ok
+LV0784,Annice E. Powell,spouse_of,Maurice Powell  1862 - 19--,LV0783,high,given name + surname + same plot C-120,dar_text,ok
+LV0795,Emma Gertrude Preston,child_of,T R PRESTON,,ambiguous,4 in plot N-33 share the initial,relation_raw,not checkable
+LV0795,Emma Gertrude Preston,child_of,E M PRESTON,,ambiguous,2 in plot N-33 share the initial,relation_raw,not checkable
+LV0795,Emma Gertrude Preston,child_of,T. R Preston,,ambiguous,4 in plot N-33 share the initial,dar_text,not checkable
+LV0795,Emma Gertrude Preston,child_of,E. M. Preston,,ambiguous,2 in plot N-33 share the initial,dar_text,not checkable
+LV0797,Susie L Putnam,spouse_of,Thomas H. Putnam  1873 - 1942,LV0796,medium,"given name + surname, same cemetery (plot differs or unknown)",dar_text,ok
+LV0799,Lester Reed,child_of,T J REED,LV1717,medium,given initial + surname + same plot C-50,relation_raw,"FAILS: parent b.1895, child b.1891"
+LV0799,Lester Reed,child_of,L F REED,LV1719,medium,given initial + surname + same plot C-50,relation_raw,"FAILS: parent b.1899, child b.1891"
+LV0799,Lester Reed,child_of,T. J Reed,LV1717,medium,given initial + surname + same plot C-50,dar_text,"FAILS: parent b.1895, child b.1891"
+LV0799,Lester Reed,child_of,L. F. Reed,LV1719,medium,given initial + surname + same plot C-50,dar_text,"FAILS: parent b.1899, child b.1891"
+LV0801,L F Reed,spouse_of,T J REED,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0802,Elizabeth F. Lee Reed,spouse_of,THOMAS J REED,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0802,Elizabeth F. Lee Reed,spouse_of,T. J. Reed (probably)  stone illegible,,unresolved,no ILLEGIBLE in Lakeview Cemetery,dar_text,not checkable
+LV0809,Elizabeth E. Rhodes,child_of,L C RHODES,,ambiguous,2 in plot C-113 share the initial,relation_raw,not checkable
+LV0809,Elizabeth E. Rhodes,child_of,C V RHODES,,ambiguous,2 in plot C-113 share the initial,relation_raw,not checkable
+LV0810,Mary Roberts,spouse_of,JOHN F LAYCOCK,,ambiguous,3 people share that name in the cemetery,relation_raw,not checkable
+LV0810,Mary Roberts,spouse_of,John F. Laycock,,ambiguous,3 people share that name in the cemetery,dar_text,not checkable
+LV0811,Ann E. Tavenner Ruse,spouse_of,R W RUSE,,unresolved,only self matched,relation_raw,not checkable
+LV0811,Ann E. Tavenner Ruse,spouse_of,R. W. Ruse,,unresolved,only self matched,dar_text,not checkable
+LV0816,Amanda C. Beales Saunders,spouse_of,P SAUNDERS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0816,Amanda C. Beales Saunders,spouse_of,P. Saunders,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0819,Mortimer T. Saunders,child_of,P Saunders,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0819,Mortimer T. Saunders,child_of,A. C. Saunders,,ambiguous,4 in plot C-10 share the initial,dar_text,not checkable
+LV0820,Margaret A. Saunders,child_of,P SAUNDERS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0820,Margaret A. Saunders,child_of,A C SAUNDERS,,ambiguous,3 in plot C-10 share the initial,relation_raw,not checkable
+LV0820,Margaret A. Saunders,child_of,P Saunders,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0820,Margaret A. Saunders,child_of,A. C. Saunders,,ambiguous,3 in plot C-10 share the initial,dar_text,not checkable
+LV0822,Annie May Saunders,child_of,C N SAUNDERS,LV0825,medium,given initial + surname + same plot C-14,relation_raw,ok
+LV0822,Annie May Saunders,child_of,A B SAUNDERS,LV0824,medium,given initial + surname + same plot C-14,relation_raw,ok
+LV0822,Annie May Saunders,child_of,C. N Saunders,LV0825,medium,given initial + surname + same plot C-14,dar_text,ok
+LV0822,Annie May Saunders,child_of,A. B. Saunders,LV0824,medium,given initial + surname + same plot C-14,dar_text,ok
+LV0823,Sarah E. Saunders,spouse_of,JAMES A,,unresolved,no A in Lakeview Cemetery,relation_raw,not checkable
+LV0823,Sarah E. Saunders,spouse_of,James A. Saunders,,ambiguous,3 in plot C-14 share the initial,dar_text,not checkable
+LV0824,Annie Bruce Myers Saunders,spouse_of,C N SAUNDERS,LV0825,medium,given initial + surname + same plot C-14,relation_raw,ok
+LV0824,Annie Bruce Myers Saunders,spouse_of,C. N. Saunders,LV0825,medium,given initial + surname + same plot C-14,dar_text,ok
+LV0830,Amanda Judson Preston Schaffer,spouse_of,JOHN SCHAFFER,LV1775,high,given name + surname + same plot C-33,relation_raw,ok
+LV0830,Amanda Judson Preston Schaffer,spouse_of,John Schaffer,LV1775,high,given name + surname + same plot C-33,dar_text,ok
+LV0835,Charles William Schooley,child_of,T A SCHOOLEY,,ambiguous,5 in plot C-76 share the initial,relation_raw,not checkable
+LV0835,Charles William Schooley,child_of,HANNAH A SCHOOLEY,LV0836,high,given name + surname + same plot C-76,relation_raw,ok
+LV0835,Charles William Schooley,child_of,T. A Schooley,,ambiguous,5 in plot C-76 share the initial,dar_text,not checkable
+LV0835,Charles William Schooley,child_of,Hannah A. Schooley,LV0836,high,given name + surname + same plot C-76,dar_text,ok
+LV0836,Hannah Amy Hough Schooley,spouse_of,T A SCHOOLEY,,ambiguous,4 in plot C-76 share the initial,relation_raw,not checkable
+LV0836,Hannah Amy Hough Schooley,spouse_of,T. A. Schooley,,ambiguous,4 in plot C-76 share the initial,dar_text,not checkable
+LV0838,Virginia E. Schooley,child_of,T A SCHOOLEY,,ambiguous,5 in plot C-76 share the initial,relation_raw,not checkable
+LV0838,Virginia E. Schooley,child_of,H A SCHOOLEY,,ambiguous,5 in plot C-76 share the initial,relation_raw,not checkable
+LV0838,Virginia E. Schooley,child_of,T. A Schooley,,ambiguous,5 in plot C-76 share the initial,dar_text,not checkable
+LV0838,Virginia E. Schooley,child_of,H. A. Schooley,,ambiguous,5 in plot C-76 share the initial,dar_text,not checkable
+LV0839,Millard L. Schooley,child_of,C E SCHOOLEY,,ambiguous,2 in plot C-87 share the initial,relation_raw,not checkable
+LV0839,Millard L. Schooley,child_of,L L SCHOOLEY,LV1782,medium,given initial + surname + same plot C-87,relation_raw,ok
+LV0839,Millard L. Schooley,child_of,C. E Schooley,,ambiguous,2 in plot C-87 share the initial,dar_text,not checkable
+LV0839,Millard L. Schooley,child_of,L. L. Schooley,LV1782,medium,given initial + surname + same plot C-87,dar_text,ok
+LV0842,Summerville A. Schooley,spouse_of,MILTON SCHOOLEY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0842,Summerville A. Schooley,spouse_of,Milton Schooley,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0843,Venetia J. Divine Schooley,spouse_of,J H SCHOOLEY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0843,Venetia J. Divine Schooley,spouse_of,J. H. Schooley,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0844,Samuel S. Schooley,child_of,VENETIA SCHOOLEY,LV0843,high,given name + surname + same plot C-91,relation_raw,no dates to check
+LV0844,Samuel S. Schooley,child_of,J H SCHOOLEY,LV0843,medium,given initial + surname + same plot C-91,relation_raw,no dates to check
+LV0844,Samuel S. Schooley,child_of,Venetia Apr,,unresolved,no APR in Lakeview Cemetery,dar_text,not checkable
+LV0844,Samuel S. Schooley,child_of,J. H. Schooley  Apr. 6,,unresolved,no APR in Lakeview Cemetery,dar_text,not checkable
+LV0848,Bernice W. Seaton,child_of,THOS SEATON,LV1789,medium,given initial + surname + same plot E-4,relation_raw,ok
+LV0848,Bernice W. Seaton,child_of,BESSIE SEATON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0850,Samuel M. Sexton,child_of,L Sexton,,unresolved,only self matched,dar_text,not checkable
+LV0850,Samuel M. Sexton,child_of,N.B. Sexton,,unresolved,only self matched,dar_text,not checkable
+LV0862,Mary Cathrine Silcott,spouse_of,JAMES E SILCOTT,LV0861,high,given name + surname + same plot C-65,relation_raw,ok
+LV0862,Mary Cathrine Silcott,spouse_of,James E. Silcott,LV0861,high,given name + surname + same plot C-65,dar_text,ok
+LV0866,Virginia Thomas Reynolds Simmons,spouse_of,HENRY A SIMMONS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0866,Virginia Thomas Reynolds Simmons,spouse_of,Henry A. Simmons  Mar. 31,,unresolved,no MAR in Lakeview Cemetery,dar_text,not checkable
+LV0867,Rosanna Agnes Allder Simpson,spouse_of,J T SIMPSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0867,Rosanna Agnes Allder Simpson,spouse_of,J. T. Simpson,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0880,Infant Son Steele,child_of,W. S Dec,,unresolved,no DEC in Lakeview Cemetery,dar_text,not checkable
+LV0880,Infant Son Steele,child_of,M. A. Steele b. Dec. 27,,unresolved,no DEC in Lakeview Cemetery,dar_text,not checkable
+LV0884,Catharine H. Tavenner,spouse_of,EDWIN H TAVENNER,LV0883,high,given name + surname + same plot C-118,relation_raw,ok
+LV0884,Catharine H. Tavenner,spouse_of,Edwin H. Tavenner,LV0883,high,given name + surname + same plot C-118,dar_text,ok
+LV0886,Etta B. Rumble Tavenner,spouse_of,HOWARD W TAVENNER,LV0885,high,given name + surname + same plot C-118,relation_raw,ok
+LV0886,Etta B. Rumble Tavenner,spouse_of,Howard W. Tavenner,LV0885,high,given name + surname + same plot C-118,dar_text,ok
+LV0887,Aravella Tavenner,spouse_of,W A BENEDUM,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0887,Aravella Tavenner,spouse_of,W. A. Benedum,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0900,Elizabeth Roberts Taylor,spouse_of,Lewis Taylor,LV0899,high,given name + surname + same plot C-52,dar_text,ok
+LV0901,Ruth W. Bradfield Taylor,spouse_of,Lewis Taylor,LV0899,high,given name + surname + same plot C-52,dar_text,ok
+LV0902,Ella Gertrude Taylor,child_of,L TAYLOR,LV0899,medium,given initial + surname + same plot C-52,relation_raw,ok
+LV0902,Ella Gertrude Taylor,child_of,E TAYLOR,LV0900,medium,given initial + surname + same plot C-52,relation_raw,ok
+LV0902,Ella Gertrude Taylor,child_of,Lewis Taylor,LV0899,high,given name + surname + same plot C-52,dar_text,ok
+LV0902,Ella Gertrude Taylor,child_of,Elizabeth Taylor,LV0900,high,given name + surname + same plot C-52,dar_text,ok
+LV0903,Willie N. Taylor,child_of,L TAYLOR,LV0899,medium,given initial + surname + same plot C-52,relation_raw,ok
+LV0903,Willie N. Taylor,child_of,E TAYLOR,,ambiguous,2 in plot C-52 share the initial,relation_raw,not checkable
+LV0903,Willie N. Taylor,child_of,Lewis Taylor,LV0899,high,given name + surname + same plot C-52,dar_text,ok
+LV0903,Willie N. Taylor,child_of,Elizabeth Taylor,LV0900,high,given name + surname + same plot C-52,dar_text,ok
+LV0904,Lois Young Taylor,child_of,REV C T TAYLOR,LV0905,medium,given initial + surname + same plot C-59,relation_raw,ok
+LV0904,Lois Young Taylor,child_of,MINNIE K TAYLOR,LV1910,high,given name + surname + same plot C-59,relation_raw,ok
+LV0918,Harriet Ann Poulton Tillett,spouse_of,JOHN L TILLETT,LV0917,high,given name + surname + same plot C-53,relation_raw,ok
+LV0918,Harriet Ann Poulton Tillett,spouse_of,John L. Tillett,LV0917,high,given name + surname + same plot C-53,dar_text,ok
+LV0919,Emma A Schooley Tinney,spouse_of,EMERSON P TINNEY,,unresolved,only self matched,relation_raw,not checkable
+LV0919,Emma A Schooley Tinney,spouse_of,Emerson P. Tinney,,unresolved,only self matched,dar_text,not checkable
+LV0924,Clarence C. Tribby,child_of,MR TRIBBY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0924,Clarence C. Tribby,child_of,MRS J M TRIBBY,,ambiguous,2 in plot C-79 share the initial,relation_raw,not checkable
+LV0924,Clarence C. Tribby,child_of,and Mrs. J. M. Tribby Mar. 22,,unresolved,no MAR in Lakeview Cemetery,dar_text,not checkable
+LV0932,John W Vaughan,child_of,JACOB VAUGHN,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0932,John W Vaughan,child_of,EMMA E VAUGHN,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0932,John W Vaughan,child_of,Jacob Vaughan,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0932,John W Vaughan,child_of,Emma E. Vaughan,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0933,Minnie Payne Verts,spouse_of,RODNEY L VERTS,LV1987,high,given name + surname + same plot E-24,relation_raw,ok
+LV0933,Minnie Payne Verts,spouse_of,Rodney L. Verts  Feb. 8,,unresolved,no FEB in Lakeview Cemetery,dar_text,not checkable
+LV0934,Elizabeth Waitkins,child_of,N WAITKINS,,unresolved,only self matched,relation_raw,not checkable
+LV0934,Elizabeth Waitkins,child_of,M WAITKINS,,unresolved,only self matched,relation_raw,not checkable
+LV0934,Elizabeth Waitkins,child_of,N Waitkins,,unresolved,only self matched,dar_text,not checkable
+LV0934,Elizabeth Waitkins,child_of,M. Waitkins,,unresolved,only self matched,dar_text,not checkable
+LV0936,Edgar H. Warner,child_of,E W WARNER,,ambiguous,3 in plot C-47 share the initial,relation_raw,not checkable
+LV0936,Edgar H. Warner,child_of,M E WARNER,,ambiguous,4 in plot C-47 share the initial,relation_raw,not checkable
+LV0936,Edgar H. Warner,child_of,E. W Warner,,ambiguous,3 in plot C-47 share the initial,dar_text,not checkable
+LV0936,Edgar H. Warner,child_of,M. E. Warner,,ambiguous,4 in plot C-47 share the initial,dar_text,not checkable
+LV0937,Elmyr W. Warner,child_of,E W WARNER,,ambiguous,3 in plot C-47 share the initial,relation_raw,not checkable
+LV0937,Elmyr W. Warner,child_of,M E WARNER,,ambiguous,4 in plot C-47 share the initial,relation_raw,not checkable
+LV0937,Elmyr W. Warner,child_of,E. W Warner,,ambiguous,3 in plot C-47 share the initial,dar_text,not checkable
+LV0937,Elmyr W. Warner,child_of,M. E. Warner,,ambiguous,4 in plot C-47 share the initial,dar_text,not checkable
+LV0940,Sarah Ann Phillips Warner,spouse_of,G Z WARNER,LV0939,medium,given initial + surname + same plot C-72,relation_raw,ok
+LV0940,Sarah Ann Phillips Warner,spouse_of,G. Z. Warner,LV0939,medium,given initial + surname + same plot C-72,dar_text,ok
+LV0942,Medora Virginia Kuhlmann Warner,spouse_of,WM WARNER,,ambiguous,2 in plot N-9 share the initial,relation_raw,not checkable
+LV0942,Medora Virginia Kuhlmann Warner,spouse_of,G. Wm. Warner,,ambiguous,2 in plot N-9 share the initial,dar_text,not checkable
+LV0947,Elizabeth Ann Pumphrey Warner,spouse_of,ISAAC V WARNER,LV0946,high,given name + surname + same plot C-122,relation_raw,ok
+LV0947,Elizabeth Ann Pumphrey Warner,spouse_of,Isaac V. Warner,LV0946,high,given name + surname + same plot C-122,dar_text,ok
+LV0956,Virginia E. Weadon,spouse_of,T WILLIAM WEADON,LV0955,high,given name + surname + same plot C-68,relation_raw,ok
+LV0956,Virginia E. Weadon,spouse_of,T. William Weadon,LV0955,high,given name + surname + same plot C-68,dar_text,ok
+LV0958,Ann Elizabeth Scatterday Weadon,spouse_of,Chas. D. Weadon,LV0957,medium,given initial + surname + same plot C-69,dar_text,ok
+LV0959,Mary Margaret Kuhlmann Weadon,spouse_of,CHARLES D WEADON,LV0957,high,given name + surname + same plot C-69,relation_raw,ok
+LV0959,Mary Margaret Kuhlmann Weadon,spouse_of,Chas. D. Weadon,LV0957,medium,given initial + surname + same plot C-69,dar_text,ok
+LV0960,Ruth E. Weadon,child_of,C Weadon,LV0957,medium,given initial + surname + same plot C-69,dar_text,ok
+LV0960,Ruth E. Weadon,child_of,M. Weadon,LV0959,medium,given initial + surname + same plot C-69,dar_text,ok
+LV0961,Infant Son Weadon,child_of,C D WEADON,LV0957,medium,given initial + surname + same plot C-69,relation_raw,no dates to check
+LV0961,Infant Son Weadon,child_of,M E WEADON,,ambiguous,3 in plot C-69 share the initial,relation_raw,not checkable
+LV0961,Infant Son Weadon,child_of,C. D Weadon,LV0957,medium,given initial + surname + same plot C-69,dar_text,no dates to check
+LV0961,Infant Son Weadon,child_of,M. E. Weadon,,ambiguous,3 in plot C-69 share the initial,dar_text,not checkable
+LV0962,Mary Elizabeth Weadon,spouse_of,FREDERICK ALONZA WEADON,,ambiguous,2 people share that name in plot N-11,relation_raw,not checkable
+LV0962,Mary Elizabeth Weadon,spouse_of,Frederick Alonzo Weadon,,ambiguous,2 in plot N-11 share the initial,dar_text,not checkable
+LV0967,Robert A. White,child_of,R J T WHITE,LV0968,medium,given initial + surname + same plot C-129,relation_raw,ok
+LV0967,Robert A. White,child_of,M L WHITE,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV0967,Robert A. White,child_of,R. J. T White,LV0968,medium,given initial + surname + same plot C-129,dar_text,ok
+LV0967,Robert A. White,child_of,M. L. White,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV0969,Sarah Elizabeth Beales White,spouse_of,CHARLES W WHITE,,ambiguous,2 people share that name in plot C-13,relation_raw,not checkable
+LV0969,Sarah Elizabeth Beales White,spouse_of,Chas. W. White,,ambiguous,2 in plot C-13 share the initial,dar_text,not checkable
+LV0971,Minnie E. White,child_of,C W WHITE,,ambiguous,2 in plot C-13 share the initial,relation_raw,not checkable
+LV0971,Minnie E. White,child_of,S E WHITE,LV0969,medium,given initial + surname + same plot C-13,relation_raw,ok
+LV0971,Minnie E. White,child_of,C. W White,,ambiguous,2 in plot C-13 share the initial,dar_text,not checkable
+LV0971,Minnie E. White,child_of,S. E. White,LV0969,medium,given initial + surname + same plot C-13,dar_text,ok
+LV0996,Robert R Wyncoop,child_of,R T WYNCOOP,,unresolved,only self matched,relation_raw,not checkable
+LV0996,Robert R Wyncoop,child_of,MARY E WYNCOOP,,unresolved,only self matched,relation_raw,not checkable
+LV0996,Robert R Wyncoop,child_of,R. T May,,unresolved,no MAY in Lakeview Cemetery,dar_text,not checkable
+LV0996,Robert R Wyncoop,child_of,Mary E. Wyncoop  May 25,,unresolved,no MAY in Lakeview Cemetery,dar_text,not checkable
+LV1000,Ethel Elizabeth Lowe Wynkoop,spouse_of,T M WYNKOOP,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV1000,Ethel Elizabeth Lowe Wynkoop,spouse_of,T. M. Wynkoop  June 4,,unresolved,no JUNE in Lakeview Cemetery,dar_text,not checkable
+LV1001,James A. Wynkoop,child_of,T M WYNKOOP,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV1001,James A. Wynkoop,child_of,E WYNKOOP,,ambiguous,2 in plot C-80 share the initial,relation_raw,not checkable
+LV1001,James A. Wynkoop,child_of,T. M Wynkoop,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV1001,James A. Wynkoop,child_of,E. Wynkoop,,ambiguous,2 in plot C-80 share the initial,dar_text,not checkable
+LV1002,Gertrude Wynkoop,spouse_of,J A WYNKOOP,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV1002,Gertrude Wynkoop,spouse_of,J. A. Wynkoop  Feb. 5,,unresolved,no FEB in Lakeview Cemetery,dar_text,not checkable
+LV1004,Ruth H Wynkoop,spouse_of,JOHN W WYNKOOP,,ambiguous,3 people share that name in the cemetery,relation_raw,not checkable
+LV1004,Ruth H Wynkoop,spouse_of,John W. Wynkoop,,ambiguous,3 people share that name in the cemetery,dar_text,not checkable
+LV1007,Edna C. Bruin Wynkoop Cenotaph,spouse_of,FRANK G WYNKOOP,,ambiguous,2 people share that name in plot C-124,relation_raw,not checkable
+LV1007,Edna C. Bruin Wynkoop Cenotaph,spouse_of,Frank G. Wynkoop,,ambiguous,2 people share that name in plot C-124,dar_text,not checkable
+LV1008,Mildred Hazel Wynkoop,child_of,F G WYNKOOP,,ambiguous,2 in plot C-124 share the initial,relation_raw,not checkable
+LV1008,Mildred Hazel Wynkoop,child_of,EDNA C WYNKOOP,LV1007,high,given name + surname + same plot C-124,relation_raw,ok
+LV1008,Mildred Hazel Wynkoop,child_of,F. G C,,unresolved,no C in Lakeview Cemetery,dar_text,not checkable
+LV1008,Mildred Hazel Wynkoop,child_of,Edna C,,unresolved,no C in Lakeview Cemetery,dar_text,not checkable
+LV1014,Eliza Jane Carlisle Wynkoop,spouse_of,Levi H. Wynkoop,LV1015,high,given name + surname + same plot C-12,dar_text,ok
+LV1016,Charlotte Hollingsworth Young,spouse_of,MARION B YOUNG,LV1017,medium,given initial + surname + same plot N-2,relation_raw,ok
+LV1016,Charlotte Hollingsworth Young,spouse_of,Marion B. Young,LV1017,medium,given initial + surname + same plot N-2,dar_text,ok
+LV1017,Mary Lloyd Atkinson Young,spouse_of,MARION B YOUNG,,ambiguous,2 people share that name in plot N-2,relation_raw,not checkable
+LV1017,Mary Lloyd Atkinson Young,spouse_of,Marion B. Young,,ambiguous,2 people share that name in plot N-2,dar_text,not checkable
+LV1018,Mary Agnes Yowell,child_of,SARAH C YOWELL,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV1018,Mary Agnes Yowell,child_of,A J YOWELL,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+LV1018,Mary Agnes Yowell,child_of,Sarah C Yowell,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV1018,Mary Agnes Yowell,child_of,A. J. Yowell,,unresolved,surname present but no given-name agreement,dar_text,not checkable
+LV1184,Mary Alice Myers Grubb,spouse_of,Ebenezer Grubb,LV0483,high,given name + surname + same plot C-89,dar_text,ok
+LV1360,Elizabeth Breckenridge Alexander Larsen,spouse_of,Niels P. Larsen,LV1361,high,given name + surname + same plot N-6,dar_text,ok
+LV1385,Mary Catherine Roberts Laycock,spouse_of,JOHN F LAYCOCK,LV0600,high,given name + surname + same plot C-40,relation_raw,ok
+LV2052,Infant Daughter Wiley,child_of,E. T Oct,,unresolved,no OCT in Lakeview Cemetery,dar_text,not checkable
+LV2052,Infant Daughter Wiley,child_of,O. C. Wiley b. Oct. 10,,unresolved,no OCT in Lakeview Cemetery,dar_text,not checkable
+HM0001,James R Allder,child_of,T R ALLDER,,unresolved,only self matched,relation_raw,not checkable
+HM0001,James R Allder,child_of,E V ALLDER,,unresolved,only self matched,relation_raw,not checkable
+HM0005,Ruth Hannah Gibson Arnett,spouse_of,JOHN ARNETT,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+HM0008,Mary Elizabeth Arnett,child_of,S ARNETT,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0008,Mary Elizabeth Arnett,child_of,N ARNETT,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0010,Nancy Cummings Arnett,spouse_of,SAMUEL ARNETT,HM0009,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0011,John Warner Bazill,child_of,JAMES B BAZILL,,unresolved,only self matched,relation_raw,not checkable
+HM0011,John Warner Bazill,child_of,MARY E BAZILL,,unresolved,only self matched,relation_raw,not checkable
+HM0012,Jeffie Beales,child_of,JOSEPH E BEALES,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0012,Jeffie Beales,child_of,ELLA BEALES,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0013,Sarah E Beales,spouse_of,JOSEPH E BEALES,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0015,Elizabeth Beales,spouse_of,CHARLES BEALES,HM0016,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0016,Charles Agustus Beales,child_of,CALVIN BEALES,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0016,Charles Agustus Beales,child_of,MARTHA BEALES,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0017,Louisa E Beans,child_of,WILLIAM BEANS,HM0019,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0017,Louisa E Beans,child_of,LOUISI BEANS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0018,Isaac Newton Beans,child_of,WILLIAM BEANS,HM0019,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0018,Isaac Newton Beans,child_of,LOUISA BEANS,,ambiguous,3 people share that name in the cemetery,relation_raw,not checkable
+HM0020,Louisa Berry Beans,spouse_of,WILLIAM BEANS,HM0019,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0021,Morrell B Beans,child_of,AARON BEANS,HM0023,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,no dates to check
+HM0021,Morrell B Beans,child_of,LOUISA BEANS,,ambiguous,3 people share that name in the cemetery,relation_raw,not checkable
+HM0022,Louisa E Beans,spouse_of,AARON H BEANS,HM0023,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0023,Aaron Humphrey Beans,child_of,WILLIAM BEANS,HM0019,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0023,Aaron Humphrey Beans,child_of,LOUISA BEANS,,ambiguous,3 people share that name in the cemetery,relation_raw,not checkable
+HM0024,Charlotte A Beans,spouse_of,J WOOD,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0025,Virginia Ellen Berry,child_of,WM BERRY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0025,Virginia Ellen Berry,child_of,RACHELL BERRY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0028,Harriet Butler,spouse_of,WILLIAM BUTLER,HM0029,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0032,Louisa Clark,spouse_of,RICHARD CLARK,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0033,Della V Coonts,spouse_of,JOHN COONTS,,unresolved,only self matched,relation_raw,not checkable
+HM0036,Andrew J Cooper,child_of,BARTLOW COOPER,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0036,Andrew J Cooper,child_of,SARAH E COOPER,HM0035,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0038,Annie Elizabeth Cox,child_of,L L COX,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0040,Betsey Dodd Divine,spouse_of,JACOB DIVINE,HM0041,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,no dates to check
+HM0045,Annie Geneva Donaldson,child_of,W E DONALDSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0045,Annie Geneva Donaldson,child_of,E V DONALDSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0046,Elnora V. Lowe Donaldson,spouse_of,W E DONALDSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0057,William A. Gill,child_of,J H GILL,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0057,William A. Gill,child_of,L A GILL,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0058,Lucy A. Gray Gill,spouse_of,JOHN H GILL,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0060,Lucretia V Brown Graham,spouse_of,ISRAEL GRAHAM,,unresolved,only self matched,relation_raw,not checkable
+HM0061,Thomas S Gray,child_of,G E GRAY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0061,Thomas S Gray,child_of,A V GRAY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0062,Alverta M Gray,spouse_of,J S GRAY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0065,Clarence W Gray,child_of,A E GRAY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0065,Clarence W Gray,child_of,H O GRAY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0066,Edward H Gray,child_of,A E GRAY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0066,Edward H Gray,child_of,HATTIE GRAY,HM0231,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0068,Alice Virginia Furr Gray,spouse_of,GEORGE E GRAY,HM0069,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0071,Laura B Grey,spouse_of,ALBERT E GREY,HM0073,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0072,Mary Ann Kirkpatrick Grey,spouse_of,ALBERT GREY,HM0073,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0076,Joseph N. Hawkings,child_of,JOHN HAWKINGS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0076,Joseph N. Hawkings,child_of,MARY HAWKINGS,HM0234,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,no dates to check
+HM0077,Mary Hawkins,spouse_of,JOHN W HAWKINS,,unresolved,only self matched,relation_raw,not checkable
+HM0080,Lydia Catherine Reed Hope,spouse_of,JOHN A HOPE,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+HM0082,John R. Hope,child_of,JOHN HOPE,HM0081,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0082,John R. Hope,child_of,LYDIA C HOPE,HM0080,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0083,James M Hope,child_of,JOHN A HOPE,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+HM0083,James M Hope,child_of,L C HOPE,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0084,Lillie R. Hope,child_of,JOHN D HOPE,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+HM0084,Lillie R. Hope,child_of,LYDIA C HOPE,HM0080,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0085,Mary Elizabeth Hope,child_of,JOHN D HOPE,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+HM0085,Mary Elizabeth Hope,child_of,LYDIA HOPE,HM0080,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0086,Laura B Hoskinson,child_of,T W HOSKINSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0086,Laura B Hoskinson,child_of,A V HOSKINSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0089,Josie R Hoskinson,child_of,R H HOSKINSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0089,Josie R Hoskinson,child_of,LAURA M HOSKINSON,HM0086,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,"FAILS: parent d.1853, child b.1887"
+HM0092,Francis Emory Hoskinson,child_of,ROBERT HOSKINSON,HM0091,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0092,Francis Emory Hoskinson,child_of,ELIZ HOSKINSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0093,Ann A Hoskinson,child_of,ROBERT HOSKINSON,HM0091,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0093,Ann A Hoskinson,child_of,E HOSKINSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0094,Sarah Malinda James,child_of,CHARLES JAMES,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0094,Sarah Malinda James,child_of,SARAH E JAMES,HM0237,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0098,Mary J. Wood Janney,spouse_of,ASA M JANNEY,HM0095,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0099,Lydia A Mock Jones,spouse_of,JAMES W JONES,HM0238,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0100,Louisa A Keys,spouse_of,JAMES F KEYS,HM0101,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0105,Elizabeth A Lewis,spouse_of,C W LEWIS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0108,Emma J Lowe,spouse_of,J EDWIN LOWE,,unresolved,only self matched,relation_raw,not checkable
+HM0109,Harriet A Lucas,child_of,SOLOMON LUCAS,,unresolved,only self matched,relation_raw,not checkable
+HM0109,Harriet A Lucas,child_of,HARRIET LUCAS,,unresolved,only self matched,relation_raw,not checkable
+HM0110,Maria L McClanahan,child_of,WM MCCLANAHAN,,unresolved,only self matched,relation_raw,not checkable
+HM0110,Maria L McClanahan,child_of,SARAH MCCLANAHAN,,unresolved,only self matched,relation_raw,not checkable
+HM0113,Bethany Ann Lanham McFarland,spouse_of,ALEXANDER MCFARLAND,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0114,Laura Eggleston Mcfarland,child_of,W A MCFARLAND,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0114,Laura Eggleston Mcfarland,child_of,M V MCFARLAND,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0116,Robert H. McVeigh,child_of,HIRAM MCVEIGH,,unresolved,only self matched,relation_raw,not checkable
+HM0125,Nettie V. Gray Mock,spouse_of,E H MOCK,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0127,Margaret Moore,child_of,PRESLEY MOORE,HM0129,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0127,Margaret Moore,child_of,CHARLOTTE MOORE,HM0126,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0131,Edna Jane Bradfield Muse,spouse_of,JAMES H MUSE,HM0132,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0133,Mary Elizabeth Hook Muse,spouse_of,JAMES H MUSE,HM0132,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0136,Bertha Myers,child_of,C F MYERS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0136,Bertha Myers,child_of,S H MYERS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0137,Mary V. Myers,spouse_of,ISRAEL T MYERS,HM0138,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0138,Israel T. Myers,child_of,ISRAEL MYERS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0138,Israel T. Myers,child_of,MARY MYERS,HM0137,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,"FAILS: parent b.1855, child b.1856"
+HM0139,Susan Ann Peugh,child_of,LEONIDAS PEUGH,HM0140,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0139,Susan Ann Peugh,child_of,ELIZABETH PEUGH,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+HM0143,Elizabeth Hannah Love Piggott,spouse_of,JOHN PIGGOTT,HM0142,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0152,Gertrude A Reed,child_of,JOHN REED,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+HM0152,Gertrude A Reed,child_of,LAURA E REED,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0157,Lavinia Ruse,child_of,SOLOMON RUSE,HM0158,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0157,Lavinia Ruse,child_of,TABITHA RUSE,HM0162,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0159,William Nixon Ruse,child_of,SOLOMON RUSE,HM0158,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0159,William Nixon Ruse,child_of,TABITHA RUSE,HM0162,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0160,Emily Ruse,child_of,SOLOMON RUSE,HM0158,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0160,Emily Ruse,child_of,TABITHA RUSE,HM0162,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0161,Elizabeth James Ruse,child_of,SOLOMON RUSE,HM0158,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0161,Elizabeth James Ruse,child_of,TABITHA RUSE,HM0162,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0162,Tabitha Tavenner Ruse,spouse_of,SOLOMON RUSE,HM0158,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0163,Willard T Schaeffer,child_of,JOHN SCHAEFFER,,unresolved,only self matched,relation_raw,not checkable
+HM0163,Willard T Schaeffer,child_of,MANDY SCHAEFFER,,unresolved,only self matched,relation_raw,not checkable
+HM0164,C Norris Schooley,child_of,JOHN N SCHOOLEY,HM0165,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0164,C Norris Schooley,child_of,AMANDA E SCHOOLEY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0167,Elizabeth W Silcott,spouse_of,MORTIMER SILCOTT,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0169,Evelina Silcott,spouse_of,WASHINGTON SILCOTT,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0172,Nancy Anne Willett Tavenner,spouse_of,RICHARD TAVENNER,HM0173,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0180,Laura B. Tavenner,child_of,HIRAM TAVENNER,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0180,Laura B. Tavenner,child_of,ELIZ TAVENNER,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0181,Elizabeth F. Tavenner,spouse_of,HIRAM TAVENNER,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0183,Josephine Thomas,spouse_of,S J THOMAS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0185,Catharine Tavenner Torreyson,spouse_of,LEWIS TORREYSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0186,Sarah Ann Torreyson,child_of,LEWIS TORREYSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0186,Sarah Ann Torreyson,child_of,CATHERINE TORREYSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0187,Samuel Torrison,child_of,LEWIS TORRISON,,unresolved,only self matched,relation_raw,not checkable
+HM0187,Samuel Torrison,child_of,C TORRISON,,unresolved,only self matched,relation_raw,not checkable
+HM0188,Malinda Ann Catherine Verts,child_of,HENRY VERTS,,unresolved,only self matched,relation_raw,not checkable
+HM0188,Malinda Ann Catherine Verts,child_of,LYDIA VERTS,,unresolved,only self matched,relation_raw,not checkable
+HM0190,Virginia Ellen Burke Warner,spouse_of,GEORGE W WARNER,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+HM0194,Elizabeth A Warner,child_of,I P WARNER,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0194,Elizabeth A Warner,child_of,MARY L WARNER,HM0195,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,"FAILS: parent b.1861, child b.1873"
+HM0198,Susanna Barrick Werking,spouse_of,W J WERKING,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0200,Hannah E Beales White,spouse_of,GEORGE W WHITE,HM0199,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+HM0203,Clarence Wiley,child_of,THOMAS WILEY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0203,Clarence Wiley,child_of,MARY WILEY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0207,J Claude Wilson,child_of,S H WILSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+HM0207,J Claude Wilson,child_of,S F WILSON,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+PV0007,William David Booton,spouse_of,JULIA L ASHE BOOTON,PV0008,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0008,Julia L. Ashe Booton,spouse_of,WILLIAM DAVID BOOTON,PV0007,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0014,Charles A. Brown,spouse_of,CORNELIA A BROWN,PV0015,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0015,Cornelia A. Brown,spouse_of,CHARLES A BROWN,PV0014,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0022,Alma W. Calvery,spouse_of,WILLIAM W CALVERY,PV0023,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0023,William Calvery,spouse_of,ALMA W CALVERY,PV0022,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0025,Helen Beatrice Mason Chinn,spouse_of,JOHN N CHINN SR,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+PV0028,Maurice Chinn,child_of,DAISY MAY CHINN,PV0027,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0029,John D. Chinn,child_of,DAISY MAY CHINN,PV0027,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0031,John Newton Chinn Sr.,spouse_of,HELEN B CHINN,PV0025,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0032,James E. Clark,spouse_of,GRACE E CLARK,PV0033,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0033,Grace E. Clark,spouse_of,JAMES E CLARK,PV0032,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0035,Ida M. Nokes Clark,spouse_of,HOWARD W CLARK JR,PV0039,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0040,Howard W. Clark Jr.,spouse_of,IDA M CLARK,PV0035,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0042,Clarence C. Coates,spouse_of,EDNA COATES,PV0043,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,no dates to check
+PV0043,Edna Coates,spouse_of,CLARENCE C COATES,PV0042,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,no dates to check
+PV0064,Ethel Mae Curtis,spouse_of,DUDLEY S CURTIS,PV0065,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0065,Dudley S. Curtis,spouse_of,ETHEL MAE CURTIS,PV0064,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0074,Nellie Deskins,spouse_of,EDWARD DESKINS,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+PV0075,Edward Deskins,spouse_of,NELLIE PAYNE DESKINS,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+PV0078,Towney Rodger Ferrell,spouse_of,ANNA B FERRELL,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+PV0079,Annabelle Jones Ferrell,spouse_of,TOWNEY FERRELL,PV0078,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0084,Sarah R. Flint,spouse_of,CEZAR FLINT,PV0085,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,no dates to check
+PV0085,Cezar Flint,spouse_of,SARAH R FLINT,PV0084,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,no dates to check
+PV0090,Clara Gordon,spouse_of,DANIEL GORDON,PV0091,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0091,Daniel Gordon,spouse_of,CLARA GORDON,PV0090,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0099,Jane Davis Helms,spouse_of,GEORGE R HELMS,PV0100,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0100,George R. Helms,spouse_of,JANE DAVIS HELMS,PV0099,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0101,Annie Hill,child_of,DELILA J JONES,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+PV0102,John Lewis Jackson,spouse_of,ALVERNIE G JACKSON,PV0103,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0103,Alvernie G. Gaskins Jackson,spouse_of,JOHN LEWIS JACKSON,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+PV0108,Lawrence H. Johnson,spouse_of,A VIOLET JOHNSON,PV0109,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0109,A. Violet Johnson,spouse_of,LAWRENCE H JOHNSON,PV0108,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0112,John E. Jones,spouse_of,MARIE P JONES,PV0113,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0113,Marie Pollard Jones,spouse_of,JOHN E JONES,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+PV0115,Lena L. Jones,spouse_of,THOMAS A JONES,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+PV0116,Thomas A Jones,spouse_of,LENA L JONES,PV0115,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,no dates to check
+PV0118,Lewis Jones,spouse_of,DELILA J JONES,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+PV0119,Delila J Jones,spouse_of,LEWIS JONES,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+PV0121,Berkeley T. Jones,spouse_of,LUCY E JONES,PV0122,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0122,Lucy E Jones,spouse_of,BERKLEY T JONES,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+PV0123,Ernest C. Jones,child_of,HELEN M MURRAY,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+PV0132,Rev Carrell H. Lee,spouse_of,LILLIAN FLINT LEE,PV0133,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0133,Lillie Flint Lee,spouse_of,REV CARRELL H LEE,PV0132,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0136,Carolyn V. Lee,child_of,MARY V LEE,PV0135,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0137,Arthur B. Lee,child_of,MARY V LEE,PV0135,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0138,Jonathan A. Lee,child_of,MARY V LEE,PV0135,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0145,Beaptis Logan,spouse_of,LORETTA A LOGAN,PV0146,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0146,Loretta Amelia Stewart Logan,spouse_of,BEAPTIS LOGAN,PV0145,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0147,Roger P. Lucas,spouse_of,MARY C LUCAS,,ambiguous,3 people share that name in the cemetery,relation_raw,not checkable
+PV0148,Mary C. Lucas,spouse_of,ROGER P LUCAS,PV0147,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0154,Eliza Brown Lucas,spouse_of,GARLAND G LUCAS,PV0155,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0155,Garland G. Lucas,spouse_of,ELIZA B LUCAS,PV0154,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0185,Joanna Mitchell Owens,spouse_of,JOHN G OWENS,,unresolved,surname present but no given-name agreement,relation_raw,not checkable
+PV0188,Johnnie Garrett Owens Sr.,spouse_of,JOANNA M OWENS,PV0185,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0195,Mary Jane Ramey,spouse_of,WILLIAM RAMEY,PV0196,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0196,William Ramey,spouse_of,MARY JANE RAMEY,PV0195,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0199,John T. Rector,spouse_of,RACHEL B RECTOR,,ambiguous,2 people share that name in the cemetery,relation_raw,not checkable
+PV0200,Rachel B Rector,spouse_of,JOHN T RECTOR,PV0199,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0201,Rosa Lee W. Redmond,spouse_of,ABRAHAM L REDMOND,PV0202,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0202,Abraham L. Redmond,spouse_of,ROSA LEE W REDMOND,PV0201,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0210,Stanley Edward Robinson,spouse_of,MOLLIE ELIZABETH ROBINSON,PV0211,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0211,Mollie Elizabeth Robinson,spouse_of,STANLEY EDWARD ROBINSON,PV0210,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0216,Josephine Emma Marcellus Rowe,spouse_of,CLAYTON E ROWE,PV0217,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0217,Clayton Elwood Rowe,spouse_of,JOSEPHINE E ROWE,PV0216,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0223,Helen J. Shaw,spouse_of,BERNARD SHAW SR,,unresolved,only self matched,relation_raw,not checkable
+PV0224,Bernard Shaw Sr.,spouse_of,HELEN J SHAW,PV0223,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0248,Elizabeth Trammell,spouse_of,SOMERFIELD THOMPSON,PV0358,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok
+PV0249,Somerfield Trammell,spouse_of,ELIZABETH THOMPSON,PV0356,medium,"given name + surname, same cemetery (plot differs or unknown)",relation_raw,ok

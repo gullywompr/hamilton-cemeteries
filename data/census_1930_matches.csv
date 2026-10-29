@@ -1,0 +1,101 @@
+person_id,project_name,cemetery,birth_year,death_year,census_image,census_line,hh,census_name,census_age,race,sex,relation,occupation,industry,cls,note,match_basis
+LV1386,Mary E. Laycock,Lakeview,1878,1967,1,7,2,Mary E Laycock,52,W,F,Daughter,,,,,name+birthyear
+LV1910,Minnie Kelly Taylor,Lakeview,1867,1949,1,13,5,Minnie K Taylor,62,W,F,Wife,,,,,name+birthyear
+LV1693,Thomas R. Preston,Lakeview,1872,1964,1,17,6,Thomas Preston,57,W,M,Head,Florist,Green House,W,owns,name+birthyear
+LV1685,Edna May Tribby Preston,Lakeview,1873,1972,1,18,6,Edna Preston,56,W,F,Wife,,,,,name+birthyear
+LV1687,George Syndor Preston,Lakeview,1911,2002,1,19,6,George Preston,18,W,M,Son,Salesman,Radio,W,,name+birthyear
+LV1740,Carrie Virginia Darr Rhodes,Lakeview,1902,1996,1,27,8,Carrie Rhodes,27,W,F,Wife,,,,,name+birthyear
+LV1743,George D. Rhodes,Lakeview,1894,1969,1,35,11,George D Rhodes,36,W,M,Head,Mail Carrier,Rural Route,W,owns $3500,name+birthyear
+LV1744,Gertrude M. Myers Rhodes,Lakeview,1899,1979,1,36,11,Gertrude Rhodes,30,W,F,Wife,,,,,name+birthyear
+LV1582,Elizabeth Orrison,Lakeview,1846,1943,1,42,14,Elizabeth Orrison,83,W,F,Head,,,,owns $3200,name+birthyear
+LV1923,Howard J. Thomas,Lakeview,1903,1980,1,47,15,Howard J Thomas,26,W,M,Son,Carpenter,Construction Shop,W,,name+birthyear
+LV0577,Olivia Warner Kidwell,Lakeview,1877,1945,2,2,17,Olivia Kidwell,53,W,F,Wife,,,,,name+birthyear
+LV0732,John Marbury Offley,Lakeview,1872,1932,2,5,18,John M Offley,57,W,M,Head,,,,born DC; owns,name+birthyear
+LV0562,Nellie Golden James,Lakeview,1884,1944,2,7,19,Nellie J James,45,W,F,Daughter,,,,,name+birthyear
+LV1298,Glova M. James,Lakeview,1890,1953,2,8,19,Glova M James,40,W,F,Daughter,,,,,name+birthyear
+LV0079,Walter W. Ballenger,Lakeview,1883,1957,2,15,21,Walter Ballenger,47,W,M,Head,Contractor,Building,Emp,owns $6000 (laborer painter 1940),name+birthyear
+LV0076,Mabel M. Ballenger,Lakeview,1885,1968,2,16,21,Mabel Ballenger,44,W,F,Wife,,,,,name+birthyear
+LV1446,Claude Mason Lowe,Lakeview,1897,1991,2,26,23,Claude Lowe,32,W,M,Son,Manager,Farm,W,,name+birthyear
+LV0793,Robert Lee Preston,Lakeview,1899,1938,2,30,24,Robert L Preston,31,W,M,Head,Mechanic,Garage,W,rents $8,name+birthyear
+LV1686,Genevieve Payne Preston,Lakeview,1899,1994,2,31,24,Genevieve Preston,31,W,F,Wife,Seamstress,General Work,W,,name+birthyear
+LV0794,Joseph Francis Preston,Lakeview,1929,1932,2,32,24,Joseph F Preston,0,W,M,Son,,,,,name+birthyear
+LV0826,Robert L. Saunders,Lakeview,1862,1939,2,34,25,Robert L Saunders,67,W,M,Head,Proprietor,Hardware Store,OA,rents $35,name+birthyear
+LV0827,Josephine Warner Saunders,Lakeview,1856,1943,2,35,25,Josephine Saunders,73,W,F,Wife,,,,,name+birthyear
+LV0433,Harry Flippo,Lakeview,1890,1971,2,36,26,Harry G Flippo,41,W,M,Head,Operator,Grocery Store,OA,owns $3100 (type setter 1920),name+birthyear
+LV0434,Annie B. McFarland Flippo,Lakeview,1889,1943,2,37,26,Annie Flippo,41,W,F,Wife,,,,,name+birthyear
+LV1809,Edna Mabel Warner Shoemaker,Lakeview,1876,1976,3,5,31,Edna Shoemaker,53,W,F,Head,,,,widow; owns $6000,name+birthyear
+LV1810,Mildred Irene Shoemaker,Lakeview,1904,1986,3,6,31,Mildred Shoemaker,25,W,F,Daughter,,,,,name+birthyear
+LV0863,Charles E. Silcott,Lakeview,1855,1936,3,8,32,Charles Silcott,75,W,M,Head,Orchardist,General Fruits,OA,widower; owns $2500,name+birthyear
+LV0683,James E. Mock,Lakeview,1853,1943,3,15,36,James M Mock,77,W,M,Head,,,,owns $2500,name+birthyear
+LV0596,Jessie Hess McFarland Laycock,Lakeview,1880,1945,3,18,37,Jessie Laycock,50,W,F,Wife,Partner,Grocery Store,OA,,name+birthyear
+LV1373,Albert Franklin Laycock,Lakeview,1914,1992,3,19,37,Albert Laycock,15,W,M,Son,,,,,name+birthyear
+LV1267,Charles Alonzo Howard,Lakeview,1866,1938,3,21,38,Charles Howard,64,W,M,Head,,,,born Maine; owns $3000,name+birthyear
+LV1268,Lula P. Warner Howard,Lakeview,1879,1964,3,22,38,Lula W Howard,50,W,F,Wife,,,,,name+birthyear
+LV0895,James Edgar Tavenner,Lakeview,1867,1931,3,23,39,James E Tavenner,61,W,M,Head,Repair Worker,Furniture Shop,OA,owns (carpenter 1900-20),name+birthyear
+LV1906,Nellie Tavenner,Lakeview,1877,1952,3,24,39,Nellie Tavenner,52,W,F,Wife,,,,,name+birthyear
+LV2032,Charles F. White,Lakeview,1869,1961,3,25,39,Charles F White,59,W,M,Boarder,Painter,Contract Work,OA,,name+birthyear
+LV1437,Fenton Mercer Love Jr.,Lakeview,1853,1935,3,34,42,Fenton M Love,76,W,M,Head,,,,owns,name+birthyear
+LV0618,Gertrude T. Woolf Love,Lakeview,1853,1934,3,35,42,Gertrude T Love,76,W,F,Wife,,,,,name+birthyear
+LV0215,Margaret Sexton Taylor Chamblin,Lakeview,1901,1968,3,39,43,Margaret Chamblin,28,W,F,Daughter,Teacher,Physical Culture,W,,name+birthyear
+LV0551,Bessie M. Iden,Lakeview,1858,1933,3,40,43,Bessie M Iden,72,W,F,Boarder,,,,,name+birthyear
+LV2076,Minnie Wright,Lakeview,1888,1981,3,42,43,Minnie Wright,42,W,F,Servant,Servant,Private Family,W,,name+birthyear
+LV0833,George T. Schooley,Lakeview,1860,1932,3,44,44,George F Schooley,69,W,M,Head,Merchant,Hardware,OA,owns (blacksmith 1900),name+birthyear
+LV1781,Eva M. Schooley,Lakeview,1875,1965,3,45,44,Eva Schooley,55,W,F,Wife,,,,born Maryland,name+birthyear
+LV0981,Edgar T. Wiley,Lakeview,1865,1931,3,48,45,Edgar T Wiley,65,W,M,Head,Merchant,Dry Goods,OA,owns $4000,name+birthyear
+LV0980,Olive C. Wine Wiley,Lakeview,1879,1957,3,49,45,Olive Wiley,50,W,F,Wife,,,,,name+birthyear
+LV0982,Edgar H. Wiley,Lakeview,1908,1940,3,50,45,Edgar H Wiley,21,W,M,Son,Machinist,Navy Yard,W,,name+birthyear
+LV0698,George William Mullen,Lakeview,1855,1931,4,10,49,George W Mullen,74,W,M,Head,,,,rents $10,name+birthyear
+LV0699,Fannie Mullen,Lakeview,1857,1940,4,11,49,Fannie Mullen,73,W,F,Wife,,,,born DC,name+birthyear
+LV0556,George William James,Lakeview,1852,1954,4,12,50,George W James,77,W,M,Head,Farmer,General Farm,OA,owns,name+birthyear
+LV0557,Malinda E James,Lakeview,1851,1938,4,13,50,Malinda E James,78,W,F,Wife,,,,,name+birthyear
+LV0893,William Thomas Tavenner,Lakeview,1871,1939,4,20,53,William Tavenner,59,W,M,Head,Butcher,Meat Store,W,owns,name+birthyear
+LV0889,Mary Isabell Tavenner,Lakeview,1860,1935,4,26,55,Mary I Tavenner,70,W,F,Head,,,,widow; owns $3500,name+birthyear
+LV0909,Joseph F. Thompson,Lakeview,1859,1935,4,29,55,Joseph Thompson,72,W,M,Brother,Tinsmith,Hardware Store,W,widower,name+birthyear
+LV1476,Margaret Virginia McFarland,Lakeview,1884,1962,4,30,56,Margaret McFarland,45,W,F,Head,Nurse,Practical,W,owns $3000; born West Virginia? (index says Va),name+birthyear
+LV1266,Samuel Berkeley Hough,Lakeview,1907,1985,4,35,58,Samuel Hough,22,W,M,Son,Laborer,Road,W,,name+birthyear
+LV1544,Bessie Estelle Myers,Lakeview,1880,1964,4,49,62,Bessie Myers,49,W,F,Head,Chief Operator,Telephone,W,widow; owns $7000,name+birthyear
+LV1543,Anna L. Myers,Lakeview,1903,1953,4,50,62,Anna L Myers,26,W,F,Daughter,,,,,name+birthyear
+LV0225,James E. Clagett,Lakeview,1912,1967,5,3,63,James Clagett,18,W,M,Son,,,,born West Virginia,name+birthyear
+LV0219,John Robert Chamblin,Lakeview,1867,1931,5,5,64,John R Chamblin,61,W,M,Head,,,,owns $7000 (miller 1910),name+birthyear
+LV0212,Elizabeth Pancoast Chamblin,Lakeview,1907,1956,5,7,64,Elizabeth Chamblin,22,W,F,Daughter,Teacher,Music,OA,,name+birthyear
+LV1919,Edwin R. Thomas,Lakeview,1897,1979,5,14,66,Edwin Thomas,32,W,M,Son,Register Clerk,Post Office,W,WWI veteran,name+birthyear
+LV0821,Sarah J Saunders,Lakeview,,1854,5,23,68,Sarah Saunders,81,W,F,Sister,,,,,name-only
+LV0497,George Howard Hampton,Lakeview,1851,1939,5,30,70,George Hampton,78,W,M,Head,Carpenter,House,OA,owns $3000,name+birthyear
+LV1200,Ella Ruse Hampton,Lakeview,1861,1951,5,31,70,Ella Hampton,68,W,F,Wife,,,,,name+birthyear
+LV0092,Joseph E. Beales,Lakeview,1855,1933,5,39,75,Joseph E Beales,75,W,M,Head,Relief Agent,W&OD Line,W,owns $3000 (miller 1910; mill laborer 1900),name+birthyear
+LV0349,Martha J. Dowell,Lakeview,1835,1932,5,48,77,Martha J Dowell,94,W,F,Head,,,,owns $2000,name+birthyear
+LV0731,Alice M. Norris,Lakeview,,1853,5,49,77,Alice M Norris,76,W,F,Niece,,,,(teacher 1900-1920),name-only
+LV1583,George A. Orrison,Lakeview,1892,1932,6,21,82,George A Orrison,37,W,M,Head,Assistant,Post Office,W,born DC; rents $20,name+birthyear
+LV1587,Ruth B. Brown Orrison,Lakeview,1893,1958,6,22,82,Ruth E Orrison,36,W,F,Wife,Postmistress,Post Office,W,,name+birthyear
+LV1584,George Albert Orrison III,Lakeview,1927,1992,6,23,82,George Orrison,2,W,M,Son,,,,,name+birthyear
+LV1581,Edwin Raymond Orrison,Lakeview,1928,1989,6,24,82,Edwin R Orrison,1,W,M,Son,,,,,name+birthyear
+LV1565,Robert P. Newton,Lakeview,1900,1962,6,32,84,Robert P Newton,29,W,M,Head,Rural Carrier,Mail Route,W,rents $10 (nursery manager 1940),name+birthyear
+LV1561,Dorothy Heaton Preston Newton,Lakeview,1904,1994,6,33,84,Dorothy H Newton,26,W,F,Wife,,,,,name+birthyear
+LV1969,Helen E. Burke Trussell,Lakeview,1907,1989,6,39,86,Helen B Trussell,22,W,F,Wife,,,,,name+birthyear
+LV0586,William Henry Laycock,Lakeview,1857,1945,6,41,87,William Laycock,73,W,M,Head,,,,owns,name+birthyear
+LV0585,Lucy Bell Thomas Laycock,Lakeview,1865,1936,6,42,87,Lucy Laycock,65,W,F,Wife,,,,,name+birthyear
+LV0750,Susie Elizabeth Payne Payne,Lakeview,1865,1942,6,43,88,Susie E Payne,64,W,F,Head,,,,widow; owns,name+birthyear
+LV2005,Louise Chamblin Monroe Warner,Lakeview,1889,1979,J8,71,J3,Louise M Warner,40,W,F,Wife,,,,,name+birthyear
+LV2011,Paul Ambrose Warner Jr.,Lakeview,1921,2003,J8,74,J3,Paul A Jr Warner,9,W,M,Son,,,,,name+birthyear
+LV1629,Arthur William Pearson,Lakeview,1883,1966,J8,80,J6,Arthur W Pearson,46,W,M,Head,Farmer,General Farm,Emp,rents (Arnett son-in-law 1920),name+birthyear
+LV1631,Eva Mabel Arnett Pearson,Lakeview,1889,1955,J8,81,J6,Eva M Pearson,39,W,F,Wife,,,,,name+birthyear
+LV1633,Welby Craven Pearson,Lakeview,1913,1988,J8,82,J6,Welby C Pearson,16,W,M,Son,Laborer,General Farm,W,,name+birthyear
+LV0427,Alice Fletcher,Lakeview,1860,1931,J8,86,J6,Alice Fletcher,69,W,F,Boarder,,,,,name+birthyear
+LV0271,Teresa Preston Cox,Lakeview,1889,1973,J8,95,J10,Teresa M Cox,41,W,F,Wife,,,,,name+birthyear
+LV0269,Laura L. Cox,Lakeview,,1930,J8,98,J10,Laura E Cox,80,W,F,Mother,,,,widow,name-only
+LV1746,John S. Rhodes,Lakeview,1903,1964,J8,99,J11,John S Rhodes,27,W,M,Head,Painter,General,W,rents $9 (painting contractor 1940),name+birthyear
+LV1748,Lula V. Rhodes,Lakeview,1906,1986,J9,1,J11,Lula U Rhodes,24,W,F,Wife,,,,sheet 5A,name+birthyear
+LV1750,Robert R. Rhodes,Lakeview,1925,1970,J9,2,J11,Robert R Rhodes,4,W,M,Son,,,,,name+birthyear
+PV0015,Cornelia A. Brown,Pleasant Valley,1863,,J9,3,J12,Cornelia Brown,66,N,F,Head,,,,widow; owns $1200,name+birthyear
+PV0171,Annie M. Mitchell,Pleasant Valley,1911,1994,J9,17,J16,Annie M Mitchell,18,N,F,Daughter,,,,,name+birthyear
+PV0170,Charles W. Mitchell,Pleasant Valley,1917,1996,J9,20,J16,Charles W Mitchell,12,N,M,Son,,,,,name+birthyear
+PV0032,James E. Clark,Pleasant Valley,1927,1996,J9,26,J17,James E Clark,3,N,M,Grandson,,,,,name+birthyear
+PV0340,Rachel A. Rector,Pleasant Valley,1860,,J9,27,J18,Rachel Rector,70,N,F,Head,,,,widow; owns $600,name+birthyear
+PV0097,Fannie J. Harvey,Pleasant Valley,1860,1940,J9,29,J19,Fannie J Harvey,69,N,F,Head,Laundress,At Home,OA,widow; owns $500 (PV0097),name+birthyear
+PV0108,Lawrence H. Johnson,Pleasant Valley,1894,1940,J9,37,J21,Lawrence Johnson,36,N,M,Head,Laborer,Odd Jobs,W,owns $800 (PV0108; flour mill laborer 1940),name+birthyear
+PV0106,Charles B. Johnson,Pleasant Valley,1920,1983,J9,40,J21,Charles Johnson,10,N,M,Son,,,,(PV0106),name+birthyear
+PV0039,Howard W. Clark,Pleasant Valley,1876,1960,J9,44,J22,Howard W Clark,53,N,M,Head,Laborer,Odd Jobs,W,owns $1000,name+birthyear
+LV0695,George C. Mossburg,Lakeview,1874,1941,J10,54,J25,George C Mossburg,54,W,M,Head,Laborer,State Road,W,widower; owns $2000 (farm laborer 1910),name+birthyear
+PV0056,James A. Collins,Pleasant Valley,1850,1930,J10,65,J28,James A Collins,78,N,M,Head,Laborer,Odd Jobs,W,owns $1000,name+birthyear
+PV0220,Arthur William Sanford,Pleasant Valley,1923,1985,J10,73,J30,Arthur Sanford,6,N,M,Son,,,,,name+birthyear
+LV1103,Robert Bruce Donaldson Sr.,Lakeview,1922,2012,J10,98,J35,Robert B Donaldson,8,W,M,Son,,,,,name+birthyear

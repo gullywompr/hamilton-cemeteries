@@ -1,0 +1,44 @@
+person_id,project_name,cemetery,birth_year,death_year,census_image,census_line,hh,census_name,census_age,race,sex,relation,occupation,industry,cls,note,match_basis
+LV0597,George Washington Laycock,Lakeview,1861,1936,Hamilton_1880,,,George Laycock,18,W,M,Other,Shoemaker,,,1880 census; Hamilton Districts 55/56; Single; birth ~1862,name+birthyear
+LV0395,William Nathaniel Everhart,Lakeview,1817,1903,Hamilton_1880,,,William Everhart,63,W,M,Head,Carpenter,,,1880 census; Hamilton Districts 55/56; Married; birth ~1817,name+birthyear
+LV0863,Charles E. Silcott,Lakeview,1855,1936,Hamilton_1880,,,Chas. E. Silcott,25,W,M,Head,Works On Farm,,,1880 census; Hamilton Districts 55/56; Married; birth ~1855,name+birthyear
+HM0147,Thomas Preston,Harmony,1801,1886,Hamilton_1880,,,Thos. Preston,79,W,M,Father,Farmer,,,1880 census; Hamilton Districts 55/56; Single; birth ~1801,name+birthyear
+LV1684,Edgar T. Preston,Lakeview,1860,1927,Hamilton_1880,,,Edgar V. Preston,20,W,M,Nephew,Home,,,1880 census; Hamilton Districts 55/56; Single; birth ~1860,name+birthyear
+PV0098,Thomas Harvey,Pleasant Valley,1854,1911,Hamilton_1880,,,Thos. Harvey,24,M,M,Other,Servant,,,1880 census; Hamilton Districts 55/56; Married; birth ~1856,name+birthyear
+HM0051,Charles F. French,Harmony,1846,1928,Hamilton_1880,,,Charles F. French,32,W,M,Son,Silversmith,,,1880 census; Hamilton Districts 55/56; Single; birth ~1848,name+birthyear
+LV0829,Joseph Elton Schaffer,Lakeview,1873,1924,Hamilton_1880,,,Joseph E. Schaffer,7,W,M,Son,Home,,,1880 census; Hamilton Districts 55/56; Single; birth ~1873,name+birthyear
+LV0837,Thomas A. Schooley,Lakeview,1824,1893,Hamilton_1880,,,Thos. A. Schooley,55,W,M,Head,Blacksmith,,,1880 census; Hamilton Districts 55/56; ; birth ~1825,name+birthyear
+LV0833,George T. Schooley,Lakeview,1860,1932,Hamilton_1880,,,Geo. T. Schooley,19,W,M,Son,Works In Shop,,,1880 census; Hamilton Districts 55/56; Single; birth ~1861,name+birthyear
+LV0310,Albert C. Davis,Lakeview,1822,1898,Hamilton_1880,,,Albert C. Davis,56,W,M,Head,Carpenter,,,1880 census; Hamilton Districts 55/56; Married; birth ~1824,name+birthyear
+LV0885,Howard W. Tavenner,Lakeview,1875,1937,Hamilton_1880,,,Howard W. Tavenner,4,W,M,Son,Home,,,1880 census; Hamilton Districts 55/56; Single; birth ~1876,name+birthyear
+LV0943,Gabriel V Warner,Lakeview,1829,1909,Hamilton_1880,,,Gabriel Warner,51,W,M,Head,Farmhand,,,1880 census; Hamilton Districts 55/56; Married; birth ~1829,name+birthyear
+LV0630,John Edwin Lowe,Lakeview,1858,1911,Hamilton_1880,,,John Edwin Lowe,21,W,M,Son,Works At Home,,,1880 census; Hamilton Districts 55/56; Single; birth ~1859,name+birthyear
+HM0132,James Henry Muse,Harmony,1820,1897,Hamilton_1880,,,Jas. H. Muse,60,W,M,Head,Tailor,,,1880 census; Hamilton Districts 55/56; Married; birth ~1820,name+birthyear
+LV0716,Nathan Myers,Lakeview,1876,1917,Hamilton_1880,,,Nathan Myers,4,W,M,Other,Home,,,1880 census; Hamilton Districts 55/56; Single; birth ~1876,name+birthyear
+LV0723,James William Myers,Lakeview,1866,1894,Hamilton_1880,,,Jas. W. Myers,14,W,M,Other,School,,,1880 census; Hamilton Districts 55/56; Single; birth ~1866,name+birthyear
+HM0134,Charles Fenton Myers,Harmony,1827,1907,Hamilton_1880,,,Charles F. Myers,53,W,M,Head,Carpenter,,,1880 census; Hamilton Districts 55/56; Married; birth ~1827,name+birthyear
+LV0909,Joseph F. Thompson,Lakeview,1859,1935,Hamilton_1880,,,Joseph F. Thompson,22,W,M,Son,Tinner,,,1880 census; Hamilton Districts 55/56; Single; birth ~1858,name+birthyear
+HM0201,Harry C Wiley,Harmony,1878,1940,Hamilton_1880,,,Harry C. Wiley,1,W,M,Son,Home,,,1880 census; Hamilton Districts 55/56; Single; birth ~1879,name+birthyear
+LV0981,Edgar T. Wiley,Lakeview,1865,1931,Hamilton_1880,,,Edgar T. Wiley,15,W,M,Son,School,,,1880 census; Hamilton Districts 55/56; Single; birth ~1865,name+birthyear
+HM0201,Harry C Wiley,Harmony,1878,1940,Hamilton_1880,,,Harry C. Wiley,1,W,M,Son,,,,1880 census; Hamilton Districts 55/56; Single; birth ~1879,name+birthyear
+LV0506,Martha J Hawley,Lakeview,,,Hamilton_1880,,,Martha J. Hawley,32,W,F,Wife,Keeps House,,,1880 census; Hamilton Districts 55/56; Married; birth ~1848,name-only
+LV0910,Mary Frances Norris Thompson,Lakeview,1836,1912,Hamilton_1880,,,Mary F. Thompson,43,W,F,Wife,Keeping House,,,1880 census; Hamilton Districts 55/56; Married; birth ~1837,name+birthyear
+LV0862,Mary Cathrine Silcott,Lakeview,1849,1936,Hamilton_1880,,,Mary C. Silcott,30,W,F,Wife,Keeps House,,,1880 census; Hamilton Districts 55/56; Married; birth ~1850,name+birthyear
+LV0864,Mollie Wood Silcott,Lakeview,1854,1918,Hamilton_1880,,,Mary Va. Silcott,27,W,F,Wife,Keeping House,,,1880 census; Hamilton Districts 55/56; Married; birth ~1853,name+birthyear
+HM0168,Elizabeth A. Silcott,Harmony,1858,1890,Hamilton_1880,,,Elizabeth Silcott,22,W,F,Wife,Housekeeping,,,1880 census; Hamilton Districts 55/56; Married; birth ~1858,name+birthyear
+HM0112,Hannah E. McFarland,Harmony,1853,1930,Hamilton_1880,,,Hannah E. McFarland,27,W,F,Other,Home,,,1880 census; Hamilton Districts 55/56; Single; birth ~1853,name+birthyear
+LV1774,Ida Marian Schaffer,Lakeview,1868,1971,Hamilton_1880,,,Ida Schaffer,12,W,F,Daughter,School,,,1880 census; Hamilton Districts 55/56; Single; birth ~1868,name+birthyear
+LV0269,Laura L. Cox,Lakeview,,1930,Hamilton_1880,,,Laura Cox,30,W,F,Wife,Keeps House,,,1880 census; Hamilton Districts 55/56; Married; birth ~1850,name-only
+LV0270,Lydia A. Garner Cox,Lakeview,1808,1885,Hamilton_1880,,,Lydia A. Cox,72,W,F,Head,Keeps House,,,1880 census; Hamilton Districts 55/56; Widowed; birth ~1808,name+birthyear
+LV2042,Mary L Taylor White,Lakeview,,,Hamilton_1880,,,Mary White,9,B,F,Daughter,Home,,,1880 census; Hamilton Districts 55/56; Single; birth ~1871,name-only
+LV0944,Sarah J Stocks Warner,Lakeview,1832,1918,Hamilton_1880,,,Sarah J. Warner,48,W,F,Wife,Keeps House,,,1880 census; Hamilton Districts 55/56; Married; birth ~1832,name+birthyear
+HM0133,Mary Elizabeth Hook Muse,Harmony,1823,1880,Hamilton_1880,,,Mary E. Muse,58,W,F,Wife,House Keeper,,,1880 census; Hamilton Districts 55/56; Married; birth ~1822,name+birthyear
+LV0715,Annie B. Kidwell Myers,Lakeview,1861,1940,Hamilton_1880,,,Annie B. Myers,18,W,F,Other,Keeping House,,,1880 census; Hamilton Districts 55/56; Married; birth ~1862,name+birthyear
+LV1544,Bessie Estelle Myers,Lakeview,1880,1964,Hamilton_1880,,,Bessie Myers,0,W,F,Daughter,,,,1880 census; Hamilton Districts 55/56; Single; birth ~1880,name+birthyear
+LV0721,Virginia E. Laycock Myers,Lakeview,1845,1926,Hamilton_1880,,,Virginia E. Myers,35,W,F,Other,House Keeper,,,1880 census; Hamilton Districts 55/56; Married; birth ~1845,name+birthyear
+HM0135,Susan H Donaldson Myers,Harmony,1831,1890,Hamilton_1880,,,Susan H. Myers,49,W,F,Wife,Keeps House,,,1880 census; Hamilton Districts 55/56; Married; birth ~1831,name+birthyear
+LV0821,Sarah J Saunders,Lakeview,,1854,Hamilton_1880,,,Sarah G. Saunders,26,W,F,Daughter,Home,,,1880 census; Hamilton Districts 55/56; ; birth ~1854,name-only
+LV0821,Sarah J Saunders,Lakeview,,1854,Hamilton_1880,,,Sallie E. Saunders,57,W,F,Mother,Home,,,1880 census; Hamilton Districts 55/56; Married; birth ~1823,name-only
+LV0824,Annie Bruce Myers Saunders,Lakeview,1854,1902,Hamilton_1880,,,Annie Saunders,26,W,F,Wife,House Keeper,,,1880 census; Hamilton Districts 55/56; Married; birth ~1854,name+birthyear
+HM0202,Nannie E Wiley,Harmony,1851,1921,Hamilton_1880,,,Nannie Wiley,27,W,F,Wife,,,,1880 census; Hamilton Districts 55/56; Married; birth ~1853,name+birthyear
+HM0202,Nannie E Wiley,Harmony,1851,1921,Hamilton_1880,,,Nannie E. Wiley,27,W,F,Wife,Keeping House,,,1880 census; Hamilton Districts 55/56; Married; birth ~1853,name+birthyear

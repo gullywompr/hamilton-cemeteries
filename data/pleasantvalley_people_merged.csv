@@ -1,0 +1,369 @@
+person_id,memorial_id,display_name,last_name,given_names,nickname,suffix,birth_date,birth_precision,death_date,death_precision,plot_balch,plot_fag,relation_raw,memo,military,veteran_flag,has_photo,sources,cemetery,findagrave_url
+PV0001,71845670,Presley E. Ash,ASH,Presley E.,,,1862,year,1932,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845670
+PV0002,71845649,Presley Edmond Ash,ASH,Presley Edmond,,,1912-01-20,day,1971-02-02,day,,,,DISTRICT OF COLUMBIA PVT HQ CO 372 INF,PVT,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845649
+PV0003,72070219,Matilda E. Ball,BALL,Matilda E.,,,1907,year,1959,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070219
+PV0004,72070177,Carroll E. Ball Jr.,BALL JR,Carroll E.,,Jr.,1933-06-17,day,1953-07-21,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070177
+PV0005,71526580,Antonia R. Bell,BELL,Antonia R.,,,1962,year,1996,year,,,,LYLES FUNERAL HOME MARKER,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526580
+PV0006,71845061,Mahalia O. Bolling,BOLLING,Mahalia O.,,,1913-02-24,day,1973-03-22,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845061
+PV0007,71526764,William David Booton,BOOTON,William David,,,1903,year,1983,year,,,H/O JULIA L ASHE BOOTON,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526764
+PV0008,71526791,Julia L. Ashe Booton,BOOTON,Julia L. Ashe,,,1896,year,1989,year,,,W/O WILLIAM DAVID BOOTON,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526791
+PV0009,71526187,Gladys L. Brent,BRENT,Gladys L.,,,1919-12-28,day,1982-07-22,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526187
+PV0010,71845771,Hattie E. Brown,BROWN,Hattie E.,,,1874,year,1957,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845771
+PV0011,71339471,Burton F. Brown,BROWN,Burton F.,,,1896,year,1932,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71339471
+PV0012,71334800,Walter W. Brown,BROWN,Walter W.,,,1907,year,1938,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71334800
+PV0013,71339491,J. Walter Brown,BROWN,J. Walter,,,1871,year,1938,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71339491
+PV0014,72266611,Charles A. Brown,BROWN,Charles A.,,,1864-01-06,day,1926-03-12,day,,,H/O CORNELIA A BROWN,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72266611
+PV0015,72266660,Cornelia A. Brown,BROWN,Cornelia A.,,,1863-12-26,day,,none,,,W/O CHARLES A BROWN,NO DEATH DATE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72266660
+PV0016,71891555,James W. Bryant,BRYANT,James W.,,,1965,year,1998,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71891555
+PV0017,71525163,Laura Jane Butler,BUTLER,Laura Jane,,,1856,year,1940,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525163
+PV0018,71894865,Alice V. Byams,BYAMS,Alice V.,,,1928,year,1995,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894865
+PV0019,71894772,Tillman F. Byams,BYAMS,Tillman F.,,,1931,year,1997,year,,,,LOUDOUN FUNERAL HOME MARKER,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894772
+PV0020,,Corrine Caesar,CAESAR,CORRINE,,,1906,year,1927-12-31,day,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0021,71894945,Carl Luther Caesar Sr.,CAESAR,Carl Luther,,Sr.,1912-12-02,day,1979-01-13,day,,,,,,1,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894945
+PV0022,71894890,Alma W. Calvery,CALVERY,Alma W.,,,1895-07-05,day,1963-01-20,day,,,W/O WILLIAM W CALVERY,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894890
+PV0023,71894913,William Calvery,CALVERY,William,,,1892-01-21,day,1966-01-07,day,,,H/O ALMA W CALVERY,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894913
+PV0024,,Walter Ceasar,CEASAR,WALTER,,,1904,year,1968,year,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0025,71681454,Helen Beatrice Mason Chinn,CHINN,Helen Beatrice Mason,,,1914-03-19,day,2001-04-08,day,,,W/O JOHN N CHINN SR,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681454
+PV0026,71681506,Ronald D. Chinn,CHINN,Ronald D.,,,1966-07-05,day,1993-03-10,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681506
+PV0027,71525429,Daisy May Chinn,CHINN,Daisy May,,,1897,year,1959,year,,,M/O MAURICE & JOHN D CHINN,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525429
+PV0028,71525407,Maurice Chinn,CHINN,Maurice,,,1931-06-02,day,1979-10-07,day,,,S/O DAISY MAY CHINN,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525407
+PV0029,71525378,John D. Chinn,CHINN,John D.,,,1925-11-11,day,1928-03-03,day,,,S/O DAISY MAY CHINN,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525378
+PV0030,71845382,Anna Gaskins Chinn,CHINN,Anna Gaskins,,,1908-04-04,day,1992-02-08,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845382
+PV0031,71681481,John Newton Chinn Sr.,CHINN SR,John Newton,,Sr.,1912-06-12,day,1988-11-23,day,,,H/O HELEN B CHINN,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681481
+PV0032,72266500,James E. Clark,CLARK,James E.,,,1927,year,1996,year,,,H/O GRACE E CLARK,NO DEATH DATE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72266500
+PV0033,72266482,Grace E. Clark,CLARK,Grace E.,,,1926,year,1991,year,,,W/O JAMES E CLARK,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72266482
+PV0034,72269258,Francis Ralph Clark,CLARK,Francis Ralph,,,1907-08-31,day,1972-01-02,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72269258
+PV0035,71844589,Ida M. Nokes Clark,CLARK,Ida M. Nokes,,,1916,year,1999,year,,,W/O HOWARD W CLARK JR,NO DEATH DATE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844589
+PV0036,71844659,Eppie Clark,CLARK,Eppie,,,1882,year,1943,year,,,,NEXT TO EDWARD W CLARK,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844659
+PV0037,,Edward W Clark,CLARK,EDWARD W,,,1876,year,1960,year,,,,NEXT TO EPPIE CLARK,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0038,72269235,George E. Clark,CLARK,George E.,,,1931-08-04,day,1999-02-14,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72269235
+PV0039,71844640,Howard W. Clark,CLARK,Howard W.,,,1876,year,1960,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844640
+PV0040,71844606,Howard W. Clark Jr.,CLARK JR,Howard W.,,Jr.,1912,year,1980,year,,,H/O IDA M CLARK,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844606
+PV0041,,Eva Lee Coates,COATES,EVA LEE,,,1923-12-30,day,1955-08-10,day,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0042,71894696,Clarence C. Coates,COATES,Clarence C.,,,1899-02-06,day,1966-05-31,day,,,H/O EDNA COATES,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894696
+PV0043,,Edna Coates,COATES,EDNA,,,,none,,none,,,W/O CLARENCE C COATES,NO DEATH DATE,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0044,71894674,James C. Coates,COATES,James C.,,,1925,year,1988,year,,,,NEXT TO CLARENCE C & EDNA COATES STONE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894674
+PV0045,71527253,John A. Coates,COATES,John A.,,,1894,year,1970,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71527253
+PV0046,71525844,Oscar Coleman,COLEMAN,Oscar,,,1913,year,1967,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525844
+PV0047,71525918,Rebecca Coleman,COLEMAN,Rebecca,,,1927,year,2003,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525918
+PV0048,71524242,W. B. Frank Collins,COLLINS,W. B. Frank,,,1867,year,1952,year,,,,ON COLLINS FAMILY STONE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71524242
+PV0049,71524264,Margaret Collins,COLLINS,Margaret,,,1872,year,1939,year,,,,ON COLLINS FAMILY STONE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71524264
+PV0050,71524279,Helen C. Collins,COLLINS,Helen C.,,,1889,year,1945,year,,,,ON COLLINS FAMILY STONE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71524279
+PV0051,71524297,Charles Collins,COLLINS,Charles,,,1894,year,1928,year,,,,ON COLLINS FAMILY STONE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71524297
+PV0052,71524320,McKinley Collins,COLLINS,McKinley,,,1896,year,1944,year,,,,ON COLLINS FAMILY STONE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71524320
+PV0053,71525133,Joseph L. Collins,COLLINS,Joseph L.,,,1900,year,1967,year,,,,ON COLLINS FAMILY STONE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525133
+PV0054,71525103,Margaret C. Collins,COLLINS,Margaret C.,,,1898,year,1968,year,,,,ON COLLINS FAMILY STONE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525103
+PV0055,71524152,Kate R. Collins,COLLINS,Kate R.,,,1853-01-12,day,1936-07-11,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71524152
+PV0056,71339734,James A. Collins,COLLINS,James A.,,,1850-09-01,day,1930-09-26,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71339734
+PV0057,71339695,Annie E. Collins,COLLINS,Annie E.,,,1871-05-10,day,1928-03-18,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71339695
+PV0058,,Collins / Bentley,COLLINS / BENTLEY,,,,,none,,none,,,,STONE FOR COLLINS FAMILY PLOT,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0059,72069849,John H. Cooper,COOPER,John H.,,,1913,year,1971,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72069849
+PV0060,,Patience Marie Corbin,CORBIN,PATIENCE MARIE,,,1911,year,1995,year,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0061,71526354,James M. Cravens,CRAVENS,James M.,,,1919-03-25,day,1992-01-11,day,,,,USMC WWII,USMC,1,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526354
+PV0062,71526302,Alberta B. Cravens,CRAVENS,Alberta B.,,,1921-10-18,day,1997-01-29,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526302
+PV0063,72269128,Jennie D. Cross,CROSS,Jennie D.,,,1888-06-07,day,1969-03-08,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72269128
+PV0064,71681237,Ethel Mae Curtis,CURTIS,Ethel Mae,,,1900-04-24,day,1988-01-10,day,,,W/O DUDLEY S CURTIS,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681237
+PV0065,71681282,Dudley S. Curtis,CURTIS,Dudley S.,,,1885-06-22,day,1965-11-03,day,,,H/O ETHEL MAE CURTIS,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681282
+PV0066,71681674,Blanche E. Dade,DADE,Blanche E.,,,1926-03-08,day,2010-03-28,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681674
+PV0067,,Robert Dade,DADE,ROBERT,,,1920-11-28,day,,none,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0068,71845730,Annie Payne Davenport,DAVENPORT,Annie Payne,,,1880,year,1957,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845730
+PV0069,72269098,William Davis,DAVIS,William,,,1888-11-10,day,1977-04-14,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72269098
+PV0070,,Elizabeth A Davis,DAVIS,ELIZABETH A,,,1905,year,1994,year,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0071,71527140,Robert William Davis,DAVIS,Robert William,,,1921,year,1963,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71527140
+PV0072,,Doris A Day,DAY,DORIS A,,,1931,year,1987,year,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0073,71525993,Lakeisha D. Daye,DAYE,Lakeisha D.,,,1996,year,1996,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525993
+PV0074,,Nellie Deskins,DESKINS,NELLIE,,,,none,,none,,,W/O EDWARD DESKINS,NO DATES,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0075,,Edward Deskins,DESKINS,EDWARD,,,,none,,none,,,H/O NELLIE PAYNE DESKINS,NO DATES,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0076,72267881,Deliah Ann Ferrell,FERRELL,Deliah Ann,,,1946,year,1964,year,,,W/O(?) GARLAND E FERRELL SR,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267881
+PV0077,72266409,Kenneth Lee Ferrell,FERRELL,Kenneth Lee,,,1934-04-23,day,1987-03-30,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72266409
+PV0078,71684844,Towney Rodger Ferrell,FERRELL,Towney Rodger,,,1895,year,1982,year,,,H/O ANNA B FERRELL,,,1,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71684844
+PV0079,71684821,Annabelle Jones Ferrell,FERRELL,Annabelle Jones,,,1892,year,1968,year,,,W/O TOWNEY FERRELL,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71684821
+PV0080,71891535,Garland E. Ferrell Jr.,FERRELL JR,Garland E.,,Jr.,1949-03-15,day,1999-09-05,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71891535
+PV0081,72267825,Garland E. Ferrell Sr.,FERRELL SR,Garland E.,,Sr.,1917,year,1985,year,,,H/O(?) DELIAH ANN FERRELL,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267825
+PV0082,71894819,Annie C. Fields,FIELDS,Annie C.,,,1986,year,1987,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894819
+PV0083,71894840,Charles L. Fields,FIELDS,Charles L.,,,1923,year,1996,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894840
+PV0084,72069903,Sarah R. Flint,FLINT,Sarah R.,,,1874,year,1926,year,,,W/O CEZAR FLINT,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72069903
+PV0085,72069881,Cezar Flint,FLINT,Cezar,,,,none,1938,year,,,H/O SARAH R FLINT,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72069881
+PV0086,71527101,Robert Lee Frye,FRYE,Robert Lee,,,1939,year,1976,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71527101
+PV0087,71894388,Catherine Gant,GANT,Catherine,,,1908,year,1995,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894388
+PV0088,72266975,Everett G. Gibson,GIBSON,Everett G.,,,1934-03-17,day,1982-08-30,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72266975
+PV0089,72266701,Charles W. Gordon,GORDON,Charles W.,,,1899-06-07,day,1986-06-05,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72266701
+PV0090,72267439,Clara Gordon,GORDON,Clara,,,1877,year,1970,year,,,W/O DANIEL GORDON,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267439
+PV0091,72267407,Daniel Gordon,GORDON,Daniel,,,1868,year,1945,year,,,H/O CLARA GORDON,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267407
+PV0092,71894542,Sarah J. Gordon,GORDON,Sarah J.,,,1896,year,1992,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894542
+PV0093,71891683,Earl Green,GREEN,Earl,,,1931,year,1984,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71891683
+PV0094,71526689,Warren H. Harris,HARRIS,Warren H.,,,1913-01-20,day,1973-07-10,day,,,,TEC 5 US ARMY WWII,US ARMY,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526689
+PV0095,71526735,Darrell Harris,HARRIS,Darrell,,,1960-03-20,day,1961-03-21,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526735
+PV0096,71526710,Violet Mallory Harris,HARRIS,Violet Mallory,,,1916-03-30,day,2002-02-15,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526710
+PV0097,72267783,Fannie J. Harvey,HARVEY,Fannie J.,,,1860,year,1940,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267783
+PV0098,72267797,Thomas Harvey,HARVEY,Thomas,,,1854,year,1911,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267797
+PV0099,,Jane Davis Helms,HELMS,JANE DAVIS,,,1877-06-17,day,,none,,,W/O GEORGE R HELMS,NO DEATH DATE,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0100,72265567,George R. Helms,HELMS,George R.,,,1875-03-19,day,1950-09-28,day,,,H/O JANE DAVIS HELMS,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72265567
+PV0101,72269200,Annie Hill,HILL,Annie,,,1829,year,1921-04-23,day,,,S/O DELILA J JONES,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72269200
+PV0102,71339595,John Lewis Jackson,JACKSON,John Lewis,,,1861,year,1935,year,,,H/O ALVERNIE G JACKSON,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71339595
+PV0103,71339624,Alvernie G. Gaskins Jackson,JACKSON,Alvernie G. Gaskins,,,1877,year,1967,year,,,W/O JOHN LEWIS JACKSON,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71339624
+PV0104,71339663,John Earl Jackson,JACKSON,John Earl,,,1893-03-04,day,1985-06-22,day,,,,PVT USA WWI,PVT,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71339663
+PV0105,71525713,Mary J. Johnson,JOHNSON,Mary J.,,,1907,year,1954,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525713
+PV0106,71526469,Charles B. Johnson,JOHNSON,Charles B.,,,1920-06-10,day,1983-07-23,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526469
+PV0107,,Robert Johnson,JOHNSON,ROBERT,,,1924,year,1985,year,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0108,72069684,Lawrence H. Johnson,JOHNSON,Lawrence H.,,,1894,year,1940,year,,,H/O A VIOLET JOHNSON,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72069684
+PV0109,72069700,A. Violet Johnson,JOHNSON,A. Violet,,,1900,year,1977,year,,,W/O LAWRENCE H JOHNSON,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72069700
+PV0110,71526430,Dwight A. L. Johnson Jr.,JOHNSON JR,Dwight A. L.,,Jr.,1977-08-27,day,1978-03-06,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526430
+PV0111,,Ellwood B Jones,JONES,ELLWOOD B,,,,none,,none,,,,NO DATES,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0112,71684973,John E. Jones,JONES,John E.,,,1898,year,1965,year,,,H/O MARIE P JONES,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71684973
+PV0113,71684957,Marie Pollard Jones,JONES,Marie Pollard,,,1896,year,1963,year,,,W/O JOHN E JONES,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71684957
+PV0114,71894726,Henry C. Jones,JONES,Henry C.,,,1904-05-07,day,1961-03-28,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894726
+PV0115,71891745,Lena L. Jones,JONES,Lena L.,,,1901-04-16,day,1975-09-17,day,,,W/O THOMAS A JONES,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71891745
+PV0116,,Thomas A Jones,JONES,THOMAS A,,,,none,,none,,,H/O LENA L JONES,NO DATES,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0117,72269070,William Thomas Jones,JONES,William Thomas,,,1931-10-10,day,1990-12-30,day,,,,US ARMY KOREA,US ARMY KOREA,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72269070
+PV0118,,Lewis Jones,JONES,LEWIS,,,,none,,none,,,H/O DELILA J JONES,"CO B US C INFANTRY, NO DATES",CO B US C INFANTRY,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0119,,Delila J Jones,JONES,DELILA J,,,1838-03-11,day,,none,,,W/O LEWIS JONES,"BIRTH YEAR QUESTIONABLE, NO DEATH DATE",,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0120,,Ida B Jones,JONES,IDA B,,,1877,year,1968,year,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0121,71845025,Berkeley T. Jones,JONES,Berkeley T.,,,1902,year,1975,year,,,H/O LUCY E JONES,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845025
+PV0122,,Lucy E Jones,JONES,LUCY E,,,1902,year,,none,,,W/O BERKLEY T JONES,NO DEATH DATE,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0123,71845174,Ernest C. Jones,JONES,Ernest C.,,,1892-04-03,day,1932-04-17,day,,,S/O HELEN M MURRAY,WWI,WWI,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845174
+PV0124,71845214,John Henry Jones,JONES,John Henry,,,1875-06-17,day,1931-03-20,day,,,,,,1,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845214
+PV0125,71845243,Nannie Virginia Rowe Jones,JONES,Nannie Virginia Rowe,,,1872-01-01,day,1932-12-26,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845243
+PV0126,71845110,Nannie R. King,KING,Nannie R.,,,1916,year,1999,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845110
+PV0127,71845094,Rev Alphonzo C. King,KING,Alphonzo C.,,,1944-08-11,day,1995-04-17,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845094
+PV0128,71845132,John L. King,KING,John L.,,,1922,year,1969,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845132
+PV0129,71527281,Pamela A. Kinney,KINNEY,Pamela A.,,,1965,year,1995,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71527281
+PV0130,71681319,Mildred Ann Lacey,LACEY,Mildred Ann,,,1951-03-08,day,1993-08-24,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681319
+PV0131,,Michael John Lee,LEE,MICHAEL JOHN,,,,none,,none,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0132,72069944,Rev Carrell H. Lee,LEE,Carrell H.,,,1884,year,1938,year,,,H/O LILLIAN FLINT LEE,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72069944
+PV0133,72069974,Lillie Flint Lee,LEE,Lillie Flint,,,1887,year,1930,year,,,W/O REV CARRELL H LEE,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72069974
+PV0134,71339507,Carrie H. Lee,LEE,Carrie H.,,,1879,year,1949,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71339507
+PV0135,71525615,Mary V. Lee,LEE,Mary V.,,,1900,year,1987,year,,,"M/O CAROLYN V, ARTHUR B, & JONATHAN LEE",,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525615
+PV0136,71525635,Carolyn V. Lee,LEE,Carolyn V.,,,1932,year,1944,year,,,D/O MARY V LEE,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525635
+PV0137,71525666,Arthur B. Lee,LEE,Arthur B.,,,1928,year,1945,year,,,S/O MARY V LEE,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525666
+PV0138,71525688,Jonathan A. Lee,LEE,Jonathan A.,,,1918,year,1954,year,,,S/O MARY V LEE,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525688
+PV0139,71844557,Vernelle V. Lee,LEE,Vernelle V.,,,1926-04-25,day,1972-03-14,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844557
+PV0140,71525460,Jonathan B. Lee,LEE,Jonathan B.,,,1898,year,1968,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525460
+PV0141,71339547,Theadora B. Lee,LEE,Theadora B.,,,1890,year,1926-03-27,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71339547
+PV0142,71845345,Walter H. Levenberry,LEVENBERRY,Walter H.,,,1887,year,1952,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845345
+PV0143,72266793,Margaret Levenberry,LEVENBERRY,Margaret,,,1897-08-16,day,1972-10-06,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72266793
+PV0144,,Robert Lewis,LEWIS,ROBERT,,,1891,year,1969,year,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0145,71845451,Beaptis Logan,LOGAN,Beaptis,,,1899,year,1972,year,,,H/O LORETTA A LOGAN,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845451
+PV0146,71845462,Loretta Amelia Stewart Logan,LOGAN,Loretta Amelia Stewart,,,1910,year,1973,year,,,W/O BEAPTIS LOGAN,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845462
+PV0147,71846930,Roger P. Lucas,LUCAS,Roger P.,,,1907-07-25,day,1990-07-07,day,,,H/O MARY C LUCAS,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71846930
+PV0148,71844910,Mary C. Lucas,LUCAS,Mary C.,,,1913-08-30,day,1970-01-18,day,,,W/O ROGER P LUCAS,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844910
+PV0149,72069737,Mary J. Mitchell Lucas,LUCAS,Mary J. Mitchell,,,1909,year,1999,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72069737
+PV0150,72070598,Matthew G. Lucas,LUCAS,Matthew G.,,,1903-10-05,day,1941-01-27,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070598
+PV0151,71527233,Mary C. Lucas,LUCAS,Mary C.,,,1882,year,1962,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71527233
+PV0152,72069567,Howard Lucas,LUCAS,Howard,,,1891,year,1958,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72069567
+PV0153,72069798,Lawrence Leo Lucas,LUCAS,Lawrence Leo,,,1939,year,1958,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72069798
+PV0154,72070901,Eliza Brown Lucas,LUCAS,Eliza Brown,,,1902,year,1934,year,,,W/O GARLAND G LUCAS,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070901
+PV0155,72070962,Garland G. Lucas,LUCAS,Garland G.,,,1892,year,1955,year,,,H/O ELIZA B LUCAS,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070962
+PV0156,72070638,Louise E. Lucas,LUCAS,Louise E.,,,1909-06-16,day,1971-09-21,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070638
+PV0157,72070381,Charles A. Lucas,LUCAS,Charles A.,,,1888,year,1957,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070381
+PV0158,72070516,Bertha Lucas,LUCAS,Bertha,,,1908-08-27,day,1969-02-02,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070516
+PV0159,72070564,Ruth E. Lucas,LUCAS,Ruth E.,,,1920-07-09,day,1946-11-11,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070564
+PV0160,,Harrison Mallory,MALLORY,HARRISON,,,1921,year,1985,year,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0161,,Harry & Family Mallory,MALLORY,HARRY & FAMILY,,,,none,,none,,,,NO OTHER INFORMATION,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0162,71844529,Bernard Lee Mallory,MALLORY,Bernard Lee,,,1923,year,1979,year,,,,PVT USA WWII,PVT,1,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844529
+PV0163,71685104,Herbert L. Mallory,MALLORY,Herbert L.,,,1933,year,1954,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71685104
+PV0164,71684896,Mary Louise Ferrell Mallory,MALLORY,Mary Louise Ferrell,,,1920-01-17,day,1986-12-16,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71684896
+PV0165,,James Mallory,MALLORY,JAMES,,,1923-05-01,day,1977-04-04,day,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0166,72265886,Floyd Malloy Jr.,MALLOY JR,Floyd,,Jr.,1914,year,1991,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72265886
+PV0167,72267674,Dorothy Marcellus,MARCELLUS,Dorothy,,,1904,year,1982,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267674
+PV0168,71681345,Shirley Mason,MASON,Shirley,,,1894,year,1989,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681345
+PV0169,71681770,Norman L. Mitchell,MITCHELL,Norman L.,,,1913,year,2001,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681770
+PV0170,71845487,Charles W. Mitchell,MITCHELL,Charles W.,,,1917-08-02,day,1996-04-01,day,,,,PFC USA WWII,WWII,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845487
+PV0171,71845614,Annie M. Mitchell,MITCHELL,Annie M.,,,1911,year,1994,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845614
+PV0172,72267750,Charles W. Morina,MORINA,Charles W.,,,1914-02-24,day,1967-01-26,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267750
+PV0173,,A Morris,MORRIS,A,,,1907,year,1984,year,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0174,,Sue Motin,MOTIN,SUE,,,,none,,none,,,,"NO DATES, ON STONE WITH LAWRENCE LEO LUCAS",,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0175,,Dave Motin Jr,MOTIN JR,DAVE,,,,none,,none,,,,"NO DATES, ON STONE WITH LAWRENCE LEO LUCAS",,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0176,,Dave Motin Sr,MOTIN SR,DAVE,,,,none,,none,,,,"NO DATES, ON STONE WITH LAWRENCE LEO LUCAS",,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0177,71844829,Joseph D. Murray,MURRAY,Joseph D.,,,1918-05-24,day,1983-03-27,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844829
+PV0178,71844857,Willard M. Murray,MURRAY,Willard M.,,,1872-01-12,day,1927-07-02,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844857
+PV0179,71844953,Walter F. Murray Jr.,MURRAY JR,Walter F.,,Jr.,1910-05-20,day,1969-06-01,day,,,,TEC 5 WWII,WWII,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844953
+PV0180,71845432,Anita V. Logan Myrick,MYRICK,Anita V. Logan,,,1928,year,2002,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845432
+PV0181,71845400,Anthony Lee Myrick,MYRICK,Anthony Lee,,,1948,year,1992,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845400
+PV0182,71526109,Roy L. Nickens,NICKENS,Roy L.,,,1925-04-16,day,1993-11-15,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526109
+PV0183,71526066,Rev Arthur Nickens,NICKENS,Arthur,,,1890-07-16,day,1962-02-25,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526066
+PV0184,72267615,Travis G. Owens,OWENS,Travis G.,,,1986,year,1987,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267615
+PV0185,71525567,Joanna Mitchell Owens,OWENS,Joanna Mitchell,,,1916-02-11,day,1994-04-20,day,,,W/O JOHN G OWENS,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525567
+PV0186,71526031,Kasahnaiah Owens,OWENS,Kasahnaiah,,,2000,year,2000,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526031
+PV0187,72267518,Lonnie Carson Owens,OWENS,Lonnie Carson,,,1962,year,2002,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267518
+PV0188,71525538,Johnnie Garrett Owens Sr.,OWENS SR,Johnnie Garrett,,Sr.,1907-12-25,day,1989-04-28,day,,,H/O JOANNA M OWENS,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525538
+PV0189,72266530,Marguerite E. Palmer,PALMER,Marguerite E.,,,1914,year,1979,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72266530
+PV0190,71894477,Martha T. Parmes,PARMES,Martha T.,,,1894,year,1989,year,,,,WITH AMANDA R STEWART,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894477
+PV0191,,Teula Lucas Payne,PAYNE,TEULA LUCAS,,,,none,,none,,,,NO DATES,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0192,72267014,Daniel G. Ramey,RAMEY,Daniel G.,,,1920-12-09,day,1982-03-15,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267014
+PV0193,,Beverly Ramey,RAMEY,BEVERLY,,,1896-07-11,day,1856-05-31,day,,,,DATES ARE QUESTIONABLE,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0194,72267360,Helen M. Ramey,RAMEY,Helen M.,,,1946-10-30,day,1964-10-13,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267360
+PV0195,72269293,Mary Jane Ramey,RAMEY,Mary Jane,,,1869,year,1957,year,,,W/O WILLIAM RAMEY,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72269293
+PV0196,72269307,William Ramey,RAMEY,William,,,1870,year,1957,year,,,H/O MARY JANE RAMEY,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72269307
+PV0197,72267897,Carroll Ramey,RAMEY,Carroll,,,1904,year,1982,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267897
+PV0198,71525318,Robert P. Ramey,RAMEY,Robert P.,,,1926-01-01,day,1993-11-14,day,,,,STM1 USN WWII,USN,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525318
+PV0199,72265761,John T. Rector,RECTOR,John T.,,,1846-09-20,day,1928-02-23,day,,,H/O RACHEL B RECTOR,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72265761
+PV0200,,Rachel B Rector,RECTOR,RACHEL B,,,1850-12-01,day,,none,,,W/O JOHN T RECTOR,NO DEATH DATE,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0201,71526868,Rosa Lee W. Redmond,REDMOND,Rosa Lee W.,,,1880-05-07,day,1966-01-04,day,,,W/O ABRAHAM L REDMOND,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526868
+PV0202,71527029,Abraham L. Redmond,REDMOND,Abraham L.,,,1888-03-30,day,1973-06-24,day,,,H/O ROSA LEE W REDMOND,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71527029
+PV0203,,J H Redmond,REDMOND,J H,,,,none,,none,,,,FAMILY STONE,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0204,71681814,Charles P. Redmond,REDMOND,Charles P.,,,1896,year,,none,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681814
+PV0205,71681786,Maria J. Redmond,REDMOND,Maria J.,,,1900,year,1971,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681786
+PV0206,72269387,Mildred C. Reeves,REEVES,Mildred C.,,,1903,year,1995,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72269387
+PV0207,71681532,Henry Garnett Reid,REID,Henry Garnett,,,1922,year,1988,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681532
+PV0208,71527322,Elva C. Reid,REID,Elva C.,,,1927,year,2000,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71527322
+PV0209,71527201,Jack L. Robinson,ROBINSON,Jack L.,,,1942,year,1998,year,,,,GREEN FUNERAL HOME MARKER,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71527201
+PV0210,71681706,Stanley Edward Robinson,ROBINSON,Stanley Edward,,,1900,year,1994,year,,,H/O MOLLIE ELIZABETH ROBINSON,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681706
+PV0211,71681729,Mollie Elizabeth Robinson,ROBINSON,Mollie Elizabeth,,,1903,year,2000,year,,,W/O STANLEY EDWARD ROBINSON,NO DEATH DATE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681729
+PV0212,,G E Robinson,ROBINSON,G E,,,,none,1989,year,,,,NO BIRTH DATE,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0213,71527172,Sophie Ann Robinson,ROBINSON,Sophie Ann,,,1918,year,1970,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71527172
+PV0214,,Jack Robinson,ROBINSON,JACK,,,1898-01-16,day,1985-05-02,day,,,,US ARMY WWI,US ARMY,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0215,,Ella V Robinson,ROBINSON,ELLA V,,,1865-05-08,day,1942-07-05,day,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0216,71894438,Josephine Emma Marcellus Rowe,ROWE,Josephine Emma Marcellus,,,1916,year,1973,year,,,W/O CLAYTON E ROWE,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894438
+PV0217,71894407,Clayton Elwood Rowe,ROWE,Clayton Elwood,,,1913-01-09,day,1989-08-30,day,,,H/O JOSEPHINE E ROWE,CPL US ARMY WWII,US ARMY,1,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894407
+PV0218,71845266,Hersey Wilmer Rowe,ROWE,Hersey Wilmer,,,1882,year,1928,year,,,,NEXT TO JANET S ROWE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845266
+PV0219,71845286,Janet Smith Rowe,ROWE,Janet Smith,,,1891,year,1969,year,,,,NEXT TO HERSEY W ROWE,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845286
+PV0220,71844796,Arthur William Sanford,SANFORD,Arthur William,,,1923,year,1985,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844796
+PV0221,,Henrietta Payne Sanford,SANFORD,HENRIETTA PAYNE,,,,none,,none,,,,NO DATES,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0222,72265483,Peggy Elizabeth Scott,SCOTT,Peggy Elizabeth,,,1941,year,1989,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72265483
+PV0223,71895000,Helen J. Shaw,SHAW,Helen J.,,,1914-01-15,day,1991-02-08,day,,,W/O BERNARD SHAW SR,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71895000
+PV0224,71894972,Bernard Shaw Sr.,SHAW SR,Bernard,,Sr.,1914-09-05,day,1992-12-25,day,,,H/O HELEN J SHAW,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894972
+PV0225,,Lela E Simms,SIMMS,LELA E,,,1895,year,1956,year,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0226,71894526,Charles Pearle Simms,SIMMS,Charles Pearle,,,1894-08-19,day,1979-02-04,day,,,,US ARMY WWI,US ARMY,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894526
+PV0227,,Alberta Simms,SIMMS,ALBERTA,,,1912,year,1991,year,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0228,71685080,Edward Lee Smith,SMITH,Edward Lee,,,1941,year,1957,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71685080
+PV0229,71844887,Blanche L. Smith,SMITH,Blanche L.,,,1929,year,1960,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844887
+PV0230,72070048,James N. Smith,SMITH,James N.,,,1927-08-23,day,2002-03-26,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070048
+PV0231,72070097,Josephine J. Smith,SMITH,Josephine J.,,,1909-08-21,day,1953-12-23,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070097
+PV0232,72070126,Nathaniel G. Smith,SMITH,Nathaniel G.,,,1903-03-08,day,1996-10-04,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070126
+PV0233,71527128,Emma May Smith,SMITH,Emma May,,,1892,year,1980,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71527128
+PV0234,,Joseph J Smith,SMITH,JOSEPH J,,,1909-08-21,day,1953-12-23,day,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0235,71894455,Amanda R. Stewart,STEWART,Amanda R.,,,1891,year,1986,year,,,,WITH MARTHA T PARMES,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894455
+PV0236,71526383,Anna Morris Thomas,THOMAS,Anna Morris,,,1935,year,1972,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526383
+PV0237,72070329,Lucy B. Thomas,THOMAS,Lucy B.,,,1894,year,1947,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070329
+PV0238,71682104,Ella C. Thompson,THOMPSON,Ella C.,,,1907-06-13,day,1989-12-01,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71682104
+PV0239,71684769,Thomas E. Thompson,THOMPSON,Thomas E.,,,1910-04-16,day,1991-01-02,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71684769
+PV0240,71683134,Christine E. Thompson,THOMPSON,Christine E.,,,1939-12-31,day,2000-04-11,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71683134
+PV0241,71683175,Hal Thompson,THOMPSON,Hal,,,1871-11-15,day,1959-01-04,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71683175
+PV0242,71681973,James Joseph Thompson,THOMPSON,James Joseph,,,1912-09-22,day,1992-12-06,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681973
+PV0243,71683261,Thomas E. Thompson III,THOMPSON III,Thomas E.,,III,,none,1966-03-04,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71683261
+PV0244,,Thomas E Thompson Jr,THOMPSON JR,THOMAS E,,,1935-02-02,day,,none,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0245,,Thomas W Trammel Jr,TRAMMEL JR,THOMAS W,,,1946-03-05,day,1973-07-30,day,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0246,,Thomas W Trammel Sr,TRAMMEL SR,THOMAS W,,,1927-05-14,day,1994-12-19,day,,,,PFC US ARMY WWII,US ARMY,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0247,72070300,Bernard E. Trammell,TRAMMELL,Bernard E.,,,1922-03-22,day,1992-08-17,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070300
+PV0248,,Elizabeth Trammell,TRAMMELL,ELIZABETH,,,1884,year,1967,year,,,W/O SOMERFIELD THOMPSON,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0249,,Somerfield Trammell,TRAMMELL,SOMERFIELD,,,1874,year,1913,year,,,H/O ELIZABETH THOMPSON,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0250,72070704,Mary L. Trammell,TRAMMELL,Mary L.,,,1928-07-11,day,1999-04-13,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070704
+PV0251,71526626,Mary Elizabeth Wallace,WALLACE,Mary Elizabeth,,,1919-11-02,day,1999-04-10,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526626
+PV0252,71526228,Ell Jackson Wallace,WALLACE,Ell Jackson,,,1931,year,1987,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526228
+PV0253,71526258,Charles Leo Ward,WARD,Charles Leo,,,1931-06-10,day,1995-02-06,day,,,,PVT US ARMY,PVT,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526258
+PV0254,71684926,Audrey V. Warren,WARREN,Audrey V.,,,1921,year,1996,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71684926
+PV0255,71681573,Laura Virginia Marcellus Waters,WATERS,Laura Virginia Marcellus,,,1892-05-16,day,1979-06-19,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681573
+PV0256,71681599,Jerome Harrison Waters,WATERS,Jerome Harrison,,,1933,year,1988,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681599
+PV0257,71525226,Fannie C. Waters,WATERS,Fannie C.,,,1889-04-25,day,1932-07-25,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525226
+PV0258,71525782,Joseph Watkins,WATKINS,Joseph,,,1881,year,,none,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525782
+PV0259,71525754,Roosevelt Watkins,WATKINS,Roosevelt,,,1906,year,1969,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525754
+PV0260,,Webb,WEBB,,,,,none,,none,,,,NO DATES OR NAMES,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0261,,Rosie Thomas Webb,WEBB,ROSIE THOMAS,,,1917,year,1992,year,,,,,,,,balch-db,"Pleasant Valley Cemetery, Hamilton, VA",
+PV0262,71895024,Lawrence White,WHITE,Lawrence,,,1902-12-25,day,1948-06-27,day,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71895024
+PV0263,71844624,Susie Wiley,WILEY,Susie,,,1915,year,1988,year,,,,,,0,1,balch-db;findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844624
+PV0264,71891569,Jerald W. Bryant,BRYANT,Jerald W.,,,1970,year,2000,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71891569
+PV0265,249737919,Jack Eugene Burke,BURKE,Jack Eugene,,,1933-09-13,day,2002-03-01,day,,,,,,0,0,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/249737919
+PV0266,173365432,John Newton Chinn Jr.,CHINN,John Newton,,Jr.,1940-12-21,day,2016-11-27,day,,,,,,1,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/173365432
+PV0267,71525882,Barbara Jean Coleman,COLEMAN,Barbara Jean,,,1951-07-31,day,1952-01-14,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525882
+PV0268,150164797,Ruth Ann Brent Coleman,COLEMAN,Ruth Ann Brent,,,1951-10-23,day,2015-07-20,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/150164797
+PV0269,71525960,Theodore Coleman,COLEMAN,Theodore,,,1954-11-22,day,1968-06,month,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525960
+PV0270,134347934,Earl T Cook,COOK,Earl T,,,1930-07-17,day,2008-11-14,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/134347934
+PV0271,72069614,Flossie M. Cook,COOK,Flossie M.,,,1935-03-09,day,2004-09-09,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72069614
+PV0272,71526147,Leroy K. Craven,CRAVEN,Leroy K.,,,1942,year,2008,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526147
+PV0273,71681640,Robert S. Dade,DADE,Robert S.,,,1921-11-28,day,2009-05-29,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71681640
+PV0274,72265622,Jane Davis,DAVIS,Jane,,,1877-06-17,day,,none,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72265622
+PV0275,140341890,Leroy John Day,DAY,Leroy John,,,1929-06-30,day,2007-05-25,day,,,,,,0,0,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/140341890
+PV0276,72266453,Denice D. Daye,DAYE,Denice D.,Nesi,,1963-06-18,day,2005-06-10,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72266453
+PV0277,167821156,Rashad Kejuan Daye,DAYE,Rashad Kejuan,,,1990-08-15,day,2015-05-17,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/167821156
+PV0278,71845685,Edward Deskins,DESKINS,Edward,,,,none,,none,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845685
+PV0279,71845696,Nellie Payne Deskins,DESKINS,Nellie Payne,,,,none,,none,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845696
+PV0280,72267708,Dixie Lee Ferrell,FERRELL,Dixie Lee,,,1921-12-01,day,2004-05-22,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267708
+PV0281,71894762,Leroy W. Fields Sr.,FIELDS,Leroy W.,,Sr.,1940,year,2007,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894762
+PV0282,157567461,Charles Henry Frye,FRYE,Charles Henry,Charlie,,1948-02-16,day,2016-01-21,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/157567461
+PV0283,300940286,George Green,GREEN,George,,,1926-10-30,day,1969-06-07,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/300940286
+PV0284,71891621,Hilda Marie Green,GREEN,Hilda Marie,,,1942-09-30,day,2006-01-21,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71891621
+PV0285,71891675,John Francis Green Sr.,GREEN,John Francis,,Sr.,1942-04-16,day,2008-08-12,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71891675
+PV0286,204248520,William R Green,GREEN,William R,,,1960,year,2017,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/204248520
+PV0287,132695262,Vivian Elizabeth Mallory Harris,HARRIS,Vivian Elizabeth Mallory,,,1935-03-16,day,2014-07-07,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/132695262
+PV0288,245601541,Evelyn Coates Henderson,HENDERSON,Evelyn Coates,Elaine,,1939-12-13,day,2022-11-09,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/245601541
+PV0289,71844763,Terry Ann Sanford Huff,HUFF,Terry Ann Sanford,,,1948-10-11,day,2006-12-09,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71844763
+PV0290,72070010,Viola Helen Hughes,HUGHES,Viola Helen,,,1933-04-02,day,2004-06-29,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070010
+PV0291,150216232,Dwight A. L. Johnson,JOHNSON,Dwight A. L.,Ice,,1948-10-28,day,2015-07-31,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/150216232
+PV0292,175407340,Gertrude Moore Frye Johnson,JOHNSON,Gertrude Moore Frye,,,1942-09-01,day,1960-07-09,day,,,,,,0,0,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/175407340
+PV0293,126981899,Gilbert Lester Johnson,JOHNSON,Gilbert Lester,,,1933-02-11,day,2014-03-20,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/126981899
+PV0294,71526654,Jeanette Bell Johnson,JOHNSON,Jeanette Bell,,,1936-01-29,day,2010-05-31,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526654
+PV0295,71526551,Mabel E. Johnson,JOHNSON,Mabel E.,,,1914-06-01,day,2004-06-16,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526551
+PV0296,107287638,Paul Franklin Johnson Sr.,JOHNSON,Paul Franklin,,Sr.,1926-10-26,day,2013-03-23,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/107287638
+PV0297,72269181,Delila J. Jones,JONES,Delila J.,,,1833-03-11,day,,none,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72269181
+PV0298,71684995,Ellwood B. Jones,JONES,Ellwood B.,,,,none,,none,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71684995
+PV0299,72269210,Lewis Jones,JONES,Lewis,,,,none,,none,,,,,,1,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72269210
+PV0300,72265519,Robert Earl Jones,JONES,Robert Earl,,,1933-06-02,day,2009-12-09,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72265519
+PV0301,244909342,Elizabeth Ann King,KING,Elizabeth Ann,Libby,,1959-04-13,day,2022-10-07,day,,,,,,0,0,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/244909342
+PV0302,137259987,Fraezeel A King,KING,Fraezeel A,,,1946-10-10,day,2014-05-07,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/137259987
+PV0303,71526831,George King,KING,George,,,1921,year,2005,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526831
+PV0304,71526814,Helen Virginia King,KING,Helen Virginia,,,1924,year,2010,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71526814
+PV0305,71894369,Francis Lewis,LEWIS,Francis,,,1933-01-13,day,2007-12-17,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894369
+PV0306,71894313,Francis Lewis Jr.,LEWIS,Francis,Babay,Jr.,1962-07-14,day,2010-03-26,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894313
+PV0307,272533189,Nora Leathea Parker Lewis,LEWIS,Nora Leathea Parker,,,1897-01-18,day,1957-08-06,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/272533189
+PV0308,167821102,Dwight Irvene Lincoln Jr.,LINCOLN,Dwight Irvene,Wink,Jr.,1972,year,2016,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/167821102
+PV0309,72267646,Margaret A. Lloyd,LLOYD,Margaret A.,,,1929,year,2011,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267646
+PV0310,207166085,Alice Virginia Lucas,LUCAS,Alice Virginia,,,1936-06-08,day,2020-02-12,day,,,,,,0,0,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/207166085
+PV0311,72070783,Charles H. Lucas Sr.,LUCAS,Charles H.,,Sr.,1932-10-22,day,2000-12-28,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070783
+PV0312,72069642,Charles M. Lucas,LUCAS,Charles M.,,,1937,year,2010,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72069642
+PV0313,279405302,Gaither William Lucas,LUCAS,Gaither William,,,1894-04-18,day,1975-10-21,day,,,,,,0,0,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/279405302
+PV0314,72070746,Grafton G. Lucas,LUCAS,Grafton G.,,,1921,year,1972,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070746
+PV0315,128304448,Isaac W. Lucas,LUCAS,Isaac W.,,,1933-04-01,day,2013-12-03,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/128304448
+PV0316,71685123,Gloria E. Luck,LUCK,Gloria E.,,,1925,year,1993,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71685123
+PV0317,279542172,Fannie Belle Burton Mallory,MALLORY,Fannie Belle Burton,,,1886,year,,none,,,,,,0,0,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/279542172
+PV0318,84329723,Floyd Mallory,MALLORY,Floyd,,,1887-06-21,day,1964-06-14,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/84329723
+PV0319,279541719,Guy Lemuel Mallory,MALLORY,Guy Lemuel,,,1882-02-02,day,1972-12-16,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/279541719
+PV0320,71525487,Harry Mallory,MALLORY,Harry,,,,none,,none,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525487
+PV0321,204248637,Inez B Mallory,MALLORY,Inez B,,,1930,year,2018,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/204248637
+PV0322,167821018,William P. Middleton,MIDDLETON,William P.,,,1922,year,2015,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/167821018
+PV0323,71524195,George Mitchell,MITCHELL,George,,,1948,year,2003,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71524195
+PV0324,71845304,Edward Lee Moore,MOORE,Edward Lee,,,1911,year,1999,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845304
+PV0325,71527058,Mamie Gertrude Campbell Murphy Frye,FRYE,Mamie Gertrude Campbell Murphy,,,1914-09-08,day,1980-09-06,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71527058
+PV0326,71682143,Charles Harold Nichols,NICHOLS,Charles Harold,,,1919-07-06,day,2007-01-14,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71682143
+PV0327,128303838,Bettina M. Owens,OWENS,Bettina M.,,,1939,year,2013,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/128303838
+PV0328,237562398,Lynwood B. Owens Sr.,OWENS,Lynwood B.,,Sr.,1935-03-14,day,2022-02-28,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/237562398
+PV0329,71525815,William M. Owens,OWENS,William M.,,,1942,year,2006,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525815
+PV0330,272537363,John Lafayette Parker,PARKER,John Lafayette,,,1893-10-23,day,1958-12-07,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/272537363
+PV0331,272535306,John Wesley Parker,PARKER,John Wesley,,,1860-05-01,day,1954-10-07,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/272535306
+PV0332,272534176,Lydia Jane Gore Parker,PARKER,Lydia Jane Gore,,,1854-09-15,day,1924-12-20,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/272534176
+PV0333,72070862,Leola Lucas Payne,PAYNE,Leola Lucas,,,1913,year,1971,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070862
+PV0334,105966583,Sylvester Powers,POWERS,Sylvester,Pudgie,,1938-06-08,day,2013-02-09,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/105966583
+PV0335,72267066,Beverley Ramey,RAMEY,Beverley,,,1896-07-11,day,1956-05-31,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72267066
+PV0336,71894636,Curtis G. Ramey,RAMEY,Curtis G.,,,1913-09-11,day,1950-10-17,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894636
+PV0337,128303669,Judy Diane Ramey,RAMEY,Judy Diane,,,1953,year,2013,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/128303669
+PV0338,71894557,Ludell V. Rowe Ramey,RAMEY,Ludell V. Rowe,,,1911,year,2008,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894557
+PV0339,71894606,Royce Curtis Ramey,RAMEY,Royce Curtis,,,1935-05-17,day,2007-12-03,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894606
+PV0340,72265814,Rachel A. Rector,RECTOR,Rachel A.,,,1860-12-01,day,,none,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72265814
+PV0341,128304032,Isaac Redman,REDMAN,Isaac,,,1890-02-07,day,1982-04-07,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/128304032
+PV0342,179157831,Helen Bertha Waters Reid,REID,Helen Bertha Waters,,,1927-07-22,day,2015-07-10,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/179157831
+PV0343,71891640,Anna Corbin Renzy,RENZY,Anna Corbin,,,1922,year,2007,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71891640
+PV0344,167821057,Margaret E. Richardson,RICHARDSON,Margaret E.,,,1930-05-18,day,2015-01-10,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/167821057
+PV0345,71682007,Leona E. Robinson,ROBINSON,Leona E.,,,1932,year,1989,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71682007
+PV0346,180568978,Milton Lee Russell,RUSSELL,Milton Lee,,,1965-06-22,day,2017-05-18,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/180568978
+PV0347,262109117,William Westley Russell Jr.,RUSSELL,William Westley,,Jr.,1935-01-22,day,2023-11-20,day,,,,,,1,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/262109117
+PV0348,167821284,Edward Arthur Sanford,SANFORD,Edward Arthur,,,1950-03-24,day,2016-03-02,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/167821284
+PV0349,71845751,Henrietta Payne Sanford,SANFORD,Henrietta Payne,,,,none,,none,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71845751
+PV0350,207754612,Mary Elizabeth Simms,SIMMS,Mary Elizabeth,Lizzie,,,none,1950-01-16,day,,,,,,0,0,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/207754612
+PV0351,72266743,W. Sinfield,SINFIELD,W.,,,,none,1931-07-12,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72266743
+PV0352,71685029,Aleida E. Mallory Smith,SMITH,Aleida E. Mallory,,,1921-06-01,day,2008-04-06,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71685029
+PV0353,71894337,Myra L. Smith,SMITH,Myra L.,,,1959,year,2011,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71894337
+PV0354,71891576,Stacy Rae Stinger,STINGER,Stacy Rae,,,1996,year,1999,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71891576
+PV0355,252817591,William Shaulter Syphax,SYPHAX,William Shaulter,,,1886-04-03,day,1974-05,month,,,,,,0,0,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/252817591
+PV0356,71682041,Elizabeth Trammel Thompson,THOMPSON,Elizabeth Trammel,,,1884,year,1967,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71682041
+PV0357,71684727,Lillian L. Thompson,THOMPSON,Lillian L.,,,1909-10-09,day,1999-03-24,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71684727
+PV0358,71682067,Somerfield Thompson,THOMPSON,Somerfield,,,1874,year,1913,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71682067
+PV0359,71527305,Alvin J. Timbers,TIMBERS,Alvin J.,,,1989-07-20,day,2001-02-09,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71527305
+PV0360,72070246,Julia J. Trammell,TRAMMELL,Julia J.,,,1911-04-03,day,1979-11-18,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070246
+PV0361,72070675,Thomas W. Trammell Jr.,TRAMMELL,Thomas W.,,Jr.,1946-03-05,day,1973-07-30,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070675
+PV0362,72070424,Thomas William Trammell Sr.,TRAMMELL,Thomas William,,Sr.,1927-05-14,day,1994-12-19,day,,,,,,1,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/72070424
+PV0363,71525185,Mary E. Tutt,TUTT,Mary E.,,,1912,year,2003,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71525185
+PV0364,185539393,Bertha Louise Curtis Warnick,WARNICK,Bertha Louise Curtis,,,1924-06-30,day,2017-11-23,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/185539393
+PV0365,204248488,Wilbur W Whiting,WHITING,Wilbur W,,,1936,year,2018,year,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/204248488
+PV0366,217737982,Whitney Ann Wiggins,WIGGINS,Whitney Ann,,,1989-03-28,day,2020-05-19,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/217737982
+PV0367,167820865,Deloris T. Williams,WILLIAMS,Deloris T.,,,1931-02-01,day,2016-12-21,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/167820865
+PV0368,71891721,Edgar Hay Young,YOUNG,Edgar Hay,,,1935-04-24,day,1999-02-14,day,,,,,,0,1,findagrave,"Pleasant Valley Cemetery, Hamilton, VA",https://www.findagrave.com/memorial/71891721

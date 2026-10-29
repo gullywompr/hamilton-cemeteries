@@ -1,0 +1,54 @@
+# image|name|age|race|rel|sheet   (FamilySearch Image Index, ED 55, scraped per image; image 1 index not re-scraped here)
+2|James W Plaster|64|W|Head|B1
+2|Sarah M Plaster|47|W|Wife|B1
+2|William E Plaster|13|W|Son|B1
+2|Tunis W Plaster|12|W|Son|B1
+2|David H Plaster|8|W|Son|B1
+2|Alcinda Hutt|78|W|Head|B1
+2|Susan Wynkoop|68|W|Sist|B1
+2|Emma Wynkoop|63|W|Sist|B1
+2|Henry A Haley|47|W|Boar|B1
+2|Landon Jones|80|W|Head|B1
+2|Sarah C Jones|78|W|Wife|B1
+2|Minnie Russ|43|B|Empl|B1
+2|John F Laycock|57|W|Head|B1
+2|Mary C Laycock|51|W|Wife|B1
+2|John F Laycock|17|W|Son|B1
+2|Lizzie Barnes|14|B|Empl|B1
+2|Samuel A Laycock|48|W|Head|B1
+2|Sarah E Laycock|45|W|Wife|B1
+2|Mary E Laycock|22|W|Daug|B1
+2|Grace Laycock|20|W|Daug|B1
+2|Daisy B Laycock|16|W|Daug|B1
+2|Samuel S Brown|45|W|Head|B1
+2|Mary V Brown|40|W|Sist|B1
+2|Julia L Brown|16|W|Daug|B1
+2|Rosia L Brown|14|W|Son|B1
+2|Arthur L Brown|12|W|Son|B1
+2|Virginia B Brown|10|W|Daug|B1
+2|George C Brown|6|W|Son|B1
+2|Ashby V Brown|5|W|Son|B1
+2|John Jackson|55|B|Head|B1
+2|Ann Jackson|65|B|Wife|B1
+2|Robert L Jackson|5|B|Neph|B1
+2|Benjamin Low|25|W|Head|B1
+2|Rebecca Low|27|W|Wife|B1
+2|Claudius Low|2|W|Son|B1
+2|Sarah E White|54|W|Head|B1
+2|David A White|31|W|Son|B1
+2|Charles F White|28|W|Son|B1
+2|Caroll White|21|W|Son|B1
+2|Minnie G White|19|W|Daug|B1
+2|Amos A Beales|43|W|Head|B1
+2|Lola H Beales|33|W|Wife|B1
+2|Zacariah Warner|53|W|Head|B1
+2|Sarah A Warner|50|W|Wife|B1
+2|Olivia B Warner|23|W|Daug|B1
+2|Loulie Y Warner|21|W|Daug|B1
+2|Herbert L Jenkins|39|W|Head|B1
+2|Mary M Jenkins|38|W|Wife|A2
+2|Bertha L Jenkins|12|W|Daug|A2
+2|Virgie Jenkins|6|W|Daug|A2
+2|Floyd M Jenkins|4|W|Son|A2
+2|Alma Jenkins|1|W|Daug|A2
+2|Julia Young|18|W|Empl|A2

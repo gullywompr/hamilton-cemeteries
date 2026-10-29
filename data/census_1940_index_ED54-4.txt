@@ -1,0 +1,106 @@
+# FamilySearch Image Index, 1940 census, Loudoun ED 54-4 "Jefferson Magisterial District, Hamilton Town (part)", 4 images (image 4 not indexed), 105 people. image|name|age|race|rel|sheet
+1|Norman Mitchel|65|B|Head|A1
+1|Betty Mitchel|60|B|Wife|A1
+1|Maria Mitchel|28|B|Daug|A1
+1|Norman Mitchel|26|B|Son|A1
+1|Charles W Mitchel|22|B|Son|A1
+1|Christelle Mitchel|18|B|Daug|A1
+1|Joanna Owens|23|B|Daug|A1
+1|John Owens|35|B|Son-|A1
+1|James Owens|10|B|Gran|A1
+1|Lenwood Owens|4|B|Gran|A1
+1|John Owens|1|B|Gran|A1
+1|John Lucas|24|B|Head|A1
+1|Mary Lucas|30|B|Wife|A1
+1|Ruby Lucas|9|B|Daug|A1
+1|Wesley Lucas|7|B|Son|A1
+1|Flossie Lucas|5|B|Daug|A1
+1|Charles Lucas|3|B|Son|A1
+1|Lawrence Lucas|1|B|Son|A1
+1|Robert Owens|68|B|Head|A1
+1|Emma Owens|65|B|Wife|A1
+1|Ida May Gibson|4|B|Adop|A1
+1|Alvernia Cook|64|B|Head|A1
+1|George Gaskins|16|B|Gran|A1
+1|Florence Gaskins|13|B|Gran|A1
+1|Doris Anne Cook|8|B|Gran|A1
+1|John Waters|52|B|Head|A1
+1|Laura Waters|48|B|Wife|A1
+1|Helen Waters|13|B|Daug|A1
+1|Jerome Waters|6|B|Son|A1
+1|Walter Levenbury|53|B|Head|A1
+1|Annabel Rowe|29|B|Hous|A1
+1|Clarence Edgar Rowe|14|B|Hous|A1
+1|William Rowe|65|B|Hous|A1
+1|Arthur Clark|59|B|Head|A1
+1|Cannie Clark|54|B|Wife|A1
+1|George Clark|9|B|Adop|A1
+1|John S Rhodes|37|W|Head|A1
+1|Lulu Rhodes|34|W|Wife|A1
+1|Robert R Rhodes|14|W|Son|A1
+1|Arthur Cox|62|W|Head|A1
+1|Teresa Cox|50|W|Wife|B1
+1|Napoleon B Warner|70|W|Lodg|B1
+2|Edward Deskins|59|B|Head|B1
+2|Alena Deskins|46|B|Wife|B1
+2|Walter Clasar|66|B|Head|B1
+2|Lillie Clasar|47|B|Wife|B1
+2|Florence Clark|56|B|Head|B1
+2|Rebecca Clark|12|B|Daug|B1
+2|James Clark|12|B|Gran|B1
+2|John Davy|51|B|Head|B1
+2|Josephine Davy|48|B|Wife|B1
+2|Maria Davy|30|B|Daug|B1
+2|Maxine Davy|6|B|Gran|B1
+2|Leroy Davy|6|B|Gran|B1
+2|Bertha M Davy|5|B|Gran|B1
+2|Lenard Davy|3|B|Gran|B1
+2|Alphonso Murray|29|B|Head|B1
+2|Ida Murray|64|B|Moth|B1
+2|Samuel Murray|25|B|Brot|B1
+2|Nannie Murray|24|B|Sist|B1
+2|Blanche Murray|10|B|Niec|B1
+2|Emmaline Ceasar|63|B|Head|B1
+2|Irene Lewis|36|B|Daug|B1
+2|Hattie Lewis|13|B|Gran|B1
+2|Robert Lee Lewis|9|B|Gran|B1
+2|Lawrence Johnson|45|B|Head|B1
+2|Violet Johnson|40|B|Wife|B1
+2|Charles Johnson|19|B|Son|B1
+2|Clarence Johnson|18|B|Son|B1
+2|Helen Johnson|16|B|Daug|B1
+2|Matthew Johnson|12|B|Son|B1
+2|Beaptist Logan|40|B|Head|B1
+2|Loretta Logan|30|B|Wife|B1
+2|Annita Logan|12|B|Daug|B1
+2|Lena Hill|85|B|Moth|B1
+2|Amelia Hill|71|B|Aunt|B1
+2|Lewis Sanford|52|B|Head|B1
+2|Eva Sanford|38|B|Wife|B1
+2|Arthur Sanford|16|B|Son|B1
+2|Theodora Ross|40|B|Lodg|A2
+2|Fannie J Harvey|79|B|Head|B1
+3|Charles F Johnson|67|B|Head|A2
+3|Jessie Lee Johnson|54|B|Wife|A2
+3|Gwendolyn Gaskins|10|B|Adop|A2
+3|Charles H Ford|1|B|Gran|A2
+3|Garland Tucas|47|B|Head|A2
+3|Fannie Tucas|33|B|Wife|A2
+3|Grafton Tucas|16|B|Son|A2
+3|Emily Tucas|14|B|Daug|A2
+3|Mamie Tucas|12|B|Daug|A2
+3|Leola James|22|B|Daug|A2
+3|William James|23|B|Son-|A2
+3|Earnest Chinn|28|B|Head|A2
+3|Anna Chinn|29|B|Wife|A2
+3|Earnest Chinn|6|B|Son|A2
+3|Harry Chinn|2|B|Son|A2
+3|Dorothy Dean|11|B|Niec|A2
+3|William S Ballinger|38|W|Head|A2
+3|Elsie May Ballinger|25|W|Wife|A2
+3|Audrey June Ballinger|4|W|Daug|A2
+3|Floyd Nelson Ballinger|2|W|Son|A2
+3|Douglas Wayne Ballinger|0|W|Son|A2
+3|William Fred Ward|43|W|Head|A2
+3|Mattie B Ward|44|W|Wife|A2
+3|William Lewis|63|B|Head|A2

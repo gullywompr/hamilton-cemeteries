@@ -1,0 +1,27 @@
+entry_no,dar_1948_reading,person_id,modern_display_name,modern_birth,modern_death,note
+8,Sue W. Sagrario   1884 - 1933,LV0812,Sue Catherine Wynkoop Sagrario,1888,1933,DAR 1884 vs modern 1888 birth
+12,"Thomas C. Allder b. Mar. 12, 1863 d. Apr. 25, 1927  Aged 64 yrs.",LV0017,Thomas C Allder,1862,1927,"DAR b.1863 (and 'Aged 64 yrs' at Apr 1927, which fits 1863) vs modern 1862"
+130,"Martha W., wife of T. C. Ballenger, b. Mar. 15, 1869 d. Dec. 13, 1917",LV0053,Martha Jane Wynkoop Ballenger,1869-03-15,1947-12-13,"DAR d. Dec 13, 1917 vs modern 1947 - a 30-year gap, one of the two is badly wrong"
+186,Allie T. Dowdell  1873 - 1941,LV0348,Sallie T. Dowdell,1875,1941,DAR 'Allie T. Dowdell 1873' vs modern 'Sallie T. Dowdell 1875' - name AND year differ; may be two people
+213,"James M. Corbin, b. Jan. 25, 1859 d. June 16, 1933",LV0258,James Milton Corbin,1859-01-25,1930-06-16,"DAR d. June 16, 1933 vs modern 1930"
+283,"Mary J., wife of John N. Chamblin  Oct. 28, 1838 - Mar. 21, 1931",LV0217,Mary Jane Burson Chamblin,1838-10-28,1921-03-04,"DAR d. Mar 21, 1931 vs modern 1921"
+318,"Albert C. Davis, b. Aug. 24, 1822 d. June 9, 1898 at 75 yrs. 9 mo. 16 ds.",LV0310,Albert C. Davis,1822-08-24,1998-06-09,"DAR d. June 9, 1898, internally consistent with 'at 75 yrs. 9 mo. 16 ds.' from b. Aug 24, 1822. Modern 1998 is a typo - see verified_findings.csv"
+329,"Ellen D. Menard, dau. of Harriet E. & Curtis Grubb, b. Sept. 8, 1939 d. Mar. 25, 1905",LV0658,Ellen D. Grubb Menard,1839-09-08,1905-03-25,"DAR 'b. Sept. 8, 1939' is a typescript typo for 1839 (modern 1839; both agree on d. Mar 25, 1905)"
+402,"Mary E., dau. of J. H. & Ann V. Gulick, Nov. 4, 1839 - Aug. 16, 1903",LV0487,Mary E. Gulick,1839-11-04,1908-08-16,"DAR d. Aug 16, 1903 vs modern 1908"
+433,"John E. Benedum  Jan. 7, 1844 - June 2, 1934",LV0118,Pvt John Edwin Benedum,1844-01-07,1924-06-02,"DAR d. June 2, 1934 vs modern 1924"
+435,"Clinton Benedum  June 23, 1874 - Dec. 27, 1945",LV0120,Clinton Benedum,1874-06-23,1946-12-27,"DAR d. Dec 27, 1945 vs modern 1946"
+437,"Mary Isabell Tavenner  Feb. 16, 1850 - Jan. 9, 1935",LV0889,Mary Isabell Tavenner,1860-02-16,1935-01-09,"DAR b. Feb 16, 1850 vs modern 1860"
+447,"Martha E., wife of Levi James,  1828 - 1915",LV0561,Martha Ellen Paxson James,1824,1915,DAR 1828 vs modern 1824 birth
+465,"Joseph B., son of J. T. & V. E. Myers, b. Sept. 17, 1878 d. Dec. 1, 1909",LV0720,Joseph B. Myers,1876-09-17,1909-12-01,"DAR b. Sept 17, 1878 vs modern 1876"
+481,"G. Wm. Warner  Aug. 24, 1859 - Mar. 25, 1923",LV0939,George Zachary Warner,1847-06-25,1923-05-20,NOT a conflict - same man. Dates agree to the day with LV0941 Charles William Warner; the survey calls him 'G. Wm.' The matcher paired him with George Zachary Warner (entry 526) instead. See verified_findings.csv
+497,Lizzie Moatz  1861 - 1940,LV0676,Lizzie Swarbrick Moatz,1861,1943,DAR d. 1940 vs modern 1943
+499,"George L., son of Daniel & Lizzie Moatz  1884 - 1934",LV0678,George L. Moatz,1857,1934,"DAR b.1884 vs modern 1857. He is 'son of Daniel & Lizzie Moatz' and Daniel is b.1857, so the modern record looks like the father's year copied onto the son"
+640,"Hector A. Saunders, b. July 6, 1834 d. Feb. 16, 1900",LV0828,Hector A. Saunders,1834,1909,"Hector A. Saunders, CSA 8th VA. DAR gives an exact birth (July 6, 1834) and d. Feb 16, 1900 against the modern 1909. See verified_findings.csv"
+645,"Wm. Thomas Tavenner  May 23, 1869 - Feb. 28, 1939",LV0893,William Thomas Tavenner,1871-12-11,1939-02-28,"DAR b. May 23, 1869 vs modern 1871-12-11; both agree on d. Feb 28, 1939"
+655,"Willis B. Leonard  Nov. 20, 1859 - May 25, 1942",LV0611,Willis Bramble Leonard,1849-11-20,1942-05-25,"DAR b. Nov 20, 1859 vs modern 1849-11-20 - same day and month, decade apart"
+662,"Levi H. Wynkoop  July 23, 1835 - June 18, 1911",LV1015,Levi H. Wynkoop,1834-07-23,1911-06-18,"DAR b. July 23, 1835 vs modern 1834-07-23 - same day and month, one year apart"
+673,"Minnie E., dau. of C. W. & S. E. White, b. Nov. 3, 1881 d. Dec. 23,1905",LV0971,Minnie E. White,1861-11-03,1905-12-23,"DAR b. Nov 3, 1881 vs modern 1861-11-03. She is dau. of C. W. White (b.1834) and S. E. (b.1845), so 1881 fits and 1861 does not"
+675,"Sarah E., wife of Chas. W. White, b. June 8, 1845 d. Mar. 7, 1905",LV0969,Sarah Elizabeth Beales White,1845-06-08,1907-03-07,"DAR d. Mar 7, 1905 vs modern 1907"
+691,Isabelle A. Alder  1850 - 1929,LV0014,Isabelle A Alder,1850,1926,DAR d. 1929 vs modern 1926
+709,"Townsend H., son of R. W. & C. D. Braden, Apr. 26, 1884 - Nov. 11, 1886",LV0156,Townsend Heaton Braden,1884-04-26,1885-11-11,"DAR d. Nov 11, 1886 vs modern 1885-11-11 - same day and month, one year apart"
+751,"James W., son of F.M. & G.T. Love, b. Nov. 1, 1859 d. May 27, 1924",LV0619,James W. Love,1829-11-01,1924-05-27,"DAR b. Nov 1, 1859 vs modern 1829-11-01. Neither works: he is 'son of F.M. & G.T. Love', both born 1853. A son born 1889 would fit; both records look wrong"

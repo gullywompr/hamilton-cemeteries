@@ -1,0 +1,430 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Hamilton</title>
+<style>
+html,body{margin:0;background:#1a1a19;width:1280px;height:720px;overflow:hidden}
+canvas{display:block}
+</style></head>
+<body data-palette="#3987e5,#d95926,#199e70">
+<canvas id="c" width="1280" height="720"></canvas>
+<script>
+/* ============================================================
+   HAMILTON — four-minute animated infographic
+   Deterministic: window.render(t) draws the frame for time t (seconds).
+   Every number below traces to a row under lakeview/data/ — see the
+   SOURCE comments. Palette: dataviz reference instance, dark mode,
+   validated: #3987e5 #d95926 #199e70 on #1a1a19.
+   ============================================================ */
+const W=1280,H=720;
+const cv=document.getElementById('c'), g=cv.getContext('2d');
+const SURF='#1a1a19', INK='#f0efec', INK2='#c3c2b7', INK3='#8a8984', GRID='#2b2b29';
+const S1='#3987e5', S2='#d95926', S3='#199e70';
+const SERIF='"DejaVu Serif", Georgia, serif', SANS='"DejaVu Sans", Helvetica, Arial, sans-serif';
+
+/* ---------- data (all from lakeview/data) ---------- */
+const TOTAL=2732;                                   // timeline_people.csv
+const CEMS=[['Lakeview',2101],['Harmony United Methodist',263],['Pleasant Valley',368]]; // people_all_enriched.csv
+const MAPNAMES=['Beans','Schooley','Warner','Braden','Saunders','Tavener','Brown','Peacock','Myers','Orrison',
+ 'Hamilton','Hatcher','Vandevanter','Sands','Ruse','Noland','Hoge','Carr','Coleman','Rogers','Smith','Love',
+ 'Nichols','Dowell','Gray','Reid','Rhodes','Thomas','Ramey','Williams','Jackson','Miller','Dodd','Clarke',
+ 'Swan','Rice','Mead','Steer','Fox','Wolf','Gregg','Peirpoint','Westley','Shawen','Harrison','Claggett','Wildman','Myers','Brown'];
+const ON_STONES=29, NAMES_TOTAL=49, SHARED_PEOPLE=416;   // surname cross-check 26 Oct 2026
+const TOPSURN=[['Myers',43],['Warner',41],['Brown',36],['Tavenner',35],['Smith',30],['Schooley',24]];
+const REG_N=1403;                                   // loudoun_deaths.csv, record_type=register
+const CAUSES=[['Consumption',155],['Dysentery',154],['Typhoid fever',84],['Old age',74],['Pneumonia',64],['Dropsy',52],['Croup',43]]; // normalised spellings
+const BLACK_1860={ensl:5501,free:1251,pct:31.0};    // context_demography.csv
+const CONF=23, USCT=1;                              // timeline_people.csv military field
+const RAID={barns:230,mills:8,grain:25000};         // context_events.csv 1864-11-28
+// population alive in the dataset, by year — timeline_population.csv (sampled)
+const POP=[[1836,120],[1840,150],[1850,235],[1853,275],[1860,380],[1866,410],[1870,460],[1880,610],[1890,790],[1900,1000],[1910,1210],[1920,1380],[1927,1455],[1930,1440],[1940,1410],[1950,1350],[1960,1280],[1970,1180],[1980,1050],[1990,900],[2000,760],[2010,590],[2026,420]];
+const PEAK=[1927,1455];
+const BIZ=[[1890,'F. J. Beans, Undertaker'],[1895,"C. W. Warner's Hardware"],[1902,'G. T. Schooley, Breeder'],[1905,'G. W. Laycock, Merchant'],[1910,"Wynkoop's Creamery"]]; // newspaper_mentions.csv; years are placement only
+const HEALTH=[[1890,'scarlet fever in town'],[1923,'County Health Unit']];  // hamilton_health_news.csv
+const BLACKPOP=[[1900,5868],[1910,5221],[1920,4810],[1930,4347],[1940,4094],[1950,3976]]; // context_demography.csv
+const PVBUR=[[1900,0],[1910,3],[1920,12],[1930,17],[1940,15],[1950,30]];                  // APP_SPEC §6.7
+const VOTERS=[147000,21000];                        // Encyclopedia Virginia, Disfranchisement
+const ERAS=[ // context_eras.csv
+ ['Slavery',1818,1865,S2],['Reconstruction',1865,1877,S3],['Disfranchisement',1902,1965,S2],
+ ['No Black high school in Loudoun',1818,1941,INK3],['Segregated schools',1941,1968,S2],['Massive Resistance',1956,1959,'#e66767']];
+const VOID=[1844,1874,75];                          // doc-newspaper-void; 75 deaths
+const REGGAP=[1860,1863];
+
+/* ---------- occupations: seven census reads ---------- */
+// scripts/occ_analysis.py over census_<year>_hamilton.csv. 4,925 people transcribed.
+const TRANSCRIBED=4925, MATCHED=374, WITHOCC=202;
+const OCCCAT=[['Farm','#199e70'],['Trades & craft','#3987e5'],['Shop & clerical','#d95926'],
+  ['Professional','#9ecbf5'],['Service & domestic','#b5845f'],['Day labour','#6f6f6b'],['Other','#45443f']];
+// [year, working, farm, trades, shop, prof, service, daylab, other] — inside the town line
+const WORK=[
+ [1900,117,  4,37,13, 4,21,20,18],
+ [1910,114, 16,22,19,12,21,11,13],
+ [1920,106, 13,23,13,10, 9,23,15],
+ [1930,113,  2,37,20,10, 6, 8,30],
+ [1940,103,  6,17,25, 8, 4,22,21],
+ [1950,148,  5,40,47, 9, 6, 2,39]];
+const WORK1880=[1880,259,130,41,7,11,64,0,6];       // village AND countryside counted as one place
+// colour line — Black/mulatto people and their recorded work, town line vs beyond it
+const LINE=[ // year, people in town, their trades+shop+professional, people beyond, beyond's trades+shop+prof
+ [1900, 47,0,237,4],[1910, 26,0,212,4],[1920, 12,0, 97,2],
+ [1930,  0,0,148,0],[1940,  5,0, 92,3],[1950,  1,0,516,22]];
+const BLACK1880=[255,756];                          // census_1880_hamilton.csv race=B|M
+const PROPRIETORS=[
+ ['1910','James B. Levenberry, 48','barber, own shop'],
+ ['1910','Daniel T. White, 23','retail merchant, grocery'],
+ ['1910','James N. Swann, 59','gardener, own account'],
+ ['1920','Marshall Randolph','barber, own shop'],
+ ['1930','Charles W. Clark','insurance agent']];
+// life lines — timeline_people.csv census_<year>_occupation
+const LIVES=[
+ ['George T. Schooley','1860–1932 · Lakeview',S1,[[1880,'works in shop'],[1900,'blacksmith'],[1910,'farmer / blacksmith'],[1920,'merchant'],[1930,'merchant']]],
+ ['Bessie Estelle Myers','1880–1964 · Lakeview','#7db8f0',[[1880,'born'],[1900,''],[1910,''],[1920,'operator'],[1930,'chief operator'],[1940,''],[1950,'']]],
+ ['James B. Levenberry','1861–after 1950 · west end','#b5845f',[[1910,'barber, own shop'],[1950,'boarder, aged 89']]],
+ ['Lawrence H. Johnson','1894–1940 · Pleasant Valley',S2,[[1910,'farm laborer, aged 15'],[1920,'laborer'],[1930,'laborer'],[1940,'laborer']]]];
+
+/* ---------- helpers ---------- */
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const eo=t=>1-Math.pow(1-clamp(t,0,1),3);           // ease-out cubic
+const eio=t=>{t=clamp(t,0,1);return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2};
+const span=(t,a,b)=>clamp((t-a)/(b-a),0,1);          // 0..1 across [a,b]
+const fmt=n=>Math.round(n).toLocaleString('en-US');
+function txt(s,x,y,size,color,font=SANS,align='left',weight=''){g.font=`${weight} ${size}px ${font}`;g.fillStyle=color;g.textAlign=align;g.textBaseline='alphabetic';g.fillText(s,x,y)}
+function fadeIn(t,a,d=0.6){return eo(span(t,a,a+d))}
+function fadeOut(t,b,d=0.5){return 1-eo(span(t,b-d,b))}
+function alpha(a,f){g.globalAlpha=clamp(a*f,0,1)}
+function kicker(s,x,y,a){alpha(a,1);g.fillStyle=S2;g.fillRect(x,y-18,34,2);txt(s,x,y,14,S2,SANS,'left','bold');g.globalAlpha=1}
+function title(s,x,y,a,size=46){alpha(a,1);txt(s,x,y,size,INK,SERIF,'left','bold');g.globalAlpha=1}
+function body(s,x,y,a,size=19,color=INK2){alpha(a,1);txt(s,x,y,size,color,SANS);g.globalAlpha=1}
+function roundBar(x,y,w,h,color){g.fillStyle=color;g.beginPath();const r=Math.min(4,h/2,Math.abs(w)/2);
+ if(w<=0){return} g.moveTo(x,y);g.lineTo(x+w-r,y);g.quadraticCurveTo(x+w,y,x+w,y+r);g.lineTo(x+w,y+h-r);g.quadraticCurveTo(x+w,y+h,x+w-r,y+h);g.lineTo(x,y+h);g.closePath();g.fill()}
+function counter(n,x,y,a,size=120,color=INK){alpha(a,1);txt(fmt(n),x,y,size,color,SERIF,'left','bold');g.globalAlpha=1}
+const IMG=new Image(); let READY=false; IMG.onload=()=>{READY=true;window.READY=true}; IMG.src='map.jpg';
+
+/* ---------- scenes ---------- */
+// Scene timings (seconds)
+const T={count:[0,18],map:[18,50],reg:[50,86],war:[86,112],town:[112,150],
+ work:[150,184],line:[184,218],leave:[218,260],eras:[260,290],lives:[290,322],close:[322,340]};
+
+function sceneCount(t){const [a,b]=T.count; const f=fadeIn(t,a,0.8)*fadeOut(t,b,0.8);
+ const n=TOTAL*eo(span(t,a+0.6,a+5.5));
+ counter(n,64,330,f,150);
+ body('people buried in Hamilton, Virginia',68,380,f*fadeIn(t,a+1.2),22,INK2);
+ // three cemeteries
+ const f2=fadeIn(t,a+7);
+ let y=470; CEMS.forEach(([name,n],i)=>{const fi=fadeIn(t,a+7+i*0.9); const w=eo(span(t,a+7.3+i*0.9,a+8.6+i*0.9))*(n/2101)*620;
+  alpha(f*fi,1); roundBar(68,y+i*52,w,22,[S1,S3,S2][i]); txt(name,68,y+i*52-8,15,INK2); txt(fmt(n),76+w,y+i*52+17,16,INK,SANS,'left','bold'); g.globalAlpha=1;});
+ body('SOURCE  timeline_people.csv · people_all_enriched.csv',68,690,f*0.6,12,INK3);
+}
+
+function sceneMap(t){const [a,b]=T.map; const f=fadeIn(t,a,0.8)*fadeOut(t,b,0.8);
+ // map on the right, slow drift
+ if(READY){const z=lerp(1.0,1.12,eio(span(t,a,b))); const w=640*z,h=333*z; const sx=lerp(0,80,eio(span(t,a,b)));
+  g.save(); g.beginPath(); g.rect(640,250,576,300); g.clip(); alpha(f,0.95);
+  g.drawImage(IMG, 0,0,1280,665, 640-sx*0.3, 250-(h-333)*0.5, 1152*z*0.5, 598*z*0.5); g.restore(); g.globalAlpha=1;
+  g.strokeStyle='#3a3a38'; g.lineWidth=1; g.strokeRect(640.5,250.5,576,300);}
+ kicker('1853',64,120,f);
+ title('A surveyor printed every name',64,170,f,40);
+ body('Yardley Taylor, a Quaker, mapped Loudoun County and wrote',64,210,f,18);
+ body('the householder beside each farm. Near Hamilton:',64,236,f,18);
+ // names flicker in
+ const nf=span(t,a+2.5,a+14); const shown=Math.floor(nf*NAMES_TOTAL);
+ g.font=`15px ${SANS}`; let x=64,y=285; 
+ for(let i=0;i<NAMES_TOTAL;i++){ if(i>=shown)break; const nm=MAPNAMES[i%MAPNAMES.length];
+  const onStone=i<ON_STONES; const colorize=span(t,a+15,a+18);
+  const col = onStone? (colorize>0? S1: INK2) : INK3;
+  alpha(f, onStone?1:lerp(1,0.35,colorize)); g.fillStyle=col; g.fillText(nm,x,y); g.globalAlpha=1;
+  const w=g.measureText(nm).width+16; x+=w; if(x>560){x=64;y+=24;} }
+ // the turn
+ const f3=fadeIn(t,a+18.5);
+ counter(NAMES_TOTAL,64,500,f*fadeIn(t,a+15)*(1-eo(span(t,a+18.5,a+19.5))),64,INK3);
+ counter(ON_STONES,64,500,f*f3,64,S1); body('of those 49 surnames are on headstones here',150,500,f*f3,20,INK);
+ const f4=fadeIn(t,a+22);
+ counter(SHARED_PEOPLE*eo(span(t,a+22,a+25)),64,590,f*f4,72,INK); body('people',290,590,f*f4,22,INK2);
+ // top surname bars
+ TOPSURN.forEach(([s,n],i)=>{const fi=fadeIn(t,a+24+i*0.5); const w=eo(span(t,a+24.3+i*0.5,a+25.5+i*0.5))*(n/43)*260;
+  alpha(f*fi,1); roundBar(640,585+i*20,w,12,S1); txt(s,632,595+i*20,13,INK2,SANS,'right'); txt(fmt(n),648+w,595+i*20,13,INK,SANS,'left','bold'); g.globalAlpha=1;});
+ body('SOURCE  Taylor 1853, LC g3883l la001287 · surname cross-check',64,690,f*0.6,12,INK3);
+}
+
+function sceneReg(t){const [a,b]=T.reg; const f=fadeIn(t,a,0.8)*fadeOut(t,b,0.8);
+ kicker('1853 – 1866',64,120,f);
+ title('The state begins to count the dead',64,170,f,40);
+ const n=REG_N*eo(span(t,a+1,a+5));
+ counter(n,64,290,f,96); body('entries in the Loudoun death register',64,325,f,19);
+ // cause bars
+ const maxv=155; CAUSES.forEach(([c,v],i)=>{const fi=fadeIn(t,a+5+i*0.55); const w=eo(span(t,a+5.3+i*0.55,a+6.8+i*0.55))*(v/maxv)*460;
+  alpha(f*fi,1); txt(c,64,385+i*34,15,INK2); roundBar(230,372+i*34,w,18,S1); txt(fmt(v),240+w,386+i*34,15,INK,SANS,'left','bold'); g.globalAlpha=1;});
+ // the silence — right column
+ const fs=fadeIn(t,a+13);
+ g.save(); alpha(f*fs,1); g.fillStyle='#232322'; g.fillRect(780,250,436,330); g.globalAlpha=1; g.restore();
+ kicker('THE COLOUR COLUMN',812,300,f*fs);
+ const zero=fadeIn(t,a+14);
+ counter(0,812,420,f*zero,120,S2);
+ body(`of ${fmt(REG_N)} entries mark a Black decedent`,812,455,f*fadeIn(t,a+16),17,INK);
+ const fp=fadeIn(t,a+19);
+ body('In 1860 the county was',812,505,f*fp,16,INK2);
+ const pv=BLACK_1860.pct*eo(span(t,a+19,a+22)); counter(pv,812,560,f*fp,56,INK); alpha(f*fp,1); txt('% Black',812+g.measureText(fmt(pv)).width*0.62+70,560,26,INK2,SANS); g.globalAlpha=1; 
+ body(`${fmt(BLACK_1860.ensl)} enslaved · ${fmt(BLACK_1860.free)} free`,812,595,f*fadeIn(t,a+22),15,INK2);
+ const fl=fadeIn(t,a+26);
+ body('The zero is documentation, not demography.',64,650,f*fl,20,INK);
+ body('SOURCE  loudoun_deaths.csv · context_demography.csv',64,690,f*0.6,12,INK3);
+}
+
+function sceneWar(t){const [a,b]=T.war; const f=fadeIn(t,a,0.8)*fadeOut(t,b,0.8);
+ kicker('1860 – 1866',64,120,f);
+ title('Then the register stops',64,170,f,40);
+ // year strip
+ const x0=64,x1=1216,y=290; const yr=v=>x0+(v-1853)/(1866-1853)*(x1-x0);
+ const grow=eo(span(t,a+1,a+4));
+ alpha(f,1); g.fillStyle=GRID; g.fillRect(x0,y,(x1-x0),28);
+ g.fillStyle=S1; g.fillRect(x0,y,(x1-x0)*grow,28); g.globalAlpha=1;
+ for(let v=1853;v<=1866;v++){alpha(f,0.9); txt(String(v),yr(v)+2,y+50,12,INK3); g.globalAlpha=1;}
+ // gap punches out
+ const gp=fadeIn(t,a+4.5,0.8);
+ alpha(f*gp,1); g.fillStyle=SURF; g.fillRect(yr(1860),y-4,yr(1864)-yr(1860),36); g.globalAlpha=1;
+ alpha(f*gp,1); g.strokeStyle=S2; g.lineWidth=2; g.strokeRect(yr(1860)+1,y-3,yr(1864)-yr(1860)-2,34); g.globalAlpha=1;
+ body('no entries at all',yr(1860)+8,y+22,15,S2); 
+ const f2=fadeIn(t,a+6.5);
+ body('Four years with no register. And no newspaper — none survives for Loudoun from 1844 to 1875.',64,380,f*f2,18,INK2);
+ // soldiers
+ const f3=fadeIn(t,a+9);
+ counter(CONF*eo(span(t,a+9,a+11)),64,470,f*f3,72,INK); body('buried here served the Confederacy',200,470,f*f3,19,INK2);
+ const f4=fadeIn(t,a+12.5);
+ counter(USCT,64,540,f*f4,72,S1); body('served the United States Colored Infantry — Lewis Jones, Pleasant Valley',130,540,f*f4,19,INK2);
+ // raid
+ const f5=fadeIn(t,a+16);
+ kicker('30 NOVEMBER 1864 · THE BURNING RAID',760,470,f*f5);
+ [['barns',RAID.barns],['mills',RAID.mills],['bushels of grain',RAID.grain]].forEach(([l,v],i)=>{const fi=fadeIn(t,a+16.5+i*1.2);
+  counter(v*eo(span(t,a+16.5+i*1.2,a+18.5+i*1.2)),760,520+i*44,f*fi,36,INK); body(l,760+ g.measureText(fmt(v)).width*0.85+120,520+i*44,f*fi,16,INK2);});
+ body('SOURCE  doc-register-gap · doc-newspaper-void · context_events.csv 1864-11-28',64,690,f*0.6,12,INK3);
+}
+
+function sceneTown(t){const [a,b]=T.town; const f=fadeIn(t,a,0.8)*fadeOut(t,b,0.8);
+ kicker('1836 – 2026',64,120,f);
+ title('People alive, by year',64,170,f,40);
+ body('everyone in the three cemeteries\' record who was living in that year',64,205,f,16,INK2);
+ const x0=90,x1=1200,y0=600,y1=260; const X=v=>x0+(v-1836)/(2026-1836)*(x1-x0), Y=v=>y0-(v/1500)*(y0-y1);
+ // grid
+ alpha(f,1); g.strokeStyle=GRID; g.lineWidth=1; [0,500,1000,1455].forEach(v=>{g.beginPath();g.moveTo(x0,Y(v));g.lineTo(x1,Y(v));g.stroke(); txt(fmt(v),x0-8,Y(v)+4,12,INK3,SANS,'right');});
+ [1850,1875,1900,1925,1950,1975,2000].forEach(v=>txt(String(v),X(v),y0+22,12,INK3,SANS,'center')); g.globalAlpha=1;
+ // curve draws
+ const prog=eo(span(t,a+1,a+14)); const tmax=1836+prog*(2026-1836);
+ g.save(); alpha(f,1); g.beginPath(); let started=false;
+ for(let i=0;i<POP.length;i++){const [yr,v]=POP[i]; if(yr>tmax){ // interpolate the tip
+   const [py,pv]=POP[i-1]; const k=(tmax-py)/(yr-py); const vv=lerp(pv,v,k); g.lineTo(X(tmax),Y(vv)); break;}
+  if(!started){g.moveTo(X(yr),Y(v));started=true}else g.lineTo(X(yr),Y(v));}
+ g.strokeStyle=S1; g.lineWidth=2.5; g.lineJoin='round'; g.stroke();
+ // fill under
+ g.lineTo(X(Math.min(tmax,2026)),y0); g.lineTo(x0,y0); g.closePath(); g.fillStyle='rgba(57,135,229,0.12)'; g.fill(); g.restore(); g.globalAlpha=1;
+ // peak marker
+ if(tmax>=PEAK[0]){const fp=fadeIn(t,a+1+ (PEAK[0]-1836)/(2026-1836)*13);
+  alpha(f*fp,1); g.fillStyle=INK; g.beginPath(); g.arc(X(1927),Y(1455),5,0,7); g.fill(); g.strokeStyle=SURF; g.lineWidth=2; g.stroke();
+  txt('1,455 alive · 1927',X(1927)+10,Y(1455)-10,15,INK,SANS,'left','bold'); g.globalAlpha=1;}
+ // businesses and health annotate along the curve
+ const popAt=yr=>POP.reduce((acc,[py,pv],j)=>{const nx=POP[j+1];if(nx&&py<=yr&&nx[0]>=yr){return lerp(pv,nx[1],(yr-py)/(nx[0]-py))}return acc},0);
+ const list=[...BIZ.map(x=>[...x,INK2]),...HEALTH.map(x=>[...x,S2])].sort((p,q)=>p[0]-q[0]);
+ list.forEach(([yr,l,color],i)=>{ if(tmax<yr)return; const fi=fadeIn(t,a+1+(yr-1836)/(2026-1836)*13+0.2,0.5); const ly=262+i*24;
+  alpha(f*fi,1); g.fillStyle=color; g.beginPath(); g.arc(X(yr),Y(popAt(yr)),3.5,0,7); g.fill();
+  g.strokeStyle=color; g.lineWidth=0.8; g.setLineDash([3,4]); g.beginPath(); g.moveTo(X(yr),Y(popAt(yr))); g.lineTo(880,ly-4); g.stroke(); g.setLineDash([]);
+  txt(String(yr),888,ly,13,color,SANS,'left','bold'); txt(l,936,ly,13,color,SANS); g.globalAlpha=1;});
+ const fe=fadeIn(t,a+15);
+ body('More alive in 1927 than before, and more than since.',64,660,f*fe,19,INK);
+ body('SOURCE  timeline_population.csv · newspaper_mentions.csv · hamilton_health_news.csv',64,690,f*0.6,12,INK3);
+}
+
+function sceneLeave(t){const [a,b]=T.leave; const f=fadeIn(t,a,0.8)*fadeOut(t,b,0.8);
+ kicker('1900 – 1950',64,120,f);
+ title('The leaving',64,170,f,40);
+ body("Loudoun's Black population fell in every decade — while Pleasant Valley's burials rose.",64,205,f,17,INK2);
+ // two small multiples — one axis each, never dual-axis
+ const panel=(px,py,pw,ph,data,color,label,maxv,unit)=>{
+  const X=v=>px+(v-1900)/(1950-1900)*pw, Y=v=>py+ph-(v/maxv)*ph;
+  alpha(f,1); g.strokeStyle=GRID; g.lineWidth=1; g.beginPath(); g.moveTo(px,py+ph); g.lineTo(px+pw,py+ph); g.stroke();
+  [1900,1910,1920,1930,1940,1950].forEach(v=>txt(String(v),X(v),py+ph+20,12,INK3,SANS,'center'));
+  txt(label,px,py-14,15,INK,SANS,'left','bold'); g.globalAlpha=1;
+  const prog=eo(span(t,a+2,a+12)); const tmax=1900+prog*50;
+  g.save(); alpha(f,1); g.beginPath(); let st=false;
+  for(let i=0;i<data.length;i++){const [yr,v]=data[i]; if(yr>tmax){const [py2,pv]=data[i-1]; const k=(tmax-py2)/(yr-py2); g.lineTo(X(tmax),Y(lerp(pv,v,k))); break;}
+   if(!st){g.moveTo(X(yr),Y(v));st=true}else g.lineTo(X(yr),Y(v));}
+  g.strokeStyle=color; g.lineWidth=2.5; g.lineJoin='round'; g.stroke(); g.restore();
+  data.forEach(([yr,v])=>{ if(yr>tmax)return; alpha(f,1); g.fillStyle=color; g.beginPath(); g.arc(X(yr),Y(v),4,0,7); g.fill(); g.strokeStyle=SURF; g.lineWidth=2; g.stroke();
+   if(yr===1900||yr===1950){txt(fmt(v)+unit,X(yr),Y(v)-12,13,INK,SANS,yr===1900?'left':'right','bold')} g.globalAlpha=1;});
+ };
+ panel(90,290,500,230,BLACKPOP,S1,'Black population of Loudoun County',6500,'');
+ panel(690,290,500,230,PVBUR,S2,'Burials at Pleasant Valley, per decade',35,'');
+ const f2=fadeIn(t,a+13);
+ body('That rising line is not a community growing. It is a community being written down — while it leaves.',64,575,f*f2,16,INK);
+ const f3=fadeIn(t,a+17);
+ kicker('WHERE THEY WENT',64,630,f*f3); body('Montclair, New Jersey — a chain begun in 1870',64,655,f*f3,15,INK2);
+ const f4=fadeIn(t,a+22);
+ g.save(); alpha(f*f4,1); g.fillStyle='#232322'; g.fillRect(560,598,656,78); g.globalAlpha=1; g.restore();
+ kicker('REGISTERED BLACK VOTERS IN VIRGINIA',580,622,f*f4);
+ const vv=lerp(VOTERS[0],VOTERS[1],eo(span(t,a+22.5,a+27)));
+ counter(vv,580,666,f*f4,38,vv<60000?S2:INK); body('1900 → 1904, after the new constitution',790,664,f*fadeIn(t,a+27),13,INK2);
+ body('SOURCE  context_demography.csv · APP_SPEC §6.7 · Encyclopedia Virginia',64,690,f*0.6,12,INK3);
+}
+
+function sceneEras(t){const [a,b]=T.eras; const f=fadeIn(t,a,0.8)*fadeOut(t,b,0.8);
+ kicker('WHAT THE LAW SAID',64,120,f);
+ title('Eras, not events',64,170,f,40);
+ const x0=90,x1=1200; const X=v=>x0+(v-1818)/(1975-1818)*(x1-x0);
+ alpha(f,1); [1825,1850,1875,1900,1925,1950,1975].forEach(v=>{g.strokeStyle=GRID;g.beginPath();g.moveTo(X(v),230);g.lineTo(X(v),600);g.stroke(); txt(String(v),X(v),618,12,INK3,SANS,'center')}); g.globalAlpha=1;
+ ERAS.forEach(([l,s,e,c],i)=>{const fi=fadeIn(t,a+1.5+i*2.2,0.4); const w=eo(span(t,a+1.8+i*2.2,a+3.4+i*2.2))*(X(e)-X(s)); const y=250+i*56;
+  alpha(f*fi,1); roundBar(X(s),y,w,30,c); 
+  const wide=(X(e)-X(s))>220, right=X(e)>1000; const lcol=wide?SURF:INK;
+  const dates=`${s}–${e}`;
+  if(wide){ txt(l,X(s)+10,y+20,14,SURF,SANS,'left','bold'); g.font=`bold 14px ${SANS}`; txt(dates, X(s)+10+g.measureText(l).width+8, y+20, 13, '#333', SANS); }
+  else if(right){ txt(l,X(s)-10,y+20,14,INK,SANS,'right','bold'); g.font=`bold 14px ${SANS}`; txt(dates, X(s)-10-g.measureText(l).width-8, y+20, 13, INK3, SANS, 'right'); }
+  else { txt(l,X(e)+10,y+20,14,INK,SANS,'left','bold'); g.font=`bold 14px ${SANS}`; txt(dates, X(e)+10+g.measureText(l).width+8, y+20, 13, INK3, SANS); }
+  g.globalAlpha=1;});
+ const f2=fadeIn(t,a+16);
+ body('No high school for Black students in Loudoun until 1941. Schools desegregated in 1968 — fourteen years after Brown, by court order.',64,660,f*f2,16,INK);
+ body('SOURCE  context_eras.csv · context_events.csv 1941-09, 1968-05-27',64,690,f*0.6,12,INK3);
+}
+
+function sceneClose(t){const [a,b]=T.close; const f=fadeIn(t,a,0.8);
+ kicker("WHAT ISN'T HERE",64,120,f);
+ // void bar
+ const x0=90,x1=1200; const X=v=>x0+(v-1818)/(1975-1818)*(x1-x0);
+ alpha(f,1); g.fillStyle=GRID; g.fillRect(x0,250,x1-x0,26); g.globalAlpha=1;
+ const gp=fadeIn(t,a+1,0.8); alpha(f*gp,1); g.fillStyle=SURF; g.fillRect(X(VOID[0]),246,X(VOID[1])-X(VOID[0]),34); g.strokeStyle=S2; g.lineWidth=2; g.strokeRect(X(VOID[0])+1,247,X(VOID[1])-X(VOID[0])-2,32); g.globalAlpha=1;
+ body(`${VOID[0]}–${VOID[1]}: thirty-one years with no Loudoun newspaper at all. ${VOID[2]} of these people died inside it.`,64,320,f*fadeIn(t,a+2),17,INK2);
+ const f2=fadeIn(t,a+5);
+ body('Pre-2000: graves believed historically African American at Harmony,',64,380,f*f2,17,INK2);
+ body('disturbed by parking-lot construction. The county\'s own record says so.',64,406,f*f2,17,INK2);
+ const f3=fadeIn(t,a+9);
+ counter(TOTAL,64,560,f*f3,120);
+ body('people are written down here.',64,600,f*fadeIn(t,a+10.5),22,INK);
+ body('Nobody knows how many are not.',64,636,f*fadeIn(t,a+12.5),22,INK2);
+ body('Lakeview · Harmony United Methodist · Pleasant Valley · Hamilton, Virginia',64,690,f*fadeIn(t,a+14)*0.8,13,INK3);
+}
+
+function sceneWork(t){const [a,b]=T.work; const f=fadeIn(t,a,0.8)*fadeOut(t,b,0.8);
+ kicker('1880 – 1950 · SEVEN CENSUS READS',64,120,f);
+ title('What the town did for a living',64,170,f,40);
+ const fn=fadeIn(t,a+0.8);
+ body(`${fmt(TRANSCRIBED)} people transcribed line by line from the returns.`,64,206,f*fn,17,INK2);
+
+ // prologue bar — 1880, before the enumeration split village from countryside
+ const fp=fadeIn(t,a+2.2);
+ const BX=330, BW=790;
+ const stack=(row,y,h,prog,dim)=>{ let x=BX; const tot=row[1];
+  for(let i=0;i<7;i++){ const v=row[2+i]; if(!v) continue; const w=(v/tot)*BW*prog;
+   alpha(f*dim,1); g.fillStyle=OCCCAT[i][1]; g.fillRect(x,y,w,h); g.globalAlpha=1; x+=w; } };
+ const p1=eo(span(t,a+2.4,a+4.2));
+ stack(WORK1880,250,26,p1,fp);
+ alpha(f*fp,1); txt('1880',BX-14,268,16,INK,SANS,'right','bold'); g.globalAlpha=1;
+ body('village and countryside counted as one place — half the work is farm work',BX,296,f*fadeIn(t,a+4),14,INK3);
+
+ // the town line, 1900-1950
+ const fl=fadeIn(t,a+6);
+ alpha(f*fl,0.5); g.strokeStyle=GRID; g.setLineDash([4,5]); g.beginPath(); g.moveTo(64,320); g.lineTo(1216,320); g.stroke(); g.setLineDash([]); g.globalAlpha=1;
+ body('from 1900 the return separates the incorporated town from the country around it',64,342,f*fl,14,INK3);
+ WORK.forEach((row,i)=>{ const fi=fadeIn(t,a+7+i*0.7); const prog=eo(span(t,a+7.2+i*0.7,a+8.8+i*0.7));
+  const y=372+i*40;
+  stack(row,y,26,prog,fi);
+  alpha(f*fi,1); txt(String(row[0]),BX-14,y+18,16,INK,SANS,'right','bold');
+  txt(`${row[1]} at work`,BX+BW+14,y+18,13,INK3,SANS,'left'); g.globalAlpha=1; });
+
+ // legend
+ const fg=fadeIn(t,a+13);
+ let lx=64, ly=638;
+ OCCCAT.forEach(([l,c],i)=>{ alpha(f*fg,1); g.fillStyle=c; g.fillRect(lx,ly-10,12,12);
+  if(i===6){g.strokeStyle=GRID;g.lineWidth=1;g.strokeRect(lx+.5,ly-9.5,11,11);}
+  txt(i===6?'Other / not stated':l,lx+18,ly,13,INK2); g.globalAlpha=1; g.font=`13px ${SANS}`;
+  lx += 18+g.measureText(i===6?'Other / not stated':l).width+24; });
+
+ const f2=fadeIn(t,a+17);
+ body('Shop and counter work more than triples inside the town line: 13 people in 1900, 47 by 1950.',64,672,f*f2,17,INK);
+ body('SOURCE  census_1880–1950_hamilton.csv · scripts/occ_analysis.py',64,700,f*0.6,12,INK3);
+}
+
+function sceneLine(t){const [a,b]=T.line; const f=fadeIn(t,a,0.8)*fadeOut(t,b,0.8);
+ kicker('THE OCCUPATION COLUMN',64,120,f);
+ title('A line you can read in one column',64,170,f,40);
+
+ // 1880 — a third of the town
+ const f1=fadeIn(t,a+1);
+ const pct=BLACK1880[0]/BLACK1880[1]*100*eo(span(t,a+1.2,a+3.6));
+ counter(pct,64,268,f*f1,72,INK); alpha(f*f1,1); g.font=`bold 72px ${SERIF}`;
+ txt('%',64+g.measureText(fmt(pct)).width+6,268,34,INK2,SANS); g.globalAlpha=1;
+ body(`of Hamilton was Black or mulatto in 1880 — ${BLACK1880[0]} of ${BLACK1880[1]} people,`,64,300,f*fadeIn(t,a+3.4),17,INK2);
+ body('living inside the village, in trades and on farms of their own.',64,324,f*fadeIn(t,a+4),17,INK2);
+
+ // the two columns
+ const fh=fadeIn(t,a+6);
+ alpha(f*fh,1); g.fillStyle='#232322'; g.fillRect(64,360,552,250); g.globalAlpha=1;
+ kicker('INSIDE THE TOWN LINE',92,398,f*fh);
+ kicker('BEYOND IT',676,398,f*fadeIn(t,a+12));
+
+ const X=i=>92+i*86;
+ LINE.forEach(([yr,tn,ttsp,on,otsp],i)=>{ const fi=fadeIn(t,a+7+i*0.55);
+  alpha(f*fi,1); txt(String(yr),X(i),432,13,INK3,SANS,'left');
+  // people living in town
+  const hh=(tn/50)*54*eo(span(t,a+7.2+i*0.55,a+8.4+i*0.55));
+  g.fillStyle='#6f6f6b'; g.fillRect(X(i),500-hh,34,hh);
+  txt(String(tn),X(i),518,14,tn?INK2:INK3,SANS,'left','bold');
+  // trades + shop + professional among them
+  txt(ttsp===0?'0':String(ttsp),X(i),556,30,ttsp?S1:S2,SERIF,'left','bold'); g.globalAlpha=1; });
+ body('people',92,586,f*fadeIn(t,a+9),12,INK3);
+ body('in a trade, a shop or a profession',266,586,f*fadeIn(t,a+10),12,S2);
+
+ // beyond the line
+ const fb=fadeIn(t,a+12);
+ LINE.forEach(([yr,tn,ttsp,on,otsp],i)=>{ const fi=fadeIn(t,a+12.5+i*0.5);
+  alpha(f*fi,1); txt(String(yr),676+i*86,432,13,INK3,SANS,'left');
+  const hh=(on/550)*54*eo(span(t,a+12.7+i*0.5,a+13.9+i*0.5));
+  g.fillStyle='#8a8984'; g.fillRect(676+i*86,500-hh,34,hh);
+  txt(String(on),676+i*86,518,14,INK2,SANS,'left','bold');
+  txt(String(otsp),676+i*86,556,30,otsp?S1:INK3,SERIF,'left','bold'); g.globalAlpha=1; });
+
+ const f3=fadeIn(t,a+18);
+ body('Inside the corporate limit the column holds servants,',64,638,f*f3,16,INK);
+ body('laundresses and day labourers — nothing else, for fifty years.',64,660,f*fadeIn(t,a+19),16,INK);
+ body('Every barber, grocer and gardener on his own account is beyond it.',64,682,f*fadeIn(t,a+20.5),16,INK);
+ body('SOURCE  census_1880–1950_hamilton.csv, race and occupation fields',64,706,f*0.6,12,INK3);
+
+ // the named proprietors, on the far side
+ const fpr=fadeIn(t,a+21);
+ kicker('ON THEIR OWN ACCOUNT, BEYOND THE LIMIT',676,592,f*fpr);
+ PROPRIETORS.forEach(([yr,who,what],i)=>{const fi=fadeIn(t,a+21.4+i*0.7); const yy=614+i*17;
+  alpha(f*fpr*fi,1); txt(yr,676,yy,12,INK3,SANS,'left','bold');
+  txt(who,716,yy,12,INK2); g.font=`12px ${SANS}`;
+  txt(what,716+g.measureText(who).width+10,yy,12,S1); g.globalAlpha=1;});
+}
+
+function sceneLives(t){const [a,b]=T.lives; const f=fadeIn(t,a,0.8)*fadeOut(t,b,0.8);
+ kicker('FOUR PEOPLE, END TO END',64,120,f);
+ title('The same column, four lives',64,170,f,40);
+ const x0=300,x1=1180; const X=v=>x0+(v-1880)/(1950-1880)*(x1-x0);
+ const fg=fadeIn(t,a+0.8);
+ alpha(f*fg,1); [1880,1900,1910,1920,1930,1940,1950].forEach(v=>{
+  g.strokeStyle=GRID; g.lineWidth=1; g.beginPath(); g.moveTo(X(v),228); g.lineTo(X(v),600); g.stroke();
+  txt(String(v),X(v),218,13,INK3,SANS,'center')}); g.globalAlpha=1;
+
+ LIVES.forEach(([name,sub,col,pts],i)=>{ const fi=fadeIn(t,a+2+i*2.6); const y=272+i*84;
+  alpha(f*fi,1); txt(name,284,y,19,INK,SANS,'right','bold'); txt(sub,284,y+20,13,INK3,SANS,'right'); g.globalAlpha=1;
+  const prog=eo(span(t,a+2.3+i*2.6,a+4.6+i*2.6));
+  const first=pts[0][0], last=pts[pts.length-1][0];
+  alpha(f*fi,1); g.strokeStyle=col; g.lineWidth=2; g.beginPath();
+  g.moveTo(X(first),y-6); g.lineTo(X(first)+ (X(last)-X(first))*prog, y-6); g.stroke(); g.globalAlpha=1;
+  pts.forEach(([yr,label])=>{ if(X(yr)>X(first)+(X(last)-X(first))*prog+2) return;
+   alpha(f*fi,1); g.fillStyle=col; g.beginPath(); g.arc(X(yr),y-6,4.5,0,7); g.fill();
+   g.strokeStyle=SURF; g.lineWidth=2; g.stroke();
+   if(label){ const al = yr<=1880?'left' : (yr>=1950?'right':'center'); txt(label,X(yr)+(al==='left'?-2:(al==='right'?4:0)),y+16,13,INK2,SANS,al); }
+   g.globalAlpha=1; }); });
+
+ const f2=fadeIn(t,a+13);
+ body('Schooley is nineteen in his father\'s forge in 1880 and a merchant fifty years later.',64,636,f*f2,17,INK);
+ body('Johnson is fifteen and working out in 1910. Three censuses later the enumerator still writes "laborer." He died that year, aged 46.',64,662,f*fadeIn(t,a+16),17,INK);
+ body('SOURCE  timeline_people.csv, census_<year>_occupation fields',64,700,f*0.6,12,INK3);
+}
+
+window.render=function(t){
+ g.fillStyle=SURF; g.fillRect(0,0,W,H);
+ for(const [k,[a,b]] of Object.entries(T)){ if(t>=a-1 && t<b+1){ ({count:sceneCount,map:sceneMap,reg:sceneReg,war:sceneWar,town:sceneTown,
+   work:sceneWork,line:sceneLine,leave:sceneLeave,eras:sceneEras,lives:sceneLives,close:sceneClose})[k](t); } }
+ // progress hairline
+ g.fillStyle=GRID; g.fillRect(0,H-2,W,2); g.fillStyle=S1; g.fillRect(0,H-2,W*clamp(t/340,0,1),2);
+};
+window.DUR=340;
+</script></body></html>

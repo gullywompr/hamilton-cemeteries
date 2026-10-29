@@ -1,0 +1,4 @@
+person_id,last,first,born_raw,died_raw,issue,source
+HM0032,CLARK,LOUISA,07/--/1836,03/15/1909,unparseable date,balch-db
+HM0170,SINKFIELD,CLARENCE,Unknown,11/--/1872,unparseable date,balch-db
+HM0184,TILGHMAN,ANDREW H,1851,04/--/1915,unparseable date,balch-db

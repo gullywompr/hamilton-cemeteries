@@ -1,0 +1,305 @@
+# FamilySearch Image Index, 1940 census, Loudoun ED 54-21 "Mount Gilead Magisterial District, Hamilton Town (part)", 8 images, 304 people. image|name|age|race|rel|sheet
+1|Sara Ann Lee|77|W|Head|A1
+1|Beulah May Lee|49|W|Daug|A1
+1|Sallie Dowell|66|W|Lodg|A1
+1|James E Grimes|74|W|Head|A1
+1|Elizabeth Grimes|69|W|Wife|A1
+1|Thomas Clatterbuck|29|W|Head|A1
+1|Francis Clatterbuck|26|W|Wife|A1
+1|Mary Ann Clatterbuck|4|W|Daug|A1
+1|Marline Clatterbuck|3|W|Daug|A1
+1|Joseph Clatterbuck|2|W|Son|A1
+1|Janice Clatterbuck|1|W|Daug|A1
+1|Frank Laycock|57|W|Head|A1
+1|Jessie Laycock|60|W|Wife|A1
+1|Albert Laycock|25|W|Son|A1
+1|Lacey Rhodes|45|W|Head|A1
+1|Carrie Rhodes|37|W|Wife|A1
+1|Edgar Rhodes|18|W|Son|A1
+1|Dorothy Rhodes|12|W|Daug|A1
+1|James E Mock|87|W|Lodg|A1
+1|Chas W Weening|34|W|Head|A1
+1|Dean Weening|32|W|Wife|A1
+1|Sylvia J Weening|2|W|Daug|A1
+1|Mcneese Grimes|40|W|Head|A1
+1|Josie Grimes|26|W|Wife|A1
+1|Inez Grimes|1|W|Daug|A1
+1|Ralph Brown|53|W|Head|A1
+1|Chalmers Brown|56|W|Wife|A1
+1|Lee White|41|W|Head|A1
+1|Gladys White|35|W|Wife|A1
+1|Robert Lee White|16|W|Son|A1
+1|Roger Myers|12|W|Neph|A1
+1|Frank White|69|W|Head|A1
+1|Nellie Tavenner|65|W|Hous|A1
+1|Annie Tavenner|69|W|Head|A1
+1|Annis Pawell|75|W|Lodg|A1
+1|Anthony Moorcones|35|W|Head|A1
+1|Mary Moorcones|35|W|Wife|A1
+1|Anthony Moorcones|9|W|Son|A1
+1|Tom Moorcones|7|W|Son|A1
+1|John Moorcones|0|W|Son|B1
+1|Joseph Moorcones|37|W|Brot|B1
+1|Helen W Connoly|25|W|Maid|B1
+1|Maude Everette|65|W|Head|A1
+2|Chloe Cannon|70|W|Head|B1
+2|Harriet Cannon|65|W|Sist|B1
+2|Chas W Magill|78|W|Head|B1
+2|Ora A Magill|53|W|Wife|B1
+2|Betty Hatton|10|W|Gran|B1
+2|Monroe Flippo|79|W|Head|B1
+2|Hattie Flippo|73|W|Wife|B1
+2|Nina Flippo|43|W|Daug|B1
+2|Olive Wiley|60|W|Head|B1
+2|Edgar Wiley|31|W|Son|B1
+2|Thomas W Carter|61|W|Head|B1
+2|Lula E Carter|63|W|Wife|B1
+2|Adrian Carter|28|W|Son|B1
+2|Maloy Fishback|30|W|Head|B1
+2|Ruth Fishback|28|W|Wife|B1
+2|Shirley Fishback|4|W|Daug|B1
+2|Eva Schooley|65|W|Head|B1
+2|Alice Schooley|27|W|Daug|B1
+2|Edward S Ayre|38|W|Head|B1
+2|Anna D Ayre|39|W|Wife|B1
+2|Cornelia Ayre|11|W|Daug|B1
+2|Bess Myers|59|W|Head|B1
+2|Anna Myers|37|W|Daug|B1
+2|Josephine Saunders|83|W|Head|B1
+2|Belle French|80|W|Lodg|B1
+2|Nora B Myers|70|W|Head|B1
+2|Marvin Myers|44|W|Son|B1
+2|Arch Shoemaker|54|W|Head|B1
+2|Ada Shoemaker|55|W|Wife|B1
+2|Claude Lowe|42|W|Head|B1
+2|Rebecca Lowe|65|W|Moth|B1
+2|Betty Manuel|78|W|Aunt|B1
+2|Paul Beales|51|W|Head|B1
+2|May Beales|50|W|Wife|B1
+2|Hazel Pearson|13|W|Cous|B1
+2|Walter Ballenger|57|W|Head|B1
+2|Mabel Ballenger|54|W|Wife|A2
+2|Chas Isaac Ballenger|21|W|Son|A2
+2|S Walter Breckenridge|8|W|Gran|A2
+2|Margaret James|48|W|Head|B1
+3|Gordon Milbourne|57|W|Head|A2
+3|Mary Milbourne|54|W|Wife|A2
+3|William H Milbourne|19|W|Son|A2
+3|Lomax Milbourne|13|W|Son|A2
+3|Arthur K Paxson|63|W|Head|A2
+3|Maude Paxson|62|W|Wife|A2
+3|Audrey Paxson|12|W|Gran|A2
+3|Henry Workman|23|W|Head|A2
+3|Mary Workman|18|W|Wife|A2
+3|Mary Ann Workman|2|W|Daug|A2
+3|Betty Lou Workman|0|W|Daug|A2
+3|Mildred Workman|16|W|Sist|A2
+3|Joseph M Tribby|72|W|Head|A2
+3|Jane Tribby|57|W|Wife|A2
+3|John Tribby|24|W|Son|A2
+3|Jr Arthur Paxson, Jr|38|W|Head|A2
+3|Alice Paxson|38|W|Wife|A2
+3|Doris Paxson|18|W|Daug|A2
+3|Norma Paxson|8|W|Daug|A2
+3|Iii Arthur Paxson, Iii|2|W|Son|A2
+3|Sue Payne|74|W|Head|A2
+3|Herbert Payne|52|W|Son|A2
+3|Ed Payne|28|W|Son|A2
+3|Gene Preston|40|W|Daug|A2
+3|Mary Cormley|30|W|Daug|A2
+3|Patsy Preston|7|W|Gran|A2
+3|Kay Cormley|6|W|Gran|A2
+3|Harry W Burke|56|W|Head|A2
+3|Nellie Burke|54|W|Wife|A2
+3|Mary Esther Burke|11|W|Daug|A2
+3|Eugene Lorne|62|W|Head|A2
+3|Eva S Lorne|63|W|Wife|A2
+3|James O'Malley|14|W|Gran|A2
+3|William M Shepherd|27|W|Head|A2
+3|Ola Shepherd|20|W|Wife|A2
+3|David Shepherd|2|W|Son|A2
+3|Helen Shepherd|13|W|Sist|B2
+3|Will H Laycock|83|W|Head|A2
+4|Blaine Wolford|48|W|Head|B2
+4|Elsie Wolford|42|W|Wife|B2
+4|Virginia Wolford|21|W|Daug|B2
+4|Dorothy Wolford|18|W|Daug|B2
+4|Pleasant Orrison|94|W|Head|B2
+4|Elizabeth Orrison|90|W|Sist|B2
+4|Virginia Orrison|87|W|Sist|B2
+4|Sam M Rhodes|68|W|Head|B2
+4|Catherine Rhodes|65|W|Wife|B2
+4|Robert Tribby|25|W|Lodg|B2
+4|Maclyn Monroe|24|W|Head|B2
+4|Evelyn Monroe|25|W|Wife|B2
+4|Nancy Monroe|0|W|Daug|B2
+4|Laura Hoge|72|W|Head|B2
+4|John W Chamblin|86|W|Lodg|B2
+4|William B Hatcher|66|W|Lodg|B2
+4|Claude D Hess|67|W|Lodg|B2
+4|Cosmelia Janney|81|W|Lodg|B2
+4|Lula Brent|68|W|Lodg|B2
+4|Geo E Rollison|44|W|Head|B2
+4|Mazie Rollison|44|W|Wife|B2
+4|Kennith Rollison|16|W|Son|B2
+4|Martha Rollison|11|W|Daug|B2
+4|Walter Wightman|73|W|Lodg|B2
+4|Bowen Long|51|W|Head|B2
+4|Ruth C Long|51|W|Wife|B2
+4|Howard Thompson|79|W|Head|B2
+4|Mattie Thompson|69|W|Wife|B2
+4|Chas Y Hall|29|W|Head|B2
+4|Addie B Hall|26|W|Wife|B2
+4|Bonnie Sue Hall|4|W|Daug|B2
+4|Robert Newton|38|W|Head|B2
+4|Dorothy Newton|33|W|Wife|B2
+4|Betty Newton|12|W|Daug|B2
+4|William H Silcoth|82|W|Head|B2
+4|Etta Silcoth|53|W|Daug|B2
+4|Williard Brown|25|W|Head|B2
+4|Nellie Ann Brown|22|W|Wife|B2
+4|Wayne Gibson Brown|1|W|Son|A3
+4|Ella Costello|39|W|Head|B2
+5|Richmond Ely|39|W|Head|A3
+5|Mary Ely|39|W|Wife|A3
+5|Patsy Ely|9|W|Daug|A3
+5|George R Ely|8|W|Son|A3
+5|Oden Dickens|26|W|Head|A3
+5|Alene Dickens|26|W|Wife|A3
+5|Betty Jean Dickens|4|W|Daug|A3
+5|Lowell E Dickens|1|W|Son|A3
+5|Henry B Cole|48|W|Head|A3
+5|Lee Cole|40|W|Wife|A3
+5|H Ben Cole|6|W|Son|A3
+5|Thomas R Preston|67|W|Head|A3
+5|Edna May Preston|66|W|Wife|A3
+5|George Preston|28|W|Son|A3
+5|Mildred Preston|29|W|Daug|A3
+5|Chas Preston|0|W|Gran|A3
+5|Alice Preston|73|W|Sist|A3
+5|William P Frazer|29|W|Head|A3
+5|Ann Frazer|21|W|Wife|A3
+5|Linda Ann Frazer|0|W|Daug|A3
+5|Ruth Nemally|25|W|Lodg|A3
+5|Margaret James|58|W|Head|A3
+5|Blanche Rogers|69|W|Cous|A3
+5|Frank Wynkoop|60|W|Lodg|A3
+5|Holmes Thomas|31|W|Head|A3
+5|Glennis Thomas|22|W|Wife|A3
+5|Fred Thomas|66|W|Head|A3
+5|Emma F Thomas|64|W|Wife|A3
+5|James Kidwell|63|W|Head|A3
+5|Olivia Kidwell|63|W|Wife|A3
+5|Junius B Milbourne|64|W|Head|A3
+5|Mollie G Milbourne|62|W|Wife|A3
+5|Nellie James|55|W|Head|A3
+5|Glova Mae James|49|W|Sist|A3
+5|Forest James|42|W|Brot|A3
+5|Earl Skinner|31|W|Head|A3
+5|Edna H Skinner|32|W|Wife|A3
+5|Peggy Ann Skinner|1|W|Daug|A3
+5|Alice Norris|86|W|Head|A3
+6|Hugh A Tillette|55|W|Head|B3
+6|Mary L Tillette|48|W|Wife|B3
+6|Leonard R Tillette|17|W|Son|B3
+6|Virginia Tillette|15|W|Daug|B3
+6|Ruth Tillette|13|W|Daug|B3
+6|Dan W Ayre|42|W|Head|B3
+6|Lillian Ayre|39|W|Wife|B3
+6|Donald Ayre|8|W|Son|B3
+6|Eliza Donaldson|78|W|Lodg|B3
+6|Lester Smallwood|47|W|Head|B3
+6|Dorothy E Smallwood|40|W|Wife|B3
+6|Dorothy Smallwood|20|W|Daug|B3
+6|Lester H Smallwood|12|W|Son|B3
+6|Gerald Smallwood|10|W|Son|B3
+6|Ruth B Orrison|46|W|Head|B3
+6|George A Orrison|12|W|Son|B3
+6|Edwin R Orrison|11|W|Son|B3
+6|John F Orrison|10|W|Son|B3
+6|Mary F Brown|81|W|Aunt|B3
+6|Henry Jacobs|42|W|Head|B3
+6|Linnie Jacobs|42|W|Wife|B3
+6|Kenneth Jacobs|16|W|Son|B3
+6|Roger Trussell|34|W|Head|B3
+6|Helen Trussell|32|W|Wife|B3
+6|Ann Trussell|12|W|Daug|B3
+6|Bertie Clagett|59|W|Head|B3
+6|Jim Clagett|28|W|Son|B3
+6|Tom Clagett|23|W|Son|B3
+6|Lucille Hathaway|49|W|Head|B3
+6|Blanche Hathaway|52|W|Sist|B3
+6|Ella Chamblin|59|W|Head|B3
+6|Elizabeth Chamblin|30|W|Daug|B3
+6|Harriet Beans|83|W|Head|B3
+6|Bessie Jenkins|57|W|Daug|B3
+6|Evelyn Wynkoop|15|W|Gran|B3
+6|Eliza Nichols|83|W|Head|B3
+6|Naomi Nichols|45|W|Daug|B3
+6|Paul Shultz|42|W|Head|B3
+6|Nellie Shultz|46|W|Wife|B3
+6|Ruth Shultz|15|W|Daug|A4
+6|Laura Boyd|60|W|Head|B3
+7|George Thomas|71|W|Head|A4
+7|Blanche Thomas|67|W|Wife|A4
+7|Merlin L Herndon|61|W|Head|A4
+7|Blanche Herndon|60|W|Wife|A4
+7|Howard Rogers|54|W|Head|A4
+7|Beulah Rogers|56|W|Wife|A4
+7|Esther Rogers|23|W|Daug|A4
+7|Jane Rogers|21|W|Daug|A4
+7|Floyd N Kerr|66|W|Head|A4
+7|Lillian Kerr|63|W|Wife|A4
+7|Alice Kerr|33|W|Daug|A4
+7|F Mercer Love|53|W|Head|A4
+7|Gertrude Love|53|W|Wife|A4
+7|Charles Kuhlmann|74|W|Head|A4
+7|Malinda Kuhlmann|73|W|Wife|A4
+7|Clayton Talton|39|W|Head|A4
+7|Malcoma Talton|37|W|Wife|A4
+7|Charles Talton|16|W|Son|A4
+7|George Talton|14|W|Son|A4
+7|James Talton|11|W|Son|A4
+7|Clayton Talton|8|W|Son|A4
+7|Albert Talton|2|W|Son|A4
+7|Will James|88|W|Head|A4
+7|Anna Simmons|26|W|Serv|A4
+7|Beatrice Simmons|8|W|Serv|A4
+7|Nellie Sulcer|37|W|Head|A4
+7|Roger Sulcer|13|W|Son|A4
+7|Clarence Sulcer|11|W|Son|A4
+7|Henry Mock|39|W|Head|A4
+7|Bertie Mock|35|W|Wife|A4
+7|Loraine Mock|13|W|Daug|A4
+7|Anne Mock|11|W|Daug|A4
+7|Nancy Mock|9|W|Daug|A4
+7|Harry Trussell|45|W|Head|A4
+7|Minnie Bell Trussell|38|W|Wife|A4
+7|Richard Arnold|50|W|Brot|A4
+7|Richard Thornsberry|34|W|Head|A4
+7|Ruth Thornsberry|34|W|Wife|A4
+7|Patricia Thornsberry|12|W|Daug|A4
+7|Northa Thornsberry|10|W|Daug|B4
+8|Rodney Nichols|73|W|Head|B4
+8|Mary E Nichols|69|W|Wife|B4
+8|Mary Ann Nichols|30|W|Daug|B4
+8|Julia Morrow|63|W|Sist|B4
+8|Edna W Shoemaker|63|W|Head|B4
+8|Mildred Shoemaker|35|W|Daug|B4
+8|Cora Mock|77|W|Head|B4
+8|Ida Mock|74|W|Sist|B4
+8|Mary Myers|50|W|Hous|B4
+8|Francis Myers|19|W|Hous|B4
+8|John Thompson|80|W|Head|B4
+8|Amelia Thompson|67|W|Wife|B4
+8|Samuel Hough|78|W|Head|B4
+8|Blanche Hough|65|W|Wife|B4
+8|Berkley Hough|33|W|Son|B4
+8|Audrey Lee Hough|6|W|Gran|B4
+8|Daisy Chinn|40|B|Head|B4
+8|Helen Chinn|13|B|Daug|B4
+8|Gilbert Chinn|12|B|Son|B4
+8|Maurice Chinn|10|B|Son|B4
+8|Theodore Chinn|9|B|Son|B4
+8|Lula Howard|60|W|Head|B4
+8|Margaret Mc Farland|55|W|Head|B4
