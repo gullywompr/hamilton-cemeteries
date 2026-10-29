@@ -106,17 +106,19 @@ test('event overlay', () => {
 
 test('era bands', () => {
   const eras = load('eras.json');
-  assert.equal(eras.length, 23);
+  assert.equal(eras.length, 26);
   const layers = {};
   for (const e of eras) layers[e.layer] = (layers[e.layer] || 0) + 1;
-  assert.deepEqual(layers, { documentation: 9, social: 7, education: 3, medical: 3, economic: 1 });
+  assert.deepEqual(layers, { documentation: 9, social: 7, education: 3, medical: 3, economic: 2, national: 2 });
   const open = eras.filter(e => e.open);
   assert.deepEqual(open.map(e => e.id).sort(), ['doc-modern-survey', 'med-antibiotic']);
   for (const e of open) assert.equal(e.end, '');
   assert.deepEqual(eras.filter(e => e.confidence !== 'verified').map(e => e.id), ['econ-rural-electrification']);
   const mr = eras.find(e => e.id === 'soc-massive-resistance'), df = eras.find(e => e.id === 'soc-disfranchisement');
   assert.ok(mr.start >= df.start && mr.end <= df.end, 'massive resistance nests inside disfranchisement');
-  assert.equal(new Set(eras.map(e => e.id)).size, 23);
+  const sr = eras.find(e => e.id === 'nat-space-race'), cw = eras.find(e => e.id === 'nat-cold-war');
+  assert.ok(sr.start >= cw.start && sr.end <= cw.end, 'the space race nests inside the cold war');
+  assert.equal(new Set(eras.map(e => e.id)).size, 26);
   for (const e of eras) assert.ok(e.basis, e.id);
   const ctx = load('context.json');
   assert.equal(ctx.papers.length, 12);

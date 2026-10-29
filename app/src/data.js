@@ -51,7 +51,7 @@ export async function loadAll() {
     e.s = interval(e.start, e.startP);
     e.e = e.open || !e.end ? null : interval(e.end, e.endP);
   }
-  D.eraLayers = ['documentation', 'social', 'education', 'medical', 'economic'];
+  D.eraLayers = ['documentation', 'social', 'education', 'medical', 'economic', 'national'];
   D.absenceEraIds = new Set(['doc-blackout', 'doc-newspaper-void', 'doc-register-gap']);
 
   // The one absence band the app draws that is not a row in context_eras.csv.
