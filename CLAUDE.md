@@ -147,6 +147,13 @@ owner's request on 29 Oct 2026 (the Revolutionary War's start and the Treaty
 of Paris, the signing of the Declaration of Independence, and the
 ratification of the Constitution). The spec's number is stale.
 
+**3. The years-lived layer (§11).** Added to the spec on 29 Oct 2026, after
+the rest of it was written. It compares the median age at death of adults on
+Lakeview and Pleasant Valley, starting in 1920. Its rules (never "life
+expectancy", `n` beside every median, "not established" where the interval
+includes zero, no cause attributed) are honesty rules, the same kind as the
+ones above.
+
 ## Acceptance tests — re-verified against the current data
 
 Every other value in `APP_SPEC.md` §9 was re-checked and is correct. A build
@@ -163,6 +170,9 @@ disagreeing with any of these has a join or filter bug.
 | matched to ≥1 census | 374 |
 | ≥1 census occupation | 212 |
 | `context_events.csv` rows | 137 |
+| years lived, 1920–1949 gap | 13.0 (Lakeview n=480, Pleasant Valley n=39) |
+| years lived, 1950–1999 gap | 8.0 (n=753, n=193) |
+| years lived, 2000–2026 | not established, p = 0.081 |
 
 **Living population** (`timeline_usable = yes`, `birth_year ≤ Y ≤ death_year`):
 

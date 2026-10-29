@@ -668,3 +668,72 @@ directly on building this:
 - *THE COUNTY-WIDE CONTEXT LAYER* — the demography layer and the rules for it
 - *One real decision...* — the standing policy on disputed dates
 - *OPEN LEADS AND STANDING CONSTRAINTS* — what is deliberately not here yet
+
+---
+
+## 11. The years-lived layer
+
+Added on 29 Oct 2026, after the rest of this spec was written, at the owner's
+request. It compares how long adults lived on the two grounds where the
+record is deep enough to compare: **Lakeview** and **Pleasant Valley**.
+Harmony is too small and is shown only for coverage.
+
+### 11.1 The measure
+
+**Median age at death of people who reached 20**, by era and by decade of
+death, from `timeline_people.csv` rows with `timeline_usable = yes`, a
+`death_year` and an `age_at_death`. Adults only, so that different
+child-burial practice on the two grounds cannot drive the result.
+
+- The reference analysis is `scripts/longevity_gap.py`. Its output,
+  `data/longevity_gap.json`, is the one file in `data/` that a script may
+  write (see `CLAUDE.md`).
+- The app's build computes every median, `n`, gap and the one-sided
+  Mann-Whitney `p` itself, and stops if any of them disagrees with the
+  reference output. The bootstrap interval (4,000 resamples) is the one
+  number taken from the reference output rather than recomputed.
+
+### 11.2 Eras
+
+| era | Lakeview | Pleasant Valley | gap | 95% interval | p |
+|---|---|---|---|---|---|
+| 1920–1949 | 69.0, n=480 | 56.0, n=39 | **13.0** | 3.0 to 22.5 | < 0.001 |
+| 1950–1999 | 76.0, n=753 | 68.0, n=193 | **8.0** | 2.0 to 10.0 | < 0.001 |
+| 2000–2026 | 79.0, n=334 | 75.0, n=74 | not established | −2.5 to 8.0 | 0.081 |
+
+**The comparison starts in 1920, not 1900.** Pleasant Valley opened in
+1922. Before 1920 the record holds 252 dated adult deaths at Lakeview and 3
+at Pleasant Valley, the earliest in 1911. Three cannot carry a median, so both
+grounds are compared from 1920 and earlier deaths are left out on both sides.
+The page must say this, with the counts.
+
+### 11.3 Rules
+
+These are honesty rules, not style:
+
+- **Never call it life expectancy.** Life expectancy at birth is a different
+  measure and this record cannot produce one. The page says so.
+- **Print `n` beside every median.** Where Pleasant Valley has fewer than 20
+  people in a decade, mark it as resting on few people.
+- **An era whose interval includes zero is "not established", not a
+  number.** 2000–2026 is shown that way. Do not print its 4.0 as a finding.
+- **Two burial populations, not two samples of Hamilton.** Who chose each
+  ground, and who received a dated stone, differ between them. The page says
+  so.
+- **Attribute no cause.** The record holds no income, almost no occupation at
+  death and nothing on access to care. The page must not suggest any of them
+  explains the gap.
+- **Nothing describes a person.** Nobody died at the median, and this is not
+  a ranking of the two grounds.
+
+### 11.4 Acceptance tests
+
+- Era rows as in §11.2: medians, `n`, gaps, intervals, and `p` for 2000–2026
+  within 0.0005 of 0.081.
+- By decade of death, 1920s to 2010s, the gap is
+  10.0, 12.0, 16.0, 11.5, 8.0, 11.0, 5.0, 4.0, 3.0, 6.0, on Pleasant Valley
+  `n` of 11, 15, 13, 26, 34, 38, 42, 53, 37, 31.
+- Restricted to deaths dated to the day, the era gaps are 12.5, 8.0, 3.5.
+- Share of each ground's people with a usable age at death: Lakeview 95.3%,
+  Harmony 92.4%, Pleasant Valley 88.9%.
+- Before 1920: Lakeview 252 adults, Pleasant Valley 3, earliest 1911.

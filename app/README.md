@@ -76,7 +76,9 @@ legend under the timeline says so.
 
 **years lived.** The record page's *Years lived* tab compares the median age
 at death of adults (reached 20) on Lakeview and Pleasant Valley, by era and
-by decade of death. `scripts/build-data.mjs` computes it from
+by decade of death, from 1920 (Pleasant Valley holds 3 dated adult deaths
+before then, so earlier years are left out on both grounds and the page says
+why). The rules are `APP_SPEC.md` §11. `scripts/build-data.mjs` computes it from
 `timeline_people.csv` into `app/data/longevity.json`, including the
 one-sided Mann-Whitney p. The bootstrap interval is the one number taken from
 `data/longevity_gap.json`, the output of the reference script
