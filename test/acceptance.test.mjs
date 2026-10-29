@@ -106,10 +106,10 @@ test('event overlay', () => {
 
 test('era bands', () => {
   const eras = load('eras.json');
-  assert.equal(eras.length, 28);
+  assert.equal(eras.length, 30);
   const layers = {};
   for (const e of eras) layers[e.layer] = (layers[e.layer] || 0) + 1;
-  assert.deepEqual(layers, { documentation: 9, social: 7, education: 3, medical: 3, economic: 2, national: 4 });
+  assert.deepEqual(layers, { documentation: 9, social: 7, education: 3, medical: 3, economic: 2, national: 6 });
   const open = eras.filter(e => e.open);
   assert.deepEqual(open.map(e => e.id).sort(), ['doc-modern-survey', 'med-antibiotic']);
   for (const e of open) assert.equal(e.end, '');
@@ -118,9 +118,11 @@ test('era bands', () => {
   assert.ok(mr.start >= df.start && mr.end <= df.end, 'massive resistance nests inside disfranchisement');
   const sr = eras.find(e => e.id === 'nat-space-race'), cw = eras.find(e => e.id === 'nat-cold-war');
   assert.ok(sr.start >= cw.start && sr.end <= cw.end, 'the space race nests inside the cold war');
-  const kw = eras.find(e => e.id === 'nat-korean-war');
-  assert.ok(kw.start >= cw.start && kw.end <= cw.end, 'the korean war nests inside the cold war');
-  assert.equal(new Set(eras.map(e => e.id)).size, 28);
+  for (const id of ['nat-korean-war', 'nat-vietnam-war']) {
+    const w = eras.find(e => e.id === id);
+    assert.ok(w.start >= cw.start && w.end <= cw.end, `${id} nests inside the cold war`);
+  }
+  assert.equal(new Set(eras.map(e => e.id)).size, 30);
   for (const e of eras) assert.ok(e.basis, e.id);
   const ctx = load('context.json');
   assert.equal(ctx.papers.length, 12);

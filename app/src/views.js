@@ -505,7 +505,7 @@ function selfCheck(D) {
     ['Records, as data/timeline_people.csv holds them', null],
     ['timeline_people.csv rows', R.rows, 2732], ['timeline_usable = yes', R.usable.yes, 2572], ['timeline_usable = no', R.usable.no, 63], ['death-only', R.usable.deathOnly, 50], ['birth-only', R.usable.birthOnly, 47],
     ['Lakeview', R.cemeteries.L, 2101], ['Harmony', R.cemeteries.H, 263], ['Pleasant Valley', R.cemeteries.P, 368], ['cause_of_death populated', R.cod, 17], ['stone_1948 populated', R.stone, 744], ['date_disputed = yes', R.disputed, 22],
-    ['matched to a census', R.censusMatched, 374], ['with a census occupation', R.censusOccupation, 212], ['context_events.csv rows', S.events, 137], ['context_eras.csv rows', S.eras, 28],
+    ['matched to a census', R.censusMatched, 374], ['with a census occupation', R.censusOccupation, 212], ['context_events.csv rows', S.events, 137], ['context_eras.csv rows', S.eras, 30],
     ['People, after the owner-confirmed duplicates are counted once', null],
     ['people', S.people, 2681], ['records folded into another', S.folded, 51], ['timeline_usable = yes', S.usable.yes, 2521],
     ['Lakeview', S.cemeteries.L, 2065], ['Harmony', S.cemeteries.H, 254], ['Pleasant Valley', S.cemeteries.P, 362], ['with a 1948 stone reading', S.stone, 743],
