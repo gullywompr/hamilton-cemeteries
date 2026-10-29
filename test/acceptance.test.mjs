@@ -53,7 +53,9 @@ test('the site header states the people count', () => {
   assert.match(html, new RegExp(`Three cemeteries, ${people.length.toLocaleString('en-US')} people`));
 });
 
-test('living population by year matches the spec and reproduces timeline_population.csv exactly', () => {
+// The records' match with timeline_population.csv is checked in the build,
+// which stops if any year differs; this test checks the curve on people.
+test('living population by year, on people, matches APP_SPEC §13 for all 273 years', () => {
   // people, not records: the build checks the records against timeline_population.csv
   const expect = { 1800: 11, 1850: 327, 1866: 597, 1900: 1231, 1927: 1429, 1950: 1256, 2000: 413 };
   for (const [y, n] of Object.entries(expect)) assert.equal(aliveCount(people, +y), n, `year ${y}`);

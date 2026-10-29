@@ -34,7 +34,7 @@ URL too: `#/record?tab=absent`.
 | `app/src/panels.js` | the cursor panel, the living list and the person drawer. |
 | `app/src/views.js` | People, Families, The record, 1853 map. |
 | `app/src/main.js` | wiring, search, hash router. |
-| `test/` | `derive.test.mjs` (rules) and `acceptance.test.mjs` (every value in APP_SPEC §9 as corrected by CLAUDE.md, plus a check that `aliveCount` reproduces `timeline_population.csv` for all 273 years). |
+| `test/` | `derive.test.mjs` (rules) and `acceptance.test.mjs` (every value in APP_SPEC §9 as corrected by CLAUDE.md, plus the living-population curve on people for all 273 years). The build itself checks that the records reproduce `timeline_population.csv` and stops if any year differs. |
 
 ## The rules, as implemented
 
