@@ -141,11 +141,15 @@ views of the town's work. It still cannot support a primary filter or facet
 over all 2,732, and the original reason for the rule stands: a filter over a
 7.8% field silently misrepresents the other 92%.
 
-**2. Acceptance test, event count (supersedes §9).** The spec expects 125 rows
-in `context_events.csv`. The file now has **137**: 133, plus four founding-era events added at the
-owner's request on 29 Oct 2026 (the Revolutionary War's start and the Treaty
-of Paris, the signing of the Declaration of Independence, and the
-ratification of the Constitution). The spec's number is stale.
+**2. Acceptance test, event count (supersedes §9).** The spec expects 127 rows
+in `context_events.csv`, split national 37, education 26, regional 21,
+medical 22, economic 14, local 7. The file now has **137**: 133, plus four
+founding-era events added at the owner's request on 29 Oct 2026 (the
+Revolutionary War's start and the Treaty of Paris, the signing of the
+Declaration of Independence, and the ratification of the Constitution). The
+split is now **national 41, education 26, regional 21, medical 22, economic
+17, local 10**. Both of the spec's figures are stale; the six layers are
+unchanged.
 
 **3. The years-lived layer (§11).** Added to the spec on 29 Oct 2026, after
 the rest of it was written. It compares the median age at death of adults on
@@ -170,6 +174,7 @@ disagreeing with any of these has a join or filter bug.
 | matched to ≥1 census | 374 |
 | ≥1 census occupation | 212 |
 | `context_events.csv` rows | 137 |
+| `context_events.csv` layers | national 41 · education 26 · regional 21 · medical 22 · economic 17 · local 10 |
 | years lived, 1920–1949 gap | 13.0 (Lakeview n=480, Pleasant Valley n=39) |
 | years lived, 1950–1999 gap | 8.0 (n=753, n=193) |
 | years lived, 2000–2026 | not established, p = 0.081 |

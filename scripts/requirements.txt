@@ -1,0 +1,6 @@
+# For scripts/longevity_gap.py only; the app and its build need no Python.
+# Pinned to the versions that produced data/longevity_gap.json: the bootstrap
+# intervals come from numpy's random generator, and another version may draw
+# differently and move an interval by half a year.
+numpy==2.5.0
+scipy==1.18.0

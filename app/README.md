@@ -86,7 +86,26 @@ one-sided Mann-Whitney p. The bootstrap interval is the one number taken from
 and the build stops if they disagree. The page never says "life expectancy",
 prints n beside every median, shows 2000–2026 as *not established* rather
 than as a number, says the two grounds are two burial populations and not two
-samples of the town, and attributes no cause.
+samples of the town, and attributes no cause. Where an era is established as
+published but not once every date known only to the year is left out (today,
+1920–1949), the page says the finding depends on those dates, with the check
+that they are not rounded guesses.
+
+*When to rerun the reference script.* A change to `timeline_people.csv`
+that moves any longevity number (a median, an `n`, a gap) stops
+`npm run data` with "rerun scripts/longevity_gap.py". That is deliberate: the build and the
+script must agree before anything is published. Rerun it from the repository
+root, then rebuild and commit the new `data/longevity_gap.json` with the data
+change:
+
+```
+pip install -r scripts/requirements.txt   # numpy and scipy, pinned
+python scripts/longevity_gap.py
+npm run data && npm test
+```
+
+It is the only script allowed to write into `data/` (see `CLAUDE.md`). The
+acceptance values in `APP_SPEC.md` §11 will need updating to match.
 
 **county context.** The demography charts are context and are captioned as
 not a denominator. The county grave counts are shown beside the project's and
