@@ -23,7 +23,8 @@ test('records: data/timeline_people.csv as it stands (CLAUDE.md acceptance value
 test('people: owner-confirmed duplicates counted once (curation/duplicates.csv)', () => {
   assert.equal(people.length, 2681);
   const S = load('summary.json');
-  assert.deepEqual([S.folded, S.mergedPeople, S.maybePairs, S.unresolvedPairs], [51, 50, 7, 10]);
+  assert.deepEqual([S.folded, S.mergedPeople, S.maybePairs, S.unresolvedPairs, S.unresolvedRecords], [51, 50, 7, 10, 4]);
+  assert.deepEqual(people.filter(p => p.unresolved === 'stone-gives-death').map(p => p.id).sort(), ['LV0082', 'LV0624', 'LV0823', 'LV0964']);
   { const p = people.find(x => x.id === 'LV0012'), q = people.find(x => x.id === 'LV1021');
     assert.ok(p.maybe.some(m => m.id === q.id && m.why === 'birth-is-death') && q.maybe.some(m => m.id === p.id && m.why === 'birth-is-death')); }
   assert.equal(people.length + S.folded, S.records.rows);

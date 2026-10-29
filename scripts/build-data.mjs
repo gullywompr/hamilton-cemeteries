@@ -169,6 +169,18 @@ for (const d of dupRows) {
 }
 for (const p of people) for (const f of p.fam) if (!personById.has(f.id)) throw new Error(`dangling id ${f.id} on ${p.id}`);
 
+// Single records the owner left unresolved (curation/unresolved.csv): a
+// birth-only record whose 1948 stone reading gives the same date as a death,
+// with an age at death. No date is moved; the card says so.
+const UNRESOLVED = { 'stone gives the birth date as a death': 'stone-gives-death' };
+const unresolvedRows = readCsv(join(ROOT, 'curation', 'unresolved.csv'));
+for (const u of unresolvedRows) {
+  const p = personById.get(canon(u.person_id));
+  if (!p) throw new Error(`unresolved.csv: unknown id ${u.person_id}`);
+  if (!UNRESOLVED[u.issue]) throw new Error(`unresolved.csv: unknown issue "${u.issue}" on ${u.person_id}`);
+  p.unresolved = UNRESOLVED[u.issue];
+}
+
 // Possibly living (owner's decision, 29 Oct 2026). A person with no death
 // date who was born within the last LIVING_SPAN years may still be alive, and
 // a stone cut in advance names them. The app keeps them findable by name but
@@ -363,7 +375,7 @@ const recSummary = (list) => ({
 });
 write('summary.json', {
   built: new Date().toISOString(),
-  records: recSummary(records), folded: FOLDED.size, mergedPeople: count(people, p => p.aka.length), maybePairs: count(dupRows, d => d.verdict === 'not sure'), unresolvedPairs: count(dupRows, d => d.verdict === 'unresolved'),
+  records: recSummary(records), folded: FOLDED.size, mergedPeople: count(people, p => p.aka.length), maybePairs: count(dupRows, d => d.verdict === 'not sure'), unresolvedPairs: count(dupRows, d => d.verdict === 'unresolved'), unresolvedRecords: unresolvedRows.length,
   people: people.length,
   usable: { yes: count(people, p => p.use === 'yes'), no: count(people, p => p.use === 'no'), deathOnly: count(people, p => p.use === 'death-only'), birthOnly: count(people, p => p.use === 'birth-only') },
   cemeteries: { L: count(people, p => p.cem === 'L'), H: count(people, p => p.cem === 'H'), P: count(people, p => p.cem === 'P') },

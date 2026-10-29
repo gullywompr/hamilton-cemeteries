@@ -236,6 +236,11 @@ They stay two people, each card links to the other and says why; nothing is
 folded and no date is moved. Five of the fifteen possibly-living people are on
 the birth-only side of one of these pairs.
 
+Four single records are likewise left `unresolved`, in
+`curation/unresolved.csv`: birth-only records (Beales, Lovett, Saunders,
+Weaning) whose 1948 stone reading gives the same date as a death, with an age
+at death, and no second record exists. The card says so; no date is moved.
+
 ---
 
 ## A note on tone
