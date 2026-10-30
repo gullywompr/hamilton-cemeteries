@@ -4054,11 +4054,15 @@ and place.
 
 **What the page shows.** The register has a colour/condition column beside
 each name and a column for the owner's name. On image 182 (1853) a run of
-entries is marked **S** with an owner beside each; readings taken from the
-screen, unconfirmed: Mary A. Whaley, Saml. Hutchison, Sampson Hutchison,
-W. C. Freeman. On image 184 (1854), entry 171 "Mary" is S with an owner read
-as Geo. Q. Smith, and entry 172 "Martena" (d. 1 Sep 1854, mother Milly) is S
-with an owner read as Geo. W. Ball. Enslaved people are entered by first
+entries is marked **S** with an owner named beside each, and on image 184
+(1854) entries 171 ("Mary") and 172 ("Martena", d. 1 Sep 1854, mother Milly)
+are S with an owner named. **The owners' names are deliberately not written
+here.** They were read off a low-resolution screen, and the county held more
+than one man of at least one of the names (two George Smiths, b. c.1777 and
+c.1803, were both alive in 1854: `loudoun_deaths.csv` rows 666 and 1654).
+The page gives Loudoun, not a town, so nothing on it ties an owner to
+Hamilton. A name goes into this file only once it is read with confidence
+and checked against the 1850 slave schedule, with image and line. Enslaved people are entered by first
 name, a mother named by first name only where at all.
 
 **Do not use FamilySearch's index for race.** Its Race field disagrees with
