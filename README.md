@@ -4109,3 +4109,34 @@ working material, not `data/`: nothing in it reaches the app.
 Not yet decided, and Curtis's to decide: whether and how any of this enters
 the app. The search does not cover deaths entered under "Loudoun" alone, so
 96 is not the town's total.
+
+#### The 21 checked on the page, 30 Oct 2026
+
+Every one of the 21 the index calls "colored" was opened on the image
+(details per row in `verified_on_image`):
+
+- **17 are colored on the page.** Leuisa and Helen Levenberry, Catharine
+  Champ, Charles Clark, an unnamed Volentine infant (listed under a written
+  "Colored" heading), Cato Cooper, Mary J. Hill, Amanda Lee, Ada Allen, Jane
+  Humphrey, Mary A. Mitchell, a Jackson infant, Parker Mussey, Henry Clarke,
+  Helen Collins, Julia May Lee and Soloman Lucas: deaths at Hamilton from
+  1873 to 1894. On four pages the header (White | Colored | Male | Female)
+  is legible; on the rest the column is read from neighbouring rows of
+  known race. The 1873 page is faded.
+- **1 is white on the page:** John J. Hough, 1890. The index is wrong.
+- **3 are not confirmed:** Hailey Wood (crowded foot of the 1894 page),
+  George W. White (ditto marks too close to read) and James A. Bentley (the
+  1866 record gives no line; not found on the page).
+
+Two of the 17 (the Levenberrys) touch the cemeteries; the other 15 are in
+none of the three grounds. They are Black Hamiltonians the register records
+and the burial record does not.
+
+#### The 1850 slave schedule and the owners' names
+
+The 1850 slave schedule for Loudoun (film 004206479, item 9, image 46) has
+**two George Smith entries on one page**, lines 13 and 17, holding 10 and 3
+people; an A. G. Smith appears elsewhere. That is two men or one man entered
+twice; the schedule does not say which, and nothing ties either to the
+"Geo. ? Smith" of the 1854 register or to Hamilton. The owners' names stay
+out of this file.

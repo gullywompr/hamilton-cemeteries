@@ -120,11 +120,34 @@ assert len(ARKS) == len(ROWS) == 96, (len(ARKS), len(ROWS))
 # the first column carries May E. Arnett and Sarah E. Beales (white in the
 # index and the timeline), so first = white, second = colored, by that
 # consistency.
+#
+# The other 17 the index calls colored were read the same day. Image numbers
+# are within item 4 ("of 173"). Where the header is legible it reads White |
+# Colored | Male | Female; where it is not, the column is read from rows on
+# the same page whose race the index and the timeline agree on.
 VERIFIED = {
     'XRMS-3CM': 'image 134: second colour column (colored)',   # Leuisa Levenberry
     'XRMS-3HY': 'image 134: second colour column (colored)',   # Helen Levenberry
     'XRMS-3HZ': 'image 134: FIRST colour column (white); the index says colored and is wrong',  # John J. Hough
     'XRMS-SRS': 'image 134: first colour column (white)',      # May E. Arnett
+    'XRMS-SRV': 'image 134 line 7: second colour column (colored)',   # Catharine Champ
+    'XRMS-3WL': 'image 134 line 11: second colour column (colored)',  # Charles Clark
+    'XRMS-6MJ': 'image 150 line 23: under a written "Colored" heading; an unnamed infant, father George Volentine',
+    'XRMS-RRS': 'image 24 line 4: Colored (header legible)',          # Cato Cooper
+    'XRMS-RRD': 'image 24 line 7: Colored (header legible)',          # Mary J. Hill
+    'XRMS-RRN': 'image 24 line 9: Colored (header legible)',          # Amanda Lee
+    'XRM9-428': 'image 95 line 2: Colored (header legible)',          # Ada Allen
+    'XRM9-4LK': 'image 95 line 14: Colored (header legible)',         # Jane Humphrey
+    'XRM9-H4W': 'image 95 line 29: Colored (header legible)',         # Mary A. Mitchell
+    'XRMS-PNL': 'image 20 line 6: second colour column (colored); page faded',   # Jackson infant
+    'XRMS-PN5': 'image 20 line 7: second colour column (colored); page faded',   # Parker Mussey
+    'XRMS-F98': 'image 154 line 13: second colour column (colored)',  # Henry Clarke
+    'XRMS-FMQ': 'image 153 line 16: second colour column (colored)',  # Helen Collins
+    'XRMS-VPJ': 'image 162 line 22: second colour column (colored)',  # Julia May Lee
+    'XRM9-9XB': 'image 86 line 23: Colored (header legible)',         # Soloman Lucas
+    'HJ5D-WMMM': 'image 162 line 37: NOT CONFIRMED, entries crowded at the foot of the page',  # Hailey Wood
+    'HJ5C-372M': 'image 141 line 29: NOT CONFIRMED, ditto marks too close to read the column',  # George W. White
+    'XRSV-JJ6': 'film image 250 (1866): NOT CONFIRMED, the record gives no line and he was not found on the page',  # James A. Bentley
 }
 HEAD = ['fs_ark', 'name', 'sex', 'death_date', 'birth_est', 'birthplace', 'marital', 'occupation',
         'race_index', 'age', 'parents', 'spouse', 'verified_on_image']

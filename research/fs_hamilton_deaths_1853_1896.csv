@@ -2,14 +2,14 @@ fs_ark,name,sex,death_date,birth_est,birthplace,marital,occupation,race_index,ag
 https://www.familysearch.org/ark:/61903/1:1:XRSV-NYM,Napolien B. Riley,M,12 Aug 1865,1853,Near Hamilton,Single,Labourer,white,12,"Isaac Riley, Adaline Riley",,no
 https://www.familysearch.org/ark:/61903/1:1:XRSV-NY3,Rosa Bell Riley,F,20 Nov 1865,1865,Near Hamilton,Single,,white,0,"Isaac Riley, Adaline Riley",,no
 https://www.familysearch.org/ark:/61903/1:1:XRMS-3HZ,John J. Hough,M,8 Aug 1890,1860,"Loudoun, Va.",Single,Laborer,colored,30,,,image 134: FIRST colour column (white); the index says colored and is wrong
-https://www.familysearch.org/ark:/61903/1:1:XRMS-6MJ,Volentine,F,2 Jun 1892,,"Loudoun, Va.",Unknown,,colored,,"George Volentine, Catherine Volentine",,no
+https://www.familysearch.org/ark:/61903/1:1:XRMS-6MJ,Volentine,F,2 Jun 1892,,"Loudoun, Va.",Unknown,,colored,,"George Volentine, Catherine Volentine",,"image 150 line 23: under a written ""Colored"" heading; an unnamed infant, father George Volentine"
 https://www.familysearch.org/ark:/61903/1:1:XRSV-J2D,Mary Berry,F,2 Jan 1866,1800,Shewandock Co.,Single,,White,66,"Jas. Marlow, Phebe Marlow",,no
 https://www.familysearch.org/ark:/61903/1:1:XRM9-42V,William Berry,M,10 Oct 1884,1819,Virginia,Unknown,Laborer,white,65,"Wm. Berry, Mary Berry",Jane Berry,no
-https://www.familysearch.org/ark:/61903/1:1:XRMS-RRN,Amanda Lee,F,1 Apr 1874,1857,Loudoun Co.,Single,,Colored,17,"Geo. Lee, Ellen Lee",,no
-https://www.familysearch.org/ark:/61903/1:1:XRMS-VPJ,Julia May Lee,F,28 Aug 1894,1885,Hamilton,Single,,colored,9,"Daniel Lee, Julia Lee",,no
+https://www.familysearch.org/ark:/61903/1:1:XRMS-RRN,Amanda Lee,F,1 Apr 1874,1857,Loudoun Co.,Single,,Colored,17,"Geo. Lee, Ellen Lee",,image 24 line 9: Colored (header legible)
+https://www.familysearch.org/ark:/61903/1:1:XRMS-VPJ,Julia May Lee,F,28 Aug 1894,1885,Hamilton,Single,,colored,9,"Daniel Lee, Julia Lee",,image 162 line 22: second colour column (colored)
 https://www.familysearch.org/ark:/61903/1:1:XRM9-4G9,Isaac F. Hoge,M,1 Jan 1884,1879,"Loudoun, Va.",Single,,white,5,"Isaac C. Hoge, Freddie Hoge",,no
 https://www.familysearch.org/ark:/61903/1:1:XRM3-9V8,Thos. L. Hoskinson,M,27 Nov 1875,1801,Maryland,Single,Carpenter,White,74,"Nathan Hoskinson, Elizabeth Hoskinson",,no
-https://www.familysearch.org/ark:/61903/1:1:XRM9-428,Ada Allen,F,7 May 1884,1876,"Loudoun, Va.",Single,,colored,8,"Arch. Allen, Sarah Allen",,no
+https://www.familysearch.org/ark:/61903/1:1:XRM9-428,Ada Allen,F,7 May 1884,1876,"Loudoun, Va.",Single,,colored,8,"Arch. Allen, Sarah Allen",,image 95 line 2: Colored (header legible)
 https://www.familysearch.org/ark:/61903/1:1:XRM9-HH4,Sarah E. Smith,F,8 May 1884,1838,Virginia,Married,,white,46,"Joshua Hatcher, Sarah Hatcher",Joshua Smith,no
 https://www.familysearch.org/ark:/61903/1:1:XRMM-8H6,Mary B. Hawley,F,20 Aug 1878,1878,Loudoun,Single,,white,0,"Bayless Hawley, Martha Hawley",,no
 https://www.familysearch.org/ark:/61903/1:1:XRM9-MRK,Mary E. Baker,F,17 Aug 1883,1859,Maryland,Married,,white,24,,John R. Baker,no
@@ -20,23 +20,23 @@ https://www.familysearch.org/ark:/61903/1:1:XRSV-249,Hannah Arnett,F,9 Aug 1872,
 https://www.familysearch.org/ark:/61903/1:1:XRSV-2WL,Anna Arnett,F,18 Nov 1872,1785,Ireland,Married,,White,87,,Wm. Arnett,no
 https://www.familysearch.org/ark:/61903/1:1:HJ5H-TCN2,John Havenner,M,Jul 1865,Jul 1828,Loudoun Co.,Single,Farmer,White,37,"Jeremiah Havener, M. Havener",,no
 https://www.familysearch.org/ark:/61903/1:1:HJ54-49ZM,Rachel A. E. Cooper,F,Aug 1854,Aug 1854,Loudoun,Single,,white,0,"Peter Cooper, Elizabeth Cooper",,no
-https://www.familysearch.org/ark:/61903/1:1:XRMS-RRS,Cato Cooper,M,15 Nov 1874,1839,Loudoun Co.,Married,Laborer,Colored,35,"Jno. Cooper, Sallie Cooper",Mollie Cooper,no
+https://www.familysearch.org/ark:/61903/1:1:XRMS-RRS,Cato Cooper,M,15 Nov 1874,1839,Loudoun Co.,Married,Laborer,Colored,35,"Jno. Cooper, Sallie Cooper",Mollie Cooper,image 24 line 4: Colored (header legible)
 https://www.familysearch.org/ark:/61903/1:1:XRM3-9V9,Amy Everitt,F,8 Sep 1875,1869,Hamilton,Single,,White,6,"John Everett, Harriet Everett",,no
 https://www.familysearch.org/ark:/61903/1:1:XRSV-JV3,Arabella Ann Everhart,F,5 Aug 1866,1844,Loudoun County,Single,,White,22,"Wm. N. Everhart, Cath. Everhart",,no
 https://www.familysearch.org/ark:/61903/1:1:XRSJ-X42,Susanna M. Everhart,F,18 Oct 1855,1843,Loudoun,Single,,white,12,"Nathe. Everht, Darcus Everht",,no
 https://www.familysearch.org/ark:/61903/1:1:XRMS-GYG,Ella M. Downs,F,11 Aug 1873,1873,Near Hamilton,Single,,White,0,"Cicero Downes, Martha E. Downes",,no
-https://www.familysearch.org/ark:/61903/1:1:XRMS-F98,Henry Clarke,M,6 Aug 1893,1866,"Loudoun, Va.",Unknown,,colored,27,"W. H. Clarke, Maria Clarke",,no
-https://www.familysearch.org/ark:/61903/1:1:XRMS-3WL,Charles Clark,M,15 Mar 1890,1875,"Loudoun, Va.",Single,None,colored,15,"Richard Clark, Mary Clark",,no
+https://www.familysearch.org/ark:/61903/1:1:XRMS-F98,Henry Clarke,M,6 Aug 1893,1866,"Loudoun, Va.",Unknown,,colored,27,"W. H. Clarke, Maria Clarke",,image 154 line 13: second colour column (colored)
+https://www.familysearch.org/ark:/61903/1:1:XRMS-3WL,Charles Clark,M,15 Mar 1890,1875,"Loudoun, Va.",Single,None,colored,15,"Richard Clark, Mary Clark",,image 134 line 11: second colour column (colored)
 https://www.familysearch.org/ark:/61903/1:1:XRMM-J6K,Silcott,F,20 Aug 1880,1880,"Loudoun, Va.",Single,,white,0,"Jas. E. Silcott, Mary Silcott",,no
 https://www.familysearch.org/ark:/61903/1:1:XRMS-V5Q,Adeline Preston,F,28 Feb 1894,1859,Loudoun,Unknown,,white,35,"Zenith, Sarah",,no
 https://www.familysearch.org/ark:/61903/1:1:XRMS-V54,Ral G. Preston,F,18 Mar 1894,1893,Hamilton,Single,,white,1,"Edgar T. Preston, Ada Preston",,no
 https://www.familysearch.org/ark:/61903/1:1:XRSV-JH7,John Morgan,M,7 Aug 1866,1794,Loudoun County,Married,,White,72,,Sarah Morgan,no
 https://www.familysearch.org/ark:/61903/1:1:XRSV-JH3,Sarah Morgan,F,15 May 1866,1808,Loudoun County,Married,,White,58,,John Morgan,no
-https://www.familysearch.org/ark:/61903/1:1:XRSV-JJ6,James A. Bentley,M,6 Aug 1866,1865,Near Hamilton,Single,,Colored,1,Adaline Bentley,,no
+https://www.familysearch.org/ark:/61903/1:1:XRSV-JJ6,James A. Bentley,M,6 Aug 1866,1865,Near Hamilton,Single,,Colored,1,Adaline Bentley,,"film image 250 (1866): NOT CONFIRMED, the record gives no line and he was not found on the page"
 https://www.familysearch.org/ark:/61903/1:1:XRM3-9V4,Laura E. Harman,F,20 Dec 1875,1848,Loudoun Co.,Married,Physician,White,27,"R. Dowill, Malinda Dowill",J. D. Harmon,no
 https://www.familysearch.org/ark:/61903/1:1:X511-YS7,Harriet Emeline Harmson,F,14 Feb 1876,,Loudoun,Single,,white,,"J. D. Harman, Laura E. Harman",,no
 https://www.familysearch.org/ark:/61903/1:1:XRSJ-P4C,Conrad R. Dowell,M,18 Feb 1857,1804,Near Hamilton,Married,Farmer,white,53,"Elisha Dowell, Ann Dowell",Malinda Dowell,no
-https://www.familysearch.org/ark:/61903/1:1:XRM9-4LK,Jane Humphrey,F,1 Aug 1884,1832,Hamilton,Married,,colored,52,,Wm. Humphrey,no
+https://www.familysearch.org/ark:/61903/1:1:XRM9-4LK,Jane Humphrey,F,1 Aug 1884,1832,Hamilton,Married,,colored,52,,Wm. Humphrey,image 95 line 14: Colored (header legible)
 https://www.familysearch.org/ark:/61903/1:1:XRMS-SRX,Sarah E. Beales,F,23 Jul 1890,1863,"Loudoun, Va.",Married,None,white,27,"Mort Beales, Sarah Beales",J. E. Beales,no
 https://www.familysearch.org/ark:/61903/1:1:XRSJ-K4S,William Rouse,M,15 Jul 1856,1824,Near Hamilton,Married,Farmer,white,32,"Solomon Ruse, Tobitha Ruse",Louisa Ruse,no
 https://www.familysearch.org/ark:/61903/1:1:XRM9-DHH,Fanny Nichols,F,23 Jul 1885,1797,Loudoun,Unknown,,white,88,"Edwd. McDaniel, Ann McDaniel",Thos. Nichols,no
@@ -53,9 +53,9 @@ https://www.familysearch.org/ark:/61903/1:1:XRM9-DWG,Lydia A. Cox,F,21 Oct 1885,
 https://www.familysearch.org/ark:/61903/1:1:XRMS-Q68,Elizabeth McCray,F,9 Feb 1890,1814,"Loudoun, Va.",Married,None,white,76,"John Gregg, Sallie Gregg",Wm. McCray,no
 https://www.familysearch.org/ark:/61903/1:1:XRM9-HWG,Estelle G. James,F,12 May 1884,1879,Virginia,Single,,white,5,"A. C. James, Sarah F. James",,no
 https://www.familysearch.org/ark:/61903/1:1:XRSV-24X,Rodney G. Hatcher,M,8 Dec 1872,1833,Near Hamilton,Married,Farmer,White,39,"Thos. Hatcher, Nancy Hatcher",Mary F. Hatcher,no
-https://www.familysearch.org/ark:/61903/1:1:XRMS-FMQ,Helen Collins,F,11 Jul 1893,1820,"Loudoun, Va.",Unknown,,colored,73,,,no
+https://www.familysearch.org/ark:/61903/1:1:XRMS-FMQ,Helen Collins,F,11 Jul 1893,1820,"Loudoun, Va.",Unknown,,colored,73,,,image 153 line 16: second colour column (colored)
 https://www.familysearch.org/ark:/61903/1:1:XRMS-GT5,Elizabeth Gregg,F,24 Jun 1896,1818,Hamilton,Unknown,,white,78,"Wm. Gregg, Elizabeth Gregg",,no
-https://www.familysearch.org/ark:/61903/1:1:HJ5D-WMMM,Hailey Wood,F,Aug 1894,Aug 1876,"Hamilton, Va.",Unknown,,colored,18,"Hamilton Wood, Mary Wood",,no
+https://www.familysearch.org/ark:/61903/1:1:HJ5D-WMMM,Hailey Wood,F,Aug 1894,Aug 1876,"Hamilton, Va.",Unknown,,colored,18,"Hamilton Wood, Mary Wood",,"image 162 line 37: NOT CONFIRMED, entries crowded at the foot of the page"
 https://www.familysearch.org/ark:/61903/1:1:XRSJ-Q9J,Samuel W. Greer,M,4 Jul 1854,1854,Near Hamilton,Single,,white,0,"T. W. Greer, Elizabeth Greer",,no
 https://www.familysearch.org/ark:/61903/1:1:XRSJ-QMW,Harriet Russell,F,1 Sep 1854,1850,R. B. Factory,Single,,white,4,"Caleb Russell, Elizabeth Russell",,no
 https://www.familysearch.org/ark:/61903/1:1:HJ5H-QQN2,Bettie Janney,F,Sep 1876,Sep 1843,Loudoun,Single,,white,33,"John Janney, Elizabeth Janney",,no
@@ -67,25 +67,25 @@ https://www.familysearch.org/ark:/61903/1:1:XRMS-PV3,Elizabeth R. Holmes,F,5 Nov
 https://www.familysearch.org/ark:/61903/1:1:XRM9-96K,Blanche Holmes,F,15 Jul 1883,1883,"Loudoun, Va.",Single,,white,0,"George W. Holmes, Rebecca Holmes",,no
 https://www.familysearch.org/ark:/61903/1:1:XRM9-4LM,Grace T. Dunbar,F,29 Jul 1884,1813,Iowa,Single,,white,71,"Edward Dunbar, Clyde Dunbar",,no
 https://www.familysearch.org/ark:/61903/1:1:XRM3-9JR,Mary Elizabeth Davis,F,13 Feb 1875,,Hamilton,Single,,White,,"Albert C. Davis, Susan E. Davis",,no
-https://www.familysearch.org/ark:/61903/1:1:HJ5C-372M,George W. White,M,May 1891,May 1839,Hamilton,Unknown,,colored,52,,,no
-https://www.familysearch.org/ark:/61903/1:1:XRM9-H4W,Mary A. Mitchell,F,15 Jan 1884,1883,Virginia,Single,,colored,1,"Wm. Mitchell, Sarah Mitchell",,no
+https://www.familysearch.org/ark:/61903/1:1:HJ5C-372M,George W. White,M,May 1891,May 1839,Hamilton,Unknown,,colored,52,,,"image 141 line 29: NOT CONFIRMED, ditto marks too close to read the column"
+https://www.familysearch.org/ark:/61903/1:1:XRM9-H4W,Mary A. Mitchell,F,15 Jan 1884,1883,Virginia,Single,,colored,1,"Wm. Mitchell, Sarah Mitchell",,image 95 line 29: Colored (header legible)
 https://www.familysearch.org/ark:/61903/1:1:XRMS-Q6F,Helen N. Moran,F,2 Nov 1890,1888,"Loudoun, Va.",Single,None,white,2,W. H. Miran,,no
 https://www.familysearch.org/ark:/61903/1:1:XRM9-HH8,Mahlon Tavenner,M,17 Sep 1884,1823,Virginia,Unknown,Farmer,white,61,"Joseph Tavenner, Ann Tavenner",Susan Tavenner,no
 https://www.familysearch.org/ark:/61903/1:1:XRMS-QXP,Susen Tavenner,F,2 Oct 1890,1810,"Loudoun, Va.",Single,None,white,80,,,no
 https://www.familysearch.org/ark:/61903/1:1:XRM9-DPJ,Susan A. Tavenner,F,20 Dec 1885,1826,Va.,Unknown,,white,59,"Jonah Nichols, Fanny Nichols",Mahlon Tavenner,no
-https://www.familysearch.org/ark:/61903/1:1:XRM9-9XB,Soloman Lucas,M,12 Nov 1883,1804,"Loudoun, Va.",Unknown,Laborer,colored,79,,,no
-https://www.familysearch.org/ark:/61903/1:1:XRMS-RRD,Mary J. Hill,F,1 Mar 1874,1847,Loudoun Co.,Single,,Colored,27,"Lewis Hill, Dusey Hill",,no
+https://www.familysearch.org/ark:/61903/1:1:XRM9-9XB,Soloman Lucas,M,12 Nov 1883,1804,"Loudoun, Va.",Unknown,Laborer,colored,79,,,image 86 line 23: Colored (header legible)
+https://www.familysearch.org/ark:/61903/1:1:XRMS-RRD,Mary J. Hill,F,1 Mar 1874,1847,Loudoun Co.,Single,,Colored,27,"Lewis Hill, Dusey Hill",,image 24 line 7: Colored (header legible)
 https://www.familysearch.org/ark:/61903/1:1:XRMS-R58,Ernest E. Virts,M,18 Dec 1873,1872,"Loudoun Co., Va.",Single,,White,1,"Charles W. Virts, Trey V. Virts",,no
 https://www.familysearch.org/ark:/61903/1:1:XRSJ-P4W,Ruth W. Taylor,F,8 Dec 1857,1813,Near Chamblin's Mill,Married,,white,44,Mary Bradfield,Lewis Taylor,no
 https://www.familysearch.org/ark:/61903/1:1:XRMS-TYZ,Ruth Weadon,F,27 Oct 1874,1871,Near Hamilton,Single,,White,3,"Chas. Weadon, Mary Weadon",,no
 https://www.familysearch.org/ark:/61903/1:1:XRMS-VH9,Jane A. Evans,F,13 May 1894,1818,Hamilton,Married,,white,76,"Evan Evans, Hannah Evans",,no
 https://www.familysearch.org/ark:/61903/1:1:XRMS-R59,Alcinda Warner,F,20 Aug 1873,1820,"Loudoun Co., Va.",Married,,White,53,"Thos. Lovelefs, Catherine Lovelefs",George Warner,no
 https://www.familysearch.org/ark:/61903/1:1:XRMS-GY6,Laura Virginia Walton,F,17 Sep 1896,1860,Hamilton,Married,,white,36,"Robt. Delaney, Virginia Rose Delaney",,no
-https://www.familysearch.org/ark:/61903/1:1:XRMS-PNL,Jackson,M,11 Apr 1873,1873,Near Hamilton,Single,,Colored,0,"Clarence Jackson, Elen Jackson",,no
+https://www.familysearch.org/ark:/61903/1:1:XRMS-PNL,Jackson,M,11 Apr 1873,1873,Near Hamilton,Single,,Colored,0,"Clarence Jackson, Elen Jackson",,image 20 line 6: second colour column (colored); page faded
 https://www.familysearch.org/ark:/61903/1:1:XRM9-HWY,Lowe,M,10 Aug 1884,1884,Virginia,Single,,white,0,"Joseph Low, America Low",,no
 https://www.familysearch.org/ark:/61903/1:1:XRM9-H4M,Lowe,M,25 Aug 1884,1884,Virginia,Single,,white,0,"Joseph Low, America Low",,no
 https://www.familysearch.org/ark:/61903/1:1:XRMS-FMT,Annie A. Lowe,F,4 Aug 1893,1842,"Loudoun, Va.",Married,,white,51,"Washington Silcott, Kate Silcott",Thomas Lowe,no
-https://www.familysearch.org/ark:/61903/1:1:XRMS-PN5,Parker Mussey,M,15 Sep 1873,1838,Near Hamilton,Married,Laborer,Colored,35,"Edward Mussey, Bettie Mussey",Nancy Mussey,no
+https://www.familysearch.org/ark:/61903/1:1:XRMS-PN5,Parker Mussey,M,15 Sep 1873,1838,Near Hamilton,Married,Laborer,Colored,35,"Edward Mussey, Bettie Mussey",Nancy Mussey,image 20 line 7: second colour column (colored); page faded
 https://www.familysearch.org/ark:/61903/1:1:XRMM-JHJ,Mary E. Muse,F,26 Nov 1880,1822,"Loudoun, Va.",Married,,white,58,,James Muse,no
 https://www.familysearch.org/ark:/61903/1:1:XRMS-RRK,Israel Myers,M,10 Oct 1874,1814,Loudoun Co.,Married,Farmer,White,60,"Maklen Myers, Mahala Myers",Mary Myers,no
 https://www.familysearch.org/ark:/61903/1:1:XRMM-DG7,Laura C. Wiley,F,19 May 1879,1858,Hamilton,Unknown,,white,21,"John Wiley, Malinda Wiley",,no
@@ -93,5 +93,5 @@ https://www.familysearch.org/ark:/61903/1:1:HJ1M-J1W2,Clifford C. Wiley,M,Apr 18
 https://www.familysearch.org/ark:/61903/1:1:HJ5W-9H2M,Estella Wiley,F,Nov 1876,Nov 1875,Loudoun,Single,,white,1,"W. H. Wiley, Nannie E. Wiley",,no
 https://www.familysearch.org/ark:/61903/1:1:HJ5C-MKZM,Mary Haines,F,Jan 1896,Jan 1819,,Unknown,,white,77,,,no
 https://www.familysearch.org/ark:/61903/1:1:XRMS-157,Vandevanter,M,21 Oct 1875,1875,Loudoun,Single,,White,0,"T. H. Vandevanter, Nannie Vandevanter",,no
-https://www.familysearch.org/ark:/61903/1:1:XRMS-SRV,Catharine Champ,F,27 Jan 1890,1812,"Loudoun, Va.",Unknown,None,colored,78,,,no
+https://www.familysearch.org/ark:/61903/1:1:XRMS-SRV,Catharine Champ,F,27 Jan 1890,1812,"Loudoun, Va.",Unknown,None,colored,78,,,image 134 line 7: second colour column (colored)
 https://www.familysearch.org/ark:/61903/1:1:XRMS-PJT,John F. Harrison,M,29 Aug 1873,1872,Hamilton,Single,,White,1,"John D. Harrison, Laura Harrison",,no
