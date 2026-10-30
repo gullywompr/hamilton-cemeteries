@@ -1503,6 +1503,7 @@ session does not re-propose something already declined.
 | USGS EarthExplorer | Clean, unwatermarked copies of the 1957-1990 aerials of Harmony UMC | Needs a free USGS account |
 | Lakeview Cemetery Association interment ledger and plot map | Probably the single richest source of unmarked burials - an active cemetery records burials whether or not a stone follows | Needs contacting the association |
 | Original Loudoun death registers at the Library of Virginia | The 1853-66 pages for enslaved and free Black decedents, absent from the DAR typescript | Different film; may need an LVA visit or request |
+| **Loudoun death registers 1866-1896** (Library of Virginia microfilm; also FamilySearch catalog 780106, *Death registers, 1853-1906 (Virginia)*). Logged 30 Oct 2026 after a town reader asked when Black deaths were recorded again | Thirty years of county death returns past the end of the DAR typescript, in which Black Loudouners should appear as free people - the biggest single step toward the pre-1922 gap. Virginia registered deaths 1853-1896; nothing statewide until death certificates began 14 Jun 1912 | Never brought into the project. LVA has no statewide index for 1853-96, so it is a page-by-page read of the film; FamilySearch images need a free account |
 | EWP 1904 teacher contracts (J. Walter Brown, Robert H. Tyler) | Named Black teachers at Hamilton in 1904 | Not yet checked for access state |
 
 ### Leads that are OPEN and need no account — ready whenever wanted
