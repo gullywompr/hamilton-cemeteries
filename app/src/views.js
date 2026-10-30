@@ -522,7 +522,7 @@ export function renderMap(el, D, ctx) {
   const mapEvents = D.datedEvents.filter(e => e.layer === 'local' && /1853 map/.test(e.title));
   el.innerHTML = `
     <h1 data-k="1853 · Yardley Taylor · Library of Congress">The county in 1853</h1>
-    <p class="lede">${esc(layer.title)}, surveyed by a Loudoun Quaker surveyor and published about 1854. It names residents by their houses. Served as tiles from the Library of Congress; nothing is downloaded or bundled.</p>
+    <p class="lede">${esc(layer.title)}, surveyed by a Loudoun Quaker surveyor and published about 1854. It names some residents by their houses. It is not a list of everyone who lived in the county: a house without a name is not an empty one. Served as tiles from the Library of Congress; nothing is downloaded or bundled.</p>
     <div class="map-wrap"><div id="osd"></div></div>
     <div class="map-attr">${esc(layer.attribution)}. ${esc(layer.notes.split('.').slice(0, 3).join('.'))}. <b>Not georeferenced</b>: the map is shown as a picture and implies no positional accuracy.</div>
     ${mapEvents.length ? `<h2 data-k="context_events.csv · local layer">What the map says about these people</h2><ul class="era-list">${mapEvents.map(e => `<li>${esc(e.title)}<span class="basis">${esc(e.note)} <span class="muted">(${esc(e.source)})</span></span></li>`).join('')}</ul>` : ''}
