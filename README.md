@@ -4074,3 +4074,34 @@ deaths across 1853-1896 without reading every county page, then each is
 checked on the image. Not yet done; human-paced, one lookup at a time.
 
 Nothing from this film is in `data/` yet.
+
+### The Harmony/Hamilton place search, 30 Oct 2026
+
+One search of the index (collection 1708697, death place exactly "Harmony,
+Loudoun, Virginia"; FamilySearch files it as Hamilton) returned **96 deaths,
+1854-1896**, on one page. They are in
+`research/fs_hamilton_deaths_1853_1896.csv`, written by
+`research/build_fs_hamilton.py`, each with its record link. `research/` is
+working material, not `data/`: nothing in it reaches the app.
+
+- **28 of the 96** match a person already in the timeline by surname and
+  death year (a loose match, to be checked one by one). Lydia A. Cox, d. 21
+  Oct 1885 aged 77, is the dataset's earliest birth.
+- **21 are marked "colored" by the index**, 1866-1894. Only the page counts,
+  and the index has now been wrong twice: John J. Hough (d. 8 Aug 1890) is in
+  the white column on the page.
+- **Leuisa Levenberry, d. 4 Jul 1890 aged 53, is marked colored on the
+  page** (item 4, image 134, line 33), as is Helen Levenberry, 22, d. 21 Feb
+  1890. Leuisa's date of death is the date on HM0104, "L J Levenberry", born
+  14 Apr 1837, at **Harmony**. If they are one woman, Harmony holds a
+  stone for a Black Hamiltonian who died in 1890, in the years the app says
+  the record is all but silent. The column header was not legible; first =
+  white, second = colored is read from rows whose race is known.
+- George W. White, "colored" in the index, d. May 1891 aged 52, is not
+  obviously HM0199 George Washington White (CSA Loudoun Artillery, d. 15 Jun
+  1891). Unchecked on the page.
+- Most of the 21 are in no cemetery in this project.
+
+Not yet decided, and Curtis's to decide: whether and how any of this enters
+the app. The search does not cover deaths entered under "Loudoun" alone, so
+96 is not the town's total.
