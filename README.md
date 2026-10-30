@@ -4037,3 +4037,40 @@ two burial populations, not two samples of the town, for this reason.
 - The kept record for each merged person was chosen by completeness (stone
   reading, exact dates, family links, sources), which sometimes keeps the
   shorter name; the `keep` column can be changed.
+
+## THE ORIGINAL LOUDOUN DEATH REGISTER — FIRST LOOK, 30 OCT 2026
+
+Opened on FamilySearch under Curtis's account, the day the no-sign-ups rule
+was lifted for FamilySearch. A town reader had said the 1853 register lists
+African-American deaths. **It does.** The DAR typescript is what left them out.
+
+**Where it is.** Catalog 780106, *Death registers, 1853-1906 (Virginia)*,
+film **2048576** = image group (DGS) **004225400**, 656 images, holding Lee,
+Loudoun and Lunenburg. Image 180 is the target card for **Item 2**; Loudoun
+1853 begins just after it (image 182 is 1853, 184 is 1854, 250 is 1866). The
+images are browsable and **indexed** (collection *Virginia, Deaths and
+Burials, 1853-1912*): names, ages, birthplace, parents, spouse, death date
+and place.
+
+**What the page shows.** The register has a colour/condition column beside
+each name and a column for the owner's name. On image 182 (1853) a run of
+entries is marked **S** with an owner beside each; readings taken from the
+screen, unconfirmed: Mary A. Whaley, Saml. Hutchison, Sampson Hutchison,
+W. C. Freeman. On image 184 (1854), entry 171 "Mary" is S with an owner read
+as Geo. Q. Smith, and entry 172 "Martena" (d. 1 Sep 1854, mother Milly) is S
+with an owner read as Geo. W. Ball. Enslaved people are entered by first
+name, a mother named by first name only where at all.
+
+**Do not use FamilySearch's index for race.** Its Race field disagrees with
+the page: on image 184 it labels Richard S. Killen (38, born England,
+minister) "colored", and the page marks him W. It also loses the S/owner
+pair altogether. The index is fine for finding a page; the page is the
+record. Owner names are not in the index and have to be read off the image.
+
+**A route into Hamilton.** The index carries the place of death, and Harmony
+(Hamilton's old name) appears in it: image 250, Sarah Morgan, d. 15 May 1866,
+"Harmony, Loudoun". A place search on the index would find Harmony/Hamilton
+deaths across 1853-1896 without reading every county page, then each is
+checked on the image. Not yet done; human-paced, one lookup at a time.
+
+Nothing from this film is in `data/` yet.
