@@ -1490,6 +1490,9 @@ session does not re-propose something already declined.
   courthouses or historical societies.
 - **No sign-ups.** No account creation of any kind at this time. Anything
   gated behind a registration or a request form is logged, not pursued.
+  **Lifted for FamilySearch only, 30 Oct 2026** (Curtis, after town readers
+  pointed to it): Curtis creates the free account and signs in himself. The
+  pacing rule below still holds. Every other sign-up stays declined.
 - Find a Grave forbids bulk extraction - do not scrape it.
 - FamilySearch: human-paced single lookups only, never automated or bulk.
 - Never enter credentials anywhere; Curtis signs in himself if it ever
@@ -1502,8 +1505,8 @@ session does not re-propose something already declined.
 | **EWP item 33393**, Register for Hamilton Colored School 1922-24, plus the 1938-47 annual files | Named Black children of Hamilton with ages and parents, year by year - the only systematic naming source found for the community in the gap | Tagged **"Restricted"** in the archive. Would need a request to the Edwin Washington Project. **DECLINED 26 Oct: "I'm not signing up for anything at this time, but keep it logged."** |
 | USGS EarthExplorer | Clean, unwatermarked copies of the 1957-1990 aerials of Harmony UMC | Needs a free USGS account |
 | Lakeview Cemetery Association interment ledger and plot map | Probably the single richest source of unmarked burials - an active cemetery records burials whether or not a stone follows | Needs contacting the association |
-| Original Loudoun death registers at the Library of Virginia | The 1853-66 pages for enslaved and free Black decedents, absent from the DAR typescript | Different film; may need an LVA visit or request |
-| **Loudoun death registers 1866-1896** (Library of Virginia microfilm; also FamilySearch catalog 780106, *Death registers, 1853-1906 (Virginia)*). Logged 30 Oct 2026 after a town reader asked when Black deaths were recorded again | Thirty years of county death returns past the end of the DAR typescript, in which Black Loudouners should appear as free people - the biggest single step toward the pre-1922 gap. Virginia registered deaths 1853-1896; nothing statewide until death certificates began 14 Jun 1912 | Never brought into the project. LVA has no statewide index for 1853-96, so it is a page-by-page read of the film; FamilySearch images need a free account |
+| Original Loudoun death registers at the Library of Virginia | The 1853-66 pages for enslaved and free Black decedents, absent from the DAR typescript | **Unblocked 30 Oct 2026** on FamilySearch (catalog 780106 is titled 1853-1906, so it should hold the original 1853-66 pages, not only the typescript; unchecked). A town reader states the 1853 register does list African-American deaths: a reader's report, to be checked on the page. LVA visit still not needed |
+| **Loudoun death registers 1866-1896** (Library of Virginia microfilm; also FamilySearch catalog 780106, *Death registers, 1853-1906 (Virginia)*). Logged 30 Oct 2026 after a town reader asked when Black deaths were recorded again | Thirty years of county death returns past the end of the DAR typescript, in which Black Loudouners should appear as free people - the biggest single step toward the pre-1922 gap. Virginia registered deaths 1853-1896; nothing statewide until death certificates began 14 Jun 1912 | Never brought into the project. LVA has no statewide index for 1853-96, so it is a page-by-page read of the film. **Unblocked 30 Oct 2026**: FamilySearch account allowed, human-paced reading only |
 | EWP 1904 teacher contracts (J. Walter Brown, Robert H. Tyler) | Named Black teachers at Hamilton in 1904 | Not yet checked for access state |
 
 ### Leads that are OPEN and need no account — ready whenever wanted
