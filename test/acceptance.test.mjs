@@ -301,7 +301,9 @@ test('stones: how the 1948 survey names people, and the stones cut before the de
   const { naming: N } = load('stones.json');
   assert.equal(N.read, 743);
   assert.deepEqual(N.byCemetery, { L: 743, H: 0, P: 0 });
-  assert.deepEqual(N.periods.map(p => [p.adults, p.wifeOf, p.husbandOf, p.kids, p.childOf]), [[42, 14, 0, 33, 25], [219, 51, 0, 54, 27], [309, 38, 1, 22, 6]]);
+  // 310 adults, not 309: LV0269 Laura L. Cox's stone gives no age; her death certificate
+  // (curation/date_corrections.csv, 30 Oct 2026) gives 84, so she is now counted an adult.
+  assert.deepEqual(N.periods.map(p => [p.adults, p.wifeOf, p.husbandOf, p.kids, p.childOf]), [[42, 14, 0, 33, 25], [219, 51, 0, 54, 27], [310, 38, 1, 22, 6]]);
   assert.deepEqual([N.wifeOf.length, N.husbandOf.length, N.childOf.length], [103, 1, 58]);
   const O = N.openDate;
   assert.deepEqual([O.after.length, O.noDeath.length, O.neverCut.length], [16, 4, 5]);
@@ -331,8 +333,10 @@ test('deaths together: the 1918 influenza window, the one cluster the app marks'
   assert.equal(C.length, 1);
   const c = C[0];
   assert.deepEqual([c.from, c.to, c.reason], ['1918-10-01', '1918-12-31', 'Influenza pandemic peaks in Virginia']);
-  assert.deepEqual([c.observed, c.expected, c.households, c.p, c.pTested], [8, 3.25, 7, 0.018, 0.037]);
-  assert.deepEqual([c.young, c.youngOf, c.youngOther, c.otherOf, c.pAge], [5, 8, 8, 45, 0.016]);
+  // expected 3.25 -> 3.33 and p 0.018 -> 0.021 (30 Oct 2026): 44 death dates known only to the year
+  // or month now carry the day from the death certificate, which adds to the baseline.
+  assert.deepEqual([c.observed, c.expected, c.households, c.p, c.pTested], [8, 3.33, 7, 0.021, 0.042]);
+  assert.deepEqual([c.young, c.youngOf, c.youngOther, c.otherOf, c.pAge], [5, 8, 8, 46, 0.015]);
   assert.deepEqual(c.people.map(p => p.age), [30, 66, 27, 9, 24, 17, 28, 67]);
   assert.ok(c.people.every(p => byId.has(p.id)));
 });

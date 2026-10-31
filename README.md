@@ -3993,7 +3993,7 @@ did not move. Record-level values in `CLAUDE.md` are still tested.
 **Deaths together** (§14). A blind scan of every one-to-three-month window,
 1870–2020, finds no cluster across households that beats chance. One window
 was tested because the overlay names it in advance: October–December 1918,
-**8 deaths against 3.25 usual** (p = 0.037 allowing for two tests), 5 of them
+**8 deaths against 3.33 usual** (p = 0.042 allowing for two tests; 3.25 and 0.037 before 44 death days were added from certificates on 30 Oct 2026), 5 of them
 aged 17 to 30 against 8 of 45 aged 15–44 in the other autumns (p = 0.016) —
 the 1918 influenza's known shape. The date panel marks it, names the eight,
 and names no cause. In a month that usually sees one death, about eight are
@@ -4270,3 +4270,26 @@ highway deaths. The owner's suggestion that they were bound for Mount
 Weather is neither supported nor contradicted by either source. The
 *Loudoun Times-Mirror* for 1966 is not on Virginia Chronicle (its Loudoun
 titles end in 1953).
+
+**The 69 surname-and-year matches (30 Oct 2026).** 60 are people already in
+the record and are linked (`curation/certificate_links.csv`); 9 were a
+relative of the same surname who died the same year, and were read as
+unmatched certificates (Black: Walter Ramey, Mable F. Clark, William H.
+Johnson; white: William H. Brown, James Cox, Willie J. Trussell, Willy W.
+Wine, William L. Payne, Edgar Holmes Tavenner). Edgar Holmes Tavenner (b. 16
+Oct 1843, d. 18 Jul 1913, buried Hamilton) is possibly LV0892 "Edgar Hiram
+Tavenner" (b. 1843, d. 1919 by the record): not linked, for the owner.
+
+By the owner's decision **the certificate wins** where it and the record
+conflict. The 16 linked people whose death dates conflicted were read on the
+image, and the image agreed with FamilySearch's index every time; their death
+dates, and birth dates where the certificate gives a different day, are now
+the certificate's (`curation/date_corrections.csv`). Among them: Rose May
+Tavenner d. 15 Apr 1913 (informant James E. Tavenner), Hannah Ann Tavenner
+d. 13 Mar 1946 (the record had her birthday), Bethany McFarland d. 19 Jul
+1914, James Milton Corbin d. 16 Jan 1930, John F. Laycock b. 1843 d. 9 Jan
+1927. 44 more had a death year or month only; the day is taken from the
+index, labelled as such on each correction, not yet read on the image.
+Laura L. Cox (LV0269) is the certificate's Laura Ellen Cox, by the owner:
+d. 22 May 1934, aged 84. The 1918 influenza cluster's baseline moved with
+the added days: expected 3.33 (was 3.25), p = 0.042 (was 0.037).

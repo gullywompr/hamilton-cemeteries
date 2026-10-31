@@ -373,19 +373,19 @@ const certificates = readTsv(join(ROOT, 'research', 'fs_certificates_read.tsv'))
   name: r.name.replace(/\s*\(index: [^)]*\)/, ''), death: r.death,
   sex: indexByArk.get(r.ark)?.sex || '', age: indexByArk.get(r.ark)?.age ?? '',
   burial: burialWords(r.burial_place_as_written), group: certGroup(r),
-  cause: CAUSE_SHORTENED[r.ark] || (/^\(not read\)$|not legible/.test(r.cause_as_written) ? '' : r.cause_as_written),
+  cause: CAUSE_SHORTENED[r.ark] || (/^\(not read\)$|not legible|^SENSITIVE/.test(r.cause_as_written) ? '' : r.cause_as_written),
   record: `https://www.familysearch.org/ark:/61903/1:1:${r.ark}`, anchor: `cert-${r.ark}`,
 })).sort((a, b) => a.death.localeCompare(b.death));
 const linkedArks = new Set(certLinkRows.map(c => c.ark).filter(a => certificates.some(c => c.record.endsWith(a))));
 const certificatesAll = certificates.length;
 certificates.splice(0, certificates.length, ...certificates.filter(c => !linkedArks.has(c.record.split(':').pop())));
-if (certificatesAll !== 81 || certificates.length !== 81 - linkedArks.size) throw new Error(`certificates: ${certificatesAll} read, ${certificates.length} listed`);
+if (certificatesAll !== 84 || certificates.length !== 84 - linkedArks.size) throw new Error(`certificates: ${certificatesAll} read, ${certificates.length} listed`);
 // White people's certificates (research/fs_certificates_read_white.tsv): only
 // those the certificate places in this town's ground are listed, buried at
 // Lakeview or at "Hamilton" with no ground named. The rest were buried
 // elsewhere and are not missing from these cemeteries. A cause marked
 // SENSITIVE in the research file is withheld, by the owner's decision.
-const POSSIBLE_RECORD = { 'QVBV-MDNQ': 'LV0269' }; // Laura Ellen Cox, possibly "Laura L. Cox"
+const POSSIBLE_RECORD = {}; // a certificate that may be a record here, not yet decided
 const certificatesWhite = readTsv(join(ROOT, 'research', 'fs_certificates_read_white.tsv'))
   .filter(r => (r.burial_cemetery === 'Lakeview' || r.burial_cemetery.startsWith('(town only')) && !certLinkRows.some(c => c.ark === r.ark))
   .map(r => ({
@@ -396,7 +396,7 @@ const certificatesWhite = readTsv(join(ROOT, 'research', 'fs_certificates_read_w
     possible: POSSIBLE_RECORD[r.ark] || '',
     record: `https://www.familysearch.org/ark:/61903/1:1:${r.ark}`, anchor: `cert-${r.ark}`,
   })).sort((a, b) => a.death.localeCompare(b.death));
-if (certificatesWhite.length !== 19) throw new Error(`white certificates: ${certificatesWhite.length} listed, expected 19`);
+if (certificatesWhite.length !== 20) throw new Error(`white certificates: ${certificatesWhite.length} listed, expected 20`);
 write('leads.json', {
   lostStones: csv('lost_stones.csv'),
   candidates: csv('candidate_missing_burials.csv'),
