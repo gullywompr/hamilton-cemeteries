@@ -108,7 +108,10 @@ async function main() {
   // ---- search ----
   const q = $('#q'), qr = $('#q-results');
   const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-  const index = D.people.map(p => ({ p, t: norm(`${p.name} ${p.surname || ''} ${p.plot || ''} ${p.id} ${p.aka.map(a => `${a.name} ${a.id} ${a.plot || ''}`).join(' ')}`) }));
+  // A person is also found by the spelling a census page gives them (Keese
+  // for Keys, Sidnor Hodson for Hodgson); the row still shows the record's name.
+  const censusAs = (p) => [p.c1870?.name, ...Object.values(p.ss || {}).map(s => s.as)].filter(Boolean).join(' ');
+  const index = D.people.map(p => ({ p, t: norm(`${p.name} ${p.surname || ''} ${p.plot || ''} ${p.id} ${p.aka.map(a => `${a.name} ${a.id} ${a.plot || ''}`).join(' ')} ${censusAs(p)}`) }));
   // People named by the county register or a death certificate who are not
   // records of these cemeteries. They are found by name but kept apart: the
   // row says so and leads to their entry on the record page, never to a card.
