@@ -4141,3 +4141,55 @@ people; an A. G. Smith appears elsewhere. That is two men or one man entered
 twice; the schedule does not say which, and nothing ties either to the
 "Geo. ? Smith" of the 1854 register or to Hamilton. The owners' names stay
 out of this file.
+
+## VIRGINIA DEATH CERTIFICATES, 1912-1987 — 30 OCT 2026
+
+FamilySearch collection 2377565, death place Hamilton, Loudoun: **467
+certificates** in the index (`research/fs_va_death_certificates_hamilton_index.psv`,
+copied from the page and checked identical against a direct copy). After
+FamilySearch's own duplicates and five other Virginia Hamiltons: 458. Matched
+to the timeline by surname and exact death date: 95 (Lakeview 80, Harmony 10,
+Pleasant Valley 5); by surname and year only: 69; **no match: 294** (213
+White, 81 Black, by the index). `research/match_certificates.py` lists them.
+
+**All 81 unmatched Black certificates were opened and read on the image**
+(`research/fs_certificates_read.tsv`: burial line as written, cause, and
+what else the certificate gives). Where they say the person was buried:
+
+| burial line | 1913-1921 | 1922 on | all |
+|---|---|---|---|
+| "Hamilton", no cemetery named | 13 | 25 | 38 |
+| "Hamilton Cemetery" | 0 | 5 | 5 |
+| "Pleasant Valley" by name | 0 | 5 | 5 (plus Francis Anderson, 1926) |
+| "at home" (three infants, no undertaker) | 0 | 3 | 3 |
+| elsewhere | 7 | 23 | 30 |
+
+Elsewhere is mostly **Lincoln** (13 "Lincoln"; 5 Mt. Olive Baptist or Lincoln
+Baptist; 1 Lincoln Cemetery), then Waterford 3, Lovettsville 2, and one each
+Aldie (family plot), near Round Hill, Arlington National Cemetery, removal to
+Alexandria, and the State Anatomical Board.
+
+**What this does and does not establish.**
+
+- **Before 1922, 13 Black Hamiltonians are certified as buried "Hamilton"**,
+  1913-1921, eight of them children. The certificate names no ground.
+  Pleasant Valley had not opened. Where in Hamilton they lie is not
+  recorded; the separate ground at Harmony is a possibility, not a finding.
+- **After 1922 "Hamilton" and "Hamilton Cemetery" are probably Pleasant
+  Valley** for most of these 30 people, since it was the Black community's
+  ground in the town, but the certificate does not say so and this file
+  does not assume it. Six say Pleasant Valley by name.
+- **Lincoln was a second burial place for Hamilton's Black families**, 19
+  of the 81. That is outside this project's three cemeteries.
+- The certificates add **occupations and causes** for people with no stone:
+  a merchant (Charles F. Levenberry, 1919), a trained nurse (Rachel Sanford,
+  1920), a midwife (Martha Douglas, 1949), a taxi driver (Lindsay Gaskins,
+  1933, who died after a fall from a tree), a retired railroad worker; two
+  homicides (Samuel Grooms, 1948; Raymond Tate, 1959); influenza in 1918
+  and 1928; tuberculosis repeatedly.
+- **One conflict with the data:** PV0142 Walter H. Levenberry is dated
+  1887-1952 (years only); his certificate gives death 2 Mar 1962, age 74,
+  burial "Hamilton Cemetery". Not changed; for the owner.
+
+Nothing here is in `data/` or the app. The 213 unmatched White certificates
+are not read.
