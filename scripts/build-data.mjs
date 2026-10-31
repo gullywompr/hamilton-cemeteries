@@ -190,8 +190,14 @@ const correctionRows = readCsv(join(ROOT, 'curation', 'date_corrections.csv'));
 for (const c of correctionRows) {
   const p = personById.get(canon(c.person_id));
   if (!p) throw new Error(`date_corrections.csv: unknown id ${c.person_id}`);
+  if (c.field === 'age_at_death') {
+    if (String(p.age) !== c.recorded) throw new Error(`date_corrections.csv: ${c.person_id} has age ${p.age}, not ${c.recorded}`);
+    (p.corrected ||= []).push({ field: 'age at death', recorded: c.recorded, basis: c.basis, source: c.source, decided: c.decided, now: c.corrected, nowP: '' });
+    p.age = int(c.corrected);
+    continue;
+  }
   const birth = c.field === 'birth_date';
-  if (!birth && c.field !== 'death_date') throw new Error(`date_corrections.csv: only birth_date and death_date are corrected, not ${c.field}`);
+  if (!birth && c.field !== 'death_date') throw new Error(`date_corrections.csv: only birth_date, death_date and age_at_death are corrected, not ${c.field}`);
   const was = birth ? p.bd : p.dd;
   if (was !== c.recorded) throw new Error(`date_corrections.csv: ${c.person_id} has ${c.field} ${was}, not ${c.recorded}`);
   (p.corrected ||= []).push({ field: birth ? 'birth' : 'death', recorded: was, basis: c.basis, source: c.source, decided: c.decided, now: c.corrected, nowP: c.precision });
@@ -208,7 +214,7 @@ const certLinkRows = readCsv(join(ROOT, 'curation', 'certificate_links.csv'));
 for (const c of certLinkRows) {
   const p = personById.get(canon(c.person_id));
   if (!p) throw new Error(`certificate_links.csv: unknown id ${c.person_id}`);
-  p.cert = { name: c.certificate_name, burial: c.burial_as_written, cause: c.cause_as_written, record: `https://www.familysearch.org/ark:/61903/1:1:${c.ark}` };
+  p.cert = { name: c.certificate_name, burial: c.burial_as_written, cause: c.cause_shown, record: `https://www.familysearch.org/ark:/61903/1:1:${c.ark}` };
 }
 
 // Possibly living (owner's decision, 29 Oct 2026). A person with no death
@@ -370,7 +376,7 @@ const certificates = readTsv(join(ROOT, 'research', 'fs_certificates_read.tsv'))
   cause: CAUSE_SHORTENED[r.ark] || (/^\(not read\)$|not legible/.test(r.cause_as_written) ? '' : r.cause_as_written),
   record: `https://www.familysearch.org/ark:/61903/1:1:${r.ark}`,
 })).sort((a, b) => a.death.localeCompare(b.death));
-const linkedArks = new Set(certLinkRows.map(c => c.ark));
+const linkedArks = new Set(certLinkRows.map(c => c.ark).filter(a => certificates.some(c => c.record.endsWith(a))));
 const certificatesAll = certificates.length;
 certificates.splice(0, certificates.length, ...certificates.filter(c => !linkedArks.has(c.record.split(':').pop())));
 if (certificatesAll !== 81 || certificates.length !== 81 - linkedArks.size) throw new Error(`certificates: ${certificatesAll} read, ${certificates.length} listed`);

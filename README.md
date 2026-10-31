@@ -4218,3 +4218,14 @@ one person, following the certificate: links in
 (Bertha born 1900, not 1901, which makes the 1900 people count 1,232; Fannie's
 death to the day). The page now lists 77. The surname-and-year matcher
 missed them; the 213 white certificates get the same death-day check.
+
+**Eight white certificates were people already in the record (30 Oct 2026).**
+Matched on the exact death day and confirmed on the image: Wynkoop (LV2092),
+Caroline C. Warner White (LV2031), Mullen (LV0698), Clagett (LV0223), Wiley
+(LV0982), Bailey (LV0040), Schaffer (LV1773) and Mock (LV1529). Each is linked
+in `curation/certificate_links.csv` and appears once, on the card. Following
+the certificates: Joseph E. Clagett, a doctor, was born 19 Dec **1879**, not
+1897 (digits swapped); Laura A. Bailey was born 3 Aug 1877, not 1876; Mullen
+died at 75 and Mock at 67, not 76 and 68, as their own dates show. Schaffer's
+certificate gives an age (66) its own dates contradict, so the record's 65
+stands. Wiley's cause is withheld on the page as sensitive.
