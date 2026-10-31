@@ -349,13 +349,18 @@ test('1870 census: owner-adopted links (curation/census_1870_links.csv), kept ap
   assert.equal(byId.get('LV0765').c1870.name, 'James B Pugh');
 });
 
-test('1860 slave schedule: owner-adopted readings (curation/slave_schedule_1860_links.csv), a lower bound', () => {
-  const listed = people.filter(p => p.ss1860);
-  const owners = listed.filter(p => p.ss1860.role === 'owner');
-  assert.deepEqual(owners.map(p => p.id).sort(), ['HM0079', 'HM0158', 'LV0906']);
-  assert.equal(owners.reduce((n, p) => n + p.ss1860.people.length, 0), 11);
-  assert.equal(listed.filter(p => p.ss1860.role === 'hirer').length, 6);
-  assert.ok(!byId.get('LV0570').ss1860, 'James H. Jones: identity not settled, not shown');
-  const L = load('leads.json');
-  assert.deepEqual([L.ss1860.searched, L.ss1860.surnames, L.ss1860.held], [207, 101, 11]);
+test('1850 and 1860 slave schedules: owner-adopted readings (curation/slave_schedule_<year>_links.csv), a lower bound', () => {
+  const inYear = (y) => people.filter(p => p.ss?.[y]);
+  const owners = (y) => inYear(y).filter(p => p.ss[y].role === 'owner');
+  assert.deepEqual(owners(1860).map(p => p.id).sort(), ['HM0079', 'HM0158', 'LV0906']);
+  assert.equal(owners(1860).reduce((n, p) => n + p.ss[1860].people.length, 0), 11);
+  assert.equal(inYear(1860).filter(p => p.ss[1860].role === 'hirer').length, 6);
+  assert.deepEqual(owners(1850).map(p => p.id).sort(), ['HM0079', 'LV0019', 'LV0448']);
+  assert.equal(owners(1850).reduce((n, p) => n + p.ss[1850].people.length, 0), 10);
+  assert.equal(inYear(1850).length, 3, 'the 1850 pages record no hiring');
+  assert.ok(!byId.get('LV0570').ss, 'James H. Jones: identity not settled, not shown');
+  assert.ok(!byId.get('HM0132').ss, 'James Muse (1850): not established, not shown');
+  const L = load('leads.json').slaveSchedules;
+  assert.deepEqual([L[1860].searched, L[1860].surnames, L[1860].held], [207, 101, 11]);
+  assert.deepEqual([L[1850].searched, L[1850].surnames, L[1850].held], [141, 72, 10]);
 });

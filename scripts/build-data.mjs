@@ -245,18 +245,27 @@ if (c1870Rows.length !== 41) throw new Error(`census_1870_links.csv: ${c1870Rows
 // schedule gives, sex and age only, in page order; `alt` is the hire if the
 // page's pairing of employer and owner is read the other way. Owners who are
 // not buried here are never named.
+// The 1850 schedule (curation/slave_schedule_1850_links.csv, same decision
+// day) is read the same way; its pages record no hiring. A person found in
+// both years carries both, as `ss` keyed by year.
 const ssPeople = (s) => s ? s.split(';').map(x => { const [sex, age] = x.trim().split(' '); return { sex, age: int(age) }; }) : [];
-const ss1860Rows = readCsv(join(ROOT, 'curation', 'slave_schedule_1860_links.csv'));
-for (const s of ss1860Rows) {
-  const p = personById.get(canon(s.person_id));
-  if (!p) throw new Error(`slave_schedule_1860_links.csv: unknown id ${s.person_id}`);
-  if (!['owner', 'hirer'].includes(s.role)) throw new Error(`slave_schedule_1860_links.csv: role ${s.role} for ${s.person_id}`);
-  if (!['strong', 'probable'].includes(s.verdict)) throw new Error(`slave_schedule_1860_links.csv: verdict ${s.verdict} for ${s.person_id}`);
-  p.ss1860 = { role: s.role, as: s.schedule_name, people: ssPeople(s.people), alt: ssPeople(s.other_reading), image: int(s.image), page: int(s.page), district: s.district, enumerated: s.enumerated, verdict: s.verdict, basis: s.basis.replace(/\.$/, '') };
+function slaveSchedule(year, film, expect) {
+  const file = `slave_schedule_${year}_links.csv`;
+  const rows = readCsv(join(ROOT, 'curation', file));
+  for (const s of rows) {
+    const p = personById.get(canon(s.person_id));
+    if (!p) throw new Error(`${file}: unknown id ${s.person_id}`);
+    if (!['owner', 'hirer'].includes(s.role)) throw new Error(`${file}: role ${s.role} for ${s.person_id}`);
+    if (!['strong', 'probable'].includes(s.verdict)) throw new Error(`${file}: verdict ${s.verdict} for ${s.person_id}`);
+    (p.ss ??= {})[year] = { role: s.role, as: s.schedule_name, people: ssPeople(s.people), alt: ssPeople(s.other_reading), film, image: int(s.image), page: s.page ? int(s.page) : null, district: s.district, enumerated: s.enumerated, verdict: s.verdict, basis: s.basis.replace(/\.$/, '') };
+  }
+  const owners = rows.filter(s => s.role === 'owner');
+  const held = owners.reduce((n, s) => n + ssPeople(s.people).length, 0);
+  if (owners.length !== expect.owners || held !== expect.held || rows.length !== expect.rows) throw new Error(`${file}: ${owners.length} owners holding ${held}, ${rows.length} rows; expected ${JSON.stringify(expect)}`);
+  return { rows, owners, held };
 }
-const ss1860Owners = ss1860Rows.filter(s => s.role === 'owner');
-const ss1860Held = ss1860Owners.reduce((n, s) => n + ssPeople(s.people).length, 0);
-if (ss1860Owners.length !== 3 || ss1860Held !== 11 || ss1860Rows.length !== 9) throw new Error(`slave_schedule_1860_links.csv: ${ss1860Owners.length} owners holding ${ss1860Held}, ${ss1860Rows.length} rows; expected 3, 11, 9`);
+const ss1860 = slaveSchedule(1860, '005171762', { owners: 3, held: 11, rows: 9 });
+const ss1850 = slaveSchedule(1850, '004206479', { owners: 3, held: 10, rows: 3 });
 
 // Possibly living (owner's decision, 29 Oct 2026). A person with no death
 // date who was born within the last LIVING_SPAN years may still be alive, and
@@ -453,20 +462,18 @@ const census1870 = {
   black: c1870Of(c1870All.filter(r => r.race === 'Black' || r.race === 'Mulatto')),
 };
 if (census1870.all.n !== 319 || census1870.black.n !== 112 || census1870.black.inRecord !== 1) throw new Error(`1870 census: ${JSON.stringify(census1870)}`);
-// The 1860 slave schedule search (research/slave_schedule_1860_todo.tsv,
-// written by research/list_1860_adults.py): every adult here alive on census
-// day was looked up by surname. A lower bound, never "the number".
-const ss1860 = {
-  searched: 207, surnames: 101,
-  owners: ss1860Owners.map(s => canon(s.person_id)),
-  held: ss1860Held,
-  hirers: ss1860Rows.filter(s => s.role === 'hirer').map(s => canon(s.person_id)),
+// The slave schedule searches (research/slave_schedule_<year>_todo.tsv,
+// written by research/list_1860_adults.py <year>): every adult here alive on
+// census day was looked up by surname. A lower bound, never "the number".
+const ssSummary = (year, s, searched, surnames) => {
+  const todo = readFileSync(join(ROOT, 'research', `slave_schedule_${year}_todo.tsv`), 'utf8').trim().split('\n').slice(1).map(l => l.split('\t'));
+  if (todo.length !== searched || new Set(todo.map(r => r[0].toLowerCase())).size !== surnames) throw new Error(`slave_schedule_${year}_todo.tsv: ${todo.length} people, expected ${searched}`);
+  return { searched, surnames, owners: s.owners.map(r => canon(r.person_id)), held: s.held, hirers: s.rows.filter(r => r.role === 'hirer').map(r => canon(r.person_id)) };
 };
-const ssTodo = readFileSync(join(ROOT, 'research', 'slave_schedule_1860_todo.tsv'), 'utf8').trim().split('\n').slice(1).map(l => l.split('\t'));
-if (ssTodo.length !== ss1860.searched || new Set(ssTodo.map(r => r[0].toLowerCase())).size !== ss1860.surnames) throw new Error(`slave_schedule_1860_todo.tsv: ${ssTodo.length} people, expected ${ss1860.searched}`);
+const slaveSchedules = { 1860: ssSummary(1860, ss1860, 207, 101), 1850: ssSummary(1850, ss1850, 141, 72) };
 write('leads.json', {
   census1870,
-  ss1860,
+  slaveSchedules,
   lostStones: csv('lost_stones.csv'),
   candidates: csv('candidate_missing_burials.csv'),
   mentions: csv('newspaper_mentions.csv'),

@@ -4213,6 +4213,27 @@ lists only the head of a holding, covers 1860 only, and the 1850 schedule is
 unread. The build fails if the count of holders (3), people held (11) or rows
 (9) changes. Names stay out of this README.
 
+**The 1850 schedule (same day).** `research/list_1860_adults.py 1850` lists
+**141 people, 72 surnames** alive on 1 June 1850
+(`research/slave_schedule_1850_todo.tsv`). FamilySearch collection 1420440 was
+searched one surname at a time (`research/slave_schedule_1850_index_search.txt`),
+each match read on film 004206479 and checked on the 1850 free schedule
+(`research/slave_schedule_1850_loudoun_read.csv`).
+
+- **3 are listed as holding people in slavery,** with **10** people between
+  them. One of the three is also a holder in 1860, and his 1850 holding agrees
+  with his 1860 one ten years on: probably the same people, which a schedule
+  without names cannot prove. The two years' counts are therefore never added.
+- The 1850 pages record no hiring.
+- Not counted: one not established (no adult of the name on the free
+  schedule), and five that are other people of the same name.
+
+Added to the cards and to *Who is not here* by the owner's decision
+(`curation/slave_schedule_1850_links.csv`); one holder's identity is
+`probable`, because his age on the 1850 free page disagrees with his record
+by about ten years. The build fails if 3 holders / 10 held / 3 rows change.
+Across both years, 5 people here are found listed as holders, a lower bound.
+
 ## VIRGINIA DEATH CERTIFICATES, 1912-1987 — 30 OCT 2026
 
 FamilySearch collection 2377565, death place Hamilton, Loudoun: **467

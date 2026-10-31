@@ -1,0 +1,51 @@
+# 1850 slave schedule (FamilySearch collection 1420440), Loudoun residence, searched one surname at a time, 31 Oct 2026.
+# The people to look up: research/slave_schedule_1850_todo.tsv (python research/list_1860_adults.py 1850): 141 people, 72 surnames.
+# NAME MATCHES ONLY. A name in the index can be an owner, an employer or a hirer, and may be another person of the same name.
+# Nothing here is a finding until the image and the 1850 free schedule are read.
+surname | index names (Loudoun, 1850 slave schedule) | our people?
+Ruse | 0 | no
+Hodgson | "Lidnor Hodson" (Sterling, Loudoun; 6+ people) | CANDIDATE HM0079 Sidney Ludwell Hodgson 40-41 (index reading of the given name doubtful)
+Allder | George Allder HRWL-7FN2, "Janus Allders" HRWL-7N3Z | CANDIDATE LV0019 James Allder 30 ("Janus" may be a misreading of James)
+Arnett, Ballenger, Beales, Carruthers, Cummings, Dodd | 0 | no
+Beans | Isaih Beans, William Beam HRW2-5FT2, Chapman/Johnston Bane, Henry Bayne | WEAK: "William Beam" is another surname; ours William Henry Beans 30
+Butler | John Butler | no (ours William 30, Harriet 38)
+Cox | Samuel, Absolom | no
+Davis | John | no
+Divine | James Divine HRWL-H36Z | not ours by name; HM0040 Betsey Dodd Divine, 61, may be his wife (spouse not in the record) - not pursued
+Dowell | Conrad, Cunred | no (ours Kate, 17-18)
+Everhart, Haines, Hawkins, Hess, Henry, Hope | 0 | no
+French | Morgan R, William H French HRWL-PHN2, Russel G, Napoleon B, Ann French HRWL-GDZM | CANDIDATES HM0056 William Henry French 37-38; HM0050 Annie French 65 (Ann)
+Fulton | John Fulton HRWL-7N2M, William | CANDIDATE LV0448 John Edward Fulton 32-33
+Grey | William, Rebecca, Robert Gray | no (ours Albert 20)
+Grubb | Ebeneser Grubb HRWL-446Z, Benjamine | WEAK: LV0483 Ebenezer Grubb was 18; likely an older Ebenezer
+Hill | Jacob, James x2 | no
+Hoskinson, Iden, Janney, Keys, Laycock, Love, Loveless, Lunsford | 0 | no
+James | Richard, Sally, Craven, Madison, Elijah, Malbon, Robert | no (ours Thomas H, Levi, Martha)
+Jones | John, Iven, Washington | no
+Lake | Moses Like | no
+Lee | Mathew, George Lee HRWL-H76Z, Charles, Joshua | WEAK: HM0102 George R Lee was 21; possibly an older George
+McDaniel | Archibald, James McDoniel, David/Lemuel Daniel | no (ours John 27-28)
+McFarland | Patty, James, John | no (ours Bethany 24)
+McVeigh | Towsend, Jesse | no (ours Robert H 23)
+Milbourn, Peugh | 0 | no
+Moore | Samuel, James, John, William More | no (ours Charlotte 31)
+Muse | James Muse HRWL-4Q6Z | CANDIDATE HM0132 James Henry Muse 30
+Myers | Sarah, John, William, Abraham | no (ours Charles Fenton 22, Susan 18)
+Peacock | Elijah, Hector | no (ours Lucinda 21-22)
+Presgraves | Burr Presgrave | no (ours John Nixon 18)
+Preston, Pusey, Reed, Silcott, Streams, Strother | 0 | no
+Saunders | Everett Saunders, Thomas/Aaron/William Sanders | no (ours Amanda C. Beales Saunders 35)
+Schooley | Eli Schooley, Jonas Schorley | no (ours Thomas A 25, Hannah)
+Tavenner | Jonathan Tavenner | no
+Taylor | J H, Charles, B*, Timothy, Jessee, Ellen, James, William x2 | no (ours Lewis, Elizabeth, Ruth W.)
+Thomas | Owen, William, John x3, Nathaniel, Herod, Jefferson, James, Mahlan, Betsy | no (ours Robert W 24, Rebecca 19)
+Thompson | Eleanor, Robert R, Jeremiah, James x2, John, Warner, Andrew, Lee Thomson | no (ours William W 17-18)
+Tillett, Wallace, Warner, Werking, Wiley | 0 | no
+Weadon | Ashford Weiden | no
+White | Robert White HRWL-LL6Z, Benjamin, James, Nathan, Joshua, William G, John x2 | WEAK: LV0968 Robert J. T. White 28; a common name
+Williams | Sidnor, Richard, John, Washington, Leonard, Charls, George | no (ours Nancy 21). NB "Sidnor" is a given name used in Loudoun: the "Lidnor Hodson" entry may be a Sidnor, not Sidney, Hodgson
+Wilson | John, James | no (ours Moses Daniel 39-40)
+Wynkoop | Wm Winekoop | no (ours Garrett 37, John William 18)
+Young | Eziekel D | no
+Evans | 0 | no
+ALL 72 SURNAMES SEARCHED, 31 Oct 2026.

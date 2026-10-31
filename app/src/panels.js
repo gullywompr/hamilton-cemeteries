@@ -247,15 +247,19 @@ export class Drawer {
 
     // The 1860 slave schedule: the people on the line are given as the
     // schedule gives them, sex and age, because that is all it recorded.
-    const ss = p.ss1860;
     const ssWho = (x) => `a ${x.sex === 'F' ? (x.age >= 18 ? 'woman' : 'girl') : (x.age >= 18 ? 'man' : 'boy')}, ${x.age}`;
     const ssNum = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
-    const ssPage = `FamilySearch film 005171762, image ${ss?.image}, page ${ss?.page}${ss && ss.enumerated !== '1860' ? `, enumerated ${esc(ss.enumerated)}` : ''}`;
-    const census1860 = !ss ? '' : ss.role === 'owner'
-      ? `<p class="small"><b>1860</b> · on the census's schedule of "Slave Inhabitants", Loudoun${ss.district ? `, ${esc(ss.district)}` : ''}, listed as <b>${esc(ss.as)}</b>, with ${ssNum[ss.people.length]} enslaved ${ss.people.length === 1 ? 'person' : 'people'}: ${ss.people.map(ssWho).join('; ')}. <span class="tag">${ss.verdict === 'strong' ? 'strong match' : 'probable match'}</span></p>
-      <div class="stone-note">The schedule gave enslaved people no names, only age, sex and colour. ${ss.people.length === 1 ? 'The person listed is' : `None of the ${ssNum[ss.people.length]} is`} named anywhere in these cemeteries' records. Read by the project on the page (${ssPage}). ${esc(ss.basis)}. Adopted by the project's owner on 31 October 2026.</div>`
-      : `<p class="small"><b>1860</b> · on the census's schedule of "Slave Inhabitants", Loudoun${ss.district ? `, ${esc(ss.district)}` : ''}, listed as <b>${esc(ss.as)} Emp</b>, an employer who hired an enslaved person held by someone else: ${ss.people.length ? `${ss.people.map(ssWho).join('; ')}${ss.alt.length ? `, or, if the page's pairing of employer and owner is read the other way, ${ss.alt.map(ssWho).join(' and ')}` : ''}` : 'the person hired is not legible at the resolution read'}. The schedule does not list ${esc(ss.as)} as an owner. <span class="tag">${ss.verdict === 'strong' ? 'strong match' : 'probable match'}</span></p>
-      <div class="stone-note">The schedule's pages around Hamilton record many such hires. The schedule gave the person hired no name, and owners who are not buried here are not named. Read by the project on the page (${ssPage}). ${esc(ss.basis)}. Adopted by the project's owner on 31 October 2026.</div>`;
+    const ssLine = (year, ss) => {
+      const page = `FamilySearch film ${ss.film}, image ${ss.image}${ss.page ? `, page ${ss.page}` : ''}${ss.enumerated !== year ? `, enumerated ${esc(ss.enumerated)}` : ''}`;
+      const where = `on the census's schedule of "Slave Inhabitants", Loudoun${ss.district ? `, ${esc(ss.district)}` : ''}`;
+      const tag = `<span class="tag">${ss.verdict === 'strong' ? 'strong match' : 'probable match'}</span>`;
+      return ss.role === 'owner'
+        ? `<p class="small"><b>${year}</b> · ${where}, listed as <b>${esc(ss.as)}</b>, with ${ssNum[ss.people.length]} enslaved ${ss.people.length === 1 ? 'person' : 'people'}: ${ss.people.map(ssWho).join('; ')}. ${tag}</p>
+      <div class="stone-note">The schedule gave enslaved people no names, only age, sex and colour. ${ss.people.length === 1 ? 'The person listed is' : `None of the ${ssNum[ss.people.length]} is`} named anywhere in these cemeteries' records. Read by the project on the page (${page}). ${esc(ss.basis)}. Adopted by the project's owner on 31 October 2026.</div>`
+        : `<p class="small"><b>${year}</b> · ${where}, listed as <b>${esc(ss.as)} Emp</b>, an employer who hired an enslaved person held by someone else: ${ss.people.length ? `${ss.people.map(ssWho).join('; ')}${ss.alt.length ? `, or, if the page's pairing of employer and owner is read the other way, ${ss.alt.map(ssWho).join(' and ')}` : ''}` : 'the person hired is not legible at the resolution read'}. The schedule does not list ${esc(ss.as)} as an owner. ${tag}</p>
+      <div class="stone-note">The schedule's pages around Hamilton record many such hires. The schedule gave the person hired no name, and owners who are not buried here are not named. Read by the project on the page (${page}). ${esc(ss.basis)}. Adopted by the project's owner on 31 October 2026.</div>`;
+    };
+    const census1860 = p.ss ? Object.keys(p.ss).sort().map(y => ssLine(y, p.ss[y])).join('') : '';
 
     const registerSec = (p.cod || p.regVerbatim || p.regParents || p.birthplace || reg.length) ? `<div class="sec"><h3>Loudoun County death register</h3>
       <dl class="kv">${p.cod ? `<dt>Cause</dt><dd>${esc(p.cod)} <span class="muted small">as the register spells it</span></dd>` : ''}${p.regParents ? `<dt>Parents named</dt><dd>${esc(p.regParents)}</dd>` : ''}${p.birthplace ? `<dt>Birthplace</dt><dd>${esc(p.birthplace)}</dd>` : ''}${p.occ ? `<dt>Occupation</dt><dd>${esc(p.occ)}</dd>` : ''}</dl>
