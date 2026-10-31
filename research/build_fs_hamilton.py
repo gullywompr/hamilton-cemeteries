@@ -126,8 +126,8 @@ assert len(ARKS) == len(ROWS) == 96, (len(ARKS), len(ROWS))
 # Colored | Male | Female; where it is not, the column is read from rows on
 # the same page whose race the index and the timeline agree on.
 VERIFIED = {
-    'XRMS-3CM': 'image 134: second colour column (colored)',   # Leuisa Levenberry
-    'XRMS-3HY': 'image 134: second colour column (colored)',   # Helen Levenberry
+    'XRMS-3CM': 'image 134 line 33: second colour column (colored)',   # Leuisa Levenberry
+    'XRMS-3HY': 'image 134 line 32: second colour column (colored)',   # Helen Levenberry
     'XRMS-3HZ': 'image 134: FIRST colour column (white); the index says colored and is wrong',  # John J. Hough
     'XRMS-SRS': 'image 134: first colour column (white)',      # May E. Arnett
     'XRMS-SRV': 'image 134 line 7: second colour column (colored)',   # Catharine Champ

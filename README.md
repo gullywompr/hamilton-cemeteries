@@ -4128,8 +4128,9 @@ Every one of the 21 the index calls "colored" was opened on the image
   George W. White (ditto marks too close to read) and James A. Bentley (the
   1866 record gives no line; not found on the page).
 
-Two of the 17 (the Levenberrys) touch the cemeteries; the other 15 are in
-none of the three grounds. They are Black Hamiltonians the register records
+One of the 17 may have a stone: Leuisa Levenberry's death date is the date
+on HM0104 at Harmony (not established as the same woman). Helen Levenberry
+has none, and neither do the other 15, in any of the three grounds. They are Black Hamiltonians the register records
 and the burial record does not.
 
 #### The 1850 slave schedule and the owners' names

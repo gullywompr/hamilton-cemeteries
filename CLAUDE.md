@@ -46,6 +46,13 @@ layer. It stays in `data/` and is committed; `scripts/build-data.mjs` reads it
 and fails if its own numbers disagree. Only that script may write that file.
 No other file in `data/` may be written by anything.
 
+A second, one-off exception, by the owner's decision (30 Oct 2026): two rows
+of `data/context_eras.csv` (`doc-state-register`, `soc-slavery`) were
+corrected by hand. They said 0 of 1,403 register entries mark a Black
+decedent; that is true of the DAR typescript, and the original register
+does record them (README, *THE ORIGINAL LOUDOUN DEATH REGISTER*). The rule
+above stands for everything else.
+
 ---
 
 ## What this file deliberately does not specify
@@ -96,7 +103,8 @@ stand-ins for people believed to be missing.
 **Absence of record ≠ zero occurrences, and the app may only assert the
 weaker one.** The clearest case: these cemeteries document essentially no
 Black burials before 1922. That is a fact about *records* — Pleasant Valley
-had not opened, the register's 1853–66 pages name no Black decedents, and
+had not opened, the typed copy of the register's 1853–66 pages names no Black
+decedents (the original register does), and
 Harmony's separate ground for its enslaved congregants was partly paved over
 in the 1990s. The data supports "not recorded". It does not support "none".
 

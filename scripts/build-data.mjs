@@ -291,11 +291,26 @@ write('findings.json', {
   verified: byPerson(csv('verified_findings.csv')),
   newspaper: byPerson(csv('newspaper_findings.csv')),
 });
+// People the original county death register (1865-1896) records as colored
+// and as dying at Hamilton, read on the page on 30 Oct 2026. They are not
+// rows in timeline_people.csv and never become people here: no card, no place
+// on the timeline, no part of any count. Only rows whose colour was read on
+// the image are kept; the index's own race field is not trusted (README).
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const regDay = (s) => { const [d, m, y] = s.split(' ').length === 3 ? s.split(' ') : ['1', ...s.split(' ')]; return Date.UTC(+y, MONTHS.indexOf(m), +d); };
+const registerNamed = readCsv(join(ROOT, 'research', 'fs_hamilton_deaths_1853_1896.csv'))
+  .filter(r => /colou?red/i.test(r.verified_on_image) && !/NOT CONFIRMED|FIRST colour column/.test(r.verified_on_image))
+  .map(r => ({
+    name: r.name, sex: r.sex, death_date: r.death_date, age: r.age, parents: r.parents, spouse: r.spouse,
+    page: r.verified_on_image, record: r.fs_ark,
+  }))
+  .sort((a, b) => regDay(a.death_date) - regDay(b.death_date));
 write('leads.json', {
   lostStones: csv('lost_stones.csv'),
   candidates: csv('candidate_missing_burials.csv'),
   mentions: csv('newspaper_mentions.csv'),
   healthNews: csv('hamilton_health_news.csv'),
+  registerNamed,
 });
 
 // ---------------------------------------------------------------------------

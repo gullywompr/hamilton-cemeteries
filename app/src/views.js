@@ -132,7 +132,7 @@ const RECORD_TABS = [
   ['papers', 'Newspapers'], ['leads', 'Leads'], ['check', 'Self-check'],
 ];
 export function renderRecord(el, D, ctx, params = {}) {
-  const S = D.summary, C = D.context, R = D.register;
+  const S = D.summary, C = D.context, R = D.register, L = D.leads;
   const docEras = D.eras.filter(e => e.layer === 'documentation');
   el.innerHTML = `
     <h1 data-k="What the sources contain, and where they stop">The record</h1>
@@ -172,9 +172,10 @@ export function renderRecord(el, D, ctx, params = {}) {
     </section>
     <section class="tab-panel" id="rt-absent" role="tabpanel" aria-labelledby="rtab-absent" hidden>
     <h2 data-k="Absence of record">Who is not in this record</h2>
-    <div class="callout absence"><p>The three cemeteries document essentially no Black burials before 1922. That is a fact about the <b>sources</b>. Pleasant Valley, the Black community's cemetery, opened in 1922; the state register's 1853–1866 pages name no Black decedent; and Harmony's separate ground for its enslaved congregants was partly paved over before 2000. The data supports "not recorded". It does not support "none".</p></div>
+    <div class="callout absence"><p>The three cemeteries document essentially no Black burials before 1922. That is a fact about the <b>sources</b>. Pleasant Valley, the Black community's cemetery, opened in 1922; the typed copy of the 1853–1866 state register that this project was built on names no Black decedent, though the original register does; and Harmony's separate ground for its enslaved congregants was partly paved over before 2000. The data supports "not recorded". It does not support "none".</p></div>
     <div class="stat-row">
-      <div class="stat absence"><div class="v">0 of 1,403</div><div class="k">register entries 1853–66 that mark a Black decedent</div></div>
+      <div class="stat absence"><div class="v">0 of 1,403</div><div class="k">entries in the 1950s typed copy of the 1853–66 register that mark a Black decedent. The original register marks them</div></div>
+      <div class="stat"><div class="v">${n(L.registerNamed.length)}</div><div class="k">Black Hamiltonians the 1865–96 register records, read on the page</div></div>
       <div class="stat"><div class="v">31%</div><div class="k">of Loudoun was Black in 1860, measured by the census</div></div>
       <div class="stat"><div class="v">4</div><div class="k">Pleasant Valley records before 1922, one of them corrupt</div></div>
       <div class="stat"><div class="v">31%</div><div class="k">of the 1990s' documented burials are at Pleasant Valley</div></div>
@@ -184,6 +185,7 @@ export function renderRecord(el, D, ctx, params = {}) {
       ${documentedFigure(C.documentedVsCounty)}
     </div>
     <div class="callout">The county line is <b>context, not a denominator</b>. Hamilton is one village; its three cemeteries are not a sample of Loudoun, and county proportions do not transfer to them arithmetically. The app never computes or implies a count of missing individuals. Loudoun's Black population fell in every decade from 1900 to 1950 while documented Pleasant Valley burials rose: the burials are the documentation arriving, the population is people leaving, and the decade differences understate the outflow because they ignore natural increase.</div>
+    ${registerNamedSection(L.registerNamed, D)}
     <h3>Nearby communities the county records</h3>
     <p class="prose small">Loudoun County GIS lists ${C.communities.length} historic African American communities, churches, schools and lodges within five kilometres of Hamilton. They are listed on the <a href="#/map">map page</a>.</p>
 
@@ -446,6 +448,30 @@ function causesFigure(R, D) {
   </svg><div class="cap">Hover a bar or a dot for the entry count, the event and its source. The register ends in 1900, which is why the bars stop long before the cures: for the later stretch the medical narrative rests on the national event layer alone, not on the burials.</div><div class="source"><span>SOURCE</span>loudoun_deaths.csv, cause as spelled · context_events.csv, medical layer</div>
   <details class="more"><summary>The ${medical.length} medical events on this chart</summary><ul class="era-list">${medical.map(e => `<li>${e.iv.y}: ${esc(e.title)}${e.confidence !== 'verified' ? ` <span class="conf-${e.confidence}">${e.confidence}</span>` : ''}<span class="basis">${esc(e.note)} <span class="muted">(${esc(e.source)})</span></span></li>`).join('')}</ul></details></div>`;
 }
+// Documented individuals who are not people in this record. The register
+// gives a name, a date and a place; it does not say where they were buried,
+// so nothing here is placed in a cemetery, on the timeline or in a count.
+// Leuisa Levenberry's death date is the date on one Harmony stone; that is
+// stated as a coincidence of dates, not as an identification.
+const REGISTER_MAYBE_STONE = { 'Leuisa Levenberry|4 Jul 1890': 'HM0104' };
+function registerNamedSection(rows, D) {
+  if (!rows?.length) return '';
+  const who = (r) => r.name.includes(' ') ? esc(r.name)
+    : `Unnamed ${r.age === '0' ? 'infant' : 'child'}, ${esc(r.name)}`;
+  const age = (r) => r.age === '' ? '' : r.age === '0' ? ', under a year old' : `, aged ${esc(r.age)}`;
+  const kin = (r) => [r.parents && `parents ${esc(r.parents)}`, r.spouse && `spouse ${esc(r.spouse)}`].filter(Boolean).join('; ');
+  const stone = (r) => {
+    const id = REGISTER_MAYBE_STONE[`${r.name}|${r.death_date}`], p = id && D.byId.get(id);
+    return p ? ` The same date of death is on a stone at Harmony, <a href="#/person/${p.id}">${esc(p.name)}</a>, born 1837; whether it is the same woman is not established.` : '';
+  };
+  return `
+    <h3>Named in the county register, with no stone here</h3>
+    <p class="prose">The original Loudoun County register of deaths for 1865–1896 records these ${rows.length} people as colored and as dying at Hamilton, which it calls Harmony. Each was read on the page, not taken from an index. They are documented individuals, but the register does not say where any of them was buried, so they are not records of these cemeteries: they are not on the timeline and are not counted anywhere in this app. Many were children.</p>
+    <ul class="era-list">${rows.map(r => `<li>${who(r)}${age(r)} <span class="when">died ${esc(r.death_date)}</span><span class="basis">${kin(r) ? `The index gives ${kin(r)}. ` : ''}Register ${esc(r.page.split(':')[0])}.${stone(r)} <a href="${esc(r.record)}" rel="noopener">The record</a>.</span></li>`).join('')}</ul>
+    <p class="prose small">The register's own index marks four more Hamilton deaths of these years as colored. On the page, one is entered as white and three could not be read, so they are not listed. A search by place finds only entries that name the town; deaths entered under the county alone are not here, so this is not the town's total.</p>
+    <div class="source"><span>SOURCE</span>Register of Deaths 1865–1896, Loudoun County, FamilySearch film 004225400, item 4 · research/fs_hamilton_deaths_1853_1896.csv</div>`;
+}
+
 function demographyFigure(demo) {
   const early = demo.filter(d => d.black_share_pct !== null), late = demo.filter(d => d.year >= 1870);
   const W = 440, H = 220, L = 40, Rr = 10, T = 18, B = 30;

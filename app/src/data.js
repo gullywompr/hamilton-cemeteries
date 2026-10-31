@@ -63,7 +63,7 @@ export async function loadAll() {
     id: 'absence-black-burials',
     label: 'Black burials: not recorded in these sources before 1922',
     lo: dayOf(1754, 1, 1), hi: pvOpened ? pvOpened.iv.lo : dayOf(1922, 1, 1),
-    note: 'Pleasant Valley, the Black community’s cemetery, was established in 1922. The 1853–1866 pages of the state death register name no Black decedent. Harmony’s separate ground for its enslaved congregants was partly paved over before 2000. The data supports “not recorded”; it does not support “none”.',
+    note: 'Pleasant Valley, the Black community’s cemetery, was established in 1922. The typed copy of the 1853–1866 state death register this project was built on names no Black decedent; the original register does. Harmony’s separate ground for its enslaved congregants was partly paved over before 2000. The data supports “not recorded”; it does not support “none”.',
     source: 'README.md, WHO IS NOT IN THIS DATASET; context_events.csv (1922); context_cemetery_official.csv (Harmony note)',
   }];
 
