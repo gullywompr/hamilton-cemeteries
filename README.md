@@ -4229,3 +4229,30 @@ the certificates: Joseph E. Clagett, a doctor, was born 19 Dec **1879**, not
 died at 75 and Mock at 67, not 76 and 68, as their own dates show. Schaffer's
 certificate gives an age (66) its own dates contradict, so the record's 65
 stands. Wiley's cause is withheld on the page as sensitive.
+
+**All 213 white certificates read (30 Oct 2026).** `research/fs_certificates_read_white.tsv`
+holds 204 readings (8 were people already here, linked above; one more,
+Willard H. Brown, found while reading; FamilySearch indexed one certificate
+twice). Where they say the person was buried:
+
+| burial line | count |
+|---|---|
+| elsewhere | 174 (Union Cemetery, Leesburg 33; Hillsboro 23; Lincoln 19; Leesburg 13; Lovettsville 8; then Middleburg, Upperville, Ebenezer, Falls Church, Waterford, North Fork and others) |
+| "Hamilton", no cemetery named | 15, all 1912-1949 |
+| cremation | 10 |
+| **Lakeview** | 5 |
+
+**Four Lakeview burials the cemetery records do not hold:** Elizabeth Emily
+Rhodes (1, d. 1924), Laura Ellen Cox (84, d. 1934; possibly LV0269 "Laura L.
+Cox", dated May 1930, not linked), Sarah Virginia Orrison (96, d. 1949) and
+Walter William Ballinger (74, d. 1957). The fifth is **LV0170 Willard H.
+Brown**: his certificate gives death 26 Jul **1955**, aged 40, buried
+Lakeview, not 1976; Find a Grave had said 1955 (`data/conflicts.csv`).
+Linked and corrected by the owner's standing decision to follow the
+certificate.
+
+So the white Hamiltonians who died in town and have no record here were
+mostly buried outside it; the Black Hamiltonians mostly "at Hamilton". Ten
+white certificates carry causes marked SENSITIVE in the research file
+(suicide, homicide, alcoholism); none is on the app. Nothing from the 204 is
+on the app yet.
