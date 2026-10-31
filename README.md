@@ -4309,3 +4309,37 @@ card now carries the burial line as written. Two things for the owner:
 Also: Eugene W. Lowe (LV0634) was the caretaker at Lakeview cemetery.
 Edgar Holmes Tavenner and LV0892 stay separate: the owner cannot say they
 are the same man.
+
+## THE 1870 CENSUS, HAMILTON POST OFFICE — 31 OCT 2026
+
+The 1870 Loudoun schedule is in two divisions, not enumeration districts.
+Hamilton is in the Southern Division, Jefferson district, enumerated by John
+S. Baker on 8-11 July 1870. The page header names the post office, and the
+pages headed **Hamilton** are **film images 360-367** (FamilySearch
+collection 1438024, DGS image group of "Virginia, 1870 federal census:
+population schedules: Loudoun"). The pages either side are Hughesville (358-
+359), Mt. Gilead (355-357) and Lincoln (368 on). Other Hamilton-area households
+may sit under those post offices; this file is the town's own pages only.
+
+`research/census_1870_hamilton.csv`: **319 people** on those eight pages,
+from FamilySearch's index (name, age, sex, race, birthplace, household), one
+record view per household, checked name for name against each page's list.
+Twelve more people belong to two households that run onto the neighbouring
+pages and are kept with a note. Occupations and property were read off the
+image only for the first page (360, lines 1-24); the viewer would not pan
+further down the page.
+
+**By the index's race column: 207 White, 76 Black, 36 Mulatto.** 112 of the
+town's 319 people in 1870 were Black or of mixed race, many living as
+servants and labourers inside white households (the Hoges, Holmeses, Hughes,
+Janneys, Hatchers). **Of those 112, one matches a person in the three
+cemeteries** (George Henry, 57, HM0078 at Harmony). Of the 207 white
+residents, about 40 do (`research/census_1870_hamilton_candidates.txt`, by
+name and birth year within two years; candidates only, two ambiguous and a
+few plainly wrong). Among them: Lydia A. Garner Cox (62) with her children,
+the Wileys, the Hoskinsons, William and Malinda Tavenner, and Rosa M. Thomas,
+aged under one, who became Rose May Tavenner (LV0896).
+
+This is the strongest single measure yet of the gap the app describes: a
+third of Hamilton in 1870 was Black, and the burial record holds one of them.
+Nothing here is in `data/` or the app.
