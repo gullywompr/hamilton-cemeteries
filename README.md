@@ -4186,6 +4186,33 @@ enslaved people are not named on the schedule; they are counted by age, sex
 and colour only. Whether any of this appears in the app is the owner's
 decision. Nothing is in `data/`.
 
+**The rest of the county (same day).** `research/list_1860_adults.py` lists
+every adult here alive on census day: **207 people, 101 surnames**
+(`research/slave_schedule_1860_todo.tsv`). Each surname was looked up once in
+FamilySearch's index of Loudoun's slave schedule, one search at a time
+(`research/slave_schedule_1860_index_search.txt`). Every name match was read on
+the page and checked against the 1860 free schedule
+(`research/slave_schedule_1860_loudoun_read.csv`).
+
+- **3 are listed as holding people in slavery,** with **11** people between
+  them: one here found on the Hamilton pages, and two outside them. All three
+  matched on the free schedule by age and household; the Hamilton reading was
+  checked again at higher resolution.
+- **6 are listed as employers** who hired an enslaved person, the two above
+  and four more.
+- Left open: one hirer whose identity is not settled, and two name matches
+  not shown to be the person here. Rejected: four, as different people.
+
+**In the app (owner's decision, 31 Oct 2026).** The owner chose to show it,
+with the holders' names, and the hirers too (`curation/slave_schedule_1860_links.csv`).
+Each card gives the schedule's line in its own terms, the enslaved people as
+the schedule gives them (sex and age), and states that they are named nowhere
+in these records. Owners of hired people who are not buried here are not
+named. *Who is not here* carries the count as a lower bound: the schedule
+lists only the head of a holding, covers 1860 only, and the 1850 schedule is
+unread. The build fails if the count of holders (3), people held (11) or rows
+(9) changes. Names stay out of this README.
+
 ## VIRGINIA DEATH CERTIFICATES, 1912-1987 — 30 OCT 2026
 
 FamilySearch collection 2377565, death place Hamilton, Loudoun: **467

@@ -348,3 +348,14 @@ test('1870 census: owner-adopted links (curation/census_1870_links.csv), kept ap
   assert.ok(linked.every(p => p.c1870.with.every(w => byId.has(w.id))));
   assert.equal(byId.get('LV0765').c1870.name, 'James B Pugh');
 });
+
+test('1860 slave schedule: owner-adopted readings (curation/slave_schedule_1860_links.csv), a lower bound', () => {
+  const listed = people.filter(p => p.ss1860);
+  const owners = listed.filter(p => p.ss1860.role === 'owner');
+  assert.deepEqual(owners.map(p => p.id).sort(), ['HM0079', 'HM0158', 'LV0906']);
+  assert.equal(owners.reduce((n, p) => n + p.ss1860.people.length, 0), 11);
+  assert.equal(listed.filter(p => p.ss1860.role === 'hirer').length, 6);
+  assert.ok(!byId.get('LV0570').ss1860, 'James H. Jones: identity not settled, not shown');
+  const L = load('leads.json');
+  assert.deepEqual([L.ss1860.searched, L.ss1860.surnames, L.ss1860.held], [207, 101, 11]);
+});

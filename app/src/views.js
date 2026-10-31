@@ -177,6 +177,7 @@ export function renderRecord(el, D, ctx, params = {}) {
       <div class="stat absence"><div class="v">0 of 1,403</div><div class="k">entries in the 1950s typed copy of the 1853–66 register that mark a Black decedent. The original register marks them</div></div>
       <div class="stat"><div class="v">${n(L.registerNamed.length)}</div><div class="k">Black Hamiltonians the 1865–96 register records, read on the page</div></div>
       ${L.census1870 ? `<div class="stat"><div class="v">${L.census1870.black.inRecord} of ${L.census1870.black.n}</div><div class="k">Black and mixed-race people on Hamilton's 1870 census pages who are in these cemeteries</div></div>` : ''}
+      ${L.ss1860 ? `<div class="stat"><div class="v">${L.ss1860.owners.length}</div><div class="k">people in these cemeteries the 1860 slave schedule lists as holding people in slavery, found so far. The ${L.ss1860.held} people listed under them are named nowhere in these records</div></div>` : ''}
       <div class="stat"><div class="v">31%</div><div class="k">of Loudoun was Black in 1860, measured by the census</div></div>
       <div class="stat"><div class="v">4</div><div class="k">Pleasant Valley records before 1922, one of them corrupt</div></div>
       <div class="stat"><div class="v">31%</div><div class="k">of the 1990s' documented burials are at Pleasant Valley</div></div>
@@ -186,6 +187,7 @@ export function renderRecord(el, D, ctx, params = {}) {
       ${documentedFigure(C.documentedVsCounty)}
     </div>
     <div class="callout">The county line is <b>context, not a denominator</b>. Hamilton is one village; its three cemeteries are not a sample of Loudoun, and county proportions do not transfer to them arithmetically. The app never computes or implies a count of missing individuals. Loudoun's Black population fell in every decade from 1900 to 1950 while documented Pleasant Valley burials rose: the burials are the documentation arriving, the population is people leaving, and the decade differences understate the outflow because they ignore natural increase.</div>
+    ${slaveSchedule1860Section(L.ss1860, D)}
     ${census1870Section(L.census1870, D)}
     ${registerNamedSection(L.registerNamed, D)}
     ${certificatesSection(L.certificates, L.certificatesLinked)}
@@ -468,6 +470,22 @@ function causesFigure(R, D) {
 // Leuisa Levenberry's death date is the date on one Harmony stone; that is
 // stated as a coincidence of dates, not as an identification.
 const REGISTER_MAYBE_STONE = { 'Leuisa Levenberry|4 Jul 1890': 'HM0104' };
+// The 1860 slave schedule (curation/slave_schedule_1860_links.csv). Holders
+// are named and linked to their cards, by the owner's decision; the people
+// they held are given only as the schedule gives them, and are the subject.
+function slaveSchedule1860Section(s, D) {
+  if (!s) return '';
+  const link = (id) => { const q = D.byId.get(id); return q ? `<a href="#/person/${q.id}" data-person="${q.id}">${esc(q.name)}</a>` : esc(id); };
+  const words = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
+  const w = (k) => words[k] ?? String(k);
+  const all = s.held + s.hirers.length;
+  return `
+    <h3>Hamilton in 1860, on the slave schedule</h3>
+    <p class="prose">The 1860 census had a second schedule, "Slave Inhabitants". It named each holder and gave each enslaved person only an age, a sex and a colour. The project searched FamilySearch's index of Loudoun's schedule for the surname of every adult in these cemeteries alive in June 1860 (${s.searched} people, ${s.surnames} surnames) and read each match on the page. ${w(s.owners.length)[0].toUpperCase() + w(s.owners.length).slice(1)} are listed as holding people in slavery: ${s.owners.map(link).join(', ').replace(/, ([^,]*)$/, ' and $1')}, with ${w(s.held)} people between them. ${w(s.hirers.length)[0].toUpperCase() + w(s.hirers.length).slice(1)} more are listed as employers who hired an enslaved person from another owner: ${s.hirers.map(link).join(', ').replace(/, ([^,]*)$/, ' and $1')}. <b>The ${all} enslaved people on these lines are named nowhere in these records</b>, and none can be traced to a grave here.</p>
+    <p class="prose">This is the number found, not the number. The schedule lists the head of a holding, so a wife or child in that household does not appear. It covers 1860 only; the 1850 schedule has not been read. A name missing from the index is not evidence that someone held no one. Three readings are left open: a James H. Jones listed as a hirer, whose identity with the man buried here is not settled, and an "H. McVeigh" and a "Mary Gulick", neither shown to be the person buried here.</p>
+    <div class="source"><span>SOURCE</span>research/slave_schedule_1860_loudoun_read.csv and slave_schedule_1860_hamilton.csv, read on the images of FamilySearch film 005171762 · identities matched on the 1860 free schedule · adopted by the project's owner in curation/slave_schedule_1860_links.csv</div>`;
+}
+
 function census1870Section(c, D) {
   if (!c) return '';
   const gh = D.byId.get('HM0078');

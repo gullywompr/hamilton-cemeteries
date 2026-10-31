@@ -1,0 +1,92 @@
+# 1860 slave schedule (FamilySearch collection 3161105), Loudoun residence, searched one surname at a time, 31 Oct 2026.
+# NAME MATCHES ONLY. A name in the index can be an owner, an employer ("Emp") or a hirer, and may be another person of the same name.
+# Nothing here is a finding until the image and the free schedule are read.
+surname | index names (Loudoun, 1860 slave schedule) | our people?
+Ruse | Jno, Henry, Solomon, Hannah, Eli S | Solomon done; none of ours otherwise
+Tavenner | John, Malen, Jonah Tavender, William Tavener, Jonah Tavener | William done; Nimrod/Eden not listed; "Malen" ?= Malinda (wife of William, not head)
+Allder | G H Allder | no
+Arnett | 0 | no
+Beans | Asaiah B, Abner H, (Chas W Bane) | no
+Beales | Robert Beale | no
+Beatty | William Beaty W2XG-51W2, G Beaty, John Beaty | CANDIDATE LV0106 William Beatty 26-27
+Birkhead | W P Birchett | no
+Butler | Jos, Armistead | no
+Carruthers | William Caruthers | no (ours Wesley)
+Chamblin | 24 hits incl J L / John L Chamblin W2XP-3NZM, W2XP-3JZM | ours John Mahlon (M) - initial L differs; no
+Clark (Louisa) | 0 | no
+Cox | H, Charnock, W H, H H Cocke, Kemp Cock | no
+Cummings | 0 | no
+Davis | Benjamin, F, Wm H, Henry, Jas W, Wm H Davies | no
+Divine | 0 | no
+Dodd | Saml, William, John B, G A | no
+Dorrell | Geo M Darrell | no
+Dowdell/Dowell | Welby Dowell, C R Dowell, Malinda Dowell, M Dowel, Wm R McDowell | no (ours Martha J, Amanda E, Kate, Wm Flavius Dowdell)
+Everhart | 0 | no
+Fletcher | Joshua x2 | no
+French | Napoleon B, William H French W2X5-35ZM, W L | CANDIDATE HM0056 William Henry French 47-48 (free p.384 Hamilton)
+Fulton | Wm | no (ours John Edward)
+Follin | Wm/W/William Foley, "Follen" (no given name) W2XG-5J3Z | unclear; ours Arthur W 22 - check image if cheap
+Gore | G, Telgham, Green | no
+Grubb | Joseph P, Beng x2, Jno, Elenesa, W x2, Jas Grub, Edmond W Grubbs | no (ours Ebenezer)
+Grey | J, J W, Joseph G, R, Sennaca, W H, Ise*, W E, Robt W, E, Oliver T | no (ours Albert)
+Haines | Thadius Hanes, Edward Hanes | no
+Hawkins | 0 | no
+Henry | 0 | no
+Hess | 0 | no
+Hodgson | Sidney L Hodgson W2XG-176Z | CANDIDATE HM0079 Sidney Ludwell Hodgson 50-51
+Hope | 0 | no
+Hoskinson | 0 | no
+Iden | 0 | no
+James | Levi James W2XP-3XN2 + W2XP-3XW2, Crann, C, Craven x3, Eliza, Rick, Robert, Mason, David B, John, John C, Mary B | CANDIDATE LV0560 Levi James 34-35 (two Levi lines)
+Janney | Elizabeth W2XG-T53Z (done), Asa M Janney W2XG-GM6Z, George W, Daniel, Jno x2, C, Geo W | CANDIDATE HM0095 Asa M. Janney 42
+Jones | J, P, P C x2, John, Landen Jones W2XG-LZ2M, Jas H Jones W2XG-YSMM, P, Jno, Wm, James Jonas | CANDIDATES LV0572 Landon Jones 40; LV0570 James H. Jones 37
+Laycock | John W | no
+Keys | Louisa A Keese W2XG-TP3Z | CANDIDATE HM0100 Louisa A Keys 36 (Hamilton free p.386 "Louisa Ann Keese"; TP-series = slave sched image 128 area)
+Lake | L Lake, Elizabeth C Lack | no
+Lee | Sallie M, Alexander D, Mathew P, Joseph, Zac, Richard D Leigh | no
+Lewis | Johnathun x4, Thomas B, Dangerfield, T, George W | no
+Loveless | John W | no
+Love | Fenton M | no
+Lunsford | Margaret, J F Lunceford, Wm A Luncford | no
+Lovett | Taswell | no
+McDaniel | Archabald, Jas x2, Thomas, + Daniels | no
+McVeigh | Elizabeth, H McVeigh W2XG-T5PZ, Towsend | WEAK: HM0116 Robert H. McVeigh 33 vs "H McVeigh" (T5-series = Hamilton route)
+Milbourn | 0 | no
+Moore | Wm R, John x2, A M, James W, Sarah, G, Geo L, Julia, Elza A, Edwin, John Morr | no
+Muse | Thos W, William | no
+Myers | William, A, Peter Myres | no
+Merchant | D D | no
+Peugh | Able | no
+Preston | 0 | no
+Pusey | Joshua x2 | no
+Reed | Joshua, John M Reed W2XG-R5W2, Smeet, Alfred | WEAK: HM0153 John W Reed 59 vs "John M"
+Presgraves | Geo W, Wm W, Jno T | no (ours John Nixon)
+Powell | Francis, John L, Thomas, F W, A, Edward, P M | no
+Saunders | 17 (no Hector/Amanda) | no
+Schooley | Chas W | no
+Silcott, Strother, Steele, Werking, Wynkoop(+Windkoop), Wiley | 0 | no
+Taylor | 18 (no Lewis) | no
+Tillett | Samuel, Jane | no
+Thomas | 18 incl Robt W Thomas W2XG-YJW2 | CANDIDATE LV0906 Robert W. Thomas 34
+Thompson | 13 (no William W) | no
+Warner | Jno, Charlotte | no
+Weadon | A Weaden | no
+White | 16 (no George W, Robert J T; "C H White") | no (C H vs Charles W - weak, not pursued)
+Wilson | Sarah Wilson W2XP-QW2M | WEAK: HM0206 Sarah Frances Wilson 21
+Young | 9 (no Benjamin Cyrus, Clara) | no
+Brown | 11 (no Mary Ann) | no
+Anderson | Alfred, Nancy, William, David C, T B | no
+Ballenger, Fry, Lang, Levenberry, Menard, Shrigley, Streams, Wallace | 0 | no
+Evans | Leroy, H Evens | no
+Fox | Geo K, Bushrad L, Cathern E | no
+Graham | William, Thompson S | no
+Gulick | Hamilton R, Sanford, Mary W2XG-5D3Z (page 44 line 8), James H, Francis, S Guleck | WEAK, NOT COUNTED: LV0487 Mary E. Gulick was 20; the free schedule has three Mary Gulicks in the Southern District (67, head; 35; and 20, a daughter in Jas H Gulick's household). The listed one is most likely the 67-year-old
+Hill | Elizabeth, Laban F, Jacob W, James W, E, L D, L Hile | no
+Lowe | Ann M, Enoch | no
+McFarland | Caroline Mc Farland, Harriet/Henry Farley | no
+Peacock | Noble B | no (ours Lucinda Beans Peacock)
+Piggott | Isaac/A Pickett | no
+Schaffer | Jacob Schafer | no
+Simpson | 14, no Rosanna | no
+Williams | 14, no Nancy | no
+ALL 101 SURNAMES SEARCHED, 31 Oct 2026. Verdicts on the name matches: slave_schedule_1860_loudoun_read.csv

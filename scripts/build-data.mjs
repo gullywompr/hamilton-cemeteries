@@ -238,6 +238,26 @@ for (const c of c1870Rows) {
 }
 if (c1870Rows.length !== 41) throw new Error(`census_1870_links.csv: ${c1870Rows.length} rows, expected 41`);
 
+// The 1860 slave schedule, Loudoun (curation/slave_schedule_1860_links.csv,
+// owner's decision of 31 Oct 2026). Each row was read on the page and matched
+// on the free schedule. An `owner` holds the people on the line; a `hirer` is
+// written "Emp" and hired someone another owner held. `people` is what the
+// schedule gives, sex and age only, in page order; `alt` is the hire if the
+// page's pairing of employer and owner is read the other way. Owners who are
+// not buried here are never named.
+const ssPeople = (s) => s ? s.split(';').map(x => { const [sex, age] = x.trim().split(' '); return { sex, age: int(age) }; }) : [];
+const ss1860Rows = readCsv(join(ROOT, 'curation', 'slave_schedule_1860_links.csv'));
+for (const s of ss1860Rows) {
+  const p = personById.get(canon(s.person_id));
+  if (!p) throw new Error(`slave_schedule_1860_links.csv: unknown id ${s.person_id}`);
+  if (!['owner', 'hirer'].includes(s.role)) throw new Error(`slave_schedule_1860_links.csv: role ${s.role} for ${s.person_id}`);
+  if (!['strong', 'probable'].includes(s.verdict)) throw new Error(`slave_schedule_1860_links.csv: verdict ${s.verdict} for ${s.person_id}`);
+  p.ss1860 = { role: s.role, as: s.schedule_name, people: ssPeople(s.people), alt: ssPeople(s.other_reading), image: int(s.image), page: int(s.page), district: s.district, enumerated: s.enumerated, verdict: s.verdict, basis: s.basis.replace(/\.$/, '') };
+}
+const ss1860Owners = ss1860Rows.filter(s => s.role === 'owner');
+const ss1860Held = ss1860Owners.reduce((n, s) => n + ssPeople(s.people).length, 0);
+if (ss1860Owners.length !== 3 || ss1860Held !== 11 || ss1860Rows.length !== 9) throw new Error(`slave_schedule_1860_links.csv: ${ss1860Owners.length} owners holding ${ss1860Held}, ${ss1860Rows.length} rows; expected 3, 11, 9`);
+
 // Possibly living (owner's decision, 29 Oct 2026). A person with no death
 // date who was born within the last LIVING_SPAN years may still be alive, and
 // a stone cut in advance names them. The app keeps them findable by name but
@@ -433,8 +453,20 @@ const census1870 = {
   black: c1870Of(c1870All.filter(r => r.race === 'Black' || r.race === 'Mulatto')),
 };
 if (census1870.all.n !== 319 || census1870.black.n !== 112 || census1870.black.inRecord !== 1) throw new Error(`1870 census: ${JSON.stringify(census1870)}`);
+// The 1860 slave schedule search (research/slave_schedule_1860_todo.tsv,
+// written by research/list_1860_adults.py): every adult here alive on census
+// day was looked up by surname. A lower bound, never "the number".
+const ss1860 = {
+  searched: 207, surnames: 101,
+  owners: ss1860Owners.map(s => canon(s.person_id)),
+  held: ss1860Held,
+  hirers: ss1860Rows.filter(s => s.role === 'hirer').map(s => canon(s.person_id)),
+};
+const ssTodo = readFileSync(join(ROOT, 'research', 'slave_schedule_1860_todo.tsv'), 'utf8').trim().split('\n').slice(1).map(l => l.split('\t'));
+if (ssTodo.length !== ss1860.searched || new Set(ssTodo.map(r => r[0].toLowerCase())).size !== ss1860.surnames) throw new Error(`slave_schedule_1860_todo.tsv: ${ssTodo.length} people, expected ${ss1860.searched}`);
 write('leads.json', {
   census1870,
+  ss1860,
   lostStones: csv('lost_stones.csv'),
   candidates: csv('candidate_missing_burials.csv'),
   mentions: csv('newspaper_mentions.csv'),
