@@ -4300,10 +4300,12 @@ image". 37 birth dates were also replaced where the certificate gives a
 different day, by the owner's rule that the certificate wins. Every linked
 card now carries the burial line as written. Two things for the owner:
 - **LV1104 Kate Dowell** (Catherine Ruth Dowell, d. 15 Dec 1915): the
-  certificate buries her at **Short Hill**, not Lakeview. Not changed.
+  certificate buries her at **Short Hill**. **Owner's decision: she stays at
+  Lakeview, where all her family is.**
 - **PV0027 Daisy May Chinn** (d. 16 May 1959): the certificate gives her
   race as white, though she is at Pleasant Valley and her mother is
-  Emiline Ceaser. Recorded as written; not changed.
+  Emiline Ceaser. **Owner's judgement: the race was likely recorded
+  incorrectly on the certificate.** Kept as written; not changed.
 Also: Eugene W. Lowe (LV0634) was the caretaker at Lakeview cemetery.
 Edgar Holmes Tavenner and LV0892 stay separate: the owner cannot say they
 are the same man.
