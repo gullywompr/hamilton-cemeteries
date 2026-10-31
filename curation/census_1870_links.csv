@@ -1,0 +1,40 @@
+person_id,census_name,census_age,image,household_id,verdict,decided,basis
+HM0077,Mary Hawkins,44,363,344,probable,2026-10-31,Age fits (1826). No second tie
+HM0078,George Henry,57,361,335,probable,2026-10-31,"Age agrees with a birth recorded to the day (15 Oct 1812). No second tie: neither Margaret Henry, 65, nor George Henry, 22, is in the cemeteries"
+HM0087,Asbury W Hoskinson,21,365,257,strong,2026-10-31,Age agrees with a birth recorded to the day (25 Dec 1848)
+HM0090,Elizabeth A Hoskinson,49,365,257,strong,2026-10-31,"One less than the record's birth (24 Jan 1820) gives. In the household with Robert, Asbury and William D."
+HM0091,Robt J Hoskinson,59,365,257,strong,2026-10-31,Age fits (1810). Four Hoskinsons of this household are in the cemeteries
+HM0111,John McDaniel,47,367,270,probable,2026-10-31,Age fits (1822). No second tie
+HM0112,Hannah E McFarland,17,365,255,strong,2026-10-31,Age agrees with a birth recorded to the day (26 May 1853)
+HM0113,Bethany McFarland,44,365,255,strong,2026-10-31,"Age agrees with a birth recorded to the day (17 Apr 1826). Ellener Lanham, 73, her maiden surname, lives in the household"
+HM0115,James N McFarland,22,365,255,probable,2026-10-31,"New. In Bethany McFarland's household. The record's year-only birth (1845) makes him 25, three more than the census"
+HM0117,Harry F Merchant,1,363,345,strong,2026-10-31,Age agrees with a birth recorded to the day (14 Oct 1868)
+HM0118,Ellen Merchant,26,363,345,strong,2026-10-31,Age agrees with a birth recorded to the day. Three of this household of four are Merchants at Harmony
+HM0120,Cora L Merchant,6,363,345,strong,2026-10-31,"One more than the record's birth (22 Aug 1864) gives. In the household with Ellen and Harry, both of whom agree to the day"
+HM0121,Mary E Milbourn,41,366,267,strong,2026-10-31,Age fits (1829). In the household with Clarkson
+HM0147,Thomas Preston,68,360,329,probable,2026-10-31,"Age fits a year-only birth (1801). Retired farmer, in the same household as John F. Preston; both are at Harmony"
+HM0150,George Pusey,74,363,348,probable,2026-10-31,Age fits (1796). No second tie
+HM0176,Malinda Tavenner,58,367,271,strong,2026-10-31,Age agrees with a birth recorded to the day (2 Aug 1811)
+HM0177,Ann E Tavenner,34,367,271,probable,2026-10-31,Her record's birth (2 Dec 1837) makes her 32. In William and Malinda's household; all three are at Harmony
+HM0179,William Tavenner,61,367,271,strong,2026-10-31,"Age agrees with a birth recorded to the day (2 Sep 1808). In the household with Malinda, who also agrees to the day"
+LV0153,Cecelia D Heaton,11,362,338,probable,2026-10-31,"Middle initial D for Decatur. Age is one less than the record's birth (29 Nov 1857) gives. Living with the Vandevanters, with Lydia Heaton, 15"
+LV0270,Lydia Ann Cox,62,362,342,strong,2026-10-31,"Age agrees with a birth recorded to the day (1 Mar 1808). In the same household as Malinda Cox, who is in the same Lakeview plot (C-36)"
+LV0309,Mary E Davis,8,365,256,strong,2026-10-31,Age agrees with a birth recorded to the day. Lakeview C-88
+LV0310,Albert C Davis,47,365,256,strong,2026-10-31,Age agrees with a birth recorded to the day. Lakeview C-88 with Mary E.
+LV0395,Wm N Everhart,52,363,344,probable,2026-10-31,"Age agrees with a birth recorded to the day (23 Oct 1817). His wife Catharine died in 1862 and their daughter Annie in 1866 (LV0396, LV0397), so their absence from the household is consistent"
+LV0398,Malinda Cox,26,363,342,strong,2026-10-31,Age fits (1844). In the same household as Lydia A. Cox; both are in Lakeview plot C-36
+LV0532,William D Hoskinson,20,365,257,strong,2026-10-31,Age fits (1850). In the household with the three Harmony Hoskinsons
+LV0655,William A McFarland,24,365,255,strong,2026-10-31,Age fits (1845). In the household with Bethany and Hannah
+LV0664,Clarkson Milbourn,15,366,267,strong,2026-10-31,Age agrees with a birth recorded to the day (5 Aug 1854)
+LV0765,James B Pugh,22,367,270,strong,2026-10-31,"New, not in the first list. One less than the record's birth (3 Sep 1846) gives. In Lydia E. Tavenner's household; married her later; Lakeview C-51"
+LV0766,Lydia E Tavenner,25,367,270,strong,2026-10-31,"One less than the record's birth (5 Jun 1843) gives. James B. Pugh, 22, lives in the same household; she later married James Braden Peugh, and both are in Lakeview C-51"
+LV0896,Rosa M Thomas,0,366,266,strong,2026-10-31,Under one year old; her record gives a birth of 30 Mar 1870. The record keeps the maiden name Thomas
+LV0909,Joseph F Thompson,12,364,349,strong,2026-10-31,Age fits (1859). Lakeview C-39
+LV0910,Mary F Thompson,33,364,349,strong,2026-10-31,Age fits (1836). Lakeview C-39 with William W. and Joseph F.
+LV0911,Wm W Thompson,38,363,349,strong,2026-10-31,Age fits (1832). Three of the household are in Lakeview plot C-39
+LV0974,John W Wiley,17,364,351,strong,2026-10-31,Age agrees with a birth recorded to the day (4 Apr 1853). Lakeview E-9. Apprentice shoemaker on the page
+LV0977,Malinda E Wiley,37,364,351,strong,2026-10-31,Age agrees with a birth recorded to the day (24 Nov 1832). Four of her household are in Lakeview plot E-9 and a fifth in E-8
+LV0978,Oscar T Wiley,3,364,351,strong,2026-10-31,Age agrees with a birth recorded to the day. Lakeview E-9
+LV0981,Edgar T Wiley,5,364,351,strong,2026-10-31,Age agrees with a birth recorded to the day. Lakeview E-8
+LV1913,Emma A Thompson,14,364,349,strong,2026-10-31,"Age fits (1855). Her record keeps the maiden name Thompson, and she is in the household with the C-39 Thompsons"
+LV2050,Florence M Wiley,11,364,351,strong,2026-10-31,Age agrees with a birth recorded to the day. Lakeview E-9

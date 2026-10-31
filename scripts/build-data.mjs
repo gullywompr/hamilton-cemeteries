@@ -217,6 +217,27 @@ for (const c of certLinkRows) {
   p.cert = { name: c.certificate_name, burial: c.burial_as_written, cause: c.cause_shown, record: `https://www.familysearch.org/ark:/61903/1:1:${c.ark}` };
 }
 
+// The 1870 census, Hamilton post office pages (curation/census_1870_links.csv,
+// owner's decision of 31 Oct 2026). Kept apart from `census`, which holds the
+// 1880-1950 transcriptions the acceptance counts are taken on. A `probable`
+// link has the age only; a `strong` one also has a second tie, and the card
+// says which. `with` names the others in the same household who are linked.
+const c1870Rows = readCsv(join(ROOT, 'curation', 'census_1870_links.csv'));
+for (const c of c1870Rows) {
+  const p = personById.get(canon(c.person_id));
+  if (!p) throw new Error(`census_1870_links.csv: unknown id ${c.person_id}`);
+  if (!['strong', 'probable'].includes(c.verdict)) throw new Error(`census_1870_links.csv: verdict ${c.verdict} for ${c.person_id}`);
+  p.c1870 = { name: c.census_name, age: int(c.census_age), image: int(c.image), verdict: c.verdict, basis: c.basis.replace(/^New(, not in the first list)?\. /, '').replace(/\.$/, ''), hh: c.household_id, with: [] };
+}
+for (const c of c1870Rows) {
+  const p = personById.get(canon(c.person_id));
+  for (const o of c1870Rows) if (o !== c && o.household_id === c.household_id) {
+    const q = personById.get(canon(o.person_id));
+    p.c1870.with.push({ id: q.id, name: q.name, as: o.census_name, age: int(o.census_age) });
+  }
+}
+if (c1870Rows.length !== 39) throw new Error(`census_1870_links.csv: ${c1870Rows.length} rows, expected 39`);
+
 // Possibly living (owner's decision, 29 Oct 2026). A person with no death
 // date who was born within the last LIVING_SPAN years may still be alive, and
 // a stone cut in advance names them. The app keeps them findable by name but

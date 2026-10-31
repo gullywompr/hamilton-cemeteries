@@ -340,3 +340,11 @@ test('deaths together: the 1918 influenza window, the one cluster the app marks'
   assert.deepEqual(c.people.map(p => p.age), [30, 66, 27, 9, 24, 17, 28, 67]);
   assert.ok(c.people.every(p => byId.has(p.id)));
 });
+
+test('1870 census: owner-adopted links (curation/census_1870_links.csv), kept apart from the 1880-1950 counts', () => {
+  const linked = people.filter(p => p.c1870);
+  assert.equal(linked.length, 39);
+  assert.equal(linked.filter(p => p.c1870.verdict === 'strong').length, 30);
+  assert.ok(linked.every(p => p.c1870.with.every(w => byId.has(w.id))));
+  assert.equal(byId.get('LV0765').c1870.name, 'James B Pugh');
+});

@@ -241,6 +241,10 @@ export class Drawer {
       ${p.census.map(c => `<tr><td class="y">${c.y}</td><td>${esc(c.occ) || '<span class="muted">none stated</span>'}</td><td>${esc(c.ind)}</td><td>${esc(c.cls)}</td><td class="muted">${esc(c.match)}${c.match === 'name-only' ? ' (weaker)' : ''}</td></tr>`).join('')}</tbody></table>
       <div class="stone-note">Hamilton enumeration districts, transcribed by the project. Class codes are the census's own (PW private wage, OA own account, GW government wage).</div>` : '';
 
+    const c70 = p.c1870;
+    const census1870 = c70 ? `<p class="small"><b>1870</b> · listed at Hamilton post office as <b>${esc(c70.name)}</b>, ${c70.age === 0 ? 'under one year old' : `aged ${c70.age}`}${c70.with.length ? `, in a household with ${c70.with.map(w => `<a href="#/person/${w.id}" data-person="${w.id}">${esc(w.as)}</a> (${w.age === 0 ? 'under one' : w.age})`).join(', ')}` : ''}. <span class="tag">${c70.verdict === 'strong' ? 'strong match' : 'probable match'}</span></p>
+      <div class="stone-note">${esc(c70.basis)}. ${c70.verdict === 'strong' ? 'A strong match has the age and a second tie: a household member in the same plot, or a named relative.' : 'A probable match has a name and an age that agree, and nothing else ties them; it may be someone else of the same name.'} Matched by the project from FamilySearch's index of the 1870 census, Loudoun, film image ${c70.image}; adopted by the project's owner on 31 October 2026.</div>` : '';
+
     const registerSec = (p.cod || p.regVerbatim || p.regParents || p.birthplace || reg.length) ? `<div class="sec"><h3>Loudoun County death register</h3>
       <dl class="kv">${p.cod ? `<dt>Cause</dt><dd>${esc(p.cod)} <span class="muted small">as the register spells it</span></dd>` : ''}${p.regParents ? `<dt>Parents named</dt><dd>${esc(p.regParents)}</dd>` : ''}${p.birthplace ? `<dt>Birthplace</dt><dd>${esc(p.birthplace)}</dd>` : ''}${p.occ ? `<dt>Occupation</dt><dd>${esc(p.occ)}</dd>` : ''}</dl>
       ${p.regVerbatim ? `<div class="verbatim" style="margin-top:8px">${esc(p.regVerbatim)}</div>` : ''}
@@ -259,7 +263,7 @@ export class Drawer {
       <div class="sec"><h3>Family, as the sources state it</h3>${famSection}</div>
       ${lifeEvents || marriageText ? `<div class="sec"><h3>Life events the links make datable</h3><ul class="life-events">${lifeEvents}${marriageText}</ul></div>` : ''}
       ${clustersSec}
-      ${censusRows ? `<div class="sec"><h3>In the census</h3>${censusRows}</div>` : ''}
+      ${censusRows || census1870 ? `<div class="sec"><h3>In the census</h3>${census1870}${censusRows}</div>` : ''}
       ${news.length ? `<div class="sec"><h3>In the newspapers</h3>${news.map(f => `<div class="finding">${esc(f.quoted_snippet)}<div class="ft">${esc(f.source)}; ${esc(f.verdict)}. ${esc(f.new_fact)}</div></div>`).join('')}</div>` : ''}
       ${findings.length ? `<div class="sec"><h3>Corrections and verified findings</h3>${findings.map(f => `<div class="finding">${esc(f.finding_type.replace(/_/g, ' '))}: ${f.was ? `<span class="muted">was</span> ${esc(f.was)} <span class="muted">now</span> ` : ''}${esc(f.now)}<div class="ft">${esc(f.note)}${f.source_ark ? ` (ARK ${esc(f.source_ark)})` : ''}</div></div>`).join('')}</div>` : ''}
       ${p.aka.length ? `<div class="sec"><h3>Also recorded as</h3>${p.aka.map(a => `<p class="small"><b>${esc(a.name)}</b> <span class="muted">${a.id} · ${esc(sourcesWords(a.src))}${a.plot ? ` · plot ${esc(a.plot)}` : ''} · ${esc(a.bd || '?')} to ${esc(a.dd || '?')}</span>${a.stone && a.stone !== p.stone ? `<br><span class="stone-line">${esc(a.stone)}</span>` : ''}</p>`).join('')}<p class="stone-note">The same person entered twice in the sources, confirmed by the project's owner on 29 October 2026 (curation/duplicates.csv). Counted once everywhere in this app; both records are kept in the data.</p></div>` : ''}

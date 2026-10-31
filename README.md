@@ -4373,4 +4373,11 @@ for each, 47 rows in all:
   - John H. Wiley, head of the E-9 family: the page says 37, his record 47.
   - James W. Merchant: the page says 30, his record 34.
 
-None of this is linked to a card yet. That waits on the owner.
+**Adopted (owner's decision, 31 Oct 2026): the 30 strong and the 9 probable**
+are in `curation/census_1870_links.csv` (39 people). Each card gets an 1870
+line under *In the census*. It shows the name and age as listed, the others
+in the household who are also linked, and whether the match is strong or
+probable, with what that means. The four unresolved and four rejected
+candidates are not linked. The 1870 links are kept apart from the
+1880-1950 census fields, so the acceptance counts of 374 matched and 212 with
+an occupation are unchanged.
