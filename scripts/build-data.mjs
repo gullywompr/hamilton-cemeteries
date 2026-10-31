@@ -320,12 +320,49 @@ const registerNamed = readCsv(join(ROOT, 'research', 'fs_hamilton_deaths_1853_18
     page: r.verified_on_image, record: r.fs_ark,
   }))
   .sort((a, b) => regDay(a.death_date) - regDay(b.death_date));
+// Death certificates, 1913-1982, for Black people who died at Hamilton and
+// match no record of the three cemeteries (research/, read on the image on
+// 30 Oct 2026). Like registerNamed, they are not people in this record. The
+// burial line and the cause go out as the certificate writes them. Informants
+// and other kin named in the notes are not published: some may be living.
+// A cause that names a third party is shortened to what happened.
+const indexByArk = new Map(readFileSync(join(ROOT, 'research', 'fs_va_death_certificates_hamilton_index.psv'), 'utf8')
+  .split(/\r?\n/).filter(l => l && !l.startsWith('#') && !l.startsWith('ark|')).map(l => l.split('|')).map(f => [f[0], { sex: f[2], age: f[6] }]));
+// Sensitive details are withheld from the page by the owner's decision of
+// 30 Oct 2026 (the certificates themselves are public and linked): the cause
+// is cut to its plain kind. research/ keeps the full reading.
+const CAUSE_SHORTENED = {
+  'QVR7-7TJM': 'Embolism of brain',                        // Florence Allen, 1918
+  'QVRW-Z1W9': 'Pernicious anemia, 8 months',              // Lydia Jane Boyd, 1927
+  'QVYL-8KLT': 'Homicide (coroner)',                       // Samuel Dennis Grooms, 1948
+  'QVR8-TTMV': 'Homicide (medical examiner)',              // Raymond Edward Tate, 1959
+  'QVYG-YFJ7': 'Accidental asphyxiation (medical examiner)', // Regina L. Jackson, 1971
+  'QVYP-8NJY': 'Drowning (medical examiner)',              // George Wright, Sr., 1982
+};
+const certGroup = (r) => r.burial_cemetery === 'Pleasant Valley' ? 'pv'
+  : r.burial_cemetery.startsWith('(town only') ? (r.death < '1922' ? 'town-before' : 'town')
+  : r.burial_cemetery === '(at home)' ? 'home' : 'elsewhere';
+const readTsv = (path) => {
+  const [head, ...lines] = readFileSync(path, 'utf8').split(/\r?\n/).filter(Boolean).map(l => l.split('\t'));
+  return lines.map(f => Object.fromEntries(head.map((h, k) => [h, (f[k] ?? '').trim()])));
+};
+// The burial line as transcribed, less the transcriber's own labels.
+const burialWords = (t) => t.replace(/^Burial[,;]\s*/, '').replace(/cemetery field:\s*/g, '').replace(/[.\s]+$/, '');
+const certificates = readTsv(join(ROOT, 'research', 'fs_certificates_read.tsv')).map(r => ({
+  name: r.name.replace(/\s*\(index: [^)]*\)/, ''), death: r.death,
+  sex: indexByArk.get(r.ark)?.sex || '', age: indexByArk.get(r.ark)?.age ?? '',
+  burial: burialWords(r.burial_place_as_written), group: certGroup(r),
+  cause: CAUSE_SHORTENED[r.ark] || (/^\(not read\)$|not legible/.test(r.cause_as_written) ? '' : r.cause_as_written),
+  record: `https://www.familysearch.org/ark:/61903/1:1:${r.ark}`,
+})).sort((a, b) => a.death.localeCompare(b.death));
+if (certificates.length !== 81) throw new Error(`certificates: ${certificates.length} rows, expected 81`);
 write('leads.json', {
   lostStones: csv('lost_stones.csv'),
   candidates: csv('candidate_missing_burials.csv'),
   mentions: csv('newspaper_mentions.csv'),
   healthNews: csv('hamilton_health_news.csv'),
   registerNamed,
+  certificates,
 });
 
 // ---------------------------------------------------------------------------

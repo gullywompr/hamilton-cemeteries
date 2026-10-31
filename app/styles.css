@@ -309,8 +309,10 @@ img, canvas, svg { display: block; max-width: 100%; }
 .page .lede { font-size: 20px; max-width: 62ch; color: var(--ink-2); margin-bottom: 28px; line-height: 1.4; }
 .page h2 { font-size: 30px; margin: 56px 0 10px; }
 .page h3 { font-size: 16px; margin: 26px 0 8px; }
+.page h4 { font-size: 14px; margin: 22px 0 4px; color: var(--ink-2); }
 .prose { max-width: 66ch; font-size: 16.5px; line-height: 1.5; }
 .prose p { margin-bottom: 0.9em; }
+.prose.small { font-size: 14px; }
 .callout { max-width: 72ch; padding: 4px 0 4px 18px; border-left: 3px solid var(--s2); margin: 18px 0; font-size: 16px; line-height: 1.5; }
 .callout.resolved { border-left-color: var(--s3); }
 .callout.absence { background: var(--hatch); border: 1px solid var(--s2); border-left-width: 3px; padding: 10px 14px 10px 18px; }

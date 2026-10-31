@@ -4160,7 +4160,7 @@ what else the certificate gives). Where they say the person was buried:
 |---|---|---|---|
 | "Hamilton", no cemetery named | 13 | 25 | 38 |
 | "Hamilton Cemetery" | 0 | 5 | 5 |
-| "Pleasant Valley" by name | 0 | 5 | 5 (plus Francis Anderson, 1926) |
+| "Pleasant Valley" by name | 0 | 5 | 5 (Francis Anderson, 1926, among them) |
 | "at home" (three infants, no undertaker) | 0 | 3 | 3 |
 | elsewhere | 7 | 23 | 30 |
 
@@ -4178,7 +4178,7 @@ Alexandria, and the State Anatomical Board.
 - **After 1922 "Hamilton" and "Hamilton Cemetery" are probably Pleasant
   Valley** for most of these 30 people, since it was the Black community's
   ground in the town, but the certificate does not say so and this file
-  does not assume it. Six say Pleasant Valley by name.
+  does not assume it. Five say Pleasant Valley by name.
 - **Lincoln was a second burial place for Hamilton's Black families**, 19
   of the 81. That is outside this project's three cemeteries.
 - The certificates add **occupations and causes** for people with no stone:
@@ -4196,3 +4196,12 @@ Alexandria, and the State Anatomical Board.
 
 Nothing here is in `data/` or the app. The 213 unmatched White certificates
 are not read.
+
+**On the app (30 Oct 2026):** the 81 are listed on *Who is not here*, grouped
+by the burial line, as documented individuals who are not people in the
+record. By the owner's decision sensitive details are withheld from the page:
+six causes are cut to their plain kind (Allen 1918, Boyd 1927, Grooms 1948,
+Tate 1959, Jackson 1971, Wright 1982), and informants and kin are not shown.
+The certificates are public and each entry links its own. The git history is
+left as it is, by the same decision: the owners' names once written into this
+file, and everything in `research/`, are readings of public records.

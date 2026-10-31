@@ -186,6 +186,7 @@ export function renderRecord(el, D, ctx, params = {}) {
     </div>
     <div class="callout">The county line is <b>context, not a denominator</b>. Hamilton is one village; its three cemeteries are not a sample of Loudoun, and county proportions do not transfer to them arithmetically. The app never computes or implies a count of missing individuals. Loudoun's Black population fell in every decade from 1900 to 1950 while documented Pleasant Valley burials rose: the burials are the documentation arriving, the population is people leaving, and the decade differences understate the outflow because they ignore natural increase.</div>
     ${registerNamedSection(L.registerNamed, D)}
+    ${certificatesSection(L.certificates)}
     <h3>Nearby communities the county records</h3>
     <p class="prose small">Loudoun County GIS lists ${C.communities.length} historic African American communities, churches, schools and lodges within five kilometres of Hamilton. They are listed on the <a href="#/map">map page</a>.</p>
 
@@ -470,6 +471,36 @@ function registerNamedSection(rows, D) {
     <ul class="era-list">${rows.map(r => `<li>${who(r)}${age(r)} <span class="when">died ${esc(r.death_date)}</span><span class="basis">${kin(r) ? `The index gives ${kin(r)}. ` : ''}Register ${esc(r.page.split(':')[0])}.${stone(r)} <a href="${esc(r.record)}" rel="noopener">The record</a>.</span></li>`).join('')}</ul>
     <p class="prose small">The register's own index marks four more Hamilton deaths of these years as colored. On the page, one is entered as white and three could not be read, so they are not listed. A search by place finds only entries that name the town; deaths entered under the county alone are not here, so this is not the town's total.</p>
     <div class="source"><span>SOURCE</span>Register of Deaths 1865–1896, Loudoun County, FamilySearch film 004225400, item 4 · research/fs_hamilton_deaths_1853_1896.csv</div>`;
+}
+
+// Death certificates for Black people who died at Hamilton and match no
+// record of the three cemeteries. Grouped by what the certificate says about
+// burial, in the certificate's words. "Hamilton" is not read as Pleasant
+// Valley: most of the later ones probably are, but the certificate does not
+// say so, and before 1922 there was no Pleasant Valley to mean.
+const CERT_GROUPS = [
+  ['town-before', 'Buried “Hamilton”, before Pleasant Valley opened', 'The certificate names the town and no burial ground. Where in Hamilton these people lie is not recorded.'],
+  ['pv', 'Buried at Pleasant Valley, by name', 'Each certificate names Pleasant Valley. None of these people is in the cemetery’s surviving records.'],
+  ['town', 'Buried “Hamilton” or “Hamilton Cemetery”, 1922 and after', 'Most of these are probably Pleasant Valley, the community’s ground in the town, but the certificate does not say so and the app does not assume it.'],
+  ['home', 'Buried at home', 'Three infants, each certified “at home”, with no undertaker.'],
+  ['elsewhere', 'Died at Hamilton, buried elsewhere', 'Most at Lincoln: Mt. Olive Baptist, Lincoln Baptist and Lincoln Cemetery, outside this project’s three grounds.'],
+];
+const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const shortDay = (iso) => { const [y, m, d] = iso.split('-'); return `${+d} ${MON[+m - 1]} ${y}`; };
+function certificatesSection(rows) {
+  if (!rows?.length) return '';
+  const age = (r) => r.age === '' ? '' : r.age === '0' ? ', under a year old' : `, aged ${esc(r.age)}`;
+  const year = (d) => d.slice(0, 4);
+  const item = (r) => `<li>${esc(r.name)}${age(r)} <span class="when">died ${esc(shortDay(r.death))}</span><span class="basis">Burial: ${esc(r.burial)}.${r.cause ? ` Cause, as written: ${esc(r.cause.replace(/[.\s]+$/, ''))}.` : ''} <a href="${esc(r.record)}" rel="noopener">The certificate</a>.</span></li>`;
+  return `
+    <h3>On a death certificate, with no record in these cemeteries</h3>
+    <p class="prose">Virginia death certificates from 1912 record ${n(rows.length)} Black people who died at Hamilton between ${year(rows[0].death)} and ${year(rows[rows.length - 1].death)} and who match no record of the three cemeteries. Each certificate was read on the image. They are documented individuals, but not records of these cemeteries: they are not on the timeline and are not counted anywhere in this app. A certificate records where a person died; what it says about burial is given below as written.</p>
+    ${CERT_GROUPS.map(([key, title, note]) => {
+      const g = rows.filter(r => r.group === key);
+      return g.length ? `<h4>${esc(title)} <span class="muted">(${n(g.length)})</span></h4><p class="prose small">${esc(note)}</p><ul class="era-list">${g.map(item).join('')}</ul>` : '';
+    }).join('')}
+    <p class="prose small">The certificates of white people who died at Hamilton and match no cemetery record have not yet been read, so this list is not a comparison between the two. It covers deaths the certificate places in the town; deaths entered under the county alone are not here.</p>
+    <div class="source"><span>SOURCE</span>Virginia, Death Certificates, 1912–1987, FamilySearch collection 2377565 · research/fs_certificates_read.tsv</div>`;
 }
 
 function demographyFigure(demo) {
