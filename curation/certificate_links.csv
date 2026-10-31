@@ -1,0 +1,5 @@
+person_id,name,ark,certificate_name,burial_as_written,cause_as_written,decided,basis
+PV0142,Walter H. Levenberry,QVRZ-ML8M,Walter Harrison Levenberry,"""Hamilton Cemetery"", Hamilton, Virginia","Metastatic carcinoma; carcinoma of bladder, 4 years",2026-10-30,death date and age agree once PV0142 is corrected to 1962 (date_corrections.csv)
+HM0250,Bertha M Saesar,QVRQ-FZ75,Bertha Lillie May Ceasar,"Hamilton Va, Jan 13 1913","Pneumonia, 6 days",2026-10-30,same birth day and death day; surname a spelling variant (Ceasar / Saesar)
+PV0029,John D. Chinn,QVRW-DS2M,John Douglas Gaskins,"Pleasant Valley Cemetery, Mar 5 1928","Influenza, gastro-intestinal type, with meningeal involvement, 10 days",2026-10-30,"same birth day (11 Nov 1925) and death day (3 Mar 1928), John D.; the certificate names his father Linzie Gaskins"
+PV0097,Fannie J. Harvey,QVRH-7NBP,Fannie Jackson Harvie,"Hamilton, Jul 17 1940",Body was seen after death; had had paralysis for some time,2026-10-30,"same birth year and death year, Fannie J., a spelling variant; death day from the certificate"

@@ -186,7 +186,7 @@ export function renderRecord(el, D, ctx, params = {}) {
     </div>
     <div class="callout">The county line is <b>context, not a denominator</b>. Hamilton is one village; its three cemeteries are not a sample of Loudoun, and county proportions do not transfer to them arithmetically. The app never computes or implies a count of missing individuals. Loudoun's Black population fell in every decade from 1900 to 1950 while documented Pleasant Valley burials rose: the burials are the documentation arriving, the population is people leaving, and the decade differences understate the outflow because they ignore natural increase.</div>
     ${registerNamedSection(L.registerNamed, D)}
-    ${certificatesSection(L.certificates)}
+    ${certificatesSection(L.certificates, L.certificatesLinked)}
     <h3>Nearby communities the county records</h3>
     <p class="prose small">Loudoun County GIS lists ${C.communities.length} historic African American communities, churches, schools and lodges within five kilometres of Hamilton. They are listed on the <a href="#/map">map page</a>.</p>
 
@@ -487,14 +487,14 @@ const CERT_GROUPS = [
 ];
 const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const shortDay = (iso) => { const [y, m, d] = iso.split('-'); return `${+d} ${MON[+m - 1]} ${y}`; };
-function certificatesSection(rows) {
+function certificatesSection(rows, linked = 0) {
   if (!rows?.length) return '';
   const age = (r) => r.age === '' ? '' : r.age === '0' ? ', under a year old' : `, aged ${esc(r.age)}`;
   const year = (d) => d.slice(0, 4);
   const item = (r) => `<li>${esc(r.name)}${age(r)} <span class="when">died ${esc(shortDay(r.death))}</span><span class="basis">Burial: ${esc(r.burial)}.${r.cause ? ` Cause, as written: ${esc(r.cause.replace(/[.\s]+$/, ''))}.` : ''} <a href="${esc(r.record)}" rel="noopener">The certificate</a>.</span></li>`;
   return `
     <h3>On a death certificate, with no record in these cemeteries</h3>
-    <p class="prose">Virginia death certificates from 1912 record ${n(rows.length)} Black people who died at Hamilton between ${year(rows[0].death)} and ${year(rows[rows.length - 1].death)} and who match no record of the three cemeteries. Each certificate was read on the image. They are documented individuals, but not records of these cemeteries: they are not on the timeline and are not counted anywhere in this app. A certificate records where a person died; what it says about burial is given below as written.</p>
+    <p class="prose">Virginia death certificates from 1912 record ${n(rows.length)} Black people who died at Hamilton between ${year(rows[0].death)} and ${year(rows[rows.length - 1].death)} and who match no record of the three cemeteries. Each certificate was read on the image. They are documented individuals, but not records of these cemeteries: they are not on the timeline and are not counted anywhere in this app. A certificate records where a person died; what it says about burial is given below as written.${linked ? ` ${n(linked)} more certificates turned out to be people already in these cemeteries' records under another spelling or date; each appears once, on that person's card, with what the certificate documents.` : ''}</p>
     ${CERT_GROUPS.map(([key, title, note]) => {
       const g = rows.filter(r => r.group === key);
       return g.length ? `<h4>${esc(title)} <span class="muted">(${n(g.length)})</span></h4><p class="prose small">${esc(note)}</p><ul class="era-list">${g.map(item).join('')}</ul>` : '';

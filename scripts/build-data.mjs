@@ -184,16 +184,31 @@ for (const u of unresolvedRows) {
 // Dates the owner corrected against a later record (curation/date_corrections.csv,
 // from 30 Oct 2026). data/ keeps the date as recorded and the record-level
 // population check above runs on it; the person carries the corrected date and
-// what it replaced, so the card can say so. Only death dates are corrected.
+// what it replaced, so the card can say so. A birth or a death date may be
+// corrected; the age goes in as the source states it.
 const correctionRows = readCsv(join(ROOT, 'curation', 'date_corrections.csv'));
 for (const c of correctionRows) {
   const p = personById.get(canon(c.person_id));
   if (!p) throw new Error(`date_corrections.csv: unknown id ${c.person_id}`);
-  if (c.field !== 'death_date') throw new Error(`date_corrections.csv: only death_date is corrected, not ${c.field}`);
-  if (String(p.dy) !== c.recorded.slice(0, 4)) throw new Error(`date_corrections.csv: ${c.person_id} has death year ${p.dy}, not ${c.recorded}`);
-  p.corrected = { field: 'death', recorded: p.dd, recordedP: p.dp, basis: c.basis, source: c.source, decided: c.decided };
-  p.dd = c.corrected; p.dp = c.precision; p.dy = int(c.corrected.slice(0, 4));
-  p.age = c.age_at_death === '' ? null : int(c.age_at_death); // as the source states it, not computed from a year-only birth
+  const birth = c.field === 'birth_date';
+  if (!birth && c.field !== 'death_date') throw new Error(`date_corrections.csv: only birth_date and death_date are corrected, not ${c.field}`);
+  const was = birth ? p.bd : p.dd;
+  if (was !== c.recorded) throw new Error(`date_corrections.csv: ${c.person_id} has ${c.field} ${was}, not ${c.recorded}`);
+  (p.corrected ||= []).push({ field: birth ? 'birth' : 'death', recorded: was, basis: c.basis, source: c.source, decided: c.decided, now: c.corrected, nowP: c.precision });
+  if (birth) { p.bd = c.corrected; p.bp = c.precision; p.by = int(c.corrected.slice(0, 4)); }
+  else { p.dd = c.corrected; p.dp = c.precision; p.dy = int(c.corrected.slice(0, 4)); }
+  if (c.age_at_death !== '') p.age = int(c.age_at_death);
+}
+
+// Death certificates the owner linked to a person already in the record
+// (curation/certificate_links.csv). The person appears once, on their card,
+// with what the certificate documents; the certificate leaves the list of
+// people with no record in these cemeteries.
+const certLinkRows = readCsv(join(ROOT, 'curation', 'certificate_links.csv'));
+for (const c of certLinkRows) {
+  const p = personById.get(canon(c.person_id));
+  if (!p) throw new Error(`certificate_links.csv: unknown id ${c.person_id}`);
+  p.cert = { name: c.certificate_name, burial: c.burial_as_written, cause: c.cause_as_written, record: `https://www.familysearch.org/ark:/61903/1:1:${c.ark}` };
 }
 
 // Possibly living (owner's decision, 29 Oct 2026). A person with no death
@@ -355,7 +370,10 @@ const certificates = readTsv(join(ROOT, 'research', 'fs_certificates_read.tsv'))
   cause: CAUSE_SHORTENED[r.ark] || (/^\(not read\)$|not legible/.test(r.cause_as_written) ? '' : r.cause_as_written),
   record: `https://www.familysearch.org/ark:/61903/1:1:${r.ark}`,
 })).sort((a, b) => a.death.localeCompare(b.death));
-if (certificates.length !== 81) throw new Error(`certificates: ${certificates.length} rows, expected 81`);
+const linkedArks = new Set(certLinkRows.map(c => c.ark));
+const certificatesAll = certificates.length;
+certificates.splice(0, certificates.length, ...certificates.filter(c => !linkedArks.has(c.record.split(':').pop())));
+if (certificatesAll !== 81 || certificates.length !== 81 - linkedArks.size) throw new Error(`certificates: ${certificatesAll} read, ${certificates.length} listed`);
 write('leads.json', {
   lostStones: csv('lost_stones.csv'),
   candidates: csv('candidate_missing_burials.csv'),
@@ -363,6 +381,7 @@ write('leads.json', {
   healthNews: csv('hamilton_health_news.csv'),
   registerNamed,
   certificates,
+  certificatesLinked: linkedArks.size,
 });
 
 // ---------------------------------------------------------------------------

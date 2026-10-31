@@ -233,7 +233,7 @@ disagreeing with any of these has a join or filter bug.
 **Duplicate records (29 Oct 2026).** 51 records are the same person entered
 twice; the owner confirmed each pair in `curation/duplicates.csv`. The app
 counts people, so it shows **2,681 people**, and on people the curve reads
-1800 **11** · 1850 **327** · 1900 **1,231** · 1927 **1,429** (still the peak) ·
+1800 **11** · 1850 **327** · 1900 **1,232** · 1927 **1,429** (still the peak) ·
 1950 **1,256** · 2000 **413**. The record values above still hold for the CSV
 and are still tested. The rules and the full people-level values are
 `APP_SPEC.md` §13. Do not merge or delete rows in `data/` to fix a duplicate:
@@ -242,8 +242,13 @@ record the decision in `curation/duplicates.csv`.
 A date the owner corrects against a later record (30 Oct 2026) goes in
 `curation/date_corrections.csv`, never into `data/`. The build applies it to
 the person after the record-level population check, so
-`timeline_population.csv` still holds; the people curve moves with it. One so
-far: PV0142 Walter H. Levenberry, death 1952 to 2 Mar 1962 (death certificate).
+`timeline_population.csv` still holds; the people curve moves with it. Three so
+far, all from death certificates: PV0142 Walter H. Levenberry, death 1952 to
+2 Mar 1962; PV0097 Fannie J. Harvey, death 1940 to 15 Jul 1940; HM0250 Bertha M
+Saesar, birth 1901 to 30 Jan 1900, which makes the 1900 people count **1,232**,
+not §13's 1,231. A certificate that is the same person as a record already here
+is linked in `curation/certificate_links.csv` (four so far): the person appears
+once, on the card, and the certificate leaves the list of the unrecorded.
 
 Ten further pairs carry the verdict `unresolved` (29 Oct 2026, owner's
 decision): a birth-only record whose birth date is, to the day, the death date

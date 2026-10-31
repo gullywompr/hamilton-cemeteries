@@ -4205,3 +4205,16 @@ Tate 1959, Jackson 1971, Wright 1982), and informants and kin are not shown.
 The certificates are public and each entry links its own. The git history is
 left as it is, by the same decision: the owners' names once written into this
 file, and everything in `research/`, are readings of public records.
+
+**Four of the 81 were already in the record (30 Oct 2026).** Matching by
+exact death day, whatever the surname, found them: HM0250 "Bertha M Saesar"
+at **Harmony** is the certificate's Bertha Lillie May Ceasar (12, d. 12 Jan
+1913, buried "Hamilton"): a Black child buried at Harmony in 1913. PV0029
+"John D. Chinn" is John Douglas Gaskins (same birth and death days). PV0097
+"Fannie J. Harvey" is Fannie Jackson Harvie. PV0142 Walter H. Levenberry is
+his own certificate once corrected to 1962. By the owner's decision each is
+one person, following the certificate: links in
+`curation/certificate_links.csv`, dates in `curation/date_corrections.csv`
+(Bertha born 1900, not 1901, which makes the 1900 people count 1,232; Fannie's
+death to the day). The page now lists 77. The surname-and-year matcher
+missed them; the 213 white certificates get the same death-day check.

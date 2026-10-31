@@ -62,7 +62,9 @@ test('the site header states the people count', () => {
 // which stops if any year differs; this test checks the curve on people.
 test('living population by year, on people, matches APP_SPEC §13 for all 273 years', () => {
   // people, not records: the build checks the records against timeline_population.csv
-  const expect = { 1800: 11, 1850: 327, 1866: 597, 1900: 1231, 1927: 1429, 1950: 1256, 2000: 413 };
+  // 1900 was 1231 in APP_SPEC §13; HM0250's death certificate puts her birth in
+  // 1900, not 1901 (curation/date_corrections.csv, owner's decision of 30 Oct 2026).
+  const expect = { 1800: 11, 1850: 327, 1866: 597, 1900: 1232, 1927: 1429, 1950: 1256, 2000: 413 };
   for (const [y, n] of Object.entries(expect)) assert.equal(aliveCount(people, +y), n, `year ${y}`);
   const pop = load('population.json');
   assert.equal(pop.length, 273);
