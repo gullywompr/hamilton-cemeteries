@@ -115,6 +115,9 @@ img, canvas, svg { display: block; max-width: 100%; }
 .q-row .q-name { font-size: 15px; color: var(--ink); }
 .q-row .q-meta { font-size: 12px; color: var(--ink-3); text-align: right; white-space: nowrap; }
 .q-more { padding: 6px 14px; font-size: 12px; color: var(--ink-3); }
+.q-head { border-top: 1px solid var(--rule); margin-top: 4px; padding-top: 8px; }
+.q-other .q-name { color: var(--ink-2); font-style: italic; }
+.era-list li.found { background: var(--stone-3); outline: 6px solid var(--stone-3); }
 
 /* ---------- buttons, chips, tags ---------- */
 .btn {

@@ -338,7 +338,7 @@ const registerNamed = readCsv(join(ROOT, 'research', 'fs_hamilton_deaths_1853_18
   .filter(r => /colou?red/i.test(r.verified_on_image) && !/NOT CONFIRMED|FIRST colour column/.test(r.verified_on_image))
   .map(r => ({
     name: r.name, sex: r.sex, death_date: r.death_date, age: r.age, parents: r.parents, spouse: r.spouse,
-    page: r.verified_on_image, record: r.fs_ark,
+    page: r.verified_on_image, record: r.fs_ark, anchor: `reg-${r.fs_ark.split(':').pop()}`,
   }))
   .sort((a, b) => regDay(a.death_date) - regDay(b.death_date));
 // Death certificates, 1913-1982, for Black people who died at Hamilton and
@@ -374,7 +374,7 @@ const certificates = readTsv(join(ROOT, 'research', 'fs_certificates_read.tsv'))
   sex: indexByArk.get(r.ark)?.sex || '', age: indexByArk.get(r.ark)?.age ?? '',
   burial: burialWords(r.burial_place_as_written), group: certGroup(r),
   cause: CAUSE_SHORTENED[r.ark] || (/^\(not read\)$|not legible/.test(r.cause_as_written) ? '' : r.cause_as_written),
-  record: `https://www.familysearch.org/ark:/61903/1:1:${r.ark}`,
+  record: `https://www.familysearch.org/ark:/61903/1:1:${r.ark}`, anchor: `cert-${r.ark}`,
 })).sort((a, b) => a.death.localeCompare(b.death));
 const linkedArks = new Set(certLinkRows.map(c => c.ark).filter(a => certificates.some(c => c.record.endsWith(a))));
 const certificatesAll = certificates.length;

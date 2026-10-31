@@ -240,8 +240,18 @@ export function renderRecord(el, D, ctx, params = {}) {
     if (j >= 0) { e.preventDefault(); showTab(tabs[j].dataset.tab); tabs[j].focus(); }
   });
   el.addEventListener('click', e => { const b = e.target.closest('[data-person]'); if (b) { e.preventDefault(); ctx.openPerson(b.dataset.person); } });
-  el._onParams = (p) => showTab(p.tab || 'burials', false);
-  showTab(params.tab || 'burials', false);
+  // ?at=<id> scrolls to one entry on the tab (from search) and marks it.
+  const goTo = (p) => {
+    showTab(p.tab || 'burials', false);
+    if (!p.at) return;
+    const li = el.querySelector(`#${CSS.escape(p.at)}`);
+    if (!li) return;
+    el.querySelectorAll('.found').forEach(x => x.classList.remove('found'));
+    li.classList.add('found');
+    requestAnimationFrame(() => li.scrollIntoView({ block: 'center' }));
+  };
+  el._onParams = goTo;
+  goTo(params);
 }
 // ---------------------------------------------------------------------------
 // How the stones name people: the 1948 survey's relationship phrases, by
@@ -468,7 +478,7 @@ function registerNamedSection(rows, D) {
   return `
     <h3>Named in the county register, with no stone here</h3>
     <p class="prose">The original Loudoun County register of deaths for 1865–1896 records these ${rows.length} people as colored and as dying at Hamilton, which it calls Harmony. Each was read on the page, not taken from an index. They are documented individuals, but the register does not say where any of them was buried, so they are not records of these cemeteries: they are not on the timeline and are not counted anywhere in this app. Many were children.</p>
-    <ul class="era-list">${rows.map(r => `<li>${who(r)}${age(r)} <span class="when">died ${esc(r.death_date)}</span><span class="basis">${kin(r) ? `The index gives ${kin(r)}. ` : ''}Register ${esc(r.page.split(':')[0])}.${stone(r)} <a href="${esc(r.record)}" rel="noopener">The record</a>.</span></li>`).join('')}</ul>
+    <ul class="era-list">${rows.map(r => `<li id="${esc(r.anchor)}">${who(r)}${age(r)} <span class="when">died ${esc(r.death_date)}</span><span class="basis">${kin(r) ? `The index gives ${kin(r)}. ` : ''}Register ${esc(r.page.split(':')[0])}.${stone(r)} <a href="${esc(r.record)}" rel="noopener">The record</a>.</span></li>`).join('')}</ul>
     <p class="prose small">The register's own index marks four more Hamilton deaths of these years as colored. On the page, one is entered as white and three could not be read, so they are not listed. A search by place finds only entries that name the town; deaths entered under the county alone are not here, so this is not the town's total.</p>
     <div class="source"><span>SOURCE</span>Register of Deaths 1865–1896, Loudoun County, FamilySearch film 004225400, item 4 · research/fs_hamilton_deaths_1853_1896.csv</div>`;
 }
@@ -491,7 +501,7 @@ function certificatesSection(rows, linked = 0) {
   if (!rows?.length) return '';
   const age = (r) => r.age === '' ? '' : r.age === '0' ? ', under a year old' : `, aged ${esc(r.age)}`;
   const year = (d) => d.slice(0, 4);
-  const item = (r) => `<li>${esc(r.name)}${age(r)} <span class="when">died ${esc(shortDay(r.death))}</span><span class="basis">Burial: ${esc(r.burial)}.${r.cause ? ` Cause, as written: ${esc(r.cause.replace(/[.\s]+$/, ''))}.` : ''} <a href="${esc(r.record)}" rel="noopener">The certificate</a>.</span></li>`;
+  const item = (r) => `<li id="${esc(r.anchor)}">${esc(r.name)}${age(r)} <span class="when">died ${esc(shortDay(r.death))}</span><span class="basis">Burial: ${esc(r.burial)}.${r.cause ? ` Cause, as written: ${esc(r.cause.replace(/[.\s]+$/, ''))}.` : ''} <a href="${esc(r.record)}" rel="noopener">The certificate</a>.</span></li>`;
   return `
     <h3>On a death certificate, with no record in these cemeteries</h3>
     <p class="prose">Virginia death certificates from 1912 record ${n(rows.length)} Black people who died at Hamilton between ${year(rows[0].death)} and ${year(rows[rows.length - 1].death)} and who match no record of the three cemeteries. Each certificate was read on the image. They are documented individuals, but not records of these cemeteries: they are not on the timeline and are not counted anywhere in this app. A certificate records where a person died; what it says about burial is given below as written.${linked ? ` ${n(linked)} more certificates turned out to be people already in these cemeteries' records under another spelling or date; each appears once, on that person's card, with what the certificate documents.` : ''}</p>

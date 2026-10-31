@@ -109,12 +109,21 @@ async function main() {
   const q = $('#q'), qr = $('#q-results');
   const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   const index = D.people.map(p => ({ p, t: norm(`${p.name} ${p.surname || ''} ${p.plot || ''} ${p.id} ${p.aka.map(a => `${a.name} ${a.id} ${a.plot || ''}`).join(' ')}`) }));
+  // People named by the county register or a death certificate who are not
+  // records of these cemeteries. They are found by name but kept apart: the
+  // row says so and leads to their entry on the record page, never to a card.
+  const others = [
+    ...D.leads.registerNamed.map(r => ({ name: r.name.includes(' ') ? r.name : `${r.name} (unnamed child)`, died: r.death_date, src: 'county register', at: r.anchor })),
+    ...D.leads.certificates.map(r => ({ name: r.name, died: r.death.slice(0, 4), src: 'death certificate', at: r.anchor })),
+  ].map(o => ({ o, t: norm(o.name) }));
   let sel = -1, results = [];
   const showResults = () => {
     const v = norm(q.value.trim());
     if (v.length < 2) { qr.hidden = true; q.setAttribute('aria-expanded', 'false'); return; }
     results = index.filter(x => x.t.includes(v)).slice(0, 40);
-    qr.innerHTML = results.map((x, i) => `<a class="q-row" href="#/person/${x.p.id}" role="option" aria-selected="${i === sel}" data-person="${x.p.id}"><span class="q-name">${esc(x.p.name)}</span><span class="q-meta">${esc(lifeSpan(x.p))}<br>${CEMETERY_NAME[x.p.cem]}${x.p.plot ? ', ' + esc(x.p.plot) : ''}</span></a>`).join('') + (results.length === 40 ? '<div class="q-more">Showing the first 40. Keep typing.</div>' : results.length ? '' : '<div class="q-more">No one by that name, surname, plot or id.</div>');
+    const elsewhere = results.length < 40 ? others.filter(x => x.t.includes(v)).slice(0, 40 - results.length) : [];
+    qr.innerHTML = results.map((x, i) => `<a class="q-row" href="#/person/${x.p.id}" role="option" aria-selected="${i === sel}" data-person="${x.p.id}"><span class="q-name">${esc(x.p.name)}</span><span class="q-meta">${esc(lifeSpan(x.p))}<br>${CEMETERY_NAME[x.p.cem]}${x.p.plot ? ', ' + esc(x.p.plot) : ''}</span></a>`).join('') + (results.length === 40 ? '<div class="q-more">Showing the first 40. Keep typing.</div>' : results.length || elsewhere.length ? '' : '<div class="q-more">No one by that name, surname, plot or id.</div>')
+      + (elsewhere.length ? `<div class="q-more q-head">Named in other records, not in these cemeteries</div>` + elsewhere.map(x => `<a class="q-row q-other" href="#/record?tab=absent&amp;at=${esc(x.o.at)}"><span class="q-name">${esc(x.o.name)}</span><span class="q-meta">died ${esc(x.o.died)}<br>${esc(x.o.src)}</span></a>`).join('') : '');
     qr.hidden = false; q.setAttribute('aria-expanded', 'true');
   };
   q.addEventListener('input', () => { sel = -1; showResults(); });
@@ -125,7 +134,7 @@ async function main() {
     else if (e.key === 'Enter') { e.preventDefault(); const r = results[Math.max(0, sel)]; if (r) { openPerson(r.p.id); qr.hidden = true; q.blur(); } }
     else if (e.key === 'Escape') { qr.hidden = true; q.blur(); }
   });
-  qr.addEventListener('click', (e) => { const a = e.target.closest('[data-person]'); if (a) { e.preventDefault(); openPerson(a.dataset.person); qr.hidden = true; q.value = ''; } });
+  qr.addEventListener('click', (e) => { if (e.target.closest('.q-other')) { qr.hidden = true; q.value = ''; return; } const a = e.target.closest('[data-person]'); if (a) { e.preventDefault(); openPerson(a.dataset.person); qr.hidden = true; q.value = ''; } });
   document.addEventListener('click', (e) => { if (!e.target.closest('.search')) qr.hidden = true; });
   q.closest('form').addEventListener('submit', (e) => e.preventDefault());
 
