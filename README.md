@@ -4293,3 +4293,17 @@ index, labelled as such on each correction, not yet read on the image.
 Laura L. Cox (LV0269) is the certificate's Laura Ellen Cox, by the owner:
 d. 22 May 1934, aged 84. The 1918 influenza cluster's baseline moved with
 the added days: expected 3.33 (was 3.25), p = 0.042 (was 0.037).
+
+**The 44 read on the image (30 Oct 2026).** Every death day taken from the
+index matched the certificate image; the corrections now say "read on the
+image". 37 birth dates were also replaced where the certificate gives a
+different day, by the owner's rule that the certificate wins. Every linked
+card now carries the burial line as written. Two things for the owner:
+- **LV1104 Kate Dowell** (Catherine Ruth Dowell, d. 15 Dec 1915): the
+  certificate buries her at **Short Hill**, not Lakeview. Not changed.
+- **PV0027 Daisy May Chinn** (d. 16 May 1959): the certificate gives her
+  race as white, though she is at Pleasant Valley and her mother is
+  Emiline Ceaser. Recorded as written; not changed.
+Also: Eugene W. Lowe (LV0634) was the caretaker at Lakeview cemetery.
+Edgar Holmes Tavenner and LV0892 stay separate: the owner cannot say they
+are the same man.
