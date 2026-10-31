@@ -4343,3 +4343,34 @@ aged under one, who became Rose May Tavenner (LV0896).
 This is the strongest single measure yet of the gap the app describes: a
 third of Hamilton in 1870 was Black, and the burial record holds one of them.
 Nothing here is in `data/` or the app.
+
+**The candidates checked (31 Oct 2026).** `research/check_1870_candidates.py`
+compares each census age with the age the record gives on the census day (1
+June 1870), and looks at who else is in the household.
+`research/census_1870_hamilton_verdicts.csv` gives a verdict and a reason
+for each, 47 rows in all:
+
+- **Strong (30): age agrees and a second tie.** The second tie is a
+  household member who is in the same plot, or a named relative. Examples:
+  the Wileys (four in Lakeview E-9, one in E-8), the Thompsons (C-39), the
+  Hoskinsons, the Merchants, the McFarlands, with Ellener Lanham, 73, in
+  Bethany Lanham McFarland's household, and William and Malinda Tavenner.
+  Lydia E. Tavenner, 25, shares a house with James B. Pugh, 22, whom she
+  later married. Both are in Lakeview C-51, which adds James Braden Peugh
+  (LV0765) to the list.
+- **Probable (9): age agrees, but nothing else ties them.** George Henry is
+  one of them: his age agrees with a birth recorded to the day, but no one in
+  his household is in the cemeteries.
+- **Rejected (4).** Both Janney candidates for Mary J. Wood Janney (HM0098)
+  are rejected: one is the wife of Geo. W. Janney, the other is in Amos
+  Janney's house, and her husband Asa M. Janney is on none of these pages.
+  Also rejected are Margaret Brown Guard and John Thomas Wiley (LV0984); John
+  W. Wiley, 17, is LV0974 to the day.
+- **Unresolved (4), read on the image:**
+  - John F. Preston: the page reads F, the record E.
+  - Mary E. Brown: her record names her mother as Mary Ann; the household's
+    mother is Jane V.
+  - John H. Wiley, head of the E-9 family: the page says 37, his record 47.
+  - James W. Merchant: the page says 30, his record 34.
+
+None of this is linked to a card yet. That waits on the owner.
