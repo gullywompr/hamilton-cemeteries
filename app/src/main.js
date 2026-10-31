@@ -115,6 +115,7 @@ async function main() {
   const others = [
     ...D.leads.registerNamed.map(r => ({ name: r.name.includes(' ') ? r.name : `${r.name} (unnamed child)`, died: r.death_date, src: 'county register', at: r.anchor })),
     ...D.leads.certificates.map(r => ({ name: r.name, died: r.death.slice(0, 4), src: 'death certificate', at: r.anchor })),
+    ...D.leads.certificatesWhite.map(r => ({ name: r.name, died: r.death.slice(0, 4), src: 'death certificate', at: r.anchor })),
   ].map(o => ({ o, t: norm(o.name) }));
   let sel = -1, results = [];
   const showResults = () => {

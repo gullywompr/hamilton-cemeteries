@@ -187,6 +187,7 @@ export function renderRecord(el, D, ctx, params = {}) {
     <div class="callout">The county line is <b>context, not a denominator</b>. Hamilton is one village; its three cemeteries are not a sample of Loudoun, and county proportions do not transfer to them arithmetically. The app never computes or implies a count of missing individuals. Loudoun's Black population fell in every decade from 1900 to 1950 while documented Pleasant Valley burials rose: the burials are the documentation arriving, the population is people leaving, and the decade differences understate the outflow because they ignore natural increase.</div>
     ${registerNamedSection(L.registerNamed, D)}
     ${certificatesSection(L.certificates, L.certificatesLinked)}
+    ${certificatesWhiteSection(L.certificatesWhite, D)}
     <h3>Nearby communities the county records</h3>
     <p class="prose small">Loudoun County GIS lists ${C.communities.length} historic African American communities, churches, schools and lodges within five kilometres of Hamilton. They are listed on the <a href="#/map">map page</a>.</p>
 
@@ -509,8 +510,26 @@ function certificatesSection(rows, linked = 0) {
       const g = rows.filter(r => r.group === key);
       return g.length ? `<h4>${esc(title)} <span class="muted">(${n(g.length)})</span></h4><p class="prose small">${esc(note)}</p><ul class="era-list">${g.map(item).join('')}</ul>` : '';
     }).join('')}
-    <p class="prose small">The certificates of white people who died at Hamilton and match no cemetery record have not yet been read, so this list is not a comparison between the two. It covers deaths the certificate places in the town; deaths entered under the county alone are not here.</p>
+    <p class="prose small">The certificates of white people who died at Hamilton were read the same way; most were buried outside the town, and those placed in its ground are listed below. The two lists are not a comparison: they were found by where a person died, not where the town's people were buried. Deaths entered under the county alone are not here.</p>
     <div class="source"><span>SOURCE</span>Virginia, Death Certificates, 1912–1987, FamilySearch collection 2377565 · research/fs_certificates_read.tsv</div>`;
+}
+
+// White people's certificates that place a burial in this town's ground but
+// match no record of the three cemeteries. Same rules as above.
+function certificatesWhiteSection(rows, D) {
+  if (!rows?.length) return '';
+  const age = (r) => r.age === '' ? '' : r.age === '0' ? ', under a year old' : `, aged ${esc(r.age)}`;
+  const item = (r) => {
+    const p = r.possible && D.byId.get(r.possible);
+    return `<li id="${esc(r.anchor)}">${esc(r.name)}${age(r)} <span class="when">died ${esc(shortDay(r.death))}</span><span class="basis">Burial: ${esc(r.burial)}.${r.cause ? ` Cause, as written: ${esc(r.cause.replace(/[.\s]+$/, ''))}.` : ''}${p ? ` Possibly the same woman as <a href="#/person/${p.id}">${esc(p.name)}</a>, whose record gives a different date; not established.` : ''} <a href="${esc(r.record)}" rel="noopener">The certificate</a>.</span></li>`;
+  };
+  const lv = rows.filter(r => r.group === 'lakeview'), town = rows.filter(r => r.group === 'town');
+  return `
+    <h3>Buried in Hamilton by a death certificate, with no record here: white residents</h3>
+    <p class="prose">Of the white people whose certificates place a death at Hamilton and who match no record of the three cemeteries, most were buried elsewhere, at Leesburg, Hillsboro, Lincoln and beyond. These ${n(rows.length)} were not: the certificate names Lakeview, or Hamilton with no ground. They are documented individuals, not records of these cemeteries, and are not counted anywhere in this app.</p>
+    ${lv.length ? `<h4>Buried at Lakeview, by name <span class="muted">(${n(lv.length)})</span></h4><p class="prose small">Each certificate names Lakeview. None of these people is in the cemetery's surviving records.</p><ul class="era-list">${lv.map(item).join('')}</ul>` : ''}
+    ${town.length ? `<h4>Buried “Hamilton”, no ground named <span class="muted">(${n(town.length)})</span></h4><p class="prose small">The certificate names the town and no burial ground; which ground is not recorded, and the app does not guess.</p><ul class="era-list">${town.map(item).join('')}</ul>` : ''}
+    <div class="source"><span>SOURCE</span>Virginia, Death Certificates, 1912–1987, FamilySearch collection 2377565 · research/fs_certificates_read_white.tsv</div>`;
 }
 
 function demographyFigure(demo) {
