@@ -4142,6 +4142,50 @@ twice; the schedule does not say which, and nothing ties either to the
 "Geo. ? Smith" of the 1854 register or to Hamilton. The owners' names stay
 out of this file.
 
+#### The 1860 slave schedule, Hamilton post office — 31 Oct 2026
+
+The owner asked how many of the interred held slaves. The sources had
+nothing to answer it, so this was started.
+
+**The free schedule.** The 1860 free population schedule for the Southern
+District is FamilySearch film 005171728. Its pages headed **Post Office
+Hamilton** are **images 377-389**, enumerated 27 August to 1 September 1860.
+Image 376 is Purcellville and image 390 is Mount Gilead. The index's names
+for those pages are in `research/census_1860_hamilton_names.txt`.
+
+**The slave schedule.** The same enumerator's slave schedule is film
+005171762. His route through Hamilton runs across **images 127-129**: the
+Hamilton households' names appear there in the same order as on the free
+pages.
+
+**Owners and employers.** On these pages hiring is written out. A line
+reading "*X* Emp" names an employer. Next to it is an "Owner *Y*" line, often
+with the owner's town (Leesburg, Waterford, Hillsboro). That line carries
+the age, sex and colour of the person hired. So a Hamilton name on a slave
+schedule may belong to someone who hired an enslaved person, not someone
+who owned one. Only the page can say which.
+
+**The interred on these pages, read on the image**
+(`research/slave_schedule_1860_hamilton.csv`):
+
+- **1 is listed as holding slaves in his own right:** two people, a woman of
+  24 and a girl of 7.
+- **2 are listed as employers,** each hiring one enslaved person from an
+  owner who lived elsewhere.
+
+All three are tied to their records by the free schedule household as well
+as the name. Whether the "Emp" line comes before or after its owner line is
+read from the pattern on the page. The roles above hold either way. Which
+enslaved person each employer hired depends on it.
+
+**What this does not establish.** It covers only the interred who lived on
+the Hamilton post-office pages in 1860. Those who lived under other post
+offices, or in other districts, or who held slaves in other years, are not
+checked. 1 is therefore the number found so far, not the number. The
+enslaved people are not named on the schedule; they are counted by age, sex
+and colour only. Whether any of this appears in the app is the owner's
+decision. Nothing is in `data/`.
+
 ## VIRGINIA DEATH CERTIFICATES, 1912-1987 — 30 OCT 2026
 
 FamilySearch collection 2377565, death place Hamilton, Loudoun: **467
