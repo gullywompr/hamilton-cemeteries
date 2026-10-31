@@ -181,6 +181,21 @@ for (const u of unresolvedRows) {
   p.unresolved = UNRESOLVED[u.issue];
 }
 
+// Dates the owner corrected against a later record (curation/date_corrections.csv,
+// from 30 Oct 2026). data/ keeps the date as recorded and the record-level
+// population check above runs on it; the person carries the corrected date and
+// what it replaced, so the card can say so. Only death dates are corrected.
+const correctionRows = readCsv(join(ROOT, 'curation', 'date_corrections.csv'));
+for (const c of correctionRows) {
+  const p = personById.get(canon(c.person_id));
+  if (!p) throw new Error(`date_corrections.csv: unknown id ${c.person_id}`);
+  if (c.field !== 'death_date') throw new Error(`date_corrections.csv: only death_date is corrected, not ${c.field}`);
+  if (String(p.dy) !== c.recorded.slice(0, 4)) throw new Error(`date_corrections.csv: ${c.person_id} has death year ${p.dy}, not ${c.recorded}`);
+  p.corrected = { field: 'death', recorded: p.dd, recordedP: p.dp, basis: c.basis, source: c.source, decided: c.decided };
+  p.dd = c.corrected; p.dp = c.precision; p.dy = int(c.corrected.slice(0, 4));
+  p.age = c.age_at_death === '' ? null : int(c.age_at_death); // as the source states it, not computed from a year-only birth
+}
+
 // Possibly living (owner's decision, 29 Oct 2026). A person with no death
 // date who was born within the last LIVING_SPAN years may still be alive, and
 // a stone cut in advance names them. The app keeps them findable by name but

@@ -239,6 +239,12 @@ and are still tested. The rules and the full people-level values are
 `APP_SPEC.md` §13. Do not merge or delete rows in `data/` to fix a duplicate:
 record the decision in `curation/duplicates.csv`.
 
+A date the owner corrects against a later record (30 Oct 2026) goes in
+`curation/date_corrections.csv`, never into `data/`. The build applies it to
+the person after the record-level population check, so
+`timeline_population.csv` still holds; the people curve moves with it. One so
+far: PV0142 Walter H. Levenberry, death 1952 to 2 Mar 1962 (death certificate).
+
 Ten further pairs carry the verdict `unresolved` (29 Oct 2026, owner's
 decision): a birth-only record whose birth date is, to the day, the death date
 of a record with a closely matching name, possibly a death entered as a birth.

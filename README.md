@@ -4189,7 +4189,10 @@ Alexandria, and the State Anatomical Board.
   and 1928; tuberculosis repeatedly.
 - **One conflict with the data:** PV0142 Walter H. Levenberry is dated
   1887-1952 (years only); his certificate gives death 2 Mar 1962, age 74,
-  burial "Hamilton Cemetery". Not changed; for the owner.
+  burial "Hamilton Cemetery". **Decided 30 Oct 2026: 1962.** The 1952
+  came from a temporary marker whose third digit is illegible. Recorded in
+  `curation/date_corrections.csv`; `data/` still says 1952, the app shows
+  1962 and the card says what it replaced.
 
 Nothing here is in `data/` or the app. The 213 unmatched White certificates
 are not read.
