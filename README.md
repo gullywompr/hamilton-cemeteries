@@ -4256,3 +4256,17 @@ mostly buried outside it; the Black Hamiltonians mostly "at Hamilton". Ten
 white certificates carry causes marked SENSITIVE in the research file
 (suicide, homicide, alcoholism); none is on the app. Nothing from the 204 is
 on the app yet.
+
+**The 1966 Soviet crash in the papers (30 Oct 2026).** *Northern Virginia
+Sun*, 31 Oct 1966, p. 1, "Car Wrecks Kill Three On Route 7" (Virginia
+Chronicle): Vassily Orechov and Anatoly Rechkin, employees of the Soviet
+Embassy, were killed Saturday 29 Oct when their car, on diplomatic plates,
+"crashed out of control into a tree near Hamilton" on Route 7. The embassy
+said both were non-diplomatic employees; Orechov had been in the U.S. seven
+months, Rechkin a year and was a part-time chauffeur; they were alone in the
+car. The article gives no destination or direction of travel. The *Greene
+County Record*, 2 Feb 1967, p. 2, lists both among the year's Virginia
+highway deaths. The owner's suggestion that they were bound for Mount
+Weather is neither supported nor contradicted by either source. The
+*Loudoun Times-Mirror* for 1966 is not on Virginia Chronicle (its Loudoun
+titles end in 1953).
