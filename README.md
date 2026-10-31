@@ -4381,3 +4381,23 @@ probable, with what that means. The four unresolved and four rejected
 candidates are not linked. The 1870 links are kept apart from the
 1880-1950 census fields, so the acceptance counts of 374 matched and 212 with
 an occupation are unchanged.
+
+Two unresolved candidates were then settled with the 1880 census, which
+`data/` already holds, and both were linked by the owner:
+
+- John H. Wiley (LV0976) is "J.H. Wiley, 57, Shoe Merchant" in 1880, born
+  about 1823 as his record says. The 1870 "37" is the enumerator's slip, so
+  he is now **strong**.
+- John F. Preston is "J. F. Preston, 36" in 1880. Both censuses write F, and
+  only the cemetery record has E. He is linked to HM0146 as **probable**,
+  with the record's initial left as it is.
+
+That makes **41 linked: 31 strong, 10 probable**. James W. Merchant and Mary
+E. Brown stay unresolved.
+
+The *Who is not here* tab now carries the count, as **1 of 112**: Black and
+mixed-race people on the 1870 Hamilton pages who are in these cemeteries.
+Beside it, 40 of the 207 white residents are. The page says that the census
+gives no burial place, and that the difference is not a count of people
+missing from these grounds. The build computes the figures from the research
+file and the links, and fails if they move.

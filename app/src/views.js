@@ -176,6 +176,7 @@ export function renderRecord(el, D, ctx, params = {}) {
     <div class="stat-row">
       <div class="stat absence"><div class="v">0 of 1,403</div><div class="k">entries in the 1950s typed copy of the 1853–66 register that mark a Black decedent. The original register marks them</div></div>
       <div class="stat"><div class="v">${n(L.registerNamed.length)}</div><div class="k">Black Hamiltonians the 1865–96 register records, read on the page</div></div>
+      ${L.census1870 ? `<div class="stat"><div class="v">${L.census1870.black.inRecord} of ${L.census1870.black.n}</div><div class="k">Black and mixed-race people on Hamilton's 1870 census pages who are in these cemeteries</div></div>` : ''}
       <div class="stat"><div class="v">31%</div><div class="k">of Loudoun was Black in 1860, measured by the census</div></div>
       <div class="stat"><div class="v">4</div><div class="k">Pleasant Valley records before 1922, one of them corrupt</div></div>
       <div class="stat"><div class="v">31%</div><div class="k">of the 1990s' documented burials are at Pleasant Valley</div></div>
@@ -185,6 +186,7 @@ export function renderRecord(el, D, ctx, params = {}) {
       ${documentedFigure(C.documentedVsCounty)}
     </div>
     <div class="callout">The county line is <b>context, not a denominator</b>. Hamilton is one village; its three cemeteries are not a sample of Loudoun, and county proportions do not transfer to them arithmetically. The app never computes or implies a count of missing individuals. Loudoun's Black population fell in every decade from 1900 to 1950 while documented Pleasant Valley burials rose: the burials are the documentation arriving, the population is people leaving, and the decade differences understate the outflow because they ignore natural increase.</div>
+    ${census1870Section(L.census1870, D)}
     ${registerNamedSection(L.registerNamed, D)}
     ${certificatesSection(L.certificates, L.certificatesLinked)}
     ${certificatesWhiteSection(L.certificatesWhite, D)}
@@ -466,6 +468,15 @@ function causesFigure(R, D) {
 // Leuisa Levenberry's death date is the date on one Harmony stone; that is
 // stated as a coincidence of dates, not as an identification.
 const REGISTER_MAYBE_STONE = { 'Leuisa Levenberry|4 Jul 1890': 'HM0104' };
+function census1870Section(c, D) {
+  if (!c) return '';
+  const gh = D.byId.get('HM0078');
+  return `
+    <h3>Hamilton in 1870, as the census lists it</h3>
+    <p class="prose">The 1870 census pages headed Hamilton post office list ${c.all.n} people. The enumerator recorded ${c.black.n} of them as Black or mixed race, about a third of the town, many living as servants and labourers in white households. <b>One of the ${c.black.n} is in these cemeteries</b>: ${gh ? `<a href="#/person/${gh.id}" data-person="${gh.id}">${esc(gh.name)}</a>, 57, at Harmony, matched by name and age only` : 'George Henry, 57, at Harmony'}. Of the ${c.white.n} white residents, ${c.white.inRecord} are. The census does not say where anyone was later buried, and many of the ${c.all.n} will have died or been buried elsewhere, so the difference is not a count of people missing from these grounds. It shows how unevenly the burial record reaches the town that was living there.</p>
+    <div class="source"><span>SOURCE</span>research/census_1870_hamilton.csv, from FamilySearch's index of the 1870 census, Loudoun, film images 360–367 · race as the index gives it · matches in curation/census_1870_links.csv, adopted by the project's owner</div>`;
+}
+
 function registerNamedSection(rows, D) {
   if (!rows?.length) return '';
   const who = (r) => r.name.includes(' ') ? esc(r.name)

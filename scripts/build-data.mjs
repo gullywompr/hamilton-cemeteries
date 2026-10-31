@@ -236,7 +236,7 @@ for (const c of c1870Rows) {
     p.c1870.with.push({ id: q.id, name: q.name, as: o.census_name, age: int(o.census_age) });
   }
 }
-if (c1870Rows.length !== 39) throw new Error(`census_1870_links.csv: ${c1870Rows.length} rows, expected 39`);
+if (c1870Rows.length !== 41) throw new Error(`census_1870_links.csv: ${c1870Rows.length} rows, expected 41`);
 
 // Possibly living (owner's decision, 29 Oct 2026). A person with no death
 // date who was born within the last LIVING_SPAN years may still be alive, and
@@ -418,7 +418,23 @@ const certificatesWhite = readTsv(join(ROOT, 'research', 'fs_certificates_read_w
     record: `https://www.familysearch.org/ark:/61903/1:1:${r.ark}`, anchor: `cert-${r.ark}`,
   })).sort((a, b) => a.death.localeCompare(b.death));
 if (certificatesWhite.length !== 20) throw new Error(`white certificates: ${certificatesWhite.length} listed, expected 20`);
+
+// The 1870 census, the pages headed Hamilton post office (research/
+// census_1870_hamilton.csv). Counted on the eight pages only: the twelve
+// people of two households that run onto neighbouring post offices' pages are
+// left out. Race is the index's column. `inRecord` counts those the owner
+// linked to a person here (curation/census_1870_links.csv).
+const c1870All = readCsv(join(ROOT, 'research', 'census_1870_hamilton.csv')).filter(r => !/off the Hamilton pages/.test(r.note));
+const c1870Linked = new Set(c1870Rows.map(c => `${c.household_id}|${c.census_name}|${c.census_age}`));
+const c1870Of = (rows) => ({ n: rows.length, inRecord: rows.filter(r => c1870Linked.has(`${r.household_id}|${r.name}|${r.age}`)).length });
+const census1870 = {
+  all: c1870Of(c1870All),
+  white: c1870Of(c1870All.filter(r => r.race === 'White')),
+  black: c1870Of(c1870All.filter(r => r.race === 'Black' || r.race === 'Mulatto')),
+};
+if (census1870.all.n !== 319 || census1870.black.n !== 112 || census1870.black.inRecord !== 1) throw new Error(`1870 census: ${JSON.stringify(census1870)}`);
 write('leads.json', {
+  census1870,
   lostStones: csv('lost_stones.csv'),
   candidates: csv('candidate_missing_burials.csv'),
   mentions: csv('newspaper_mentions.csv'),
