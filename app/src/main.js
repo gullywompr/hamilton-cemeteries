@@ -5,6 +5,7 @@ import { loadAll } from './data.js';
 import { Timeline, esc } from './timeline.js';
 import { CursorPanel, LivingList, Drawer, computeLiving } from './panels.js';
 import { renderPeople, renderFamilies, renderRecord, renderMap } from './views.js';
+import { countView } from './count.js';
 import { dayOf, isoOf, fromIso, fmtDay, yearStart, lifeSpan, CEMETERY_NAME } from './derive.js';
 
 const $ = (s) => document.querySelector(s);
@@ -31,6 +32,7 @@ async function main() {
     if (!location.hash.startsWith('#/person/')) under = location.hash;
     if (location.hash !== `#/person/${p.id}`) history.replaceState(null, '', `#/person/${p.id}`);
     document.title = `${p.name} · ${siteTitle}`;
+    countView(`/person/${p.id}`, p.name);
   });
 
   // ---- timeline → panels ----
@@ -155,7 +157,8 @@ async function main() {
   // ---- router ----
   const views = { timeline: $('#view-timeline'), people: $('#view-people'), families: $('#view-families'), record: $('#view-record'), map: $('#view-map') };
   const rendered = new Set();
-  let currentView = 'timeline';
+  let currentView = 'timeline', counted = null;
+  const VIEW_TITLE = { timeline: 'Timeline', people: 'People', families: 'Families', record: 'The record', map: '1853 map' };
   const ctx = { openPerson, tl };
   function show(view, params) {
     if (!views[view]) view = 'timeline';
@@ -181,6 +184,8 @@ async function main() {
     }
     if (parts[0] === 'timeline' && parts[1]) { const d = fromIso(parts[1]); if (d !== null) tl.setDate(d, false); }
     show(parts[0] || 'timeline', params);
+    // One count per page opened: the page's name only, never the date or the tab.
+    if (currentView !== counted) { counted = currentView; countView(`/${currentView}`, VIEW_TITLE[currentView]); }
   }
   window.addEventListener('hashchange', route);
   route();

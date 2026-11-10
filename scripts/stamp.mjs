@@ -36,7 +36,7 @@ rewrite('index.html', [
   [/src="\.\/src\/main\.js"/g, `src="./src/main.js${v}"`, 1],
 ]);
 for (const f of readdirSync(join(OUT, 'src')).filter(f => f.endsWith('.js'))) {
-  rewrite(join('src', f), [[/from '(\.\/[\w-]+\.js)'/g, `from '$1${v}'`, f === 'derive.js' ? 0 : 1]]);
+  rewrite(join('src', f), [[/from '(\.\/[\w-]+\.js)'/g, `from '$1${v}'`, ['derive.js', 'count.js'].includes(f) ? 0 : 1]]);
 }
 rewrite(join('src', 'data.js'), [[/`\.\/data\/\$\{f\}\.json`/g, `\`./data/\${f}.json${v}\``, 1]]);
 

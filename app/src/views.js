@@ -4,6 +4,7 @@
 
 import { fmtDate, lifeSpan, interval, n, CEMETERY_NAME, CEMETERY_LONG, dayOf, yearStart } from './derive.js';
 import { esc } from './timeline.js';
+import { COUNTING } from './count.js';
 
 // Presence filters: "the record has X for this person". They say what the
 // sources reach, never what the other people lacked.
@@ -227,6 +228,8 @@ export function renderRecord(el, D, ctx, params = {}) {
     <p class="prose small">Known-correct values from APP_SPEC.md §9 as corrected by CLAUDE.md, computed from the data this page is running on.</p>
     ${selfCheck(D)}
     <div class="source"><span>SOURCE</span>summary.json, built from data/ by scripts/build-data.mjs</div>
+    ${COUNTING ? `<h2 data-k="About this site" style="margin-top:48px">Visits are counted</h2>
+    <p class="prose small">So the project's owner can tell whether the site is used, it reports each visit to GoatCounter, a counting service: which of the five pages was opened, and which person's card. It sets no cookie and keeps nothing in your browser. What you type in a search box, and the date you stop the timeline on, are never sent.</p>` : ''}
     </section>
   `;
   // One section at a time. The tab is in the URL (#/record?tab=causes) so a

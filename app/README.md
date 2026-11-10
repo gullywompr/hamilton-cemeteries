@@ -32,6 +32,7 @@ URL too: `#/record?tab=absent`.
 | `app/src/data.js` | loads the JSON and builds indexes (the ranked field, the one-date strip, era lanes, deaths by day). |
 | `app/src/views.js` | People, Families, The record, 1853 map. |
 | `app/src/panels.js` | the cursor panel, the living list and the person drawer. The drawer's foot carries the card's link and the correction email (`CONTACT`); a correction that holds is recorded in `curation/`, never through the app. |
+| `app/src/count.js` | visit counts for the owner, sent to GoatCounter: the page opened and the card opened, nothing typed and no date. Off until `SITE` holds the site code; never counts from localhost. |
 | `app/og.png` | the 1200 × 630 image a posted link shows: a screenshot of the timeline at 1 July 1927. Retake it if the timeline's look changes. |
 | `app/src/main.js` | wiring, search, hash router. |
 | `test/` | `derive.test.mjs` (rules) and `acceptance.test.mjs` (every value in APP_SPEC §9 as corrected by CLAUDE.md, plus the living-population curve on people for all 273 years). The build itself checks that the records reproduce `timeline_population.csv` and stops if any year differs. |
