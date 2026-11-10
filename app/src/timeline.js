@@ -12,6 +12,9 @@
 import { dayOf, ymd, yearOf, yearStart, fmtDay, fmtDate, MONTHS, daysInMonth, lifeSpan, CEMETERY_NAME } from './derive.js';
 
 const YEAR = 365.2425;
+// Every word on the canvas is this size: STYLE.md's smallest, the axis tick.
+// A secondary line is told apart by its ink, never by going smaller.
+const TXT = 13;
 const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 export class Timeline {
@@ -30,10 +33,11 @@ export class Timeline {
     this.hover = null; this.selectedEvent = null;
     this.listeners = {};
     this.hits = [];
-    this.gutter = 98;
+    this.gutter = 112;
     this.tokens = readTokens();
     this.hatch = makeHatch(this.tokens.hatchInk);
     this.eraLanes = this.computeEraLanes();
+    this.computeCohorts();
     this.cursorFrac = 0.4;
     this.bindEvents();
     const ro = new ResizeObserver(() => this.resize());
@@ -125,10 +129,38 @@ export class Timeline {
     return out;
   }
 
+  // ---- the field's strata: lives are ranked by birth, so a thin gap where the
+  // birth decade changes turns one slab into bands whose thickness is the
+  // number born in those years. A decade with few births joins the next. ----
+  computeCohorts() {
+    const spans = this.D.spans, MIN = 40;
+    this.cohorts = [{ start: 0, year: yearOf(spans[0].bLo) }];
+    this.gapsBefore = new Int16Array(spans.length);
+    let decade = Math.floor(yearOf(spans[0].bLo) / 10) * 10;
+    spans.forEach((s, i) => {
+      const d = Math.floor(yearOf(s.bLo) / 10) * 10;
+      if (d > decade) {
+        decade = d;
+        if (i - this.cohorts.at(-1).start >= MIN) this.cohorts.push({ start: i, year: d });
+      }
+      this.gapsBefore[i] = this.cohorts.length - 1;
+    });
+  }
+  // Where lane i sits. No life is drawn over: the gaps are added room.
+  fieldGeom(L) {
+    const N = this.D.spans.length, gap = L.fieldH >= 400 ? 2 : 1;
+    const laneH = (L.fieldH - (this.cohorts.length - 1) * gap) / N;
+    return {
+      gap, laneH,
+      laneY: (i) => L.fieldTop + (i + 0.5) * laneH + this.gapsBefore[i] * gap,
+      cohortTop: (g) => L.fieldTop + this.cohorts[g].start * laneH + g * gap,
+    };
+  }
+
   // ---- layout ----
   layout() {
     const G = this.gutter, W = this.W, H = this.H;
-    const axisH = 26, rowH = this.mergeEvents ? 16 : 13, popH = 66, oneH = 24, eraRow = 10, eraGap = 2, groupGap = 8;
+    const axisH = 26, rowH = 17, popH = 66, oneH = 24, eraRow = 14, eraGap = 2, groupGap = 8;
     const enabled = [...this.D.eventLayers].filter(l => this.eventLayers.has(l));
     const eventRows = this.mergeEvents ? (enabled.length ? ['events'] : []) : enabled;
     const eventsH = eventRows.length ? eventRows.length * rowH + 6 : 0;
@@ -167,7 +199,7 @@ export class Timeline {
     const ctx = this.ctx, T = this.tokens, ppy = this.ppd * YEAR;
     const d0 = this.dayAt(L.G), d1 = this.dayAt(L.W);
     const y0 = yearOf(d0) - 1, y1 = yearOf(d1) + 1;
-    ctx.font = `500 12px ${T.sans}`; ctx.textBaseline = 'middle';
+    ctx.font = `500 ${TXT}px ${T.sans}`; ctx.textBaseline = 'middle';
     const steps = [1, 2, 5, 10, 20, 25, 50, 100];
     const step = steps.find(s => s * ppy >= 64) || 100;
     const minor = step >= 10 ? step / 5 : step >= 5 ? 1 : 0;
@@ -179,7 +211,7 @@ export class Timeline {
         if (x < L.G) continue;
         ctx.globalAlpha = 0.9; ctx.beginPath(); ctx.moveTo(x, L.axisH - 6); ctx.lineTo(x, L.H); ctx.stroke();
         ctx.globalAlpha = 1; ctx.fillStyle = T.ink3; ctx.textAlign = 'left';
-        if (x + 5 < this.cursorX - 8 || x > this.cursorX + 110) ctx.fillText(String(y), x + 5, 12); // keep clear of the date label
+        if (x + 40 < this.cursorX || x > this.cursorX + 120) ctx.fillText(String(y), x + 5, 12); // keep clear of the date label
       }
       if (minor) for (let y = Math.floor(y0 / minor) * minor; y <= y1; y += minor) {
         if (y % step === 0) continue;
@@ -197,7 +229,7 @@ export class Timeline {
           for (let d = 2; d <= dim; d++) {
             const xd = Math.round(this.x(dayOf(y, m, d))) + 0.5;
             ctx.globalAlpha = 0.5; ctx.beginPath(); ctx.moveTo(xd, L.axisH - 3); ctx.lineTo(xd, L.axisH); ctx.stroke(); ctx.globalAlpha = 1;
-            if ((d - 1) % every === 0) { ctx.fillStyle = T.ink3; ctx.font = `400 10px ${T.sans}`; ctx.fillText(String(d), xd + 3, 12); ctx.font = `500 12px ${T.sans}`; }
+            if ((d - 1) % every === 0) { ctx.fillStyle = T.ink3; ctx.font = `400 ${TXT}px ${T.sans}`; ctx.fillText(String(d), xd + 3, 12); ctx.font = `500 ${TXT}px ${T.sans}`; }
           }
         }
       }
@@ -208,7 +240,7 @@ export class Timeline {
   drawEvents(L) {
     const ctx = this.ctx, T = this.tokens;
     const d0 = this.dayAt(L.G) - 3700, d1 = this.dayAt(L.W);
-    ctx.font = `400 11px ${T.sans}`; ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+    ctx.font = `400 ${TXT}px ${T.sans}`; ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
     L.eventRows.forEach((layer, i) => {
       const y = L.eventsTop + i * L.rowH + L.rowH / 2;
       const inRow = layer === 'events' ? (e) => this.eventLayers.has(e.layer) : (e) => e.layer === layer;
@@ -232,13 +264,13 @@ export class Timeline {
           const tw = ctx.measureText(text).width;
           const nextStart = this.nextEventX(inRow, e);
           const room = Math.min(L.W, nextStart) - lx - 4;
-          // Label only when the whole title fits, or at least a readable
-          // two-thirds of it; otherwise the hover and the panel carry it.
-          const shown = tw <= room ? text : (room >= Math.min(tw * 0.66, 160) ? truncate(ctx, text, room) : '');
+          // Label only when the whole title fits, or it can be cut between
+          // words; otherwise the hover and the panel carry it.
+          const shown = tw <= room ? text : truncate(ctx, text, room);
           if (shown) {
             ctx.fillStyle = verified ? T.ink2 : T.ink3; ctx.fillText(shown, lx, y);
             labelEnd = lx + ctx.measureText(shown).width;
-            this.hits.push({ kind: 'event', e, x0: lx, x1: labelEnd, y0: y - 7, y1: y + 7 });
+            this.hits.push({ kind: 'event', e, x0: lx, x1: labelEnd, y0: y - 8, y1: y + 8 });
           }
         }
       }
@@ -280,7 +312,7 @@ export class Timeline {
     const cy = yearOf(this.center), cv = D.popByYear.get(cy) || 0, cyy = top + h - (cv / max) * h;
     ctx.fillStyle = T.stone; ctx.beginPath(); ctx.arc(this.cursorX, cyy, 5, 0, Math.PI * 2); ctx.fill();
     ctx.fillStyle = T.ink; ctx.beginPath(); ctx.arc(this.cursorX, cyy, 3, 0, Math.PI * 2); ctx.fill();
-    ctx.font = `600 11px ${T.sans}`; ctx.textAlign = 'left'; ctx.textBaseline = 'bottom'; ctx.fillStyle = T.ink;
+    ctx.font = `600 ${TXT}px ${T.sans}`; ctx.textAlign = 'left'; ctx.textBaseline = 'bottom'; ctx.fillStyle = T.ink;
     ctx.fillText(`${cv.toLocaleString()} in ${cy}`, this.cursorX + 8, cyy - 3);
     L.popBase = top + h; L.popPlotTop = top;
   }
@@ -288,9 +320,11 @@ export class Timeline {
   drawField(L) {
     const ctx = this.ctx, T = this.tokens, D = this.D, spans = D.spans;
     const N = spans.length, top = L.fieldTop, H = L.fieldH;
-    const laneH = H / N;
+    const F = this.fieldGeom(L), laneH = F.laneH;
     // One lane per person, so a pixel's coverage is the share of its lanes
     // occupied by a life on that day: the field's density is the data.
+    // A life not alive on the chosen date is drawn faint, so the living
+    // read as a band crossing the red line.
     const lw = laneH >= 2.5 ? Math.min(3, laneH * 0.7) : Math.max(0.3, laneH);
     const d0 = this.dayAt(L.G), d1 = this.dayAt(L.W), c = this.center;
     const hues = this.colorByCem ? { L: T.lv, H: T.hm, P: T.pv } : { L: T.ink, H: T.ink, P: T.ink };
@@ -301,7 +335,7 @@ export class Timeline {
     for (let i = 0; i < N; i++) {
       const s = spans[i];
       if (s.dHi < d0 || s.bLo > d1) continue;
-      const y = top + (i + 0.5) * laneH;
+      const y = F.laneY(i);
       const status = (c < s.bLo || c > s.dHi) ? 'dead' : (c >= s.bHi && c <= s.dLo) ? 'certain' : 'possible';
       const cem = s.p.cem;
       if (s.bHi <= s.dLo) {
@@ -312,7 +346,7 @@ export class Timeline {
         add(key(cem, status, 'soft'), this.x(s.bLo), y, this.x(s.dHi));
       }
     }
-    const alpha = { dead: 0.3, possible: 0.68, certain: 1 };
+    const alpha = { dead: 0.12, possible: 0.68, certain: 1 };
     ctx.lineCap = 'butt';
     for (const [k, arr] of batches) {
       const [cem, status, seg] = k.split('|');
@@ -327,7 +361,6 @@ export class Timeline {
       ctx.stroke();
     }
     ctx.globalAlpha = 1;
-    L.laneH = laneH;
   }
 
   drawOneDate(L) {
@@ -348,14 +381,14 @@ export class Timeline {
   drawEras(L) {
     const ctx = this.ctx, T = this.tokens;
     let y = L.erasTop;
-    ctx.font = `400 11px ${T.sans}`; ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+    ctx.font = `400 ${TXT}px ${T.sans}`; ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
     for (const g of L.eraGroups) {
       if (g.layer === 'absence') {
         for (const band of this.D.absenceBands) {
           const x0 = Math.max(L.G, this.x(band.lo)), x1 = Math.min(L.W, this.x(band.hi));
           if (x1 > L.G && x0 < L.W) {
             ctx.fillStyle = this.hatch; ctx.fillRect(x0, y, x1 - x0, L.eraRow);
-            ctx.strokeStyle = T.s2; ctx.lineWidth = 1; ctx.strokeRect(x0 + 0.5, y + 0.5, x1 - x0 - 1, L.eraRow - 1);
+            ctx.strokeStyle = T.absence; ctx.lineWidth = 1; ctx.strokeRect(x0 + 0.5, y + 0.5, x1 - x0 - 1, L.eraRow - 1);
             this.label(band.label, x0, x1, y + L.eraRow / 2, T.ink);
             this.hits.push({ kind: 'absence', band, x0, x1, y0: y, y1: y + L.eraRow });
           }
@@ -375,7 +408,7 @@ export class Timeline {
           ctx.strokeRect(x0 + 0.5, yy + 0.5, x1 - x0 - 1, L.eraRow - 1); ctx.setLineDash([]);
         } else if (absence) {
           ctx.fillStyle = this.hatch; ctx.fillRect(x0, yy, x1 - x0, L.eraRow);
-          ctx.strokeStyle = T.s2; ctx.lineWidth = 1; ctx.strokeRect(x0 + 0.5, yy + 0.5, x1 - x0 - 1, L.eraRow - 1);
+          ctx.strokeStyle = T.absence; ctx.lineWidth = 1; ctx.strokeRect(x0 + 0.5, yy + 0.5, x1 - x0 - 1, L.eraRow - 1);
         } else {
           // MUTE: present but not the subject, as the films draw an era
           ctx.fillStyle = T.mute; ctx.fillRect(x0, yy, x1 - x0, L.eraRow);
@@ -399,7 +432,7 @@ export class Timeline {
     const shown = ctx.measureText(text).width <= room ? text : truncate(ctx, text, room);
     if (!shown) return;
     const w = ctx.measureText(shown).width;
-    ctx.fillStyle = this.tokens.stone; ctx.globalAlpha = 0.78; ctx.fillRect(x0 + 3, y - 6, w + 4, 12); ctx.globalAlpha = 1;
+    ctx.fillStyle = this.tokens.stone; ctx.fillRect(x0 + 3, y - 7, w + 4, 14);   // opaque: no hatching shows through a label
     ctx.fillStyle = color; ctx.fillText(shown, x0 + 5, y);
   }
 
@@ -407,17 +440,26 @@ export class Timeline {
     const ctx = this.ctx, T = this.tokens;
     ctx.fillStyle = T.stone; ctx.fillRect(0, 0, L.G, L.H);
     ctx.strokeStyle = T.rule; ctx.beginPath(); ctx.moveTo(L.G + 0.5, L.axisH); ctx.lineTo(L.G + 0.5, L.H); ctx.stroke();
-    ctx.font = `400 11px ${T.sans}`; ctx.textAlign = 'right'; ctx.textBaseline = 'middle'; ctx.fillStyle = T.ink2;
+    ctx.font = `400 ${TXT}px ${T.sans}`; ctx.textAlign = 'right'; ctx.textBaseline = 'middle'; ctx.fillStyle = T.ink2;
     L.eventRows.forEach((layer, i) => ctx.fillText(layer, L.G - 8, L.eventsTop + i * L.rowH + L.rowH / 2));
-    ctx.fillText('alive, by year', L.G - 8, L.popTop + 16);
-    ctx.fillStyle = T.ink3; ctx.font = `400 10px ${T.sans}`;
-    ctx.fillText(`${this.D.popMax.toLocaleString()} at peak`, L.G - 8, L.popTop + 28);
-    ctx.fillStyle = T.ink2; ctx.font = `400 11px ${T.sans}`;
+    ctx.fillText('alive, by year', L.G - 8, L.popTop + 14);
+    ctx.fillStyle = T.ink3; ctx.font = `400 ${TXT}px ${T.sans}`;
+    ctx.fillText(`${this.D.popMax.toLocaleString()} at peak`, L.G - 8, L.popTop + 30);
+    ctx.fillStyle = T.ink2; ctx.font = `400 ${TXT}px ${T.sans}`;
     ctx.fillText(`${this.D.spans.length.toLocaleString()} lives`, L.G - 8, L.fieldTop + 8);
-    ctx.fillStyle = T.ink3; ctx.font = `400 10px ${T.sans}`;
-    ctx.fillText('eldest born', L.G - 8, L.fieldTop + 20);
-    ctx.fillText('latest born', L.G - 8, L.fieldTop + L.fieldH - 6);
-    ctx.fillStyle = T.ink2; ctx.font = `400 11px ${T.sans}`;
+    ctx.fillStyle = T.ink3; ctx.font = `400 ${TXT}px ${T.sans}`;
+    ctx.fillText('by year of birth', L.G - 8, L.fieldTop + 24);
+    // each stratum's first birth decade, where there is room for the figure
+    const F = this.fieldGeom(L);
+    let lastY = L.fieldTop + 32;
+    this.cohorts.forEach((c, g) => {
+      if (g === 0) return;
+      const y = F.cohortTop(g);
+      if (y - lastY < 16 || y > L.fieldTop + L.fieldH - 4) return;
+      ctx.strokeStyle = T.ink3; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(L.G - 5, Math.round(y) - 0.5); ctx.lineTo(L.G, Math.round(y) - 0.5); ctx.stroke();
+      ctx.fillText(String(c.year), L.G - 8, y + 4); lastY = y;
+    });
+    ctx.fillStyle = T.ink2; ctx.font = `400 ${TXT}px ${T.sans}`;
     ctx.fillText('one date only', L.G - 8, L.oneTop + L.oneH / 2 - 2);
     for (const g of L.eraGroups) {
       if (g.layer === 'absence') { ctx.fillText('not recorded', L.G - 8, L.erasTop + L.eraRow / 2); continue; }
@@ -431,7 +473,7 @@ export class Timeline {
     ctx.beginPath(); ctx.moveTo(x, L.axisH - 8); ctx.lineTo(x, L.H); ctx.stroke();
     ctx.fillStyle = T.now;
     ctx.beginPath(); ctx.moveTo(x - 5, L.axisH - 14); ctx.lineTo(x + 5, L.axisH - 14); ctx.lineTo(x, L.axisH - 7); ctx.closePath(); ctx.fill();
-    ctx.font = `600 12px ${T.sans}`; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    ctx.font = `600 ${TXT}px ${T.sans}`; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
     const t = fmtDay(this.day, { short: true });
     const w = ctx.measureText(t).width;
     ctx.fillStyle = T.stone; ctx.fillRect(x + 8, 4, w + 8, 16);
@@ -442,7 +484,7 @@ export class Timeline {
     const h = this.hover; if (!h) return;
     const ctx = this.ctx, T = this.tokens;
     if (h.kind === 'person') {
-      const s = h.span, y = L.fieldTop + (s.rank + 0.5) * L.laneH;
+      const s = h.span, y = this.fieldGeom(L).laneY(s.rank);
       const xa = Math.max(L.G, this.x(s.bLo)), xb = Math.min(L.W, this.x(s.dHi));
       ctx.strokeStyle = T.stone; ctx.lineWidth = 5; ctx.beginPath(); ctx.moveTo(xa, y); ctx.lineTo(Math.max(xb, xa + 2), y); ctx.stroke();
       ctx.strokeStyle = T.ink; ctx.lineWidth = 2.2; ctx.beginPath(); ctx.moveTo(xa, y); ctx.lineTo(Math.max(xb, xa + 2), y); ctx.stroke();
@@ -462,8 +504,10 @@ export class Timeline {
       if (x >= h.x0 && x <= h.x1 && y >= h.y0 && y <= h.y1) return h;
     }
     if (x > L.G && y >= L.fieldTop && y <= L.fieldTop + L.fieldH) {
-      const spans = this.D.spans, laneH = L.fieldH / spans.length;
-      const r = (y - L.fieldTop) / laneH, day = this.dayAt(x);
+      const spans = this.D.spans, F = this.fieldGeom(L), laneH = F.laneH;
+      let g = this.cohorts.length - 1;
+      while (g > 0 && F.cohortTop(g) > y) g--;
+      const r = (y - L.fieldTop - g * F.gap) / laneH, day = this.dayAt(x);
       const tol = Math.max(2, Math.ceil(3 / laneH));
       let best = null, bestD = Infinity;
       for (let i = Math.max(0, Math.floor(r - tol)); i <= Math.min(spans.length - 1, Math.ceil(r + tol)); i++) {
@@ -601,10 +645,15 @@ function statusWord(s, c) {
   if (c >= s.bHi && c <= s.dLo) return 'alive on the chosen date';
   return 'possibly alive on the chosen date (date known only to the year)';
 }
+// A label that does not fit is cut between words, never inside one, and only
+// if at least two whole words remain; failing that it is not drawn at all.
 function truncate(ctx, text, room) {
-  let lo = 0, hi = text.length;
-  while (lo < hi) { const mid = (lo + hi + 1) >> 1; if (ctx.measureText(text.slice(0, mid) + '…').width <= room) lo = mid; else hi = mid - 1; }
-  return lo > 6 ? text.slice(0, lo) + '…' : '';
+  const words = text.split(' ');
+  for (let k = words.length - 1; k >= 2; k--) {
+    const t = words.slice(0, k).join(' ').replace(/[,;:(]+$/, '') + '…';
+    if (ctx.measureText(t).width <= room) return t;
+  }
+  return '';
 }
 function clip(s, n) { return s.length > n ? s.slice(0, n - 1) + '…' : s; }
 export function esc(s) { return String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
@@ -616,7 +665,7 @@ function hexA(hex, a) {
 function readTokens() {
   const cs = getComputedStyle(document.documentElement);
   const v = (n) => cs.getPropertyValue(n).trim();
-  return { stone: v('--stone'), stone2: v('--stone-2'), paper: v('--paper'), ink: v('--ink'), ink2: v('--ink-2'), ink3: v('--ink-3'), rule: v('--rule'), now: v('--now'), lv: v('--lv'), hm: v('--hm'), pv: v('--pv'), hatchInk: v('--hatch-ink'), s1: v('--s1'), s2: v('--s2'), s3: v('--s3'), mute: v('--mute'), sans: v('--sans') || 'Helvetica, Arial, sans-serif' };
+  return { stone: v('--stone'), stone2: v('--stone-2'), paper: v('--paper'), ink: v('--ink'), ink2: v('--ink-2'), ink3: v('--ink-3'), rule: v('--rule'), now: v('--now'), lv: v('--lv'), hm: v('--hm'), pv: v('--pv'), absence: v('--absence'), hatchInk: v('--hatch-ink'), s1: v('--s1'), s2: v('--s2'), s3: v('--s3'), mute: v('--mute'), sans: v('--sans') || 'Helvetica, Arial, sans-serif' };
 }
 function makeHatch(color) {
   const s = 8, cv = document.createElement('canvas'); cv.width = s; cv.height = s;

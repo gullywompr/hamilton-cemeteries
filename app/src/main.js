@@ -79,8 +79,9 @@ async function main() {
   const flu = D.datedEvents.find(e => /Influenza pandemic peaks/.test(e.title)); if (flu) jumps.push({ label: 'Influenza, 1918', day: flu.iv.lo });
   const pv = D.datedEvents.find(e => /Pleasant Valley Cemetery established/.test(e.title)); if (pv) jumps.push({ label: 'Pleasant Valley opens', day: pv.iv.lo });
   const loves = D.family.lossesCemetery.find(c => c.plot === 'N-23'); if (loves) jumps.push({ label: 'The Loves, 1943', day: fromIso(loves.first_death) });
-  $('#jumps').innerHTML = jumps.map((j, i) => `<button class="chip" data-jump="${i}">${esc(j.label)}</button>`).join('');
-  $('#jumps').addEventListener('click', (e) => { const b = e.target.closest('[data-jump]'); if (b) tl.setDate(jumps[Number(b.dataset.jump)].day, true); });
+  // One menu, not a row of buttons, so the controls stay on one line.
+  $('#jumps').innerHTML = '<option value="">Jump to…</option>' + jumps.map((j, i) => `<option value="${i}">${esc(j.label)}</option>`).join('');
+  $('#jumps').addEventListener('change', (e) => { const j = jumps[Number(e.target.value)]; if (e.target.value !== '' && j) tl.setDate(j.day, true); e.target.value = ''; });
 
   // Layer toggles
   const layersEl = $('#tl-layers');

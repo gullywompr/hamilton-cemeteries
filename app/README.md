@@ -31,8 +31,10 @@ URL too: `#/record?tab=absent`.
 | `app/src/derive.js` | the derived computations of APP_SPEC §4: `interval`, `bounds`, `aliveOn`, `ageAt`, `aliveCount`, `familyOf`, and precision-honest formatting. Pure; tested. |
 | `app/src/data.js` | loads the JSON and builds indexes (the ranked field, the one-date strip, era lanes, deaths by day). |
 | `app/src/views.js` | People, Families, The record, 1853 map. |
+| `app/src/timeline.js` | the canvas: axis, event rows, population curve, the field of lives, the one-date strip, the strata. Pan, zoom, hover, pick. In the field a life not alive on the chosen date is drawn faint, and a thin gap falls where the birth decade changes (a decade with under 40 births joins the next), with the decade in the gutter; the gaps are added room, so no life is drawn over. |
 | `app/src/panels.js` | the cursor panel, the living list and the person drawer. The drawer's foot carries the card's link and the correction email (`CONTACT`); a correction that holds is recorded in `curation/`, never through the app. |
 | `app/src/count.js` | visit counts for the owner, sent to GoatCounter: the page opened and the card opened, nothing typed and no date. Off until `SITE` holds the site code; never counts from localhost. |
+| `app/fonts/` | DejaVu Serif, regular and bold, the films' serif: subset to Latin from the copies matplotlib ships, with its licence. Used for titles and big numbers because its figures stand at one height; Georgia's do not. |
 | `app/og.png` | the 1200 × 630 image a posted link shows: a screenshot of the timeline at 1 July 1927. Retake it if the timeline's look changes. |
 | `app/src/main.js` | wiring, search, hash router. |
 | `test/` | `derive.test.mjs` (rules) and `acceptance.test.mjs` (every value in APP_SPEC §9 as corrected by CLAUDE.md, plus the living-population curve on people for all 273 years). The build itself checks that the records reproduce `timeline_population.csv` and stops if any year differs. |
@@ -143,8 +145,11 @@ above every title, narration in parchment with one bold run that carries the
 point, and a `SOURCE` line naming the file at the foot of every view, panel
 and chart. The three series colours take the film's roles: blue `#3987e5`
 for Lakeview and the measured curve, green `#199e70` for Harmony and for
-resolution (the medical events), orange `#d95926` for Pleasant Valley, the
-chosen date and every gap in the record. Grey `#55544f` is only ever "present
+resolution (the medical events), orange `#d95926` for the chosen date, the
+kicker and the callout rule. Orange is the accent and names no category:
+Pleasant Valley takes the palette's fourth colour, amber `#e8a33d`, and
+anything hatched as a gap in the record is edged in the palette's
+"not recorded" grey, `#7b7a74`. Grey `#55544f` is only ever "present
 but not the subject". Every token is declared at the top of `styles.css` and
 the canvas reads the same tokens. There is no light mode; the films have
 none.

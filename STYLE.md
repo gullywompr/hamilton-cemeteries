@@ -56,6 +56,27 @@ colours outside this list.
 to `S1` to separate in a legend. If a category set needs two blues, use `S1`
 and `#9ecbf5`, never an intermediate.
 
+### In the app: orange is the accent and names no category
+
+Decided 10 Nov 2026. In the films `S2` could be both the accent and a series,
+because a scene showed one or the other. The app's timeline shows both at
+once, and orange had come to mean the chosen date, the kicker, Pleasant
+Valley and the edge of every gap in the record. It now has one job.
+
+| what | colour |
+|---|---|
+| the chosen date, the kicker, the callout rule, the selected tab, focus | `S2` `#d95926` |
+| Lakeview | `S1` `#3987e5` |
+| Harmony | `S3` `#199e70` |
+| Pleasant Valley | amber `#e8a33d`, the fourth category |
+| the edge of anything hatched as a gap in the record | grey `#7b7a74`, "not recorded" |
+
+Do not give a cemetery, or any other category on the timeline, the accent's
+colour, and do not move Pleasant Valley back to `S2` to restore the
+three-primaries order. Away from the timeline, a chart with no chosen date on
+it may still use `S2` as its second series, as the films do, provided the
+series is labelled.
+
 ### Narration
 
 Foot-of-scene prose is deliberately **not** the same ink as chart labels, so
@@ -79,8 +100,11 @@ SANS  = "DejaVu Sans", Helvetica, Arial, sans-serif
 ```
 
 Serif is used **only** for scene titles and big numbers. Everything else is
-sans. The films were rendered headless, which is why DejaVu leads — on the web,
-Georgia and a system sans stack are the right substitutes.
+sans. The films were rendered headless, which is why DejaVu leads. On the web a
+system sans stack is the right substitute for the sans. The serif is not
+substituted: the app ships DejaVu Serif itself (`app/fonts/`, 10 Nov 2026),
+because Georgia sets old-style figures, which stand at uneven heights and turn
+a zero into a letter o in a big number. Georgia is the fallback only.
 
 | role | size | font | weight | colour |
 |---|---|---|---|---|
@@ -190,39 +214,23 @@ lets the data carry it.
 
 Match that. Where a fact is sad, state it plainly and let it be sad.
 
-### The closing line
+### The closing line — WRITTEN, THEN RETIRED. DO NOT USE.
 
-The project's own, written by the owner. Use it verbatim where a closing
-statement is wanted; do not paraphrase it and do not write a variant.
+A closing line was drafted for the project and then deliberately dropped:
 
 > The town had arranged its residents categorically, in life and in the
-> ground, but eternity places us equal.
+> ground, but eternity places us as equals.
 
-"Categorically" carries both senses on purpose — the town sorted people into
-categories, and it did so absolutely. The chill in the word is intended: the
-sorting really was clerical, done in separate enumeration districts and
-separate grounds.
+**It is not used anywhere and should not be added.** The owner's judgement,
+and it is right: the app's voice is evidentiary throughout — a source line on
+every view, `n` beneath every median, a section devoted to who the record
+omits — and a closing metaphysical assertion is a change of genre. In a tabbed
+interface it has no natural place, so wherever it were put it would read as
+the product telling the reader what to feel.
 
-"Eternity places us equal" is set wording. "Places us equal" is a deliberate
-non-standard construction — do not regularise it to "as equals". The verb
-echoes "had arranged": the town arranged its residents and eternity places
-them, two acts of positioning, and eternity's is the true one. Do not change
-it to "now". The claim is
-not that death corrected the arrangement; it is that the arrangement was never
-the real one, viewed from outside time. The present tense follows from that and
-is also not optional.
+The point it makes is already carried by the evidence: a thirteen-year gap in
+years lived, narrowing to undetectable, sitting beside a section on who is
+missing from the record. Stating the moral on top of that is weaker than
+letting it stand.
 
-The first person is deliberate and must not be changed to "they". The sentence
-includes the speaker and the reader rather than passing a verdict on the dead,
-which is the whole reason it can follow a film that spent its length sorting
-people into categories.
-
----
-
-## Reference implementations
-
-`reference/film_timeline.html` and `reference/film_epidemics.html` are
-single-file canvas renderers, roughly 300–450 lines each, with every token
-above declared at the top. They are the ground truth for anything ambiguous
-here. The palette descends from a validated dark-mode dataviz instance —
-`#3987e5` / `#d95926` / `#199e70` on `#1a1a19`.
+Recorded here so it is not rediscovered and installed in good faith.

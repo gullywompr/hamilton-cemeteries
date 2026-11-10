@@ -129,8 +129,8 @@ function marriagesFigure(ms) {
 // The record
 // ---------------------------------------------------------------------------
 const RECORD_TABS = [
-  ['burials', 'Burials by decade'], ['causes', 'Causes of death'], ['work', 'Work'], ['absent', 'Who is not here'], ['longevity', 'Years lived'], ['naming', 'How the stones name people'],
-  ['papers', 'Newspapers'], ['leads', 'Leads'], ['check', 'Self-check'],
+  ['burials', 'Burials by decade'], ['causes', 'Causes of death'], ['work', 'Work'], ['absent', 'Who is not here'], ['longevity', 'Years lived'], ['naming', 'Names on the stones'],
+  ['papers', 'Newspapers'], ['leads', 'Leads'], ['check', 'Counting and self-check'],
 ];
 export function renderRecord(el, D, ctx, params = {}) {
   const S = D.summary, C = D.context, R = D.register, L = D.leads;
@@ -138,8 +138,8 @@ export function renderRecord(el, D, ctx, params = {}) {
   el.innerHTML = `
     <h1 data-k="What the sources contain, and where they stop">The record</h1>
     <p class="lede">What the sources contain, where they fall silent, and what the app is therefore allowed to say. Three kinds of thing appear in this app and they rest on different evidence: a documented person, a measured count, and an absence of record.</p>
-    <div class="stat-row">
-      <div class="stat"><div class="v">${n(S.people)}</div><div class="k">people, in ${n(S.records.rows)} records each traced to a source</div></div>
+    <div class="stat-row lead">
+      <div class="stat"><div class="v">${n(S.people)}</div><div class="k">people, in ${n(S.records.rows)} records each traced to a source. <a href="#/record?tab=check">Why the two differ</a></div></div>
       <div class="stat"><div class="v">${n(S.usable.yes)}</div><div class="k">placeable from birth to death</div></div>
       <div class="stat"><div class="v">${n(S.stone)}</div><div class="k">Lakeview stones read in 1948; none recorded for Harmony or Pleasant Valley</div></div>
       <div class="stat"><div class="v">${n(S.censusMatched)}</div><div class="k">matched to at least one census</div></div>
@@ -147,7 +147,6 @@ export function renderRecord(el, D, ctx, params = {}) {
       <div class="stat"><div class="v">${n(S.disputed)}</div><div class="k">with a disputed date, both readings kept</div></div>
     </div>
 
-    <p class="prose small-prose">${n(S.folded)} records are the same person entered twice, once from each source, under a spelling variant or a maiden and a married name. The project's owner confirmed each pair on 29 October 2026; the app counts ${n(S.mergedPeople)} people once each and keeps every record in the data. ${n(S.maybePairs)} further pairs could not be confirmed and are counted separately, each naming the other. ${n(S.unresolvedPairs)} more are unresolved: a record with only a birth date, where that date is the death date of a record with a closely matching name, as though a death had been entered as a birth. They too are counted separately and name each other. The decisions are in <code>curation/duplicates.csv</code>. ${n(S.unresolvedRecords)} single records are unresolved for a like reason: the 1948 stone reading gives, as a death with an age at death, the date the record gives as a birth (<code>curation/unresolved.csv</code>).</p>
     <div class="tabs" role="tablist" aria-label="Sections of the record">${RECORD_TABS.map(([k, label]) => `<button class="tab" role="tab" id="rtab-${k}" data-tab="${k}" aria-selected="false" aria-controls="rt-${k}" tabindex="-1">${label}</button>`).join('')}</div>
 
     <section class="tab-panel" id="rt-burials" role="tabpanel" aria-labelledby="rtab-burials" hidden>
@@ -224,6 +223,8 @@ export function renderRecord(el, D, ctx, params = {}) {
     <div class="source"><span>SOURCE</span>lost_stones.csv · candidate_missing_burials.csv · context_events.csv, rows with no date</div>
     </section>
     <section class="tab-panel" id="rt-check" role="tabpanel" aria-labelledby="rtab-check" hidden>
+    <h2 data-k="${n(S.records.rows)} records · ${n(S.people)} people">Records and people</h2>
+    <p class="prose">${n(S.folded)} records are the same person entered twice, once from each source, under a spelling variant or a maiden and a married name. The project's owner confirmed each pair on 29 October 2026; the app counts ${n(S.mergedPeople)} people once each and keeps every record in the data. ${n(S.maybePairs)} further pairs could not be confirmed and are counted separately, each naming the other. ${n(S.unresolvedPairs)} more are unresolved: a record with only a birth date, where that date is the death date of a record with a closely matching name, as though a death had been entered as a birth. They too are counted separately and name each other. The decisions are in <code>curation/duplicates.csv</code>. ${n(S.unresolvedRecords)} single records are unresolved for a like reason: the 1948 stone reading gives, as a death with an age at death, the date the record gives as a birth (<code>curation/unresolved.csv</code>).</p>
     <h2 data-k="APP_SPEC.md §9, as corrected by CLAUDE.md">Self-check against the specification</h2>
     <p class="prose small">Known-correct values from APP_SPEC.md §9 as corrected by CLAUDE.md, computed from the data this page is running on.</p>
     ${selfCheck(D)}
@@ -312,7 +313,7 @@ function widowhoodSection(Wd, spouseNamed) {
   const mx = Math.max(...Wd.buckets.map(b => b.n)), W = 900, x0 = 170, x1 = 640, dy = 34, T = 16;
   const H = T + Wd.buckets.length * dy + 10, X = v => x0 + (x1 - x0) * v / mx;
   const fig = `<div class="figure"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Couples by years between the two deaths">
-    ${Wd.buckets.map((b, i) => { const y = T + i * dy + dy / 2, long = b.lo >= 20, col = long ? 'var(--s2)' : 'var(--s1)';
+    ${Wd.buckets.map((b, i) => { const y = T + i * dy + dy / 2, long = b.lo >= 20, col = 'var(--s1)';   // the long spans are marked by the brighter label, not by a second colour
       return `<text x="${x0 - 16}" y="${y + 4}" font-size="13.5" text-anchor="end" fill="${long ? 'var(--ink)' : 'var(--ink-2)'}">${b.label}</text>
         <line x1="${X(0)}" x2="${X(b.n)}" y1="${y}" y2="${y}" stroke="${col}" stroke-width="2.5"/><circle cx="${X(b.n)}" cy="${y}" r="6" fill="${col}" stroke="var(--stone)" stroke-width="2"/>
         <text x="${X(b.n) + 14}" y="${y + 5}" font-size="14" font-weight="700" fill="${col}">${b.n}</text><text x="${X(b.n) + 42}" y="${y + 5}" font-size="13" fill="var(--ink-3)">couples</text>`; }).join('')}
@@ -439,7 +440,7 @@ function burialsFigure(perDecade, docEras, D) {
     ${[0, 100, 200].map(v => `<line x1="${L}" x2="${W - R}" y1="${yy(v)}" y2="${yy(v)}" stroke="var(--rule)"/><text x="${L - 6}" y="${yy(v) + 4}" font-size="11" text-anchor="end" fill="var(--ink-2)">${v}</text>`).join('')}
     ${decades.map(d => { const v = perDecade[d] || 0; return `<rect x="${x(d) + 1}" y="${yy(v)}" width="${bw}" height="${yy(0) - yy(v)}" fill="var(--s1)" rx="2"><title>${d}s: ${v} burials</title></rect>${v ? `<text x="${x(d) + 1 + bw / 2}" y="${yy(v) - 5}" font-size="11" font-weight="700" text-anchor="middle" fill="var(--ink)">${v}</text>` : ''}`; }).join('')}
     ${decades.filter(d => d % 50 === 0).map(d => `<text x="${x(d) + 1}" y="${yy(0) + 14}" font-size="11" fill="var(--ink-2)">${d}</text>`).join('')}
-    ${laneOf.map(({ e, k, lo, hi }) => { const y = yy(0) + 22 + k * 11; const abs = D.absenceEraIds.has(e.id); return `<rect x="${x(lo)}" y="${y}" width="${x(Math.min(hi, 2030)) - x(lo)}" height="9" fill="${abs ? 'url(#hatch)' : 'var(--mute)'}" stroke="${abs ? 'var(--s2)' : 'none'}"><title>${esc(e.label)}: ${esc(e.basis)}</title></rect>`; }).join('')}
+    ${laneOf.map(({ e, k, lo, hi }) => { const y = yy(0) + 22 + k * 11; const abs = D.absenceEraIds.has(e.id); return `<rect x="${x(lo)}" y="${y}" width="${x(Math.min(hi, 2030)) - x(lo)}" height="9" fill="${abs ? 'url(#hatch)' : 'var(--mute)'}" stroke="${abs ? 'var(--absence)' : 'none'}"><title>${esc(e.label)}: ${esc(e.basis)}</title></rect>`; }).join('')}
     <text x="${L}" y="${yy(0) + 22 + lanes.length * 11 + 10}" font-size="11" fill="var(--ink-2)">documentation eras beneath; hatched bands are gaps in the sources</text>
   </svg><div class="cap">Deaths per decade among the ${n(D.people.length)} people, from timeline_people.csv. <b>A measured count of records, not of deaths in the town.</b></div><div class="source"><span>SOURCE</span>timeline_people.csv, death year · context_eras.csv, documentation layer</div></div>`;
 }

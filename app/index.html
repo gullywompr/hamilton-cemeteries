@@ -45,12 +45,13 @@
 
   <section id="view-timeline" class="view" hidden>
     <div class="tl" id="tl">
-      <canvas id="tl-canvas" role="img" aria-label="A scrolling timeline, 1754 to 2026. Each placeable person is a thin line from birth to death; the red line is the chosen date."></canvas>
+      <canvas id="tl-canvas" role="img" aria-label="A scrolling timeline, 1754 to 2026. Each placeable person is a thin line from birth to death, in order of birth, faint if not alive on the chosen date; the red line is the chosen date."></canvas>
       <div id="tl-tip" class="tip" hidden></div>
     </div>
     <div class="tl-bar">
       <div class="tl-legend" aria-label="How to read the marks">
         <span class="lg lg-person"><i></i>a documented person</span>
+        <span class="lg lg-faint"><i></i>not alive on the chosen date</span>
         <span class="lg lg-measure"><i></i>a measured count</span>
         <span class="lg lg-absence"><i></i>no surviving record</span>
         <div class="source"><span>SOURCE</span>timeline_people.csv · timeline_population.csv · context_events.csv · context_eras.csv</div>
@@ -65,11 +66,11 @@
           <button class="btn" id="btn-zoom-in" aria-label="Zoom in">+</button>
           <button class="btn btn-text" id="btn-zoom-all" title="Show all 272 years">All</button>
         </span>
-        <div class="jumps" id="jumps"></div>
-      </div>
-      <div class="tl-opts">
-        <button class="btn btn-text" id="btn-detail" aria-pressed="false" title="Give every event layer and every stratum its own row">Detail</button>
-        <button class="btn btn-text" id="btn-layers" aria-expanded="false" aria-controls="tl-layers">Layers</button>
+        <select class="jumps" id="jumps" aria-label="Jump to a notable date"></select>
+        <div class="tl-opts">
+          <button class="btn btn-text" id="btn-detail" aria-pressed="false" title="Give every event layer and every stratum its own row">Detail</button>
+          <button class="btn btn-text" id="btn-layers" aria-expanded="false" aria-controls="tl-layers">Layers</button>
+        </div>
       </div>
       <div class="tl-layers" id="tl-layers" hidden></div>
     </div>
