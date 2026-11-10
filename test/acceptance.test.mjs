@@ -58,6 +58,19 @@ test('the site header states the people count', () => {
   assert.match(html, new RegExp(`Three cemeteries, ${people.length.toLocaleString('en-US')} people`));
 });
 
+test('no decision date is typed into the app: each comes from curation/', () => {
+  const month = '(January|February|March|April|May|June|July|August|September|October|November|December)';
+  for (const f of ['main.js', 'panels.js', 'views.js', 'timeline.js', 'data.js', 'derive.js']) {
+    const src = readFileSync(new URL(`../app/src/${f}`, import.meta.url), 'utf8');
+    assert.equal(src.match(new RegExp(`[0-9]{1,2} ${month} 202[0-9]`, 'g')), null, `${f} states a 202x date in its own words`);
+  }
+  for (const p of people) {
+    for (const a of p.aka) assert.match(a.decided, /^\d{4}-\d{2}-\d{2}$/, `${p.id} aka ${a.id}`);
+    if (p.c1870) assert.match(p.c1870.decided, /^\d{4}-\d{2}-\d{2}$/, `${p.id} 1870`);
+    for (const s of Object.values(p.ss || {})) assert.match(s.decided, /^\d{4}-\d{2}-\d{2}$/, `${p.id} schedule`);
+  }
+});
+
 test('the link preview states the same people count and its image ships', () => {
   const html = readFileSync(new URL('../app/index.html', import.meta.url), 'utf8');
   const n = people.length.toLocaleString('en-US');
@@ -372,4 +385,28 @@ test('1850 and 1860 slave schedules: owner-adopted readings (curation/slave_sche
   const L = load('leads.json').slaveSchedules;
   assert.deepEqual([L[1860].searched, L[1860].surnames, L[1860].held], [207, 101, 11]);
   assert.deepEqual([L[1850].searched, L[1850].surnames, L[1850].held], [141, 72, 10]);
+});
+
+// The "Jump to…" menu finds each date by a row's title or plot. A reworded
+// title would drop the jump from the menu without a word, so every jump is
+// checked here against the built data.
+test('every jump in the menu still finds its date, and the date its label names', async () => {
+  const { buildJumps } = await import('../app/src/jumps.js');
+  const { isoOf } = await import('../app/src/derive.js');
+  const D = { population: load('population.json'), events: load('events.json'), family: load('family.json') };
+  const jumps = buildJumps(D);
+  assert.equal(jumps.length, 7);
+  for (const j of jumps) assert.notEqual(j.day, null, `"${j.label}" no longer finds its row in the data`);
+  const at = Object.fromEntries(jumps.map(j => [j.label, isoOf(j.day)]));
+  // a year in the label is the year the jump lands in
+  for (const [label, iso] of Object.entries(at)) {
+    const y = /\b(1[789]\d\d|20\d\d)\b/.exec(label);
+    if (y) assert.equal(iso.slice(0, 4), y[1], `"${label}" lands on ${iso}`);
+  }
+  assert.equal(at['1927, the peak'], '1927-07-01');                 // CLAUDE.md: 1927 is the peak
+  assert.equal(at['The Burning Raid'].slice(0, 7), '1864-11');      // the raid began 28 November 1864
+  assert.equal(at['Pleasant Valley opens'].slice(0, 4), '1922');    // CLAUDE.md: Pleasant Valley opened in 1922
+  // a row reworded in data/ is reported, not skipped
+  const reworded = { ...D, events: D.events.map(e => ({ ...e, title: e.title.replace('Burning Raid begins', 'The raid starts') })) };
+  assert.equal(buildJumps(reworded).find(j => j.label === 'The Burning Raid').day, null);
 });

@@ -121,13 +121,17 @@ const records = peopleRows.map(r => {
 const dupRows = readCsv(join(ROOT, 'curation', 'duplicates.csv'));
 const recById = new Map(records.map(p => [p.id, p]));
 const KEEP = new Map();           // folded record id -> kept record id
+const DECIDED = new Map();        // folded record id -> the day the owner confirmed it
+// Every decision the app repeats carries the day it was made, from the file
+// that records it; no page states a decision date of its own.
+const decidedDay = (file, row) => { if (!/^\d{4}-\d{2}-\d{2}$/.test(row.decided || '')) throw new Error(`${file}: no decision day for ${row.person_id || row.a_id}`); return row.decided; };
 for (const d of dupRows) {
   if (d.verdict !== 'same person') continue;
   if (!recById.has(d.a_id) || !recById.has(d.b_id) || !recById.has(d.keep)) throw new Error(`duplicates.csv: unknown id in ${d.a_id}-${d.b_id}`);
   if (d.keep !== d.a_id && d.keep !== d.b_id && !KEEP.has(d.a_id) && !KEEP.has(d.b_id)) throw new Error(`duplicates.csv: keep ${d.keep} is in neither ${d.a_id} nor ${d.b_id}`);
   for (const x of [d.a_id, d.b_id]) if (x !== d.keep) {
     if (KEEP.has(x) && KEEP.get(x) !== d.keep) throw new Error(`duplicates.csv: ${x} kept as two different people`);
-    KEEP.set(x, d.keep);
+    KEEP.set(x, d.keep); DECIDED.set(x, decidedDay('duplicates.csv', d));
   }
 }
 for (const k of new Set(KEEP.values())) if (KEEP.has(k)) throw new Error(`duplicates.csv: kept record ${k} is itself folded`);
@@ -139,7 +143,7 @@ const personById = new Map(people.map(p => [p.id, p]));
 for (const r of records) {
   if (!FOLDED.has(r.id)) continue;
   const p = personById.get(canon(r.id));
-  p.aka.push({ id: r.id, name: r.name, src: r.src, bd: r.bd, dd: r.dd, plot: r.plot, stone: r.stone });
+  p.aka.push({ id: r.id, name: r.name, src: r.src, bd: r.bd, dd: r.dd, plot: r.plot, stone: r.stone, decided: DECIDED.get(r.id) });
   for (const k of FILL) if (!p[k] && r[k]) p[k] = r[k];
   if (!p.stone && r.stone) p.stoneOpen = r.stoneOpen;
   if (!p.vet && r.vet) p.vet = true;
@@ -227,7 +231,7 @@ for (const c of c1870Rows) {
   const p = personById.get(canon(c.person_id));
   if (!p) throw new Error(`census_1870_links.csv: unknown id ${c.person_id}`);
   if (!['strong', 'probable'].includes(c.verdict)) throw new Error(`census_1870_links.csv: verdict ${c.verdict} for ${c.person_id}`);
-  p.c1870 = { name: c.census_name, age: int(c.census_age), image: int(c.image), verdict: c.verdict, basis: c.basis.replace(/^New(, not in the first list)?\. /, '').replace(/\.$/, ''), hh: c.household_id, with: [] };
+  p.c1870 = { name: c.census_name, age: int(c.census_age), image: int(c.image), verdict: c.verdict, decided: decidedDay('census_1870_links.csv', c), basis: c.basis.replace(/^New(, not in the first list)?\. /, '').replace(/\.$/, ''), hh: c.household_id, with: [] };
 }
 for (const c of c1870Rows) {
   const p = personById.get(canon(c.person_id));
@@ -257,7 +261,7 @@ function slaveSchedule(year, film, expect) {
     if (!p) throw new Error(`${file}: unknown id ${s.person_id}`);
     if (!['owner', 'hirer'].includes(s.role)) throw new Error(`${file}: role ${s.role} for ${s.person_id}`);
     if (!['strong', 'probable'].includes(s.verdict)) throw new Error(`${file}: verdict ${s.verdict} for ${s.person_id}`);
-    (p.ss ??= {})[year] = { role: s.role, as: s.schedule_name, people: ssPeople(s.people), alt: ssPeople(s.other_reading), film, image: int(s.image), page: s.page ? int(s.page) : null, district: s.district, enumerated: s.enumerated, verdict: s.verdict, basis: s.basis.replace(/\.$/, '') };
+    (p.ss ??= {})[year] = { role: s.role, as: s.schedule_name, people: ssPeople(s.people), alt: ssPeople(s.other_reading), film, image: int(s.image), page: s.page ? int(s.page) : null, district: s.district, enumerated: s.enumerated, verdict: s.verdict, decided: decidedDay(file, s), basis: s.basis.replace(/\.$/, '') };
   }
   const owners = rows.filter(s => s.role === 'owner');
   const held = owners.reduce((n, s) => n + ssPeople(s.people).length, 0);
@@ -562,7 +566,7 @@ const recSummary = (list) => ({
 });
 write('summary.json', {
   built: new Date().toISOString(),
-  records: recSummary(records), folded: FOLDED.size, mergedPeople: count(people, p => p.aka.length), maybePairs: count(dupRows, d => d.verdict === 'not sure'), unresolvedPairs: count(dupRows, d => d.verdict === 'unresolved'), unresolvedRecords: unresolvedRows.length,
+  records: recSummary(records), folded: FOLDED.size, duplicatesDecided: [...new Set(dupRows.map(d => decidedDay('duplicates.csv', d)))].sort(), mergedPeople: count(people, p => p.aka.length), maybePairs: count(dupRows, d => d.verdict === 'not sure'), unresolvedPairs: count(dupRows, d => d.verdict === 'unresolved'), unresolvedRecords: unresolvedRows.length,
   people: people.length,
   usable: { yes: count(people, p => p.use === 'yes'), no: count(people, p => p.use === 'no'), deathOnly: count(people, p => p.use === 'death-only'), birthOnly: count(people, p => p.use === 'birth-only') },
   cemeteries: { L: count(people, p => p.cem === 'L'), H: count(people, p => p.cem === 'H'), P: count(people, p => p.cem === 'P') },

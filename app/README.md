@@ -36,6 +36,7 @@ URL too: `#/record?tab=absent`.
 | `app/src/count.js` | visit counts for the owner, sent to GoatCounter: the page opened and the card opened, nothing typed and no date. Off until `SITE` holds the site code; never counts from localhost. |
 | `app/fonts/` | DejaVu Serif, regular and bold, the films' serif: subset to Latin from the copies matplotlib ships, with its licence. Used for titles and big numbers because its figures stand at one height; Georgia's do not. |
 | `app/og.png` | the 1200 × 630 image a posted link shows: a screenshot of the timeline at 1 July 1927. Retake it if the timeline's look changes. |
+| `app/src/jumps.js` | the "Jump to…" menu's seven dates, each found in the data by a row's title or plot. Tested: a row reworded in `data/` fails the acceptance test instead of quietly dropping its jump. |
 | `app/src/main.js` | wiring, search, hash router. |
 | `test/` | `derive.test.mjs` (rules) and `acceptance.test.mjs` (every value in APP_SPEC §9 as corrected by CLAUDE.md, plus the living-population curve on people for all 273 years). The build itself checks that the records reproduce `timeline_population.csv` and stops if any year differs. |
 

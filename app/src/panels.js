@@ -265,7 +265,7 @@ export class Drawer {
 
     const c70 = p.c1870;
     const census1870 = c70 ? `<p class="small"><b>1870</b> · listed at Hamilton post office as <b>${esc(c70.name)}</b>, ${c70.age === 0 ? 'under one year old' : `aged ${c70.age}`}${c70.with.length ? `, in a household with ${c70.with.map(w => `<a href="#/person/${w.id}" data-person="${w.id}">${esc(w.as)}</a> (${w.age === 0 ? 'under one' : w.age})`).join(', ')}` : ''}. <span class="tag">${c70.verdict === 'strong' ? 'strong match' : 'probable match'}</span></p>
-      <div class="stone-note">${esc(c70.basis)}. ${c70.verdict === 'strong' ? 'A strong match has the age and a second tie: a household member in the same plot, or a named relative.' : 'A probable match has a name and an age that agree, and nothing else ties them; it may be someone else of the same name.'} Matched by the project from FamilySearch's index of the 1870 census, Loudoun, film image ${c70.image}; adopted by the project's owner on 31 October 2026.</div>` : '';
+      <div class="stone-note">${esc(c70.basis)}. ${c70.verdict === 'strong' ? 'A strong match has the age and a second tie: a household member in the same plot, or a named relative.' : 'A probable match has a name and an age that agree, and nothing else ties them; it may be someone else of the same name.'} Matched by the project from FamilySearch's index of the 1870 census, Loudoun, film image ${c70.image}; adopted by the project's owner on ${fmtDate(c70.decided, 'day')}.</div>` : '';
 
     // The 1860 slave schedule: the people on the line are given as the
     // schedule gives them, sex and age, because that is all it recorded.
@@ -277,9 +277,9 @@ export class Drawer {
       const tag = `<span class="tag">${ss.verdict === 'strong' ? 'strong match' : 'probable match'}</span>`;
       return ss.role === 'owner'
         ? `<p class="small"><b>${year}</b> · ${where}, listed as <b>${esc(ss.as)}</b>, with ${ssNum[ss.people.length]} enslaved ${ss.people.length === 1 ? 'person' : 'people'}: ${ss.people.map(ssWho).join('; ')}. ${tag}</p>
-      <div class="stone-note">The schedule gave enslaved people no names, only age, sex and colour. ${ss.people.length === 1 ? 'The person listed is' : `None of the ${ssNum[ss.people.length]} is`} named anywhere in these cemeteries' records. Read by the project on the page (${page}). ${esc(ss.basis)}. Adopted by the project's owner on 31 October 2026.</div>`
+      <div class="stone-note">The schedule gave enslaved people no names, only age, sex and colour. ${ss.people.length === 1 ? 'The person listed is' : `None of the ${ssNum[ss.people.length]} is`} named anywhere in these cemeteries' records. Read by the project on the page (${page}). ${esc(ss.basis)}. Adopted by the project's owner on ${fmtDate(ss.decided, 'day')}.</div>`
         : `<p class="small"><b>${year}</b> · ${where}, listed as <b>${esc(ss.as)} Emp</b>, an employer who hired an enslaved person held by someone else: ${ss.people.length ? `${ss.people.map(ssWho).join('; ')}${ss.alt.length ? `, or, if the page's pairing of employer and owner is read the other way, ${ss.alt.map(ssWho).join(' and ')}` : ''}` : 'the person hired is not legible at the resolution read'}. The schedule does not list ${esc(ss.as)} as an owner. ${tag}</p>
-      <div class="stone-note">The schedule's pages around Hamilton record many such hires. The schedule gave the person hired no name, and owners who are not buried here are not named. Read by the project on the page (${page}). ${esc(ss.basis)}. Adopted by the project's owner on 31 October 2026.</div>`;
+      <div class="stone-note">The schedule's pages around Hamilton record many such hires. The schedule gave the person hired no name, and owners who are not buried here are not named. Read by the project on the page (${page}). ${esc(ss.basis)}. Adopted by the project's owner on ${fmtDate(ss.decided, 'day')}.</div>`;
     };
     const census1860 = p.ss ? Object.keys(p.ss).sort().map(y => ssLine(y, p.ss[y])).join('') : '';
 
@@ -304,7 +304,7 @@ export class Drawer {
       ${censusRows || census1870 || census1860 ? `<div class="sec"><h3>In the census</h3>${census1860}${census1870}${censusRows}</div>` : ''}
       ${news.length ? `<div class="sec"><h3>In the newspapers</h3>${news.map(f => `<div class="finding">${esc(f.quoted_snippet)}<div class="ft">${esc(f.source)}; ${esc(f.verdict)}. ${esc(f.new_fact)}</div></div>`).join('')}</div>` : ''}
       ${findings.length ? `<div class="sec"><h3>Corrections and verified findings</h3>${findings.map(f => `<div class="finding">${esc(f.finding_type.replace(/_/g, ' '))}: ${f.was ? `<span class="muted">was</span> ${esc(f.was)} <span class="muted">now</span> ` : ''}${esc(f.now)}<div class="ft">${esc(f.note)}${f.source_ark ? ` (ARK ${esc(f.source_ark)})` : ''}</div></div>`).join('')}</div>` : ''}
-      ${p.aka.length ? `<div class="sec"><h3>Also recorded as</h3>${p.aka.map(a => `<p class="small"><b>${esc(a.name)}</b> <span class="muted">${a.id} · ${esc(sourcesWords(a.src))}${a.plot ? ` · plot ${esc(a.plot)}` : ''} · ${esc(a.bd || '?')} to ${esc(a.dd || '?')}</span>${a.stone && a.stone !== p.stone ? `<br><span class="stone-line">${esc(a.stone)}</span>` : ''}</p>`).join('')}<p class="stone-note">The same person entered twice in the sources, confirmed by the project's owner on 29 October 2026 (curation/duplicates.csv). Counted once everywhere in this app; both records are kept in the data.</p></div>` : ''}
+      ${p.aka.length ? `<div class="sec"><h3>Also recorded as</h3>${p.aka.map(a => `<p class="small"><b>${esc(a.name)}</b> <span class="muted">${a.id} · ${esc(sourcesWords(a.src))}${a.plot ? ` · plot ${esc(a.plot)}` : ''} · ${esc(a.bd || '?')} to ${esc(a.dd || '?')}</span>${a.stone && a.stone !== p.stone ? `<br><span class="stone-line">${esc(a.stone)}</span>` : ''}</p>`).join('')}<p class="stone-note">The same person entered twice in the sources, confirmed by the project's owner ${decidedWords(p.aka.map(a => a.decided))} (curation/duplicates.csv). Counted once everywhere in this app; both records are kept in the data.</p></div>` : ''}
       ${p.maybe.length ? `<div class="sec"><h3>Possibly the same person as</h3>${p.maybe.map(m => `<p class="small"><a href="#/person/${m.id}" data-person="${m.id}">${esc(m.name)}</a> <span class="muted">${m.id}</span></p>`).join('')}${[...new Set(p.maybe.map(m => m.why))].map(w => `<p class="stone-note">${MAYBE_WORDS[w]}</p>`).join('')}</div>` : ''}
       ${(p.corrected || []).map(c => `<div class="sec"><h3>Date corrected</h3><p class="stone-note">The cemetery record gives the ${c.field} as ${esc(c.recorded)}. The death certificate gives ${esc(c.nowP ? fmtDate(c.now, c.nowP) : c.now)}, and the project's owner adopted it on ${esc(fmtDate(c.decided, 'day'))}. ${esc(c.basis)} <a href="${esc(c.source)}" rel="noopener">The certificate</a>.</p></div>`).join('')}
       ${p.cert ? `<div class="sec"><h3>Death certificate</h3><p class="stone-note">The Virginia death certificate${p.cert.name !== p.name ? ` names ${esc(p.cert.name)}` : ''}.${p.cert.burial ? ` Burial, as written: ${esc(p.cert.burial)}.` : ''}${p.cert.cause ? ` Cause, as written: ${esc(p.cert.cause)}.` : ''} <a href="${esc(p.cert.record)}" rel="noopener">The certificate</a>.</p></div>` : ''}
@@ -336,6 +336,12 @@ const MAYBE_WORDS = {
 // described as possibly living.
 const noteWords = (p) => p.unresolved === 'stone-gives-death' ? 'no death year on this record, though its 1948 stone reading records a death' : NOTE_WORDS[p.note] || p.note;
 const NOTE_WORDS = { 'death precedes birth': 'the recorded dates conflict, with the death date before the birth date, and neither is treated as correct' };
+// "on" the one day, or "between … and …" where the decisions were made on more than one day.
+export function decidedWords(days) {
+  const d = [...new Set(days.filter(Boolean))].sort();
+  if (!d.length) return '';
+  return d.length === 1 ? `on ${fmtDate(d[0], 'day')}` : `between ${fmtDate(d[0], 'day')} and ${fmtDate(d.at(-1), 'day')}`;
+}
 function shortSpan(p) {
   const b = p.by ?? '', d = p.dy ?? '';
   return b || d ? `${b}–${d}` : '';

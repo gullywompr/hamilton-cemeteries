@@ -6,6 +6,7 @@ import { Timeline, esc } from './timeline.js';
 import { CursorPanel, LivingList, Drawer, computeLiving } from './panels.js';
 import { renderPeople, renderFamilies, renderRecord, renderMap } from './views.js';
 import { countView } from './count.js';
+import { buildJumps } from './jumps.js';
 import { dayOf, isoOf, fromIso, fmtDay, yearStart, lifeSpan, CEMETERY_NAME } from './derive.js';
 
 const $ = (s) => document.querySelector(s);
@@ -69,16 +70,9 @@ async function main() {
   $('#btn-zoom-out').addEventListener('click', () => tl.zoomBy(1 / 1.6));
   $('#btn-zoom-all').addEventListener('click', () => tl.fitAll());
 
-  // Jumps: notable dates, every one taken from the data.
-  const jumps = [];
-  const peak = D.population.reduce((a, b) => (b[1] > a[1] ? b : a));
-  jumps.push({ label: `${peak[0]}, the peak`, day: dayOf(peak[0], 7, 1) });
-  const raid = D.datedEvents.find(e => /Burning Raid begins/.test(e.title)); if (raid) jumps.push({ label: 'The Burning Raid', day: raid.iv.lo });
-  jumps.push({ label: '1 January 1866', day: dayOf(1866, 1, 1) });
-  const koch = D.datedEvents.find(e => /tubercle|Koch/.test(e.title)); if (koch) jumps.push({ label: 'Koch, 1882', day: koch.iv.lo });
-  const flu = D.datedEvents.find(e => /Influenza pandemic peaks/.test(e.title)); if (flu) jumps.push({ label: 'Influenza, 1918', day: flu.iv.lo });
-  const pv = D.datedEvents.find(e => /Pleasant Valley Cemetery established/.test(e.title)); if (pv) jumps.push({ label: 'Pleasant Valley opens', day: pv.iv.lo });
-  const loves = D.family.lossesCemetery.find(c => c.plot === 'N-23'); if (loves) jumps.push({ label: 'The Loves, 1943', day: fromIso(loves.first_death) });
+  // Jumps: notable dates, every one taken from the data (jumps.js). One whose
+  // row can no longer be found is left out; the acceptance test catches that.
+  const jumps = buildJumps(D).filter(j => j.day !== null);
   // One menu, not a row of buttons, so the controls stay on one line.
   $('#jumps').innerHTML = '<option value="">Jump to…</option>' + jumps.map((j, i) => `<option value="${i}">${esc(j.label)}</option>`).join('');
   $('#jumps').addEventListener('change', (e) => { const j = jumps[Number(e.target.value)]; if (e.target.value !== '' && j) tl.setDate(j.day, true); e.target.value = ''; });

@@ -5,6 +5,7 @@
 import { fmtDate, lifeSpan, interval, n, CEMETERY_NAME, CEMETERY_LONG, dayOf, yearStart } from './derive.js';
 import { esc } from './timeline.js';
 import { COUNTING } from './count.js';
+import { decidedWords } from './panels.js';
 
 // Presence filters: "the record has X for this person". They say what the
 // sources reach, never what the other people lacked.
@@ -224,7 +225,7 @@ export function renderRecord(el, D, ctx, params = {}) {
     </section>
     <section class="tab-panel" id="rt-check" role="tabpanel" aria-labelledby="rtab-check" hidden>
     <h2 data-k="${n(S.records.rows)} records · ${n(S.people)} people">Records and people</h2>
-    <p class="prose">${n(S.folded)} records are the same person entered twice, once from each source, under a spelling variant or a maiden and a married name. The project's owner confirmed each pair on 29 October 2026; the app counts ${n(S.mergedPeople)} people once each and keeps every record in the data. ${n(S.maybePairs)} further pairs could not be confirmed and are counted separately, each naming the other. ${n(S.unresolvedPairs)} more are unresolved: a record with only a birth date, where that date is the death date of a record with a closely matching name, as though a death had been entered as a birth. They too are counted separately and name each other. The decisions are in <code>curation/duplicates.csv</code>. ${n(S.unresolvedRecords)} single records are unresolved for a like reason: the 1948 stone reading gives, as a death with an age at death, the date the record gives as a birth (<code>curation/unresolved.csv</code>).</p>
+    <p class="prose">${n(S.folded)} records are the same person entered twice, once from each source, under a spelling variant or a maiden and a married name. The project's owner confirmed each pair ${decidedWords(S.duplicatesDecided)}; the app counts ${n(S.mergedPeople)} people once each and keeps every record in the data. ${n(S.maybePairs)} further pairs could not be confirmed and are counted separately, each naming the other. ${n(S.unresolvedPairs)} more are unresolved: a record with only a birth date, where that date is the death date of a record with a closely matching name, as though a death had been entered as a birth. They too are counted separately and name each other. The decisions are in <code>curation/duplicates.csv</code>. ${n(S.unresolvedRecords)} single records are unresolved for a like reason: the 1948 stone reading gives, as a death with an age at death, the date the record gives as a birth (<code>curation/unresolved.csv</code>).</p>
     <h2 data-k="APP_SPEC.md §9, as corrected by CLAUDE.md">Self-check against the specification</h2>
     <p class="prose small">Known-correct values from APP_SPEC.md §9 as corrected by CLAUDE.md, computed from the data this page is running on.</p>
     ${selfCheck(D)}
@@ -636,7 +637,7 @@ function selfCheck(D) {
     ['People, after the owner-confirmed duplicates are counted once', null],
     ['people', S.people, 2681], ['records folded into another', S.folded, 51], ['timeline_usable = yes', S.usable.yes, 2521],
     ['Lakeview', S.cemeteries.L, 2065], ['Harmony', S.cemeteries.H, 254], ['Pleasant Valley', S.cemeteries.P, 362], ['with a 1948 stone reading', S.stone, 743],
-    ['alive in 1800', D.popByYear.get(1800), 11], ['alive in 1850', D.popByYear.get(1850), 327], ['alive in 1900', D.popByYear.get(1900), 1231], ['alive in 1927 (peak)', D.popByYear.get(1927), 1429], ['alive in 1950', D.popByYear.get(1950), 1256], ['alive in 2000', D.popByYear.get(2000), 413],
+    ['alive in 1800', D.popByYear.get(1800), 11], ['alive in 1850', D.popByYear.get(1850), 327], ['alive in 1900', D.popByYear.get(1900), 1232], ['alive in 1927 (peak)', D.popByYear.get(1927), 1429], ['alive in 1950', D.popByYear.get(1950), 1256], ['alive in 2000', D.popByYear.get(2000), 413],
   ];
   return `<table class="tbl"><thead><tr><th>check</th><th class="n">computed</th><th class="n">expected</th><th></th></tr></thead><tbody>${checks.map(([k, v, e]) => v === null ? `<tr><td colspan="4" class="serif" style="padding-top:14px">${k}</td></tr>` : `<tr><td>${k}</td><td class="n">${n(v)}</td><td class="n">${n(e)}</td><td>${v === e ? 'agrees' : 'DISAGREES'}</td></tr>`).join('')}</tbody></table>`;
 }
