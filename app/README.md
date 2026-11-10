@@ -30,12 +30,14 @@ URL too: `#/record?tab=absent`.
 | `scripts/build-data.mjs` | the one place CSV becomes JSON. Applies §3.4's relationship filter, extracts the years in each disputed reading, aggregates the county register by cause and year. Reads `data/`, never writes to it. |
 | `app/src/derive.js` | the derived computations of APP_SPEC §4: `interval`, `bounds`, `aliveOn`, `ageAt`, `aliveCount`, `familyOf`, and precision-honest formatting. Pure; tested. |
 | `app/src/data.js` | loads the JSON and builds indexes (the ranked field, the one-date strip, era lanes, deaths by day). |
-| `app/src/views.js` | People, Families, The record, 1853 map. |
 | `app/src/timeline.js` | the canvas: axis, event rows, population curve, the field of lives, the one-date strip, the strata. Pan, zoom, hover, pick. In the field a life not alive on the chosen date is drawn faint, and a thin gap falls where the birth decade changes (a decade with under 40 births joins the next), with the decade in the gutter; the gaps are added room, so no life is drawn over. |
 | `app/src/panels.js` | the cursor panel, the living list and the person drawer. The drawer's foot carries the card's link and the correction email (`CONTACT`); a correction that holds is recorded in `curation/`, never through the app. |
 | `app/src/count.js` | visit counts for the owner, sent to GoatCounter: the page opened and the card opened, nothing typed and no date. Off until `SITE` holds the site code; never counts from localhost. |
 | `app/fonts/` | DejaVu Serif, regular and bold, the films' serif: subset to Latin from the copies matplotlib ships, with its licence. Used for titles and big numbers because its figures stand at one height; Georgia's do not. |
 | `app/og.png` | the 1200 × 630 image a posted link shows: a screenshot of the timeline at 1 July 1927. Retake it if the timeline's look changes. |
+| `app/src/view-people.js`, `view-families.js`, `view-map.js` | the People, Families and 1853 map pages, one file each. |
+| `app/src/view-record.js` | The record page: opening figures, tabs, and its own charts (burials, causes, newspapers, work, the self-check). Its longer sections sit beside it: `record-absent.js` ("Who is not here"), `record-longevity.js` ("Years lived"), `record-naming.js` ("Names on the stones"). |
+| `app/src/view-shared.js` | two one-line helpers the pages share. |
 | `app/src/jumps.js` | the "Jump to…" menu's seven dates, each found in the data by a row's title or plot. Tested: a row reworded in `data/` fails the acceptance test instead of quietly dropping its jump. |
 | `app/src/main.js` | wiring, search, hash router. |
 | `test/` | `derive.test.mjs` (rules) and `acceptance.test.mjs` (every value in APP_SPEC §9 as corrected by CLAUDE.md, plus the living-population curve on people for all 273 years). The build itself checks that the records reproduce `timeline_population.csv` and stops if any year differs. |

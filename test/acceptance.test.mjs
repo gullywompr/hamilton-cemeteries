@@ -2,7 +2,7 @@
 // built JSON in app/data. Run `npm run data` first.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { readCsv } from '../scripts/csv.mjs';
 import { aliveCount, familyOf, aliveOn, dayOf, bounds } from '../app/src/derive.js';
@@ -60,7 +60,7 @@ test('the site header states the people count', () => {
 
 test('no decision date is typed into the app: each comes from curation/', () => {
   const month = '(January|February|March|April|May|June|July|August|September|October|November|December)';
-  for (const f of ['main.js', 'panels.js', 'views.js', 'timeline.js', 'data.js', 'derive.js']) {
+  for (const f of readdirSync(new URL('../app/src/', import.meta.url)).filter(f => f.endsWith('.js'))) {
     const src = readFileSync(new URL(`../app/src/${f}`, import.meta.url), 'utf8');
     assert.equal(src.match(new RegExp(`[0-9]{1,2} ${month} 202[0-9]`, 'g')), null, `${f} states a 202x date in its own words`);
   }
@@ -276,7 +276,7 @@ test('longevity: robustness matches the reference output', () => {
 });
 
 test('longevity: the rendered section keeps the rules', async () => {
-  const { longevitySection } = await import('../app/src/views.js');
+  const { longevitySection } = await import('../app/src/record-longevity.js');
   const D = { longevity: load('longevity.json') };
   const sec = longevitySection(D.longevity);
   const text = sec.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
@@ -294,7 +294,7 @@ test('longevity: the rendered section keeps the rules', async () => {
 test('longevity: the page says why the comparison starts where it does', async () => {
   const L = load('longevity.json');
   assert.deepEqual(L.before, { start: 1920, lakeview_n: 246, pv_n: 2, pv_earliest_death: 1911 });
-  const { longevitySection } = await import('../app/src/views.js');
+  const { longevitySection } = await import('../app/src/record-longevity.js');
   const text = longevitySection(L).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
   assert.match(text, /Why the comparison starts in 1920/);
   assert.match(text, /246 dated adult deaths at Lakeview and 2 at Pleasant Valley, the earliest in 1911, before the ground's 1922 opening/);
@@ -309,7 +309,7 @@ test('longevity: the 1920-1949 gap is shown to depend on year-only dates', async
   ]);
   assert.deepEqual([L.pvHeaping.n, L.pvHeaping.ending_0_or_5], [151, 23]);
   assert.ok(L.pvHeaping.p > 0.05);
-  const { longevitySection } = await import('../app/src/views.js');
+  const { longevitySection } = await import('../app/src/record-longevity.js');
   const text = longevitySection(L).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
   assert.match(text, /The 1920 – 1949 gap depends on dates known only to the year\./);
   assert.match(text, /24 of Pleasant Valley's 39 adults in that era have no birth or death date to the day/);
@@ -332,7 +332,7 @@ test('stones: how the 1948 survey names people, and the stones cut before the de
   assert.ok(O.after.every(s => s.dy > 1950) && O.noDeath.every(s => s.dy === null));
   // a full date followed by "d." is not an open date
   assert.ok(![...O.after, ...O.noDeath, ...O.neverCut].some(s => /Saunders/.test(s.text)));
-  const { namingSection } = await import('../app/src/views.js');
+  const { namingSection } = await import('../app/src/record-naming.js');
   const text = namingSection(N).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
   assert.match(text, /On 103 adult stones a woman is named as someone's wife\. On one a man is named as someone's husband\./);
   assert.match(text, /has no field for sex and the app does not guess it from names/);

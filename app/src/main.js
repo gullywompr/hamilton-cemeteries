@@ -4,7 +4,10 @@
 import { loadAll } from './data.js';
 import { Timeline, esc } from './timeline.js';
 import { CursorPanel, LivingList, Drawer, computeLiving } from './panels.js';
-import { renderPeople, renderFamilies, renderRecord, renderMap } from './views.js';
+import { renderPeople } from './view-people.js';
+import { renderFamilies } from './view-families.js';
+import { renderRecord } from './view-record.js';
+import { renderMap } from './view-map.js';
 import { countView } from './count.js';
 import { buildJumps } from './jumps.js';
 import { dayOf, isoOf, fromIso, fmtDay, yearStart, lifeSpan, CEMETERY_NAME } from './derive.js';
