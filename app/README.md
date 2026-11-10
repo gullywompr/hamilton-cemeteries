@@ -30,9 +30,9 @@ URL too: `#/record?tab=absent`.
 | `scripts/build-data.mjs` | the one place CSV becomes JSON. Applies §3.4's relationship filter, extracts the years in each disputed reading, aggregates the county register by cause and year. Reads `data/`, never writes to it. |
 | `app/src/derive.js` | the derived computations of APP_SPEC §4: `interval`, `bounds`, `aliveOn`, `ageAt`, `aliveCount`, `familyOf`, and precision-honest formatting. Pure; tested. |
 | `app/src/data.js` | loads the JSON and builds indexes (the ranked field, the one-date strip, era lanes, deaths by day). |
-| `app/src/timeline.js` | the canvas: axis, event rows, population curve, the field of lives, the one-date strip, the strata. Pan, zoom, hover, pick. |
-| `app/src/panels.js` | the cursor panel, the living list and the person drawer. |
 | `app/src/views.js` | People, Families, The record, 1853 map. |
+| `app/src/panels.js` | the cursor panel, the living list and the person drawer. The drawer's foot carries the card's link and the correction email (`CONTACT`); a correction that holds is recorded in `curation/`, never through the app. |
+| `app/og.png` | the 1200 × 630 image a posted link shows: a screenshot of the timeline at 1 July 1927. Retake it if the timeline's look changes. |
 | `app/src/main.js` | wiring, search, hash router. |
 | `test/` | `derive.test.mjs` (rules) and `acceptance.test.mjs` (every value in APP_SPEC §9 as corrected by CLAUDE.md, plus the living-population curve on people for all 273 years). The build itself checks that the records reproduce `timeline_population.csv` and stops if any year differs. |
 

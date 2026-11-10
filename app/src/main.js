@@ -19,8 +19,18 @@ async function main() {
   const openPerson = (id) => { drawer.open(id); };
   const cursorPanel = new CursorPanel($('#cursor-panel'), D, tl, openPerson);
   const livingList = new LivingList($('#living'), D, openPerson);
+  // An open card is in the address bar (#/person/LV0170), so the address can
+  // be copied and sent. Closing the card puts back the address it covered.
+  const siteTitle = document.title;
+  let under = null;
   const drawer = new Drawer($('#drawer'), $('#drawer-body'), $('#scrim'), $('#drawer-close'), D, tl, () => {
-    if (location.hash.startsWith('#/person/')) history.replaceState(null, '', `#/${currentView}${currentView === 'timeline' ? '/' + isoOf(tl.day) : ''}`);
+    document.title = siteTitle;
+    if (location.hash.startsWith('#/person/')) history.replaceState(null, '', currentView === 'timeline' ? `#/timeline/${isoOf(tl.day)}` : under || `#/${currentView}`);
+    under = null;
+  }, (p) => {
+    if (!location.hash.startsWith('#/person/')) under = location.hash;
+    if (location.hash !== `#/person/${p.id}`) history.replaceState(null, '', `#/person/${p.id}`);
+    document.title = `${p.name} · ${siteTitle}`;
   });
 
   // ---- timeline → panels ----

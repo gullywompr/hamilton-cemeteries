@@ -58,6 +58,15 @@ test('the site header states the people count', () => {
   assert.match(html, new RegExp(`Three cemeteries, ${people.length.toLocaleString('en-US')} people`));
 });
 
+test('the link preview states the same people count and its image ships', () => {
+  const html = readFileSync(new URL('../app/index.html', import.meta.url), 'utf8');
+  const n = people.length.toLocaleString('en-US');
+  const counts = [...html.matchAll(/([\d,]+) people/g)].map(m => m[1]);
+  assert.ok(counts.length >= 4 && counts.every(c => c === n), `every people count in index.html is ${n}: ${counts}`);
+  const image = /property="og:image" content="[^"]*\/([\w.-]+)"/.exec(html)[1];
+  assert.ok(readFileSync(new URL(`../app/${image}`, import.meta.url)).length > 10000);
+});
+
 // The records' match with timeline_population.csv is checked in the build,
 // which stops if any year differs; this test checks the curve on people.
 test('living population by year, on people, matches APP_SPEC §13 for all 273 years', () => {

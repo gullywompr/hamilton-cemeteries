@@ -177,15 +177,36 @@ export class LivingList {
 
 // ---------------------------------------------------------------------------
 export class Drawer {
-  constructor(el, body, scrim, closeBtn, D, tl, onClose) {
-    this.el = el; this.body = body; this.scrim = scrim; this.D = D; this.tl = tl; this.onClose = onClose;
+  constructor(el, body, scrim, closeBtn, D, tl, onClose, onOpen) {
+    this.el = el; this.body = body; this.scrim = scrim; this.D = D; this.tl = tl; this.onClose = onClose; this.onOpen = onOpen;
     closeBtn.addEventListener('click', () => this.close());
     scrim.addEventListener('click', () => this.close());
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !this.el.hidden) this.close(); });
     body.addEventListener('click', (e) => {
       const a = e.target.closest('[data-person]'); if (a) { e.preventDefault(); this.open(a.dataset.person); return; }
       const g = e.target.closest('[data-goto]'); if (g) { this.tl.setDate(Number(g.dataset.goto), true); return; }
+      const c = e.target.closest('[data-copy-link]'); if (c) this.copyLink(c);
     });
+  }
+  // The card's own address. On a phone the share sheet; elsewhere the
+  // clipboard; where neither is allowed, the address itself, selected.
+  async copyLink(btn) {
+    const p = this.D.byId.get(this.current); if (!p) return;
+    const url = cardUrl(p);
+    if (navigator.share && window.matchMedia('(pointer: coarse)').matches) {
+      try { await navigator.share({ title: `${p.name}, Hamilton, Virginia`, url }); } catch { /* dismissed */ }
+      return;
+    }
+    try {
+      // A browser that neither copies nor refuses within a second gets the box too.
+      await Promise.race([navigator.clipboard.writeText(url), new Promise((_, no) => setTimeout(no, 1000))]);
+      btn.textContent = 'Link copied';
+    } catch {
+      if (!btn.isConnected) return;
+      const box = document.createElement('input');
+      box.readOnly = true; box.value = url; box.className = 'card-url'; box.setAttribute('aria-label', 'Link to this card');
+      btn.replaceWith(box); box.focus(); box.select();
+    }
   }
   close() { this.el.hidden = true; this.scrim.hidden = true; this.current = null; this.onClose && this.onClose(); }
   open(id, day = this.tl.day) {
@@ -194,6 +215,7 @@ export class Drawer {
     this.body.innerHTML = this.render(p, day);
     this.el.hidden = false; this.scrim.hidden = false; this.el.scrollTop = 0;
     this.el.querySelector('.drawer-close').focus({ preventScroll: true });
+    this.onOpen && this.onOpen(p);
   }
   refresh(day) { if (this.current && !this.el.hidden) { const y = this.el.scrollTop; this.body.innerHTML = this.render(this.D.byId.get(this.current), day); this.el.scrollTop = y; } }
 
@@ -288,8 +310,22 @@ export class Drawer {
       ${p.cert ? `<div class="sec"><h3>Death certificate</h3><p class="stone-note">The Virginia death certificate${p.cert.name !== p.name ? ` names ${esc(p.cert.name)}` : ''}.${p.cert.burial ? ` Burial, as written: ${esc(p.cert.burial)}.` : ''}${p.cert.cause ? ` Cause, as written: ${esc(p.cert.cause)}.` : ''} <a href="${esc(p.cert.record)}" rel="noopener">The certificate</a>.</p></div>` : ''}
       ${p.unresolved === 'stone-gives-death' ? `<div class="sec"><h3>Unresolved</h3><p class="stone-note">The 1948 reading of this stone records a death, with an age at death, on the date this record gives as a birth. Which is right is unresolved; the record is kept as written.</p></div>` : ''}
       <div class="source"><span>SOURCE</span>${esc(sourcesWords(p.src))}${p.use !== 'yes' ? `<br>Timeline status: ${esc(p.use)}${noteWords(p) ? ` (${esc(noteWords(p))})` : ''}.` : ''}</div>
+      <div class="card-actions">
+        <button class="btn btn-text" data-copy-link>Copy a link to this card</button>
+        <a class="btn btn-text" href="${esc(correctionHref(p))}">Something wrong or missing? Write to the project</a>
+        <p class="stone-note">A correction is checked against a source before the record changes, so say how you know: a family Bible, a certificate, the stone itself, or what you remember.</p>
+      </div>
     `;
   }
+}
+// Where a reader's correction goes: the project's owner, by email. Nothing is
+// edited through the app; a correction that holds is recorded in curation/.
+const CONTACT = 'curtis.olson@comcast.net';
+export const cardUrl = (p) => `${location.origin}${location.pathname}#/person/${p.id}`;
+function correctionHref(p) {
+  const where = [CEMETERY_LONG[p.cem] || CEMETERY_NAME[p.cem], p.plot ? `plot ${p.plot}` : ''].filter(Boolean).join(', ');
+  const body = `About: ${p.name} (${p.id}), ${where}\nCard: ${cardUrl(p)}\n\nWhat is wrong or missing:\n\n\nHow you know (a family record, a certificate, the stone, memory):\n\n`;
+  return `mailto:${CONTACT}?subject=${encodeURIComponent(`Hamilton cemeteries: ${p.name} (${p.id})`)}&body=${encodeURIComponent(body)}`;
 }
 // Source notes reworded where the bare note would read as the app's own mistake.
 const MAYBE_WORDS = {

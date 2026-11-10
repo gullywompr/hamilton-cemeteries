@@ -443,3 +443,10 @@ details.more summary { font-size: 13px; color: var(--ink-3); cursor: pointer; }
 .cluster-note p { margin: 4px 0 8px; color: var(--narr); font-size: 15.5px; line-height: 1.45; }
 .cluster-note p b { color: var(--narr); }
 .cluster-note .near-list { margin-bottom: 8px; }
+
+/* ---------- the card's own address, and where a correction goes ---------- */
+.card-actions { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.card-actions a.btn { text-decoration: none; line-height: 1.2; }
+.card-actions .stone-note { flex-basis: 100%; max-width: 56ch; }
+.card-url { flex: 1 1 100%; font-size: 13px; padding: 8px 10px; border: 1px solid var(--stone-3); border-radius: 2px; background: var(--stone); color: var(--ink); }
+@media print { .card-actions { display: none; } }
