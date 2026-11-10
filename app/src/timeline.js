@@ -527,7 +527,7 @@ export class Timeline {
     c.tabIndex = 0;
     let drag = null, pointers = new Map(), pinch = null;
     c.addEventListener('pointerdown', (e) => {
-      c.setPointerCapture(e.pointerId);
+      try { c.setPointerCapture(e.pointerId); } catch { /* a pointer that cannot be captured still drags */ }
       pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
       if (pointers.size === 2) {
         const [a, b] = [...pointers.values()];
@@ -560,16 +560,22 @@ export class Timeline {
       if (hit) this.showTip(hit, e.clientX - r.left, e.clientY - r.top); else this.hideTip();
       c.style.cursor = hit ? 'pointer' : 'grab';
     });
-    const end = (e) => {
+    const end = (e, cancelled = false) => {
       pointers.delete(e.pointerId);
       if (pointers.size < 2) pinch = null;
       if (!drag) return;
       c.classList.remove('dragging');
       const d = drag; drag = null;
+      if (cancelled) return;   // the browser took the gesture (a page scroll): not a tap, no glide
       if (!d.moved) {
         const r = c.getBoundingClientRect();
         const hit = this.hitTest(e.clientX - r.left, e.clientY - r.top);
-        if (hit) this.emit('pick', hit);
+        // A finger cannot choose among lives a fraction of a pixel apart, and
+        // touch has no hover to say whose line it is on. So a tap in the field
+        // sets the date, and people are opened from the list beneath. A mouse
+        // or pen, which can see the name first, still opens the life it is on.
+        const blind = hit && hit.kind === 'person' && e.pointerType === 'touch' && this.fieldGeom(this.layout()).laneH < 12;
+        if (hit && !blind) this.emit('pick', hit);
         else this.setDate(this.dayAt(e.clientX - r.left), true);
         return;
       }
@@ -583,7 +589,7 @@ export class Timeline {
       };
       if (!reduceMotion()) requestAnimationFrame(glide);
     };
-    c.addEventListener('pointerup', end); c.addEventListener('pointercancel', end);
+    c.addEventListener('pointerup', (e) => end(e)); c.addEventListener('pointercancel', (e) => end(e, true));
     c.addEventListener('pointerleave', () => { if (!drag) { this.hover = null; this.hideTip(); this.requestDraw(); } });
     c.addEventListener('wheel', (e) => {
       e.preventDefault();
