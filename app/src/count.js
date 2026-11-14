@@ -6,11 +6,11 @@
 // What is never sent: anything typed in a search or filter box, the date the
 // timeline is stopped on, or the entry looked up among the unrecorded.
 //
-// SITE is the GoatCounter site code, the "hamilton" of
-// hamilton.goatcounter.com. While it is empty nothing loads and nothing is
+// SITE is the GoatCounter site code, the "hamilton-cemeteries" of
+// hamilton-cemeteries.goatcounter.com. While it is empty nothing loads and nothing is
 // sent. GoatCounter's own script also sends nothing from localhost, so
 // `npm start` never counts.
-const SITE = '';
+const SITE = 'hamilton-cemeteries';
 
 export const COUNTING = /^[a-z0-9-]+$/.test(SITE);
 
