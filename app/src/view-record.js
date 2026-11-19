@@ -9,7 +9,7 @@ import { decidedWords } from './panels.js';
 import { pct } from './view-shared.js';
 import { namingSection } from './record-naming.js';
 import { longevitySection } from './record-longevity.js';
-import { slaveScheduleSection, census1870Section, registerNamedSection, certificatesSection, certificatesWhiteSection, demographyFigure, documentedFigure } from './record-absent.js';
+import { slaveScheduleSection, enslavedNamedSection, census1870Section, registerNamedSection, certificatesSection, certificatesWhiteSection, demographyFigure, documentedFigure } from './record-absent.js';
 
 // ---------------------------------------------------------------------------
 // The record
@@ -65,6 +65,7 @@ export function renderRecord(el, D, ctx, params = {}) {
       <div class="stat"><div class="v">${n(L.registerNamed.length)}</div><div class="k">Black Hamiltonians the 1865–96 register records, read on the page</div></div>
       ${L.census1870 ? `<div class="stat"><div class="v">${L.census1870.black.inRecord} of ${L.census1870.black.n}</div><div class="k">Black and mixed-race people on Hamilton's 1870 census pages who are in these cemeteries</div></div>` : ''}
       ${L.slaveSchedules ? `<div class="stat"><div class="v">${new Set([...L.slaveSchedules[1850].owners, ...L.slaveSchedules[1860].owners]).size}</div><div class="k">people in these cemeteries the 1850 or 1860 slave schedule lists as holding people in slavery, found so far. The people listed under them are named nowhere in these records</div></div>` : ''}
+      ${L.enslavedNamed?.length ? `<div class="stat"><div class="v">${L.enslavedNamed.length}</div><div class="k">enslaved people named in a Hamilton will, an estate appraisal and the 1854–59 death register, read on the page. None is in these cemeteries' records</div></div>` : ''}
       <div class="stat"><div class="v">31%</div><div class="k">of Loudoun was Black in 1860, measured by the census</div></div>
       <div class="stat"><div class="v">4</div><div class="k">Pleasant Valley records before 1922, one of them corrupt</div></div>
       <div class="stat"><div class="v">31%</div><div class="k">of the 1990s' documented burials are at Pleasant Valley</div></div>
@@ -75,6 +76,7 @@ export function renderRecord(el, D, ctx, params = {}) {
     </div>
     <div class="callout">The county line is <b>context, not a denominator</b>. Hamilton is one village; its three cemeteries are not a sample of Loudoun, and county proportions do not transfer to them arithmetically. The app never computes or implies a count of missing individuals. Loudoun's Black population fell in every decade from 1900 to 1950 while documented Pleasant Valley burials rose: the burials are the documentation arriving, the population is people leaving, and the decade differences understate the outflow because they ignore natural increase.</div>
     ${slaveScheduleSection(L.slaveSchedules, D)}
+    ${enslavedNamedSection(L.enslavedNamed)}
     ${census1870Section(L.census1870, D)}
     ${registerNamedSection(L.registerNamed, D)}
     ${certificatesSection(L.certificates, L.certificatesLinked)}

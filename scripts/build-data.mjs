@@ -648,10 +648,25 @@ const ssSummary = (year, s, searched, surnames) => {
   if (todo.length !== searched || new Set(todo.map(r => r[0].toLowerCase())).size !== surnames) throw new Error(`slave_schedule_${year}_todo.tsv: ${todo.length} people, expected ${searched}`);
   return { searched, surnames, owners: s.owners.map(r => canon(r.person_id)), held: s.held, hirers: s.rows.filter(r => r.role === 'hirer').map(r => canon(r.person_id)) };
 };
+// Enslaved people named in Hamilton-area records, 1854-1859: J. D. Heaton's
+// will and estate inventory and the county death register, read on the image
+// (research/enslaved_hamilton_1850_1860.csv; adopted by the project's owner
+// in curation/enslaved_named_1854_1859.csv, 19 Nov 2026). Like registerNamed,
+// they are not people in this record: no card, no place on the timeline, no
+// part of any count. None of their holders is buried here. Flavius, probably
+// entered twice (1857 and 1858), is one row.
+const enslavedNamed = readCsv(join(ROOT, 'curation', 'enslaved_named_1854_1859.csv'));
+{
+  const k = (r) => r.record;
+  const by = (t) => enslavedNamed.filter(r => k(r) === t).length;
+  if (enslavedNamed.length !== 20 || by('will') !== 4 || by('inventory') !== 5 || by('register') !== 11)
+    throw new Error(`enslaved_named_1854_1859.csv: ${enslavedNamed.length} rows, will ${by('will')}, inventory ${by('inventory')}, register ${by('register')}`);
+}
 const slaveSchedules = { 1860: ssSummary(1860, ss1860, 207, 101), 1850: ssSummary(1850, ss1850, 141, 72) };
 write('leads.json', {
   census1870,
   slaveSchedules,
+  enslavedNamed,
   lostStones: csv('lost_stones.csv'),
   candidates: csv('candidate_missing_burials.csv'),
   mentions: csv('newspaper_mentions.csv'),
