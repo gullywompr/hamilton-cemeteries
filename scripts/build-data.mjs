@@ -360,8 +360,155 @@ const lossesCem = csv('family_losses_cemetery.csv').map(r => {
   const dd = tied.map(p => p.dd).sort();
   return { ...c, people, n_lost: people.length, span_days: days[days.length - 1] - days[0], first_death: dd[0], last_death: dd[dd.length - 1] };
 }).filter(Boolean);
+// Families across generations. A family here is people joined by parent and
+// child links, with spouses, where at least two generations are buried in the
+// three cemeteries. Two kinds of link count, and nothing else:
+//   - the resolved links above (stones and the register, relationships_v2,
+//     date check passed), and
+//   - a parent and child enumerated in one household of one census
+//     (data/census_<year>_matches.csv: Head or Wife, with a Son or Daughter),
+//     where both are people here and the birth years allow it.
+//   - a link the owner recorded in curation/family_links.csv, with its basis
+//     (19 Nov 2026: the Janneys, from the 1860 census pilot), and
+//   - a probable link, by the owner's decision of 19 Nov 2026, always shown
+//     as unconfirmed: same surname, same Lakeview plot, births 18 to 45 years
+//     apart, the younger born before the elder died. A Lakeview plot is
+//     shared by several surnames, so this is a guess, never a resolved link.
+// None of these is added to anyone's `fam`; they live only on the family.
+const genEdges = new Map(); // `${parent}>${child}` -> { src, basis }
+const addGen = (pid, cid, src, basis) => {
+  const a = personById.get(canon(pid)), b = personById.get(canon(cid));
+  if (!a || !b || a === b) return false;
+  const k = `${a.id}>${b.id}`;
+  if (genEdges.has(k) || genEdges.has(`${b.id}>${a.id}`)) return false;
+  genEdges.set(k, { src, basis });
+  return true;
+};
+for (const p of people) for (const f of p.fam) {
+  if (f.rel === 'parent') addGen(f.id, p.id, 'record', f.basis || 'resolved link');
+  if (f.rel === 'child') addGen(p.id, f.id, 'record', f.basis || 'resolved link');
+}
+let censusGenLinks = 0;
+for (const y of CENSUS_YEARS) {
+  const hh = new Map();
+  for (const r of csv(`census_${y}_matches.csv`)) {
+    const h = r.hh || r.dwelling;
+    if (!h) continue;
+    const k = `${r.census_image}|${h}`;
+    if (!hh.has(k)) hh.set(k, []);
+    hh.get(k).push(r);
+  }
+  for (const [k, rows] of hh) {
+    const heads = rows.filter(r => /^(head|wife)$/i.test(r.relation));
+    const kids = rows.filter(r => /^(son|daughter)$/i.test(r.relation));
+    for (const h of heads) for (const c of kids) {
+      const a = personById.get(canon(h.person_id)), b = personById.get(canon(c.person_id));
+      if (!a || !b || a.by === null || b.by === null) continue;
+      const gap = b.by - a.by;
+      if (gap < 13 || gap > 55) continue;
+      if (a.dy !== null && b.by > a.dy + 1) continue;
+      const [img, house] = k.split('|');
+      if (addGen(a.id, b.id, 'census', `${y} census, image ${img}, household ${house}: ${c.census_name} (${c.relation}) with ${h.census_name} (${h.relation})`)) censusGenLinks++;
+    }
+  }
+}
+// The owner's recorded links (curation/family_links.csv).
+const famLinkRows = readCsv(join(ROOT, 'curation', 'family_links.csv'));
+const genSpouses = []; // [a, b, src, basis] beyond the resolved spouse links
+const genNotes = new Map(); // person id -> [note]
+for (const r of famLinkRows) {
+  decidedDay('family_links.csv', { ...r, person_id: r.a_id });
+  const a = personById.get(canon(r.a_id)), b = personById.get(canon(r.b_id));
+  if (!a || !b) throw new Error(`family_links.csv: unknown id in ${r.a_id}-${r.b_id}`);
+  if (!['census', 'probable'].includes(r.kind)) throw new Error(`family_links.csv: kind ${r.kind}`);
+  const basisText = r.basis + (r.source ? ` ${r.source}` : '');
+  if (r.relation === 'parent_of') { if (!addGen(a.id, b.id, r.kind, basisText)) throw new Error(`family_links.csv: ${r.a_id}>${r.b_id} already linked`); }
+  else if (r.relation === 'spouse_of') genSpouses.push([a.id, b.id, r.kind, basisText]);
+  else throw new Error(`family_links.csv: relation ${r.relation}`);
+  // A note carries its own citation, in its own words.
+  if (r.note) { if (!genNotes.has(b.id)) genNotes.set(b.id, []); genNotes.get(b.id).push(r.note); }
+}
+// Probable links: same surname, same Lakeview plot, a plausible gap.
+let probableGenLinks = 0;
+{
+  const byPlot = new Map();
+  for (const p of people) {
+    if (p.cem !== 'L' || !p.plot || !p.surname || p.by === null) continue;
+    const k = `${p.plot}|${p.surname.toLowerCase()}`;
+    if (!byPlot.has(k)) byPlot.set(k, []);
+    byPlot.get(k).push(p);
+  }
+  // A child who already has a stated parent here gets no guessed one.
+  const statedChild = new Set([...genEdges.keys()].map(k => k.split('>')[1]));
+  for (const [k, ms] of byPlot) for (const a of ms) for (const b of ms) {
+    if (statedChild.has(b.id)) continue;
+    const gap = b.by - a.by;
+    if (gap < 18 || gap > 45 || (a.dy !== null && b.by > a.dy + 1)) continue;
+    if (addGen(a.id, b.id, 'probable', `same surname and same plot (${k.split('|')[0]}), born ${a.by} and ${b.by}: a guess, not a stated link`)) probableGenLinks++;
+  }
+}
+const genFamilies = (() => {
+  const parent = new Map();
+  const find = (x) => { while (parent.get(x) !== x) { parent.set(x, parent.get(parent.get(x))); x = parent.get(x); } return x; };
+  const join = (a, b) => { for (const x of [a, b]) if (!parent.has(x)) parent.set(x, x); parent.set(find(a), find(b)); };
+  for (const k of genEdges.keys()) { const [a, b] = k.split('>'); join(a, b); }
+  for (const p of people) if (parent.has(p.id)) for (const f of p.fam) if (f.rel === 'spouse') join(p.id, f.id);
+  for (const [a, b] of genSpouses) join(a, b);
+  const groups = new Map();
+  for (const x of parent.keys()) { const r = find(x); if (!groups.has(r)) groups.set(r, []); groups.get(r).push(x); }
+  const out = [];
+  for (const ids of groups.values()) {
+    const set = new Set(ids);
+    const links = [...genEdges].filter(([k]) => set.has(k.split('>')[0])).map(([k, v]) => { const [p, c] = k.split('>'); return { p, c, ...v }; });
+    const gen = new Map(ids.map(x => [x, 1]));
+    for (let i = 0; i < ids.length; i++) for (const l of links) if (gen.get(l.c) < gen.get(l.p) + 1) gen.set(l.c, gen.get(l.p) + 1);
+    // A parent with no parent of their own here sits one generation above
+    // their eldest-placed child, not at the top: a mother who married into
+    // the family belongs with her husband's generation, not her father-in-law's.
+    const hasParent = new Set(links.map(l => l.c));
+    for (let i = 0; i < ids.length; i++) for (const x of ids) {
+      if (hasParent.has(x)) continue;
+      const kids = links.filter(l => l.p === x).map(l => gen.get(l.c));
+      if (kids.length && Math.min(...kids) - 1 > gen.get(x)) gen.set(x, Math.min(...kids) - 1);
+    }
+    const spousePairs = [];
+    for (const x of ids) for (const f of personById.get(x).fam) if (f.rel === 'spouse' && set.has(f.id)) spousePairs.push([x, f.id]);
+    const extraSpouses = genSpouses.filter(([a, b]) => set.has(a) && set.has(b));
+    for (const [a, b] of [...spousePairs, ...extraSpouses]) { const g = Math.max(gen.get(a), gen.get(b)); gen.set(a, g); gen.set(b, g); }
+    // A member is unconfirmed when every tie that places them in the family
+    // is a probable one.
+    const ties = new Map(ids.map(x => [x, new Set()]));
+    for (const l of links) { ties.get(l.p).add(l.src); ties.get(l.c).add(l.src); }
+    for (const [a, b] of spousePairs) { ties.get(a).add('record'); ties.get(b).add('record'); }
+    for (const [a, b, src] of extraSpouses) { ties.get(a).add(src); ties.get(b).add(src); }
+    const lo = Math.min(...gen.values());
+    const ng = Math.max(...gen.values()) - lo + 1;
+    if (ng < 2) continue;
+    const members = ids.map(x => personById.get(x)).map(p => ({
+      id: p.id, name: p.name, gen: gen.get(p.id) - lo + 1, cem: p.cem,
+      by: p.withheld ? null : p.by, dy: p.dy,
+      unconfirmed: [...ties.get(p.id)].every(t => t === 'probable'),
+      notes: genNotes.get(p.id) || [],
+    })).sort((a, b) => a.gen - b.gen || (a.by ?? 9999) - (b.by ?? 9999) || a.name.localeCompare(b.name));
+    const surnames = new Map();
+    for (const x of ids) { const s = personById.get(x).surname; if (s) surnames.set(s, (surnames.get(s) || 0) + 1); }
+    const surname = [...surnames].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0]?.[0] || '';
+    const years = members.flatMap(m => [m.by, m.dy]).filter(v => v !== null);
+    out.push({
+      surname: surname.charAt(0) + surname.slice(1).toLowerCase(), n: members.length, ng,
+      from: Math.min(...years), to: Math.max(...years),
+      cems: [...new Set(members.map(m => m.cem))].sort(),
+      members, links: links.map(l => ({ p: l.p, c: l.c, src: l.src, basis: l.basis })),
+      spouses: extraSpouses.map(([a, b, src, basis]) => ({ a, b, src, basis })),
+    });
+  }
+  return out.sort((a, b) => b.ng - a.ng || b.n - a.n || a.surname.localeCompare(b.surname) || a.from - b.from);
+})();
+console.log(`  families across generations: ${genFamilies.length} (${genFamilies.reduce((n, f) => n + f.n, 0)} people; ${censusGenLinks} census, ${famLinkRows.length} owner, ${probableGenLinks} probable links)`);
+
 write('family.json', {
   events: famEvents,
+  generations: genFamilies,
   losses: csv('family_losses.csv').map(r => ({ ...r, n_lost: int(r.n_lost), span_days: int(r.span_days), people: r.people.split('|').map(s => s.trim()) })),
   lossesCemetery: lossesCem,
   births: csv('family_births.csv').map(r => ({ ...r, n_children_recorded: int(r.n_children_recorded), children: r.children.split('|').map(s => s.trim()) })),
@@ -451,6 +598,33 @@ const certificatesWhite = readTsv(join(ROOT, 'research', 'fs_certificates_read_w
     record: `https://www.familysearch.org/ark:/61903/1:1:${r.ark}`, anchor: `cert-${r.ark}`,
   })).sort((a, b) => a.death.localeCompare(b.death));
 if (certificatesWhite.length !== 20) throw new Error(`white certificates: ${certificatesWhite.length} listed, expected 20`);
+// Died at Hamilton, buried elsewhere (owner's request, 19 Nov 2026): every
+// certificate read so far, Black and white, whose burial line names a place
+// outside the three grounds. They are documented individuals, not records of
+// these cemeteries, and are not counted anywhere else in the app. A surname
+// shared with people buried here is shown as a surname only: it does not make
+// them one family. Parents, spouses and informants are not published.
+const surnameHere = new Map();
+for (const p of people) { const s = (p.surname || '').toLowerCase(); if (s) surnameHere.set(s, (surnameHere.get(s) || 0) + 1); }
+const certSurname = (name) => {
+  const t = name.replace(/\s*\(index: [^)]*\)/, '').replace(/,?\s+(Jr|Sr|II|III)\.?$/i, '').trim().split(/\s+/);
+  return (t[t.length - 1] || '').replace(/[.,]$/, '');
+};
+const certificatesElsewhere = ['fs_certificates_read.tsv', 'fs_certificates_read_white.tsv']
+  .flatMap(f => readTsv(join(ROOT, 'research', f)))
+  .filter(r => r.burial_cemetery.startsWith('(elsewhere') && !certLinkRows.some(c => c.ark === r.ark))
+  .map(r => {
+    const name = r.name.replace(/\s*\(index: [^)]*\)/, '');
+    const surname = certSurname(r.name);
+    return {
+      name, surname, death: r.death, age: indexByArk.get(r.ark)?.age ?? '',
+      place: r.burial_cemetery.replace(/^\(elsewhere:\s*/, '').replace(/\)$/, ''),
+      burial: burialWords(r.burial_place_as_written),
+      here: surnameHere.get(surname.toLowerCase()) || 0,
+      record: `https://www.familysearch.org/ark:/61903/1:1:${r.ark}`, anchor: `away-${r.ark}`,
+    };
+  }).sort((a, b) => a.surname.localeCompare(b.surname) || a.death.localeCompare(b.death));
+if (certificatesElsewhere.length !== 218) throw new Error(`buried elsewhere: ${certificatesElsewhere.length} listed, expected 218`);
 
 // The 1870 census, the pages headed Hamilton post office (research/
 // census_1870_hamilton.csv). Counted on the eight pages only: the twelve
@@ -486,6 +660,7 @@ write('leads.json', {
   certificates,
   certificatesLinked: linkedArks.size,
   certificatesWhite,
+  certificatesElsewhere,
 });
 
 // ---------------------------------------------------------------------------

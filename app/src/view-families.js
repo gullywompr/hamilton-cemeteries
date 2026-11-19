@@ -30,6 +30,10 @@ export function renderFamilies(el, D, ctx) {
     </div>
     <p class="prose">Every link was resolved by name and surname inside the same cemetery, preferring the same plot, and then tested against both people's dates. Links that failed the date check are kept out of the family views. Each link's basis is shown on the person's record.</p>
 
+    ${generationsSection(F.generations || [], D.people.length)}
+
+    ${elsewhereSection(D.leads && D.leads.certificatesElsewhere)}
+
     ${widowhoodSection(D.stones.widowhood, spouse)}
 
     <h2 data-k="${genuine.length} plot clusters · ${register.length} register families">More than one death in one family, inside one window</h2>
@@ -47,9 +51,80 @@ export function renderFamilies(el, D, ctx) {
     <h2 data-k="1840 – 1940 · no marriage record in any source">Remarriage, bounded</h2>
     <p class="prose">The project holds no marriage records. For ${F.marriages.length} people with two resolved spouses a window can be bounded: the first spouse's death gives the earliest the second marriage could begin, and the eldest resolved child of the second marriage, where there is one, gives the latest.</p>
     ${marriagesFigure(F.marriages)}
-    <div class="source"><span>SOURCE</span>relationships_v2.csv · family_losses_cemetery.csv · family_losses.csv · family_births.csv · marriage_windows.csv</div>
+    <div class="source"><span>SOURCE</span>relationships_v2.csv · census_&lt;year&gt;_matches.csv · curation/family_links.csv · family_losses_cemetery.csv · family_losses.csv · family_births.csv · marriage_windows.csv</div>
   `;
   el.addEventListener('click', e => { const b = e.target.closest('[data-person]'); if (b) { e.preventDefault(); ctx.openPerson(b.dataset.person); } });
+}
+
+const CEM_NAME = { L: 'Lakeview', H: 'Harmony', P: 'Pleasant Valley' };
+const ORD = ['', 'First', 'Second', 'Third', 'Fourth', 'Fifth'];
+
+// Families across generations. Joined by resolved links, by a parent and
+// child in one census household, by a link the owner recorded
+// (curation/family_links.csv), and, by the owner's decision of 19 Nov 2026,
+// by a probable link: same surname, same Lakeview plot, a plausible gap. A
+// probable link is a guess and is always marked: the card is dashed, and a
+// person whose every tie is a guess carries an "unconfirmed" tag.
+function generationsSection(G, total) {
+  if (!G.length) return '';
+  const people = G.reduce((s, f) => s + f.n, 0);
+  const guessed = (f) => f.links.some(l => l.src === 'probable') || f.spouses.some(x => x.src === 'probable');
+  const stated = G.filter(f => !guessed(f)), partly = G.filter(guessed);
+  const all = (src) => G.reduce((s, f) => s + f.links.filter(l => l.src === src).length + f.spouses.filter(x => x.src === src).length, 0);
+  const unconf = G.reduce((s, f) => s + f.members.filter(m => m.unconfirmed).length, 0);
+  const yrs = (m) => (m.by !== null || m.dy !== null) ? ` <span class="cause">${m.by ?? '?'}–${m.dy ?? ''}</span>` : '';
+  const member = (m) => `<button class="plink" data-person="${m.id}">${esc(m.name)}</button>${yrs(m)}${m.unconfirmed ? ' <span class="tag tag-disputed">unconfirmed</span>' : ''}`;
+  const card = (f) => {
+    const gens = [];
+    for (let g = 1; g <= f.ng; g++) gens.push(f.members.filter(m => m.gen === g));
+    const k = (src) => f.links.filter(l => l.src === src).length + f.spouses.filter(x => x.src === src).length;
+    const parts = [
+      k('record') ? `${k('record')} from stones and the register` : '',
+      k('census') ? `${k('census')} from a census household` : '',
+      k('probable') ? `<b>${k('probable')} guessed from a shared plot and surname</b>` : '',
+    ].filter(Boolean);
+    const notes = f.members.flatMap(m => m.notes);
+    return `<div class="card${guessed(f) ? ' guess' : ''}"><h4>${esc(titleCase(f.surname.toLowerCase()))}</h4><div class="meta">${f.ng} generations · ${f.n} people · ${f.from}–${f.to} · ${f.cems.map(c => CEM_NAME[c]).join(', ')}</div><ul>${gens.map((ms, i) => `<li><span class="cause">${ORD[i + 1] || `Generation ${i + 1}`}:</span> ${ms.map(member).join(', ')}</li>`).join('')}</ul>${notes.map(t => `<p class="cause" style="margin:6px 0 0">${esc(t)}</p>`).join('')}<div class="cause" style="margin-top:6px">Links: ${parts.join(' · ')}</div></div>`;
+  };
+  const block = (list) => {
+    const deep = list.filter(f => f.ng >= 3), two = list.filter(f => f.ng < 3);
+    return `${deep.length ? `<div class="cards">${deep.map(card).join('')}</div>` : ''}${two.length ? `<details class="more"><summary>${two.length} with two generations</summary><div class="cards" style="margin-top:10px">${two.map(card).join('')}</div></details>` : ''}`;
+  };
+  const jan = G.find(f => f.members.some(m => m.id === 'LV0567'));
+  return `
+    <h2 data-k="${G.length} families · ${n(people)} people">Families across generations</h2>
+    <p class="prose">${n(G.length)} families have two or more generations buried here, reaching ${n(people)} of the ${n(total)} people. Four kinds of tie join them: ${n(all('record'))} parent, child and spouse links resolved from the stones and the register; ${n(all('census'))} parents and children enumerated in one census household, 1880 to 1950, or in the 1860 census for the one family the owner has checked by hand; and <b>${n(all('probable'))} guesses</b>, where two people share a surname and a Lakeview plot and were born 18 to 45 years apart.</p>
+    <p class="prose">A guess is not a link. A plot at Lakeview is often shared by several families, and the same surname can mean a cousin, an in-law, or no relation. Families that rest in any part on a guess have a <span class="tag tag-disputed">dashed</span> edge, and the ${n(unconf)} people placed in a family only by a guess are tagged <span class="tag tag-disputed">unconfirmed</span>. None of these ties is added to a person's own record. Families whose ties nothing records are not shown, and families who buried their dead elsewhere are in the next section.</p>
+    ${jan ? `<h3>The Janneys</h3><p class="prose small">Joseph R. Janney's father, Asa, lies at Harmony and Joseph at Lakeview, so the stones of neither ground connect them. The 1860 census does: Joseph was living, at 18, in his father's house. His wife is placed beside him by their shared plot and his surname; no marriage record has been found.</p><div class="cards">${card(jan)}</div>` : ''}
+    <h3>Joined by stated links only: ${stated.length}</h3>
+    ${block(stated.filter(f => f !== jan))}
+    <h3>Joined in part by a guess: ${partly.length}</h3>
+    <p class="prose small">Read these as leads, not findings. Each card counts its guessed links, and the people they alone place are tagged.</p>
+    ${block(partly.filter(f => f !== jan))}`;
+}
+
+// Died at Hamilton, buried elsewhere: death certificates, not records of
+// these cemeteries. Names are shown as text, never as people here.
+function elsewhereSection(rows) {
+  if (!rows || !rows.length) return '';
+  const places = new Map();
+  for (const r of rows) places.set(r.place, (places.get(r.place) || 0) + 1);
+  const top = [...places].sort((a, b) => b[1] - a[1]).slice(0, 6);
+  const bySurname = new Map();
+  for (const r of rows) { if (!bySurname.has(r.surname)) bySurname.set(r.surname, []); bySurname.get(r.surname).push(r); }
+  const groups = [...bySurname].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+  const shared = groups.filter(([, rs]) => rs[0].here), apart = groups.filter(([, rs]) => !rs[0].here);
+  const years = rows.map(r => +r.death.slice(0, 4)).sort((a, b) => a - b);
+  const item = (r) => `<li id="${esc(r.anchor)}">${esc(r.name)}${r.age === '0' ? ', under a year' : r.age ? `, ${esc(r.age)}` : ''} <span class="cause">died ${esc(fmtDate(r.death, 'day', { short: true }))}</span><span class="basis">Burial: ${esc(r.burial)}. <a href="${esc(r.record)}" rel="noopener">The certificate</a>.</span></li>`;
+  const group = ([s, rs]) => `<div class="card"><h4>${esc(s)}</h4><div class="meta">${rs.length} buried elsewhere${rs[0].here ? ` · ${rs[0].here} of this surname buried here` : ''}</div><ul class="strata-list">${rs.map(item).join('')}</ul></div>`;
+  return `
+    <h2 data-k="${n(rows.length)} death certificates · ${years[0]}–${years[years.length - 1]}">Died at Hamilton, buried elsewhere</h2>
+    <p class="prose">Virginia death certificates from 1912 record ${n(rows.length)} people who died at Hamilton and were buried outside its three grounds: most often at ${top.slice(0, 3).map(([p, c]) => `${esc(p)} (${c})`).join(', ')}. They are documented individuals, but not records of these cemeteries: they are not on the timeline and are not counted anywhere else in this app. Some families who lived and worked in Hamilton, and whose names it still carries, kept their dead in the county seat or a church ground of their own.</p>
+    <p class="prose small">Only certificates whose burial line has been read are here, and none before 1912. A surname shared with people buried here is shown as a surname only: it does not establish that they are one family.</p>
+    <h3>Surnames also in these cemeteries: ${shared.length}</h3>
+    <div class="cards">${shared.map(group).join('')}</div>
+    <details class="more"><summary>${apart.length} surnames with no one buried here</summary><div class="cards" style="margin-top:10px">${apart.map(group).join('')}</div></details>
+    <div class="source"><span>SOURCE</span>Virginia, Death Certificates, 1912–1987, FamilySearch collection 2377565 · research/fs_certificates_read.tsv · research/fs_certificates_read_white.tsv</div>`;
 }
 
 function titleCase(s) { return s.replace(/\b\w/g, c => c.toUpperCase()); }
