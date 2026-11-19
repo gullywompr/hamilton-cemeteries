@@ -35,6 +35,28 @@ export function slaveScheduleSection(S, D) {
     <div class="source"><span>SOURCE</span>research/slave_schedule_1860_loudoun_read.csv, slave_schedule_1860_hamilton.csv and slave_schedule_1850_loudoun_read.csv, read on the images of FamilySearch films 005171762 (1860) and 004206479 (1850) · identities matched on the free schedules · adopted by the project's owner in curation/slave_schedule_1860_links.csv and slave_schedule_1850_links.csv</div>`;
 }
 
+// Enslaved people named in Hamilton-area records, 1854-1859
+// (curation/enslaved_named_1854_1859.csv). Documented individuals, not
+// people in this record: the sources say nothing of where any was buried.
+export function enslavedNamedSection(rows) {
+  if (!rows?.length) return '';
+  const group = (t) => rows.filter(r => r.record === t);
+  const day = (s) => { const p = s.split(' '); return new Date(`${p.length === 3 ? s : `1 ${s}`} UTC`).getTime(); };
+  const age = (r) => r.age === '' ? '' : r.age === 'infant' ? ', an infant' : /^\d+$/.test(r.age) ? `, aged ${esc(r.age)}` : `, aged ${esc(r.age)}`;
+  const item = (r, when) => `<li><span class="lbl">${r.name.startsWith('(') ? 'A boy, not named' : esc(r.name)}</span>${age(r)} <span class="when">${when}</span><span class="basis">${r.mother ? `Mother: ${esc(r.mother)}. ` : ''}${r.note ? `${esc(r.note).replace(/^A boy, unnamed\. /, '')}. ` : ''}${esc(r.source)}${r.image ? `. <a href="${esc(r.image)}" rel="noopener">The page</a>` : ''}.</span></li>`;
+  const reg = group('register').sort((a, b) => day(a.date) - day(b.date));
+  return `
+    <h3>Named in a will, an inventory and the death register, 1854–1859</h3>
+    <p class="prose">The slave schedules give no names. Three other records of the 1850s do: the will of James Decatur Heaton of Hamilton, dated 6 December 1858; the appraisal of his estate in April 1859; and the county register of deaths, which entered enslaved people with their holder's name. ${rows.length === 20 ? 'Twenty' : rows.length} people are named in them, read on the page. They are documented individuals, but none of these records says where anyone was buried, and none of their holders is in these cemeteries, so they are not records of these cemeteries: they are not on the timeline and are not counted anywhere in this app. This is what has been found, not everyone: the register was searched, not yet read line by line, and the deed books have not been searched.</p>
+    <p class="prose"><b>In Heaton's will.</b> He left "my servants Sam &amp; Catharine, and her children Adelaide and Martha" to stay with his widow, Cecelia. The will allowed the people not named in it to be sold to pay his debts; it does not name them, and whether any were sold is not established.</p>
+    <ul class="era-list">${group('will').map(r => item(r, 'named 6 Dec 1858')).join('')}</ul>
+    <p class="prose"><b>In the appraisal of his estate</b>, April 1859, each was given a price. Agnes was valued with a child.</p>
+    <ul class="era-list">${group('inventory').map(r => item(r, `appraised ${esc(r.date)}`)).join('')}</ul>
+    <p class="prose"><b>In the register of deaths</b>, 1854–1859, each entered under the holder's name. Many were children. Catharine and Agnes are probably the women of the will and the appraisal; the records do not say so.</p>
+    <ul class="era-list">${reg.map(r => item(r, `died ${esc(r.date)} · held by ${esc(r.held_by)}`)).join('')}</ul>
+    <div class="source"><span>SOURCE</span>Loudoun Will Book 2-N, pp.166–169 and p.402 (FamilySearch image group 007645060) · Loudoun Register of Deaths, 1853–1866 (FamilySearch film 004225400) · research/enslaved_hamilton_1850_1860.csv · adopted by the project's owner in curation/enslaved_named_1854_1859.csv, 19 Nov 2026</div>`;
+}
+
 export function census1870Section(c, D) {
   if (!c) return '';
   const gh = D.byId.get('HM0078');

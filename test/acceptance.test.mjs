@@ -437,6 +437,14 @@ test('1850 and 1860 slave schedules: owner-adopted readings (curation/slave_sche
   assert.deepEqual([L[1850].searched, L[1850].surnames, L[1850].held], [141, 72, 10]);
 });
 
+test('the enslaved people named in the 1850s records are listed, never made people', () => {
+  const E = load('leads.json').enslavedNamed;
+  assert.equal(E.length, 20);
+  assert.equal(E.filter(r => r.name === 'Flavius').length, 1, 'Flavius, probably entered twice, is one row');
+  const names = new Set(people.map(p => p.name));
+  for (const r of E) assert.ok(!names.has(r.name), `${r.name} must not be a person here`);
+});
+
 // The "Jump to…" menu finds each date by a row's title or plot. A reworded
 // title would drop the jump from the menu without a word, so every jump is
 // checked here against the built data.
