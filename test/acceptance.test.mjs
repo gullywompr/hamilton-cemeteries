@@ -187,12 +187,12 @@ test('era bands', () => {
   }
 });
 
-test('families across generations: stated links only, no same-plot guesses', () => {
+test('families across generations: every tie sourced, every guess marked', () => {
   const G = load('family.json').generations;
-  assert.equal(G.length, 103);
-  assert.equal(G.reduce((s, f) => s + f.n, 0), 309);
-  assert.equal(G.filter(f => f.ng >= 3).length, 6);
-  assert.equal(G.reduce((s, f) => s + f.links.filter(l => l.src === 'census').length, 0), 95);
+  assert.equal(G.length, 289);
+  assert.equal(G.reduce((s, f) => s + f.n, 0), 1137);
+  const k = (src) => G.reduce((s, f) => s + f.links.filter(l => l.src === src).length + f.spouses.filter(x => x.src === src).length, 0);
+  assert.deepEqual([k('census'), k('probable')], [96, 860]);
   const seen = new Set();
   for (const f of G) {
     assert.ok(f.ng >= 2 && f.links.length >= 1);
@@ -205,13 +205,36 @@ test('families across generations: stated links only, no same-plot guesses', () 
     }
     for (const l of f.links) {
       assert.ok(ids.has(l.p) && ids.has(l.c));
-      assert.ok(l.src === 'record' || l.src === 'census');
+      assert.ok(['record', 'census', 'probable'].includes(l.src));
       if (l.src === 'record') assert.ok(byId.get(l.c).fam.some(x => x.rel === 'parent' && x.id === l.p) || byId.get(l.p).fam.some(x => x.rel === 'child' && x.id === l.c));
-      if (l.src === 'census') assert.match(l.basis, /^\d{4} census, image /);
+      if (l.src === 'census') assert.match(l.basis, /^\d{4} census/);
+      if (l.src === 'probable') { const a = byId.get(l.p), c = byId.get(l.c); assert.equal(a.cem, 'L'); assert.equal(a.plot, c.plot); assert.match(l.basis, /a guess, not a stated link/); }
+    }
+    // A member tied only by guesses is marked unconfirmed.
+    for (const m of f.members) {
+      const ties = [...f.links.filter(l => l.p === m.id || l.c === m.id).map(l => l.src), ...f.spouses.filter(x => x.a === m.id || x.b === m.id).map(x => x.src)];
+      const spouseHere = byId.get(m.id).fam.some(x => x.rel === 'spouse' && ids.has(x.id));
+      if (!spouseHere && ties.length && ties.every(t => t === 'probable')) assert.ok(m.unconfirmed, `${m.id} should be unconfirmed`);
     }
   }
-  // A census link never enters a person's own family links.
+  // The Janneys: father at Harmony, son at Lakeview, joined by the 1860 census.
+  const j = G.find(f => f.members.some(m => m.id === 'LV0567'));
+  assert.ok(j.members.some(m => m.id === 'HM0095'));
+  assert.ok(j.links.some(l => l.p === 'HM0095' && l.c === 'LV0567' && l.src === 'census'));
+  assert.equal(j.members.find(m => m.id === 'LV0568').unconfirmed, true);
+  // No tie of this view enters a person's own family links.
   assert.equal(load('summary.json').anyFamily, 394);
+});
+
+test('died at Hamilton, buried elsewhere: certificates, not people here', () => {
+  const E = load('leads.json').certificatesElsewhere;
+  assert.equal(E.length, 218);
+  for (const r of E) {
+    assert.ok(!byId.has(r.anchor), 'not a person id');
+    assert.match(r.record, /^https:\/\/www\.familysearch\.org\/ark:\/61903\/1:1:/);
+    assert.ok(!('parents' in r) && !('spouse' in r) && !('informant' in r));
+  }
+  assert.deepEqual(E.filter(r => r.surname === 'Rogers').map(r => r.place), ['Leesburg', 'Leesburg', 'Leesburg', 'Union Cemetery, Leesburg']);
 });
 
 test('family layer', () => {

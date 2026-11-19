@@ -482,3 +482,6 @@ details.more summary { font-size: 13px; color: var(--ink-3); cursor: pointer; }
   .top { grid-template-columns: 1fr auto; grid-template-rows: auto auto; height: auto; padding: 8px var(--gutter); gap: 6px 12px; }
   .nav { grid-column: 1 / -1; }
 }
+/* A family that rests in part on a guessed link: the dashed edge is the same
+   mark the app uses for a disputed date. */
+.card.guess { border-left-style: dashed; }
