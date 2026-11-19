@@ -30,6 +30,8 @@ export function renderFamilies(el, D, ctx) {
     </div>
     <p class="prose">Every link was resolved by name and surname inside the same cemetery, preferring the same plot, and then tested against both people's dates. Links that failed the date check are kept out of the family views. Each link's basis is shown on the person's record.</p>
 
+    ${generationsSection(F.generations || [], D.people.length)}
+
     ${widowhoodSection(D.stones.widowhood, spouse)}
 
     <h2 data-k="${genuine.length} plot clusters · ${register.length} register families">More than one death in one family, inside one window</h2>
@@ -47,9 +49,36 @@ export function renderFamilies(el, D, ctx) {
     <h2 data-k="1840 – 1940 · no marriage record in any source">Remarriage, bounded</h2>
     <p class="prose">The project holds no marriage records. For ${F.marriages.length} people with two resolved spouses a window can be bounded: the first spouse's death gives the earliest the second marriage could begin, and the eldest resolved child of the second marriage, where there is one, gives the latest.</p>
     ${marriagesFigure(F.marriages)}
-    <div class="source"><span>SOURCE</span>relationships_v2.csv · family_losses_cemetery.csv · family_losses.csv · family_births.csv · marriage_windows.csv</div>
+    <div class="source"><span>SOURCE</span>relationships_v2.csv · census_&lt;year&gt;_matches.csv · family_losses_cemetery.csv · family_losses.csv · family_births.csv · marriage_windows.csv</div>
   `;
   el.addEventListener('click', e => { const b = e.target.closest('[data-person]'); if (b) { e.preventDefault(); ctx.openPerson(b.dataset.person); } });
+}
+
+const CEM_NAME = { L: 'Lakeview', H: 'Harmony', P: 'Pleasant Valley' };
+const ORD = ['', 'First', 'Second', 'Third', 'Fourth', 'Fifth'];
+
+// Families across generations: people joined by resolved parent and child
+// links, or by a parent and child enumerated in one census household. A
+// same-surname, same-plot guess is not a link here (owner, 19 Nov 2026).
+function generationsSection(G, total) {
+  if (!G.length) return '';
+  const people = G.reduce((s, f) => s + f.n, 0);
+  const deep = G.filter(f => f.ng >= 3), two = G.filter(f => f.ng < 3);
+  const fromCensus = G.reduce((s, f) => s + f.links.filter(l => l.src === 'census').length, 0);
+  const fromRecord = G.reduce((s, f) => s + f.links.filter(l => l.src === 'record').length, 0);
+  const yrs = (m) => (m.by !== null || m.dy !== null) ? ` <span class="cause">${m.by ?? '?'}–${m.dy ?? ''}</span>` : '';
+  const card = (f) => {
+    const gens = [];
+    for (let g = 1; g <= f.ng; g++) gens.push(f.members.filter(m => m.gen === g));
+    const nc = f.links.filter(l => l.src === 'census').length, nr = f.links.length - nc;
+    return `<div class="card"><h4>${esc(titleCase(f.surname.toLowerCase()))}</h4><div class="meta">${f.ng} generations · ${f.n} people · ${f.from}–${f.to} · ${f.cems.map(c => CEM_NAME[c]).join(', ')}</div><ul>${gens.map((ms, i) => `<li><span class="cause">${ORD[i + 1] || `Generation ${i + 1}`}:</span> ${ms.map(m => `<button class="plink" data-person="${m.id}">${esc(m.name)}</button>${yrs(m)}`).join(', ')}</li>`).join('')}</ul><div class="cause" style="margin-top:6px">${[nr ? `${nr} link${nr === 1 ? '' : 's'} from stones and the register` : '', nc ? `${nc} from one census household` : ''].filter(Boolean).join(' · ')}</div></div>`;
+  };
+  return `
+    <h2 data-k="${G.length} families · ${n(people)} people">Families across generations</h2>
+    <p class="prose">${n(G.length)} families have parents and children both buried here, reaching ${n(people)} of the ${n(total)} people; ${deep.length} reach three generations. A family is joined only by links the record states: ${n(fromRecord)} parent and child links resolved from the stones and the register, and ${n(fromCensus)} pairs enumerated as parent and son or daughter in one census household, 1880 to 1950. People sharing a surname and a plot are not joined, because a plot here is shared by several families. Many families whose generations lie here are not shown, because nothing in the record ties them together, and families who buried their dead elsewhere, in Leesburg, Lincoln or Hillsboro, are not in these cemeteries at all.</p>
+    <h3>Three generations or more: ${deep.length}</h3>
+    <div class="cards">${deep.map(card).join('')}</div>
+    <details class="more"><summary>${two.length} families with two generations</summary><div class="cards" style="margin-top:10px">${two.map(card).join('')}</div></details>`;
 }
 
 function titleCase(s) { return s.replace(/\b\w/g, c => c.toUpperCase()); }

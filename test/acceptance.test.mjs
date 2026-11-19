@@ -187,6 +187,33 @@ test('era bands', () => {
   }
 });
 
+test('families across generations: stated links only, no same-plot guesses', () => {
+  const G = load('family.json').generations;
+  assert.equal(G.length, 103);
+  assert.equal(G.reduce((s, f) => s + f.n, 0), 309);
+  assert.equal(G.filter(f => f.ng >= 3).length, 6);
+  assert.equal(G.reduce((s, f) => s + f.links.filter(l => l.src === 'census').length, 0), 95);
+  const seen = new Set();
+  for (const f of G) {
+    assert.ok(f.ng >= 2 && f.links.length >= 1);
+    const ids = new Set(f.members.map(m => m.id));
+    for (const m of f.members) {
+      const p = byId.get(m.id);
+      assert.ok(p, `unknown member ${m.id}`);
+      assert.ok(!seen.has(m.id), `${m.id} in two families`); seen.add(m.id);
+      if (p.withheld) assert.equal(m.by, null, `withheld birth published for ${m.id}`);
+    }
+    for (const l of f.links) {
+      assert.ok(ids.has(l.p) && ids.has(l.c));
+      assert.ok(l.src === 'record' || l.src === 'census');
+      if (l.src === 'record') assert.ok(byId.get(l.c).fam.some(x => x.rel === 'parent' && x.id === l.p) || byId.get(l.p).fam.some(x => x.rel === 'child' && x.id === l.c));
+      if (l.src === 'census') assert.match(l.basis, /^\d{4} census, image /);
+    }
+  }
+  // A census link never enters a person's own family links.
+  assert.equal(load('summary.json').anyFamily, 394);
+});
+
 test('family layer', () => {
   const fam = load('family.json');
   assert.equal(fam.events.length, 335); // 336 in the CSV; one child_born is dated by a withheld birth
