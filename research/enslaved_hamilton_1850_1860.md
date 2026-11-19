@@ -11,7 +11,7 @@ only: nothing in `data/` and nothing on the site.**
 | 1860, living in a Hamilton household | 105 | 1860 slave schedule, the enumerator's Hamilton route (film 005171762, images 127 R3 to 129 L6), every line read on the full-resolution image |
 | 1860, Hamilton connection only | 3 | the lines just before the route: a woman owned by M. Dowel of Hamilton, hired out; two hired from M. Chamblin by Eli Tavenner |
 | 1850, same-name holders | 37 | 1850 slave schedule (film 004206479, images 15-16), holders with the same name as an 1860 Hamilton holder |
-| named | 7 | the will of James Decatur Heaton (1858-59) and the 1859 death register |
+| named | 20 | the will and estate inventory of James Decatur Heaton (1858-59) and the 1854-1859 death registers |
 
 **The 1860 rows are the town list.** The route is fixed by the free schedule:
 its Hamilton pages (film 005171728, images 377-389) run from Jonah Hatcher to
@@ -40,25 +40,55 @@ the owner's residence.
 
 ## Names
 
-- **Sam, Catharine, and her children Adelaide and Martha.** These are named in
-  the will of James Decatur Heaton, dated 6 Dec 1858 and proved 15 Mar 1859.
-  He left them with his wife Cecelia, the 1860 holder of 11. The will also
-  allows the sale of his other, unnamed "negroes" to pay debts. Sources: Will
-  Book 2-N, pp.166-169, and FamilySearch full text, image group 007645060.
-- **Maria**, about 50, enslaved by Malinda Dowell. She died of consumption in
-  July 1859 at her mistress's residence (Register of Deaths 1853-1865, image
-  61, line 80).
-- **Flora**, enslaved by James D. Heaton. She died of scarlet fever in April
-  1859, most likely aged 9 months, and her mother was **Agnes** (same page,
-  line 82).
+From the Heaton papers (Will Book 2-N, pp.166-169 and 402):
+
+- **Sam, Catharine, and her children Adelaide and Martha.** The will of James
+  Decatur Heaton, dated 6 Dec 1858, leaves them with his wife Cecelia.
+- **Jim (18), Thomas (15), Mary (17), Bill (9), and "Agnes & Child".** These
+  are listed in the appraisal of his estate in April 1859, valued from $600
+  to $1,066.66 each. None of them is named in the will. The will allows those
+  not bequeathed to be sold to pay debts; whether any were sold is not
+  established.
+
+From the death register (film 004225400). Enslaved deaths are entered there
+with the owner's name, and the parents column often gives the mother:
+
+| died | name | age | owner | mother |
+|---|---|---|---|---|
+| 15 Aug 1854 | Frances | 2 | Cornelius Vandevender | Maria |
+| 30 Oct 1854 | Edward | 10 | Gabriel Vandevender | Matilda |
+| 16 Apr 1855 | Emily | 40 | Mary Peugh (Peugh's Mill; tie to Hamilton not established) | Hannah |
+| Jun 1855 | Virginia | 15 | C. R. Dowell | Mary Jane |
+| Dec 1856 | (not named) | infant | Wm. McCray | Margaret |
+| Mar 1857 | Mars | 5 | J. D. Heaton | Catharine |
+| 15 Apr 1857 | Flavius | 11 | C. R. Dowell's estate | Mary |
+| May 1857 | Jupiter | 70 | J. D. Heaton | ("Agnes") |
+| 15 Sep 1857 | Harriet | 2 | Gabriel Vandevender | Maria |
+| Apr 1859 | Flora | 9 months (probable) | J. D. Heaton | Agnes |
+| Jul 1859 | Maria | 50 | Malinda Dowell | - |
+
+- **Flavius** appears again in 1858, also aged 11 and of the same estate, but
+  with measles as the cause and Mary Jane as his mother. That is probably the
+  same death entered twice.
+- Catharine, Mars's mother, and Agnes, Flora's mother, are probably the
+  Catharine and Agnes of the Heaton will and inventory. The records do not
+  say so.
+- The Heaton inventory also lists debts owed by **Samuel Carter (col'd)** and
+  **Solomon Loucas (col'd)**. They were free Black Hamiltonians, not enslaved
+  people, and are recorded here only so they are not lost.
+
+### How the register was searched
+
+Each of the register's 70 images (film images 181-250) was searched in
+FamilySearch full text for the names of the Hamilton holders and owners. The
+14 images with a match were read on the full-resolution image. A spelling the
+transcription garbled would have been missed, so this is a sweep and not a
+line-by-line read. The 1864 and 1865 pages have no owner entries.
 
 ## Not yet done
 
-- **The 1853-65 death register, page by page.** Owners' names are in a column
-  of their own, and a full-text keyword sweep of all 70 images found too much
-  noise to trust. Each image has to be read.
-- **Wills, inventories and deeds of the other holders.** FamilySearch full-text
-  search reaches the Loudoun will and deed books. Candidates found include
-  Will Book 2-H (1853-54) for Hatcher, 2-K and 2-L (1855-57) for Rogers, 2-L
-  for Mercer, 2-O (1859-60) for Dowell, and 2-Q (1865-66) for Noland. None
-  has been read yet.
+- **A line-by-line read of the register**, to catch any owner the full-text
+  sweep missed.
+- **Wills, inventories and deeds of the other holders.** Most of the 1860
+  holders outlived slavery, so their estates name no one. Deeds of sale and
+  deeds of trust, which can name enslaved people, have not been searched.
